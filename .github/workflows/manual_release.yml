@@ -1,0 +1,25 @@
+name: Manual release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+      - name: Build in Release mode with Symbols
+        run: dotnet build --configuration Release
+      - name: Push NuGet package (.nupkg)
+        run: dotnet nuget push '**/*.nupkg' --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json        
+      - name: Release
+        uses: softprops/action-gh-release@v2
