@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator", "Generator\Gene
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ovh.Sdk.Net", "Ovh.Sdk.Net\Ovh.Sdk.Net.csproj", "{472CC120-9215-48B2-A73D-4883AA61C3A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovh.Sdk.Net.Sample", "Ovh.Sdk.Net.Sample\Ovh.Sdk.Net.Sample.csproj", "{569B8495-286B-4D60-83EC-0A178E428BA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{472CC120-9215-48B2-A73D-4883AA61C3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{472CC120-9215-48B2-A73D-4883AA61C3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{472CC120-9215-48B2-A73D-4883AA61C3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{569B8495-286B-4D60-83EC-0A178E428BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569B8495-286B-4D60-83EC-0A178E428BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569B8495-286B-4D60-83EC-0A178E428BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569B8495-286B-4D60-83EC-0A178E428BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

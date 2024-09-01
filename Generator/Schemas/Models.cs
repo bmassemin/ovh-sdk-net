@@ -42,7 +42,7 @@ namespace Generator.Schemas
 
     public class Parameter
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public string DataType { get; set; }
         public string ParamType { get; set; }
         public string FullType { get; set; }

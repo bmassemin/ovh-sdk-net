@@ -1,10 +1,12 @@
 ﻿using System;
 using System.CodeDom;
 using System.CodeDom.Compiler;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using Generator;
@@ -109,7 +111,7 @@ foreach (var codeNamespace in namespaces)
 }
 
 var methodUnit = new CodeCompileUnit();
-var methodNamespace = new CodeNamespace("Ovh.Sdk.Net.Client");
+var methodNamespace = new CodeNamespace("Ovh.Sdk.Net");
 methodUnit.Namespaces.Add(methodNamespace);
 var clientClass = new CodeTypeDeclaration("Client")
 {
@@ -128,13 +130,29 @@ foreach (var apis in definitions)
             var code = new CodeMemberMethod
             {
                 Name = operation.HttpMethod.ToLower().FirstCharToUpper() + path,
-                Comments = { new CodeCommentStatement($"Path: {api.Path}") }
+                Comments = { new CodeCommentStatement($"Path: {api.Path}") },
+                Attributes = MemberAttributes.Public | MemberAttributes.Final,
             };
             if (operation.ResponseType != null && operation.ResponseType != "void")
             {
                 code.ReturnType = new CodeTypeReference("Task<" + GetCodeType(operation.ResponseType) + ">");
                 var returnStatement = new CodeMethodReturnStatement(new CodeDefaultValueExpression(code.ReturnType));
                 code.Statements.Add(returnStatement);
+            }
+            else
+            {
+                code.ReturnType = new CodeTypeReference(typeof(Task));
+                var returnStatement = new CodeMethodReturnStatement(new CodePropertyReferenceExpression(new CodeTypeReferenceExpression("Task"), "CompletedTask"));
+                code.Statements.Add(returnStatement);
+            }
+
+            foreach (var parameter in operation.Parameters.OrderBy(x => !x.Required))
+            {
+                var paramName = parameter.Name ?? "body";
+                var param = new CodeParameterDeclarationExpression(GetCodeType(parameter.DataType), CleanParamName(paramName));
+                if (!parameter.Required)
+                    param.CustomAttributes.Add(new CodeAttributeDeclaration(new CodeTypeReference(typeof(OptionalAttribute))));
+                code.Parameters.Add(param);
             }
 
             clientClass.Members.Add(code);
@@ -146,6 +164,12 @@ var methodProvider = new CSharpCodeProvider();
 var methodPath = Path.Combine(rootPath, "Client");
 await using StreamWriter swMethod = new StreamWriter($"{methodPath}.cs", true);
 methodProvider.GenerateCodeFromCompileUnit(methodUnit, swMethod, new CodeGeneratorOptions());
+
+string CleanParamName(string value)
+{
+    var split = value.Split('.');
+    return split[0] + string.Join("", split[1..].Select(x => x.FirstCharToUpper()));
+}
 
 string GetMethodName(string value)
 {
@@ -209,7 +233,7 @@ CodeTypeDeclaration GenerateClass(Model model, string className)
 
 string GetCodeType(string strType)
 {
-    var match = Regex.Match(strType, @"map\[(.*)\](.*)");
+    var match = Regex.Match(strType, @"map\[(.*?)\](.*)");
     if (match.Success)
     {
         var type1 = CleanType(match.Groups[1].Value);
@@ -224,6 +248,7 @@ string GetCodeType(string strType)
         "string" => typeof(string).FullName,
         "long" => typeof(long).FullName,
         "boolean" => typeof(bool).FullName,
+        "boolean[]" => typeof(bool[]).FullName,
         "date" => typeof(DateOnly).FullName,
         "date[]" => typeof(DateOnly[]).FullName,
         "datetime" => typeof(DateTime).FullName,
@@ -278,6 +303,13 @@ string CleanType(string value)
     var array = value.EndsWith("[]");
     if (array)
         type = value[..^2];
+    var golangArray = value.StartsWith("[]");
+    if (golangArray)
+    {
+        type = value[2..];
+        array = true;
+    }
+
     var genPos = value.IndexOf('<');
     if (genPos > 0)
         type = value[..genPos] + "<T>";
