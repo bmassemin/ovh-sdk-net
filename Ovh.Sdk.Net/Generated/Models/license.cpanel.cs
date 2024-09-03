@@ -27,7 +27,7 @@ namespace _license_cpanel {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: licenseId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("licenseId")]
@@ -63,7 +63,7 @@ namespace _license_cpanel {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: licenseId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("licenseId")]

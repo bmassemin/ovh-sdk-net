@@ -39,7 +39,7 @@ namespace _cloud_network_gateway {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: networkId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkId")]
@@ -55,7 +55,7 @@ namespace _cloud_network_gateway {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: subnetId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnetId")]

@@ -87,11 +87,11 @@ namespace _cloud_project_loadbalancer {
         
         // Key: ipv4 Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public System.Net.IPAddress Ipv4 { get; set; }//;
+        public string Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPAddress Ipv6 { get; set; }//;
+        public string Ipv6 { get; set; }//;
     }
     
     // Id: Addresses Namespace: cloud.project.loadbalancer
@@ -99,11 +99,11 @@ namespace _cloud_project_loadbalancer {
         
         // Key: ipv4 Type: ipv4Block[] FullType: ipv4Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public System.Net.IPNetwork[] Ipv4 { get; set; }//;
+        public string[] Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: ipv6Block[] FullType: ipv6Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPNetwork[] Ipv6 { get; set; }//;
+        public string[] Ipv6 { get; set; }//;
     }
     
     // Id: ApplicationConfiguration Namespace: cloud.project.loadbalancer
@@ -375,7 +375,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: whitelist Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("whitelist")]
-        public System.Net.IPNetwork[] Whitelist { get; set; }//;
+        public string[] Whitelist { get; set; }//;
     }
     
     // Id: LoadBalancerSizeCapability Namespace: cloud.project.loadbalancer
@@ -435,7 +435,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

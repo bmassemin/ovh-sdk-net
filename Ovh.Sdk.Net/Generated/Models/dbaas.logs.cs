@@ -228,7 +228,7 @@ namespace _dbaas_logs {
         
         // Key: archiveAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("archiveAllowedNetworks")]
-        public System.Net.IPNetwork[] ArchiveAllowedNetworks { get; set; }//;
+        public string[] ArchiveAllowedNetworks { get; set; }//;
         
         // Key: clusterId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterId")]
@@ -248,7 +248,7 @@ namespace _dbaas_logs {
         
         // Key: directInputAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("directInputAllowedNetworks")]
-        public System.Net.IPNetwork[] DirectInputAllowedNetworks { get; set; }//;
+        public string[] DirectInputAllowedNetworks { get; set; }//;
         
         // Key: directInputPEM Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("directInputPEM")]
@@ -268,7 +268,7 @@ namespace _dbaas_logs {
         
         // Key: queryAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queryAllowedNetworks")]
-        public System.Net.IPNetwork[] QueryAllowedNetworks { get; set; }//;
+        public string[] QueryAllowedNetworks { get; set; }//;
         
         // Key: region Type: dbaas.logs.ClusterRegionEnum FullType: dbaas.logs.ClusterRegionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -331,15 +331,15 @@ namespace _dbaas_logs {
         
         // Key: archiveAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("archiveAllowedNetworks")]
-        public System.Net.IPNetwork[] ArchiveAllowedNetworks { get; set; }//;
+        public string[] ArchiveAllowedNetworks { get; set; }//;
         
         // Key: directInputAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("directInputAllowedNetworks")]
-        public System.Net.IPNetwork[] DirectInputAllowedNetworks { get; set; }//;
+        public string[] DirectInputAllowedNetworks { get; set; }//;
         
         // Key: queryAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queryAllowedNetworks")]
-        public System.Net.IPNetwork[] QueryAllowedNetworks { get; set; }//;
+        public string[] QueryAllowedNetworks { get; set; }//;
     }
     
     // Id: Dashboard Namespace: dbaas.logs
@@ -608,7 +608,7 @@ namespace _dbaas_logs {
         
         // Key: allowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedNetworks")]
-        public System.Net.IPNetwork[] AllowedNetworks { get; set; }//;
+        public string[] AllowedNetworks { get; set; }//;
         
         // Key: autoscale Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]
@@ -750,7 +750,7 @@ namespace _dbaas_logs {
         
         // Key: allowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedNetworks")]
-        public System.Net.IPNetwork[] AllowedNetworks { get; set; }//;
+        public string[] AllowedNetworks { get; set; }//;
         
         // Key: autoscale Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]
@@ -814,7 +814,7 @@ namespace _dbaas_logs {
         
         // Key: allowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedNetworks")]
-        public System.Net.IPNetwork[] AllowedNetworks { get; set; }//;
+        public string[] AllowedNetworks { get; set; }//;
         
         // Key: autoscale Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]

@@ -203,11 +203,11 @@ namespace _hosting_web {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPAddress Ipv6 { get; set; }//;
+        public string Ipv6 { get; set; }//;
     }
     
     // Id: CountryEnum Namespace: hosting.web
@@ -1155,11 +1155,11 @@ namespace _hosting_web {
         
         // Key: clusterIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterIp")]
-        public System.Net.IPAddress ClusterIp { get; set; }//;
+        public string ClusterIp { get; set; }//;
         
         // Key: clusterIpv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterIpv6")]
-        public System.Net.IPAddress ClusterIpv6 { get; set; }//;
+        public string ClusterIpv6 { get; set; }//;
         
         // Key: countriesIp Type: hosting.web.CountriesIp[] FullType: hosting.web.CountriesIp[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countriesIp")]
@@ -1191,11 +1191,11 @@ namespace _hosting_web {
         
         // Key: hostingIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingIp")]
-        public System.Net.IPAddress HostingIp { get; set; }//;
+        public string HostingIp { get; set; }//;
         
         // Key: hostingIpv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingIpv6")]
-        public System.Net.IPAddress HostingIpv6 { get; set; }//;
+        public string HostingIpv6 { get; set; }//;
         
         // Key: lastOvhConfigScan Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastOvhConfigScan")]
@@ -1295,11 +1295,11 @@ namespace _hosting_web {
         
         // Key: clusterIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterIp")]
-        public System.Net.IPAddress ClusterIp { get; set; }//;
+        public string ClusterIp { get; set; }//;
         
         // Key: clusterIpv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterIpv6")]
-        public System.Net.IPAddress ClusterIpv6 { get; set; }//;
+        public string ClusterIpv6 { get; set; }//;
         
         // Key: countriesIp Type: hosting.web.CountriesIp[] FullType: hosting.web.CountriesIp[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countriesIp")]
@@ -1331,11 +1331,11 @@ namespace _hosting_web {
         
         // Key: hostingIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingIp")]
-        public System.Net.IPAddress HostingIp { get; set; }//;
+        public string HostingIp { get; set; }//;
         
         // Key: hostingIpv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingIpv6")]
-        public System.Net.IPAddress HostingIpv6 { get; set; }//;
+        public string HostingIpv6 { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]

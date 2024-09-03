@@ -57,11 +57,11 @@ namespace _sslGateway {
         
         // Key: ip6s Type: ipv6[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip6s")]
-        public System.Net.IPAddress[] Ip6s { get; set; }//;
+        public string[] Ip6s { get; set; }//;
         
         // Key: ips Type: ipv4[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ips")]
-        public System.Net.IPAddress[] Ips { get; set; }//;
+        public string[] Ips { get; set; }//;
         
         // Key: isHostedByOvh Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isHostedByOvh")]
@@ -73,7 +73,7 @@ namespace _sslGateway {
         
         // Key: ip Type: ipBlock[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork[] Ip { get; set; }//;
+        public string[] Ip { get; set; }//;
         
         // Key: zone Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
@@ -101,7 +101,7 @@ namespace _sslGateway {
         
         // Key: address Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public System.Net.IPAddress Address { get; set; }//;
+        public string Address { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -156,7 +156,7 @@ namespace _sslGateway {
         
         // Key: allowedSource Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedSource")]
-        public System.Net.IPNetwork[] AllowedSource { get; set; }//;
+        public string[] AllowedSource { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
@@ -172,11 +172,11 @@ namespace _sslGateway {
         
         // Key: ipv4 Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public System.Net.IPAddress Ipv4 { get; set; }//;
+        public string Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPAddress Ipv6 { get; set; }//;
+        public string Ipv6 { get; set; }//;
         
         // Key: metricsToken Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metricsToken")]
@@ -216,7 +216,7 @@ namespace _sslGateway {
         
         // Key: allowedSource Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedSource")]
-        public System.Net.IPNetwork[] AllowedSource { get; set; }//;
+        public string[] AllowedSource { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
@@ -236,11 +236,11 @@ namespace _sslGateway {
         
         // Key: ipv4 Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public System.Net.IPAddress Ipv4 { get; set; }//;
+        public string Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPAddress Ipv6 { get; set; }//;
+        public string Ipv6 { get; set; }//;
         
         // Key: metricsToken Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metricsToken")]

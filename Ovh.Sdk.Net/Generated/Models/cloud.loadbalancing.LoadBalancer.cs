@@ -19,7 +19,7 @@ namespace _cloud_loadbalancing_LoadBalancer {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
 }
 //------------------------------------------------------------------------------
@@ -71,7 +71,7 @@ namespace _cloud_loadbalancing_loadbalancer {
         
         // Key: allowedCidrs Type: ipv4Block[] FullType: ipv4Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedCidrs")]
-        public System.Net.IPNetwork[] AllowedCidrs { get; set; }//;
+        public string[] AllowedCidrs { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -115,7 +115,7 @@ namespace _cloud_loadbalancing_loadbalancer {
         
         // Key: address Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public System.Net.IPAddress Address { get; set; }//;
+        public string Address { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

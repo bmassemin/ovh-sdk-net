@@ -136,7 +136,7 @@ namespace _dedicated_server {
         
         // Key: ipBlock Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipBlock")]
-        public System.Net.IPNetwork IpBlock { get; set; }//;
+        public string IpBlock { get; set; }//;
         
         // Key: isApplied Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isApplied")]
@@ -914,7 +914,7 @@ namespace _dedicated_server {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: linkSpeed Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("linkSpeed")]
@@ -1014,7 +1014,7 @@ namespace _dedicated_server {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: linkSpeed Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("linkSpeed")]
@@ -1117,7 +1117,7 @@ namespace _dedicated_server {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: mode Type: dedicated.server.FirewallModeEnum FullType: dedicated.server.FirewallModeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mode")]
@@ -1512,7 +1512,7 @@ namespace _dedicated_server {
         
         // Key: macs Type: macAddress[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("macs")]
-        public System.Net.NetworkInformation.PhysicalAddress[] Macs { get; set; }//;
+        public string[] Macs { get; set; }//;
         
         // Key: type Type: dedicated.server.NetworkingTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -2149,15 +2149,15 @@ namespace _dedicated_server {
         
         // Key: gateway Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public System.Net.IPAddress Gateway { get; set; }//;
+        public string Gateway { get; set; }//;
         
         // Key: ip Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: network Type: ipv4Block FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public System.Net.IPNetwork Network { get; set; }//;
+        public string Network { get; set; }//;
     }
     
     // Id: RoutingDetailsIpv6 Namespace: dedicated.server
@@ -2165,15 +2165,15 @@ namespace _dedicated_server {
         
         // Key: gateway Type: ipv6 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public System.Net.IPAddress Gateway { get; set; }//;
+        public string Gateway { get; set; }//;
         
         // Key: ip Type: ipv6Block FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: network Type: ipv6Block FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public System.Net.IPNetwork Network { get; set; }//;
+        public string Network { get; set; }//;
     }
     
     // Id: ServerBurst Namespace: dedicated.server
@@ -2395,7 +2395,7 @@ namespace _dedicated_server {
         
         // Key: ipAddress Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipAddress")]
-        public System.Net.IPAddress IpAddress { get; set; }//;
+        public string IpAddress { get; set; }//;
         
         // Key: virtualMachineName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("virtualMachineName")]
@@ -2461,7 +2461,7 @@ namespace _dedicated_server {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

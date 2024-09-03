@@ -234,7 +234,7 @@ namespace _cloud_project_database {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: status Type: cloud.project.database.StatusEnum FullType: cloud.project.database.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -250,7 +250,7 @@ namespace _cloud_project_database {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
     
     // Id: LogSubscriptionCreation Namespace: cloud.project.database

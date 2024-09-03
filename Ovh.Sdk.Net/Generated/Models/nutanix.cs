@@ -206,7 +206,7 @@ namespace _nutanix {
         
         // Key: gatewayCidr Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayCidr")]
-        public System.Net.IPNetwork GatewayCidr { get; set; }//;
+        public string GatewayCidr { get; set; }//;
         
         // Key: infraVlanNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("infraVlanNumber")]
@@ -214,7 +214,7 @@ namespace _nutanix {
         
         // Key: ipfo Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipfo")]
-        public System.Net.IPNetwork Ipfo { get; set; }//;
+        public string Ipfo { get; set; }//;
         
         // Key: iplb Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iplb")]
@@ -234,7 +234,7 @@ namespace _nutanix {
         
         // Key: prismElementVip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prismElementVip")]
-        public System.Net.IPAddress PrismElementVip { get; set; }//;
+        public string PrismElementVip { get; set; }//;
         
         // Key: prismSecretId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prismSecretId")]
@@ -262,11 +262,11 @@ namespace _nutanix {
         
         // Key: ahvIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ahvIp")]
-        public System.Net.IPAddress AhvIp { get; set; }//;
+        public string AhvIp { get; set; }//;
         
         // Key: cvmIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cvmIp")]
-        public System.Net.IPAddress CvmIp { get; set; }//;
+        public string CvmIp { get; set; }//;
         
         // Key: server Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
@@ -288,7 +288,7 @@ namespace _nutanix {
         
         // Key: ips Type: ipv4[] FullType: ipv4[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ips")]
-        public System.Net.IPAddress[] Ips { get; set; }//;
+        public string[] Ips { get; set; }//;
         
         // Key: type Type: nutanix.pctypeEnum FullType: nutanix.pctypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -296,7 +296,7 @@ namespace _nutanix {
         
         // Key: vip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vip")]
-        public System.Net.IPAddress Vip { get; set; }//;
+        public string Vip { get; set; }//;
     }
     
     // Id: state Namespace: nutanix

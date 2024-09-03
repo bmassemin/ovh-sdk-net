@@ -59,7 +59,7 @@ namespace _domain_zone_dynHost {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: subDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subDomain")]

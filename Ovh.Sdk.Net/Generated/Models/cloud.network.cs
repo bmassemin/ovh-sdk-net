@@ -79,7 +79,7 @@ namespace _cloud_network {
         
         // Key: cidr Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cidr")]
-        public System.Net.IPNetwork Cidr { get; set; }//;
+        public string Cidr { get; set; }//;
         
         // Key: enableDhcp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enableDhcp")]
@@ -95,7 +95,7 @@ namespace _cloud_network {
         
         // Key: cidr Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cidr")]
-        public System.Net.IPNetwork Cidr { get; set; }//;
+        public string Cidr { get; set; }//;
         
         // Key: enableDhcp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enableDhcp")]
@@ -189,11 +189,11 @@ namespace _cloud_network {
         
         // Key: end Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("end")]
-        public System.Net.IPAddress End { get; set; }//;
+        public string End { get; set; }//;
         
         // Key: network Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public System.Net.IPNetwork Network { get; set; }//;
+        public string Network { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -201,7 +201,7 @@ namespace _cloud_network {
         
         // Key: start Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("start")]
-        public System.Net.IPAddress Start { get; set; }//;
+        public string Start { get; set; }//;
     }
     
     // Id: Network Namespace: cloud.network
@@ -296,7 +296,7 @@ namespace _cloud_network {
         
         // Key: cidr Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cidr")]
-        public System.Net.IPNetwork Cidr { get; set; }//;
+        public string Cidr { get; set; }//;
         
         // Key: dhcpEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dhcpEnabled")]
@@ -304,7 +304,7 @@ namespace _cloud_network {
         
         // Key: gatewayIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayIp")]
-        public System.Net.IPAddress GatewayIp { get; set; }//;
+        public string GatewayIp { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]

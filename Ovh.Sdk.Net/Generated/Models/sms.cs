@@ -176,7 +176,7 @@ namespace _sms {
         
         // Key: ips Type: ip[] FullType: ip[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ips")]
-        public System.Net.IPAddress[] Ips { get; set; }//;
+        public string[] Ips { get; set; }//;
     }
     
     // Id: AllowedIPsActionEnum Namespace: sms

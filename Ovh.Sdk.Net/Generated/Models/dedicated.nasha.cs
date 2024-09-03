@@ -23,7 +23,7 @@ namespace _dedicated_nasha {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: type Type: dedicated.storage.AclTypeEnum FullType: dedicated.storage.AclTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -99,7 +99,7 @@ namespace _dedicated_nasha {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: monitored Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitored")]
@@ -143,7 +143,7 @@ namespace _dedicated_nasha {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: monitored Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitored")]

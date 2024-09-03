@@ -192,15 +192,15 @@ namespace _ipLoadbalancing {
         
         // Key: ipLoadbalancing Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLoadbalancing")]
-        public System.Net.IPAddress IpLoadbalancing { get; set; }//;
+        public string IpLoadbalancing { get; set; }//;
         
         // Key: ipv4 Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public System.Net.IPAddress Ipv4 { get; set; }//;
+        public string Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPAddress Ipv6 { get; set; }//;
+        public string Ipv6 { get; set; }//;
         
         // Key: metricsToken Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metricsToken")]
@@ -274,15 +274,15 @@ namespace _ipLoadbalancing {
         
         // Key: ipLoadbalancing Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLoadbalancing")]
-        public System.Net.IPAddress IpLoadbalancing { get; set; }//;
+        public string IpLoadbalancing { get; set; }//;
         
         // Key: ipv4 Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public System.Net.IPAddress Ipv4 { get; set; }//;
+        public string Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPAddress Ipv6 { get; set; }//;
+        public string Ipv6 { get; set; }//;
         
         // Key: metricsToken Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metricsToken")]
@@ -338,7 +338,7 @@ namespace _ipLoadbalancing {
         
         // Key: ip Type: ipBlock[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork[] Ip { get; set; }//;
+        public string[] Ip { get; set; }//;
         
         // Key: zone Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
@@ -831,11 +831,11 @@ namespace _ipLoadbalancing {
         
         // Key: address Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public System.Net.IPAddress Address { get; set; }//;
+        public string Address { get; set; }//;
         
         // Key: gateway Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public System.Net.IPAddress Gateway { get; set; }//;
+        public string Gateway { get; set; }//;
         
         // Key: vlan Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vlan")]

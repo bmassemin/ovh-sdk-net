@@ -159,11 +159,11 @@ namespace _hosting_web_attachedDomain {
         
         // Key: recommendedIpV4 Type: ipv4[] FullType: ipv4[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recommendedIpV4")]
-        public System.Net.IPAddress[] RecommendedIpV4 { get; set; }//;
+        public string[] RecommendedIpV4 { get; set; }//;
         
         // Key: recommendedIpV6 Type: ipv6[] FullType: ipv6[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recommendedIpV6")]
-        public System.Net.IPAddress[] RecommendedIpV6 { get; set; }//;
+        public string[] RecommendedIpV6 { get; set; }//;
     }
     
     // Id: RecordStatus Namespace: hosting.web.attachedDomain

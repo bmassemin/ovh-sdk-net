@@ -63,7 +63,7 @@ namespace _auth {
         
         // Key: allowedIPs Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedIPs")]
-        public System.Net.IPNetwork[] AllowedIPs { get; set; }//;
+        public string[] AllowedIPs { get; set; }//;
         
         // Key: applicationId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("applicationId")]
@@ -123,7 +123,7 @@ namespace _auth {
         
         // Key: allowedIPs Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedIPs")]
-        public System.Net.IPNetwork[] AllowedIPs { get; set; }//;
+        public string[] AllowedIPs { get; set; }//;
         
         // Key: redirection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirection")]

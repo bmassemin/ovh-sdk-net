@@ -23,7 +23,7 @@ namespace _cloud_loadbalancing {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
     
     // Id: CreateFloatingIp Namespace: cloud.loadbalancing
@@ -35,7 +35,7 @@ namespace _cloud_loadbalancing {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
     
     // Id: CreateListener Namespace: cloud.loadbalancing
@@ -43,7 +43,7 @@ namespace _cloud_loadbalancing {
         
         // Key: allowedCidrs Type: ipv4Block[] FullType: ipv4Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedCidrs")]
-        public System.Net.IPNetwork[] AllowedCidrs { get; set; }//;
+        public string[] AllowedCidrs { get; set; }//;
         
         // Key: certificateId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificateId")]
@@ -91,7 +91,7 @@ namespace _cloud_loadbalancing {
         
         // Key: allowedCidrs Type: ipv4Block[] FullType: ipv4Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedCidrs")]
-        public System.Net.IPNetwork[] AllowedCidrs { get; set; }//;
+        public string[] AllowedCidrs { get; set; }//;
         
         // Key: certificateId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificateId")]
@@ -448,7 +448,7 @@ namespace _cloud_loadbalancing {
         
         // Key: allowedCidrs Type: ipv4Block[] FullType: ipv4Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedCidrs")]
-        public System.Net.IPNetwork[] AllowedCidrs { get; set; }//;
+        public string[] AllowedCidrs { get; set; }//;
         
         // Key: certificateId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificateId")]
@@ -588,7 +588,7 @@ namespace _cloud_loadbalancing {
         
         // Key: vipAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vipAddress")]
-        public System.Net.IPAddress VipAddress { get; set; }//;
+        public string VipAddress { get; set; }//;
         
         // Key: vipNetworkId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vipNetworkId")]

@@ -15,7 +15,7 @@ namespace _xdsl_modem_portMappings {
         
         // Key: allowedRemoteIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedRemoteIp")]
-        public System.Net.IPAddress AllowedRemoteIp { get; set; }//;
+        public string AllowedRemoteIp { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -31,7 +31,7 @@ namespace _xdsl_modem_portMappings {
         
         // Key: internalClient Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internalClient")]
-        public System.Net.IPAddress InternalClient { get; set; }//;
+        public string InternalClient { get; set; }//;
         
         // Key: internalPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internalPort")]

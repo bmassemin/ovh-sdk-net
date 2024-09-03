@@ -19,6 +19,6 @@ namespace _vps_secondaryDnsDomains {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
 }

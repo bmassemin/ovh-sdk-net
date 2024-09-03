@@ -23,7 +23,7 @@ namespace _audit {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: loginSuccessDetails Type: audit.LogLoginSuccessDetails FullType: audit.LogLoginSuccessDetails
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("loginSuccessDetails")]

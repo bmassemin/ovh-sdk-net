@@ -119,15 +119,15 @@ namespace _dedicated_housing {
         
         // Key: gateway Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public System.Net.IPAddress Gateway { get; set; }//;
+        public string Gateway { get; set; }//;
         
         // Key: network Type: ipBlock FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public System.Net.IPNetwork Network { get; set; }//;
+        public string Network { get; set; }//;
         
         // Key: reservedAddresses Type: ip[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reservedAddresses")]
-        public System.Net.IPAddress[] ReservedAddresses { get; set; }//;
+        public string[] ReservedAddresses { get; set; }//;
     }
     
     // Id: LinkInfo Namespace: dedicated.housing

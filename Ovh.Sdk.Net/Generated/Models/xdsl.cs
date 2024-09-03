@@ -445,7 +445,7 @@ namespace _xdsl {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: lastSpamDetected Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastSpamDetected")]
@@ -521,7 +521,7 @@ namespace _xdsl {
         
         // Key: defaultGateway Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultGateway")]
-        public System.Net.IPAddress DefaultGateway { get; set; }//;
+        public string DefaultGateway { get; set; }//;
         
         // Key: dhcpName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dhcpName")]
@@ -533,7 +533,7 @@ namespace _xdsl {
         
         // Key: endAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endAddress")]
-        public System.Net.IPAddress EndAddress { get; set; }//;
+        public string EndAddress { get; set; }//;
         
         // Key: leaseTime Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("leaseTime")]
@@ -541,11 +541,11 @@ namespace _xdsl {
         
         // Key: primaryDNS Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("primaryDNS")]
-        public System.Net.IPAddress PrimaryDNS { get; set; }//;
+        public string PrimaryDNS { get; set; }//;
         
         // Key: secondaryDNS Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("secondaryDNS")]
-        public System.Net.IPAddress SecondaryDNS { get; set; }//;
+        public string SecondaryDNS { get; set; }//;
         
         // Key: serverEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverEnabled")]
@@ -553,11 +553,11 @@ namespace _xdsl {
         
         // Key: startAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startAddress")]
-        public System.Net.IPAddress StartAddress { get; set; }//;
+        public string StartAddress { get; set; }//;
         
         // Key: subnetMask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnetMask")]
-        public System.Net.IPAddress SubnetMask { get; set; }//;
+        public string SubnetMask { get; set; }//;
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
@@ -569,7 +569,7 @@ namespace _xdsl {
         
         // Key: IPAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("IPAddress")]
-        public System.Net.IPAddress IPAddress { get; set; }//;
+        public string IPAddress { get; set; }//;
         
         // Key: MACAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("MACAddress")]
@@ -628,7 +628,7 @@ namespace _xdsl {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -741,7 +741,7 @@ namespace _xdsl {
         
         // Key: ipRange Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipRange")]
-        public System.Net.IPNetwork IpRange { get; set; }//;
+        public string IpRange { get; set; }//;
         
         // Key: moveTo Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("moveTo")]
@@ -871,11 +871,11 @@ namespace _xdsl {
         
         // Key: dnsList Type: ip[] FullType: ip[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnsList")]
-        public System.Net.IPAddress[] DnsList { get; set; }//;
+        public string[] DnsList { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress _Ip { get; set; }//;
+        public string _Ip { get; set; }//;
         
         // Key: range Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("range")]
@@ -948,7 +948,7 @@ namespace _xdsl {
         
         // Key: IPAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("IPAddress")]
-        public System.Net.IPAddress IPAddress { get; set; }//;
+        public string IPAddress { get; set; }//;
         
         // Key: addressingType Type: xdsl.xdslModemConfig.AddressingTypeEnum FullType: xdsl.xdslModemConfig.AddressingTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("addressingType")]
@@ -960,7 +960,7 @@ namespace _xdsl {
         
         // Key: subnetMask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnetMask")]
-        public System.Net.IPAddress SubnetMask { get; set; }//;
+        public string SubnetMask { get; set; }//;
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
@@ -1142,7 +1142,7 @@ namespace _xdsl {
         
         // Key: dmzIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dmzIP")]
-        public System.Net.IPAddress DmzIP { get; set; }//;
+        public string DmzIP { get; set; }//;
         
         // Key: easyFirewallLevel Type: xdsl.xdslModemConfig.EasyFirewallLevelEnum FullType: xdsl.xdslModemConfig.EasyFirewallLevelEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("easyFirewallLevel")]
@@ -1375,7 +1375,7 @@ namespace _xdsl {
         
         // Key: allowedRemoteIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedRemoteIp")]
-        public System.Net.IPAddress AllowedRemoteIp { get; set; }//;
+        public string AllowedRemoteIp { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -1395,7 +1395,7 @@ namespace _xdsl {
         
         // Key: internalClient Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internalClient")]
-        public System.Net.IPAddress InternalClient { get; set; }//;
+        public string InternalClient { get; set; }//;
         
         // Key: internalPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internalPort")]
@@ -1726,7 +1726,7 @@ namespace _xdsl {
         
         // Key: dmzIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dmzIP")]
-        public System.Net.IPAddress DmzIP { get; set; }//;
+        public string DmzIP { get; set; }//;
         
         // Key: mtuSize Type: xdsl.xdslModemConfig.MTUSizeEnum FullType: xdsl.xdslModemConfig.MTUSizeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mtuSize")]
@@ -1844,7 +1844,7 @@ namespace _xdsl {
         
         // Key: ipAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipAddress")]
-        public System.Net.IPAddress IpAddress { get; set; }//;
+        public string IpAddress { get; set; }//;
         
         // Key: leaseTimeRemaining Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("leaseTimeRemaining")]

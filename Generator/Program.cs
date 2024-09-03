@@ -1,8 +1,5 @@
-﻿using System;
-using System.CodeDom;
+﻿using System.CodeDom;
 using System.CodeDom.Compiler;
-using System.ComponentModel;
-using System.Diagnostics;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Reflection;
@@ -112,6 +109,8 @@ foreach (var codeNamespace in namespaces)
 
 var methodUnit = new CodeCompileUnit();
 var methodNamespace = new CodeNamespace("Ovh.Sdk.Net");
+methodNamespace.Imports.Add(new CodeNamespaceImport("System.Net.Http"));
+methodNamespace.Imports.Add(new CodeNamespaceImport("System.Net.Http.Json"));
 methodUnit.Namespaces.Add(methodNamespace);
 var clientClass = new CodeTypeDeclaration("Client")
 {
@@ -119,6 +118,21 @@ var clientClass = new CodeTypeDeclaration("Client")
     TypeAttributes = TypeAttributes.Public,
 };
 methodNamespace.Types.Add(clientClass);
+CodeMemberField clientField = new CodeMemberField("HttpClient", "_client")
+{
+    Attributes = MemberAttributes.Private | MemberAttributes.Final
+};
+clientClass.Members.Add(clientField);
+CodeConstructor constructor = new CodeConstructor
+{
+    Attributes = MemberAttributes.Public
+};
+constructor.Parameters.Add(new CodeParameterDeclarationExpression("HttpClient", "client"));
+constructor.Statements.Add(new CodeAssignStatement(
+    new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "_client"),
+    new CodeArgumentReferenceExpression("client")
+));
+clientClass.Members.Add(constructor);
 
 foreach (var apis in definitions)
 {
@@ -127,15 +141,18 @@ foreach (var apis in definitions)
         var path = GetMethodName(api.Path);
         foreach (var operation in api.Operations)
         {
+            string innerCodeType = null!;
             var code = new CodeMemberMethod
             {
                 Name = operation.HttpMethod.ToLower().FirstCharToUpper() + path,
                 Comments = { new CodeCommentStatement($"Path: {api.Path}") },
+                // ReSharper disable once BitwiseOperatorOnEnumWithoutFlags
                 Attributes = MemberAttributes.Public | MemberAttributes.Final,
             };
             if (operation.ResponseType != null && operation.ResponseType != "void")
             {
-                code.ReturnType = new CodeTypeReference("Task<" + GetCodeType(operation.ResponseType) + ">");
+                innerCodeType = GetCodeType(operation.ResponseType);
+                code.ReturnType = new CodeTypeReference("Task<" + innerCodeType + ">");
                 var returnStatement = new CodeMethodReturnStatement(new CodeDefaultValueExpression(code.ReturnType));
                 code.Statements.Add(returnStatement);
             }
@@ -155,6 +172,56 @@ foreach (var apis in definitions)
                 code.Parameters.Add(param);
             }
 
+            switch (operation.HttpMethod)
+            {
+                case "GET":
+                    var finalPath = api.Path;
+                    var pathParameters = operation.Parameters.Where(x => x.ParamType == "path").ToArray();
+                    var queryParameters = operation.Parameters.Where(x => x.ParamType == "query").ToArray();
+                    if (queryParameters.Any())
+                        finalPath += "?{queryParameters}";
+
+                    var callParams = new List<CodeExpression>();
+                    if (pathParameters.Any() || queryParameters.Any())
+                    {
+                        if (queryParameters.Any())
+                        {
+                        }
+
+                        var stringFormatParams = new List<CodeExpression>
+                        {
+                            new CodePrimitiveExpression(finalPath)
+                        };
+                        var formatParams = new List<CodeVariableReferenceExpression>();
+                        foreach (var parameter in pathParameters)
+                            formatParams.Add(new CodeVariableReferenceExpression(parameter.Name));
+                        if (queryParameters.Any())
+                            formatParams.Add(new CodeVariableReferenceExpression("queryParameters"));
+                        stringFormatParams.AddRange(formatParams);
+                        var stringFormat = new CodeMethodInvokeExpression(new CodeMethodReferenceExpression(new CodeTypeReferenceExpression(typeof(string)), "Format"),
+                            stringFormatParams.ToArray());
+                        callParams.Add(stringFormat);
+                    }
+                    else
+                    {
+                        callParams.Add(new CodePrimitiveExpression(finalPath));
+                    }
+
+                    var getFromJsonAsyncCall = new CodeMethodReturnStatement(
+                        new CodeMethodInvokeExpression(
+                            new CodeMethodReferenceExpression(
+                                new CodeVariableReferenceExpression("_client"),
+                                "GetFromJsonAsync",
+                                new CodeTypeReference(innerCodeType)
+                            ),
+                            callParams.ToArray()
+                        )
+                    );
+                    code.Statements.Clear();
+                    code.Statements.Add(getFromJsonAsyncCall);
+                    break;
+            }
+
             clientClass.Members.Add(code);
         }
     }
@@ -164,6 +231,38 @@ var methodProvider = new CSharpCodeProvider();
 var methodPath = Path.Combine(rootPath, "Client");
 await using StreamWriter swMethod = new StreamWriter($"{methodPath}.cs", true);
 methodProvider.GenerateCodeFromCompileUnit(methodUnit, swMethod, new CodeGeneratorOptions());
+
+CodeStatement[]? GenerateQueryParams(Operation operation)
+{
+    if (operation.Parameters.All(x => x.ParamType != "query"))
+        return null;
+
+    var queryParams = operation.Parameters.Where(x => x.ParamType == "query").ToArray();
+    var queryParamVariable = new CodeVariableDeclarationStatement(typeof(string), "queryParams", new CodePrimitiveExpression(string.Empty));
+    var queryParamNullityConditions = new List<CodeBinaryOperatorExpression>();
+    foreach (var param in queryParams)
+    {
+        var ifStatement = new CodeBinaryOperatorExpression(
+            new CodeVariableReferenceExpression(CleanParamName(param.Name!)),
+            CodeBinaryOperatorType.IdentityInequality,
+            new CodePrimitiveExpression(null)
+        );
+        queryParamNullityConditions.Add(ifStatement);
+    }
+
+    var lastIf = queryParamNullityConditions[0];
+    for (int i = 1; i < queryParamNullityConditions.Count - 1; i++)
+    {
+        lastIf = new CodeBinaryOperatorExpression
+        {
+            Left = lastIf,
+            Right = queryParamNullityConditions[i],
+            Operator = CodeBinaryOperatorType.BooleanOr
+        };
+    }
+
+    return [queryParamVariable, new CodeConditionStatement(lastIf)];
+}
 
 string CleanParamName(string value)
 {
@@ -241,7 +340,7 @@ string GetCodeType(string strType)
         return $"Dictionary<{type1}, {type2}>";
     }
 
-    return strType switch
+    return (strType switch
     {
         "email.domain.DomainDiagnoseTraceStruct<email.domain.DomainDiagnoseResultEnum>[]" => "_email_domain.DomainDiagnoseTraceStruct<_email_domain.DomainDiagnoseResultEnum>[]",
         "coreTypes.AccountId:string" => typeof(string).FullName,
@@ -259,35 +358,35 @@ string GetCodeType(string strType)
         "uuid[]" => typeof(Guid[]).FullName,
         "map[string]string" => typeof(Dictionary<string, string>).FullName,
         "map[string]long" => typeof(Dictionary<string, long>).FullName,
-        "ipBlock" => typeof(IPNetwork).FullName,
-        "ipBlock[]" => typeof(IPNetwork[]).FullName,
+        "ipBlock" => typeof(string).FullName,
+        "ipBlock[]" => typeof(string[]).FullName,
         "password" => typeof(string).FullName,
         "string[]" => typeof(string[]).FullName,
-        "ipv4" => typeof(IPAddress).FullName,
-        "ipv4[]" => typeof(IPAddress[]).FullName,
-        "ipv6" => typeof(IPAddress).FullName,
-        "ipv6[]" => typeof(IPAddress[]).FullName,
-        "ipv4Block" => typeof(IPNetwork).FullName,
-        "ipv4Block[]" => typeof(IPNetwork[]).FullName,
-        "ipv6Block" => typeof(IPNetwork).FullName,
-        "ipv6Block[]" => typeof(IPNetwork[]).FullName,
+        "ipv4" => typeof(string).FullName,
+        "ipv4[]" => typeof(string[]).FullName,
+        "ipv6" => typeof(string).FullName,
+        "ipv6[]" => typeof(string[]).FullName,
+        "ipv4Block" => typeof(string).FullName,
+        "ipv4Block[]" => typeof(string[]).FullName,
+        "ipv6Block" => typeof(string).FullName,
+        "ipv6Block[]" => typeof(string[]).FullName,
         "text" => typeof(string).FullName,
-        "ip" => typeof(IPAddress).FullName,
-        "ip[]" => typeof(IPAddress[]).FullName,
+        "ip" => typeof(string).FullName,
+        "ip[]" => typeof(string[]).FullName,
         "duration" => typeof(TimeSpan).FullName,
         "duration[]" => typeof(TimeSpan[]).FullName,
         "double" => typeof(double).FullName,
         "double[]" => typeof(double[]).FullName,
         "T" => "T",
         "T[]" => "T[]",
-        "macAddress" => typeof(PhysicalAddress).FullName,
-        "macAddress[]" => typeof(PhysicalAddress[]).FullName,
+        "macAddress" => typeof(string).FullName,
+        "macAddress[]" => typeof(string[]).FullName,
         "phoneNumber" => typeof(string).FullName,
         "phoneNumber[]" => typeof(string[]).FullName,
         "internationalPhoneNumber" => typeof(string).FullName,
         "internationalPhoneNumber[]" => typeof(string[]).FullName,
         _ => CleanType(strType)
-    };
+    })!;
 }
 
 string CleanType(string value)

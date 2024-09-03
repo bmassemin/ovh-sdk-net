@@ -39,7 +39,7 @@ namespace _cloud_project_database_service_currentqueries {
         
         // Key: clientIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientIp")]
-        public System.Net.IPAddress ClientIp { get; set; }//;
+        public string ClientIp { get; set; }//;
         
         // Key: clientPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientPort")]

@@ -23,11 +23,11 @@ namespace _ipLoadbalancing_VrackNetwork {
         
         // Key: natIp Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("natIp")]
-        public System.Net.IPNetwork NatIp { get; set; }//;
+        public string NatIp { get; set; }//;
         
         // Key: subnet Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnet")]
-        public System.Net.IPNetwork Subnet { get; set; }//;
+        public string Subnet { get; set; }//;
         
         // Key: vlan Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vlan")]

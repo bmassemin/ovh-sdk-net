@@ -15,11 +15,11 @@ namespace _cloud_project {
         
         // Key: end Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("end")]
-        public System.Net.IPAddress End { get; set; }//;
+        public string End { get; set; }//;
         
         // Key: start Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("start")]
-        public System.Net.IPAddress Start { get; set; }//;
+        public string Start { get; set; }//;
     }
     
     // Id: ApplicationLoadBalancer Namespace: cloud.project
@@ -307,7 +307,7 @@ namespace _cloud_project {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: networkId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkId")]
@@ -726,7 +726,7 @@ namespace _cloud_project {
         
         // Key: cidr Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cidr")]
-        public System.Net.IPNetwork Cidr { get; set; }//;
+        public string Cidr { get; set; }//;
         
         // Key: dhcpEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dhcpEnabled")]
@@ -734,7 +734,7 @@ namespace _cloud_project {
         
         // Key: gatewayIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayIp")]
-        public System.Net.IPAddress GatewayIp { get; set; }//;
+        public string GatewayIp { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]

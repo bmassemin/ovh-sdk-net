@@ -153,7 +153,7 @@ namespace _vps {
         
         // Key: gateway Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public System.Net.IPAddress Gateway { get; set; }//;
+        public string Gateway { get; set; }//;
         
         // Key: geolocation Type: vps.ip.GeolocationEnum FullType: vps.ip.GeolocationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("geolocation")]
@@ -161,7 +161,7 @@ namespace _vps {
         
         // Key: ipAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipAddress")]
-        public System.Net.IPAddress IpAddress { get; set; }//;
+        public string IpAddress { get; set; }//;
         
         // Key: macAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("macAddress")]
@@ -510,7 +510,7 @@ namespace _vps {
         
         // Key: monitoringIpBlocks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoringIpBlocks")]
-        public System.Net.IPNetwork[] MonitoringIpBlocks { get; set; }//;
+        public string[] MonitoringIpBlocks { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -570,7 +570,7 @@ namespace _vps {
         
         // Key: monitoringIpBlocks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoringIpBlocks")]
-        public System.Net.IPNetwork[] MonitoringIpBlocks { get; set; }//;
+        public string[] MonitoringIpBlocks { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

@@ -47,7 +47,7 @@ namespace _ovhcloudconnect {
         
         // Key: subnet Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnet")]
-        public System.Net.IPNetwork Subnet { get; set; }//;
+        public string Subnet { get; set; }//;
     }
     
     // Id: DatacenterExtraConfig Namespace: ovhcloudconnect
@@ -59,7 +59,7 @@ namespace _ovhcloudconnect {
         
         // Key: bgpNeighborIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bgpNeighborIp")]
-        public System.Net.IPAddress BgpNeighborIp { get; set; }//;
+        public string BgpNeighborIp { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -67,7 +67,7 @@ namespace _ovhcloudconnect {
         
         // Key: nextHop Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nextHop")]
-        public System.Net.IPAddress NextHop { get; set; }//;
+        public string NextHop { get; set; }//;
         
         // Key: status Type: ovhcloudconnect.popConfig.StatusEnum FullType: ovhcloudconnect.popConfig.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -75,7 +75,7 @@ namespace _ovhcloudconnect {
         
         // Key: subnet Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnet")]
-        public System.Net.IPNetwork Subnet { get; set; }//;
+        public string Subnet { get; set; }//;
         
         // Key: type Type: ovhcloudconnect.datacenterExtraConfig.TypeEnum FullType: ovhcloudconnect.datacenterExtraConfig.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -143,7 +143,7 @@ namespace _ovhcloudconnect {
         
         // Key: mac Type: macAddress FullType: macAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mac")]
-        public System.Net.NetworkInformation.PhysicalAddress Mac { get; set; }//;
+        public string Mac { get; set; }//;
         
         // Key: med Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("med")]
@@ -155,7 +155,7 @@ namespace _ovhcloudconnect {
         
         // Key: prefix Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public System.Net.IPNetwork Prefix { get; set; }//;
+        public string Prefix { get; set; }//;
         
         // Key: routermac Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routermac")]
@@ -327,7 +327,7 @@ namespace _ovhcloudconnect {
         
         // Key: subnet Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnet")]
-        public System.Net.IPNetwork Subnet { get; set; }//;
+        public string Subnet { get; set; }//;
         
         // Key: type Type: ovhcloudconnect.popConfig.TypeEnum FullType: ovhcloudconnect.popConfig.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]

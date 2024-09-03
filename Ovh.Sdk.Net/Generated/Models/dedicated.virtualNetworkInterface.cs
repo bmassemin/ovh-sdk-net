@@ -27,7 +27,7 @@ namespace _dedicated_virtualNetworkInterface {
         
         // Key: networkInterfaceController Type: macAddress[] FullType: macAddress[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkInterfaceController")]
-        public System.Net.NetworkInformation.PhysicalAddress[] NetworkInterfaceController { get; set; }//;
+        public string[] NetworkInterfaceController { get; set; }//;
         
         // Key: serverName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverName")]

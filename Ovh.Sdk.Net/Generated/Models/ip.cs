@@ -23,7 +23,7 @@ namespace _ip {
         
         // Key: ipOnAntiphishing Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipOnAntiphishing")]
-        public System.Net.IPAddress IpOnAntiphishing { get; set; }//;
+        public string IpOnAntiphishing { get; set; }//;
         
         // Key: state Type: ip.AntiphishingStateEnum FullType: ip.AntiphishingStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -59,7 +59,7 @@ namespace _ip {
         
         // Key: ipBlocked Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipBlocked")]
-        public System.Net.IPAddress IpBlocked { get; set; }//;
+        public string IpBlocked { get; set; }//;
         
         // Key: logs Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logs")]
@@ -93,7 +93,7 @@ namespace _ip {
         
         // Key: ipBlocked Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipBlocked")]
-        public System.Net.IPAddress IpBlocked { get; set; }//;
+        public string IpBlocked { get; set; }//;
         
         // Key: logs Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logs")]
@@ -123,11 +123,11 @@ namespace _ip {
         
         // Key: aggregationIp Type: ipBlock FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("aggregationIp")]
-        public System.Net.IPNetwork AggregationIp { get; set; }//;
+        public string AggregationIp { get; set; }//;
         
         // Key: childrenIps Type: ipBlock[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("childrenIps")]
-        public System.Net.IPNetwork[] ChildrenIps { get; set; }//;
+        public string[] ChildrenIps { get; set; }//;
     }
     
     // Id: ByoipSlicingPreview Namespace: ip
@@ -135,7 +135,7 @@ namespace _ip {
         
         // Key: childrenIps Type: ipBlock[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("childrenIps")]
-        public System.Net.IPNetwork[] ChildrenIps { get; set; }//;
+        public string[] ChildrenIps { get; set; }//;
         
         // Key: slicingSize Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slicingSize")]
@@ -264,7 +264,7 @@ namespace _ip {
         
         // Key: ipOnFirewall Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipOnFirewall")]
-        public System.Net.IPAddress IpOnFirewall { get; set; }//;
+        public string IpOnFirewall { get; set; }//;
         
         // Key: state Type: ip.FirewallStateEnum FullType: ip.FirewallStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -449,7 +449,7 @@ namespace _ip {
         
         // Key: ipOnGame Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipOnGame")]
-        public System.Net.IPAddress IpOnGame { get; set; }//;
+        public string IpOnGame { get; set; }//;
         
         // Key: maxRules Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxRules")]
@@ -581,7 +581,7 @@ namespace _ip {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork _Ip { get; set; }//;
+        public string _Ip { get; set; }//;
         
         // Key: isAdditionalIp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isAdditionalIp")]
@@ -749,7 +749,7 @@ namespace _ip {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: isAdditionalIp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isAdditionalIp")]
@@ -789,7 +789,7 @@ namespace _ip {
         
         // Key: ipOnMitigation Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipOnMitigation")]
-        public System.Net.IPAddress IpOnMitigation { get; set; }//;
+        public string IpOnMitigation { get; set; }//;
         
         // Key: permanent Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("permanent")]
@@ -809,7 +809,7 @@ namespace _ip {
         
         // Key: ipMitigationProfile Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipMitigationProfile")]
-        public System.Net.IPAddress IpMitigationProfile { get; set; }//;
+        public string IpMitigationProfile { get; set; }//;
         
         // Key: state Type: ip.MitigationProfileStateEnum FullType: ip.MitigationProfileStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -866,7 +866,7 @@ namespace _ip {
         
         // Key: ipReverse Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipReverse")]
-        public System.Net.IPAddress IpReverse { get; set; }//;
+        public string IpReverse { get; set; }//;
         
         // Key: reverse Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reverse")]
@@ -910,7 +910,7 @@ namespace _ip {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: organisationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationId")]
@@ -946,7 +946,7 @@ namespace _ip {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: organisationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationId")]
@@ -970,7 +970,7 @@ namespace _ip {
         
         // Key: ipSpamming Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipSpamming")]
-        public System.Net.IPAddress IpSpamming { get; set; }//;
+        public string IpSpamming { get; set; }//;
         
         // Key: state Type: ip.SpamStateEnum FullType: ip.SpamStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1027,7 +1027,7 @@ namespace _ip {
         
         // Key: destinationIp Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destinationIp")]
-        public System.Net.IPAddress DestinationIp { get; set; }//;
+        public string DestinationIp { get; set; }//;
         
         // Key: messageId Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("messageId")]

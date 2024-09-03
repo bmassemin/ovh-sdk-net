@@ -19,7 +19,7 @@ namespace _domain_glueRecord {
         
         // Key: ips Type: ip[] FullType: ip[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ips")]
-        public System.Net.IPAddress[] Ips { get; set; }//;
+        public string[] Ips { get; set; }//;
     }
     
     // Id: GlueRecord Namespace: domain.glueRecord
@@ -31,6 +31,6 @@ namespace _domain_glueRecord {
         
         // Key: ips Type: ip[] FullType: ip[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ips")]
-        public System.Net.IPAddress[] Ips { get; set; }//;
+        public string[] Ips { get; set; }//;
     }
 }

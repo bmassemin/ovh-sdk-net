@@ -19,7 +19,7 @@ namespace _dedicatedCloud {
         
         // Key: network Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public System.Net.IPNetwork Network { get; set; }//;
+        public string Network { get; set; }//;
         
         // Key: networkAccessId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkAccessId")]
@@ -749,7 +749,7 @@ namespace _dedicatedCloud {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: ldapHostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ldapHostname")]
@@ -1111,15 +1111,15 @@ namespace _dedicatedCloud {
         
         // Key: gateway Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public System.Net.IPAddress Gateway { get; set; }//;
+        public string Gateway { get; set; }//;
         
         // Key: netmask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("netmask")]
-        public System.Net.IPAddress Netmask { get; set; }//;
+        public string Netmask { get; set; }//;
         
         // Key: network Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public System.Net.IPNetwork Network { get; set; }//;
+        public string Network { get; set; }//;
         
         // Key: networkName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkName")]
@@ -1191,7 +1191,7 @@ namespace _dedicatedCloud {
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: reverse Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reverse")]
@@ -1293,7 +1293,7 @@ namespace _dedicatedCloud {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: moRef Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("moRef")]
@@ -1425,11 +1425,11 @@ namespace _dedicatedCloud {
         
         // Key: customerIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerIp")]
-        public System.Net.IPAddress CustomerIp { get; set; }//;
+        public string CustomerIp { get; set; }//;
         
         // Key: customerNetmask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerNetmask")]
-        public System.Net.IPAddress CustomerNetmask { get; set; }//;
+        public string CustomerNetmask { get; set; }//;
         
         // Key: customerPortGroup Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerPortGroup")]
@@ -1605,7 +1605,7 @@ namespace _dedicatedCloud {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: logForwardId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logForwardId")]
@@ -1969,7 +1969,7 @@ namespace _dedicatedCloud {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: kmsId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kmsId")]
@@ -2224,7 +2224,7 @@ namespace _dedicatedCloud {
         
         // Key: vROpsPublicIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vROpsPublicIP")]
-        public System.Net.IPAddress VROpsPublicIP { get; set; }//;
+        public string VROpsPublicIP { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
@@ -2240,7 +2240,7 @@ namespace _dedicatedCloud {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: outgoingFlowId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("outgoingFlowId")]
@@ -2829,7 +2829,7 @@ namespace _dedicatedCloud {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: state Type: dedicatedCloud.TwoFAWhitelistStateEnum FullType: dedicatedCloud.TwoFAWhitelistStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]

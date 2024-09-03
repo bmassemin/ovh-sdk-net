@@ -23,7 +23,7 @@ namespace _cloud_project_floatingIp {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: type Type: cloud.project.floatingIp.associatedEntity.TypeEnum FullType: cloud.project.floatingIp.associatedEntity.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]

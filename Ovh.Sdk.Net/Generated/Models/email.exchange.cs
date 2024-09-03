@@ -2936,7 +2936,7 @@ namespace _email_exchange {
         
         // Key: ip Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: status Type: email.exchange.authorizedIpStatusEnum FullType: email.exchange.authorizedIpStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

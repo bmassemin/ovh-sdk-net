@@ -104,7 +104,7 @@ namespace _cluster_hadoop {
         
         // Key: block Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("block")]
-        public System.Net.IPNetwork Block { get; set; }//;
+        public string Block { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -141,7 +141,7 @@ namespace _cluster_hadoop {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: isRemovable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isRemovable")]

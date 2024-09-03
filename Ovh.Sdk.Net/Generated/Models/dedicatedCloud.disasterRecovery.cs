@@ -25,7 +25,7 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: endpointPublicIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endpointPublicIp")]
-        public System.Net.IPAddress EndpointPublicIp { get; set; }//;
+        public string EndpointPublicIp { get; set; }//;
         
         // Key: role Type: dedicatedCloud.disasterRecovery.SiteRoleEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
@@ -45,7 +45,7 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: zvmIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zvmIp")]
-        public System.Net.IPAddress ZvmIp { get; set; }//;
+        public string ZvmIp { get; set; }//;
     }
     
     // Id: Profile Namespace: dedicatedCloud.disasterRecovery
@@ -89,15 +89,15 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: remoteEndpointInternalIp Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteEndpointInternalIp")]
-        public System.Net.IPAddress RemoteEndpointInternalIp { get; set; }//;
+        public string RemoteEndpointInternalIp { get; set; }//;
         
         // Key: remoteEndpointPublicIp Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteEndpointPublicIp")]
-        public System.Net.IPAddress RemoteEndpointPublicIp { get; set; }//;
+        public string RemoteEndpointPublicIp { get; set; }//;
         
         // Key: remoteZvmInternalIp Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteZvmInternalIp")]
-        public System.Net.IPAddress RemoteZvmInternalIp { get; set; }//;
+        public string RemoteZvmInternalIp { get; set; }//;
         
         // Key: role Type: dedicatedCloud.disasterRecovery.SiteRoleEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
@@ -207,14 +207,14 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: remoteEndpointPublicIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteEndpointPublicIp")]
-        public System.Net.IPAddress RemoteEndpointPublicIp { get; set; }//;
+        public string RemoteEndpointPublicIp { get; set; }//;
         
         // Key: remoteVraNetwork Type: ipBlock FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteVraNetwork")]
-        public System.Net.IPNetwork RemoteVraNetwork { get; set; }//;
+        public string RemoteVraNetwork { get; set; }//;
         
         // Key: remoteZvmInternalIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteZvmInternalIp")]
-        public System.Net.IPAddress RemoteZvmInternalIp { get; set; }//;
+        public string RemoteZvmInternalIp { get; set; }//;
     }
 }

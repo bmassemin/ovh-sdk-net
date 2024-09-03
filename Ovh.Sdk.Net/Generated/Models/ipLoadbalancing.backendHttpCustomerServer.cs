@@ -15,7 +15,7 @@ namespace _ipLoadbalancing_backendHttpCustomerServer {
         
         // Key: address Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public System.Net.IPAddress Address { get; set; }//;
+        public string Address { get; set; }//;
         
         // Key: backendId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backendId")]

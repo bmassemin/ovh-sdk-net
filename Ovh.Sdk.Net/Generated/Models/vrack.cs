@@ -178,7 +178,7 @@ namespace _vrack {
         
         // Key: ip Type: ipBlock[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork[] Ip { get; set; }//;
+        public string[] Ip { get; set; }//;
         
         // Key: ipLoadbalancing Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLoadbalancing")]
@@ -186,7 +186,7 @@ namespace _vrack {
         
         // Key: ipv6 Type: ipv6Block[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPNetwork[] Ipv6 { get; set; }//;
+        public string[] Ipv6 { get; set; }//;
         
         // Key: legacyVrack Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("legacyVrack")]
@@ -246,7 +246,7 @@ namespace _vrack {
         
         // Key: ip Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork[] Ip { get; set; }//;
+        public string[] Ip { get; set; }//;
         
         // Key: ipLoadbalancing Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLoadbalancing")]
@@ -254,7 +254,7 @@ namespace _vrack {
         
         // Key: ipv6 Type: ipv6Block[] FullType: ipv6Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPNetwork[] Ipv6 { get; set; }//;
+        public string[] Ipv6 { get; set; }//;
         
         // Key: legacyVrack Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("legacyVrack")]
@@ -337,6 +337,9 @@ namespace _vrack {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("waw")]
         waw,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("yyz")]
+        yyz,
     }
     
     // Id: bridgedSubrange Namespace: vrack
@@ -344,11 +347,11 @@ namespace _vrack {
         
         // Key: bridgedSubrange Type: ipv6Block FullType: ipv6Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bridgedSubrange")]
-        public System.Net.IPNetwork _BridgedSubrange { get; set; }//;
+        public string _BridgedSubrange { get; set; }//;
         
         // Key: gateway Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public System.Net.IPAddress Gateway { get; set; }//;
+        public string Gateway { get; set; }//;
         
         // Key: slaac Type: vrack.SlaacEnum FullType: vrack.SlaacEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slaac")]
@@ -392,11 +395,11 @@ namespace _vrack {
         
         // Key: gateway Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public System.Net.IPNetwork Gateway { get; set; }//;
+        public string Gateway { get; set; }//;
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork _Ip { get; set; }//;
+        public string _Ip { get; set; }//;
         
         // Key: zone Type: vrack.VrackZoneEnum FullType: vrack.VrackZoneEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
@@ -420,7 +423,7 @@ namespace _vrack {
         
         // Key: ipv6 Type: ipv6Block FullType: ipv6Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPNetwork _Ipv6 { get; set; }//;
+        public string _Ipv6 { get; set; }//;
     }
     
     // Id: legacyVrack Namespace: vrack
@@ -476,11 +479,11 @@ namespace _vrack {
         
         // Key: nexthop Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nexthop")]
-        public System.Net.IPAddress Nexthop { get; set; }//;
+        public string Nexthop { get; set; }//;
         
         // Key: routedSubrange Type: ipv6Block FullType: ipv6Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routedSubrange")]
-        public System.Net.IPNetwork _RoutedSubrange { get; set; }//;
+        public string _RoutedSubrange { get; set; }//;
     }
     
     // Id: vrack Namespace: vrack

@@ -135,7 +135,7 @@ namespace _overTheBox {
         
         // Key: publicIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicIp")]
-        public System.Net.IPAddress PublicIp { get; set; }//;
+        public string PublicIp { get; set; }//;
         
         // Key: system Type: overTheBox.DeviceSystem FullType: overTheBox.DeviceSystem
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("system")]
@@ -207,15 +207,15 @@ namespace _overTheBox {
         
         // Key: dnsServers Type: ip[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnsServers")]
-        public System.Net.IPAddress[] DnsServers { get; set; }//;
+        public string[] DnsServers { get; set; }//;
         
         // Key: gateway Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public System.Net.IPAddress Gateway { get; set; }//;
+        public string Gateway { get; set; }//;
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: multipathStatus Type: overTheBox.MultipathStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("multipathStatus")]
@@ -227,11 +227,11 @@ namespace _overTheBox {
         
         // Key: netmask Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("netmask")]
-        public System.Net.IPAddress Netmask { get; set; }//;
+        public string Netmask { get; set; }//;
         
         // Key: publicIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicIp")]
-        public System.Net.IPAddress PublicIp { get; set; }//;
+        public string PublicIp { get; set; }//;
     }
     
     // Id: DeviceSystem Namespace: overTheBox
@@ -295,7 +295,7 @@ namespace _overTheBox {
         
         // Key: mac Type: macAddress FullType: macAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mac")]
-        public System.Net.NetworkInformation.PhysicalAddress Mac { get; set; }//;
+        public string Mac { get; set; }//;
         
         // Key: model Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
@@ -327,7 +327,7 @@ namespace _overTheBox {
         
         // Key: mac Type: macAddress FullType: macAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mac")]
-        public System.Net.NetworkInformation.PhysicalAddress Mac { get; set; }//;
+        public string Mac { get; set; }//;
         
         // Key: model Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
@@ -430,7 +430,7 @@ namespace _overTheBox {
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: port Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
@@ -470,7 +470,7 @@ namespace _overTheBox {
         
         // Key: ip Type: ipBlock FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: publicKey Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicKey")]

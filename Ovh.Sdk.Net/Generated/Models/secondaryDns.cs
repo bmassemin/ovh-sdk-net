@@ -27,7 +27,7 @@ namespace _secondaryDns {
         
         // Key: ipMaster Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipMaster")]
-        public System.Net.IPAddress IpMaster { get; set; }//;
+        public string IpMaster { get; set; }//;
     }
     
     // Id: SecondaryDNSCheckField Namespace: secondaryDns
@@ -55,10 +55,10 @@ namespace _secondaryDns {
         
         // Key: ip Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public System.Net.IPAddress Ipv6 { get; set; }//;
+        public string Ipv6 { get; set; }//;
     }
 }

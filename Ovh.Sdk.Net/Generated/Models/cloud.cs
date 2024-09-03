@@ -700,7 +700,7 @@ namespace _cloud {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: networkId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkId")]
@@ -954,7 +954,7 @@ namespace _cloud {
         
         // Key: ips Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ips")]
-        public System.Net.IPNetwork[] Ips { get; set; }//;
+        public string[] Ips { get; set; }//;
     }
     
     // Id: ProjectKubeNodePoolAutoscalingParams Namespace: cloud
@@ -1262,11 +1262,11 @@ namespace _cloud {
         
         // Key: end Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("end")]
-        public System.Net.IPAddress End { get; set; }//;
+        public string End { get; set; }//;
         
         // Key: network Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public System.Net.IPNetwork Network { get; set; }//;
+        public string Network { get; set; }//;
         
         // Key: noGateway Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("noGateway")]
@@ -1278,7 +1278,7 @@ namespace _cloud {
         
         // Key: start Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("start")]
-        public System.Net.IPAddress Start { get; set; }//;
+        public string Start { get; set; }//;
     }
     
     // Id: ProjectNetworkPrivateSubnetUpdate Namespace: cloud

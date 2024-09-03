@@ -15,11 +15,11 @@ namespace _ipLoadbalancing_frontendHttp {
         
         // Key: allowedSource Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedSource")]
-        public System.Net.IPNetwork[] AllowedSource { get; set; }//;
+        public string[] AllowedSource { get; set; }//;
         
         // Key: dedicatedIpfo Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedIpfo")]
-        public System.Net.IPNetwork[] DedicatedIpfo { get; set; }//;
+        public string[] DedicatedIpfo { get; set; }//;
         
         // Key: defaultFarmId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultFarmId")]
@@ -31,7 +31,7 @@ namespace _ipLoadbalancing_frontendHttp {
         
         // Key: deniedSource Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deniedSource")]
-        public System.Net.IPNetwork[] DeniedSource { get; set; }//;
+        public string[] DeniedSource { get; set; }//;
         
         // Key: disabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabled")]

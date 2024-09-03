@@ -254,7 +254,7 @@ namespace _cloud_project_ai_job {
         
         // Key: externalIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("externalIp")]
-        public System.Net.IPAddress ExternalIp { get; set; }//;
+        public string ExternalIp { get; set; }//;
         
         // Key: finalizedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finalizedAt")]
@@ -282,7 +282,7 @@ namespace _cloud_project_ai_job {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: lastTransitionDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastTransitionDate")]

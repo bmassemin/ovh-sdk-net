@@ -249,7 +249,7 @@ namespace _cloud_project_ai_app {
         
         // Key: internalServiceIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internalServiceIp")]
-        public System.Net.IPAddress InternalServiceIp { get; set; }//;
+        public string InternalServiceIp { get; set; }//;
         
         // Key: lastTransitionDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastTransitionDate")]

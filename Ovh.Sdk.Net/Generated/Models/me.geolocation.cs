@@ -23,7 +23,7 @@ namespace _me_geolocation {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
     
     // Id: ContinentEnum Namespace: me.geolocation

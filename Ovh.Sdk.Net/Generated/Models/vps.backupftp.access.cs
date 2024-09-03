@@ -23,7 +23,7 @@ namespace _vps_backupftp_access {
         
         // Key: ipBlock Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipBlock")]
-        public System.Net.IPNetwork IpBlock { get; set; }//;
+        public string IpBlock { get; set; }//;
         
         // Key: nfs Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nfs")]

@@ -31,7 +31,7 @@ namespace _cloud_instance_CreateInput_Network {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: network Type: cloud.instance.CreateInput.Network.Private.Network FullType: cloud.instance.CreateInput.Network.Private.Network
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]

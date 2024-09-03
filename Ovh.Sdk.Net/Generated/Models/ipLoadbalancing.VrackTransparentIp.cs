@@ -15,7 +15,7 @@ namespace _ipLoadbalancing_VrackTransparentIp {
         
         // Key: address Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public System.Net.IPAddress Address { get; set; }//;
+        public string Address { get; set; }//;
         
         // Key: farmId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("farmId")]

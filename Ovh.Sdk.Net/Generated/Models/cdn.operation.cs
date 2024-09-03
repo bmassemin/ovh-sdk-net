@@ -15,7 +15,7 @@ namespace _cdn_operation {
         
         // Key: anycastIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("anycastIp")]
-        public System.Net.IPAddress AnycastIp { get; set; }//;
+        public string AnycastIp { get; set; }//;
         
         // Key: cluster Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cluster")]

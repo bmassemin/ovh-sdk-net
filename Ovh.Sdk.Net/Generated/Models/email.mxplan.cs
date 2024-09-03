@@ -347,11 +347,11 @@ namespace _email_mxplan {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: ipV6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipV6")]
-        public System.Net.IPAddress IpV6 { get; set; }//;
+        public string IpV6 { get; set; }//;
         
         // Key: isAValid Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isAValid")]

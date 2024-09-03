@@ -15,7 +15,7 @@ namespace _cloud_instance_CreateInput_Network_Private_NetworkCreate {
         
         // Key: cidr Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cidr")]
-        public System.Net.IPNetwork Cidr { get; set; }//;
+        public string Cidr { get; set; }//;
         
         // Key: enableDhcp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enableDhcp")]

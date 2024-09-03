@@ -490,7 +490,7 @@ namespace _telephony {
         
         // Key: subnet Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnet")]
-        public System.Net.IPNetwork Subnet { get; set; }//;
+        public string Subnet { get; set; }//;
         
         // Key: type Type: telephony.ProtocolEnum FullType: telephony.ProtocolEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1282,7 +1282,7 @@ namespace _telephony {
         
         // Key: mediaIps Type: ipv4[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mediaIps")]
-        public System.Net.IPAddress[] MediaIps { get; set; }//;
+        public string[] MediaIps { get; set; }//;
         
         // Key: region Type: telephony.CarrierSipClusterZoneRegionEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -1312,7 +1312,7 @@ namespace _telephony {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
@@ -1803,7 +1803,7 @@ namespace _telephony {
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
     
     // Id: Ddi Namespace: telephony
@@ -2947,7 +2947,7 @@ namespace _telephony {
         
         // Key: ipRestrictions Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipRestrictions")]
-        public System.Net.IPNetwork[] IpRestrictions { get; set; }//;
+        public string[] IpRestrictions { get; set; }//;
         
         // Key: language Type: telephony.LineOptionLanguageEnum FullType: telephony.LineOptionLanguageEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("language")]
@@ -4158,7 +4158,7 @@ namespace _telephony {
         
         // Key: mgcpIpRestriction Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mgcpIpRestriction")]
-        public System.Net.IPAddress MgcpIpRestriction { get; set; }//;
+        public string MgcpIpRestriction { get; set; }//;
         
         // Key: phoneConfiguration Type: telephony.PhoneConfigurationProperty[] FullType: telephony.PhoneConfigurationProperty[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phoneConfiguration")]
@@ -4822,11 +4822,11 @@ namespace _telephony {
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: localIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("localIp")]
-        public System.Net.IPAddress LocalIp { get; set; }//;
+        public string LocalIp { get; set; }//;
         
         // Key: localPort Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("localPort")]
@@ -5570,7 +5570,7 @@ namespace _telephony {
         
         // Key: associatedDeviceMac Type: macAddress FullType: macAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("associatedDeviceMac")]
-        public System.Net.NetworkInformation.PhysicalAddress AssociatedDeviceMac { get; set; }//;
+        public string AssociatedDeviceMac { get; set; }//;
         
         // Key: country Type: telephony.ServiceNumberCountryEnum FullType: telephony.ServiceNumberCountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]

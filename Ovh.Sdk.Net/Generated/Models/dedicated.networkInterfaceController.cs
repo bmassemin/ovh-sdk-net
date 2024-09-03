@@ -19,7 +19,7 @@ namespace _dedicated_networkInterfaceController {
         
         // Key: mac Type: macAddress FullType: macAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mac")]
-        public System.Net.NetworkInformation.PhysicalAddress Mac { get; set; }//;
+        public string Mac { get; set; }//;
         
         // Key: virtualNetworkInterface Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("virtualNetworkInterface")]

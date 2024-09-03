@@ -23,7 +23,7 @@ namespace _cloud_loadbalancing_pool {
         
         // Key: address Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public System.Net.IPAddress Address { get; set; }//;
+        public string Address { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]

@@ -70,7 +70,7 @@ namespace _pack_xdsl_HostedEmail {
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: port Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]

@@ -15,7 +15,7 @@ namespace _ipLoadbalancing_frontendUdp {
         
         // Key: dedicatedIpfo Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedIpfo")]
-        public System.Net.IPNetwork[] DedicatedIpfo { get; set; }//;
+        public string[] DedicatedIpfo { get; set; }//;
         
         // Key: defaultFarmId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultFarmId")]

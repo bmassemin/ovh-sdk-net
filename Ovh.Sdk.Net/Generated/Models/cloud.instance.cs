@@ -65,7 +65,7 @@ namespace _cloud_instance {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
     
     // Id: AutoBackup Namespace: cloud.instance
@@ -89,7 +89,7 @@ namespace _cloud_instance {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
     
     // Id: CreateInput Namespace: cloud.instance
@@ -201,7 +201,7 @@ namespace _cloud_instance {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: version Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
@@ -561,7 +561,7 @@ namespace _cloud_instance {
         
         // Key: gatewayIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayIp")]
-        public System.Net.IPAddress GatewayIp { get; set; }//;
+        public string GatewayIp { get; set; }//;
         
         // Key: ip Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -668,7 +668,7 @@ namespace _cloud_instance {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: networkId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkId")]

@@ -15,7 +15,7 @@ namespace _xdsl_modem_lan_dhcp_DHCPStaticAddresses {
         
         // Key: IPAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("IPAddress")]
-        public System.Net.IPAddress IPAddress { get; set; }//;
+        public string IPAddress { get; set; }//;
         
         // Key: MACAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("MACAddress")]

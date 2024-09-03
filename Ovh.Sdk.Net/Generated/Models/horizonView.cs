@@ -73,7 +73,7 @@ namespace _horizonView {
         
         // Key: activeDirectoryIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("activeDirectoryIP")]
-        public System.Net.IPAddress ActiveDirectoryIP { get; set; }//;
+        public string ActiveDirectoryIP { get; set; }//;
         
         // Key: adminDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("adminDomain")]
@@ -85,15 +85,15 @@ namespace _horizonView {
         
         // Key: adminPrivateNetwork Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("adminPrivateNetwork")]
-        public System.Net.IPNetwork AdminPrivateNetwork { get; set; }//;
+        public string AdminPrivateNetwork { get; set; }//;
         
         // Key: customerIntercoIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerIntercoIP")]
-        public System.Net.IPAddress CustomerIntercoIP { get; set; }//;
+        public string CustomerIntercoIP { get; set; }//;
         
         // Key: customerIntercoMask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerIntercoMask")]
-        public System.Net.IPAddress CustomerIntercoMask { get; set; }//;
+        public string CustomerIntercoMask { get; set; }//;
         
         // Key: customerIntercoVlanId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerIntercoVlanId")]
@@ -117,7 +117,7 @@ namespace _horizonView {
         
         // Key: activeDirectoryIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("activeDirectoryIP")]
-        public System.Net.IPAddress ActiveDirectoryIP { get; set; }//;
+        public string ActiveDirectoryIP { get; set; }//;
         
         // Key: adminDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("adminDomain")]
@@ -129,15 +129,15 @@ namespace _horizonView {
         
         // Key: adminPrivateNetwork Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("adminPrivateNetwork")]
-        public System.Net.IPNetwork AdminPrivateNetwork { get; set; }//;
+        public string AdminPrivateNetwork { get; set; }//;
         
         // Key: customerIntercoIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerIntercoIP")]
-        public System.Net.IPAddress CustomerIntercoIP { get; set; }//;
+        public string CustomerIntercoIP { get; set; }//;
         
         // Key: customerIntercoMask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerIntercoMask")]
-        public System.Net.IPAddress CustomerIntercoMask { get; set; }//;
+        public string CustomerIntercoMask { get; set; }//;
         
         // Key: customerIntercoVlanId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerIntercoVlanId")]
@@ -197,15 +197,15 @@ namespace _horizonView {
         
         // Key: activeDirectoryIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("activeDirectoryIP")]
-        public System.Net.IPAddress ActiveDirectoryIP { get; set; }//;
+        public string ActiveDirectoryIP { get; set; }//;
         
         // Key: dns1 Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dns1")]
-        public System.Net.IPAddress Dns1 { get; set; }//;
+        public string Dns1 { get; set; }//;
         
         // Key: dns2 Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dns2")]
-        public System.Net.IPAddress Dns2 { get; set; }//;
+        public string Dns2 { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -225,11 +225,11 @@ namespace _horizonView {
         
         // Key: dhcpNetmask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dhcpNetmask")]
-        public System.Net.IPAddress DhcpNetmask { get; set; }//;
+        public string DhcpNetmask { get; set; }//;
         
         // Key: dhcpNetwork Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dhcpNetwork")]
-        public System.Net.IPAddress DhcpNetwork { get; set; }//;
+        public string DhcpNetwork { get; set; }//;
         
         // Key: externalUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("externalUrl")]
@@ -237,11 +237,11 @@ namespace _horizonView {
         
         // Key: intercoNextHop Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("intercoNextHop")]
-        public System.Net.IPAddress IntercoNextHop { get; set; }//;
+        public string IntercoNextHop { get; set; }//;
         
         // Key: intercoPrivateNextHop Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("intercoPrivateNextHop")]
-        public System.Net.IPAddress IntercoPrivateNextHop { get; set; }//;
+        public string IntercoPrivateNextHop { get; set; }//;
         
         // Key: portGroupId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portGroupId")]

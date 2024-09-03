@@ -19,7 +19,7 @@ namespace _veeam_veeamEnterprise {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
@@ -27,7 +27,7 @@ namespace _veeam_veeamEnterprise {
         
         // Key: sourceIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sourceIp")]
-        public System.Net.IPAddress SourceIp { get; set; }//;
+        public string SourceIp { get; set; }//;
     }
     
     // Id: Account Namespace: veeam.veeamEnterprise
@@ -43,7 +43,7 @@ namespace _veeam_veeamEnterprise {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
@@ -51,7 +51,7 @@ namespace _veeam_veeamEnterprise {
         
         // Key: sourceIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sourceIp")]
-        public System.Net.IPAddress SourceIp { get; set; }//;
+        public string SourceIp { get; set; }//;
     }
     
     // Id: Task Namespace: veeam.veeamEnterprise

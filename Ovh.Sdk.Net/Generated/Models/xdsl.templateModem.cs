@@ -15,7 +15,7 @@ namespace _xdsl_templateModem {
         
         // Key: defaultGateway Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultGateway")]
-        public System.Net.IPAddress DefaultGateway { get; set; }//;
+        public string DefaultGateway { get; set; }//;
         
         // Key: dhcpName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dhcpName")]
@@ -27,7 +27,7 @@ namespace _xdsl_templateModem {
         
         // Key: endAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endAddress")]
-        public System.Net.IPAddress EndAddress { get; set; }//;
+        public string EndAddress { get; set; }//;
         
         // Key: leaseTime Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("leaseTime")]
@@ -35,11 +35,11 @@ namespace _xdsl_templateModem {
         
         // Key: primaryDNS Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("primaryDNS")]
-        public System.Net.IPAddress PrimaryDNS { get; set; }//;
+        public string PrimaryDNS { get; set; }//;
         
         // Key: secondaryDNS Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("secondaryDNS")]
-        public System.Net.IPAddress SecondaryDNS { get; set; }//;
+        public string SecondaryDNS { get; set; }//;
         
         // Key: serverEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverEnabled")]
@@ -47,11 +47,11 @@ namespace _xdsl_templateModem {
         
         // Key: startAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startAddress")]
-        public System.Net.IPAddress StartAddress { get; set; }//;
+        public string StartAddress { get; set; }//;
         
         // Key: subnetMask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnetMask")]
-        public System.Net.IPAddress SubnetMask { get; set; }//;
+        public string SubnetMask { get; set; }//;
     }
     
     // Id: LAN Namespace: xdsl.templateModem
@@ -59,7 +59,7 @@ namespace _xdsl_templateModem {
         
         // Key: IPAddress Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("IPAddress")]
-        public System.Net.IPAddress IPAddress { get; set; }//;
+        public string IPAddress { get; set; }//;
         
         // Key: addressingType Type: xdsl.xdslModemConfig.AddressingTypeEnum FullType: xdsl.xdslModemConfig.AddressingTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("addressingType")]
@@ -71,7 +71,7 @@ namespace _xdsl_templateModem {
         
         // Key: subnetMask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnetMask")]
-        public System.Net.IPAddress SubnetMask { get; set; }//;
+        public string SubnetMask { get; set; }//;
     }
     
     // Id: ParametersToIgnore Namespace: xdsl.templateModem
@@ -103,7 +103,7 @@ namespace _xdsl_templateModem {
         
         // Key: allowedRemoteIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedRemoteIp")]
-        public System.Net.IPAddress AllowedRemoteIp { get; set; }//;
+        public string AllowedRemoteIp { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -119,7 +119,7 @@ namespace _xdsl_templateModem {
         
         // Key: internalClient Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internalClient")]
-        public System.Net.IPAddress InternalClient { get; set; }//;
+        public string InternalClient { get; set; }//;
         
         // Key: internalPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internalPort")]

@@ -15,7 +15,7 @@ namespace _api {
         
         // Key: allowedIPs Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedIPs")]
-        public System.Net.IPNetwork[] AllowedIPs { get; set; }//;
+        public string[] AllowedIPs { get; set; }//;
         
         // Key: applicationId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("applicationId")]
@@ -103,7 +103,7 @@ namespace _api {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: logId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logId")]

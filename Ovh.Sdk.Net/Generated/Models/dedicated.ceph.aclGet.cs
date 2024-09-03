@@ -23,10 +23,10 @@ namespace _dedicated_ceph_aclGet {
         
         // Key: netmask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("netmask")]
-        public System.Net.IPAddress Netmask { get; set; }//;
+        public string Netmask { get; set; }//;
         
         // Key: network Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public System.Net.IPAddress Network { get; set; }//;
+        public string Network { get; set; }//;
     }
 }

@@ -15,7 +15,7 @@ namespace _cdnanycast {
         
         // Key: anycast Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("anycast")]
-        public System.Net.IPAddress _Anycast { get; set; }//;
+        public string _Anycast { get; set; }//;
         
         // Key: backendLimit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backendLimit")]
@@ -55,7 +55,7 @@ namespace _cdnanycast {
         
         // Key: anycast Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("anycast")]
-        public System.Net.IPAddress Anycast { get; set; }//;
+        public string Anycast { get; set; }//;
         
         // Key: backendLimit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backendLimit")]
@@ -99,7 +99,7 @@ namespace _cdnanycast {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
     }
     
     // Id: CacheRule Namespace: cdnanycast

@@ -661,7 +661,7 @@ namespace _hosting_privateDatabase {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: lastCheck Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastCheck")]
@@ -769,7 +769,7 @@ namespace _hosting_privateDatabase {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPAddress Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: lastCheck Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastCheck")]
@@ -981,7 +981,7 @@ namespace _hosting_privateDatabase {
         
         // Key: ip Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -1297,7 +1297,7 @@ namespace _hosting_privateDatabase {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]

@@ -1245,7 +1245,7 @@ namespace _nichandle {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public System.Net.IPNetwork Ip { get; set; }//;
+        public string Ip { get; set; }//;
         
         // Key: rule Type: nichandle.accessRestriction.IpRestrictionRuleEnum FullType: nichandle.accessRestriction.IpRestrictionRuleEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rule")]
