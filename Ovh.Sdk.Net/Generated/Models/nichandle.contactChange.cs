@@ -15,7 +15,7 @@ namespace _nichandle_contactChange {
         
         // Key: askingAccount Type: string FullType: coreTypes.AccountId:string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("askingAccount")]
-        public string AskingAccount { get; set; }//;
+        public System.String? AskingAccount { get; set; }//;
         
         // Key: contactTypes Type: nichandle.changeContact.ContactTypeEnum[] FullType: nichandle.changeContact.ContactTypeEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contactTypes")]
@@ -23,7 +23,7 @@ namespace _nichandle_contactChange {
         
         // Key: dateDone Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dateDone")]
-        public System.DateTime DateDone { get; set; }//;
+        public System.DateTime? DateDone { get; set; }//;
         
         // Key: dateRequest Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dateRequest")]
@@ -39,7 +39,7 @@ namespace _nichandle_contactChange {
         
         // Key: serviceDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceDomain")]
-        public string ServiceDomain { get; set; }//;
+        public System.String? ServiceDomain { get; set; }//;
         
         // Key: state Type: nichandle.changeContact.TaskStateEnum FullType: nichandle.changeContact.TaskStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]

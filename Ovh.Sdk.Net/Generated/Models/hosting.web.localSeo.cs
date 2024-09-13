@@ -47,7 +47,7 @@ namespace _hosting_web_localSeo {
         
         // Key: serviceName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
-        public string ServiceName { get; set; }//;
+        public System.String? ServiceName { get; set; }//;
     }
     
     // Id: FieldStatusEnum Namespace: hosting.web.localSeo
@@ -158,7 +158,7 @@ namespace _hosting_web_localSeo {
         
         // Key: province Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("province")]
-        public string Province { get; set; }//;
+        public System.String? Province { get; set; }//;
         
         // Key: street Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("street")]
@@ -182,7 +182,7 @@ namespace _hosting_web_localSeo {
         
         // Key: alreadyManaged Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alreadyManaged")]
-        public bool AlreadyManaged { get; set; }//;
+        public System.Boolean? AlreadyManaged { get; set; }//;
         
         // Key: searchData Type: hosting.web.localSeo.SearchData FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("searchData")]
@@ -194,122 +194,122 @@ namespace _hosting_web_localSeo {
         
         // Key: city Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: cityStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cityStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum CityStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? CityStatus { get; set; }//;
         
         // Key: country Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public string Country { get; set; }//;
+        public System.String? Country { get; set; }//;
         
         // Key: countryStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countryStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum CountryStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? CountryStatus { get; set; }//;
         
         // Key: dateCreated Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dateCreated")]
-        public System.DateTime DateCreated { get; set; }//;
+        public System.DateTime? DateCreated { get; set; }//;
         
         // Key: directoryType Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("directoryType")]
-        public string DirectoryType { get; set; }//;
+        public System.String? DirectoryType { get; set; }//;
         
         // Key: email Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: emailStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("emailStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum EmailStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? EmailStatus { get; set; }//;
         
         // Key: flowStatus Type: hosting.web.localSeo.FlowStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flowStatus")]
-        public _hosting_web_localSeo.FlowStatusEnum FlowStatus { get; set; }//;
+        public _hosting_web_localSeo.FlowStatusEnum? FlowStatus { get; set; }//;
         
         // Key: listingId Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("listingId")]
-        public string ListingId { get; set; }//;
+        public System.String? ListingId { get; set; }//;
         
         // Key: listingUrl Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("listingUrl")]
-        public string ListingUrl { get; set; }//;
+        public System.String? ListingUrl { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: nameStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nameStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum NameStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? NameStatus { get; set; }//;
         
         // Key: phone Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
-        public string Phone { get; set; }//;
+        public System.String? Phone { get; set; }//;
         
         // Key: phoneStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phoneStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum PhoneStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? PhoneStatus { get; set; }//;
         
         // Key: province Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("province")]
-        public string Province { get; set; }//;
+        public System.String? Province { get; set; }//;
         
         // Key: provinceStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("provinceStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum ProvinceStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? ProvinceStatus { get; set; }//;
         
         // Key: street Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("street")]
-        public string Street { get; set; }//;
+        public System.String? Street { get; set; }//;
         
         // Key: streetAndNo Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetAndNo")]
-        public string StreetAndNo { get; set; }//;
+        public System.String? StreetAndNo { get; set; }//;
         
         // Key: streetAndNoStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetAndNoStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum StreetAndNoStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? StreetAndNoStatus { get; set; }//;
         
         // Key: streetNo Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetNo")]
-        public string StreetNo { get; set; }//;
+        public System.String? StreetNo { get; set; }//;
         
         // Key: streetNoStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetNoStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum StreetNoStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? StreetNoStatus { get; set; }//;
         
         // Key: streetStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum StreetStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? StreetStatus { get; set; }//;
         
         // Key: streetType Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetType")]
-        public string StreetType { get; set; }//;
+        public System.String? StreetType { get; set; }//;
         
         // Key: streetTypeStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetTypeStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum StreetTypeStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? StreetTypeStatus { get; set; }//;
         
         // Key: syncStatus Type: hosting.web.localSeo.ListingStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("syncStatus")]
-        public _hosting_web_localSeo.ListingStatusEnum SyncStatus { get; set; }//;
+        public _hosting_web_localSeo.ListingStatusEnum? SyncStatus { get; set; }//;
         
         // Key: website Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("website")]
-        public string Website { get; set; }//;
+        public System.String? Website { get; set; }//;
         
         // Key: websiteStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("websiteStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum WebsiteStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? WebsiteStatus { get; set; }//;
         
         // Key: zip Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zip")]
-        public string Zip { get; set; }//;
+        public System.String? Zip { get; set; }//;
         
         // Key: zipStatus Type: hosting.web.localSeo.FieldStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zipStatus")]
-        public _hosting_web_localSeo.FieldStatusEnum ZipStatus { get; set; }//;
+        public _hosting_web_localSeo.FieldStatusEnum? ZipStatus { get; set; }//;
     }
 }

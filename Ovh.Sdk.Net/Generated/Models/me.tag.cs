@@ -27,7 +27,7 @@ namespace _me_tag {
         
         // Key: reason Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reason")]
-        public string Reason { get; set; }//;
+        public System.String? Reason { get; set; }//;
         
         // Key: tagName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tagName")]
@@ -84,11 +84,11 @@ namespace _me_tag {
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: extra Type: me.tag.TagExtra FullType: me.tag.TagExtra
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("extra")]
-        public _me_tag.TagExtra Extra { get; set; }//;
+        public _me_tag.TagExtra? Extra { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -108,7 +108,7 @@ namespace _me_tag {
         
         // Key: exemption Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("exemption")]
-        public string Exemption { get; set; }//;
+        public System.String? Exemption { get; set; }//;
     }
     
     // Id: TagKey Namespace: me.tag
@@ -116,7 +116,7 @@ namespace _me_tag {
         
         // Key: enum Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enum")]
-        public string[] @enum { get; set; }//;
+        public System.String[]? @enum { get; set; }//;
         
         // Key: key Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
@@ -124,11 +124,11 @@ namespace _me_tag {
         
         // Key: maxLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxLength")]
-        public long MaxLength { get; set; }//;
+        public System.Int64? MaxLength { get; set; }//;
         
         // Key: minValue Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minValue")]
-        public long MinValue { get; set; }//;
+        public System.Int64? MinValue { get; set; }//;
         
         // Key: optional Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("optional")]
@@ -136,7 +136,7 @@ namespace _me_tag {
         
         // Key: pattern Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pattern")]
-        public string Pattern { get; set; }//;
+        public System.String? Pattern { get; set; }//;
         
         // Key: type Type: me.tag.tagKey.TypeEnum FullType: me.tag.tagKey.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]

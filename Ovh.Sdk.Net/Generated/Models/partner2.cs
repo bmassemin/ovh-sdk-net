@@ -40,15 +40,15 @@ namespace _partner2 {
         
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: companyTurnover Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("companyTurnover")]
-        public double CompanyTurnover { get; set; }//;
+        public System.Double? CompanyTurnover { get; set; }//;
         
         // Key: country Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public _nichandle.CountryEnum Country { get; set; }//;
+        public _nichandle.CountryEnum? Country { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -56,15 +56,15 @@ namespace _partner2 {
         
         // Key: numberOfEmployees Type: partner2.employeesNumberEnum FullType: partner2.employeesNumberEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("numberOfEmployees")]
-        public _partner2.employeesNumberEnum NumberOfEmployees { get; set; }//;
+        public _partner2.employeesNumberEnum? NumberOfEmployees { get; set; }//;
         
         // Key: partnerType Type: partner2.partnerTypeEnum FullType: partner2.partnerTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnerType")]
-        public _partner2.partnerTypeEnum PartnerType { get; set; }//;
+        public _partner2.partnerTypeEnum? PartnerType { get; set; }//;
         
         // Key: yearEstablished Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("yearEstablished")]
-        public System.DateOnly YearEstablished { get; set; }//;
+        public System.DateOnly? YearEstablished { get; set; }//;
     }
     
     // Id: AreaOfExpertiseEnum Namespace: partner2
@@ -126,7 +126,7 @@ namespace _partner2 {
         
         // Key: jobTitle Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("jobTitle")]
-        public string JobTitle { get; set; }//;
+        public System.String? JobTitle { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
@@ -146,7 +146,7 @@ namespace _partner2 {
         
         // Key: acceptanceStatus Type: partner2.AcceptanceStatusEnum FullType: partner2.AcceptanceStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("acceptanceStatus")]
-        public _partner2.AcceptanceStatusEnum AcceptanceStatus { get; set; }//;
+        public _partner2.AcceptanceStatusEnum? AcceptanceStatus { get; set; }//;
         
         // Key: account Type: partner2.Account FullType: partner2.Account
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("account")]
@@ -154,7 +154,7 @@ namespace _partner2 {
         
         // Key: areaOfExpertise Type: partner2.AreaOfExpertiseEnum[] FullType: partner2.AreaOfExpertiseEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("areaOfExpertise")]
-        public _partner2.AreaOfExpertiseEnum[] AreaOfExpertise { get; set; }//;
+        public _partner2.AreaOfExpertiseEnum[]? AreaOfExpertise { get; set; }//;
         
         // Key: contact Type: partner2.Contact FullType: partner2.Contact
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contact")]
@@ -162,7 +162,7 @@ namespace _partner2 {
         
         // Key: partnersProgramReason Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnersProgramReason")]
-        public string PartnersProgramReason { get; set; }//;
+        public System.String? PartnersProgramReason { get; set; }//;
         
         // Key: partnership Type: partner2.PartnerShip FullType: partner2.PartnerShip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnership")]
@@ -170,7 +170,7 @@ namespace _partner2 {
         
         // Key: salesProjection Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("salesProjection")]
-        public double SalesProjection { get; set; }//;
+        public System.Double? SalesProjection { get; set; }//;
     }
     
     // Id: PartnerShip Namespace: partner2
@@ -178,7 +178,7 @@ namespace _partner2 {
         
         // Key: areaOfExpertise Type: partner2.AreaOfExpertiseEnum[] FullType: partner2.AreaOfExpertiseEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("areaOfExpertise")]
-        public _partner2.AreaOfExpertiseEnum[] AreaOfExpertise { get; set; }//;
+        public _partner2.AreaOfExpertiseEnum[]? AreaOfExpertise { get; set; }//;
         
         // Key: emailCommunication Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("emailCommunication")]
@@ -186,11 +186,11 @@ namespace _partner2 {
         
         // Key: partnersProgramReason Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnersProgramReason")]
-        public string PartnersProgramReason { get; set; }//;
+        public System.String? PartnersProgramReason { get; set; }//;
         
         // Key: salesGrowthOpportunities Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("salesGrowthOpportunities")]
-        public string SalesGrowthOpportunities { get; set; }//;
+        public System.String? SalesGrowthOpportunities { get; set; }//;
         
         // Key: salesProjection Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("salesProjection")]

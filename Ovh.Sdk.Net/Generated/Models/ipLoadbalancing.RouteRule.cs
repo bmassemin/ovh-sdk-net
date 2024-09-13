@@ -15,7 +15,7 @@ namespace _ipLoadbalancing_RouteRule {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: field Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("field")]
@@ -31,7 +31,7 @@ namespace _ipLoadbalancing_RouteRule {
         
         // Key: pattern Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pattern")]
-        public string Pattern { get; set; }//;
+        public System.String? Pattern { get; set; }//;
         
         // Key: ruleId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ruleId")]
@@ -39,6 +39,6 @@ namespace _ipLoadbalancing_RouteRule {
         
         // Key: subField Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subField")]
-        public string SubField { get; set; }//;
+        public System.String? SubField { get; set; }//;
     }
 }

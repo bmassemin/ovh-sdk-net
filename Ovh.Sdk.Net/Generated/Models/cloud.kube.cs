@@ -27,7 +27,7 @@ namespace _cloud_kube {
         
         // Key: customization Type: cloud.ProjectKubeCustomization FullType: cloud.ProjectKubeCustomization
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customization")]
-        public _cloud.ProjectKubeCustomization Customization { get; set; }//;
+        public _cloud.ProjectKubeCustomization? Customization { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -43,7 +43,7 @@ namespace _cloud_kube {
         
         // Key: loadBalancersSubnetId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("loadBalancersSubnetId")]
-        public System.Guid LoadBalancersSubnetId { get; set; }//;
+        public System.Guid? LoadBalancersSubnetId { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -51,11 +51,11 @@ namespace _cloud_kube {
         
         // Key: nextUpgradeVersions Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nextUpgradeVersions")]
-        public string[] NextUpgradeVersions { get; set; }//;
+        public System.String[]? NextUpgradeVersions { get; set; }//;
         
         // Key: nodesSubnetId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nodesSubnetId")]
-        public string NodesSubnetId { get; set; }//;
+        public System.String? NodesSubnetId { get; set; }//;
         
         // Key: nodesUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nodesUrl")]
@@ -63,11 +63,11 @@ namespace _cloud_kube {
         
         // Key: privateNetworkConfiguration Type: cloud.kube.PrivateNetworkConfiguration FullType: cloud.kube.PrivateNetworkConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("privateNetworkConfiguration")]
-        public _cloud_kube.PrivateNetworkConfiguration PrivateNetworkConfiguration { get; set; }//;
+        public _cloud_kube.PrivateNetworkConfiguration? PrivateNetworkConfiguration { get; set; }//;
         
         // Key: privateNetworkId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("privateNetworkId")]
-        public string PrivateNetworkId { get; set; }//;
+        public System.String? PrivateNetworkId { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -276,7 +276,7 @@ namespace _cloud_kube {
         
         // Key: deployedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deployedAt")]
-        public System.DateTime DeployedAt { get; set; }//;
+        public System.DateTime? DeployedAt { get; set; }//;
         
         // Key: flavor Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavor")]
@@ -288,7 +288,7 @@ namespace _cloud_kube {
         
         // Key: instanceId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("instanceId")]
-        public string InstanceId { get; set; }//;
+        public System.String? InstanceId { get; set; }//;
         
         // Key: isUpToDate Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isUpToDate")]
@@ -592,7 +592,7 @@ namespace _cloud_kube {
         
         // Key: caContent Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("caContent")]
-        public string CaContent { get; set; }//;
+        public System.String? CaContent { get; set; }//;
         
         // Key: clientId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientId")]
@@ -600,11 +600,11 @@ namespace _cloud_kube {
         
         // Key: groupsClaim Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupsClaim")]
-        public string[] GroupsClaim { get; set; }//;
+        public System.String[]? GroupsClaim { get; set; }//;
         
         // Key: groupsPrefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupsPrefix")]
-        public string GroupsPrefix { get; set; }//;
+        public System.String? GroupsPrefix { get; set; }//;
         
         // Key: issuerUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("issuerUrl")]
@@ -612,19 +612,19 @@ namespace _cloud_kube {
         
         // Key: requiredClaim Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("requiredClaim")]
-        public string[] RequiredClaim { get; set; }//;
+        public System.String[]? RequiredClaim { get; set; }//;
         
         // Key: signingAlgorithms Type: cloud.kube.OpenIdConnectSigningAlgorithmsEnum[] FullType: cloud.kube.OpenIdConnectSigningAlgorithmsEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("signingAlgorithms")]
-        public _cloud_kube.OpenIdConnectSigningAlgorithmsEnum[] SigningAlgorithms { get; set; }//;
+        public _cloud_kube.OpenIdConnectSigningAlgorithmsEnum[]? SigningAlgorithms { get; set; }//;
         
         // Key: usernameClaim Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usernameClaim")]
-        public string UsernameClaim { get; set; }//;
+        public System.String? UsernameClaim { get; set; }//;
         
         // Key: usernamePrefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usernamePrefix")]
-        public string UsernamePrefix { get; set; }//;
+        public System.String? UsernamePrefix { get; set; }//;
     }
     
     // Id: OpenIdConnectSigningAlgorithmsEnum Namespace: cloud.kube
@@ -667,7 +667,7 @@ namespace _cloud_kube {
         
         // Key: privateNetworkRoutingAsDefault Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("privateNetworkRoutingAsDefault")]
-        public bool PrivateNetworkRoutingAsDefault { get; set; }//;
+        public System.Boolean? PrivateNetworkRoutingAsDefault { get; set; }//;
     }
     
     // Id: ResetWorkerNodesPolicyEnum Namespace: cloud.kube

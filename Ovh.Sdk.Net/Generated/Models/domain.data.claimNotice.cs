@@ -15,27 +15,27 @@ namespace _domain_data_claimNotice {
         
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: countryCode Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countryCode")]
-        public _nichandle.CountryEnum CountryCode { get; set; }//;
+        public _nichandle.CountryEnum? CountryCode { get; set; }//;
         
         // Key: fax Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fax")]
-        public string Fax { get; set; }//;
+        public System.String? Fax { get; set; }//;
         
         // Key: faxExtension Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("faxExtension")]
-        public string FaxExtension { get; set; }//;
+        public System.String? FaxExtension { get; set; }//;
         
         // Key: postalCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postalCode")]
-        public string PostalCode { get; set; }//;
+        public System.String? PostalCode { get; set; }//;
         
         // Key: stateOrProvince Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stateOrProvince")]
-        public string StateOrProvince { get; set; }//;
+        public System.String? StateOrProvince { get; set; }//;
         
         // Key: streets Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streets")]
@@ -43,11 +43,11 @@ namespace _domain_data_claimNotice {
         
         // Key: voice Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("voice")]
-        public string Voice { get; set; }//;
+        public System.String? Voice { get; set; }//;
         
         // Key: voiceExtension Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("voiceExtension")]
-        public string VoiceExtension { get; set; }//;
+        public System.String? VoiceExtension { get; set; }//;
     }
     
     // Id: ClaimNotice Namespace: domain.data.claimNotice
@@ -55,7 +55,7 @@ namespace _domain_data_claimNotice {
         
         // Key: claims Type: domain.data.claimNotice.ClaimNoticeDecision[] FullType: domain.data.claimNotice.ClaimNoticeDecision[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("claims")]
-        public _domain_data_claimNotice.ClaimNoticeDecision[] Claims { get; set; }//;
+        public _domain_data_claimNotice.ClaimNoticeDecision[]? Claims { get; set; }//;
         
         // Key: endingDate Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endingDate")]
@@ -71,11 +71,11 @@ namespace _domain_data_claimNotice {
         
         // Key: startingDate Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startingDate")]
-        public string StartingDate { get; set; }//;
+        public System.String? StartingDate { get; set; }//;
         
         // Key: type Type: domain.data.claimNotice.ClaimNoticeTypeEnum FullType: domain.data.claimNotice.ClaimNoticeTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _domain_data_claimNotice.ClaimNoticeTypeEnum Type { get; set; }//;
+        public _domain_data_claimNotice.ClaimNoticeTypeEnum? Type { get; set; }//;
     }
     
     // Id: ClaimNoticeDecision Namespace: domain.data.claimNotice
@@ -149,23 +149,23 @@ namespace _domain_data_claimNotice {
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: entitlement Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("entitlement")]
-        public string Entitlement { get; set; }//;
+        public System.String? Entitlement { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: organisation Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisation")]
-        public string Organisation { get; set; }//;
+        public System.String? Organisation { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public string Type { get; set; }//;
+        public System.String? Type { get; set; }//;
     }
     
     // Id: CourtDecision Namespace: domain.data.claimNotice

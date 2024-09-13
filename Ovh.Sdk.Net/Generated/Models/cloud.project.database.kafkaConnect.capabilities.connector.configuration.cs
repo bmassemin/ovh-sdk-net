@@ -15,7 +15,7 @@ namespace _cloud_project_database_kafkaConnect_capabilities_connector_configurat
         
         // Key: defaultValue Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultValue")]
-        public string DefaultValue { get; set; }//;
+        public System.String? DefaultValue { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -47,6 +47,6 @@ namespace _cloud_project_database_kafkaConnect_capabilities_connector_configurat
         
         // Key: values Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("values")]
-        public string[] Values { get; set; }//;
+        public System.String[]? Values { get; set; }//;
     }
 }

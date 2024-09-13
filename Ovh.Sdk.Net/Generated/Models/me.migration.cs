@@ -65,11 +65,11 @@ namespace _me_migration {
         
         // Key: contracts Type: me.migration.step.Contracts FullType: me.migration.step.Contracts
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contracts")]
-        public _me_migration_step.Contracts Contracts { get; set; }//;
+        public _me_migration_step.Contracts? Contracts { get; set; }//;
         
         // Key: debt Type: me.migration.step.Debt FullType: me.migration.step.Debt
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("debt")]
-        public _me_migration_step.Debt Debt { get; set; }//;
+        public _me_migration_step.Debt? Debt { get; set; }//;
         
         // Key: name Type: me.migration.step.NameEnum FullType: me.migration.step.NameEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -77,7 +77,7 @@ namespace _me_migration {
         
         // Key: orders Type: me.migration.step.Orders FullType: me.migration.step.Orders
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orders")]
-        public _me_migration_step.Orders Orders { get; set; }//;
+        public _me_migration_step.Orders? Orders { get; set; }//;
         
         // Key: status Type: me.migration.step.StatusEnum FullType: me.migration.step.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

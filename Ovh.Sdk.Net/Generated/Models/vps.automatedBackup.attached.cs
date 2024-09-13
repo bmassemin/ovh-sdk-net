@@ -15,14 +15,14 @@ namespace _vps_automatedBackup_attached {
         
         // Key: additionalDisk Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("additionalDisk")]
-        public string AdditionalDisk { get; set; }//;
+        public System.String? AdditionalDisk { get; set; }//;
         
         // Key: nfs Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nfs")]
-        public string Nfs { get; set; }//;
+        public System.String? Nfs { get; set; }//;
         
         // Key: smb Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("smb")]
-        public string Smb { get; set; }//;
+        public System.String? Smb { get; set; }//;
     }
 }

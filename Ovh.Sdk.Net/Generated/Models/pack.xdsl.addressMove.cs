@@ -27,7 +27,7 @@ namespace _pack_xdsl_addressMove {
         
         // Key: engageMonths Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engageMonths")]
-        public long EngageMonths { get; set; }//;
+        public System.Int64? EngageMonths { get; set; }//;
         
         // Key: engaged Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engaged")]
@@ -35,11 +35,11 @@ namespace _pack_xdsl_addressMove {
         
         // Key: modemOptions Type: pack.xdsl.migration.OfferModemOption[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("modemOptions")]
-        public _pack_xdsl_migration.OfferModemOption[] ModemOptions { get; set; }//;
+        public _pack_xdsl_migration.OfferModemOption[]? ModemOptions { get; set; }//;
         
         // Key: modemReferenceToReturn Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("modemReferenceToReturn")]
-        public string ModemReferenceToReturn { get; set; }//;
+        public System.String? ModemReferenceToReturn { get; set; }//;
         
         // Key: needModem Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("needModem")]
@@ -91,7 +91,7 @@ namespace _pack_xdsl_addressMove {
         
         // Key: price Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("price")]
-        public _order.Price _Price { get; set; }//;
+        public _order.Price? _Price { get; set; }//;
     }
     
     // Id: PriceOffer Namespace: pack.xdsl.addressMove
@@ -115,7 +115,7 @@ namespace _pack_xdsl_addressMove {
         
         // Key: gtrComfortFees Type: pack.xdsl.addressMove.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gtrComfortFees")]
-        public _pack_xdsl_addressMove.Price GtrComfortFees { get; set; }//;
+        public _pack_xdsl_addressMove.Price? GtrComfortFees { get; set; }//;
         
         // Key: installFees Type: pack.xdsl.addressMove.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("installFees")]
@@ -131,14 +131,14 @@ namespace _pack_xdsl_addressMove {
         
         // Key: promotion Type: pack.xdsl.migrationAndAddressMove.Promotion FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("promotion")]
-        public _pack_xdsl_migrationAndAddressMove.Promotion Promotion { get; set; }//;
+        public _pack_xdsl_migrationAndAddressMove.Promotion? Promotion { get; set; }//;
         
         // Key: providerAI Type: pack.xdsl.addressMove.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("providerAI")]
-        public _pack_xdsl_addressMove.Price ProviderAI { get; set; }//;
+        public _pack_xdsl_addressMove.Price? ProviderAI { get; set; }//;
         
         // Key: providerOrange Type: pack.xdsl.addressMove.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("providerOrange")]
-        public _pack_xdsl_addressMove.Price ProviderOrange { get; set; }//;
+        public _pack_xdsl_addressMove.Price? ProviderOrange { get; set; }//;
     }
 }

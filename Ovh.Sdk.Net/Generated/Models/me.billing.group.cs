@@ -15,7 +15,7 @@ namespace _me_billing_group {
         
         // Key: contactId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contactId")]
-        public long ContactId { get; set; }//;
+        public System.Int64? ContactId { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -35,7 +35,7 @@ namespace _me_billing_group {
         
         // Key: paymentMethodId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentMethodId")]
-        public long PaymentMethodId { get; set; }//;
+        public System.Int64? PaymentMethodId { get; set; }//;
     }
     
     // Id: Service Namespace: me.billing.group

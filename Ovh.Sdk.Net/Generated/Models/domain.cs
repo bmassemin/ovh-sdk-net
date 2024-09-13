@@ -54,67 +54,67 @@ namespace _domain {
         
         // Key: accreditationCountry Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accreditationCountry")]
-        public _nichandle.CountryEnum AccreditationCountry { get; set; }//;
+        public _nichandle.CountryEnum? AccreditationCountry { get; set; }//;
         
         // Key: accreditationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accreditationId")]
-        public string AccreditationId { get; set; }//;
+        public System.String? AccreditationId { get; set; }//;
         
         // Key: accreditationOrganism Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accreditationOrganism")]
-        public string AccreditationOrganism { get; set; }//;
+        public System.String? AccreditationOrganism { get; set; }//;
         
         // Key: accreditationYear Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accreditationYear")]
-        public long AccreditationYear { get; set; }//;
+        public System.Int64? AccreditationYear { get; set; }//;
         
         // Key: address Type: domain.ContactAddress FullType: domain.ContactAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public _domain.ContactAddress Address { get; set; }//;
+        public _domain.ContactAddress? Address { get; set; }//;
         
         // Key: birthCity Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthCity")]
-        public string BirthCity { get; set; }//;
+        public System.String? BirthCity { get; set; }//;
         
         // Key: birthCountry Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthCountry")]
-        public _nichandle.CountryEnum BirthCountry { get; set; }//;
+        public _nichandle.CountryEnum? BirthCountry { get; set; }//;
         
         // Key: birthDay Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthDay")]
-        public System.DateOnly BirthDay { get; set; }//;
+        public System.DateOnly? BirthDay { get; set; }//;
         
         // Key: birthZip Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthZip")]
-        public string BirthZip { get; set; }//;
+        public System.String? BirthZip { get; set; }//;
         
         // Key: cellPhone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cellPhone")]
-        public string CellPhone { get; set; }//;
+        public System.String? CellPhone { get; set; }//;
         
         // Key: companyNationalIdentificationNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("companyNationalIdentificationNumber")]
-        public string CompanyNationalIdentificationNumber { get; set; }//;
+        public System.String? CompanyNationalIdentificationNumber { get; set; }//;
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: enterpriseId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enterpriseId")]
-        public string EnterpriseId { get; set; }//;
+        public System.String? EnterpriseId { get; set; }//;
         
         // Key: fax Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fax")]
-        public string Fax { get; set; }//;
+        public System.String? Fax { get; set; }//;
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: gender Type: nichandle.GenderEnum FullType: nichandle.GenderEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gender")]
-        public _nichandle.GenderEnum Gender { get; set; }//;
+        public _nichandle.GenderEnum? Gender { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -122,99 +122,99 @@ namespace _domain {
         
         // Key: insee Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("insee")]
-        public string Insee { get; set; }//;
+        public System.String? Insee { get; set; }//;
         
         // Key: language Type: nichandle.LanguageEnum FullType: nichandle.LanguageEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("language")]
-        public _nichandle.LanguageEnum Language { get; set; }//;
+        public _nichandle.LanguageEnum? Language { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: legalForm Type: nichandle.LegalFormEnum FullType: nichandle.LegalFormEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("legalForm")]
-        public _nichandle.LegalFormEnum LegalForm { get; set; }//;
+        public _nichandle.LegalFormEnum? LegalForm { get; set; }//;
         
         // Key: legalFormCategory Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("legalFormCategory")]
-        public string LegalFormCategory { get; set; }//;
+        public System.String? LegalFormCategory { get; set; }//;
         
         // Key: nationalIdentificationNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nationalIdentificationNumber")]
-        public string NationalIdentificationNumber { get; set; }//;
+        public System.String? NationalIdentificationNumber { get; set; }//;
         
         // Key: nationality Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nationality")]
-        public _nichandle.CountryEnum Nationality { get; set; }//;
+        public _nichandle.CountryEnum? Nationality { get; set; }//;
         
         // Key: organisationAccountable Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationAccountable")]
-        public string OrganisationAccountable { get; set; }//;
+        public System.String? OrganisationAccountable { get; set; }//;
         
         // Key: organisationFunding Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationFunding")]
-        public string OrganisationFunding { get; set; }//;
+        public System.String? OrganisationFunding { get; set; }//;
         
         // Key: organisationFundingOther Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationFundingOther")]
-        public string OrganisationFundingOther { get; set; }//;
+        public System.String? OrganisationFundingOther { get; set; }//;
         
         // Key: organisationName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationName")]
-        public string OrganisationName { get; set; }//;
+        public System.String? OrganisationName { get; set; }//;
         
         // Key: organisationRole Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationRole")]
-        public string OrganisationRole { get; set; }//;
+        public System.String? OrganisationRole { get; set; }//;
         
         // Key: organisationRoleOther Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationRoleOther")]
-        public string OrganisationRoleOther { get; set; }//;
+        public System.String? OrganisationRoleOther { get; set; }//;
         
         // Key: organisationStaffStatus Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationStaffStatus")]
-        public string OrganisationStaffStatus { get; set; }//;
+        public System.String? OrganisationStaffStatus { get; set; }//;
         
         // Key: organisationStaffStatusOther Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationStaffStatusOther")]
-        public string OrganisationStaffStatusOther { get; set; }//;
+        public System.String? OrganisationStaffStatusOther { get; set; }//;
         
         // Key: organisationType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationType")]
-        public string OrganisationType { get; set; }//;
+        public System.String? OrganisationType { get; set; }//;
         
         // Key: organisationTypeOther Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationTypeOther")]
-        public string OrganisationTypeOther { get; set; }//;
+        public System.String? OrganisationTypeOther { get; set; }//;
         
         // Key: phone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
-        public string Phone { get; set; }//;
+        public System.String? Phone { get; set; }//;
         
         // Key: registrantDocumentType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("registrantDocumentType")]
-        public string RegistrantDocumentType { get; set; }//;
+        public System.String? RegistrantDocumentType { get; set; }//;
         
         // Key: registrantDocumentTypeOther Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("registrantDocumentTypeOther")]
-        public string RegistrantDocumentTypeOther { get; set; }//;
+        public System.String? RegistrantDocumentTypeOther { get; set; }//;
         
         // Key: roleInOrganisation Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("roleInOrganisation")]
-        public string RoleInOrganisation { get; set; }//;
+        public System.String? RoleInOrganisation { get; set; }//;
         
         // Key: trademarkId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trademarkId")]
-        public string TrademarkId { get; set; }//;
+        public System.String? TrademarkId { get; set; }//;
         
         // Key: vat Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vat")]
-        public string Vat { get; set; }//;
+        public System.String? Vat { get; set; }//;
         
         // Key: website Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("website")]
-        public string Website { get; set; }//;
+        public System.String? Website { get; set; }//;
     }
     
     // Id: ContactAddress Namespace: domain
@@ -222,35 +222,35 @@ namespace _domain {
         
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: country Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public _nichandle.CountryEnum Country { get; set; }//;
+        public _nichandle.CountryEnum? Country { get; set; }//;
         
         // Key: line1 Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("line1")]
-        public string Line1 { get; set; }//;
+        public System.String? Line1 { get; set; }//;
         
         // Key: line2 Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("line2")]
-        public string Line2 { get; set; }//;
+        public System.String? Line2 { get; set; }//;
         
         // Key: line3 Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("line3")]
-        public string Line3 { get; set; }//;
+        public System.String? Line3 { get; set; }//;
         
         // Key: otherDetails Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("otherDetails")]
-        public string OtherDetails { get; set; }//;
+        public System.String? OtherDetails { get; set; }//;
         
         // Key: province Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("province")]
-        public string Province { get; set; }//;
+        public System.String? Province { get; set; }//;
         
         // Key: zip Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zip")]
-        public string Zip { get; set; }//;
+        public System.String? Zip { get; set; }//;
     }
     
     // Id: ContactSummary Namespace: domain
@@ -266,27 +266,27 @@ namespace _domain {
         
         // Key: audience Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("audience")]
-        public string Audience { get; set; }//;
+        public System.String? Audience { get; set; }//;
         
         // Key: authInfo Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("authInfo")]
-        public string AuthInfo { get; set; }//;
+        public System.String? AuthInfo { get; set; }//;
         
         // Key: isFor Type: domain.IsForEnum[] FullType: domain.IsForEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isFor")]
-        public _domain.IsForEnum[] IsFor { get; set; }//;
+        public _domain.IsForEnum[]? IsFor { get; set; }//;
         
         // Key: otherPurpose Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("otherPurpose")]
-        public string OtherPurpose { get; set; }//;
+        public System.String? OtherPurpose { get; set; }//;
         
         // Key: reason Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reason")]
-        public string Reason { get; set; }//;
+        public System.String? Reason { get; set; }//;
         
         // Key: represent Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("represent")]
-        public string Represent { get; set; }//;
+        public System.String? Represent { get; set; }//;
     }
     
     // Id: DnssecStateEnum Namespace: domain
@@ -359,7 +359,7 @@ namespace _domain {
         
         // Key: parentService Type: domain.ParentService FullType: domain.ParentService
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentService")]
-        public _domain.ParentService ParentService { get; set; }//;
+        public _domain.ParentService? ParentService { get; set; }//;
         
         // Key: state Type: domain.DomainStateEnum FullType: domain.DomainStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -493,7 +493,7 @@ namespace _domain {
         
         // Key: parentService Type: domain.ParentService FullType: domain.ParentService
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentService")]
-        public _domain.ParentService ParentService { get; set; }//;
+        public _domain.ParentService? ParentService { get; set; }//;
         
         // Key: renewalDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewalDate")]
@@ -573,7 +573,7 @@ namespace _domain {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -597,7 +597,7 @@ namespace _domain {
         
         // Key: parentService Type: domain.ParentService FullType: domain.ParentService
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentService")]
-        public _domain.ParentService ParentService { get; set; }//;
+        public _domain.ParentService? ParentService { get; set; }//;
         
         // Key: renewalDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewalDate")]
@@ -706,7 +706,7 @@ namespace _domain {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -726,7 +726,7 @@ namespace _domain {
         
         // Key: parentService Type: domain.ParentService FullType: domain.ParentService
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentService")]
-        public _domain.ParentService ParentService { get; set; }//;
+        public _domain.ParentService? ParentService { get; set; }//;
         
         // Key: state Type: domain.DomainStateEnum FullType: domain.DomainStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -912,15 +912,15 @@ namespace _domain {
         
         // Key: hosting Type: domain.ServiceOption FullType: domain.ServiceOption
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hosting")]
-        public _domain.ServiceOption Hosting { get; set; }//;
+        public _domain.ServiceOption? Hosting { get; set; }//;
         
         // Key: offer Type: domain.ServiceOption FullType: domain.ServiceOption
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public _domain.ServiceOption Offer { get; set; }//;
+        public _domain.ServiceOption? Offer { get; set; }//;
         
         // Key: zone Type: domain.ServiceOption FullType: domain.ServiceOption
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
-        public _domain.ServiceOption Zone { get; set; }//;
+        public _domain.ServiceOption? Zone { get; set; }//;
     }
     
     // Id: SuspensionStateEnum Namespace: domain
@@ -950,7 +950,7 @@ namespace _domain {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -958,11 +958,11 @@ namespace _domain {
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
-        public string Domain { get; set; }//;
+        public System.String? Domain { get; set; }//;
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: function Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -1072,7 +1072,7 @@ namespace _domain {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1096,11 +1096,11 @@ namespace _domain {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1339,15 +1339,15 @@ namespace _domain {
         
         // Key: date Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateTime Date { get; set; }//;
+        public System.DateTime? Date { get; set; }//;
         
         // Key: emailCount Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("emailCount")]
-        public long EmailCount { get; set; }//;
+        public System.Int64? EmailCount { get; set; }//;
         
         // Key: quota Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
-        public long Quota { get; set; }//;
+        public System.Int64? Quota { get; set; }//;
     }
     
     // Id: DocumentFormatsEnum Namespace: domain

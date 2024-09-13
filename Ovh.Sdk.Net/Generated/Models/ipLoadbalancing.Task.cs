@@ -23,7 +23,7 @@ namespace _ipLoadbalancing_Task {
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]

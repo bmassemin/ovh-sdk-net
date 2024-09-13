@@ -23,7 +23,7 @@ namespace _dedicated_networkInterfaceController {
         
         // Key: virtualNetworkInterface Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("virtualNetworkInterface")]
-        public System.Guid VirtualNetworkInterface { get; set; }//;
+        public System.Guid? VirtualNetworkInterface { get; set; }//;
     }
     
     // Id: NetworkInterfaceControllerLinkTypeEnum Namespace: dedicated.networkInterfaceController

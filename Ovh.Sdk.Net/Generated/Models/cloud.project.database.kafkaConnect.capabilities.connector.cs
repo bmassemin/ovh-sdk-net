@@ -39,7 +39,7 @@ namespace _cloud_project_database_kafkaConnect_capabilities_connector {
         
         // Key: values Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("values")]
-        public string[] Values { get; set; }//;
+        public System.String[]? Values { get; set; }//;
     }
     
     // Id: TypeEnum Namespace: cloud.project.database.kafkaConnect.capabilities.connector

@@ -59,7 +59,7 @@ namespace _dedicated_housing {
         
         // Key: datacenter Type: dedicated.housing.DatacenterEnum FullType: dedicated.housing.DatacenterEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
-        public _dedicated_housing.DatacenterEnum Datacenter { get; set; }//;
+        public _dedicated_housing.DatacenterEnum? Datacenter { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -87,11 +87,11 @@ namespace _dedicated_housing {
         
         // Key: datacenter Type: dedicated.housing.DatacenterEnum FullType: dedicated.housing.DatacenterEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
-        public _dedicated_housing.DatacenterEnum Datacenter { get; set; }//;
+        public _dedicated_housing.DatacenterEnum? Datacenter { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -119,7 +119,7 @@ namespace _dedicated_housing {
         
         // Key: gateway Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public string Gateway { get; set; }//;
+        public System.String? Gateway { get; set; }//;
         
         // Key: network Type: ipBlock FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
@@ -127,7 +127,7 @@ namespace _dedicated_housing {
         
         // Key: reservedAddresses Type: ip[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reservedAddresses")]
-        public string[] ReservedAddresses { get; set; }//;
+        public System.String[]? ReservedAddresses { get; set; }//;
     }
     
     // Id: LinkInfo Namespace: dedicated.housing
@@ -147,15 +147,15 @@ namespace _dedicated_housing {
         
         // Key: ipv4 Type: dedicated.housing.IpInfo FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public _dedicated_housing.IpInfo Ipv4 { get; set; }//;
+        public _dedicated_housing.IpInfo? Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: dedicated.housing.IpInfo FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public _dedicated_housing.IpInfo Ipv6 { get; set; }//;
+        public _dedicated_housing.IpInfo? Ipv6 { get; set; }//;
         
         // Key: link Type: dedicated.housing.LinkInfo FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("link")]
-        public _dedicated_housing.LinkInfo Link { get; set; }//;
+        public _dedicated_housing.LinkInfo? Link { get; set; }//;
     }
     
     // Id: Options Namespace: dedicated.housing
@@ -179,11 +179,11 @@ namespace _dedicated_housing {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: function Type: dedicated.housing.TaskFunctionEnum FullType: dedicated.housing.TaskFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -191,7 +191,7 @@ namespace _dedicated_housing {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]

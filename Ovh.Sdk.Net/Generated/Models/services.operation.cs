@@ -39,7 +39,7 @@ namespace _services_operation {
         
         // Key: addons Type: services.operation.AddonDetachExecutionRequest[] FullType: services.operation.AddonDetachExecutionRequest[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("addons")]
-        public _services_operation.AddonDetachExecutionRequest[] Addons { get; set; }//;
+        public _services_operation.AddonDetachExecutionRequest[]? Addons { get; set; }//;
         
         // Key: autoPayWithPreferredPaymentMethod Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoPayWithPreferredPaymentMethod")]
@@ -95,6 +95,6 @@ namespace _services_operation {
         
         // Key: order Type: order.Order FullType: order.Order
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("order")]
-        public _order.Order _Order { get; set; }//;
+        public _order.Order? _Order { get; set; }//;
     }
 }

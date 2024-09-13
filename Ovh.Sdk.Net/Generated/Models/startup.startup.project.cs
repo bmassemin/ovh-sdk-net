@@ -19,11 +19,11 @@ namespace _startup_startup_project {
         
         // Key: otherCloudProvider Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("otherCloudProvider")]
-        public bool OtherCloudProvider { get; set; }//;
+        public System.Boolean? OtherCloudProvider { get; set; }//;
         
         // Key: otherCloudProviderInfo Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("otherCloudProviderInfo")]
-        public string OtherCloudProviderInfo { get; set; }//;
+        public System.String? OtherCloudProviderInfo { get; set; }//;
         
         // Key: technicalNeeds Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technicalNeeds")]

@@ -31,11 +31,11 @@ namespace _metrics {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: labels Type: metrics.api.Label[] FullType: metrics.api.Label[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
-        public _metrics_api.Label[] Labels { get; set; }//;
+        public _metrics_api.Label[]? Labels { get; set; }//;
         
         // Key: permission Type: metrics.api.PermissionEnum FullType: metrics.api.PermissionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("permission")]
@@ -47,7 +47,7 @@ namespace _metrics {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
     }
     
     // Id: Update Namespace: metrics
@@ -55,6 +55,6 @@ namespace _metrics {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
     }
 }

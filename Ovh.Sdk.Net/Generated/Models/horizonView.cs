@@ -57,7 +57,7 @@ namespace _horizonView {
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -149,7 +149,7 @@ namespace _horizonView {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -201,11 +201,11 @@ namespace _horizonView {
         
         // Key: dns1 Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dns1")]
-        public string Dns1 { get; set; }//;
+        public System.String? Dns1 { get; set; }//;
         
         // Key: dns2 Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dns2")]
-        public string Dns2 { get; set; }//;
+        public System.String? Dns2 { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -237,11 +237,11 @@ namespace _horizonView {
         
         // Key: intercoNextHop Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("intercoNextHop")]
-        public string IntercoNextHop { get; set; }//;
+        public System.String? IntercoNextHop { get; set; }//;
         
         // Key: intercoPrivateNextHop Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("intercoPrivateNextHop")]
-        public string IntercoPrivateNextHop { get; set; }//;
+        public System.String? IntercoPrivateNextHop { get; set; }//;
         
         // Key: portGroupId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portGroupId")]
@@ -300,11 +300,11 @@ namespace _horizonView {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: lastModificationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastModificationDate")]
-        public System.DateTime LastModificationDate { get; set; }//;
+        public System.DateTime? LastModificationDate { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

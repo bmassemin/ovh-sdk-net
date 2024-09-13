@@ -15,7 +15,7 @@ namespace _billing_order_paymentMean {
         
         // Key: choice Type: billing.order.paymentMean.HttpParameterChoice[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("choice")]
-        public _billing_order_paymentMean.HttpParameterChoice[] Choice { get; set; }//;
+        public _billing_order_paymentMean.HttpParameterChoice[]? Choice { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -23,7 +23,7 @@ namespace _billing_order_paymentMean {
         
         // Key: value Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: HttpParameterChoice Namespace: billing.order.paymentMean

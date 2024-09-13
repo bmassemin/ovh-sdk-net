@@ -27,7 +27,7 @@ namespace _me {
         
         // Key: steps Type: me.migration.Step[] FullType: me.migration.Step[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("steps")]
-        public _me_migration.Step[] Steps { get; set; }//;
+        public _me_migration.Step[]? Steps { get; set; }//;
         
         // Key: to Type: nichandle.OvhSubsidiaryEnum FullType: nichandle.OvhSubsidiaryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("to")]

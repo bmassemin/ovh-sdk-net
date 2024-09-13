@@ -79,7 +79,7 @@ namespace _freefax {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: number Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]

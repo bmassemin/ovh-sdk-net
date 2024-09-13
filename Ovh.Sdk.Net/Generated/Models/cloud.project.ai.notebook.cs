@@ -123,7 +123,7 @@ namespace _cloud_project_ai_notebook {
         
         // Key: frameworkVersion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frameworkVersion")]
-        public string FrameworkVersion { get; set; }//;
+        public System.String? FrameworkVersion { get; set; }//;
     }
     
     // Id: NotebookSpec Namespace: cloud.project.ai.notebook
@@ -139,11 +139,11 @@ namespace _cloud_project_ai_notebook {
         
         // Key: flavor Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavor")]
-        public string Flavor { get; set; }//;
+        public System.String? Flavor { get; set; }//;
         
         // Key: labels Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
-        public Dictionary<string, string> Labels { get; set; }//;
+        public Dictionary<string, string>? Labels { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -159,23 +159,23 @@ namespace _cloud_project_ai_notebook {
         
         // Key: shutdown Type: cloud.project.ai.ShutdownStrategyEnum FullType: cloud.project.ai.ShutdownStrategyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shutdown")]
-        public _cloud_project_ai.ShutdownStrategyEnum Shutdown { get; set; }//;
+        public _cloud_project_ai.ShutdownStrategyEnum? Shutdown { get; set; }//;
         
         // Key: sshPublicKeys Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshPublicKeys")]
-        public string[] SshPublicKeys { get; set; }//;
+        public System.String[]? SshPublicKeys { get; set; }//;
         
         // Key: timeoutAutoRestart Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutAutoRestart")]
-        public bool TimeoutAutoRestart { get; set; }//;
+        public System.Boolean? TimeoutAutoRestart { get; set; }//;
         
         // Key: unsecureHttp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unsecureHttp")]
-        public bool UnsecureHttp { get; set; }//;
+        public System.Boolean? UnsecureHttp { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.Volume[] FullType: cloud.project.ai.volume.Volume[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.Volume[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.Volume[]? Volumes { get; set; }//;
     }
     
     // Id: NotebookSpecInput Namespace: cloud.project.ai.notebook
@@ -187,11 +187,11 @@ namespace _cloud_project_ai_notebook {
         
         // Key: envVars Type: cloud.project.ai.job.JobEnv[] FullType: cloud.project.ai.job.JobEnv[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("envVars")]
-        public _cloud_project_ai_job.JobEnv[] EnvVars { get; set; }//;
+        public _cloud_project_ai_job.JobEnv[]? EnvVars { get; set; }//;
         
         // Key: labels Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
-        public Dictionary<string, string> Labels { get; set; }//;
+        public Dictionary<string, string>? Labels { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -207,23 +207,23 @@ namespace _cloud_project_ai_notebook {
         
         // Key: shutdown Type: cloud.project.ai.ShutdownStrategyEnum FullType: cloud.project.ai.ShutdownStrategyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shutdown")]
-        public _cloud_project_ai.ShutdownStrategyEnum Shutdown { get; set; }//;
+        public _cloud_project_ai.ShutdownStrategyEnum? Shutdown { get; set; }//;
         
         // Key: sshPublicKeys Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshPublicKeys")]
-        public string[] SshPublicKeys { get; set; }//;
+        public System.String[]? SshPublicKeys { get; set; }//;
         
         // Key: timeoutAutoRestart Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutAutoRestart")]
-        public bool TimeoutAutoRestart { get; set; }//;
+        public System.Boolean? TimeoutAutoRestart { get; set; }//;
         
         // Key: unsecureHttp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unsecureHttp")]
-        public bool UnsecureHttp { get; set; }//;
+        public System.Boolean? UnsecureHttp { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.Volume[] FullType: cloud.project.ai.volume.Volume[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.Volume[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.Volume[]? Volumes { get; set; }//;
     }
     
     // Id: NotebookStateEnum Namespace: cloud.project.ai.notebook
@@ -266,11 +266,11 @@ namespace _cloud_project_ai_notebook {
         
         // Key: duration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public long Duration { get; set; }//;
+        public System.Int64? Duration { get; set; }//;
         
         // Key: grpcAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grpcAddress")]
-        public string GrpcAddress { get; set; }//;
+        public System.String? GrpcAddress { get; set; }//;
         
         // Key: info Type: cloud.project.ai.Info FullType: cloud.project.ai.Info
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("info")]
@@ -278,7 +278,7 @@ namespace _cloud_project_ai_notebook {
         
         // Key: infoUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("infoUrl")]
-        public string InfoUrl { get; set; }//;
+        public System.String? InfoUrl { get; set; }//;
         
         // Key: lastJobStatus Type: cloud.project.ai.job.JobStatus FullType: cloud.project.ai.job.JobStatus
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastJobStatus")]
@@ -286,35 +286,35 @@ namespace _cloud_project_ai_notebook {
         
         // Key: lastStartedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastStartedAt")]
-        public System.DateTime LastStartedAt { get; set; }//;
+        public System.DateTime? LastStartedAt { get; set; }//;
         
         // Key: lastStoppedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastStoppedAt")]
-        public System.DateTime LastStoppedAt { get; set; }//;
+        public System.DateTime? LastStoppedAt { get; set; }//;
         
         // Key: monitoringUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoringUrl")]
-        public string MonitoringUrl { get; set; }//;
+        public System.String? MonitoringUrl { get; set; }//;
         
         // Key: sshUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshUrl")]
-        public string SshUrl { get; set; }//;
+        public System.String? SshUrl { get; set; }//;
         
         // Key: state Type: cloud.project.ai.notebook.NotebookStateEnum FullType: cloud.project.ai.notebook.NotebookStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _cloud_project_ai_notebook.NotebookStateEnum State { get; set; }//;
+        public _cloud_project_ai_notebook.NotebookStateEnum? State { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.VolumeStatus[] FullType: cloud.project.ai.volume.VolumeStatus[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.VolumeStatus[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.VolumeStatus[]? Volumes { get; set; }//;
         
         // Key: workspace Type: cloud.project.ai.notebook.NotebookWorkspace FullType: cloud.project.ai.notebook.NotebookWorkspace
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("workspace")]
-        public _cloud_project_ai_notebook.NotebookWorkspace Workspace { get; set; }//;
+        public _cloud_project_ai_notebook.NotebookWorkspace? Workspace { get; set; }//;
     }
     
     // Id: NotebookUpdate Namespace: cloud.project.ai.notebook
@@ -322,27 +322,27 @@ namespace _cloud_project_ai_notebook {
         
         // Key: labels Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
-        public Dictionary<string, string> Labels { get; set; }//;
+        public Dictionary<string, string>? Labels { get; set; }//;
         
         // Key: resources Type: cloud.project.ai.ResourcesInput FullType: cloud.project.ai.ResourcesInput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resources")]
-        public _cloud_project_ai.ResourcesInput Resources { get; set; }//;
+        public _cloud_project_ai.ResourcesInput? Resources { get; set; }//;
         
         // Key: sshPublicKeys Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshPublicKeys")]
-        public string[] SshPublicKeys { get; set; }//;
+        public System.String[]? SshPublicKeys { get; set; }//;
         
         // Key: timeoutAutoRestart Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutAutoRestart")]
-        public bool TimeoutAutoRestart { get; set; }//;
+        public System.Boolean? TimeoutAutoRestart { get; set; }//;
         
         // Key: unsecureHttp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unsecureHttp")]
-        public bool UnsecureHttp { get; set; }//;
+        public System.Boolean? UnsecureHttp { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.Volume[] FullType: cloud.project.ai.volume.Volume[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.Volume[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.Volume[]? Volumes { get; set; }//;
     }
     
     // Id: NotebookWorkspace Namespace: cloud.project.ai.notebook

@@ -61,7 +61,7 @@ namespace _cloud_instance {
         
         // Key: gateway Type: cloud.network.CreateGatewaySummary FullType: cloud.network.CreateGatewaySummary
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public _cloud_network.CreateGatewaySummary Gateway { get; set; }//;
+        public _cloud_network.CreateGatewaySummary? Gateway { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -85,7 +85,7 @@ namespace _cloud_instance {
         
         // Key: gateway Type: cloud.network.CreateGatewaySummary FullType: cloud.network.CreateGatewaySummary
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public _cloud_network.CreateGatewaySummary Gateway { get; set; }//;
+        public _cloud_network.CreateGatewaySummary? Gateway { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -97,7 +97,7 @@ namespace _cloud_instance {
         
         // Key: autobackup Type: cloud.instance.CreateInput.Autobackup FullType: cloud.instance.CreateInput.Autobackup
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autobackup")]
-        public _cloud_instance_CreateInput.Autobackup Autobackup { get; set; }//;
+        public _cloud_instance_CreateInput.Autobackup? Autobackup { get; set; }//;
         
         // Key: billingPeriod Type: cloud.instance.CreateInput.BillingPeriodEnum FullType: cloud.instance.CreateInput.BillingPeriodEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("billingPeriod")]
@@ -117,7 +117,7 @@ namespace _cloud_instance {
         
         // Key: group Type: cloud.instance.CreateInput.Group FullType: cloud.instance.CreateInput.Group
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
-        public _cloud_instance_CreateInput.Group Group { get; set; }//;
+        public _cloud_instance_CreateInput.Group? Group { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -129,15 +129,15 @@ namespace _cloud_instance {
         
         // Key: sshKey Type: cloud.instance.CreateInput.SshKey FullType: cloud.instance.CreateInput.SshKey
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshKey")]
-        public _cloud_instance_CreateInput.SshKey SshKey { get; set; }//;
+        public _cloud_instance_CreateInput.SshKey? SshKey { get; set; }//;
         
         // Key: sshKeyCreate Type: cloud.instance.CreateInput.SshKeyCreate FullType: cloud.instance.CreateInput.SshKeyCreate
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshKeyCreate")]
-        public _cloud_instance_CreateInput.SshKeyCreate SshKeyCreate { get; set; }//;
+        public _cloud_instance_CreateInput.SshKeyCreate? SshKeyCreate { get; set; }//;
         
         // Key: userData Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userData")]
-        public string UserData { get; set; }//;
+        public System.String? UserData { get; set; }//;
     }
     
     // Id: Instance Namespace: cloud.instance
@@ -149,7 +149,7 @@ namespace _cloud_instance {
         
         // Key: currentMonthOutgoingTraffic Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentMonthOutgoingTraffic")]
-        public long CurrentMonthOutgoingTraffic { get; set; }//;
+        public System.Int64? CurrentMonthOutgoingTraffic { get; set; }//;
         
         // Key: flavorId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavorId")]
@@ -169,7 +169,7 @@ namespace _cloud_instance {
         
         // Key: monthlyBilling Type: cloud.instance.MonthlyBilling FullType: cloud.instance.MonthlyBilling
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyBilling")]
-        public _cloud_instance.MonthlyBilling MonthlyBilling { get; set; }//;
+        public _cloud_instance.MonthlyBilling? MonthlyBilling { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -181,7 +181,7 @@ namespace _cloud_instance {
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -189,7 +189,7 @@ namespace _cloud_instance {
         
         // Key: sshKeyId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshKeyId")]
-        public string SshKeyId { get; set; }//;
+        public System.String? SshKeyId { get; set; }//;
         
         // Key: status Type: cloud.instance.InstanceStatusEnum FullType: cloud.instance.InstanceStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -217,7 +217,7 @@ namespace _cloud_instance {
         
         // Key: currentMonthOutgoingTraffic Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentMonthOutgoingTraffic")]
-        public long CurrentMonthOutgoingTraffic { get; set; }//;
+        public System.Int64? CurrentMonthOutgoingTraffic { get; set; }//;
         
         // Key: flavor Type: cloud.flavor.Flavor FullType: cloud.flavor.Flavor
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavor")]
@@ -237,7 +237,7 @@ namespace _cloud_instance {
         
         // Key: monthlyBilling Type: cloud.instance.MonthlyBilling FullType: cloud.instance.MonthlyBilling
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyBilling")]
-        public _cloud_instance.MonthlyBilling MonthlyBilling { get; set; }//;
+        public _cloud_instance.MonthlyBilling? MonthlyBilling { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -249,7 +249,7 @@ namespace _cloud_instance {
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -257,11 +257,11 @@ namespace _cloud_instance {
         
         // Key: rescuePassword Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rescuePassword")]
-        public string RescuePassword { get; set; }//;
+        public System.String? RescuePassword { get; set; }//;
         
         // Key: sshKey Type: cloud.sshkey.SshKeyDetail FullType: cloud.sshkey.SshKeyDetail
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshKey")]
-        public _cloud_sshkey.SshKeyDetail SshKey { get; set; }//;
+        public _cloud_sshkey.SshKeyDetail? SshKey { get; set; }//;
         
         // Key: status Type: cloud.instance.InstanceStatusEnum FullType: cloud.instance.InstanceStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -561,7 +561,7 @@ namespace _cloud_instance {
         
         // Key: gatewayIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayIp")]
-        public string GatewayIp { get; set; }//;
+        public System.String? GatewayIp { get; set; }//;
         
         // Key: ip Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -668,7 +668,7 @@ namespace _cloud_instance {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: networkId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkId")]
@@ -690,6 +690,6 @@ namespace _cloud_instance {
         
         // Key: adminPassword Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("adminPassword")]
-        public string AdminPassword { get; set; }//;
+        public System.String? AdminPassword { get; set; }//;
     }
 }

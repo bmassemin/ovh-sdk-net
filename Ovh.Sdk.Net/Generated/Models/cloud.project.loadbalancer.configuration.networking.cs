@@ -15,7 +15,7 @@ namespace _cloud_project_loadbalancer_configuration_networking {
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public System.Guid Id { get; set; }//;
+        public System.Guid? Id { get; set; }//;
         
         // Key: kind Type: cloud.project.loadbalancer.networking.egress.KindEnum FullType: cloud.project.loadbalancer.networking.egress.KindEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kind")]
@@ -35,10 +35,10 @@ namespace _cloud_project_loadbalancer_configuration_networking {
         
         // Key: egress Type: cloud.project.loadbalancer.configuration.networking.Egress FullType: cloud.project.loadbalancer.configuration.networking.Egress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("egress")]
-        public _cloud_project_loadbalancer_configuration_networking.Egress Egress { get; set; }//;
+        public _cloud_project_loadbalancer_configuration_networking.Egress? Egress { get; set; }//;
         
         // Key: ingress Type: cloud.project.loadbalancer.configuration.networking.Ingress FullType: cloud.project.loadbalancer.configuration.networking.Ingress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ingress")]
-        public _cloud_project_loadbalancer_configuration_networking.Ingress Ingress { get; set; }//;
+        public _cloud_project_loadbalancer_configuration_networking.Ingress? Ingress { get; set; }//;
     }
 }

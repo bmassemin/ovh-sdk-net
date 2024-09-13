@@ -37,11 +37,11 @@ namespace _cloud_instance_CreateInput {
         
         // Key: imageId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("imageId")]
-        public System.Guid ImageId { get; set; }//;
+        public System.Guid? ImageId { get; set; }//;
         
         // Key: volumeId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumeId")]
-        public System.Guid VolumeId { get; set; }//;
+        public System.Guid? VolumeId { get; set; }//;
     }
     
     // Id: Flavor Namespace: cloud.instance.CreateInput
@@ -65,7 +65,7 @@ namespace _cloud_instance_CreateInput {
         
         // Key: private Type: cloud.instance.CreateInput.Network.Private FullType: cloud.instance.CreateInput.Network.Private
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("private")]
-        public _cloud_instance_CreateInput_Network.Private @private { get; set; }//;
+        public _cloud_instance_CreateInput_Network.Private? @private { get; set; }//;
         
         // Key: public Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("public")]

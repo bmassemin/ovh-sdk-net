@@ -15,7 +15,7 @@ namespace _ipLoadbalancing_Ssl {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: expireDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expireDate")]
@@ -43,6 +43,6 @@ namespace _ipLoadbalancing_Ssl {
         
         // Key: type Type: ipLoadbalancing.SslTypeEnum FullType: ipLoadbalancing.SslTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _ipLoadbalancing.SslTypeEnum Type { get; set; }//;
+        public _ipLoadbalancing.SslTypeEnum? Type { get; set; }//;
     }
 }

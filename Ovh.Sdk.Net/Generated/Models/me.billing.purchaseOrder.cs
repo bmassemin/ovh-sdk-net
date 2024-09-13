@@ -15,19 +15,19 @@ namespace _me_billing_purchaseOrder {
         
         // Key: active Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("active")]
-        public bool Active { get; set; }//;
+        public System.Boolean? Active { get; set; }//;
         
         // Key: billingGroupId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("billingGroupId")]
-        public long BillingGroupId { get; set; }//;
+        public System.Int64? BillingGroupId { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: endDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateOnly EndDate { get; set; }//;
+        public System.DateOnly? EndDate { get; set; }//;
         
         // Key: reference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reference")]
@@ -47,11 +47,11 @@ namespace _me_billing_purchaseOrder {
         
         // Key: active Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("active")]
-        public bool Active { get; set; }//;
+        public System.Boolean? Active { get; set; }//;
         
         // Key: billingGroupId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("billingGroupId")]
-        public long BillingGroupId { get; set; }//;
+        public System.Int64? BillingGroupId { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -59,11 +59,11 @@ namespace _me_billing_purchaseOrder {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: endDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateOnly EndDate { get; set; }//;
+        public System.DateOnly? EndDate { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -115,30 +115,30 @@ namespace _me_billing_purchaseOrder {
         
         // Key: active Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("active")]
-        public bool Active { get; set; }//;
+        public System.Boolean? Active { get; set; }//;
         
         // Key: billingGroupId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("billingGroupId")]
-        public long BillingGroupId { get; set; }//;
+        public System.Int64? BillingGroupId { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: endDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateOnly EndDate { get; set; }//;
+        public System.DateOnly? EndDate { get; set; }//;
         
         // Key: reference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reference")]
-        public string Reference { get; set; }//;
+        public System.String? Reference { get; set; }//;
         
         // Key: startDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
-        public System.DateOnly StartDate { get; set; }//;
+        public System.DateOnly? StartDate { get; set; }//;
         
         // Key: type Type: me.billing.purchaseOrder.PurchaseOrderTypeEnum FullType: me.billing.purchaseOrder.PurchaseOrderTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _me_billing_purchaseOrder.PurchaseOrderTypeEnum Type { get; set; }//;
+        public _me_billing_purchaseOrder.PurchaseOrderTypeEnum? Type { get; set; }//;
     }
 }

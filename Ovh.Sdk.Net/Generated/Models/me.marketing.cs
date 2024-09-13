@@ -23,7 +23,7 @@ namespace _me_marketing {
         
         // Key: denyUntil Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("denyUntil")]
-        public System.DateTime DenyUntil { get; set; }//;
+        public System.DateTime? DenyUntil { get; set; }//;
         
         // Key: email Type: me.marketing.ConsentDetails FullType: me.marketing.ConsentDetails
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]

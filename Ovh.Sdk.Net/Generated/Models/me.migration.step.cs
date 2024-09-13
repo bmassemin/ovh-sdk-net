@@ -23,11 +23,11 @@ namespace _me_migration_step {
         
         // Key: balanceAmount Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("balanceAmount")]
-        public _order.Price BalanceAmount { get; set; }//;
+        public _order.Price? BalanceAmount { get; set; }//;
         
         // Key: ovhAccountAmount Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhAccountAmount")]
-        public _order.Price OvhAccountAmount { get; set; }//;
+        public _order.Price? OvhAccountAmount { get; set; }//;
     }
     
     // Id: NameEnum Namespace: me.migration.step

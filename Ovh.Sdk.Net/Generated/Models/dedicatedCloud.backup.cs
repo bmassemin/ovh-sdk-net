@@ -15,55 +15,55 @@ namespace _dedicatedCloud_backup {
         
         // Key: allocatedDisk Type: double FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allocatedDisk")]
-        public double AllocatedDisk { get; set; }//;
+        public System.Double? AllocatedDisk { get; set; }//;
         
         // Key: backupDays Type: dedicatedCloud.backup.BackupDaysEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupDays")]
-        public _dedicatedCloud_backup.BackupDaysEnum[] BackupDays { get; set; }//;
+        public _dedicatedCloud_backup.BackupDaysEnum[]? BackupDays { get; set; }//;
         
         // Key: backupRepositoryId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupRepositoryId")]
-        public long BackupRepositoryId { get; set; }//;
+        public System.Int64? BackupRepositoryId { get; set; }//;
         
         // Key: encryption Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryption")]
-        public bool Encryption { get; set; }//;
+        public System.Boolean? Encryption { get; set; }//;
         
         // Key: lastCreationTime Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastCreationTime")]
-        public System.DateTime LastCreationTime { get; set; }//;
+        public System.DateTime? LastCreationTime { get; set; }//;
         
         // Key: lastDuration Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastDuration")]
-        public _complexType.UnitAndValue<long> LastDuration { get; set; }//;
+        public _complexType.UnitAndValue<long>? LastDuration { get; set; }//;
         
         // Key: lastResult Type: dedicatedCloud.backup.JobStateEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastResult")]
-        public _dedicatedCloud_backup.JobStateEnum LastResult { get; set; }//;
+        public _dedicatedCloud_backup.JobStateEnum? LastResult { get; set; }//;
         
         // Key: lastSuccessfulCreationTime Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastSuccessfulCreationTime")]
-        public System.DateTime LastSuccessfulCreationTime { get; set; }//;
+        public System.DateTime? LastSuccessfulCreationTime { get; set; }//;
         
         // Key: lastSuccessfulDuration Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastSuccessfulDuration")]
-        public _complexType.UnitAndValue<long> LastSuccessfulDuration { get; set; }//;
+        public _complexType.UnitAndValue<long>? LastSuccessfulDuration { get; set; }//;
         
         // Key: offerType Type: dedicatedCloud.backup.OfferTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerType")]
-        public _dedicatedCloud_backup.OfferTypeEnum OfferType { get; set; }//;
+        public _dedicatedCloud_backup.OfferTypeEnum? OfferType { get; set; }//;
         
         // Key: restorePoints Type: dedicatedCloud.backup.RestorePoint[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("restorePoints")]
-        public _dedicatedCloud_backup.RestorePoint[] RestorePoints { get; set; }//;
+        public _dedicatedCloud_backup.RestorePoint[]? RestorePoints { get; set; }//;
         
         // Key: retentionTime Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionTime")]
-        public long RetentionTime { get; set; }//;
+        public System.Int64? RetentionTime { get; set; }//;
         
         // Key: state Type: dedicatedCloud.backup.StateEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _dedicatedCloud_backup.StateEnum State { get; set; }//;
+        public _dedicatedCloud_backup.StateEnum? State { get; set; }//;
     }
     
     // Id: BackupCapabilities Namespace: dedicatedCloud.backup
@@ -263,11 +263,11 @@ namespace _dedicatedCloud_backup {
         
         // Key: creationTime Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationTime")]
-        public System.DateTime CreationTime { get; set; }//;
+        public System.DateTime? CreationTime { get; set; }//;
         
         // Key: isCorrupted Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isCorrupted")]
-        public bool IsCorrupted { get; set; }//;
+        public System.Boolean? IsCorrupted { get; set; }//;
         
         // Key: restorePointId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("restorePointId")]
@@ -275,11 +275,11 @@ namespace _dedicatedCloud_backup {
         
         // Key: size Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
-        public _complexType.UnitAndValue<long> Size { get; set; }//;
+        public _complexType.UnitAndValue<long>? Size { get; set; }//;
         
         // Key: type Type: dedicatedCloud.backup.BackupTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _dedicatedCloud_backup.BackupTypeEnum Type { get; set; }//;
+        public _dedicatedCloud_backup.BackupTypeEnum? Type { get; set; }//;
     }
     
     // Id: StateEnum Namespace: dedicatedCloud.backup

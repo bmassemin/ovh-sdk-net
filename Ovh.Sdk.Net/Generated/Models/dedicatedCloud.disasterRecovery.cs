@@ -25,7 +25,7 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: endpointPublicIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endpointPublicIp")]
-        public string EndpointPublicIp { get; set; }//;
+        public System.String? EndpointPublicIp { get; set; }//;
         
         // Key: role Type: dedicatedCloud.disasterRecovery.SiteRoleEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
@@ -33,7 +33,7 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: state Type: dedicatedCloud.StateEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _dedicatedCloud.StateEnum State { get; set; }//;
+        public _dedicatedCloud.StateEnum? State { get; set; }//;
         
         // Key: type Type: dedicatedCloud.disasterRecovery.SiteTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -45,7 +45,7 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: zvmIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zvmIp")]
-        public string ZvmIp { get; set; }//;
+        public System.String? ZvmIp { get; set; }//;
     }
     
     // Id: Profile Namespace: dedicatedCloud.disasterRecovery
@@ -53,15 +53,15 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: drpType Type: dedicatedCloud.disasterRecovery.DrpTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("drpType")]
-        public _dedicatedCloud_disasterRecovery.DrpTypeEnum DrpType { get; set; }//;
+        public _dedicatedCloud_disasterRecovery.DrpTypeEnum? DrpType { get; set; }//;
         
         // Key: localSiteInformation Type: dedicatedCloud.disasterRecovery.LocalSiteDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("localSiteInformation")]
-        public _dedicatedCloud_disasterRecovery.LocalSiteDetails LocalSiteInformation { get; set; }//;
+        public _dedicatedCloud_disasterRecovery.LocalSiteDetails? LocalSiteInformation { get; set; }//;
         
         // Key: remoteSiteInformation Type: dedicatedCloud.disasterRecovery.RemoteSiteDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteSiteInformation")]
-        public _dedicatedCloud_disasterRecovery.RemoteSiteDetails RemoteSiteInformation { get; set; }//;
+        public _dedicatedCloud_disasterRecovery.RemoteSiteDetails? RemoteSiteInformation { get; set; }//;
         
         // Key: state Type: dedicatedCloud.StateEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -77,39 +77,39 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: datacenterId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenterId")]
-        public long DatacenterId { get; set; }//;
+        public System.Int64? DatacenterId { get; set; }//;
         
         // Key: datacenterName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenterName")]
-        public string DatacenterName { get; set; }//;
+        public System.String? DatacenterName { get; set; }//;
         
         // Key: lastVpnConfig Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastVpnConfig")]
-        public System.DateTime LastVpnConfig { get; set; }//;
+        public System.DateTime? LastVpnConfig { get; set; }//;
         
         // Key: remoteEndpointInternalIp Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteEndpointInternalIp")]
-        public string RemoteEndpointInternalIp { get; set; }//;
+        public System.String? RemoteEndpointInternalIp { get; set; }//;
         
         // Key: remoteEndpointPublicIp Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteEndpointPublicIp")]
-        public string RemoteEndpointPublicIp { get; set; }//;
+        public System.String? RemoteEndpointPublicIp { get; set; }//;
         
         // Key: remoteZvmInternalIp Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteZvmInternalIp")]
-        public string RemoteZvmInternalIp { get; set; }//;
+        public System.String? RemoteZvmInternalIp { get; set; }//;
         
         // Key: role Type: dedicatedCloud.disasterRecovery.SiteRoleEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
-        public _dedicatedCloud_disasterRecovery.SiteRoleEnum Role { get; set; }//;
+        public _dedicatedCloud_disasterRecovery.SiteRoleEnum? Role { get; set; }//;
         
         // Key: serviceName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
-        public string ServiceName { get; set; }//;
+        public System.String? ServiceName { get; set; }//;
         
         // Key: state Type: dedicatedCloud.StateEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _dedicatedCloud.StateEnum State { get; set; }//;
+        public _dedicatedCloud.StateEnum? State { get; set; }//;
         
         // Key: type Type: dedicatedCloud.disasterRecovery.SiteTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -117,11 +117,11 @@ namespace _dedicatedCloud_disasterRecovery {
         
         // Key: vpnConfigState Type: dedicatedCloud.disasterRecovery.VpnConfigStateEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vpnConfigState")]
-        public _dedicatedCloud_disasterRecovery.VpnConfigStateEnum VpnConfigState { get; set; }//;
+        public _dedicatedCloud_disasterRecovery.VpnConfigStateEnum? VpnConfigState { get; set; }//;
         
         // Key: zertoVersion Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zertoVersion")]
-        public string ZertoVersion { get; set; }//;
+        public System.String? ZertoVersion { get; set; }//;
     }
     
     // Id: SiteRoleEnum Namespace: dedicatedCloud.disasterRecovery

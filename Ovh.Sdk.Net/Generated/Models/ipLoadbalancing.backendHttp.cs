@@ -15,11 +15,11 @@ namespace _ipLoadbalancing_backendHttp {
         
         // Key: balance Type: ipLoadbalancing.BalanceHTTPEnum FullType: ipLoadbalancing.BalanceHTTPEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("balance")]
-        public _ipLoadbalancing.BalanceHTTPEnum Balance { get; set; }//;
+        public _ipLoadbalancing.BalanceHTTPEnum? Balance { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: farmId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("farmId")]
@@ -27,19 +27,19 @@ namespace _ipLoadbalancing_backendHttp {
         
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
         
         // Key: probe Type: ipLoadbalancing.BackendProbe FullType: ipLoadbalancing.BackendProbe
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("probe")]
-        public _ipLoadbalancing.BackendProbe Probe { get; set; }//;
+        public _ipLoadbalancing.BackendProbe? Probe { get; set; }//;
         
         // Key: stickiness Type: ipLoadbalancing.StickinessHTTPEnum FullType: ipLoadbalancing.StickinessHTTPEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stickiness")]
-        public _ipLoadbalancing.StickinessHTTPEnum Stickiness { get; set; }//;
+        public _ipLoadbalancing.StickinessHTTPEnum? Stickiness { get; set; }//;
         
         // Key: vrackNetworkId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrackNetworkId")]
-        public long VrackNetworkId { get; set; }//;
+        public System.Int64? VrackNetworkId { get; set; }//;
         
         // Key: zone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]

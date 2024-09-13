@@ -19,7 +19,7 @@ namespace _cloud_project_io {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]

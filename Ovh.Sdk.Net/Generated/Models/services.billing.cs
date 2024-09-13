@@ -35,11 +35,11 @@ namespace _services_billing {
         
         // Key: periodEnd Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("periodEnd")]
-        public System.DateTime PeriodEnd { get; set; }//;
+        public System.DateTime? PeriodEnd { get; set; }//;
         
         // Key: periodStart Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("periodStart")]
-        public System.DateTime PeriodStart { get; set; }//;
+        public System.DateTime? PeriodStart { get; set; }//;
         
         // Key: price Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("price")]
@@ -59,7 +59,7 @@ namespace _services_billing {
         
         // Key: type Type: services.billing.InvoiceLineTypeEnum FullType: services.billing.InvoiceLineTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _services_billing.InvoiceLineTypeEnum Type { get; set; }//;
+        public _services_billing.InvoiceLineTypeEnum? Type { get; set; }//;
     }
     
     // Id: InvoiceLineTypeEnum Namespace: services.billing
@@ -122,7 +122,7 @@ namespace _services_billing {
         
         // Key: engagementConfiguration Type: services.billing.Pricing.EngagementConfiguration FullType: services.billing.Pricing.EngagementConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engagementConfiguration")]
-        public _services_billing_Pricing.EngagementConfiguration EngagementConfiguration { get; set; }//;
+        public _services_billing_Pricing.EngagementConfiguration? EngagementConfiguration { get; set; }//;
         
         // Key: interval Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interval")]
@@ -130,11 +130,11 @@ namespace _services_billing {
         
         // Key: maximumQuantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximumQuantity")]
-        public long MaximumQuantity { get; set; }//;
+        public System.Int64? MaximumQuantity { get; set; }//;
         
         // Key: maximumRepeat Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximumRepeat")]
-        public long MaximumRepeat { get; set; }//;
+        public System.Int64? MaximumRepeat { get; set; }//;
         
         // Key: minimumQuantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minimumQuantity")]

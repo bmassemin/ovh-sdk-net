@@ -19,7 +19,7 @@ namespace _nichandle_document {
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: getUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("getUrl")]
@@ -47,6 +47,6 @@ namespace _nichandle_document {
         
         // Key: validationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validationDate")]
-        public System.DateTime ValidationDate { get; set; }//;
+        public System.DateTime? ValidationDate { get; set; }//;
     }
 }

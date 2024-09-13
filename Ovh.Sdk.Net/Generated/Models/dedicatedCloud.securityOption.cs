@@ -31,7 +31,7 @@ namespace _dedicatedCloud_securityOption {
         
         // Key: reason Type: dedicatedCloud.securityOption.ErrorMessage FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reason")]
-        public _dedicatedCloud_securityOption.ErrorMessage Reason { get; set; }//;
+        public _dedicatedCloud_securityOption.ErrorMessage? Reason { get; set; }//;
         
         // Key: state Type: dedicatedCloud.securityOption.StateEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]

@@ -15,19 +15,19 @@ namespace _cloud_project_database_m3db_namespace {
         
         // Key: blockDataExpirationDuration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockDataExpirationDuration")]
-        public System.TimeSpan BlockDataExpirationDuration { get; set; }//;
+        public System.TimeSpan? BlockDataExpirationDuration { get; set; }//;
         
         // Key: blockSizeDuration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockSizeDuration")]
-        public System.TimeSpan BlockSizeDuration { get; set; }//;
+        public System.TimeSpan? BlockSizeDuration { get; set; }//;
         
         // Key: bufferFutureDuration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bufferFutureDuration")]
-        public System.TimeSpan BufferFutureDuration { get; set; }//;
+        public System.TimeSpan? BufferFutureDuration { get; set; }//;
         
         // Key: bufferPastDuration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bufferPastDuration")]
-        public System.TimeSpan BufferPastDuration { get; set; }//;
+        public System.TimeSpan? BufferPastDuration { get; set; }//;
         
         // Key: periodDuration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("periodDuration")]

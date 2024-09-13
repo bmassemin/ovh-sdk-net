@@ -15,11 +15,11 @@ namespace _xdsl {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public string[] Result { get; set; }//;
+        public System.String[]? Result { get; set; }//;
         
         // Key: status Type: xdsl.AsyncTaskStatusEnum FullType: xdsl.AsyncTaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -99,7 +99,7 @@ namespace _xdsl {
         
         // Key: lnsRateLimit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lnsRateLimit")]
-        public long LnsRateLimit { get; set; }//;
+        public System.Int64? LnsRateLimit { get; set; }//;
         
         // Key: monitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoring")]
@@ -111,7 +111,7 @@ namespace _xdsl {
         
         // Key: packName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("packName")]
-        public string PackName { get; set; }//;
+        public System.String? PackName { get; set; }//;
         
         // Key: pairsNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pairsNumber")]
@@ -123,7 +123,7 @@ namespace _xdsl {
         
         // Key: providerInfra Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("providerInfra")]
-        public string ProviderInfra { get; set; }//;
+        public System.String? ProviderInfra { get; set; }//;
         
         // Key: role Type: xdsl.AccessRoleEnum FullType: xdsl.AccessRoleEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
@@ -175,27 +175,27 @@ namespace _xdsl {
         
         // Key: incident Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("incident")]
-        public bool Incident { get; set; }//;
+        public System.Boolean? Incident { get; set; }//;
         
         // Key: isActiveOnLns Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isActiveOnLns")]
-        public bool IsActiveOnLns { get; set; }//;
+        public System.Boolean? IsActiveOnLns { get; set; }//;
         
         // Key: isModemConnected Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isModemConnected")]
-        public bool IsModemConnected { get; set; }//;
+        public System.Boolean? IsModemConnected { get; set; }//;
         
         // Key: lineDetails Type: xdsl.LineDiagnostic[] FullType: xdsl.LineDiagnostic[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lineDetails")]
-        public _xdsl.LineDiagnostic[] LineDetails { get; set; }//;
+        public _xdsl.LineDiagnostic[]? LineDetails { get; set; }//;
         
         // Key: maintenance Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maintenance")]
-        public bool Maintenance { get; set; }//;
+        public System.Boolean? Maintenance { get; set; }//;
         
         // Key: ping Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ping")]
-        public bool Ping { get; set; }//;
+        public System.Boolean? Ping { get; set; }//;
         
         // Key: remaining Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remaining")]
@@ -239,11 +239,11 @@ namespace _xdsl {
         
         // Key: loss Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("loss")]
-        public long Loss { get; set; }//;
+        public System.Int64? Loss { get; set; }//;
         
         // Key: status Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public long Status { get; set; }//;
+        public System.Int64? Status { get; set; }//;
         
         // Key: timestamp Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timestamp")]
@@ -251,11 +251,11 @@ namespace _xdsl {
         
         // Key: value Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public double Value { get; set; }//;
+        public System.Double? Value { get; set; }//;
         
         // Key: verboseStatus Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("verboseStatus")]
-        public string VerboseStatus { get; set; }//;
+        public System.String? VerboseStatus { get; set; }//;
     }
     
     // Id: AccessRoleEnum Namespace: xdsl
@@ -337,7 +337,7 @@ namespace _xdsl {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: ipv6Enabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6Enabled")]
@@ -345,7 +345,7 @@ namespace _xdsl {
         
         // Key: lnsRateLimit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lnsRateLimit")]
-        public long LnsRateLimit { get; set; }//;
+        public System.Int64? LnsRateLimit { get; set; }//;
         
         // Key: monitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoring")]
@@ -357,7 +357,7 @@ namespace _xdsl {
         
         // Key: packName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("packName")]
-        public string PackName { get; set; }//;
+        public System.String? PackName { get; set; }//;
         
         // Key: pairsNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pairsNumber")]
@@ -369,7 +369,7 @@ namespace _xdsl {
         
         // Key: providerInfra Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("providerInfra")]
-        public string ProviderInfra { get; set; }//;
+        public System.String? ProviderInfra { get; set; }//;
         
         // Key: role Type: xdsl.AccessRoleEnum FullType: xdsl.AccessRoleEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
@@ -385,7 +385,7 @@ namespace _xdsl {
         
         // Key: building Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("building")]
-        public string Building { get; set; }//;
+        public System.String? Building { get; set; }//;
         
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
@@ -393,7 +393,7 @@ namespace _xdsl {
         
         // Key: door Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("door")]
-        public string Door { get; set; }//;
+        public System.String? Door { get; set; }//;
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
@@ -401,7 +401,7 @@ namespace _xdsl {
         
         // Key: floor Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("floor")]
-        public string Floor { get; set; }//;
+        public System.String? Floor { get; set; }//;
         
         // Key: inseeCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inseeCode")]
@@ -417,7 +417,7 @@ namespace _xdsl {
         
         // Key: residence Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("residence")]
-        public string Residence { get; set; }//;
+        public System.String? Residence { get; set; }//;
         
         // Key: rivoliCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rivoliCode")]
@@ -425,7 +425,7 @@ namespace _xdsl {
         
         // Key: stairs Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stairs")]
-        public string Stairs { get; set; }//;
+        public System.String? Stairs { get; set; }//;
         
         // Key: street Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("street")]
@@ -461,15 +461,15 @@ namespace _xdsl {
         
         // Key: commercialClosureAnnouncementDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("commercialClosureAnnouncementDate")]
-        public System.DateOnly CommercialClosureAnnouncementDate { get; set; }//;
+        public System.DateOnly? CommercialClosureAnnouncementDate { get; set; }//;
         
         // Key: commercialClosureDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("commercialClosureDate")]
-        public System.DateOnly CommercialClosureDate { get; set; }//;
+        public System.DateOnly? CommercialClosureDate { get; set; }//;
         
         // Key: commercialClosureInitialDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("commercialClosureInitialDate")]
-        public System.DateOnly CommercialClosureInitialDate { get; set; }//;
+        public System.DateOnly? CommercialClosureInitialDate { get; set; }//;
         
         // Key: departmentCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("departmentCode")]
@@ -477,11 +477,11 @@ namespace _xdsl {
         
         // Key: departmentName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("departmentName")]
-        public string DepartmentName { get; set; }//;
+        public System.String? DepartmentName { get; set; }//;
         
         // Key: ftthZone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ftthZone")]
-        public string FtthZone { get; set; }//;
+        public System.String? FtthZone { get; set; }//;
         
         // Key: inseeCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inseeCode")]
@@ -489,7 +489,7 @@ namespace _xdsl {
         
         // Key: lot Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lot")]
-        public string Lot { get; set; }//;
+        public System.String? Lot { get; set; }//;
         
         // Key: municipalityName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("municipalityName")]
@@ -497,23 +497,23 @@ namespace _xdsl {
         
         // Key: oiCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("oiCode")]
-        public string OiCode { get; set; }//;
+        public System.String? OiCode { get; set; }//;
         
         // Key: oiName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("oiName")]
-        public string OiName { get; set; }//;
+        public System.String? OiName { get; set; }//;
         
         // Key: technicalClosureAnnouncementDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technicalClosureAnnouncementDate")]
-        public System.DateOnly TechnicalClosureAnnouncementDate { get; set; }//;
+        public System.DateOnly? TechnicalClosureAnnouncementDate { get; set; }//;
         
         // Key: technicalClosureDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technicalClosureDate")]
-        public System.DateOnly TechnicalClosureDate { get; set; }//;
+        public System.DateOnly? TechnicalClosureDate { get; set; }//;
         
         // Key: technicalClosureInitialDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technicalClosureInitialDate")]
-        public System.DateOnly TechnicalClosureInitialDate { get; set; }//;
+        public System.DateOnly? TechnicalClosureInitialDate { get; set; }//;
     }
     
     // Id: DHCP Namespace: xdsl
@@ -545,7 +545,7 @@ namespace _xdsl {
         
         // Key: secondaryDNS Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("secondaryDNS")]
-        public string SecondaryDNS { get; set; }//;
+        public System.String? SecondaryDNS { get; set; }//;
         
         // Key: serverEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverEnabled")]
@@ -561,7 +561,7 @@ namespace _xdsl {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: DHCPStaticAddress Namespace: xdsl
@@ -577,11 +577,11 @@ namespace _xdsl {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: DeconsolidationEnum Namespace: xdsl
@@ -648,11 +648,11 @@ namespace _xdsl {
         
         // Key: overEthernet Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("overEthernet")]
-        public string OverEthernet { get; set; }//;
+        public System.String? OverEthernet { get; set; }//;
         
         // Key: pppLogin Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pppLogin")]
-        public string PppLogin { get; set; }//;
+        public System.String? PppLogin { get; set; }//;
         
         // Key: serial Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serial")]
@@ -684,15 +684,15 @@ namespace _xdsl {
         
         // Key: lastDesyncDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastDesyncDate")]
-        public System.DateTime LastDesyncDate { get; set; }//;
+        public System.DateTime? LastDesyncDate { get; set; }//;
         
         // Key: lastSyncDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastSyncDate")]
-        public System.DateTime LastSyncDate { get; set; }//;
+        public System.DateTime? LastSyncDate { get; set; }//;
         
         // Key: profile Type: xdsl.DslamLineProfile FullType: xdsl.DslamLineProfile
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("profile")]
-        public _xdsl.DslamLineProfile Profile { get; set; }//;
+        public _xdsl.DslamLineProfile? Profile { get; set; }//;
         
         // Key: status Type: xdsl.DslamPortStatusEnum FullType: xdsl.DslamPortStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -772,31 +772,31 @@ namespace _xdsl {
         
         // Key: availabilityDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityDate")]
-        public System.DateTime AvailabilityDate { get; set; }//;
+        public System.DateTime? AvailabilityDate { get; set; }//;
         
         // Key: buildingName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("buildingName")]
-        public string BuildingName { get; set; }//;
+        public System.String? BuildingName { get; set; }//;
         
         // Key: buildingReference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("buildingReference")]
-        public string BuildingReference { get; set; }//;
+        public System.String? BuildingReference { get; set; }//;
         
         // Key: buildingSeqId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("buildingSeqId")]
-        public long BuildingSeqId { get; set; }//;
+        public System.Int64? BuildingSeqId { get; set; }//;
         
         // Key: copperGridClosureTrajectory Type: xdsl.CopperGridClosureTrajectory FullType: xdsl.CopperGridClosureTrajectory
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("copperGridClosureTrajectory")]
-        public _xdsl.CopperGridClosureTrajectory CopperGridClosureTrajectory { get; set; }//;
+        public _xdsl.CopperGridClosureTrajectory? CopperGridClosureTrajectory { get; set; }//;
         
         // Key: firstEligibleDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstEligibleDate")]
-        public System.DateTime FirstEligibleDate { get; set; }//;
+        public System.DateTime? FirstEligibleDate { get; set; }//;
         
         // Key: grts Type: xdsl.GtrEnum[] FullType: xdsl.GtrEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grts")]
-        public _xdsl.GtrEnum[] Grts { get; set; }//;
+        public _xdsl.GtrEnum[]? Grts { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -808,11 +808,11 @@ namespace _xdsl {
         
         // Key: offer Type: xdsl.Offer FullType: xdsl.Offer
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public _xdsl.Offer Offer { get; set; }//;
+        public _xdsl.Offer? Offer { get; set; }//;
         
         // Key: provider Type: xdsl.Provider FullType: xdsl.Provider
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("provider")]
-        public _xdsl.Provider Provider { get; set; }//;
+        public _xdsl.Provider? Provider { get; set; }//;
         
         // Key: status Type: xdsl.FiberEligibilityStatusEnum FullType: xdsl.FiberEligibilityStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -907,7 +907,7 @@ namespace _xdsl {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -923,11 +923,11 @@ namespace _xdsl {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: taskReference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskReference")]
-        public string TaskReference { get; set; }//;
+        public System.String? TaskReference { get; set; }//;
     }
     
     // Id: IpStatusEnum Namespace: xdsl
@@ -964,7 +964,7 @@ namespace _xdsl {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: LandlineConcentrationPoint Namespace: xdsl
@@ -988,7 +988,7 @@ namespace _xdsl {
         
         // Key: concentrationPoint Type: xdsl.LandlineConcentrationPoint FullType: xdsl.LandlineConcentrationPoint
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("concentrationPoint")]
-        public _xdsl.LandlineConcentrationPoint ConcentrationPoint { get; set; }//;
+        public _xdsl.LandlineConcentrationPoint? ConcentrationPoint { get; set; }//;
         
         // Key: deconsolidation Type: xdsl.DeconsolidationEnum FullType: xdsl.DeconsolidationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deconsolidation")]
@@ -996,7 +996,7 @@ namespace _xdsl {
         
         // Key: directDistribution Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("directDistribution")]
-        public bool DirectDistribution { get; set; }//;
+        public System.Boolean? DirectDistribution { get; set; }//;
         
         // Key: distance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("distance")]
@@ -1020,7 +1020,7 @@ namespace _xdsl {
         
         // Key: originalNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("originalNumber")]
-        public string OriginalNumber { get; set; }//;
+        public System.String? OriginalNumber { get; set; }//;
         
         // Key: portability Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portability")]
@@ -1028,11 +1028,11 @@ namespace _xdsl {
         
         // Key: syncDown Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("syncDown")]
-        public double SyncDown { get; set; }//;
+        public System.Double? SyncDown { get; set; }//;
         
         // Key: syncUp Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("syncUp")]
-        public double SyncUp { get; set; }//;
+        public System.Double? SyncUp { get; set; }//;
     }
     
     // Id: LineDiagnostic Namespace: xdsl
@@ -1040,11 +1040,11 @@ namespace _xdsl {
         
         // Key: lineTest Type: xdsl.LineTestEnum FullType: xdsl.LineTestEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lineTest")]
-        public _xdsl.LineTestEnum LineTest { get; set; }//;
+        public _xdsl.LineTestEnum? LineTest { get; set; }//;
         
         // Key: lineTestTime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lineTestTime")]
-        public System.DateTime LineTestTime { get; set; }//;
+        public System.DateTime? LineTestTime { get; set; }//;
         
         // Key: number Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
@@ -1052,7 +1052,7 @@ namespace _xdsl {
         
         // Key: proposedProfileId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("proposedProfileId")]
-        public long ProposedProfileId { get; set; }//;
+        public System.Int64? ProposedProfileId { get; set; }//;
         
         // Key: sync Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sync")]
@@ -1130,7 +1130,7 @@ namespace _xdsl {
         
         // Key: acsVersion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("acsVersion")]
-        public string AcsVersion { get; set; }//;
+        public System.String? AcsVersion { get; set; }//;
         
         // Key: brandName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("brandName")]
@@ -1142,11 +1142,11 @@ namespace _xdsl {
         
         // Key: dmzIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dmzIP")]
-        public string DmzIP { get; set; }//;
+        public System.String? DmzIP { get; set; }//;
         
         // Key: easyFirewallLevel Type: xdsl.xdslModemConfig.EasyFirewallLevelEnum FullType: xdsl.xdslModemConfig.EasyFirewallLevelEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("easyFirewallLevel")]
-        public _xdsl_xdslModemConfig.EasyFirewallLevelEnum EasyFirewallLevel { get; set; }//;
+        public _xdsl_xdslModemConfig.EasyFirewallLevelEnum? EasyFirewallLevel { get; set; }//;
         
         // Key: ipv6Support Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6Support")]
@@ -1158,7 +1158,7 @@ namespace _xdsl {
         
         // Key: lastCwmpRequestDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastCwmpRequestDate")]
-        public System.DateTime LastCwmpRequestDate { get; set; }//;
+        public System.DateTime? LastCwmpRequestDate { get; set; }//;
         
         // Key: macAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("macAddress")]
@@ -1174,7 +1174,7 @@ namespace _xdsl {
         
         // Key: mtuSize Type: xdsl.xdslModemConfig.MTUSizeEnum FullType: xdsl.xdslModemConfig.MTUSizeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mtuSize")]
-        public _xdsl_xdslModemConfig.MTUSizeEnum MtuSize { get; set; }//;
+        public _xdsl_xdslModemConfig.MTUSizeEnum? MtuSize { get; set; }//;
         
         // Key: serialNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serialNumber")]
@@ -1294,7 +1294,7 @@ namespace _xdsl {
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: enabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enabled")]
@@ -1310,11 +1310,11 @@ namespace _xdsl {
         
         // Key: phone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
-        public string Phone { get; set; }//;
+        public System.String? Phone { get; set; }//;
         
         // Key: smsAccount Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("smsAccount")]
-        public string SmsAccount { get; set; }//;
+        public System.String? SmsAccount { get; set; }//;
         
         // Key: type Type: xdsl.monitoringNotifications.TypeEnum FullType: xdsl.monitoringNotifications.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1375,15 +1375,15 @@ namespace _xdsl {
         
         // Key: allowedRemoteIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedRemoteIp")]
-        public string AllowedRemoteIp { get; set; }//;
+        public System.String? AllowedRemoteIp { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: externalPortEnd Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("externalPortEnd")]
-        public long ExternalPortEnd { get; set; }//;
+        public System.Int64? ExternalPortEnd { get; set; }//;
         
         // Key: externalPortStart Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("externalPortStart")]
@@ -1403,7 +1403,7 @@ namespace _xdsl {
         
         // Key: internalPortEnd Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internalPortEnd")]
-        public long InternalPortEnd { get; set; }//;
+        public System.Int64? InternalPortEnd { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1415,7 +1415,7 @@ namespace _xdsl {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: Provider Namespace: xdsl
@@ -1531,7 +1531,7 @@ namespace _xdsl {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: type Type: xdsl.ResiliationReasonEnum FullType: xdsl.ResiliationReasonEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1547,7 +1547,7 @@ namespace _xdsl {
         
         // Key: engageDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engageDate")]
-        public System.DateTime EngageDate { get; set; }//;
+        public System.DateTime? EngageDate { get; set; }//;
         
         // Key: minResiliationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minResiliationDate")]
@@ -1726,11 +1726,11 @@ namespace _xdsl {
         
         // Key: dmzIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dmzIP")]
-        public string DmzIP { get; set; }//;
+        public System.String? DmzIP { get; set; }//;
         
         // Key: mtuSize Type: xdsl.xdslModemConfig.MTUSizeEnum FullType: xdsl.xdslModemConfig.MTUSizeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mtuSize")]
-        public _xdsl_xdslModemConfig.MTUSizeEnum MtuSize { get; set; }//;
+        public _xdsl_xdslModemConfig.MTUSizeEnum? MtuSize { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1738,7 +1738,7 @@ namespace _xdsl {
         
         // Key: parametersToIgnore Type: xdsl.templateModem.ParametersToIgnore FullType: xdsl.templateModem.ParametersToIgnore
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parametersToIgnore")]
-        public _xdsl_templateModem.ParametersToIgnore ParametersToIgnore { get; set; }//;
+        public _xdsl_templateModem.ParametersToIgnore? ParametersToIgnore { get; set; }//;
         
         // Key: portMapping Type: xdsl.templateModem.PortMapping[] FullType: xdsl.templateModem.PortMapping[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portMapping")]
@@ -1754,7 +1754,7 @@ namespace _xdsl {
         
         // Key: value Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public double Value { get; set; }//;
+        public System.Double? Value { get; set; }//;
     }
     
     // Id: WLAN Namespace: xdsl
@@ -1802,7 +1802,7 @@ namespace _xdsl {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: wifiName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("wifiName")]
@@ -1864,7 +1864,7 @@ namespace _xdsl {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -1872,7 +1872,7 @@ namespace _xdsl {
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -1880,19 +1880,19 @@ namespace _xdsl {
         
         // Key: initial Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initial")]
-        public string Initial { get; set; }//;
+        public System.String? Initial { get; set; }//;
         
         // Key: lastLogoffDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogoffDate")]
-        public System.DateTime LastLogoffDate { get; set; }//;
+        public System.DateTime? LastLogoffDate { get; set; }//;
         
         // Key: lastLogonDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogonDate")]
-        public System.DateTime LastLogonDate { get; set; }//;
+        public System.DateTime? LastLogonDate { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: login Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("login")]
@@ -1900,7 +1900,7 @@ namespace _xdsl {
         
         // Key: passwordLastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordLastUpdate")]
-        public System.DateTime PasswordLastUpdate { get; set; }//;
+        public System.DateTime? PasswordLastUpdate { get; set; }//;
         
         // Key: primaryEmailAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("primaryEmailAddress")]
@@ -1916,7 +1916,7 @@ namespace _xdsl {
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
     
     // Id: xdslEmailPro Namespace: xdsl
@@ -1928,7 +1928,7 @@ namespace _xdsl {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -1936,11 +1936,11 @@ namespace _xdsl {
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -1948,19 +1948,19 @@ namespace _xdsl {
         
         // Key: initial Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initial")]
-        public string Initial { get; set; }//;
+        public System.String? Initial { get; set; }//;
         
         // Key: lastLogoffDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogoffDate")]
-        public System.DateTime LastLogoffDate { get; set; }//;
+        public System.DateTime? LastLogoffDate { get; set; }//;
         
         // Key: lastLogonDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogonDate")]
-        public System.DateTime LastLogonDate { get; set; }//;
+        public System.DateTime? LastLogonDate { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: login Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("login")]
@@ -1968,7 +1968,7 @@ namespace _xdsl {
         
         // Key: passwordLastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordLastUpdate")]
-        public System.DateTime PasswordLastUpdate { get; set; }//;
+        public System.DateTime? PasswordLastUpdate { get; set; }//;
         
         // Key: primaryEmailAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("primaryEmailAddress")]
@@ -1984,6 +1984,6 @@ namespace _xdsl {
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
 }

@@ -34,11 +34,11 @@ namespace _xdsl_antiSpam {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: xdsl.antiSpam.EvidencesInfoDetail[] FullType: xdsl.antiSpam.EvidencesInfoDetail[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _xdsl_antiSpam.EvidencesInfoDetail[] Result { get; set; }//;
+        public _xdsl_antiSpam.EvidencesInfoDetail[]? Result { get; set; }//;
         
         // Key: status Type: xdsl.antiSpam.EvidencesInfoStatusEnum FullType: xdsl.antiSpam.EvidencesInfoStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

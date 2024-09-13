@@ -108,7 +108,7 @@ namespace _cluster_hadoop {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: state Type: cluster.hadoop.NetworkAclStateEnum FullType: cluster.hadoop.NetworkAclStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -414,7 +414,7 @@ namespace _cluster_hadoop {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: maxOrderableNodes Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxOrderableNodes")]

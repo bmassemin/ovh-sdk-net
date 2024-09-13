@@ -15,7 +15,7 @@ namespace _connectivity_monitoring {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: creationDate Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -23,7 +23,7 @@ namespace _connectivity_monitoring {
         
         // Key: default Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("default")]
-        public string @default { get; set; }//;
+        public System.String? @default { get; set; }//;
         
         // Key: departments Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("departments")]
@@ -31,11 +31,11 @@ namespace _connectivity_monitoring {
         
         // Key: endDate Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public string EndDate { get; set; }//;
+        public System.String? EndDate { get; set; }//;
         
         // Key: estimatedResolutionDate Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("estimatedResolutionDate")]
-        public string EstimatedResolutionDate { get; set; }//;
+        public System.String? EstimatedResolutionDate { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -43,11 +43,11 @@ namespace _connectivity_monitoring {
         
         // Key: isNational Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isNational")]
-        public bool IsNational { get; set; }//;
+        public System.Boolean? IsNational { get; set; }//;
         
         // Key: nature Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nature")]
-        public string Nature { get; set; }//;
+        public System.String? Nature { get; set; }//;
         
         // Key: nra Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nra")]
@@ -63,11 +63,11 @@ namespace _connectivity_monitoring {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: taskReference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskReference")]
-        public string TaskReference { get; set; }//;
+        public System.String? TaskReference { get; set; }//;
         
         // Key: technologies Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technologies")]

@@ -27,39 +27,39 @@ namespace _hosting_web {
         
         // Key: bypassDNSConfiguration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bypassDNSConfiguration")]
-        public bool BypassDNSConfiguration { get; set; }//;
+        public System.Boolean? BypassDNSConfiguration { get; set; }//;
         
         // Key: cdn Type: hosting.web.attachedDomain.CdnEnum FullType: hosting.web.attachedDomain.CdnEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cdn")]
-        public _hosting_web_attachedDomain.CdnEnum Cdn { get; set; }//;
+        public _hosting_web_attachedDomain.CdnEnum? Cdn { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
-        public string Domain { get; set; }//;
+        public System.String? Domain { get; set; }//;
         
         // Key: firewall Type: hosting.web.attachedDomain.FirewallEnum FullType: hosting.web.attachedDomain.FirewallEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firewall")]
-        public _hosting_web_attachedDomain.FirewallEnum Firewall { get; set; }//;
+        public _hosting_web_attachedDomain.FirewallEnum? Firewall { get; set; }//;
         
         // Key: ipLocation Type: hosting.web.CountryEnum FullType: hosting.web.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLocation")]
-        public _hosting_web.CountryEnum IpLocation { get; set; }//;
+        public _hosting_web.CountryEnum? IpLocation { get; set; }//;
         
         // Key: ownLog Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownLog")]
-        public string OwnLog { get; set; }//;
+        public System.String? OwnLog { get; set; }//;
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
-        public string Path { get; set; }//;
+        public System.String? Path { get; set; }//;
         
         // Key: runtimeId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("runtimeId")]
-        public long RuntimeId { get; set; }//;
+        public System.Int64? RuntimeId { get; set; }//;
         
         // Key: ssl Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssl")]
-        public bool Ssl { get; set; }//;
+        public System.Boolean? Ssl { get; set; }//;
     }
     
     // Id: AvailableOfferStruct Namespace: hosting.web
@@ -83,7 +83,7 @@ namespace _hosting_web {
         
         // Key: boostOffer Type: hosting.web.OfferCapabilitiesEnum FullType: hosting.web.OfferCapabilitiesEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("boostOffer")]
-        public _hosting_web.OfferCapabilitiesEnum BoostOffer { get; set; }//;
+        public _hosting_web.OfferCapabilitiesEnum? BoostOffer { get; set; }//;
         
         // Key: date Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
@@ -111,7 +111,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -143,7 +143,7 @@ namespace _hosting_web {
         
         // Key: disk Type: hosting.web.DiskType FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disk")]
-        public _hosting_web.DiskType Disk { get; set; }//;
+        public _hosting_web.DiskType? Disk { get; set; }//;
         
         // Key: emails Type: hosting.web.CreationEmailCapabilities FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("emails")]
@@ -163,7 +163,7 @@ namespace _hosting_web {
         
         // Key: highlight Type: hosting.web.HighLightEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("highlight")]
-        public _hosting_web.HighLightEnum Highlight { get; set; }//;
+        public _hosting_web.HighLightEnum? Highlight { get; set; }//;
         
         // Key: languages Type: hosting.web.CronLanguageAvailable FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("languages")]
@@ -183,7 +183,7 @@ namespace _hosting_web {
         
         // Key: sitesRecommended Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sitesRecommended")]
-        public long SitesRecommended { get; set; }//;
+        public System.Int64? SitesRecommended { get; set; }//;
         
         // Key: ssh Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssh")]
@@ -191,7 +191,7 @@ namespace _hosting_web {
         
         // Key: traffic Type: complexType.UnitAndValue<double> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("traffic")]
-        public _complexType.UnitAndValue<double> Traffic { get; set; }//;
+        public _complexType.UnitAndValue<double>? Traffic { get; set; }//;
     }
     
     // Id: CountriesIp Namespace: hosting.web
@@ -203,11 +203,11 @@ namespace _hosting_web {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string Ipv6 { get; set; }//;
+        public System.String? Ipv6 { get; set; }//;
     }
     
     // Id: CountryEnum Namespace: hosting.web
@@ -277,11 +277,11 @@ namespace _hosting_web {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: frequency Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frequency")]
@@ -388,7 +388,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: hosting.web.envVar.TypeEnum FullType: hosting.web.envVar.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1009,7 +1009,7 @@ namespace _hosting_web {
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: function Type: hosting.web.task.FunctionEnum FullType: hosting.web.task.FunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -1021,15 +1021,15 @@ namespace _hosting_web {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: objectId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("objectId")]
-        public string ObjectId { get; set; }//;
+        public System.String? ObjectId { get; set; }//;
         
         // Key: objectType Type: hosting.web.task.ObjectTypeEnum FullType: hosting.web.task.ObjectTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("objectType")]
-        public _hosting_web_task.ObjectTypeEnum ObjectType { get; set; }//;
+        public _hosting_web_task.ObjectTypeEnum? ObjectType { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -1068,7 +1068,7 @@ namespace _hosting_web {
         
         // Key: offer Type: hosting.web.OfferEnum FullType: hosting.web.OfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public _hosting_web.OfferEnum Offer { get; set; }//;
+        public _hosting_web.OfferEnum? Offer { get; set; }//;
     }
     
     // Id: ResourceEnum Namespace: hosting.web
@@ -1115,7 +1115,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: hosting.web.hostedssl.TypeEnum FullType: hosting.web.hostedssl.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1147,7 +1147,7 @@ namespace _hosting_web {
         
         // Key: boostOffer Type: hosting.web.OfferCapabilitiesEnum FullType: hosting.web.OfferCapabilitiesEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("boostOffer")]
-        public _hosting_web.OfferCapabilitiesEnum BoostOffer { get; set; }//;
+        public _hosting_web.OfferCapabilitiesEnum? BoostOffer { get; set; }//;
         
         // Key: cluster Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cluster")]
@@ -1155,15 +1155,15 @@ namespace _hosting_web {
         
         // Key: clusterIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterIp")]
-        public string ClusterIp { get; set; }//;
+        public System.String? ClusterIp { get; set; }//;
         
         // Key: clusterIpv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterIpv6")]
-        public string ClusterIpv6 { get; set; }//;
+        public System.String? ClusterIpv6 { get; set; }//;
         
         // Key: countriesIp Type: hosting.web.CountriesIp[] FullType: hosting.web.CountriesIp[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countriesIp")]
-        public _hosting_web.CountriesIp[] CountriesIp { get; set; }//;
+        public _hosting_web.CountriesIp[]? CountriesIp { get; set; }//;
         
         // Key: datacenter Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
@@ -1171,19 +1171,19 @@ namespace _hosting_web {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: filer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filer")]
-        public string Filer { get; set; }//;
+        public System.String? Filer { get; set; }//;
         
         // Key: hasCdn Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hasCdn")]
-        public bool HasCdn { get; set; }//;
+        public System.Boolean? HasCdn { get; set; }//;
         
         // Key: hasHostedSsl Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hasHostedSsl")]
-        public bool HasHostedSsl { get; set; }//;
+        public System.Boolean? HasHostedSsl { get; set; }//;
         
         // Key: home Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("home")]
@@ -1191,15 +1191,15 @@ namespace _hosting_web {
         
         // Key: hostingIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingIp")]
-        public string HostingIp { get; set; }//;
+        public System.String? HostingIp { get; set; }//;
         
         // Key: hostingIpv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingIpv6")]
-        public string HostingIpv6 { get; set; }//;
+        public System.String? HostingIpv6 { get; set; }//;
         
         // Key: lastOvhConfigScan Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastOvhConfigScan")]
-        public System.DateTime LastOvhConfigScan { get; set; }//;
+        public System.DateTime? LastOvhConfigScan { get; set; }//;
         
         // Key: offer Type: hosting.web.OfferCapabilitiesEnum FullType: hosting.web.OfferCapabilitiesEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -1223,11 +1223,11 @@ namespace _hosting_web {
         
         // Key: quotaUsed Type: complexType.UnitAndValue<double> FullType: complexType.UnitAndValue<double>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quotaUsed")]
-        public _complexType.UnitAndValue<double> QuotaUsed { get; set; }//;
+        public _complexType.UnitAndValue<double>? QuotaUsed { get; set; }//;
         
         // Key: recommendedOffer Type: hosting.web.OfferEnum FullType: hosting.web.OfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recommendedOffer")]
-        public _hosting_web.OfferEnum RecommendedOffer { get; set; }//;
+        public _hosting_web.OfferEnum? RecommendedOffer { get; set; }//;
         
         // Key: resourceType Type: hosting.web.ResourceEnum FullType: hosting.web.ResourceEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceType")]
@@ -1247,15 +1247,15 @@ namespace _hosting_web {
         
         // Key: token Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("token")]
-        public string Token { get; set; }//;
+        public System.String? Token { get; set; }//;
         
         // Key: trafficQuotaSize Type: complexType.UnitAndValue<double> FullType: complexType.UnitAndValue<double>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trafficQuotaSize")]
-        public _complexType.UnitAndValue<double> TrafficQuotaSize { get; set; }//;
+        public _complexType.UnitAndValue<double>? TrafficQuotaSize { get; set; }//;
         
         // Key: trafficQuotaUsed Type: complexType.UnitAndValue<double> FullType: complexType.UnitAndValue<double>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trafficQuotaUsed")]
-        public _complexType.UnitAndValue<double> TrafficQuotaUsed { get; set; }//;
+        public _complexType.UnitAndValue<double>? TrafficQuotaUsed { get; set; }//;
         
         // Key: updates Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updates")]
@@ -1287,7 +1287,7 @@ namespace _hosting_web {
         
         // Key: boostOffer Type: hosting.web.OfferCapabilitiesEnum FullType: hosting.web.OfferCapabilitiesEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("boostOffer")]
-        public _hosting_web.OfferCapabilitiesEnum BoostOffer { get; set; }//;
+        public _hosting_web.OfferCapabilitiesEnum? BoostOffer { get; set; }//;
         
         // Key: cluster Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cluster")]
@@ -1295,15 +1295,15 @@ namespace _hosting_web {
         
         // Key: clusterIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterIp")]
-        public string ClusterIp { get; set; }//;
+        public System.String? ClusterIp { get; set; }//;
         
         // Key: clusterIpv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterIpv6")]
-        public string ClusterIpv6 { get; set; }//;
+        public System.String? ClusterIpv6 { get; set; }//;
         
         // Key: countriesIp Type: hosting.web.CountriesIp[] FullType: hosting.web.CountriesIp[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countriesIp")]
-        public _hosting_web.CountriesIp[] CountriesIp { get; set; }//;
+        public _hosting_web.CountriesIp[]? CountriesIp { get; set; }//;
         
         // Key: datacenter Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
@@ -1311,19 +1311,19 @@ namespace _hosting_web {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: filer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filer")]
-        public string Filer { get; set; }//;
+        public System.String? Filer { get; set; }//;
         
         // Key: hasCdn Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hasCdn")]
-        public bool HasCdn { get; set; }//;
+        public System.Boolean? HasCdn { get; set; }//;
         
         // Key: hasHostedSsl Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hasHostedSsl")]
-        public bool HasHostedSsl { get; set; }//;
+        public System.Boolean? HasHostedSsl { get; set; }//;
         
         // Key: home Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("home")]
@@ -1331,19 +1331,19 @@ namespace _hosting_web {
         
         // Key: hostingIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingIp")]
-        public string HostingIp { get; set; }//;
+        public System.String? HostingIp { get; set; }//;
         
         // Key: hostingIpv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingIpv6")]
-        public string HostingIpv6 { get; set; }//;
+        public System.String? HostingIpv6 { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastOvhConfigScan Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastOvhConfigScan")]
-        public System.DateTime LastOvhConfigScan { get; set; }//;
+        public System.DateTime? LastOvhConfigScan { get; set; }//;
         
         // Key: offer Type: hosting.web.OfferCapabilitiesEnum FullType: hosting.web.OfferCapabilitiesEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -1367,11 +1367,11 @@ namespace _hosting_web {
         
         // Key: quotaUsed Type: complexType.UnitAndValue<double> FullType: complexType.UnitAndValue<double>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quotaUsed")]
-        public _complexType.UnitAndValue<double> QuotaUsed { get; set; }//;
+        public _complexType.UnitAndValue<double>? QuotaUsed { get; set; }//;
         
         // Key: recommendedOffer Type: hosting.web.OfferEnum FullType: hosting.web.OfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recommendedOffer")]
-        public _hosting_web.OfferEnum RecommendedOffer { get; set; }//;
+        public _hosting_web.OfferEnum? RecommendedOffer { get; set; }//;
         
         // Key: resourceType Type: hosting.web.ResourceEnum FullType: hosting.web.ResourceEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceType")]
@@ -1391,15 +1391,15 @@ namespace _hosting_web {
         
         // Key: token Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("token")]
-        public string Token { get; set; }//;
+        public System.String? Token { get; set; }//;
         
         // Key: trafficQuotaSize Type: complexType.UnitAndValue<double> FullType: complexType.UnitAndValue<double>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trafficQuotaSize")]
-        public _complexType.UnitAndValue<double> TrafficQuotaSize { get; set; }//;
+        public _complexType.UnitAndValue<double>? TrafficQuotaSize { get; set; }//;
         
         // Key: trafficQuotaUsed Type: complexType.UnitAndValue<double> FullType: complexType.UnitAndValue<double>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trafficQuotaUsed")]
-        public _complexType.UnitAndValue<double> TrafficQuotaUsed { get; set; }//;
+        public _complexType.UnitAndValue<double>? TrafficQuotaUsed { get; set; }//;
         
         // Key: updates Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updates")]
@@ -1481,7 +1481,7 @@ namespace _hosting_web {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
@@ -1533,7 +1533,7 @@ namespace _hosting_web {
         
         // Key: ipLocation Type: hosting.web.CountryEnum FullType: hosting.web.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLocation")]
-        public _hosting_web.CountryEnum IpLocation { get; set; }//;
+        public _hosting_web.CountryEnum? IpLocation { get; set; }//;
         
         // Key: isFlushable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isFlushable")]
@@ -1541,7 +1541,7 @@ namespace _hosting_web {
         
         // Key: ownLog Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownLog")]
-        public string OwnLog { get; set; }//;
+        public System.String? OwnLog { get; set; }//;
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
@@ -1549,11 +1549,11 @@ namespace _hosting_web {
         
         // Key: runtimeId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("runtimeId")]
-        public long RuntimeId { get; set; }//;
+        public System.Int64? RuntimeId { get; set; }//;
         
         // Key: ssl Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssl")]
-        public bool Ssl { get; set; }//;
+        public System.Boolean? Ssl { get; set; }//;
         
         // Key: status Type: hosting.web.attachedDomain.StatusEnum FullType: hosting.web.attachedDomain.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -1561,7 +1561,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: boostHistory Namespace: hosting.web
@@ -1573,7 +1573,7 @@ namespace _hosting_web {
         
         // Key: boostOffer Type: hosting.web.OfferCapabilitiesEnum FullType: hosting.web.OfferCapabilitiesEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("boostOffer")]
-        public _hosting_web.OfferCapabilitiesEnum BoostOffer { get; set; }//;
+        public _hosting_web.OfferCapabilitiesEnum? BoostOffer { get; set; }//;
         
         // Key: date Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
@@ -1601,7 +1601,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1621,7 +1621,7 @@ namespace _hosting_web {
         
         // Key: entryPoint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("entryPoint")]
-        public string EntryPoint { get; set; }//;
+        public System.String? EntryPoint { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -1633,7 +1633,7 @@ namespace _hosting_web {
         
         // Key: publicDir Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicDir")]
-        public string PublicDir { get; set; }//;
+        public System.String? PublicDir { get; set; }//;
         
         // Key: status Type: hosting.web.configuration.StateEnum FullType: hosting.web.configuration.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -1653,11 +1653,11 @@ namespace _hosting_web {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: frequency Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frequency")]
@@ -1689,7 +1689,7 @@ namespace _hosting_web {
         
         // Key: databaseType Type: hosting.web.database.DatabaseServiceTypeEnum FullType: hosting.web.database.DatabaseServiceTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseType")]
-        public _hosting_web_database.DatabaseServiceTypeEnum DatabaseType { get; set; }//;
+        public _hosting_web_database.DatabaseServiceTypeEnum? DatabaseType { get; set; }//;
         
         // Key: dumps Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dumps")]
@@ -1697,11 +1697,11 @@ namespace _hosting_web {
         
         // Key: guiURL Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guiURL")]
-        public string GuiURL { get; set; }//;
+        public System.String? GuiURL { get; set; }//;
         
         // Key: lastCheck Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastCheck")]
-        public System.DateTime LastCheck { get; set; }//;
+        public System.DateTime? LastCheck { get; set; }//;
         
         // Key: mode Type: hosting.web.database.ModeEnum FullType: hosting.web.database.ModeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mode")]
@@ -1725,7 +1725,7 @@ namespace _hosting_web {
         
         // Key: server Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
-        public string Server { get; set; }//;
+        public System.String? Server { get; set; }//;
         
         // Key: state Type: hosting.web.database.StateEnum FullType: hosting.web.database.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1737,7 +1737,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: hosting.web.database.DatabaseTypeEnum FullType: hosting.web.database.DatabaseTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1765,7 +1765,7 @@ namespace _hosting_web {
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -1801,7 +1801,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: hosting.web.database.dump.DateEnum FullType: hosting.web.database.dump.DateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1809,7 +1809,7 @@ namespace _hosting_web {
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: dump Namespace: hosting.web
@@ -1841,7 +1841,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: hosting.web.database.dump.DateEnum FullType: hosting.web.database.dump.DateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1849,7 +1849,7 @@ namespace _hosting_web {
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: email Namespace: hosting.web
@@ -1861,7 +1861,7 @@ namespace _hosting_web {
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string _Email { get; set; }//;
+        public System.String? _Email { get; set; }//;
         
         // Key: maxPerDay Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxPerDay")]
@@ -1909,7 +1909,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: hosting.web.envVar.TypeEnum FullType: hosting.web.envVar.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1941,7 +1941,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: freedom Namespace: hosting.web
@@ -2005,7 +2005,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: localSeo.location Namespace: hosting.web
@@ -2013,11 +2013,11 @@ namespace _hosting_web {
         
         // Key: accountId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accountId")]
-        public long AccountId { get; set; }//;
+        public System.Int64? AccountId { get; set; }//;
         
         // Key: address Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public string Address { get; set; }//;
+        public System.String? Address { get; set; }//;
         
         // Key: country Type: hosting.web.localSeo.location.CountryEnum FullType: hosting.web.localSeo.location.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
@@ -2037,7 +2037,7 @@ namespace _hosting_web {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: offer Type: hosting.web.localSeo.location.OfferEnum FullType: hosting.web.localSeo.location.OfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -2049,7 +2049,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: module Namespace: hosting.web
@@ -2101,7 +2101,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: ovhConfig Namespace: hosting.web
@@ -2133,7 +2133,7 @@ namespace _hosting_web {
         
         // Key: historical Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("historical")]
-        public bool Historical { get; set; }//;
+        public System.Boolean? Historical { get; set; }//;
         
         // Key: httpFirewall Type: hosting.web.ovhConfig.HttpFirewallEnum FullType: hosting.web.ovhConfig.HttpFirewallEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("httpFirewall")]
@@ -2145,7 +2145,7 @@ namespace _hosting_web {
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
-        public string Path { get; set; }//;
+        public System.String? Path { get; set; }//;
         
         // Key: status Type: hosting.web.ovhConfig.StatusEnum FullType: hosting.web.ovhConfig.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -2153,7 +2153,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: ownLogs Namespace: hosting.web
@@ -2181,7 +2181,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: runtime Namespace: hosting.web
@@ -2189,7 +2189,7 @@ namespace _hosting_web {
         
         // Key: appBootstrap Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("appBootstrap")]
-        public string AppBootstrap { get; set; }//;
+        public System.String? AppBootstrap { get; set; }//;
         
         // Key: appEnv Type: hosting.web.runtime.EnvEnum FullType: hosting.web.runtime.EnvEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("appEnv")]
@@ -2217,11 +2217,11 @@ namespace _hosting_web {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: publicDir Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicDir")]
-        public string PublicDir { get; set; }//;
+        public System.String? PublicDir { get; set; }//;
         
         // Key: status Type: hosting.web.runtime.StateEnum FullType: hosting.web.runtime.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -2229,7 +2229,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: hosting.web.runtime.TypeEnum FullType: hosting.web.runtime.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -2257,7 +2257,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -2301,7 +2301,7 @@ namespace _hosting_web {
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: function Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -2313,15 +2313,15 @@ namespace _hosting_web {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: objectId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("objectId")]
-        public string ObjectId { get; set; }//;
+        public System.String? ObjectId { get; set; }//;
         
         // Key: objectType Type: hosting.web.task.ObjectTypeEnum FullType: hosting.web.task.ObjectTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("objectType")]
-        public _hosting_web_task.ObjectTypeEnum ObjectType { get; set; }//;
+        public _hosting_web_task.ObjectTypeEnum? ObjectType { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -2365,7 +2365,7 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: userLogs Namespace: hosting.web
@@ -2377,7 +2377,7 @@ namespace _hosting_web {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: login Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("login")]
@@ -2385,7 +2385,7 @@ namespace _hosting_web {
         
         // Key: ownLogsId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownLogsId")]
-        public long OwnLogsId { get; set; }//;
+        public System.Int64? OwnLogsId { get; set; }//;
         
         // Key: status Type: hosting.web.userLogs.StatusEnum FullType: hosting.web.userLogs.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -2393,6 +2393,6 @@ namespace _hosting_web {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
 }

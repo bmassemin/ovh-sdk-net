@@ -23,11 +23,11 @@ namespace _ipLoadbalancing_backendUdpCustomerServer {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
         
         // Key: serverId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverId")]

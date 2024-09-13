@@ -61,7 +61,7 @@ namespace _cloud_usage {
         
         // Key: hourlyUsage Type: cloud.billingView.HourlyResources FullType: cloud.billingView.HourlyResources
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hourlyUsage")]
-        public _cloud_billingView.HourlyResources HourlyUsage { get; set; }//;
+        public _cloud_billingView.HourlyResources? HourlyUsage { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -69,7 +69,7 @@ namespace _cloud_usage {
         
         // Key: monthlyUsage Type: cloud.billingView.MonthlyResources FullType: cloud.billingView.MonthlyResources
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyUsage")]
-        public _cloud_billingView.MonthlyResources MonthlyUsage { get; set; }//;
+        public _cloud_billingView.MonthlyResources? MonthlyUsage { get; set; }//;
         
         // Key: period Type: cloud.usage.Period FullType: cloud.usage.Period
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("period")]
@@ -77,7 +77,7 @@ namespace _cloud_usage {
         
         // Key: resourcesUsage Type: cloud.billingView.TypedResources[] FullType: cloud.billingView.TypedResources[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourcesUsage")]
-        public _cloud_billingView.TypedResources[] ResourcesUsage { get; set; }//;
+        public _cloud_billingView.TypedResources[]? ResourcesUsage { get; set; }//;
     }
     
     // Id: UsageCurrentBills Namespace: cloud.usage
@@ -93,7 +93,7 @@ namespace _cloud_usage {
         
         // Key: hourlyUsage Type: cloud.billingView.HourlyResources FullType: cloud.billingView.HourlyResources
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hourlyUsage")]
-        public _cloud_billingView.HourlyResources HourlyUsage { get; set; }//;
+        public _cloud_billingView.HourlyResources? HourlyUsage { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -101,7 +101,7 @@ namespace _cloud_usage {
         
         // Key: monthlyUsage Type: cloud.billingView.MonthlyResources FullType: cloud.billingView.MonthlyResources
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyUsage")]
-        public _cloud_billingView.MonthlyResources MonthlyUsage { get; set; }//;
+        public _cloud_billingView.MonthlyResources? MonthlyUsage { get; set; }//;
         
         // Key: period Type: cloud.usage.Period FullType: cloud.usage.Period
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("period")]
@@ -109,11 +109,11 @@ namespace _cloud_usage {
         
         // Key: resourcesUsage Type: cloud.billingView.TypedResources[] FullType: cloud.billingView.TypedResources[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourcesUsage")]
-        public _cloud_billingView.TypedResources[] ResourcesUsage { get; set; }//;
+        public _cloud_billingView.TypedResources[]? ResourcesUsage { get; set; }//;
         
         // Key: usableCredits Type: cloud.billingView.UsedCredits FullType: cloud.billingView.UsedCredits
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usableCredits")]
-        public _cloud_billingView.UsedCredits UsableCredits { get; set; }//;
+        public _cloud_billingView.UsedCredits? UsableCredits { get; set; }//;
     }
     
     // Id: UsageHistory Namespace: cloud.usage
@@ -137,7 +137,7 @@ namespace _cloud_usage {
         
         // Key: hourlyUsage Type: cloud.billingView.HourlyResources FullType: cloud.billingView.HourlyResources
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hourlyUsage")]
-        public _cloud_billingView.HourlyResources HourlyUsage { get; set; }//;
+        public _cloud_billingView.HourlyResources? HourlyUsage { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -149,7 +149,7 @@ namespace _cloud_usage {
         
         // Key: monthlyUsage Type: cloud.billingView.MonthlyResources FullType: cloud.billingView.MonthlyResources
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyUsage")]
-        public _cloud_billingView.MonthlyResources MonthlyUsage { get; set; }//;
+        public _cloud_billingView.MonthlyResources? MonthlyUsage { get; set; }//;
         
         // Key: period Type: cloud.usage.Period FullType: cloud.usage.Period
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("period")]
@@ -157,7 +157,7 @@ namespace _cloud_usage {
         
         // Key: resourcesUsage Type: cloud.billingView.TypedResources[] FullType: cloud.billingView.TypedResources[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourcesUsage")]
-        public _cloud_billingView.TypedResources[] ResourcesUsage { get; set; }//;
+        public _cloud_billingView.TypedResources[]? ResourcesUsage { get; set; }//;
     }
     
     // Id: UsageHistoryDetailBills Namespace: cloud.usage

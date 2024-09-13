@@ -27,11 +27,11 @@ namespace _service {
         
         // Key: manualPayment Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("manualPayment")]
-        public bool ManualPayment { get; set; }//;
+        public System.Boolean? ManualPayment { get; set; }//;
         
         // Key: period Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("period")]
-        public long Period { get; set; }//;
+        public System.Int64? Period { get; set; }//;
     }
     
     // Id: RenewalTypeEnum Namespace: service
@@ -164,7 +164,7 @@ namespace _service {
         
         // Key: code Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("code")]
-        public string Code { get; set; }//;
+        public System.String? Code { get; set; }//;
         
         // Key: product Type: service.plan.Product FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("product")]
@@ -176,11 +176,11 @@ namespace _service {
         
         // Key: dayOfMonth Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dayOfMonth")]
-        public long DayOfMonth { get; set; }//;
+        public System.Int64? DayOfMonth { get; set; }//;
         
         // Key: interval Type: service.renew.Interval FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interval")]
-        public _service_renew.Interval Interval { get; set; }//;
+        public _service_renew.Interval? Interval { get; set; }//;
         
         // Key: mode Type: service.renew.Mode FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mode")]
@@ -188,7 +188,7 @@ namespace _service {
         
         // Key: possibleIntervals Type: service.renew.Interval[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("possibleIntervals")]
-        public _service_renew.Interval[] PossibleIntervals { get; set; }//;
+        public _service_renew.Interval[]? PossibleIntervals { get; set; }//;
         
         // Key: possibleModes Type: service.renew.Mode[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("possibleModes")]
@@ -204,11 +204,11 @@ namespace _service {
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: state Type: service.ResourceStateEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _service.ResourceStateEnum State { get; set; }//;
+        public _service.ResourceStateEnum? State { get; set; }//;
     }
     
     // Id: ResourceStateEnum Namespace: service
@@ -247,11 +247,11 @@ namespace _service {
         
         // Key: path Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
-        public string Path { get; set; }//;
+        public System.String? Path { get; set; }//;
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: vars Type: complexType.SafeKeyValue<string>[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vars")]

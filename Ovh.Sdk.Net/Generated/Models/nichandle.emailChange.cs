@@ -15,7 +15,7 @@ namespace _nichandle_emailChange {
         
         // Key: dateDone Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dateDone")]
-        public System.DateTime DateDone { get; set; }//;
+        public System.DateTime? DateDone { get; set; }//;
         
         // Key: dateRequest Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dateRequest")]

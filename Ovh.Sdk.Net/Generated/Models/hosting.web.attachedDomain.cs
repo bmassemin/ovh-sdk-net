@@ -119,7 +119,7 @@ namespace _hosting_web_attachedDomain {
         
         // Key: ipLocation Type: hosting.web.CountryEnum FullType: hosting.web.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLocation")]
-        public _hosting_web.CountryEnum IpLocation { get; set; }//;
+        public _hosting_web.CountryEnum? IpLocation { get; set; }//;
         
         // Key: isFlushable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isFlushable")]
@@ -127,7 +127,7 @@ namespace _hosting_web_attachedDomain {
         
         // Key: ownLog Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownLog")]
-        public string OwnLog { get; set; }//;
+        public System.String? OwnLog { get; set; }//;
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
@@ -135,11 +135,11 @@ namespace _hosting_web_attachedDomain {
         
         // Key: runtimeId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("runtimeId")]
-        public long RuntimeId { get; set; }//;
+        public System.Int64? RuntimeId { get; set; }//;
         
         // Key: ssl Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssl")]
-        public bool Ssl { get; set; }//;
+        public System.Boolean? Ssl { get; set; }//;
         
         // Key: status Type: hosting.web.attachedDomain.StatusEnum FullType: hosting.web.attachedDomain.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -147,7 +147,7 @@ namespace _hosting_web_attachedDomain {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
         
         // Key: vcsStatus Type: hosting.web.attachedDomain.VcsStatusEnum FullType: hosting.web.attachedDomain.VcsStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vcsStatus")]

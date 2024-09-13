@@ -65,7 +65,7 @@ namespace _saas_csp2 {
         
         // Key: limit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("limit")]
-        public long Limit { get; set; }//;
+        public System.Int64? Limit { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -93,7 +93,7 @@ namespace _saas_csp2 {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: licenseId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("licenseId")]
@@ -117,7 +117,7 @@ namespace _saas_csp2 {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: function Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -169,11 +169,11 @@ namespace _saas_csp2 {
         
         // Key: mpnId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mpnId")]
-        public string MpnId { get; set; }//;
+        public System.String? MpnId { get; set; }//;
         
         // Key: mpnIssueFlag Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mpnIssueFlag")]
-        public string MpnIssueFlag { get; set; }//;
+        public System.String? MpnIssueFlag { get; set; }//;
         
         // Key: phone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
@@ -221,7 +221,7 @@ namespace _saas_csp2 {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
@@ -229,11 +229,11 @@ namespace _saas_csp2 {
         
         // Key: mpnId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mpnId")]
-        public string MpnId { get; set; }//;
+        public System.String? MpnId { get; set; }//;
         
         // Key: mpnIssueFlag Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mpnIssueFlag")]
-        public string MpnIssueFlag { get; set; }//;
+        public System.String? MpnIssueFlag { get; set; }//;
         
         // Key: phone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]

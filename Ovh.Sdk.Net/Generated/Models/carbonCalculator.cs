@@ -39,7 +39,7 @@ namespace _carbonCalculator {
         
         // Key: link Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("link")]
-        public string Link { get; set; }//;
+        public System.String? Link { get; set; }//;
         
         // Key: status Type: carbonCalculator.Task.TaskStatusEnum FullType: carbonCalculator.Task.TaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

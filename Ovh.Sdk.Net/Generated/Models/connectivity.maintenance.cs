@@ -120,27 +120,27 @@ namespace _connectivity_maintenance {
         
         // Key: departments Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("departments")]
-        public string[] Departments { get; set; }//;
+        public System.String[]? Departments { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: duration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public System.TimeSpan Duration { get; set; }//;
+        public System.TimeSpan? Duration { get; set; }//;
         
         // Key: fallback Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fallback")]
-        public bool Fallback { get; set; }//;
+        public System.Boolean? Fallback { get; set; }//;
         
         // Key: fallbackDateBegin Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fallbackDateBegin")]
-        public System.DateTime FallbackDateBegin { get; set; }//;
+        public System.DateTime? FallbackDateBegin { get; set; }//;
         
         // Key: fallbackDateEnd Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fallbackDateEnd")]
-        public System.DateTime FallbackDateEnd { get; set; }//;
+        public System.DateTime? FallbackDateEnd { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -148,7 +148,7 @@ namespace _connectivity_maintenance {
         
         // Key: impact Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("impact")]
-        public string Impact { get; set; }//;
+        public System.String? Impact { get; set; }//;
         
         // Key: interventionType Type: connectivity.maintenance.InterventionTypeEnum FullType: connectivity.maintenance.InterventionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interventionType")]
@@ -156,7 +156,7 @@ namespace _connectivity_maintenance {
         
         // Key: nras Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nras")]
-        public string[] Nras { get; set; }//;
+        public System.String[]? Nras { get; set; }//;
         
         // Key: operator Type: connectivity.OperatorEnum FullType: connectivity.OperatorEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operator")]
@@ -168,6 +168,6 @@ namespace _connectivity_maintenance {
         
         // Key: zone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
-        public string Zone { get; set; }//;
+        public System.String? Zone { get; set; }//;
     }
 }

@@ -92,7 +92,7 @@ namespace _service_renew {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: quantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quantity")]
@@ -132,11 +132,11 @@ namespace _service_renew {
         
         // Key: date Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateTime Date { get; set; }//;
+        public System.DateTime? Date { get; set; }//;
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
@@ -160,7 +160,7 @@ namespace _service_renew {
         
         // Key: retractionDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retractionDate")]
-        public System.DateTime RetractionDate { get; set; }//;
+        public System.DateTime? RetractionDate { get; set; }//;
         
         // Key: tax Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tax")]

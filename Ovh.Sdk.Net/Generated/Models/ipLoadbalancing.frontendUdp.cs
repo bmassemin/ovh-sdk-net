@@ -15,11 +15,11 @@ namespace _ipLoadbalancing_frontendUdp {
         
         // Key: dedicatedIpfo Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedIpfo")]
-        public string[] DedicatedIpfo { get; set; }//;
+        public System.String[]? DedicatedIpfo { get; set; }//;
         
         // Key: defaultFarmId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultFarmId")]
-        public long DefaultFarmId { get; set; }//;
+        public System.Int64? DefaultFarmId { get; set; }//;
         
         // Key: disabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabled")]
@@ -27,7 +27,7 @@ namespace _ipLoadbalancing_frontendUdp {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: frontendId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frontendId")]

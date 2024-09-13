@@ -156,11 +156,11 @@ namespace _sslGateway {
         
         // Key: allowedSource Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedSource")]
-        public string[] AllowedSource { get; set; }//;
+        public System.String[]? AllowedSource { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: hsts Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hsts")]
@@ -176,11 +176,11 @@ namespace _sslGateway {
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string Ipv6 { get; set; }//;
+        public System.String? Ipv6 { get; set; }//;
         
         // Key: metricsToken Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metricsToken")]
-        public string MetricsToken { get; set; }//;
+        public System.String? MetricsToken { get; set; }//;
         
         // Key: offer Type: sslGateway.OfferEnum FullType: sslGateway.OfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -188,7 +188,7 @@ namespace _sslGateway {
         
         // Key: reverse Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reverse")]
-        public string Reverse { get; set; }//;
+        public System.String? Reverse { get; set; }//;
         
         // Key: serverHttps Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverHttps")]
@@ -200,7 +200,7 @@ namespace _sslGateway {
         
         // Key: sslConfiguration Type: sslGateway.SslConfigurationEnum FullType: sslGateway.SslConfigurationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslConfiguration")]
-        public _sslGateway.SslConfigurationEnum SslConfiguration { get; set; }//;
+        public _sslGateway.SslConfigurationEnum? SslConfiguration { get; set; }//;
         
         // Key: state Type: sslGateway.StateEnum FullType: sslGateway.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -216,11 +216,11 @@ namespace _sslGateway {
         
         // Key: allowedSource Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedSource")]
-        public string[] AllowedSource { get; set; }//;
+        public System.String[]? AllowedSource { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: hsts Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hsts")]
@@ -232,7 +232,7 @@ namespace _sslGateway {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: ipv4 Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
@@ -240,11 +240,11 @@ namespace _sslGateway {
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string Ipv6 { get; set; }//;
+        public System.String? Ipv6 { get; set; }//;
         
         // Key: metricsToken Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metricsToken")]
-        public string MetricsToken { get; set; }//;
+        public System.String? MetricsToken { get; set; }//;
         
         // Key: offer Type: sslGateway.OfferEnum FullType: sslGateway.OfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -252,7 +252,7 @@ namespace _sslGateway {
         
         // Key: reverse Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reverse")]
-        public string Reverse { get; set; }//;
+        public System.String? Reverse { get; set; }//;
         
         // Key: serverHttps Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverHttps")]
@@ -264,7 +264,7 @@ namespace _sslGateway {
         
         // Key: sslConfiguration Type: sslGateway.SslConfigurationEnum FullType: sslGateway.SslConfigurationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslConfiguration")]
-        public _sslGateway.SslConfigurationEnum SslConfiguration { get; set; }//;
+        public _sslGateway.SslConfigurationEnum? SslConfiguration { get; set; }//;
         
         // Key: state Type: sslGateway.StateEnum FullType: sslGateway.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]

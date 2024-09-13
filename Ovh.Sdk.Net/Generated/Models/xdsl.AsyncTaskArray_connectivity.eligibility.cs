@@ -15,11 +15,11 @@ namespace _xdsl_AsyncTaskArray_connectivity_eligibility {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: connectivity.eligibility.Building[] FullType: connectivity.eligibility.Building[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _connectivity_eligibility.Building[] Result { get; set; }//;
+        public _connectivity_eligibility.Building[]? Result { get; set; }//;
         
         // Key: status Type: xdsl.AsyncTaskStatusEnum FullType: xdsl.AsyncTaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -31,11 +31,11 @@ namespace _xdsl_AsyncTaskArray_connectivity_eligibility {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: connectivity.eligibility.City[] FullType: connectivity.eligibility.City[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _connectivity_eligibility.City[] Result { get; set; }//;
+        public _connectivity_eligibility.City[]? Result { get; set; }//;
         
         // Key: status Type: xdsl.AsyncTaskStatusEnum FullType: xdsl.AsyncTaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -47,11 +47,11 @@ namespace _xdsl_AsyncTaskArray_connectivity_eligibility {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: connectivity.eligibility.Line[] FullType: connectivity.eligibility.Line[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _connectivity_eligibility.Line[] Result { get; set; }//;
+        public _connectivity_eligibility.Line[]? Result { get; set; }//;
         
         // Key: status Type: xdsl.AsyncTaskStatusEnum FullType: xdsl.AsyncTaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -63,11 +63,11 @@ namespace _xdsl_AsyncTaskArray_connectivity_eligibility {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: connectivity.eligibility.Street[] FullType: connectivity.eligibility.Street[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _connectivity_eligibility.Street[] Result { get; set; }//;
+        public _connectivity_eligibility.Street[]? Result { get; set; }//;
         
         // Key: status Type: xdsl.AsyncTaskStatusEnum FullType: xdsl.AsyncTaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -79,11 +79,11 @@ namespace _xdsl_AsyncTaskArray_connectivity_eligibility {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: connectivity.eligibility.StreetNumberDetails[] FullType: connectivity.eligibility.StreetNumberDetails[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _connectivity_eligibility.StreetNumberDetails[] Result { get; set; }//;
+        public _connectivity_eligibility.StreetNumberDetails[]? Result { get; set; }//;
         
         // Key: status Type: xdsl.AsyncTaskStatusEnum FullType: xdsl.AsyncTaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

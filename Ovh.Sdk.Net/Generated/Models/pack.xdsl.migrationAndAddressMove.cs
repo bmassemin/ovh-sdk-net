@@ -15,7 +15,7 @@ namespace _pack_xdsl_migrationAndAddressMove {
         
         // Key: endDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: id Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -23,15 +23,15 @@ namespace _pack_xdsl_migrationAndAddressMove {
         
         // Key: installFee Type: pack.xdsl.migrationAndAddressMove.PromotionDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("installFee")]
-        public _pack_xdsl_migrationAndAddressMove.PromotionDetails InstallFee { get; set; }//;
+        public _pack_xdsl_migrationAndAddressMove.PromotionDetails? InstallFee { get; set; }//;
         
         // Key: startDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
-        public System.DateTime StartDate { get; set; }//;
+        public System.DateTime? StartDate { get; set; }//;
         
         // Key: subscription Type: pack.xdsl.migrationAndAddressMove.PromotionDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subscription")]
-        public _pack_xdsl_migrationAndAddressMove.PromotionDetails Subscription { get; set; }//;
+        public _pack_xdsl_migrationAndAddressMove.PromotionDetails? Subscription { get; set; }//;
     }
     
     // Id: PromotionDetails Namespace: pack.xdsl.migrationAndAddressMove
@@ -43,6 +43,6 @@ namespace _pack_xdsl_migrationAndAddressMove {
         
         // Key: duration Type: duration FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public System.TimeSpan Duration { get; set; }//;
+        public System.TimeSpan? Duration { get; set; }//;
     }
 }

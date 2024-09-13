@@ -67,7 +67,7 @@ namespace _cloud_order_rule {
         
         // Key: isNew Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isNew")]
-        public bool IsNew { get; set; }//;
+        public System.Boolean? IsNew { get; set; }//;
         
         // Key: kinds Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kinds")]

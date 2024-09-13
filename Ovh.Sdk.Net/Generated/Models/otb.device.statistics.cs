@@ -19,7 +19,7 @@ namespace _otb_device_statistics {
         
         // Key: value Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public double Value { get; set; }//;
+        public System.Double? Value { get; set; }//;
     }
     
     // Id: tag Namespace: otb.device.statistics
@@ -31,6 +31,6 @@ namespace _otb_device_statistics {
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
 }

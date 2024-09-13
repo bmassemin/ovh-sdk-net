@@ -15,7 +15,7 @@ namespace _startup_startup {
         
         // Key: detail Type: startup.startup.company.detail FullType: startup.startup.company.detail
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("detail")]
-        public _startup_startup_company.detail Detail { get; set; }//;
+        public _startup_startup_company.detail? Detail { get; set; }//;
         
         // Key: employeesNumber Type: startup.employeesNumberEnum FullType: startup.employeesNumberEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("employeesNumber")]
@@ -23,7 +23,7 @@ namespace _startup_startup {
         
         // Key: incubator Type: startup.startup.company.incubator FullType: startup.startup.company.incubator
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("incubator")]
-        public _startup_startup_company.incubator Incubator { get; set; }//;
+        public _startup_startup_company.incubator? Incubator { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -35,7 +35,7 @@ namespace _startup_startup {
         
         // Key: socialNetwork Type: startup.startup.company.socialNetwork FullType: startup.startup.company.socialNetwork
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("socialNetwork")]
-        public _startup_startup_company.socialNetwork SocialNetwork { get; set; }//;
+        public _startup_startup_company.socialNetwork? SocialNetwork { get; set; }//;
         
         // Key: societyWebsite Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("societyWebsite")]

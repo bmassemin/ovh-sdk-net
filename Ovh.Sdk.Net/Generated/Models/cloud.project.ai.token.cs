@@ -39,7 +39,7 @@ namespace _cloud_project_ai_token {
         
         // Key: labelSelector Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labelSelector")]
-        public string LabelSelector { get; set; }//;
+        public System.String? LabelSelector { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -59,7 +59,7 @@ namespace _cloud_project_ai_token {
         
         // Key: value Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
         
         // Key: version Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]

@@ -32,11 +32,11 @@ namespace _hosting_web_mail {
         
         // Key: message Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("message")]
-        public string Message { get; set; }//;
+        public System.String? Message { get; set; }//;
         
         // Key: to Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("to")]
-        public string To { get; set; }//;
+        public System.String? To { get; set; }//;
     }
     
     // Id: StateEnum Namespace: hosting.web.mail
@@ -70,6 +70,6 @@ namespace _hosting_web_mail {
         
         // Key: volume Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volume")]
-        public long Volume { get; set; }//;
+        public System.Int64? Volume { get; set; }//;
     }
 }

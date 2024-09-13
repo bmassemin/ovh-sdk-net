@@ -19,35 +19,35 @@ namespace _cloud_project_database_service_currentqueries {
         
         // Key: backendStart Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backendStart")]
-        public System.DateTime BackendStart { get; set; }//;
+        public System.DateTime? BackendStart { get; set; }//;
         
         // Key: backendType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backendType")]
-        public string BackendType { get; set; }//;
+        public System.String? BackendType { get; set; }//;
         
         // Key: backendXid Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backendXid")]
-        public long BackendXid { get; set; }//;
+        public System.Int64? BackendXid { get; set; }//;
         
         // Key: backendXmin Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backendXmin")]
-        public long BackendXmin { get; set; }//;
+        public System.Int64? BackendXmin { get; set; }//;
         
         // Key: clientHostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientHostname")]
-        public string ClientHostname { get; set; }//;
+        public System.String? ClientHostname { get; set; }//;
         
         // Key: clientIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientIp")]
-        public string ClientIp { get; set; }//;
+        public System.String? ClientIp { get; set; }//;
         
         // Key: clientPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientPort")]
-        public long ClientPort { get; set; }//;
+        public System.Int64? ClientPort { get; set; }//;
         
         // Key: databaseId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseId")]
-        public long DatabaseId { get; set; }//;
+        public System.Int64? DatabaseId { get; set; }//;
         
         // Key: databaseName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseName")]
@@ -55,7 +55,7 @@ namespace _cloud_project_database_service_currentqueries {
         
         // Key: leaderPid Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("leaderPid")]
-        public long LeaderPid { get; set; }//;
+        public System.Int64? LeaderPid { get; set; }//;
         
         // Key: pid Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pid")]
@@ -71,7 +71,7 @@ namespace _cloud_project_database_service_currentqueries {
         
         // Key: queryStart Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queryStart")]
-        public System.DateTime QueryStart { get; set; }//;
+        public System.DateTime? QueryStart { get; set; }//;
         
         // Key: state Type: cloud.project.database.service.currentqueries.StateEnum FullType: cloud.project.database.service.currentqueries.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -79,15 +79,15 @@ namespace _cloud_project_database_service_currentqueries {
         
         // Key: stateChange Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stateChange")]
-        public System.DateTime StateChange { get; set; }//;
+        public System.DateTime? StateChange { get; set; }//;
         
         // Key: transactionStart Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("transactionStart")]
-        public System.DateTime TransactionStart { get; set; }//;
+        public System.DateTime? TransactionStart { get; set; }//;
         
         // Key: userId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userId")]
-        public long UserId { get; set; }//;
+        public System.Int64? UserId { get; set; }//;
         
         // Key: userName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userName")]
@@ -95,11 +95,11 @@ namespace _cloud_project_database_service_currentqueries {
         
         // Key: waitEvent Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("waitEvent")]
-        public string WaitEvent { get; set; }//;
+        public System.String? WaitEvent { get; set; }//;
         
         // Key: waitEventType Type: cloud.project.database.service.currentqueries.WaitEventTypeEnum FullType: cloud.project.database.service.currentqueries.WaitEventTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("waitEventType")]
-        public _cloud_project_database_service_currentqueries.WaitEventTypeEnum WaitEventType { get; set; }//;
+        public _cloud_project_database_service_currentqueries.WaitEventTypeEnum? WaitEventType { get; set; }//;
     }
     
     // Id: StateEnum Namespace: cloud.project.database.service.currentqueries

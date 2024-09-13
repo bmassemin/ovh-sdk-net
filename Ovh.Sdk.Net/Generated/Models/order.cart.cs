@@ -51,11 +51,11 @@ namespace _order_cart {
         
         // Key: maximumQuantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximumQuantity")]
-        public long MaximumQuantity { get; set; }//;
+        public System.Int64? MaximumQuantity { get; set; }//;
         
         // Key: maximumRepeat Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximumRepeat")]
-        public long MaximumRepeat { get; set; }//;
+        public System.Int64? MaximumRepeat { get; set; }//;
         
         // Key: minimumQuantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minimumQuantity")]
@@ -161,7 +161,7 @@ namespace _order_cart {
         
         // Key: expire Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expire")]
-        public System.DateTime Expire { get; set; }//;
+        public System.DateTime? Expire { get; set; }//;
         
         // Key: items Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("items")]
@@ -205,7 +205,7 @@ namespace _order_cart {
         
         // Key: fields Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fields")]
-        public string[] Fields { get; set; }//;
+        public System.String[]? Fields { get; set; }//;
         
         // Key: label Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("label")]
@@ -353,23 +353,23 @@ namespace _order_cart {
         
         // Key: duration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public System.TimeSpan Duration { get; set; }//;
+        public System.TimeSpan? Duration { get; set; }//;
         
         // Key: offerId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerId")]
-        public string OfferId { get; set; }//;
+        public System.String? OfferId { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: pricingMode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricingMode")]
-        public string PricingMode { get; set; }//;
+        public System.String? PricingMode { get; set; }//;
         
         // Key: quantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quantity")]
-        public long Quantity { get; set; }//;
+        public System.Int64? Quantity { get; set; }//;
     }
     
     // Id: GenericDomainOptionsCreation Namespace: order.cart
@@ -494,11 +494,11 @@ namespace _order_cart {
         
         // Key: configurations Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("configurations")]
-        public long[] Configurations { get; set; }//;
+        public System.Int64[]? Configurations { get; set; }//;
         
         // Key: duration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public System.TimeSpan Duration { get; set; }//;
+        public System.TimeSpan? Duration { get; set; }//;
         
         // Key: itemId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("itemId")]
@@ -506,7 +506,7 @@ namespace _order_cart {
         
         // Key: offerId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerId")]
-        public string OfferId { get; set; }//;
+        public System.String? OfferId { get; set; }//;
         
         // Key: options Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("options")]
@@ -514,7 +514,7 @@ namespace _order_cart {
         
         // Key: parentItemId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentItemId")]
-        public long ParentItemId { get; set; }//;
+        public System.Int64? ParentItemId { get; set; }//;
         
         // Key: prices Type: order.cart.Price[] FullType: order.cart.Price[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prices")]
@@ -546,15 +546,15 @@ namespace _order_cart {
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: pricingMode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricingMode")]
-        public string PricingMode { get; set; }//;
+        public System.String? PricingMode { get; set; }//;
         
         // Key: quantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quantity")]
-        public long Quantity { get; set; }//;
+        public System.Int64? Quantity { get; set; }//;
     }
     
     // Id: ItemUpdate Namespace: order.cart
@@ -582,7 +582,7 @@ namespace _order_cart {
         
         // Key: promotions Type: order.cart.Promotion[] FullType: order.cart.Promotion[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("promotions")]
-        public _order_cart.Promotion[] Promotions { get; set; }//;
+        public _order_cart.Promotion[]? Promotions { get; set; }//;
     }
     
     // Id: PriceLabelEnum Namespace: order.cart
@@ -625,11 +625,11 @@ namespace _order_cart {
         
         // Key: offer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public string Offer { get; set; }//;
+        public System.String? Offer { get; set; }//;
         
         // Key: offerId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerId")]
-        public string OfferId { get; set; }//;
+        public System.String? OfferId { get; set; }//;
         
         // Key: orderable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderable")]
@@ -641,7 +641,7 @@ namespace _order_cart {
         
         // Key: prices Type: order.cart.Price[] FullType: order.cart.Price[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prices")]
-        public _order_cart.Price[] Prices { get; set; }//;
+        public _order_cart.Price[]? Prices { get; set; }//;
         
         // Key: pricingMode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricingMode")]
@@ -665,7 +665,7 @@ namespace _order_cart {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -681,7 +681,7 @@ namespace _order_cart {
         
         // Key: tags Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tags")]
-        public string[] Tags { get; set; }//;
+        public System.String[]? Tags { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]

@@ -19,7 +19,7 @@ namespace _cloud_share_snapshot {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -27,7 +27,7 @@ namespace _cloud_share_snapshot {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: shareId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shareId")]
@@ -35,7 +35,7 @@ namespace _cloud_share_snapshot {
         
         // Key: shareProtocol Type: cloud.share.ProtocolEnum FullType: cloud.share.ProtocolEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shareProtocol")]
-        public _cloud_share.ProtocolEnum ShareProtocol { get; set; }//;
+        public _cloud_share.ProtocolEnum? ShareProtocol { get; set; }//;
         
         // Key: shareSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shareSize")]

@@ -15,11 +15,11 @@ namespace _services_expanded {
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
-        public string Path { get; set; }//;
+        public System.String? Path { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: vars Type: complexType.SafeKeyValue<string>[] FullType: complexType.SafeKeyValue<string>[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vars")]
@@ -31,39 +31,39 @@ namespace _services_expanded {
         
         // Key: engagement Type: services.expanded.EngagementSummary FullType: services.expanded.EngagementSummary
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engagement")]
-        public _services_expanded.EngagementSummary Engagement { get; set; }//;
+        public _services_expanded.EngagementSummary? Engagement { get; set; }//;
         
         // Key: engagementRequest Type: services.expanded.EngagementRequestSummary FullType: services.expanded.EngagementRequestSummary
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engagementRequest")]
-        public _services_expanded.EngagementRequestSummary EngagementRequest { get; set; }//;
+        public _services_expanded.EngagementRequestSummary? EngagementRequest { get; set; }//;
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: group Type: services.expanded.Group FullType: services.expanded.Group
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
-        public _services_expanded.Group Group { get; set; }//;
+        public _services_expanded.Group? Group { get; set; }//;
         
         // Key: lifecycle Type: services.expanded.Lifecycle FullType: services.expanded.Lifecycle
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lifecycle")]
-        public _services_expanded.Lifecycle Lifecycle { get; set; }//;
+        public _services_expanded.Lifecycle? Lifecycle { get; set; }//;
         
         // Key: nextBillingDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nextBillingDate")]
-        public System.DateTime NextBillingDate { get; set; }//;
+        public System.DateTime? NextBillingDate { get; set; }//;
         
         // Key: plan Type: services.expanded.Plan FullType: services.expanded.Plan
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plan")]
-        public _services_expanded.Plan Plan { get; set; }//;
+        public _services_expanded.Plan? Plan { get; set; }//;
         
         // Key: pricing Type: services.billing.Pricing FullType: services.billing.Pricing
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricing")]
-        public _services_billing.Pricing Pricing { get; set; }//;
+        public _services_billing.Pricing? Pricing { get; set; }//;
         
         // Key: renew Type: services.expanded.Renew FullType: services.expanded.Renew
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renew")]
-        public _services_expanded.Renew Renew { get; set; }//;
+        public _services_expanded.Renew? Renew { get; set; }//;
     }
     
     // Id: Customer Namespace: services.expanded
@@ -91,11 +91,11 @@ namespace _services_expanded {
         
         // Key: endDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateOnly EndDate { get; set; }//;
+        public System.DateOnly? EndDate { get; set; }//;
         
         // Key: endRule Type: services.billing.engagement.EndRule FullType: services.billing.engagement.EndRule
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endRule")]
-        public _services_billing_engagement.EndRule EndRule { get; set; }//;
+        public _services_billing_engagement.EndRule? EndRule { get; set; }//;
     }
     
     // Id: Group Namespace: services.expanded
@@ -177,11 +177,11 @@ namespace _services_expanded {
         
         // Key: product Type: services.expanded.Product FullType: services.expanded.Product
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("product")]
-        public _services_expanded.Product Product { get; set; }//;
+        public _services_expanded.Product? Product { get; set; }//;
         
         // Key: resellingProvider Type: services.expanded.ResellingProviderEnum FullType: services.expanded.ResellingProviderEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resellingProvider")]
-        public _services_expanded.ResellingProviderEnum ResellingProvider { get; set; }//;
+        public _services_expanded.ResellingProviderEnum? ResellingProvider { get; set; }//;
         
         // Key: state Type: services.expanded.Resource.StateEnum FullType: services.expanded.Resource.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -201,7 +201,7 @@ namespace _services_expanded {
         
         // Key: parentServiceId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentServiceId")]
-        public long ParentServiceId { get; set; }//;
+        public System.Int64? ParentServiceId { get; set; }//;
         
         // Key: resource Type: services.expanded.Resource FullType: services.expanded.Resource
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resource")]
@@ -209,7 +209,7 @@ namespace _services_expanded {
         
         // Key: route Type: services.expanded.Route FullType: services.expanded.Route
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("route")]
-        public _services_expanded.Route Route { get; set; }//;
+        public _services_expanded.Route? Route { get; set; }//;
         
         // Key: serviceId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceId")]
@@ -225,11 +225,11 @@ namespace _services_expanded {
         
         // Key: baremetalServers Type: services.expanded.technical.BaremetalServer FullType: services.expanded.technical.BaremetalServer
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("baremetalServers")]
-        public _services_expanded_technical.BaremetalServer BaremetalServers { get; set; }//;
+        public _services_expanded_technical.BaremetalServer? BaremetalServers { get; set; }//;
         
         // Key: nutanixCluster Type: services.expanded.technical.NutanixCluster FullType: services.expanded.technical.NutanixCluster
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nutanixCluster")]
-        public _services_expanded_technical.NutanixCluster NutanixCluster { get; set; }//;
+        public _services_expanded_technical.NutanixCluster? NutanixCluster { get; set; }//;
     }
     
     // Id: terminationPolicyEnum Namespace: services.expanded

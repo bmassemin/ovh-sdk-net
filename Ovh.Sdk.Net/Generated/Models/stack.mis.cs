@@ -31,7 +31,7 @@ namespace _stack_mis {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: type Type: stack.StackTypeEnum FullType: stack.StackTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]

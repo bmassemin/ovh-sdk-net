@@ -51,11 +51,11 @@ namespace _cloud_project_dataProcessing_notebook {
         
         // Key: engineName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engineName")]
-        public string EngineName { get; set; }//;
+        public System.String? EngineName { get; set; }//;
         
         // Key: engineVersion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engineVersion")]
-        public string EngineVersion { get; set; }//;
+        public System.String? EngineVersion { get; set; }//;
     }
     
     // Id: NotebookSpec Namespace: cloud.project.dataProcessing.notebook
@@ -101,7 +101,7 @@ namespace _cloud_project_dataProcessing_notebook {
         
         // Key: duration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public long Duration { get; set; }//;
+        public System.Int64? Duration { get; set; }//;
         
         // Key: info Type: cloud.project.dataProcessing.Info FullType: cloud.project.dataProcessing.Info
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("info")]
@@ -109,18 +109,18 @@ namespace _cloud_project_dataProcessing_notebook {
         
         // Key: lastStartedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastStartedAt")]
-        public System.DateTime LastStartedAt { get; set; }//;
+        public System.DateTime? LastStartedAt { get; set; }//;
         
         // Key: lastStoppedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastStoppedAt")]
-        public System.DateTime LastStoppedAt { get; set; }//;
+        public System.DateTime? LastStoppedAt { get; set; }//;
         
         // Key: state Type: cloud.project.dataProcessing.notebook.NotebookStateEnum FullType: cloud.project.dataProcessing.notebook.NotebookStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _cloud_project_dataProcessing_notebook.NotebookStateEnum State { get; set; }//;
+        public _cloud_project_dataProcessing_notebook.NotebookStateEnum? State { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
 }

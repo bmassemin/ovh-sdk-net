@@ -39,7 +39,7 @@ namespace _cloud_project_database_postgresql {
         
         // Key: sslMode Type: cloud.project.database.postgresql.connectionpool.SslModeEnum FullType: cloud.project.database.postgresql.connectionpool.SslModeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslMode")]
-        public _cloud_project_database_postgresql_connectionpool.SslModeEnum SslMode { get; set; }//;
+        public _cloud_project_database_postgresql_connectionpool.SslModeEnum? SslMode { get; set; }//;
         
         // Key: uri Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("uri")]
@@ -47,7 +47,7 @@ namespace _cloud_project_database_postgresql {
         
         // Key: userId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userId")]
-        public System.Guid UserId { get; set; }//;
+        public System.Guid? UserId { get; set; }//;
     }
     
     // Id: ConnectionPoolCreation Namespace: cloud.project.database.postgresql
@@ -71,7 +71,7 @@ namespace _cloud_project_database_postgresql {
         
         // Key: userId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userId")]
-        public System.Guid UserId { get; set; }//;
+        public System.Guid? UserId { get; set; }//;
     }
     
     // Id: QueryStatistics Namespace: cloud.project.database.postgresql

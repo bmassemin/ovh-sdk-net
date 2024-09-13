@@ -39,7 +39,7 @@ namespace _cloud_project {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: egressAddress Type: cloud.project.loadbalancer.Addresses FullType: cloud.project.loadbalancer.Addresses
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("egressAddress")]
@@ -51,7 +51,7 @@ namespace _cloud_project {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: openstackRegion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("openstackRegion")]
@@ -75,7 +75,7 @@ namespace _cloud_project {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -83,11 +83,11 @@ namespace _cloud_project {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: networking Type: cloud.project.loadbalancer.networking.NetworkingCreation FullType: cloud.project.loadbalancer.networking.NetworkingCreation
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networking")]
-        public _cloud_project_loadbalancer_networking.NetworkingCreation Networking { get; set; }//;
+        public _cloud_project_loadbalancer_networking.NetworkingCreation? Networking { get; set; }//;
         
         // Key: openstackRegion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("openstackRegion")]
@@ -99,7 +99,7 @@ namespace _cloud_project {
         
         // Key: size Type: cloud.project.loadbalancer.SizeEnum FullType: cloud.project.loadbalancer.SizeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
-        public _cloud_project_loadbalancer.SizeEnum Size { get; set; }//;
+        public _cloud_project_loadbalancer.SizeEnum? Size { get; set; }//;
     }
     
     // Id: BandwidthStorageUsage Namespace: cloud.project
@@ -200,7 +200,7 @@ namespace _cloud_project {
         
         // Key: import Type: cloud.project.certificate.Import FullType: cloud.project.certificate.Import
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("import")]
-        public _cloud_project_certificate.Import Import { get; set; }//;
+        public _cloud_project_certificate.Import? Import { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -279,19 +279,19 @@ namespace _cloud_project {
         
         // Key: actionsRequired Type: cloud.project.EligibilityAction[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("actionsRequired")]
-        public _cloud_project.EligibilityAction[] ActionsRequired { get; set; }//;
+        public _cloud_project.EligibilityAction[]? ActionsRequired { get; set; }//;
         
         // Key: minimumCredit Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minimumCredit")]
-        public _order.Price MinimumCredit { get; set; }//;
+        public _order.Price? MinimumCredit { get; set; }//;
         
         // Key: paymentMethodsAuthorized Type: cloud.project.PaymentMethodAuthorized[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentMethodsAuthorized")]
-        public _cloud_project.PaymentMethodAuthorized[] PaymentMethodsAuthorized { get; set; }//;
+        public _cloud_project.PaymentMethodAuthorized[]? PaymentMethodsAuthorized { get; set; }//;
         
         // Key: voucher Type: cloud.project.NewProjectInfoVoucher FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("voucher")]
-        public _cloud_project.NewProjectInfoVoucher Voucher { get; set; }//;
+        public _cloud_project.NewProjectInfoVoucher? Voucher { get; set; }//;
     }
     
     // Id: FloatingIp Namespace: cloud.project
@@ -299,7 +299,7 @@ namespace _cloud_project {
         
         // Key: associatedEntity Type: cloud.project.floatingIp.AssociatedEntity FullType: cloud.project.floatingIp.AssociatedEntity
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("associatedEntity")]
-        public _cloud_project_floatingIp.AssociatedEntity AssociatedEntity { get; set; }//;
+        public _cloud_project_floatingIp.AssociatedEntity? AssociatedEntity { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -315,7 +315,7 @@ namespace _cloud_project {
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
         
         // Key: status Type: cloud.project.floatingIp.StatusEnum FullType: cloud.project.floatingIp.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -339,7 +339,7 @@ namespace _cloud_project {
         
         // Key: hourly Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hourly")]
-        public _order.Price Hourly { get; set; }//;
+        public _order.Price? Hourly { get; set; }//;
         
         // Key: instanceId Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("instanceId")]
@@ -347,7 +347,7 @@ namespace _cloud_project {
         
         // Key: monthly Type: cloud.project.InstanceMonthlyBilling FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthly")]
-        public _cloud_project.InstanceMonthlyBilling Monthly { get; set; }//;
+        public _cloud_project.InstanceMonthlyBilling? Monthly { get; set; }//;
         
         // Key: monthlyBilling Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyBilling")]
@@ -387,7 +387,7 @@ namespace _cloud_project {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: egressAddress Type: cloud.project.loadbalancer.Addresses FullType: cloud.project.loadbalancer.Addresses
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("egressAddress")]
@@ -399,7 +399,7 @@ namespace _cloud_project {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: networking Type: cloud.project.loadbalancer.networking.Networking FullType: cloud.project.loadbalancer.networking.Networking
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networking")]
@@ -427,7 +427,7 @@ namespace _cloud_project {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -435,11 +435,11 @@ namespace _cloud_project {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: networking Type: cloud.project.loadbalancer.networking.NetworkingCreation FullType: cloud.project.loadbalancer.networking.NetworkingCreation
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networking")]
-        public _cloud_project_loadbalancer_networking.NetworkingCreation Networking { get; set; }//;
+        public _cloud_project_loadbalancer_networking.NetworkingCreation? Networking { get; set; }//;
         
         // Key: openstackRegion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("openstackRegion")]
@@ -451,7 +451,7 @@ namespace _cloud_project {
         
         // Key: size Type: cloud.project.loadbalancer.SizeEnum FullType: cloud.project.loadbalancer.SizeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
-        public _cloud_project_loadbalancer.SizeEnum Size { get; set; }//;
+        public _cloud_project_loadbalancer.SizeEnum? Size { get; set; }//;
     }
     
     // Id: Network Namespace: cloud.project
@@ -467,7 +467,7 @@ namespace _cloud_project {
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
         
         // Key: visibility Type: cloud.network.NetworkVisibilityEnum FullType: cloud.network.NetworkVisibilityEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("visibility")]
@@ -475,7 +475,7 @@ namespace _cloud_project {
         
         // Key: vlanId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vlanId")]
-        public long VlanId { get; set; }//;
+        public System.Int64? VlanId { get; set; }//;
     }
     
     // Id: NetworkLoadBalancer Namespace: cloud.project
@@ -495,7 +495,7 @@ namespace _cloud_project {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: egressAddress Type: cloud.project.loadbalancer.Addresses FullType: cloud.project.loadbalancer.Addresses
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("egressAddress")]
@@ -507,7 +507,7 @@ namespace _cloud_project {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: openstackRegion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("openstackRegion")]
@@ -531,7 +531,7 @@ namespace _cloud_project {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -539,11 +539,11 @@ namespace _cloud_project {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: networking Type: cloud.project.loadbalancer.networking.NetworkingCreation FullType: cloud.project.loadbalancer.networking.NetworkingCreation
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networking")]
-        public _cloud_project_loadbalancer_networking.NetworkingCreation Networking { get; set; }//;
+        public _cloud_project_loadbalancer_networking.NetworkingCreation? Networking { get; set; }//;
         
         // Key: openstackRegion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("openstackRegion")]
@@ -555,7 +555,7 @@ namespace _cloud_project {
         
         // Key: size Type: cloud.project.loadbalancer.SizeEnum FullType: cloud.project.loadbalancer.SizeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
-        public _cloud_project_loadbalancer.SizeEnum Size { get; set; }//;
+        public _cloud_project_loadbalancer.SizeEnum? Size { get; set; }//;
     }
     
     // Id: NewProjectInfoVoucher Namespace: cloud.project
@@ -597,11 +597,11 @@ namespace _cloud_project {
         
         // Key: agreementsToValidate Type: long[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("agreementsToValidate")]
-        public long[] AgreementsToValidate { get; set; }//;
+        public System.Int64[]? AgreementsToValidate { get; set; }//;
         
         // Key: agreementsValidated Type: long[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("agreementsValidated")]
-        public long[] AgreementsValidated { get; set; }//;
+        public System.Int64[]? AgreementsValidated { get; set; }//;
     }
     
     // Id: ProductNameEnum Namespace: cloud.project
@@ -732,9 +732,17 @@ namespace _cloud_project {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dhcpEnabled")]
         public bool DhcpEnabled { get; set; }//;
         
+        // Key: dnsNameServers Type: ip[] FullType: ip[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnsNameServers")]
+        public string[] DnsNameServers { get; set; }//;
+        
         // Key: gatewayIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayIp")]
-        public string GatewayIp { get; set; }//;
+        public System.String? GatewayIp { get; set; }//;
+        
+        // Key: hostRoutes Type: cloud.network.HostRoute[] FullType: cloud.network.HostRoute[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostRoutes")]
+        public _cloud_network.HostRoute[] HostRoutes { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]

@@ -82,7 +82,7 @@ namespace _pack_xdsl_HostedEmail {
         
         // Key: smtpAuth Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("smtpAuth")]
-        public bool SmtpAuth { get; set; }//;
+        public System.Boolean? SmtpAuth { get; set; }//;
         
         // Key: startTls Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startTls")]

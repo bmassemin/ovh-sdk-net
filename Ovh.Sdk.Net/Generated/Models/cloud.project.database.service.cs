@@ -15,7 +15,7 @@ namespace _cloud_project_database_service {
         
         // Key: pitr Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pitr")]
-        public System.DateTime Pitr { get; set; }//;
+        public System.DateTime? Pitr { get; set; }//;
         
         // Key: regions Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regions")]
@@ -23,7 +23,7 @@ namespace _cloud_project_database_service {
         
         // Key: retentionDays Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionDays")]
-        public long RetentionDays { get; set; }//;
+        public System.Int64? RetentionDays { get; set; }//;
         
         // Key: time Type: time FullType: time
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("time")]
@@ -35,19 +35,19 @@ namespace _cloud_project_database_service {
         
         // Key: create Type: cloud.project.database.service.capability.StateEnum FullType: cloud.project.database.service.capability.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("create")]
-        public _cloud_project_database_service_capability.StateEnum Create { get; set; }//;
+        public _cloud_project_database_service_capability.StateEnum? Create { get; set; }//;
         
         // Key: delete Type: cloud.project.database.service.capability.StateEnum FullType: cloud.project.database.service.capability.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("delete")]
-        public _cloud_project_database_service_capability.StateEnum Delete { get; set; }//;
+        public _cloud_project_database_service_capability.StateEnum? Delete { get; set; }//;
         
         // Key: read Type: cloud.project.database.service.capability.StateEnum FullType: cloud.project.database.service.capability.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("read")]
-        public _cloud_project_database_service_capability.StateEnum Read { get; set; }//;
+        public _cloud_project_database_service_capability.StateEnum? Read { get; set; }//;
         
         // Key: update Type: cloud.project.database.service.capability.StateEnum FullType: cloud.project.database.service.capability.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("update")]
-        public _cloud_project_database_service_capability.StateEnum Update { get; set; }//;
+        public _cloud_project_database_service_capability.StateEnum? Update { get; set; }//;
     }
     
     // Id: CapabilityEnum Namespace: cloud.project.database.service
@@ -192,15 +192,15 @@ namespace _cloud_project_database_service {
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
-        public string Path { get; set; }//;
+        public System.String? Path { get; set; }//;
         
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
         
         // Key: scheme Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scheme")]
-        public string Scheme { get; set; }//;
+        public System.String? Scheme { get; set; }//;
         
         // Key: ssl Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssl")]
@@ -208,11 +208,11 @@ namespace _cloud_project_database_service {
         
         // Key: sslMode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslMode")]
-        public string SslMode { get; set; }//;
+        public System.String? SslMode { get; set; }//;
         
         // Key: uri Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("uri")]
-        public string Uri { get; set; }//;
+        public System.String? Uri { get; set; }//;
     }
     
     // Id: HostMetric Namespace: cloud.project.database.service
@@ -240,7 +240,7 @@ namespace _cloud_project_database_service {
         
         // Key: parameters Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parameters")]
-        public Dictionary<string, string> Parameters { get; set; }//;
+        public Dictionary<string, string>? Parameters { get; set; }//;
         
         // Key: sourceServiceId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sourceServiceId")]
@@ -292,7 +292,7 @@ namespace _cloud_project_database_service {
         
         // Key: appliedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("appliedAt")]
-        public System.DateTime AppliedAt { get; set; }//;
+        public System.DateTime? AppliedAt { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -304,7 +304,7 @@ namespace _cloud_project_database_service {
         
         // Key: scheduledAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scheduledAt")]
-        public System.DateTime ScheduledAt { get; set; }//;
+        public System.DateTime? ScheduledAt { get; set; }//;
         
         // Key: status Type: cloud.project.database.service.maintenance.StatusEnum FullType: cloud.project.database.service.maintenance.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -415,7 +415,7 @@ namespace _cloud_project_database_service {
         
         // Key: role Type: cloud.project.database.service.node.RoleEnum FullType: cloud.project.database.service.node.RoleEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
-        public _cloud_project_database_service_node.RoleEnum Role { get; set; }//;
+        public _cloud_project_database_service_node.RoleEnum? Role { get; set; }//;
         
         // Key: status Type: cloud.project.database.StatusEnum FullType: cloud.project.database.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -451,7 +451,7 @@ namespace _cloud_project_database_service {
         
         // Key: role Type: cloud.project.database.service.node.RoleEnum FullType: cloud.project.database.service.node.RoleEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
-        public _cloud_project_database_service_node.RoleEnum Role { get; set; }//;
+        public _cloud_project_database_service_node.RoleEnum? Role { get; set; }//;
         
         // Key: status Type: cloud.project.database.StatusEnum FullType: cloud.project.database.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

@@ -15,23 +15,23 @@ namespace _domain_configuration_rules {
         
         // Key: conditions Type: domain.configuration.rules.Rule FullType: domain.configuration.rules.Rule
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditions")]
-        public _domain_configuration_rules.Rule Conditions { get; set; }//;
+        public _domain_configuration_rules.Rule? Conditions { get; set; }//;
         
         // Key: contexts Type: domain.configuration.rules.ContextEnum[] FullType: domain.configuration.rules.ContextEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contexts")]
-        public _domain_configuration_rules.ContextEnum[] Contexts { get; set; }//;
+        public _domain_configuration_rules.ContextEnum[]? Contexts { get; set; }//;
         
         // Key: operator Type: domain.configuration.rules.OperatorEnum FullType: domain.configuration.rules.OperatorEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operator")]
-        public _domain_configuration_rules.OperatorEnum @operator { get; set; }//;
+        public _domain_configuration_rules.OperatorEnum? @operator { get; set; }//;
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
         
         // Key: values Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("values")]
-        public string[] Values { get; set; }//;
+        public System.String[]? Values { get; set; }//;
     }
     
     // Id: ContextEnum Namespace: domain.configuration.rules
@@ -128,43 +128,43 @@ namespace _domain_configuration_rules {
         
         // Key: and Type: domain.configuration.rules.Rule[] FullType: domain.configuration.rules.Rule[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("and")]
-        public _domain_configuration_rules.Rule[] And { get; set; }//;
+        public _domain_configuration_rules.Rule[]? And { get; set; }//;
         
         // Key: conditions Type: domain.configuration.rules.Rule FullType: domain.configuration.rules.Rule
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditions")]
-        public _domain_configuration_rules.Rule Conditions { get; set; }//;
+        public _domain_configuration_rules.Rule? Conditions { get; set; }//;
         
         // Key: constraints Type: domain.configuration.rules.Constraint[] FullType: domain.configuration.rules.Constraint[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("constraints")]
-        public _domain_configuration_rules.Constraint[] Constraints { get; set; }//;
+        public _domain_configuration_rules.Constraint[]? Constraints { get; set; }//;
         
         // Key: contexts Type: domain.configuration.rules.ContextEnum[] FullType: domain.configuration.rules.ContextEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contexts")]
-        public _domain_configuration_rules.ContextEnum[] Contexts { get; set; }//;
+        public _domain_configuration_rules.ContextEnum[]? Contexts { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: fields Type: domain.configuration.rules.Rule FullType: domain.configuration.rules.Rule
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fields")]
-        public _domain_configuration_rules.Rule Fields { get; set; }//;
+        public _domain_configuration_rules.Rule? Fields { get; set; }//;
         
         // Key: label Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("label")]
-        public string Label { get; set; }//;
+        public System.String? Label { get; set; }//;
         
         // Key: or Type: domain.configuration.rules.Rule[] FullType: domain.configuration.rules.Rule[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("or")]
-        public _domain_configuration_rules.Rule[] Or { get; set; }//;
+        public _domain_configuration_rules.Rule[]? Or { get; set; }//;
         
         // Key: placeholder Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("placeholder")]
-        public string Placeholder { get; set; }//;
+        public System.String? Placeholder { get; set; }//;
         
         // Key: type Type: domain.configuration.rules.TypeEnum FullType: domain.configuration.rules.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _domain_configuration_rules.TypeEnum Type { get; set; }//;
+        public _domain_configuration_rules.TypeEnum? Type { get; set; }//;
     }
     
     // Id: RuleData Namespace: domain.configuration.rules
@@ -172,23 +172,23 @@ namespace _domain_configuration_rules {
         
         // Key: adminAccount Type: nichandle.Nichandle FullType: nichandle.Nichandle
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("adminAccount")]
-        public _nichandle.Nichandle AdminAccount { get; set; }//;
+        public _nichandle.Nichandle? AdminAccount { get; set; }//;
         
         // Key: domain Type: domain.Data FullType: domain.Data
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
-        public _domain.Data Domain { get; set; }//;
+        public _domain.Data? Domain { get; set; }//;
         
         // Key: extras Type: domain.configuration.rules.RuleExtraData FullType: domain.configuration.rules.RuleExtraData
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("extras")]
-        public _domain_configuration_rules.RuleExtraData Extras { get; set; }//;
+        public _domain_configuration_rules.RuleExtraData? Extras { get; set; }//;
         
         // Key: owner Type: domain.Contact FullType: domain.Contact
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("owner")]
-        public _domain.Contact Owner { get; set; }//;
+        public _domain.Contact? Owner { get; set; }//;
         
         // Key: techAccount Type: nichandle.Nichandle FullType: nichandle.Nichandle
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("techAccount")]
-        public _nichandle.Nichandle TechAccount { get; set; }//;
+        public _nichandle.Nichandle? TechAccount { get; set; }//;
     }
     
     // Id: RuleExtraData Namespace: domain.configuration.rules
@@ -196,11 +196,11 @@ namespace _domain_configuration_rules {
         
         // Key: acceptCondition Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("acceptCondition")]
-        public bool AcceptCondition { get; set; }//;
+        public System.Boolean? AcceptCondition { get; set; }//;
         
         // Key: authInfo Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("authInfo")]
-        public string AuthInfo { get; set; }//;
+        public System.String? AuthInfo { get; set; }//;
     }
     
     // Id: TypeEnum Namespace: domain.configuration.rules

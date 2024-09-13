@@ -19,7 +19,7 @@ namespace _veeam_veeamEnterprise {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
@@ -39,11 +39,11 @@ namespace _veeam_veeamEnterprise {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
@@ -59,7 +59,7 @@ namespace _veeam_veeamEnterprise {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -71,7 +71,7 @@ namespace _veeam_veeamEnterprise {
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
-        public System.DateTime StartDate { get; set; }//;
+        public System.DateTime? StartDate { get; set; }//;
         
         // Key: state Type: veeamEnterprise.TaskStateEnum FullType: veeamEnterprise.TaskStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]

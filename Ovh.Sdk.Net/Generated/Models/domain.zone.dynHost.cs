@@ -63,11 +63,11 @@ namespace _domain_zone_dynHost {
         
         // Key: subDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subDomain")]
-        public string SubDomain { get; set; }//;
+        public System.String? SubDomain { get; set; }//;
         
         // Key: ttl Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ttl")]
-        public long Ttl { get; set; }//;
+        public System.Int64? Ttl { get; set; }//;
         
         // Key: zone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]

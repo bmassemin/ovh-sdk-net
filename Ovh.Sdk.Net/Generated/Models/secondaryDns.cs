@@ -59,6 +59,6 @@ namespace _secondaryDns {
         
         // Key: ipv6 Type: ipv6 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string Ipv6 { get; set; }//;
+        public System.String? Ipv6 { get; set; }//;
     }
 }

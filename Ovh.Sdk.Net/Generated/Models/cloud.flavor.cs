@@ -59,7 +59,7 @@ namespace _cloud_flavor {
         
         // Key: inboundBandwidth Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inboundBandwidth")]
-        public long InboundBandwidth { get; set; }//;
+        public System.Int64? InboundBandwidth { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -71,7 +71,7 @@ namespace _cloud_flavor {
         
         // Key: outboundBandwidth Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("outboundBandwidth")]
-        public long OutboundBandwidth { get; set; }//;
+        public System.Int64? OutboundBandwidth { get; set; }//;
         
         // Key: planCodes Type: cloud.flavor.FlavorPlanCodes FullType: cloud.flavor.FlavorPlanCodes
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCodes")]
@@ -103,10 +103,10 @@ namespace _cloud_flavor {
         
         // Key: hourly Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hourly")]
-        public string Hourly { get; set; }//;
+        public System.String? Hourly { get; set; }//;
         
         // Key: monthly Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthly")]
-        public string Monthly { get; set; }//;
+        public System.String? Monthly { get; set; }//;
     }
 }

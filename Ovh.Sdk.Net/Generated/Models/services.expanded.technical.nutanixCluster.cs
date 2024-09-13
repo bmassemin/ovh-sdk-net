@@ -47,7 +47,7 @@ namespace _services_expanded_technical_nutanixCluster {
         
         // Key: features Type: services.expanded.technical.nutanixCluster.Features[] FullType: services.expanded.technical.nutanixCluster.Features[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("features")]
-        public _services_expanded_technical_nutanixCluster.Features[] Features { get; set; }//;
+        public _services_expanded_technical_nutanixCluster.Features[]? Features { get; set; }//;
     }
     
     // Id: Service Namespace: services.expanded.technical.nutanixCluster

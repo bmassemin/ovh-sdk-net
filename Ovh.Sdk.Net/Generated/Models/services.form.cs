@@ -83,7 +83,7 @@ namespace _services_form {
         
         // Key: answers Type: services.form.AnswerAllowedValue[] FullType: services.form.AnswerAllowedValue[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("answers")]
-        public _services_form.AnswerAllowedValue[] Answers { get; set; }//;
+        public _services_form.AnswerAllowedValue[]? Answers { get; set; }//;
         
         // Key: mandatory Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mandatory")]

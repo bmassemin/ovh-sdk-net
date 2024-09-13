@@ -39,11 +39,11 @@ namespace _complexType {
         
         // Key: key Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
-        public string Key { get; set; }//;
+        public System.String? Key { get; set; }//;
         
         // Key: value Type: T FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public T Value { get; set; }//;
+        public T? Value { get; set; }//;
     }
     
     // Id: SafeKeyValueCanBeNull_string Namespace: complexType
@@ -51,7 +51,7 @@ namespace _complexType {
         
         // Key: key Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
-        public string Key { get; set; }//;
+        public System.String? Key { get; set; }//;
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
@@ -83,7 +83,7 @@ namespace _complexType {
         
         // Key: value Type: double FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public double Value { get; set; }//;
+        public System.Double? Value { get; set; }//;
     }
     
     // Id: Range Namespace: complexType

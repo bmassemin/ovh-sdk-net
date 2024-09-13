@@ -15,7 +15,7 @@ namespace _support {
         
         // Key: additionalNotice Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("additionalNotice")]
-        public string AdditionalNotice { get; set; }//;
+        public System.String? AdditionalNotice { get; set; }//;
         
         // Key: messageId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("messageId")]
@@ -81,7 +81,7 @@ namespace _support {
         
         // Key: category Type: support.TicketCategoryEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("category")]
-        public _support.TicketCategoryEnum Category { get; set; }//;
+        public _support.TicketCategoryEnum? Category { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -93,7 +93,7 @@ namespace _support {
         
         // Key: product Type: support.TicketProductEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("product")]
-        public _support.TicketProductEnum Product { get; set; }//;
+        public _support.TicketProductEnum? Product { get; set; }//;
         
         // Key: score Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("score")]
@@ -101,7 +101,7 @@ namespace _support {
         
         // Key: serviceName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
-        public string ServiceName { get; set; }//;
+        public System.String? ServiceName { get; set; }//;
         
         // Key: state Type: support.TicketStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]

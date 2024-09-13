@@ -32,7 +32,7 @@ namespace _cloud_project_database_availability {
         
         // Key: retentionDays Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionDays")]
-        public long RetentionDays { get; set; }//;
+        public System.Int64? RetentionDays { get; set; }//;
     }
     
     // Id: Lifecycle Namespace: cloud.project.database.availability
@@ -40,11 +40,11 @@ namespace _cloud_project_database_availability {
         
         // Key: endOfLife Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endOfLife")]
-        public System.DateOnly EndOfLife { get; set; }//;
+        public System.DateOnly? EndOfLife { get; set; }//;
         
         // Key: endOfSale Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endOfSale")]
-        public System.DateOnly EndOfSale { get; set; }//;
+        public System.DateOnly? EndOfSale { get; set; }//;
         
         // Key: startDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -72,7 +72,7 @@ namespace _cloud_project_database_availability {
         
         // Key: storage Type: cloud.project.database.availability.specifications.Storage FullType: cloud.project.database.availability.specifications.Storage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public _cloud_project_database_availability_specifications.Storage Storage { get; set; }//;
+        public _cloud_project_database_availability_specifications.Storage? Storage { get; set; }//;
     }
     
     // Id: StatusEnum Namespace: cloud.project.database.availability

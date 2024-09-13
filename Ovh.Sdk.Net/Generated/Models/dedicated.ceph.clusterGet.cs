@@ -79,7 +79,7 @@ namespace _dedicated_ceph_clusterGet {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: label Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("label")]

@@ -23,6 +23,6 @@ namespace _me_consumption_transaction_element {
         
         // Key: unique_id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unique_id")]
-        public string Unique_id { get; set; }//;
+        public System.String? Unique_id { get; set; }//;
     }
 }

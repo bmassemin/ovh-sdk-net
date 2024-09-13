@@ -106,7 +106,7 @@ namespace _vps_migration {
         
         // Key: date Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateTime Date { get; set; }//;
+        public System.DateTime? Date { get; set; }//;
         
         // Key: newPlan Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("newPlan")]
@@ -134,7 +134,7 @@ namespace _vps_migration {
         
         // Key: date Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateTime Date { get; set; }//;
+        public System.DateTime? Date { get; set; }//;
         
         // Key: plans Type: vps.migration.VPS2018to2020Plan[] FullType: vps.migration.VPS2018to2020Plan[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plans")]

@@ -15,11 +15,11 @@ namespace _xdsl_AsyncTask_connectivity_eligibility {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: connectivity.eligibility.Building FullType: connectivity.eligibility.Building
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _connectivity_eligibility.Building Result { get; set; }//;
+        public _connectivity_eligibility.Building? Result { get; set; }//;
         
         // Key: status Type: xdsl.AsyncTaskStatusEnum FullType: xdsl.AsyncTaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -31,11 +31,11 @@ namespace _xdsl_AsyncTask_connectivity_eligibility {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: connectivity.eligibility.EligibilityTest FullType: connectivity.eligibility.EligibilityTest
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _connectivity_eligibility.EligibilityTest Result { get; set; }//;
+        public _connectivity_eligibility.EligibilityTest? Result { get; set; }//;
         
         // Key: status Type: xdsl.AsyncTaskStatusEnum FullType: xdsl.AsyncTaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -47,7 +47,7 @@ namespace _xdsl_AsyncTask_connectivity_eligibility {
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: connectivity.eligibility.Meetings FullType: connectivity.eligibility.Meetings
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]

@@ -31,7 +31,7 @@ namespace _cloud_volume {
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -98,7 +98,7 @@ namespace _cloud_volume {
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]

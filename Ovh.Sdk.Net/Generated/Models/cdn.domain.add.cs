@@ -15,7 +15,7 @@ namespace _cdn_domain_add {
         
         // Key: config Type: cdn.domain.option.config FullType: cdn.domain.option.config
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("config")]
-        public _cdn_domain_option.config Config { get; set; }//;
+        public _cdn_domain_option.config? Config { get; set; }//;
         
         // Key: enabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enabled")]
@@ -27,7 +27,7 @@ namespace _cdn_domain_add {
         
         // Key: pattern Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pattern")]
-        public string Pattern { get; set; }//;
+        public System.String? Pattern { get; set; }//;
         
         // Key: type Type: cdn.OptionTypePostEnum FullType: cdn.OptionTypePostEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]

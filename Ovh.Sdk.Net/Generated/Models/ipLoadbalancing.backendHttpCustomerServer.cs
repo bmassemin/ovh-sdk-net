@@ -27,23 +27,23 @@ namespace _ipLoadbalancing_backendHttpCustomerServer {
         
         // Key: chain Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("chain")]
-        public string Chain { get; set; }//;
+        public System.String? Chain { get; set; }//;
         
         // Key: cookie Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cookie")]
-        public string Cookie { get; set; }//;
+        public System.String? Cookie { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: onMarkedDown Type: ipLoadbalancing.OnMarkedDownEnum FullType: ipLoadbalancing.OnMarkedDownEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("onMarkedDown")]
-        public _ipLoadbalancing.OnMarkedDownEnum OnMarkedDown { get; set; }//;
+        public _ipLoadbalancing.OnMarkedDownEnum? OnMarkedDown { get; set; }//;
         
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
         
         // Key: probe Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("probe")]
@@ -51,7 +51,7 @@ namespace _ipLoadbalancing_backendHttpCustomerServer {
         
         // Key: proxyProtocolVersion Type: ipLoadbalancing.ProxyProtocolVersionEnum FullType: ipLoadbalancing.ProxyProtocolVersionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("proxyProtocolVersion")]
-        public _ipLoadbalancing.ProxyProtocolVersionEnum ProxyProtocolVersion { get; set; }//;
+        public _ipLoadbalancing.ProxyProtocolVersionEnum? ProxyProtocolVersion { get; set; }//;
         
         // Key: serverId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverId")]
@@ -71,6 +71,6 @@ namespace _ipLoadbalancing_backendHttpCustomerServer {
         
         // Key: weight Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("weight")]
-        public long Weight { get; set; }//;
+        public System.Int64? Weight { get; set; }//;
     }
 }

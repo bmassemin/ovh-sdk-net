@@ -45,11 +45,11 @@ namespace _domain_extensions {
         
         // Key: geolocalization Type: domain.extensions.CategoryNameWithExtensions[] FullType: domain.extensions.CategoryNameWithExtensions[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("geolocalization")]
-        public _domain_extensions.CategoryNameWithExtensions[] Geolocalization { get; set; }//;
+        public _domain_extensions.CategoryNameWithExtensions[]? Geolocalization { get; set; }//;
         
         // Key: thematic Type: domain.extensions.CategoryNameWithExtensions[] FullType: domain.extensions.CategoryNameWithExtensions[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("thematic")]
-        public _domain_extensions.CategoryNameWithExtensions[] Thematic { get; set; }//;
+        public _domain_extensions.CategoryNameWithExtensions[]? Thematic { get; set; }//;
     }
     
     // Id: ExtensionsPricingAttributes Namespace: domain.extensions

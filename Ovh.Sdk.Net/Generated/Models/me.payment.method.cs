@@ -47,7 +47,7 @@ namespace _me_payment_method {
         
         // Key: billingContactId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("billingContactId")]
-        public long BillingContactId { get; set; }//;
+        public System.Int64? BillingContactId { get; set; }//;
         
         // Key: callbackUrl Type: me.payment.method.CallbackUrl FullType: me.payment.method.CallbackUrl
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callbackUrl")]
@@ -59,19 +59,19 @@ namespace _me_payment_method {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: formData Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("formData")]
-        public string FormData { get; set; }//;
+        public System.String? FormData { get; set; }//;
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
-        public long OrderId { get; set; }//;
+        public System.Int64? OrderId { get; set; }//;
         
         // Key: paymentSubType Type: me.payment.CreationSubTypeEnum FullType: me.payment.CreationSubTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentSubType")]
-        public _me_payment.CreationSubTypeEnum PaymentSubType { get; set; }//;
+        public _me_payment.CreationSubTypeEnum? PaymentSubType { get; set; }//;
         
         // Key: paymentType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentType")]
@@ -99,19 +99,19 @@ namespace _me_payment_method {
         
         // Key: expirationMonth Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationMonth")]
-        public long ExpirationMonth { get; set; }//;
+        public System.Int64? ExpirationMonth { get; set; }//;
         
         // Key: expirationYear Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationYear")]
-        public long ExpirationYear { get; set; }//;
+        public System.Int64? ExpirationYear { get; set; }//;
         
         // Key: formSessionId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("formSessionId")]
-        public string FormSessionId { get; set; }//;
+        public System.String? FormSessionId { get; set; }//;
         
         // Key: registrationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("registrationId")]
-        public string RegistrationId { get; set; }//;
+        public System.String? RegistrationId { get; set; }//;
     }
     
     // Id: StatusEnum Namespace: me.payment.method
@@ -162,15 +162,15 @@ namespace _me_payment_method {
         
         // Key: formSessionId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("formSessionId")]
-        public string FormSessionId { get; set; }//;
+        public System.String? FormSessionId { get; set; }//;
         
         // Key: merchantId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("merchantId")]
-        public string MerchantId { get; set; }//;
+        public System.String? MerchantId { get; set; }//;
         
         // Key: organizationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organizationId")]
-        public string OrganizationId { get; set; }//;
+        public System.String? OrganizationId { get; set; }//;
         
         // Key: paymentMethodId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentMethodId")]
@@ -178,11 +178,11 @@ namespace _me_payment_method {
         
         // Key: transactionId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("transactionId")]
-        public long TransactionId { get; set; }//;
+        public System.Int64? TransactionId { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: validationType Type: me.payment.IntegrationEnum FullType: me.payment.IntegrationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validationType")]

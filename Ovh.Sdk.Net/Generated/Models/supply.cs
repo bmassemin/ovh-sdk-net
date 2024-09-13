@@ -23,7 +23,7 @@ namespace _supply {
         
         // Key: closing Type: supply.MondialRelayClosingPeriod[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("closing")]
-        public _supply.MondialRelayClosingPeriod[] Closing { get; set; }//;
+        public _supply.MondialRelayClosingPeriod[]? Closing { get; set; }//;
         
         // Key: country Type: coreTypes.CountryEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
@@ -31,7 +31,7 @@ namespace _supply {
         
         // Key: distance Type: double FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("distance")]
-        public double Distance { get; set; }//;
+        public System.Double? Distance { get; set; }//;
         
         // Key: id Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -47,7 +47,7 @@ namespace _supply {
         
         // Key: mapUrl Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mapUrl")]
-        public string MapUrl { get; set; }//;
+        public System.String? MapUrl { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -59,7 +59,7 @@ namespace _supply {
         
         // Key: pictureUrl Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pictureUrl")]
-        public string PictureUrl { get; set; }//;
+        public System.String? PictureUrl { get; set; }//;
         
         // Key: zipcode Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zipcode")]
@@ -95,31 +95,31 @@ namespace _supply {
         
         // Key: friday Type: supply.MondialRelayDayPeriod[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("friday")]
-        public _supply.MondialRelayDayPeriod[] Friday { get; set; }//;
+        public _supply.MondialRelayDayPeriod[]? Friday { get; set; }//;
         
         // Key: monday Type: supply.MondialRelayDayPeriod[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monday")]
-        public _supply.MondialRelayDayPeriod[] Monday { get; set; }//;
+        public _supply.MondialRelayDayPeriod[]? Monday { get; set; }//;
         
         // Key: saturday Type: supply.MondialRelayDayPeriod[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("saturday")]
-        public _supply.MondialRelayDayPeriod[] Saturday { get; set; }//;
+        public _supply.MondialRelayDayPeriod[]? Saturday { get; set; }//;
         
         // Key: sunday Type: supply.MondialRelayDayPeriod[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sunday")]
-        public _supply.MondialRelayDayPeriod[] Sunday { get; set; }//;
+        public _supply.MondialRelayDayPeriod[]? Sunday { get; set; }//;
         
         // Key: thursday Type: supply.MondialRelayDayPeriod[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("thursday")]
-        public _supply.MondialRelayDayPeriod[] Thursday { get; set; }//;
+        public _supply.MondialRelayDayPeriod[]? Thursday { get; set; }//;
         
         // Key: tuesday Type: supply.MondialRelayDayPeriod[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tuesday")]
-        public _supply.MondialRelayDayPeriod[] Tuesday { get; set; }//;
+        public _supply.MondialRelayDayPeriod[]? Tuesday { get; set; }//;
         
         // Key: wednesday Type: supply.MondialRelayDayPeriod[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("wednesday")]
-        public _supply.MondialRelayDayPeriod[] Wednesday { get; set; }//;
+        public _supply.MondialRelayDayPeriod[]? Wednesday { get; set; }//;
     }
     
     // Id: MondialRelayResult Namespace: supply
@@ -139,11 +139,11 @@ namespace _supply {
         
         // Key: error Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: supply.MondialRelayResult FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _supply.MondialRelayResult Result { get; set; }//;
+        public _supply.MondialRelayResult? Result { get; set; }//;
         
         // Key: status Type: supply.Status FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

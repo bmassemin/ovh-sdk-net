@@ -15,43 +15,43 @@ namespace _msServices {
         
         // Key: SAMAccountName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("SAMAccountName")]
-        public string SAMAccountName { get; set; }//;
+        public System.String? SAMAccountName { get; set; }//;
         
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: company Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("company")]
-        public string Company { get; set; }//;
+        public System.String? Company { get; set; }//;
         
         // Key: countryCode Type: email.exchange.CountryCodeEnum FullType: email.exchange.CountryCodeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countryCode")]
-        public _email_exchange.CountryCodeEnum CountryCode { get; set; }//;
+        public _email_exchange.CountryCodeEnum? CountryCode { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: fax Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fax")]
-        public string Fax { get; set; }//;
+        public System.String? Fax { get; set; }//;
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: guid Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guid")]
-        public string Guid { get; set; }//;
+        public System.String? Guid { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -59,55 +59,55 @@ namespace _msServices {
         
         // Key: initials Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initials")]
-        public string Initials { get; set; }//;
+        public System.String? Initials { get; set; }//;
         
         // Key: jobDepartment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("jobDepartment")]
-        public string JobDepartment { get; set; }//;
+        public System.String? JobDepartment { get; set; }//;
         
         // Key: jobTitle Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("jobTitle")]
-        public string JobTitle { get; set; }//;
+        public System.String? JobTitle { get; set; }//;
         
         // Key: lastLogoffDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogoffDate")]
-        public System.DateTime LastLogoffDate { get; set; }//;
+        public System.DateTime? LastLogoffDate { get; set; }//;
         
         // Key: lastLogonDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogonDate")]
-        public System.DateTime LastLogonDate { get; set; }//;
+        public System.DateTime? LastLogonDate { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: mobile Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mobile")]
-        public string Mobile { get; set; }//;
+        public System.String? Mobile { get; set; }//;
         
         // Key: office Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("office")]
-        public string Office { get; set; }//;
+        public System.String? Office { get; set; }//;
         
         // Key: passwordLastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordLastUpdate")]
-        public System.DateTime PasswordLastUpdate { get; set; }//;
+        public System.DateTime? PasswordLastUpdate { get; set; }//;
         
         // Key: phone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
-        public string Phone { get; set; }//;
+        public System.String? Phone { get; set; }//;
         
         // Key: postalCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postalCode")]
-        public string PostalCode { get; set; }//;
+        public System.String? PostalCode { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
         
         // Key: state Type: msServices.ObjectStateEnum FullType: msServices.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -115,7 +115,7 @@ namespace _msServices {
         
         // Key: streetAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetAddress")]
-        public string StreetAddress { get; set; }//;
+        public System.String? StreetAddress { get; set; }//;
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
@@ -143,19 +143,19 @@ namespace _msServices {
         
         // Key: lockoutThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutThreshold")]
-        public long LockoutThreshold { get; set; }//;
+        public System.Int64? LockoutThreshold { get; set; }//;
         
         // Key: maxPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxPasswordAge")]
-        public long MaxPasswordAge { get; set; }//;
+        public System.Int64? MaxPasswordAge { get; set; }//;
         
         // Key: minPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordAge")]
-        public long MinPasswordAge { get; set; }//;
+        public System.Int64? MinPasswordAge { get; set; }//;
         
         // Key: minPasswordLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordLength")]
-        public long MinPasswordLength { get; set; }//;
+        public System.Int64? MinPasswordLength { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -163,7 +163,7 @@ namespace _msServices {
         
         // Key: officeTenantServiceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("officeTenantServiceName")]
-        public string OfficeTenantServiceName { get; set; }//;
+        public System.String? OfficeTenantServiceName { get; set; }//;
         
         // Key: state Type: msServices.ServiceStateEnum FullType: msServices.ServiceStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -183,7 +183,7 @@ namespace _msServices {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lockoutDuration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutDuration")]
@@ -195,19 +195,19 @@ namespace _msServices {
         
         // Key: lockoutThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutThreshold")]
-        public long LockoutThreshold { get; set; }//;
+        public System.Int64? LockoutThreshold { get; set; }//;
         
         // Key: maxPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxPasswordAge")]
-        public long MaxPasswordAge { get; set; }//;
+        public System.Int64? MaxPasswordAge { get; set; }//;
         
         // Key: minPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordAge")]
-        public long MinPasswordAge { get; set; }//;
+        public System.Int64? MinPasswordAge { get; set; }//;
         
         // Key: minPasswordLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordLength")]
-        public long MinPasswordLength { get; set; }//;
+        public System.Int64? MinPasswordLength { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -215,7 +215,7 @@ namespace _msServices {
         
         // Key: officeTenantServiceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("officeTenantServiceName")]
-        public string OfficeTenantServiceName { get; set; }//;
+        public System.String? OfficeTenantServiceName { get; set; }//;
         
         // Key: state Type: msServices.ServiceStateEnum FullType: msServices.ServiceStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -251,31 +251,31 @@ namespace _msServices {
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: currentUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentUsage")]
-        public long CurrentUsage { get; set; }//;
+        public System.Int64? CurrentUsage { get; set; }//;
         
         // Key: deleteAtExpiration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteAtExpiration")]
-        public bool DeleteAtExpiration { get; set; }//;
+        public System.Boolean? DeleteAtExpiration { get; set; }//;
         
         // Key: deleteOutlookAtExpiration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteOutlookAtExpiration")]
-        public bool DeleteOutlookAtExpiration { get; set; }//;
+        public System.Boolean? DeleteOutlookAtExpiration { get; set; }//;
         
         // Key: exchangeGuid Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("exchangeGuid")]
-        public string ExchangeGuid { get; set; }//;
+        public System.String? ExchangeGuid { get; set; }//;
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: expirationOutlookDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationOutlookDate")]
-        public System.DateTime ExpirationOutlookDate { get; set; }//;
+        public System.DateTime? ExpirationOutlookDate { get; set; }//;
         
         // Key: hiddenFromGAL Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hiddenFromGAL")]
@@ -291,11 +291,11 @@ namespace _msServices {
         
         // Key: litigationPeriod Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("litigationPeriod")]
-        public long LitigationPeriod { get; set; }//;
+        public System.Int64? LitigationPeriod { get; set; }//;
         
         // Key: mailingFilter Type: msServices.MailingFilterEnum[] FullType: msServices.MailingFilterEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailingFilter")]
-        public _msServices.MailingFilterEnum[] MailingFilter { get; set; }//;
+        public _msServices.MailingFilterEnum[]? MailingFilter { get; set; }//;
         
         // Key: numberOfAliases Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("numberOfAliases")]
@@ -319,11 +319,11 @@ namespace _msServices {
         
         // Key: renewOutlookPeriod Type: msServices.RenewPeriodEnum FullType: msServices.RenewPeriodEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewOutlookPeriod")]
-        public _msServices.RenewPeriodEnum RenewOutlookPeriod { get; set; }//;
+        public _msServices.RenewPeriodEnum? RenewOutlookPeriod { get; set; }//;
         
         // Key: renewPeriod Type: msServices.RenewPeriodEnum FullType: msServices.RenewPeriodEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewPeriod")]
-        public _msServices.RenewPeriodEnum RenewPeriod { get; set; }//;
+        public _msServices.RenewPeriodEnum? RenewPeriod { get; set; }//;
         
         // Key: spamAndVirusConfiguration Type: msServices.SpamAndVirusConfiguration FullType: msServices.SpamAndVirusConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamAndVirusConfiguration")]
@@ -335,7 +335,7 @@ namespace _msServices {
         
         // Key: spamTicketNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamTicketNumber")]
-        public long SpamTicketNumber { get; set; }//;
+        public System.Int64? SpamTicketNumber { get; set; }//;
         
         // Key: state Type: msServices.ObjectStateEnum FullType: msServices.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -364,7 +364,7 @@ namespace _msServices {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -372,7 +372,7 @@ namespace _msServices {
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
-        public string Hostname { get; set; }//;
+        public System.String? Hostname { get; set; }//;
         
         // Key: maxReceiveSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxReceiveSize")]
@@ -392,7 +392,7 @@ namespace _msServices {
         
         // Key: sslExpirationDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslExpirationDate")]
-        public System.DateOnly SslExpirationDate { get; set; }//;
+        public System.DateOnly? SslExpirationDate { get; set; }//;
         
         // Key: state Type: msServices.ServiceStateEnum FullType: msServices.ServiceStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -572,11 +572,11 @@ namespace _msServices {
         
         // Key: currentUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentUsage")]
-        public long CurrentUsage { get; set; }//;
+        public System.Int64? CurrentUsage { get; set; }//;
         
         // Key: deleteAtExpiration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteAtExpiration")]
-        public bool DeleteAtExpiration { get; set; }//;
+        public System.Boolean? DeleteAtExpiration { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -618,11 +618,11 @@ namespace _msServices {
         
         // Key: currentUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentUsage")]
-        public long CurrentUsage { get; set; }//;
+        public System.Int64? CurrentUsage { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -650,7 +650,7 @@ namespace _msServices {
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: SharepointServiceInfo Namespace: msServices
@@ -670,7 +670,7 @@ namespace _msServices {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
     }
     
     // Id: SharepointServiceOfferEnum Namespace: msServices
@@ -786,7 +786,7 @@ namespace _msServices {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: function Type: msServices.TaskFunctionEnum FullType: msServices.TaskFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -912,7 +912,7 @@ namespace _msServices {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: function Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -936,7 +936,7 @@ namespace _msServices {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: function Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -960,7 +960,7 @@ namespace _msServices {
         
         // Key: cnameToCheck Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cnameToCheck")]
-        public string CnameToCheck { get; set; }//;
+        public System.String? CnameToCheck { get; set; }//;
         
         // Key: ownershipValidated Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownershipValidated")]

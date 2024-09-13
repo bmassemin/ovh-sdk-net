@@ -35,7 +35,7 @@ namespace _cloud_project_database {
         
         // Key: endOfLife Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endOfLife")]
-        public System.DateOnly EndOfLife { get; set; }//;
+        public System.DateOnly? EndOfLife { get; set; }//;
         
         // Key: engine Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engine")]
@@ -95,7 +95,7 @@ namespace _cloud_project_database {
         
         // Key: upstreamEndOfLife Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("upstreamEndOfLife")]
-        public System.DateOnly UpstreamEndOfLife { get; set; }//;
+        public System.DateOnly? UpstreamEndOfLife { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
@@ -280,7 +280,7 @@ namespace _cloud_project_database {
         
         // Key: backups Type: cloud.project.database.service.Backup FullType: cloud.project.database.service.Backup
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backups")]
-        public _cloud_project_database_service.Backup Backups { get; set; }//;
+        public _cloud_project_database_service.Backup? Backups { get; set; }//;
         
         // Key: capabilities Type: map[cloud.project.database.service.CapabilityEnum]cloud.project.database.service.CapabilityActions FullType: map[cloud.project.database.service.CapabilityEnum]cloud.project.database.service.CapabilityActions
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("capabilities")]
@@ -328,7 +328,7 @@ namespace _cloud_project_database {
         
         // Key: networkId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkId")]
-        public System.Guid NetworkId { get; set; }//;
+        public System.Guid? NetworkId { get; set; }//;
         
         // Key: networkType Type: cloud.project.database.NetworkTypeEnum FullType: cloud.project.database.NetworkTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkType")]
@@ -348,7 +348,7 @@ namespace _cloud_project_database {
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
         
         // Key: status Type: cloud.project.database.StatusEnum FullType: cloud.project.database.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -356,11 +356,11 @@ namespace _cloud_project_database {
         
         // Key: storage Type: cloud.project.database.service.Storage FullType: cloud.project.database.service.Storage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public _cloud_project_database_service.Storage Storage { get; set; }//;
+        public _cloud_project_database_service.Storage? Storage { get; set; }//;
         
         // Key: subnetId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnetId")]
-        public System.Guid SubnetId { get; set; }//;
+        public System.Guid? SubnetId { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
@@ -372,15 +372,15 @@ namespace _cloud_project_database {
         
         // Key: backup Type: cloud.project.database.service.creation.BackupFork FullType: cloud.project.database.service.creation.BackupFork
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backup")]
-        public _cloud_project_database_service_creation.BackupFork Backup { get; set; }//;
+        public _cloud_project_database_service_creation.BackupFork? Backup { get; set; }//;
         
         // Key: backupTime Type: time FullType: time
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupTime")]
-        public System.TimeOnly BackupTime { get; set; }//;
+        public System.TimeOnly? BackupTime { get; set; }//;
         
         // Key: backups Type: cloud.project.database.service.Backup FullType: cloud.project.database.service.Backup
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backups")]
-        public _cloud_project_database_service.Backup Backups { get; set; }//;
+        public _cloud_project_database_service.Backup? Backups { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -392,7 +392,7 @@ namespace _cloud_project_database {
         
         // Key: forkFrom Type: cloud.project.database.service.creation.ForkFrom FullType: cloud.project.database.service.creation.ForkFrom
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("forkFrom")]
-        public _cloud_project_database_service_creation.ForkFrom ForkFrom { get; set; }//;
+        public _cloud_project_database_service_creation.ForkFrom? ForkFrom { get; set; }//;
         
         // Key: ipRestrictions Type: cloud.project.database.service.IpRestriction[] FullType: cloud.project.database.service.IpRestriction[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipRestrictions")]
@@ -400,19 +400,19 @@ namespace _cloud_project_database {
         
         // Key: maintenanceTime Type: time FullType: time
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maintenanceTime")]
-        public System.TimeOnly MaintenanceTime { get; set; }//;
+        public System.TimeOnly? MaintenanceTime { get; set; }//;
         
         // Key: networkId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkId")]
-        public System.Guid NetworkId { get; set; }//;
+        public System.Guid? NetworkId { get; set; }//;
         
         // Key: nodesList Type: cloud.project.database.service.NodeCreation[] FullType: cloud.project.database.service.NodeCreation[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nodesList")]
-        public _cloud_project_database_service.NodeCreation[] NodesList { get; set; }//;
+        public _cloud_project_database_service.NodeCreation[]? NodesList { get; set; }//;
         
         // Key: nodesPattern Type: cloud.project.database.service.NodePattern FullType: cloud.project.database.service.NodePattern
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nodesPattern")]
-        public _cloud_project_database_service.NodePattern NodesPattern { get; set; }//;
+        public _cloud_project_database_service.NodePattern? NodesPattern { get; set; }//;
         
         // Key: plan Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plan")]
@@ -420,7 +420,7 @@ namespace _cloud_project_database {
         
         // Key: subnetId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnetId")]
-        public System.Guid SubnetId { get; set; }//;
+        public System.Guid? SubnetId { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]

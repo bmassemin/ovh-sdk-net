@@ -120,7 +120,7 @@ namespace _order {
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
-        public long OrderId { get; set; }//;
+        public System.Int64? OrderId { get; set; }//;
         
         // Key: prices Type: order.OrderPrices FullType: order.OrderPrices
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prices")]
@@ -128,7 +128,7 @@ namespace _order {
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: OrderDetail Namespace: order
@@ -136,7 +136,7 @@ namespace _order {
         
         // Key: cartItemID Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cartItemID")]
-        public long CartItemID { get; set; }//;
+        public System.Int64? CartItemID { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -144,7 +144,7 @@ namespace _order {
         
         // Key: detailType Type: order.OrderDetailTypeEnum FullType: order.OrderDetailTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("detailType")]
-        public _order.OrderDetailTypeEnum DetailType { get; set; }//;
+        public _order.OrderDetailTypeEnum? DetailType { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -244,11 +244,11 @@ namespace _order {
         
         // Key: originalWithoutTax Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("originalWithoutTax")]
-        public _order.Price OriginalWithoutTax { get; set; }//;
+        public _order.Price? OriginalWithoutTax { get; set; }//;
         
         // Key: reduction Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reduction")]
-        public _order.Price Reduction { get; set; }//;
+        public _order.Price? Reduction { get; set; }//;
         
         // Key: tax Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tax")]

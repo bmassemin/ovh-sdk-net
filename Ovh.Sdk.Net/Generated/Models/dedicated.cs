@@ -200,7 +200,7 @@ namespace _dedicated {
         
         // Key: endOfInstall Type: date FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endOfInstall")]
-        public System.DateOnly EndOfInstall { get; set; }//;
+        public System.DateOnly? EndOfInstall { get; set; }//;
         
         // Key: family Type: dedicated.TemplateOsTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("family")]
@@ -208,11 +208,11 @@ namespace _dedicated {
         
         // Key: license Type: dedicated.TemplateOsInfoLicense FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("license")]
-        public _dedicated.TemplateOsInfoLicense License { get; set; }//;
+        public _dedicated.TemplateOsInfoLicense? License { get; set; }//;
         
         // Key: project Type: dedicated.TemplateOsInfoProject FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("project")]
-        public _dedicated.TemplateOsInfoProject Project { get; set; }//;
+        public _dedicated.TemplateOsInfoProject? Project { get; set; }//;
         
         // Key: subfamily Type: dedicated.TemplateOsSubfamilyEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subfamily")]
@@ -228,11 +228,11 @@ namespace _dedicated {
         
         // Key: os Type: dedicated.TemplateOsInfoLicenseItem FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("os")]
-        public _dedicated.TemplateOsInfoLicenseItem Os { get; set; }//;
+        public _dedicated.TemplateOsInfoLicenseItem? Os { get; set; }//;
         
         // Key: usage Type: dedicated.TemplateOsInfoLicenseItem FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usage")]
-        public _dedicated.TemplateOsInfoLicenseItem Usage { get; set; }//;
+        public _dedicated.TemplateOsInfoLicenseItem? Usage { get; set; }//;
     }
     
     // Id: TemplateOsInfoLicenseItem Namespace: dedicated
@@ -240,11 +240,11 @@ namespace _dedicated {
         
         // Key: name Type: dedicated.TemplateOsInfoLicenseItemEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public _dedicated.TemplateOsInfoLicenseItemEnum[] Name { get; set; }//;
+        public _dedicated.TemplateOsInfoLicenseItemEnum[]? Name { get; set; }//;
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: TemplateOsInfoLicenseItemEnum Namespace: dedicated
@@ -1528,11 +1528,11 @@ namespace _dedicated {
         
         // Key: os Type: dedicated.TemplateOsInfoProjectItem FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("os")]
-        public _dedicated.TemplateOsInfoProjectItem Os { get; set; }//;
+        public _dedicated.TemplateOsInfoProjectItem? Os { get; set; }//;
         
         // Key: usage Type: dedicated.TemplateOsInfoProjectItem FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usage")]
-        public _dedicated.TemplateOsInfoProjectItem Usage { get; set; }//;
+        public _dedicated.TemplateOsInfoProjectItem? Usage { get; set; }//;
     }
     
     // Id: TemplateOsInfoProjectItem Namespace: dedicated
@@ -1540,23 +1540,23 @@ namespace _dedicated {
         
         // Key: governance Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("governance")]
-        public string[] Governance { get; set; }//;
+        public System.String[]? Governance { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: releaseNotes Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("releaseNotes")]
-        public string ReleaseNotes { get; set; }//;
+        public System.String? ReleaseNotes { get; set; }//;
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: version Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public string Version { get; set; }//;
+        public System.String? Version { get; set; }//;
     }
     
     // Id: TemplateOsInput Namespace: dedicated
@@ -1564,11 +1564,11 @@ namespace _dedicated {
         
         // Key: default Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("default")]
-        public string @default { get; set; }//;
+        public System.String? @default { get; set; }//;
         
         // Key: description Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: enum Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enum")]
@@ -1638,19 +1638,15 @@ namespace _dedicated {
         
         // Key: customHostname Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customHostname")]
-        public string CustomHostname { get; set; }//;
+        public System.String? CustomHostname { get; set; }//;
         
         // Key: postInstallationScriptLink Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postInstallationScriptLink")]
-        public string PostInstallationScriptLink { get; set; }//;
+        public System.String? PostInstallationScriptLink { get; set; }//;
         
         // Key: postInstallationScriptReturn Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postInstallationScriptReturn")]
-        public string PostInstallationScriptReturn { get; set; }//;
-        
-        // Key: sshKeyName Type: string FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshKeyName")]
-        public string SshKeyName { get; set; }//;
+        public System.String? PostInstallationScriptReturn { get; set; }//;
     }
     
     // Id: TemplateOsSubfamilyEnum Namespace: dedicated
@@ -1843,7 +1839,7 @@ namespace _dedicated {
         
         // Key: hardware Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardware")]
-        public string Hardware { get; set; }//;
+        public System.String? Hardware { get; set; }//;
         
         // Key: region Type: dedicated.AvailabilityRegionEnum FullType: dedicated.AvailabilityRegionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -1863,11 +1859,11 @@ namespace _dedicated {
         
         // Key: incomingDatacenter Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("incomingDatacenter")]
-        public long IncomingDatacenter { get; set; }//;
+        public System.Int64? IncomingDatacenter { get; set; }//;
         
         // Key: lastRule Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastRule")]
-        public string LastRule { get; set; }//;
+        public System.String? LastRule { get; set; }//;
         
         // Key: ordered Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ordered")]
@@ -1875,11 +1871,11 @@ namespace _dedicated {
         
         // Key: orderedCheck Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderedCheck")]
-        public long OrderedCheck { get; set; }//;
+        public System.Int64? OrderedCheck { get; set; }//;
         
         // Key: parentAvailable Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentAvailable")]
-        public long ParentAvailable { get; set; }//;
+        public System.Int64? ParentAvailable { get; set; }//;
         
         // Key: reference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reference")]
@@ -1891,11 +1887,11 @@ namespace _dedicated {
         
         // Key: trueAvailable24H Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trueAvailable24H")]
-        public long TrueAvailable24H { get; set; }//;
+        public System.Int64? TrueAvailable24H { get; set; }//;
         
         // Key: trueAvailable4H Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trueAvailable4H")]
-        public long TrueAvailable4H { get; set; }//;
+        public System.Int64? TrueAvailable4H { get; set; }//;
         
         // Key: zone Type: dedicated.AvailabilityRegionEnum FullType: dedicated.AvailabilityRegionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
@@ -2140,7 +2136,7 @@ namespace _dedicated {
         
         // Key: lastRule Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastRule")]
-        public string LastRule { get; set; }//;
+        public System.String? LastRule { get; set; }//;
         
         // Key: parentAvailable Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentAvailable")]
@@ -2164,7 +2160,7 @@ namespace _dedicated {
         
         // Key: lastRule Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastRule")]
-        public string LastRule { get; set; }//;
+        public System.String? LastRule { get; set; }//;
         
         // Key: parentAvailable Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentAvailable")]
@@ -2188,7 +2184,7 @@ namespace _dedicated {
         
         // Key: lastRule Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastRule")]
-        public string LastRule { get; set; }//;
+        public System.String? LastRule { get; set; }//;
         
         // Key: parentAvailable Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentAvailable")]
@@ -2368,11 +2364,11 @@ namespace _dedicated {
         
         // Key: gpu Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpu")]
-        public string Gpu { get; set; }//;
+        public System.String? Gpu { get; set; }//;
         
         // Key: memory Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memory")]
-        public string Memory { get; set; }//;
+        public System.String? Memory { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
@@ -2384,11 +2380,11 @@ namespace _dedicated {
         
         // Key: storage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public string Storage { get; set; }//;
+        public System.String? Storage { get; set; }//;
         
         // Key: systemStorage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("systemStorage")]
-        public string SystemStorage { get; set; }//;
+        public System.String? SystemStorage { get; set; }//;
     }
     
     // Id: DatacenterEnum Namespace: dedicated
@@ -2570,11 +2566,11 @@ namespace _dedicated {
         
         // Key: gpu Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpu")]
-        public string Gpu { get; set; }//;
+        public System.String? Gpu { get; set; }//;
         
         // Key: memory Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memory")]
-        public string Memory { get; set; }//;
+        public System.String? Memory { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
@@ -2582,7 +2578,7 @@ namespace _dedicated {
         
         // Key: regions Type: dedicated.AvailabilityRawRegion[] FullType: dedicated.AvailabilityRawRegion[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regions")]
-        public _dedicated.AvailabilityRawRegion[] Regions { get; set; }//;
+        public _dedicated.AvailabilityRawRegion[]? Regions { get; set; }//;
         
         // Key: server Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
@@ -2590,11 +2586,11 @@ namespace _dedicated {
         
         // Key: storage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public string Storage { get; set; }//;
+        public System.String? Storage { get; set; }//;
         
         // Key: systemStorage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("systemStorage")]
-        public string SystemStorage { get; set; }//;
+        public System.String? SystemStorage { get; set; }//;
     }
     
     // Id: ExposedTask Namespace: dedicated
@@ -2685,7 +2681,7 @@ namespace _dedicated {
         
         // Key: cacheDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cacheDate")]
-        public System.DateTime CacheDate { get; set; }//;
+        public System.DateTime? CacheDate { get; set; }//;
         
         // Key: count Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("count")]

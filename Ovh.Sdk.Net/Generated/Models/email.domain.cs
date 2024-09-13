@@ -47,7 +47,7 @@ namespace _email_domain {
         
         // Key: allowedAccountSize Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedAccountSize")]
-        public long[] AllowedAccountSize { get; set; }//;
+        public System.Int64[]? AllowedAccountSize { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -151,15 +151,15 @@ namespace _email_domain {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: result Type: email.domain.DomainDiagnoseResultEnum FullType: email.domain.DomainDiagnoseResultEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _email_domain.DomainDiagnoseResultEnum Result { get; set; }//;
+        public _email_domain.DomainDiagnoseResultEnum? Result { get; set; }//;
         
         // Key: trace Type: email.domain.DomainDiagnoseTraceStruct<email.domain.DomainDiagnoseResultEnum>[] FullType: email.domain.DomainDiagnoseTraceStruct<email.domain.DomainDiagnoseResultEnum>[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trace")]
-        public _email_domain.DomainDiagnoseTraceStruct<_email_domain.DomainDiagnoseResultEnum>[] Trace { get; set; }//;
+        public _email_domain.DomainDiagnoseTraceStruct<_email_domain.DomainDiagnoseResultEnum>[]? Trace { get; set; }//;
     }
     
     // Id: DiagnoseEnum Namespace: email.domain
@@ -221,11 +221,11 @@ namespace _email_domain {
         
         // Key: allowedAccountSize Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedAccountSize")]
-        public long[] AllowedAccountSize { get; set; }//;
+        public System.Int64[]? AllowedAccountSize { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -233,7 +233,7 @@ namespace _email_domain {
         
         // Key: filerz Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filerz")]
-        public long Filerz { get; set; }//;
+        public System.Int64? Filerz { get; set; }//;
         
         // Key: isMXValid Type: email.domain.DiagnoseEnum FullType: email.domain.DiagnoseEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isMXValid")]
@@ -245,15 +245,15 @@ namespace _email_domain {
         
         // Key: linkTo Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("linkTo")]
-        public string LinkTo { get; set; }//;
+        public System.String? LinkTo { get; set; }//;
         
         // Key: migratedMXPlanServiceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("migratedMXPlanServiceName")]
-        public string MigratedMXPlanServiceName { get; set; }//;
+        public System.String? MigratedMXPlanServiceName { get; set; }//;
         
         // Key: offer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public string Offer { get; set; }//;
+        public System.String? Offer { get; set; }//;
         
         // Key: status Type: domain.DomainStatusEnum FullType: domain.DomainStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -265,11 +265,11 @@ namespace _email_domain {
         
         // Key: allowedAccountSize Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedAccountSize")]
-        public long[] AllowedAccountSize { get; set; }//;
+        public System.Int64[]? AllowedAccountSize { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -277,11 +277,11 @@ namespace _email_domain {
         
         // Key: filerz Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filerz")]
-        public long Filerz { get; set; }//;
+        public System.Int64? Filerz { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: isMXValid Type: email.domain.DiagnoseEnum FullType: email.domain.DiagnoseEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isMXValid")]
@@ -293,15 +293,15 @@ namespace _email_domain {
         
         // Key: linkTo Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("linkTo")]
-        public string LinkTo { get; set; }//;
+        public System.String? LinkTo { get; set; }//;
         
         // Key: migratedMXPlanServiceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("migratedMXPlanServiceName")]
-        public string MigratedMXPlanServiceName { get; set; }//;
+        public System.String? MigratedMXPlanServiceName { get; set; }//;
         
         // Key: offer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public string Offer { get; set; }//;
+        public System.String? Offer { get; set; }//;
         
         // Key: status Type: domain.DomainStatusEnum FullType: domain.DomainStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -313,11 +313,11 @@ namespace _email_domain {
         
         // Key: action Type: domain.DomainFilterActionEnum FullType: domain.DomainFilterActionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("action")]
-        public _domain.DomainFilterActionEnum Action { get; set; }//;
+        public _domain.DomainFilterActionEnum? Action { get; set; }//;
         
         // Key: actionParam Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("actionParam")]
-        public string ActionParam { get; set; }//;
+        public System.String? ActionParam { get; set; }//;
         
         // Key: active Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("active")]
@@ -349,7 +349,7 @@ namespace _email_domain {
         
         // Key: language Type: domain.DomainMlLanguageEnum FullType: domain.DomainMlLanguageEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("language")]
-        public _domain.DomainMlLanguageEnum Language { get; set; }//;
+        public _domain.DomainMlLanguageEnum? Language { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -357,11 +357,11 @@ namespace _email_domain {
         
         // Key: nbSubscribers Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nbSubscribers")]
-        public long NbSubscribers { get; set; }//;
+        public System.Int64? NbSubscribers { get; set; }//;
         
         // Key: nbSubscribersUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nbSubscribersUpdateDate")]
-        public System.DateTime NbSubscribersUpdateDate { get; set; }//;
+        public System.DateTime? NbSubscribersUpdateDate { get; set; }//;
         
         // Key: options Type: domain.DomainMlOptionsStruct FullType: domain.DomainMlOptionsStruct
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("options")]
@@ -452,7 +452,7 @@ namespace _email_domain {
         
         // Key: details Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("details")]
-        public string Details { get; set; }//;
+        public System.String? Details { get; set; }//;
     }
     
     // Id: MigrationCheckStruct Namespace: email.domain
@@ -460,23 +460,23 @@ namespace _email_domain {
         
         // Key: alias Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alias")]
-        public string[] Alias { get; set; }//;
+        public System.String[]? Alias { get; set; }//;
         
         // Key: error Type: email.domain.MigrationCheckResultStruct[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public _email_domain.MigrationCheckResultStruct[] Error { get; set; }//;
+        public _email_domain.MigrationCheckResultStruct[]? Error { get; set; }//;
         
         // Key: filter Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filter")]
-        public string[] Filter { get; set; }//;
+        public System.String[]? Filter { get; set; }//;
         
         // Key: forward Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("forward")]
-        public string[] Forward { get; set; }//;
+        public System.String[]? Forward { get; set; }//;
         
         // Key: warning Type: email.domain.MigrationCheckResultStruct[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("warning")]
-        public _email_domain.MigrationCheckResultStruct[] Warning { get; set; }//;
+        public _email_domain.MigrationCheckResultStruct[]? Warning { get; set; }//;
     }
     
     // Id: MigrationService Namespace: email.domain
@@ -600,15 +600,15 @@ namespace _email_domain {
         
         // Key: copyTo Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("copyTo")]
-        public string CopyTo { get; set; }//;
+        public System.String? CopyTo { get; set; }//;
         
         // Key: from Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("from")]
-        public System.DateTime From { get; set; }//;
+        public System.DateTime? From { get; set; }//;
         
         // Key: to Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("to")]
-        public System.DateTime To { get; set; }//;
+        public System.DateTime? To { get; set; }//;
     }
     
     // Id: ResponderAccount Namespace: email.domain
@@ -628,15 +628,15 @@ namespace _email_domain {
         
         // Key: copyTo Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("copyTo")]
-        public string CopyTo { get; set; }//;
+        public System.String? CopyTo { get; set; }//;
         
         // Key: from Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("from")]
-        public System.DateTime From { get; set; }//;
+        public System.DateTime? From { get; set; }//;
         
         // Key: to Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("to")]
-        public System.DateTime To { get; set; }//;
+        public System.DateTime? To { get; set; }//;
     }
     
     // Id: Rule Namespace: email.domain
@@ -809,15 +809,15 @@ namespace _email_domain {
         
         // Key: activeSelector Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("activeSelector")]
-        public string ActiveSelector { get; set; }//;
+        public System.String? ActiveSelector { get; set; }//;
         
         // Key: autoconfig Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoconfig")]
-        public bool Autoconfig { get; set; }//;
+        public System.Boolean? Autoconfig { get; set; }//;
         
         // Key: selectors Type: email.domain.DKIMSelector[] FullType: email.domain.DKIMSelector[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("selectors")]
-        public _email_domain.DKIMSelector[] Selectors { get; set; }//;
+        public _email_domain.DKIMSelector[]? Selectors { get; set; }//;
         
         // Key: status Type: email.domain.DKIMStatusEnum FullType: email.domain.DKIMStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

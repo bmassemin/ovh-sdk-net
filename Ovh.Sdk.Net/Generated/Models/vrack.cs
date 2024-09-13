@@ -23,15 +23,15 @@ namespace _vrack {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
-        public long OrderId { get; set; }//;
+        public System.Int64? OrderId { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
-        public string ServiceName { get; set; }//;
+        public System.String? ServiceName { get; set; }//;
         
         // Key: status Type: vrack.TaskStatusEnum FullType: vrack.TaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -39,11 +39,11 @@ namespace _vrack {
         
         // Key: targetDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetDomain")]
-        public string TargetDomain { get; set; }//;
+        public System.String? TargetDomain { get; set; }//;
         
         // Key: todoDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("todoDate")]
-        public System.DateTime TodoDate { get; set; }//;
+        public System.DateTime? TodoDate { get; set; }//;
     }
     
     // Id: TaskStatusEnum Namespace: vrack
@@ -86,7 +86,7 @@ namespace _vrack {
         
         // Key: vlanId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vlanId")]
-        public long VlanId { get; set; }//;
+        public System.Int64? VlanId { get; set; }//;
         
         // Key: vrack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
@@ -154,51 +154,51 @@ namespace _vrack {
         
         // Key: cloudProject Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cloudProject")]
-        public string[] CloudProject { get; set; }//;
+        public System.String[]? CloudProject { get; set; }//;
         
         // Key: dedicatedCloud Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedCloud")]
-        public string[] DedicatedCloud { get; set; }//;
+        public System.String[]? DedicatedCloud { get; set; }//;
         
         // Key: dedicatedCloudDatacenter Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedCloudDatacenter")]
-        public string[] DedicatedCloudDatacenter { get; set; }//;
+        public System.String[]? DedicatedCloudDatacenter { get; set; }//;
         
         // Key: dedicatedConnect Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedConnect")]
-        public string[] DedicatedConnect { get; set; }//;
+        public System.String[]? DedicatedConnect { get; set; }//;
         
         // Key: dedicatedServer Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedServer")]
-        public string[] DedicatedServer { get; set; }//;
+        public System.String[]? DedicatedServer { get; set; }//;
         
         // Key: dedicatedServerInterface Type: vrack.AllowedDedicatedServerInterfaces[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedServerInterface")]
-        public _vrack.AllowedDedicatedServerInterfaces[] DedicatedServerInterface { get; set; }//;
+        public _vrack.AllowedDedicatedServerInterfaces[]? DedicatedServerInterface { get; set; }//;
         
         // Key: ip Type: ipBlock[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string[] Ip { get; set; }//;
+        public System.String[]? Ip { get; set; }//;
         
         // Key: ipLoadbalancing Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLoadbalancing")]
-        public string[] IpLoadbalancing { get; set; }//;
+        public System.String[]? IpLoadbalancing { get; set; }//;
         
         // Key: ipv6 Type: ipv6Block[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string[] Ipv6 { get; set; }//;
+        public System.String[]? Ipv6 { get; set; }//;
         
         // Key: legacyVrack Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("legacyVrack")]
-        public string[] LegacyVrack { get; set; }//;
+        public System.String[]? LegacyVrack { get; set; }//;
         
         // Key: ovhCloudConnect Type: uuid[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhCloudConnect")]
-        public System.Guid[] OvhCloudConnect { get; set; }//;
+        public System.Guid[]? OvhCloudConnect { get; set; }//;
         
         // Key: vrackServices Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrackServices")]
-        public string[] VrackServices { get; set; }//;
+        public System.String[]? VrackServices { get; set; }//;
     }
     
     // Id: EligibleDedicatedServerInterfaces Namespace: vrack
@@ -222,51 +222,51 @@ namespace _vrack {
         
         // Key: cloudProject Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cloudProject")]
-        public string[] CloudProject { get; set; }//;
+        public System.String[]? CloudProject { get; set; }//;
         
         // Key: dedicatedCloud Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedCloud")]
-        public string[] DedicatedCloud { get; set; }//;
+        public System.String[]? DedicatedCloud { get; set; }//;
         
         // Key: dedicatedCloudDatacenter Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedCloudDatacenter")]
-        public string[] DedicatedCloudDatacenter { get; set; }//;
+        public System.String[]? DedicatedCloudDatacenter { get; set; }//;
         
         // Key: dedicatedConnect Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedConnect")]
-        public string[] DedicatedConnect { get; set; }//;
+        public System.String[]? DedicatedConnect { get; set; }//;
         
         // Key: dedicatedServer Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedServer")]
-        public string[] DedicatedServer { get; set; }//;
+        public System.String[]? DedicatedServer { get; set; }//;
         
         // Key: dedicatedServerInterface Type: vrack.EligibleDedicatedServerInterfaces[] FullType: vrack.EligibleDedicatedServerInterfaces[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedServerInterface")]
-        public _vrack.EligibleDedicatedServerInterfaces[] DedicatedServerInterface { get; set; }//;
+        public _vrack.EligibleDedicatedServerInterfaces[]? DedicatedServerInterface { get; set; }//;
         
         // Key: ip Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string[] Ip { get; set; }//;
+        public System.String[]? Ip { get; set; }//;
         
         // Key: ipLoadbalancing Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLoadbalancing")]
-        public string[] IpLoadbalancing { get; set; }//;
+        public System.String[]? IpLoadbalancing { get; set; }//;
         
         // Key: ipv6 Type: ipv6Block[] FullType: ipv6Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string[] Ipv6 { get; set; }//;
+        public System.String[]? Ipv6 { get; set; }//;
         
         // Key: legacyVrack Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("legacyVrack")]
-        public string[] LegacyVrack { get; set; }//;
+        public System.String[]? LegacyVrack { get; set; }//;
         
         // Key: ovhCloudConnect Type: uuid[] FullType: uuid[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhCloudConnect")]
-        public System.Guid[] OvhCloudConnect { get; set; }//;
+        public System.Guid[]? OvhCloudConnect { get; set; }//;
         
         // Key: vrackServices Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrackServices")]
-        public string[] VrackServices { get; set; }//;
+        public System.String[]? VrackServices { get; set; }//;
     }
     
     // Id: EligibleServicesResponse Namespace: vrack
@@ -395,7 +395,7 @@ namespace _vrack {
         
         // Key: gateway Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public string Gateway { get; set; }//;
+        public System.String? Gateway { get; set; }//;
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -403,7 +403,7 @@ namespace _vrack {
         
         // Key: zone Type: vrack.VrackZoneEnum FullType: vrack.VrackZoneEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
-        public _vrack.VrackZoneEnum Zone { get; set; }//;
+        public _vrack.VrackZoneEnum? Zone { get; set; }//;
     }
     
     // Id: iplb Namespace: vrack
@@ -471,7 +471,7 @@ namespace _vrack {
         
         // Key: bandwidth Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bandwidth")]
-        public long Bandwidth { get; set; }//;
+        public System.Int64? Bandwidth { get; set; }//;
     }
     
     // Id: routedSubrange Namespace: vrack
@@ -519,7 +519,7 @@ namespace _vrack {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

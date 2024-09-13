@@ -67,11 +67,11 @@ namespace _cloud_containerRegistry {
         
         // Key: adminGroup Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("adminGroup")]
-        public string AdminGroup { get; set; }//;
+        public System.String? AdminGroup { get; set; }//;
         
         // Key: autoOnboard Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoOnboard")]
-        public bool AutoOnboard { get; set; }//;
+        public System.Boolean? AutoOnboard { get; set; }//;
         
         // Key: clientId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientId")]
@@ -79,7 +79,7 @@ namespace _cloud_containerRegistry {
         
         // Key: clientSecret Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientSecret")]
-        public string ClientSecret { get; set; }//;
+        public System.String? ClientSecret { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -91,7 +91,7 @@ namespace _cloud_containerRegistry {
         
         // Key: groupsClaim Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupsClaim")]
-        public string GroupsClaim { get; set; }//;
+        public System.String? GroupsClaim { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -111,15 +111,15 @@ namespace _cloud_containerRegistry {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
         
         // Key: userClaim Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userClaim")]
-        public string UserClaim { get; set; }//;
+        public System.String? UserClaim { get; set; }//;
         
         // Key: verifyCert Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("verifyCert")]
-        public bool VerifyCert { get; set; }//;
+        public System.Boolean? VerifyCert { get; set; }//;
     }
     
     // Id: OIDCPost Namespace: cloud.containerRegistry
@@ -127,7 +127,7 @@ namespace _cloud_containerRegistry {
         
         // Key: deleteUsers Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteUsers")]
-        public bool DeleteUsers { get; set; }//;
+        public System.Boolean? DeleteUsers { get; set; }//;
         
         // Key: provider Type: cloud.containerRegistry.OIDCConfiguration FullType: cloud.containerRegistry.OIDCConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("provider")]
@@ -139,43 +139,43 @@ namespace _cloud_containerRegistry {
         
         // Key: adminGroup Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("adminGroup")]
-        public string AdminGroup { get; set; }//;
+        public System.String? AdminGroup { get; set; }//;
         
         // Key: autoOnboard Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoOnboard")]
-        public bool AutoOnboard { get; set; }//;
+        public System.Boolean? AutoOnboard { get; set; }//;
         
         // Key: clientId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientId")]
-        public string ClientId { get; set; }//;
+        public System.String? ClientId { get; set; }//;
         
         // Key: clientSecret Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientSecret")]
-        public string ClientSecret { get; set; }//;
+        public System.String? ClientSecret { get; set; }//;
         
         // Key: endpoint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endpoint")]
-        public string Endpoint { get; set; }//;
+        public System.String? Endpoint { get; set; }//;
         
         // Key: groupsClaim Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupsClaim")]
-        public string GroupsClaim { get; set; }//;
+        public System.String? GroupsClaim { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: scope Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scope")]
-        public string Scope { get; set; }//;
+        public System.String? Scope { get; set; }//;
         
         // Key: userClaim Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userClaim")]
-        public string UserClaim { get; set; }//;
+        public System.String? UserClaim { get; set; }//;
         
         // Key: verifyCert Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("verifyCert")]
-        public bool VerifyCert { get; set; }//;
+        public System.Boolean? VerifyCert { get; set; }//;
     }
     
     // Id: OIDCStatusEnum Namespace: cloud.containerRegistry
@@ -328,7 +328,7 @@ namespace _cloud_containerRegistry {
         
         // Key: password Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
-        public string Password { get; set; }//;
+        public System.String? Password { get; set; }//;
         
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]

@@ -99,7 +99,7 @@ namespace _order_catalog_dedicated {
         
         // Key: compatibilities Type: order.catalog.dedicated.Product.Compatibility[] FullType: order.catalog.dedicated.Product.Compatibility[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("compatibilities")]
-        public _order_catalog_dedicated_Product.Compatibility[] Compatibilities { get; set; }//;
+        public _order_catalog_dedicated_Product.Compatibility[]? Compatibilities { get; set; }//;
         
         // Key: datacenters Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenters")]
@@ -107,7 +107,7 @@ namespace _order_catalog_dedicated {
         
         // Key: derivatives Type: order.catalog.dedicated.Product.AddonItem[] FullType: order.catalog.dedicated.Product.AddonItem[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("derivatives")]
-        public _order_catalog_dedicated_Product.AddonItem[] Derivatives { get; set; }//;
+        public _order_catalog_dedicated_Product.AddonItem[]? Derivatives { get; set; }//;
         
         // Key: family Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("family")]
@@ -119,11 +119,11 @@ namespace _order_catalog_dedicated {
         
         // Key: isChildOf Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isChildOf")]
-        public string IsChildOf { get; set; }//;
+        public System.String? IsChildOf { get; set; }//;
         
         // Key: isParentOf Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isParentOf")]
-        public string[] IsParentOf { get; set; }//;
+        public System.String[]? IsParentOf { get; set; }//;
         
         // Key: prices Type: order.catalog.dedicated.Product.Price FullType: order.catalog.dedicated.Product.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prices")]

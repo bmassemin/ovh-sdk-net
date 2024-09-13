@@ -39,7 +39,7 @@ namespace _ovhcloudconnect {
         
         // Key: ovhBgpArea Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhBgpArea")]
-        public long OvhBgpArea { get; set; }//;
+        public System.Int64? OvhBgpArea { get; set; }//;
         
         // Key: status Type: ovhcloudconnect.popConfig.StatusEnum FullType: ovhcloudconnect.popConfig.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -47,7 +47,7 @@ namespace _ovhcloudconnect {
         
         // Key: subnet Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnet")]
-        public string Subnet { get; set; }//;
+        public System.String? Subnet { get; set; }//;
     }
     
     // Id: DatacenterExtraConfig Namespace: ovhcloudconnect
@@ -55,11 +55,11 @@ namespace _ovhcloudconnect {
         
         // Key: bgpNeighborArea Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bgpNeighborArea")]
-        public long BgpNeighborArea { get; set; }//;
+        public System.Int64? BgpNeighborArea { get; set; }//;
         
         // Key: bgpNeighborIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bgpNeighborIp")]
-        public string BgpNeighborIp { get; set; }//;
+        public System.String? BgpNeighborIp { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -67,7 +67,7 @@ namespace _ovhcloudconnect {
         
         // Key: nextHop Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nextHop")]
-        public string NextHop { get; set; }//;
+        public System.String? NextHop { get; set; }//;
         
         // Key: status Type: ovhcloudconnect.popConfig.StatusEnum FullType: ovhcloudconnect.popConfig.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -75,7 +75,7 @@ namespace _ovhcloudconnect {
         
         // Key: subnet Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnet")]
-        public string Subnet { get; set; }//;
+        public System.String? Subnet { get; set; }//;
         
         // Key: type Type: ovhcloudconnect.datacenterExtraConfig.TypeEnum FullType: ovhcloudconnect.datacenterExtraConfig.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -95,7 +95,7 @@ namespace _ovhcloudconnect {
         
         // Key: result Type: ovhcloudconnect.DiagnosticResult[] FullType: ovhcloudconnect.DiagnosticResult[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public _ovhcloudconnect.DiagnosticResult[] Result { get; set; }//;
+        public _ovhcloudconnect.DiagnosticResult[]? Result { get; set; }//;
         
         // Key: status Type: ovhcloudconnect.task.StatusEnum FullType: ovhcloudconnect.task.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -131,39 +131,39 @@ namespace _ovhcloudconnect {
         
         // Key: aspath Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("aspath")]
-        public string Aspath { get; set; }//;
+        public System.String? Aspath { get; set; }//;
         
         // Key: cmd Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cmd")]
-        public string Cmd { get; set; }//;
+        public System.String? Cmd { get; set; }//;
         
         // Key: localprefix Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("localprefix")]
-        public long Localprefix { get; set; }//;
+        public System.Int64? Localprefix { get; set; }//;
         
         // Key: mac Type: macAddress FullType: macAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mac")]
-        public string Mac { get; set; }//;
+        public System.String? Mac { get; set; }//;
         
         // Key: med Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("med")]
-        public long Med { get; set; }//;
+        public System.Int64? Med { get; set; }//;
         
         // Key: output Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("output")]
-        public string Output { get; set; }//;
+        public System.String? Output { get; set; }//;
         
         // Key: prefix Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public string Prefix { get; set; }//;
+        public System.String? Prefix { get; set; }//;
         
         // Key: routermac Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routermac")]
-        public string Routermac { get; set; }//;
+        public System.String? Routermac { get; set; }//;
         
         // Key: timestamp Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timestamp")]
-        public System.DateTime Timestamp { get; set; }//;
+        public System.DateTime? Timestamp { get; set; }//;
     }
     
     // Id: Incident Namespace: ovhcloudconnect
@@ -171,7 +171,7 @@ namespace _ovhcloudconnect {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -191,11 +191,11 @@ namespace _ovhcloudconnect {
         
         // Key: deviceDisplayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deviceDisplayName")]
-        public string DeviceDisplayName { get; set; }//;
+        public System.String? DeviceDisplayName { get; set; }//;
         
         // Key: deviceRackDisplayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deviceRackDisplayName")]
-        public string DeviceRackDisplayName { get; set; }//;
+        public System.String? DeviceRackDisplayName { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -207,11 +207,11 @@ namespace _ovhcloudconnect {
         
         // Key: incomingLightValue Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("incomingLightValue")]
-        public double IncomingLightValue { get; set; }//;
+        public System.Double? IncomingLightValue { get; set; }//;
         
         // Key: interfaceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interfaceName")]
-        public string InterfaceName { get; set; }//;
+        public System.String? InterfaceName { get; set; }//;
         
         // Key: interfaceStatus Type: ovhcloudconnect.interface.LightStatusEnum FullType: ovhcloudconnect.interface.LightStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interfaceStatus")]
@@ -223,7 +223,7 @@ namespace _ovhcloudconnect {
         
         // Key: interfaceTerminationType Type: ovhcloudconnect.interface.TerminationTypeEnum FullType: ovhcloudconnect.interface.TerminationTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interfaceTerminationType")]
-        public _ovhcloudconnect_interface.TerminationTypeEnum InterfaceTerminationType { get; set; }//;
+        public _ovhcloudconnect_interface.TerminationTypeEnum? InterfaceTerminationType { get; set; }//;
         
         // Key: lightLastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lightLastUpdate")]
@@ -235,7 +235,7 @@ namespace _ovhcloudconnect {
         
         // Key: outgoingLightValue Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("outgoingLightValue")]
-        public double OutgoingLightValue { get; set; }//;
+        public System.Double? OutgoingLightValue { get; set; }//;
         
         // Key: status Type: ovhcloudconnect.interface.StatusEnum FullType: ovhcloudconnect.interface.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -307,7 +307,7 @@ namespace _ovhcloudconnect {
         
         // Key: customerBgpArea Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerBgpArea")]
-        public long CustomerBgpArea { get; set; }//;
+        public System.Int64? CustomerBgpArea { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -319,7 +319,7 @@ namespace _ovhcloudconnect {
         
         // Key: ovhBgpArea Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhBgpArea")]
-        public long OvhBgpArea { get; set; }//;
+        public System.Int64? OvhBgpArea { get; set; }//;
         
         // Key: status Type: ovhcloudconnect.popConfig.StatusEnum FullType: ovhcloudconnect.popConfig.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -327,7 +327,7 @@ namespace _ovhcloudconnect {
         
         // Key: subnet Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnet")]
-        public string Subnet { get; set; }//;
+        public System.String? Subnet { get; set; }//;
         
         // Key: type Type: ovhcloudconnect.popConfig.TypeEnum FullType: ovhcloudconnect.popConfig.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -383,7 +383,7 @@ namespace _ovhcloudconnect {
         
         // Key: vrack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
-        public string Vrack { get; set; }//;
+        public System.String? Vrack { get; set; }//;
     }
     
     // Id: Service Namespace: ovhcloudconnect
@@ -399,7 +399,7 @@ namespace _ovhcloudconnect {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: interfaceList Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interfaceList")]
@@ -431,7 +431,7 @@ namespace _ovhcloudconnect {
         
         // Key: vrack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
-        public string Vrack { get; set; }//;
+        public System.String? Vrack { get; set; }//;
     }
     
     // Id: Subscriptions Namespace: ovhcloudconnect
@@ -475,6 +475,6 @@ namespace _ovhcloudconnect {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
     }
 }

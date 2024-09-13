@@ -60,6 +60,9 @@ namespace _ovhcloudconnect_service {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("consoleconnect")]
         consoleconnect,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("digitalrealty")]
+        digitalrealty,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("equinix")]
         equinix,
         

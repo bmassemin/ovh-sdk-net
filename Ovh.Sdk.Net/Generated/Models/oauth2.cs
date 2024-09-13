@@ -25,7 +25,7 @@ namespace _oauth2 {
         
         // Key: callbackUrls Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callbackUrls")]
-        public string[] CallbackUrls { get; set; }//;
+        public System.String[]? CallbackUrls { get; set; }//;
         
         // Key: clientId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientId")]
@@ -45,7 +45,7 @@ namespace _oauth2 {
         
         // Key: identity Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("identity")]
-        public string Identity { get; set; }//;
+        public System.String? Identity { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

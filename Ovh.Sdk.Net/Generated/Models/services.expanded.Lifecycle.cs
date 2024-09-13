@@ -39,7 +39,7 @@ namespace _services_expanded_Lifecycle {
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: pendingActions Type: services.expanded.Lifecycle.ActionEnum[] FullType: services.expanded.Lifecycle.ActionEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pendingActions")]
@@ -51,7 +51,7 @@ namespace _services_expanded_Lifecycle {
         
         // Key: terminationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("terminationDate")]
-        public System.DateTime TerminationDate { get; set; }//;
+        public System.DateTime? TerminationDate { get; set; }//;
     }
     
     // Id: StateEnum Namespace: services.expanded.Lifecycle

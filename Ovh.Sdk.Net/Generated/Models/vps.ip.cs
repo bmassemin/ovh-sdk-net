@@ -97,7 +97,7 @@ namespace _vps_ip {
         
         // Key: tools Type: vps.ip.ServiceStatusStateEnum FullType: vps.ip.ServiceStatusStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tools")]
-        public _vps_ip.ServiceStatusStateEnum Tools { get; set; }//;
+        public _vps_ip.ServiceStatusStateEnum? Tools { get; set; }//;
     }
     
     // Id: ServiceStatusService Namespace: vps.ip

@@ -31,7 +31,7 @@ namespace _domain_nameServer {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: isUsed Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isUsed")]
@@ -51,11 +51,11 @@ namespace _domain_nameServer {
         
         // Key: ipv4 Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public string Ipv4 { get; set; }//;
+        public System.String? Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string Ipv6 { get; set; }//;
+        public System.String? Ipv6 { get; set; }//;
         
         // Key: nameServer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nameServer")]
@@ -75,7 +75,7 @@ namespace _domain_nameServer {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
     }
     
     // Id: NameServerStateEnum Namespace: domain.nameServer
@@ -101,7 +101,7 @@ namespace _domain_nameServer {
         
         // Key: usedSince Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usedSince")]
-        public System.DateTime UsedSince { get; set; }//;
+        public System.DateTime? UsedSince { get; set; }//;
     }
     
     // Id: NameServerTypeEnum Namespace: domain.nameServer

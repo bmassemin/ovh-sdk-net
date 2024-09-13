@@ -15,7 +15,7 @@ namespace _xdsl_email_pro {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: function Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]

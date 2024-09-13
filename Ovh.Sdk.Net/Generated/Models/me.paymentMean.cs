@@ -27,7 +27,7 @@ namespace _me_paymentMean {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: iban Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iban")]
@@ -35,7 +35,7 @@ namespace _me_paymentMean {
         
         // Key: icon Type: me.paymentMean.IconData FullType: me.paymentMean.IconData
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("icon")]
-        public _me_paymentMean.IconData Icon { get; set; }//;
+        public _me_paymentMean.IconData? Icon { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -43,7 +43,7 @@ namespace _me_paymentMean {
         
         // Key: mandateSignatureDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mandateSignatureDate")]
-        public System.DateOnly MandateSignatureDate { get; set; }//;
+        public System.DateOnly? MandateSignatureDate { get; set; }//;
         
         // Key: ownerAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownerAddress")]
@@ -63,7 +63,7 @@ namespace _me_paymentMean {
         
         // Key: validationDocumentLink Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validationDocumentLink")]
-        public string ValidationDocumentLink { get; set; }//;
+        public System.String? ValidationDocumentLink { get; set; }//;
     }
     
     // Id: BankAccountChallengeCreation Namespace: me.paymentMean
@@ -83,7 +83,7 @@ namespace _me_paymentMean {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: iban Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iban")]
@@ -99,7 +99,7 @@ namespace _me_paymentMean {
         
         // Key: setDefault Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("setDefault")]
-        public bool SetDefault { get; set; }//;
+        public System.Boolean? SetDefault { get; set; }//;
     }
     
     // Id: BankAccountStateEnum Namespace: me.paymentMean
@@ -127,7 +127,7 @@ namespace _me_paymentMean {
         
         // Key: submitUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("submitUrl")]
-        public string SubmitUrl { get; set; }//;
+        public System.String? SubmitUrl { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
@@ -147,7 +147,7 @@ namespace _me_paymentMean {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: expirationDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
@@ -155,7 +155,7 @@ namespace _me_paymentMean {
         
         // Key: icon Type: me.paymentMean.IconData FullType: me.paymentMean.IconData
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("icon")]
-        public _me_paymentMean.IconData Icon { get; set; }//;
+        public _me_paymentMean.IconData? Icon { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -191,15 +191,15 @@ namespace _me_paymentMean {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: returnUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("returnUrl")]
-        public string ReturnUrl { get; set; }//;
+        public System.String? ReturnUrl { get; set; }//;
         
         // Key: setDefault Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("setDefault")]
-        public bool SetDefault { get; set; }//;
+        public System.Boolean? SetDefault { get; set; }//;
     }
     
     // Id: CreditCardStateEnum Namespace: me.paymentMean
@@ -224,7 +224,7 @@ namespace _me_paymentMean {
         
         // Key: submitUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("submitUrl")]
-        public string SubmitUrl { get; set; }//;
+        public System.String? SubmitUrl { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
@@ -248,11 +248,11 @@ namespace _me_paymentMean {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: icon Type: me.paymentMean.IconData FullType: me.paymentMean.IconData
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("icon")]
-        public _me_paymentMean.IconData Icon { get; set; }//;
+        public _me_paymentMean.IconData? Icon { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -260,7 +260,7 @@ namespace _me_paymentMean {
         
         // Key: label Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("label")]
-        public string Label { get; set; }//;
+        public System.String? Label { get; set; }//;
         
         // Key: state Type: me.paymentMean.DeferredStateEnum FullType: me.paymentMean.DeferredStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -282,15 +282,15 @@ namespace _me_paymentMean {
         
         // Key: data Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("data")]
-        public string Data { get; set; }//;
+        public System.String? Data { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: Paypal Namespace: me.paymentMean
@@ -310,7 +310,7 @@ namespace _me_paymentMean {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
@@ -318,7 +318,7 @@ namespace _me_paymentMean {
         
         // Key: icon Type: me.paymentMean.IconData FullType: me.paymentMean.IconData
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("icon")]
-        public _me_paymentMean.IconData Icon { get; set; }//;
+        public _me_paymentMean.IconData? Icon { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -342,15 +342,15 @@ namespace _me_paymentMean {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: returnUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("returnUrl")]
-        public string ReturnUrl { get; set; }//;
+        public System.String? ReturnUrl { get; set; }//;
         
         // Key: setDefault Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("setDefault")]
-        public bool SetDefault { get; set; }//;
+        public System.Boolean? SetDefault { get; set; }//;
     }
     
     // Id: PaypalStateEnum Namespace: me.paymentMean
@@ -375,7 +375,7 @@ namespace _me_paymentMean {
         
         // Key: submitUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("submitUrl")]
-        public string SubmitUrl { get; set; }//;
+        public System.String? SubmitUrl { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]

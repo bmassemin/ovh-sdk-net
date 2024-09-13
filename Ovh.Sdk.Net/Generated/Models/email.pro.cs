@@ -174,7 +174,7 @@ namespace _email_pro {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: function Type: email.pro.TaskFunctionEnum FullType: email.pro.TaskFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -434,7 +434,7 @@ namespace _email_pro {
         
         // Key: SAMAccountName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("SAMAccountName")]
-        public string SAMAccountName { get; set; }//;
+        public System.String? SAMAccountName { get; set; }//;
         
         // Key: configured Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("configured")]
@@ -442,19 +442,19 @@ namespace _email_pro {
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: currentUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentUsage")]
-        public long CurrentUsage { get; set; }//;
+        public System.Int64? CurrentUsage { get; set; }//;
         
         // Key: deleteAtExpiration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteAtExpiration")]
-        public bool DeleteAtExpiration { get; set; }//;
+        public System.Boolean? DeleteAtExpiration { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -462,15 +462,15 @@ namespace _email_pro {
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: expirationOutlookDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationOutlookDate")]
-        public System.DateTime ExpirationOutlookDate { get; set; }//;
+        public System.DateTime? ExpirationOutlookDate { get; set; }//;
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: hiddenFromGAL Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hiddenFromGAL")]
@@ -482,23 +482,23 @@ namespace _email_pro {
         
         // Key: initial Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initial")]
-        public string Initial { get; set; }//;
+        public System.String? Initial { get; set; }//;
         
         // Key: lastLogoffDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogoffDate")]
-        public System.DateTime LastLogoffDate { get; set; }//;
+        public System.DateTime? LastLogoffDate { get; set; }//;
         
         // Key: lastLogonDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogonDate")]
-        public System.DateTime LastLogonDate { get; set; }//;
+        public System.DateTime? LastLogonDate { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: login Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("login")]
@@ -506,11 +506,11 @@ namespace _email_pro {
         
         // Key: mailingFilter Type: email.pro.MailingFilterEnum[] FullType: email.pro.MailingFilterEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailingFilter")]
-        public _email_pro.MailingFilterEnum[] MailingFilter { get; set; }//;
+        public _email_pro.MailingFilterEnum[]? MailingFilter { get; set; }//;
         
         // Key: passwordLastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordLastUpdate")]
-        public System.DateTime PasswordLastUpdate { get; set; }//;
+        public System.DateTime? PasswordLastUpdate { get; set; }//;
         
         // Key: primaryEmailAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("primaryEmailAddress")]
@@ -522,7 +522,7 @@ namespace _email_pro {
         
         // Key: renewPeriod Type: email.pro.renewPeriodEnum FullType: email.pro.renewPeriodEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewPeriod")]
-        public _email_pro.renewPeriodEnum RenewPeriod { get; set; }//;
+        public _email_pro.renewPeriodEnum? RenewPeriod { get; set; }//;
         
         // Key: spamAndVirusConfiguration Type: email.pro.spamAndVirusConfiguration FullType: email.pro.spamAndVirusConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamAndVirusConfiguration")]
@@ -534,7 +534,7 @@ namespace _email_pro {
         
         // Key: spamTicketNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamTicketNumber")]
-        public long SpamTicketNumber { get; set; }//;
+        public System.Int64? SpamTicketNumber { get; set; }//;
         
         // Key: state Type: email.pro.ObjectStateEnum FullType: email.pro.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -542,7 +542,7 @@ namespace _email_pro {
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
     
     // Id: AccountAlias Namespace: email.pro
@@ -622,7 +622,7 @@ namespace _email_pro {
         
         // Key: SAMAccountName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("SAMAccountName")]
-        public string SAMAccountName { get; set; }//;
+        public System.String? SAMAccountName { get; set; }//;
         
         // Key: configured Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("configured")]
@@ -630,19 +630,19 @@ namespace _email_pro {
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: currentUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentUsage")]
-        public long CurrentUsage { get; set; }//;
+        public System.Int64? CurrentUsage { get; set; }//;
         
         // Key: deleteAtExpiration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteAtExpiration")]
-        public bool DeleteAtExpiration { get; set; }//;
+        public System.Boolean? DeleteAtExpiration { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -650,15 +650,15 @@ namespace _email_pro {
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: expirationOutlookDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationOutlookDate")]
-        public System.DateTime ExpirationOutlookDate { get; set; }//;
+        public System.DateTime? ExpirationOutlookDate { get; set; }//;
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: hiddenFromGAL Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hiddenFromGAL")]
@@ -670,23 +670,23 @@ namespace _email_pro {
         
         // Key: initial Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initial")]
-        public string Initial { get; set; }//;
+        public System.String? Initial { get; set; }//;
         
         // Key: lastLogoffDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogoffDate")]
-        public System.DateTime LastLogoffDate { get; set; }//;
+        public System.DateTime? LastLogoffDate { get; set; }//;
         
         // Key: lastLogonDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogonDate")]
-        public System.DateTime LastLogonDate { get; set; }//;
+        public System.DateTime? LastLogonDate { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: login Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("login")]
@@ -694,11 +694,11 @@ namespace _email_pro {
         
         // Key: mailingFilter Type: email.pro.MailingFilterEnum[] FullType: email.pro.MailingFilterEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailingFilter")]
-        public _email_pro.MailingFilterEnum[] MailingFilter { get; set; }//;
+        public _email_pro.MailingFilterEnum[]? MailingFilter { get; set; }//;
         
         // Key: passwordLastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordLastUpdate")]
-        public System.DateTime PasswordLastUpdate { get; set; }//;
+        public System.DateTime? PasswordLastUpdate { get; set; }//;
         
         // Key: primaryEmailAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("primaryEmailAddress")]
@@ -710,7 +710,7 @@ namespace _email_pro {
         
         // Key: renewPeriod Type: email.pro.renewPeriodEnum FullType: email.pro.renewPeriodEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewPeriod")]
-        public _email_pro.renewPeriodEnum RenewPeriod { get; set; }//;
+        public _email_pro.renewPeriodEnum? RenewPeriod { get; set; }//;
         
         // Key: spamAndVirusConfiguration Type: email.pro.spamAndVirusConfiguration FullType: email.pro.spamAndVirusConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamAndVirusConfiguration")]
@@ -722,7 +722,7 @@ namespace _email_pro {
         
         // Key: spamTicketNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamTicketNumber")]
-        public long SpamTicketNumber { get; set; }//;
+        public System.Int64? SpamTicketNumber { get; set; }//;
         
         // Key: state Type: email.pro.ObjectStateEnum FullType: email.pro.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -730,7 +730,7 @@ namespace _email_pro {
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
     
     // Id: AccountSendAs Namespace: email.pro
@@ -782,7 +782,7 @@ namespace _email_pro {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: recordType Type: email.pro.DkimRecordTypeEnum FullType: email.pro.DkimRecordTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordType")]
@@ -798,11 +798,11 @@ namespace _email_pro {
         
         // Key: targetRecord Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetRecord")]
-        public string TargetRecord { get; set; }//;
+        public System.String? TargetRecord { get; set; }//;
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
     
     // Id: DkimRecordTypeEnum Namespace: email.pro
@@ -842,7 +842,7 @@ namespace _email_pro {
         
         // Key: cnameToCheck Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cnameToCheck")]
-        public string CnameToCheck { get; set; }//;
+        public System.String? CnameToCheck { get; set; }//;
         
         // Key: domainAliases Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainAliases")]
@@ -862,11 +862,11 @@ namespace _email_pro {
         
         // Key: mxRecord Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mxRecord")]
-        public string[] MxRecord { get; set; }//;
+        public System.String[]? MxRecord { get; set; }//;
         
         // Key: mxRelay Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mxRelay")]
-        public string MxRelay { get; set; }//;
+        public System.String? MxRelay { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -878,7 +878,7 @@ namespace _email_pro {
         
         // Key: srvRecord Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("srvRecord")]
-        public string[] SrvRecord { get; set; }//;
+        public System.String[]? SrvRecord { get; set; }//;
         
         // Key: state Type: email.pro.ObjectStateEnum FullType: email.pro.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -898,15 +898,15 @@ namespace _email_pro {
         
         // Key: errorCode Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorCode")]
-        public long ErrorCode { get; set; }//;
+        public System.Int64? ErrorCode { get; set; }//;
         
         // Key: message Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("message")]
-        public string Message { get; set; }//;
+        public System.String? Message { get; set; }//;
         
         // Key: state Type: email.pro.DomainDkimDiagnosticsStateEnum FullType: email.pro.DomainDkimDiagnosticsStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _email_pro.DomainDkimDiagnosticsStateEnum State { get; set; }//;
+        public _email_pro.DomainDkimDiagnosticsStateEnum? State { get; set; }//;
     }
     
     // Id: DomainDkimDiagnosticsStateEnum Namespace: email.pro
@@ -933,11 +933,11 @@ namespace _email_pro {
         
         // Key: cnameToCheck Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cnameToCheck")]
-        public string CnameToCheck { get; set; }//;
+        public System.String? CnameToCheck { get; set; }//;
         
         // Key: dkimDiagnostics Type: email.pro.DomainDkimDiagnostics FullType: email.pro.DomainDkimDiagnostics
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dkimDiagnostics")]
-        public _email_pro.DomainDkimDiagnostics DkimDiagnostics { get; set; }//;
+        public _email_pro.DomainDkimDiagnostics? DkimDiagnostics { get; set; }//;
         
         // Key: domainAliases Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainAliases")]
@@ -969,11 +969,11 @@ namespace _email_pro {
         
         // Key: mxRecord Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mxRecord")]
-        public string[] MxRecord { get; set; }//;
+        public System.String[]? MxRecord { get; set; }//;
         
         // Key: mxRelay Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mxRelay")]
-        public string MxRelay { get; set; }//;
+        public System.String? MxRelay { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -985,7 +985,7 @@ namespace _email_pro {
         
         // Key: spfRecord Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spfRecord")]
-        public string[] SpfRecord { get; set; }//;
+        public System.String[]? SpfRecord { get; set; }//;
         
         // Key: srvIsValid Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("srvIsValid")]
@@ -993,7 +993,7 @@ namespace _email_pro {
         
         // Key: srvRecord Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("srvRecord")]
-        public string[] SrvRecord { get; set; }//;
+        public System.String[]? SrvRecord { get; set; }//;
         
         // Key: state Type: email.pro.ObjectStateEnum FullType: email.pro.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1025,7 +1025,7 @@ namespace _email_pro {
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: hiddenFromGAL Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hiddenFromGAL")]
@@ -1037,11 +1037,11 @@ namespace _email_pro {
         
         // Key: initials Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initials")]
-        public string Initials { get; set; }//;
+        public System.String? Initials { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: state Type: email.pro.ObjectStateEnum FullType: email.pro.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1069,7 +1069,7 @@ namespace _email_pro {
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: hiddenFromGAL Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hiddenFromGAL")]
@@ -1081,11 +1081,11 @@ namespace _email_pro {
         
         // Key: initials Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initials")]
-        public string Initials { get; set; }//;
+        public System.String? Initials { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: state Type: email.pro.ObjectStateEnum FullType: email.pro.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1101,11 +1101,11 @@ namespace _email_pro {
         
         // Key: currentDiskUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentDiskUsage")]
-        public long CurrentDiskUsage { get; set; }//;
+        public System.Int64? CurrentDiskUsage { get; set; }//;
         
         // Key: diskSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskSize")]
-        public long DiskSize { get; set; }//;
+        public System.Int64? DiskSize { get; set; }//;
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -1113,7 +1113,7 @@ namespace _email_pro {
         
         // Key: ipV6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipV6")]
-        public string IpV6 { get; set; }//;
+        public System.String? IpV6 { get; set; }//;
         
         // Key: isAValid Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isAValid")]
@@ -1141,7 +1141,7 @@ namespace _email_pro {
         
         // Key: version Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public long Version { get; set; }//;
+        public System.Int64? Version { get; set; }//;
     }
     
     // Id: Service Namespace: email.pro
@@ -1153,7 +1153,7 @@ namespace _email_pro {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -1161,11 +1161,11 @@ namespace _email_pro {
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
-        public string Hostname { get; set; }//;
+        public System.String? Hostname { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: lockoutDuration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutDuration")]
@@ -1177,11 +1177,11 @@ namespace _email_pro {
         
         // Key: lockoutThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutThreshold")]
-        public long LockoutThreshold { get; set; }//;
+        public System.Int64? LockoutThreshold { get; set; }//;
         
         // Key: maxPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxPasswordAge")]
-        public long MaxPasswordAge { get; set; }//;
+        public System.Int64? MaxPasswordAge { get; set; }//;
         
         // Key: maxReceiveSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxReceiveSize")]
@@ -1193,11 +1193,11 @@ namespace _email_pro {
         
         // Key: minPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordAge")]
-        public long MinPasswordAge { get; set; }//;
+        public System.Int64? MinPasswordAge { get; set; }//;
         
         // Key: minPasswordLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordLength")]
-        public long MinPasswordLength { get; set; }//;
+        public System.Int64? MinPasswordLength { get; set; }//;
         
         // Key: offer Type: email.pro.ServiceOfferEnum FullType: email.pro.ServiceOfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -1217,7 +1217,7 @@ namespace _email_pro {
         
         // Key: webUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("webUrl")]
-        public string WebUrl { get; set; }//;
+        public System.String? WebUrl { get; set; }//;
     }
     
     // Id: ServiceNative Namespace: email.pro
@@ -1229,7 +1229,7 @@ namespace _email_pro {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -1237,11 +1237,11 @@ namespace _email_pro {
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
-        public string Hostname { get; set; }//;
+        public System.String? Hostname { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: lockoutDuration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutDuration")]
@@ -1253,11 +1253,11 @@ namespace _email_pro {
         
         // Key: lockoutThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutThreshold")]
-        public long LockoutThreshold { get; set; }//;
+        public System.Int64? LockoutThreshold { get; set; }//;
         
         // Key: maxPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxPasswordAge")]
-        public long MaxPasswordAge { get; set; }//;
+        public System.Int64? MaxPasswordAge { get; set; }//;
         
         // Key: maxReceiveSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxReceiveSize")]
@@ -1269,11 +1269,11 @@ namespace _email_pro {
         
         // Key: minPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordAge")]
-        public long MinPasswordAge { get; set; }//;
+        public System.Int64? MinPasswordAge { get; set; }//;
         
         // Key: minPasswordLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordLength")]
-        public long MinPasswordLength { get; set; }//;
+        public System.Int64? MinPasswordLength { get; set; }//;
         
         // Key: offer Type: email.pro.ServiceOfferEnum FullType: email.pro.ServiceOfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -1293,7 +1293,7 @@ namespace _email_pro {
         
         // Key: webUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("webUrl")]
-        public string WebUrl { get; set; }//;
+        public System.String? WebUrl { get; set; }//;
     }
     
     // Id: ServiceNative Namespace: email.pro
@@ -1305,7 +1305,7 @@ namespace _email_pro {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -1313,15 +1313,15 @@ namespace _email_pro {
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
-        public string Hostname { get; set; }//;
+        public System.String? Hostname { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: lockoutDuration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutDuration")]
@@ -1333,11 +1333,11 @@ namespace _email_pro {
         
         // Key: lockoutThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutThreshold")]
-        public long LockoutThreshold { get; set; }//;
+        public System.Int64? LockoutThreshold { get; set; }//;
         
         // Key: maxPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxPasswordAge")]
-        public long MaxPasswordAge { get; set; }//;
+        public System.Int64? MaxPasswordAge { get; set; }//;
         
         // Key: maxReceiveSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxReceiveSize")]
@@ -1349,11 +1349,11 @@ namespace _email_pro {
         
         // Key: minPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordAge")]
-        public long MinPasswordAge { get; set; }//;
+        public System.Int64? MinPasswordAge { get; set; }//;
         
         // Key: minPasswordLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordLength")]
-        public long MinPasswordLength { get; set; }//;
+        public System.Int64? MinPasswordLength { get; set; }//;
         
         // Key: offer Type: email.pro.ServiceOfferEnum FullType: email.pro.ServiceOfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -1373,7 +1373,7 @@ namespace _email_pro {
         
         // Key: webUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("webUrl")]
-        public string WebUrl { get; set; }//;
+        public System.String? WebUrl { get; set; }//;
     }
     
     // Id: ServiceOfferEnum Namespace: email.pro
@@ -1392,7 +1392,7 @@ namespace _email_pro {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -1400,15 +1400,15 @@ namespace _email_pro {
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
-        public string Hostname { get; set; }//;
+        public System.String? Hostname { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: lockoutDuration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutDuration")]
@@ -1420,11 +1420,11 @@ namespace _email_pro {
         
         // Key: lockoutThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutThreshold")]
-        public long LockoutThreshold { get; set; }//;
+        public System.Int64? LockoutThreshold { get; set; }//;
         
         // Key: maxPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxPasswordAge")]
-        public long MaxPasswordAge { get; set; }//;
+        public System.Int64? MaxPasswordAge { get; set; }//;
         
         // Key: maxReceiveSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxReceiveSize")]
@@ -1436,11 +1436,11 @@ namespace _email_pro {
         
         // Key: minPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordAge")]
-        public long MinPasswordAge { get; set; }//;
+        public System.Int64? MinPasswordAge { get; set; }//;
         
         // Key: minPasswordLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordLength")]
-        public long MinPasswordLength { get; set; }//;
+        public System.Int64? MinPasswordLength { get; set; }//;
         
         // Key: offer Type: email.pro.ServiceOfferEnum FullType: email.pro.ServiceOfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -1460,7 +1460,7 @@ namespace _email_pro {
         
         // Key: webUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("webUrl")]
-        public string WebUrl { get; set; }//;
+        public System.String? WebUrl { get; set; }//;
     }
     
     // Id: disclaimerNative Namespace: email.pro
@@ -1500,7 +1500,7 @@ namespace _email_pro {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: recordType Type: email.pro.dkimRecordTypeEnum FullType: email.pro.dkimRecordTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordType")]
@@ -1516,11 +1516,11 @@ namespace _email_pro {
         
         // Key: targetRecord Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetRecord")]
-        public string TargetRecord { get; set; }//;
+        public System.String? TargetRecord { get; set; }//;
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
     
     // Id: dkimRecordTypeEnum Namespace: email.pro

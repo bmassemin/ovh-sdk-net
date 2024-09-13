@@ -35,7 +35,7 @@ namespace _order_catalog {
         
         // Key: default Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("default")]
-        public bool @default { get; set; }//;
+        public System.Boolean? @default { get; set; }//;
         
         // Key: invoiceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("invoiceName")]
@@ -43,11 +43,11 @@ namespace _order_catalog {
         
         // Key: maximumQuantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximumQuantity")]
-        public long MaximumQuantity { get; set; }//;
+        public System.Int64? MaximumQuantity { get; set; }//;
         
         // Key: minimumQuantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minimumQuantity")]
-        public long MinimumQuantity { get; set; }//;
+        public System.Int64? MinimumQuantity { get; set; }//;
         
         // Key: plan Type: order.catalog.ProductPlan FullType: order.catalog.ProductPlan
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plan")]
@@ -67,7 +67,7 @@ namespace _order_catalog {
         
         // Key: plans Type: order.catalog.ProductPlan[] FullType: order.catalog.ProductPlan[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plans")]
-        public _order_catalog.ProductPlan[] Plans { get; set; }//;
+        public _order_catalog.ProductPlan[]? Plans { get; set; }//;
     }
     
     // Id: ConfigurationItem Namespace: order.catalog
@@ -75,7 +75,7 @@ namespace _order_catalog {
         
         // Key: defaultValue Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultValue")]
-        public string DefaultValue { get; set; }//;
+        public System.String? DefaultValue { get; set; }//;
         
         // Key: isCustom Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isCustom")]
@@ -131,11 +131,11 @@ namespace _order_catalog {
         
         // Key: maximumQuantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximumQuantity")]
-        public long MaximumQuantity { get; set; }//;
+        public System.Int64? MaximumQuantity { get; set; }//;
         
         // Key: maximumRepeat Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximumRepeat")]
-        public long MaximumRepeat { get; set; }//;
+        public System.Int64? MaximumRepeat { get; set; }//;
         
         // Key: minimumQuantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minimumQuantity")]
@@ -155,7 +155,7 @@ namespace _order_catalog {
         
         // Key: priceCapInUcents Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("priceCapInUcents")]
-        public long PriceCapInUcents { get; set; }//;
+        public System.Int64? PriceCapInUcents { get; set; }//;
         
         // Key: priceInUcents Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("priceInUcents")]
@@ -191,7 +191,7 @@ namespace _order_catalog {
         
         // Key: metadatas Type: complexType.SafeKeyValue<string>[] FullType: complexType.SafeKeyValue<string>[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metadatas")]
-        public _complexType.SafeKeyValue<string> Metadatas { get; set; }//;
+        public _complexType.SafeKeyValue<string>? Metadatas { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -199,15 +199,15 @@ namespace _order_catalog {
         
         // Key: subType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subType")]
-        public string SubType { get; set; }//;
+        public System.String? SubType { get; set; }//;
         
         // Key: technicalDetails Type: complexType.SafeKeyValue<string>[] FullType: complexType.SafeKeyValue<string>[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technicalDetails")]
-        public _complexType.SafeKeyValue<string> TechnicalDetails { get; set; }//;
+        public _complexType.SafeKeyValue<string>? TechnicalDetails { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public string Type { get; set; }//;
+        public System.String? Type { get; set; }//;
     }
     
     // Id: ProductOfferDetails Namespace: order.catalog
@@ -215,11 +215,11 @@ namespace _order_catalog {
         
         // Key: blobs Type: order.catalog.cloud.Blob FullType: order.catalog.cloud.Blob
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("blobs")]
-        public _order_catalog_cloud.Blob Blobs { get; set; }//;
+        public _order_catalog_cloud.Blob? Blobs { get; set; }//;
         
         // Key: metadatas Type: complexType.SafeKeyValue<string>[] FullType: complexType.SafeKeyValue<string>[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metadatas")]
-        public _complexType.SafeKeyValue<string> Metadatas { get; set; }//;
+        public _complexType.SafeKeyValue<string>? Metadatas { get; set; }//;
         
         // Key: pricings Type: order.catalog.PricingDefault FullType: order.catalog.PricingDefault
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricings")]
@@ -239,7 +239,7 @@ namespace _order_catalog {
         
         // Key: consumptionBillingStrategy Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("consumptionBillingStrategy")]
-        public string ConsumptionBillingStrategy { get; set; }//;
+        public System.String? ConsumptionBillingStrategy { get; set; }//;
         
         // Key: details Type: order.catalog.ProductOfferDetails FullType: order.catalog.ProductOfferDetails
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("details")]
@@ -247,7 +247,7 @@ namespace _order_catalog {
         
         // Key: familyName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("familyName")]
-        public string FamilyName { get; set; }//;
+        public System.String? FamilyName { get; set; }//;
         
         // Key: invoiceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("invoiceName")]
@@ -259,7 +259,7 @@ namespace _order_catalog {
         
         // Key: prices Type: order.catalog.cloud.RegionPrice[] FullType: order.catalog.cloud.RegionPrice[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prices")]
-        public _order_catalog_cloud.RegionPrice[] Prices { get; set; }//;
+        public _order_catalog_cloud.RegionPrice[]? Prices { get; set; }//;
         
         // Key: pricingType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricingType")]

@@ -67,7 +67,7 @@ namespace _services_expanded_technical_baremetalServer_server {
         
         // Key: maxNbDisks Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxNbDisks")]
-        public long MaxNbDisks { get; set; }//;
+        public System.Int64? MaxNbDisks { get; set; }//;
         
         // Key: model Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
@@ -107,11 +107,11 @@ namespace _services_expanded_technical_baremetalServer_server {
         
         // Key: ipv4RangeIncluded Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4RangeIncluded")]
-        public string Ipv4RangeIncluded { get; set; }//;
+        public System.String? Ipv4RangeIncluded { get; set; }//;
         
         // Key: ipv6RangeIncluded Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6RangeIncluded")]
-        public string Ipv6RangeIncluded { get; set; }//;
+        public System.String? Ipv6RangeIncluded { get; set; }//;
         
         // Key: kvmipAvailable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kvmipAvailable")]
@@ -123,7 +123,7 @@ namespace _services_expanded_technical_baremetalServer_server {
         
         // Key: secureComputingTechnology Type: services.expanded.technical.baremetalServer.server.services.SecureComputingTechnologyEnum FullType: services.expanded.technical.baremetalServer.server.services.SecureComputingTechnologyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("secureComputingTechnology")]
-        public _services_expanded_technical_baremetalServer_server_services.SecureComputingTechnologyEnum SecureComputingTechnology { get; set; }//;
+        public _services_expanded_technical_baremetalServer_server_services.SecureComputingTechnologyEnum? SecureComputingTechnology { get; set; }//;
         
         // Key: sla Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sla")]
@@ -131,6 +131,6 @@ namespace _services_expanded_technical_baremetalServer_server {
         
         // Key: supportLevel Type: services.expanded.technical.baremetalServer.server.services.SupportLevelEnum FullType: services.expanded.technical.baremetalServer.server.services.SupportLevelEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("supportLevel")]
-        public _services_expanded_technical_baremetalServer_server_services.SupportLevelEnum SupportLevel { get; set; }//;
+        public _services_expanded_technical_baremetalServer_server_services.SupportLevelEnum? SupportLevel { get; set; }//;
     }
 }

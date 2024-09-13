@@ -19,11 +19,11 @@ namespace _storage {
         
         // Key: status Type: storage.NetAppNetworkStatusEnum FullType: storage.NetAppNetworkStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _storage.NetAppNetworkStatusEnum Status { get; set; }//;
+        public _storage.NetAppNetworkStatusEnum? Status { get; set; }//;
         
         // Key: vRackServicesURN Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vRackServicesURN")]
-        public string VRackServicesURN { get; set; }//;
+        public System.String? VRackServicesURN { get; set; }//;
     }
     
     // Id: NetAppNetworkStatusEnum Namespace: storage
@@ -127,7 +127,7 @@ namespace _storage {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -163,11 +163,11 @@ namespace _storage {
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
-        public System.DateTime CreatedAt { get; set; }//;
+        public System.DateTime? CreatedAt { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -175,19 +175,19 @@ namespace _storage {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: protocol Type: storage.ProtocolEnum FullType: storage.ProtocolEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("protocol")]
-        public _storage.ProtocolEnum Protocol { get; set; }//;
+        public _storage.ProtocolEnum? Protocol { get; set; }//;
         
         // Key: size Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
-        public long Size { get; set; }//;
+        public System.Int64? Size { get; set; }//;
         
         // Key: status Type: storage.NetAppShareStatusEnum FullType: storage.NetAppShareStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _storage.NetAppShareStatusEnum Status { get; set; }//;
+        public _storage.NetAppShareStatusEnum? Status { get; set; }//;
     }
     
     // Id: NetAppShareACLPermissionEnum Namespace: storage
@@ -205,19 +205,19 @@ namespace _storage {
         
         // Key: accessLevel Type: storage.NetAppShareACLPermissionEnum FullType: storage.NetAppShareACLPermissionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accessLevel")]
-        public _storage.NetAppShareACLPermissionEnum AccessLevel { get; set; }//;
+        public _storage.NetAppShareACLPermissionEnum? AccessLevel { get; set; }//;
         
         // Key: accessTo Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accessTo")]
-        public string AccessTo { get; set; }//;
+        public System.String? AccessTo { get; set; }//;
         
         // Key: accessType Type: storage.NetAppShareACLTypeEnum FullType: storage.NetAppShareACLTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accessType")]
-        public _storage.NetAppShareACLTypeEnum AccessType { get; set; }//;
+        public _storage.NetAppShareACLTypeEnum? AccessType { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
-        public System.DateTime CreatedAt { get; set; }//;
+        public System.DateTime? CreatedAt { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -225,7 +225,7 @@ namespace _storage {
         
         // Key: status Type: storage.NetAppShareACLStatusEnum FullType: storage.NetAppShareACLStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _storage.NetAppShareACLStatusEnum Status { get; set; }//;
+        public _storage.NetAppShareACLStatusEnum? Status { get; set; }//;
     }
     
     // Id: NetAppShareACLStatusEnum Namespace: storage
@@ -278,7 +278,7 @@ namespace _storage {
         
         // Key: size Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
-        public long Size { get; set; }//;
+        public System.Int64? Size { get; set; }//;
     }
     
     // Id: NetAppShareRevertToSnapshot Namespace: storage
@@ -294,11 +294,11 @@ namespace _storage {
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
-        public System.DateTime CreatedAt { get; set; }//;
+        public System.DateTime? CreatedAt { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -306,19 +306,19 @@ namespace _storage {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
-        public string Path { get; set; }//;
+        public System.String? Path { get; set; }//;
         
         // Key: status Type: storage.NetAppSnapshotStatusEnum FullType: storage.NetAppSnapshotStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _storage.NetAppSnapshotStatusEnum Status { get; set; }//;
+        public _storage.NetAppSnapshotStatusEnum? Status { get; set; }//;
         
         // Key: type Type: storage.NetAppSnapshotTypeEnum FullType: storage.NetAppSnapshotTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _storage.NetAppSnapshotTypeEnum Type { get; set; }//;
+        public _storage.NetAppSnapshotTypeEnum? Type { get; set; }//;
     }
     
     // Id: NetAppShareSnapshotPolicy Namespace: storage
@@ -392,11 +392,11 @@ namespace _storage {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
     
     // Id: NetAppShareStatusEnum Namespace: storage
@@ -477,11 +477,11 @@ namespace _storage {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
     
     // Id: NetAppSnapshotPolicy Namespace: storage
@@ -489,11 +489,11 @@ namespace _storage {
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
-        public System.DateTime CreatedAt { get; set; }//;
+        public System.DateTime? CreatedAt { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -501,19 +501,19 @@ namespace _storage {
         
         // Key: isDefault Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isDefault")]
-        public bool IsDefault { get; set; }//;
+        public System.Boolean? IsDefault { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: rules Type: storage.NetAppSnapshotPolicyRule[] FullType: storage.NetAppSnapshotPolicyRule[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rules")]
-        public _storage.NetAppSnapshotPolicyRule[] Rules { get; set; }//;
+        public _storage.NetAppSnapshotPolicyRule[]? Rules { get; set; }//;
         
         // Key: status Type: storage.NetAppSnapshotPolicyStatusEnum FullType: storage.NetAppSnapshotPolicyStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _storage.NetAppSnapshotPolicyStatusEnum Status { get; set; }//;
+        public _storage.NetAppSnapshotPolicyStatusEnum? Status { get; set; }//;
     }
     
     // Id: NetAppSnapshotPolicyRule Namespace: storage
@@ -521,15 +521,15 @@ namespace _storage {
         
         // Key: copies Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("copies")]
-        public long Copies { get; set; }//;
+        public System.Int64? Copies { get; set; }//;
         
         // Key: prefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public string Prefix { get; set; }//;
+        public System.String? Prefix { get; set; }//;
         
         // Key: schedule Type: storage.NetAppSnapshotPolicySchedule FullType: storage.NetAppSnapshotPolicySchedule
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("schedule")]
-        public _storage.NetAppSnapshotPolicySchedule Schedule { get; set; }//;
+        public _storage.NetAppSnapshotPolicySchedule? Schedule { get; set; }//;
     }
     
     // Id: NetAppSnapshotPolicySchedule Namespace: storage
@@ -537,11 +537,11 @@ namespace _storage {
         
         // Key: days Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("days")]
-        public long[] Days { get; set; }//;
+        public System.Int64[]? Days { get; set; }//;
         
         // Key: hours Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hours")]
-        public long[] Hours { get; set; }//;
+        public System.Int64[]? Hours { get; set; }//;
         
         // Key: minutes Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minutes")]
@@ -549,11 +549,11 @@ namespace _storage {
         
         // Key: months Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("months")]
-        public long[] Months { get; set; }//;
+        public System.Int64[]? Months { get; set; }//;
         
         // Key: weekdays Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("weekdays")]
-        public long[] Weekdays { get; set; }//;
+        public System.Int64[]? Weekdays { get; set; }//;
     }
     
     // Id: NetAppSnapshotPolicyStatusEnum Namespace: storage
@@ -580,11 +580,11 @@ namespace _storage {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
     
     // Id: NetAppSnapshotStatusEnum Namespace: storage

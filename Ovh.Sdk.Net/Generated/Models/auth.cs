@@ -63,7 +63,7 @@ namespace _auth {
         
         // Key: allowedIPs Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedIPs")]
-        public string[] AllowedIPs { get; set; }//;
+        public System.String[]? AllowedIPs { get; set; }//;
         
         // Key: applicationId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("applicationId")]
@@ -79,11 +79,11 @@ namespace _auth {
         
         // Key: expiration Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiration")]
-        public System.DateTime Expiration { get; set; }//;
+        public System.DateTime? Expiration { get; set; }//;
         
         // Key: lastUse Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUse")]
-        public System.DateTime LastUse { get; set; }//;
+        public System.DateTime? LastUse { get; set; }//;
         
         // Key: ovhSupport Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhSupport")]
@@ -127,7 +127,7 @@ namespace _auth {
         
         // Key: redirection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirection")]
-        public string Redirection { get; set; }//;
+        public System.String? Redirection { get; set; }//;
     }
     
     // Id: ApplicationStatusEnum Namespace: auth
@@ -171,7 +171,7 @@ namespace _auth {
         
         // Key: validationUrl Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validationUrl")]
-        public string ValidationUrl { get; set; }//;
+        public System.String? ValidationUrl { get; set; }//;
     }
     
     // Id: CredentialStateEnum Namespace: auth
@@ -199,11 +199,11 @@ namespace _auth {
         
         // Key: allowedRoutes Type: auth.AccessRule[] FullType: auth.AccessRule[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedRoutes")]
-        public _auth.AccessRule[] AllowedRoutes { get; set; }//;
+        public _auth.AccessRule[]? AllowedRoutes { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: identities Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("identities")]
@@ -215,11 +215,11 @@ namespace _auth {
         
         // Key: roles Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("roles")]
-        public string[] Roles { get; set; }//;
+        public System.String[]? Roles { get; set; }//;
         
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
-        public string User { get; set; }//;
+        public System.String? User { get; set; }//;
     }
     
     // Id: Group Namespace: auth
@@ -235,7 +235,7 @@ namespace _auth {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -259,7 +259,7 @@ namespace _auth {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -311,7 +311,7 @@ namespace _auth {
         
         // Key: disableUsers Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disableUsers")]
-        public bool DisableUsers { get; set; }//;
+        public System.Boolean? DisableUsers { get; set; }//;
         
         // Key: extensions Type: auth.ProviderExtensions FullType: auth.ProviderExtensions
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("extensions")]
@@ -331,7 +331,7 @@ namespace _auth {
         
         // Key: signRequests Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("signRequests")]
-        public bool SignRequests { get; set; }//;
+        public System.Boolean? SignRequests { get; set; }//;
         
         // Key: ssoServiceUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssoServiceUrl")]
@@ -347,7 +347,7 @@ namespace _auth {
         
         // Key: requestedAttributes Type: auth.ProviderRequestedAttributes[] FullType: auth.ProviderRequestedAttributes[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("requestedAttributes")]
-        public _auth.ProviderRequestedAttributes[] RequestedAttributes { get; set; }//;
+        public _auth.ProviderRequestedAttributes[]? RequestedAttributes { get; set; }//;
     }
     
     // Id: ProviderRequest Namespace: auth
@@ -355,7 +355,7 @@ namespace _auth {
         
         // Key: disableUsers Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disableUsers")]
-        public bool DisableUsers { get; set; }//;
+        public System.Boolean? DisableUsers { get; set; }//;
         
         // Key: extensions Type: auth.ProviderExtensions FullType: auth.ProviderExtensions
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("extensions")]
@@ -363,7 +363,7 @@ namespace _auth {
         
         // Key: groupAttributeName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupAttributeName")]
-        public string GroupAttributeName { get; set; }//;
+        public System.String? GroupAttributeName { get; set; }//;
         
         // Key: metadata Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metadata")]
@@ -371,11 +371,11 @@ namespace _auth {
         
         // Key: signRequests Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("signRequests")]
-        public bool SignRequests { get; set; }//;
+        public System.Boolean? SignRequests { get; set; }//;
         
         // Key: userAttributeName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAttributeName")]
-        public string UserAttributeName { get; set; }//;
+        public System.String? UserAttributeName { get; set; }//;
     }
     
     // Id: ProviderRequestedAttributes Namespace: auth
@@ -391,11 +391,11 @@ namespace _auth {
         
         // Key: nameFormat Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nameFormat")]
-        public string NameFormat { get; set; }//;
+        public System.String? NameFormat { get; set; }//;
         
         // Key: values Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("values")]
-        public string[] Values { get; set; }//;
+        public System.String[]? Values { get; set; }//;
     }
     
     // Id: RoleEnum Namespace: auth

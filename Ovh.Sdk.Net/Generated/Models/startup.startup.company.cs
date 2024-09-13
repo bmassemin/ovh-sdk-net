@@ -15,15 +15,15 @@ namespace _startup_startup_company {
         
         // Key: creationdate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationdate")]
-        public System.DateOnly Creationdate { get; set; }//;
+        public System.DateOnly? Creationdate { get; set; }//;
         
         // Key: lastYearTurnover Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastYearTurnover")]
-        public double LastYearTurnover { get; set; }//;
+        public System.Double? LastYearTurnover { get; set; }//;
         
         // Key: vatNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vatNumber")]
-        public string VatNumber { get; set; }//;
+        public System.String? VatNumber { get; set; }//;
     }
     
     // Id: incubator Namespace: startup.startup.company
@@ -31,15 +31,15 @@ namespace _startup_startup_company {
         
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: country Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public _nichandle.CountryEnum Country { get; set; }//;
+        public _nichandle.CountryEnum? Country { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
     
     // Id: socialNetwork Namespace: startup.startup.company
@@ -47,10 +47,10 @@ namespace _startup_startup_company {
         
         // Key: linkedin Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("linkedin")]
-        public string Linkedin { get; set; }//;
+        public System.String? Linkedin { get; set; }//;
         
         // Key: twitter Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("twitter")]
-        public string Twitter { get; set; }//;
+        public System.String? Twitter { get; set; }//;
     }
 }

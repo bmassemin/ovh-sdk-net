@@ -39,7 +39,7 @@ namespace _me_consumption {
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: elements Type: me.consumption.transaction.Element[] FullType: me.consumption.transaction.Element[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("elements")]
@@ -47,15 +47,15 @@ namespace _me_consumption {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public long Id { get; set; }//;
+        public System.Int64? Id { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: price Type: me.consumption.Price FullType: me.consumption.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("price")]

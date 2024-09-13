@@ -40,7 +40,7 @@ namespace _veeamCloudConnect {
         
         // Key: vmCount Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmCount")]
-        public long VmCount { get; set; }//;
+        public System.Int64? VmCount { get; set; }//;
     }
     
     // Id: Account Namespace: veeamCloudConnect
@@ -48,7 +48,7 @@ namespace _veeamCloudConnect {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: location Type: veeamCloudConnect.Location FullType: veeamCloudConnect.Location
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("location")]
@@ -64,7 +64,7 @@ namespace _veeamCloudConnect {
         
         // Key: vmCount Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmCount")]
-        public long VmCount { get; set; }//;
+        public System.Int64? VmCount { get; set; }//;
     }
     
     // Id: BackupRepository Namespace: veeamCloudConnect
@@ -80,11 +80,11 @@ namespace _veeamCloudConnect {
         
         // Key: quotaUsed Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quotaUsed")]
-        public _complexType.UnitAndValue<long> QuotaUsed { get; set; }//;
+        public _complexType.UnitAndValue<long>? QuotaUsed { get; set; }//;
         
         // Key: replicationZone Type: veeamCloudConnect.Location FullType: veeamCloudConnect.Location
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("replicationZone")]
-        public _veeamCloudConnect.Location ReplicationZone { get; set; }//;
+        public _veeamCloudConnect.Location? ReplicationZone { get; set; }//;
         
         // Key: state Type: veeamCloudConnect.BackupRepositoryStateEnum FullType: veeamCloudConnect.BackupRepositoryStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -92,7 +92,7 @@ namespace _veeamCloudConnect {
         
         // Key: usage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usage")]
-        public long Usage { get; set; }//;
+        public System.Int64? Usage { get; set; }//;
     }
     
     // Id: BackupRepositoryStateEnum Namespace: veeamCloudConnect
@@ -138,7 +138,7 @@ namespace _veeamCloudConnect {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -150,7 +150,7 @@ namespace _veeamCloudConnect {
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
-        public System.DateTime StartDate { get; set; }//;
+        public System.DateTime? StartDate { get; set; }//;
         
         // Key: state Type: veeamCloudConnect.TaskStateEnum FullType: veeamCloudConnect.TaskStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]

@@ -19,7 +19,7 @@ namespace _cloud_ip {
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: status Type: cloud.ip.IpStatusEnum FullType: cloud.ip.IpStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -35,15 +35,15 @@ namespace _cloud_ip {
         
         // Key: block Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("block")]
-        public string Block { get; set; }//;
+        public System.String? Block { get; set; }//;
         
         // Key: continentCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("continentCode")]
-        public string ContinentCode { get; set; }//;
+        public System.String? ContinentCode { get; set; }//;
         
         // Key: geoloc Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("geoloc")]
-        public string Geoloc { get; set; }//;
+        public System.String? Geoloc { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -51,7 +51,7 @@ namespace _cloud_ip {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: progress Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("progress")]

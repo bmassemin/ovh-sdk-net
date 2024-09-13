@@ -23,7 +23,7 @@ namespace _cloud_project_dataProcessing {
         
         // Key: default Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("default")]
-        public string @default { get; set; }//;
+        public System.String? @default { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -147,11 +147,11 @@ namespace _cloud_project_dataProcessing {
         
         // Key: endOfLife Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endOfLife")]
-        public System.DateOnly EndOfLife { get; set; }//;
+        public System.DateOnly? EndOfLife { get; set; }//;
         
         // Key: endOfSupport Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endOfSupport")]
-        public System.DateOnly EndOfSupport { get; set; }//;
+        public System.DateOnly? EndOfSupport { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -333,11 +333,11 @@ namespace _cloud_project_dataProcessing {
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: engine Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engine")]
@@ -361,7 +361,7 @@ namespace _cloud_project_dataProcessing {
         
         // Key: notebook Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("notebook")]
-        public string Notebook { get; set; }//;
+        public System.String? Notebook { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -369,11 +369,11 @@ namespace _cloud_project_dataProcessing {
         
         // Key: returnCode Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("returnCode")]
-        public long ReturnCode { get; set; }//;
+        public System.Int64? ReturnCode { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
-        public System.DateTime StartDate { get; set; }//;
+        public System.DateTime? StartDate { get; set; }//;
         
         // Key: status Type: cloud.project.dataProcessing.StatusEnum FullType: cloud.project.dataProcessing.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -381,7 +381,7 @@ namespace _cloud_project_dataProcessing {
         
         // Key: ttl Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ttl")]
-        public System.TimeSpan Ttl { get; set; }//;
+        public System.TimeSpan? Ttl { get; set; }//;
     }
     
     // Id: JobLogs Namespace: cloud.project.dataProcessing
@@ -393,7 +393,7 @@ namespace _cloud_project_dataProcessing {
         
         // Key: logsAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logsAddress")]
-        public string LogsAddress { get; set; }//;
+        public System.String? LogsAddress { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -421,15 +421,15 @@ namespace _cloud_project_dataProcessing {
         
         // Key: max Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("max")]
-        public double Max { get; set; }//;
+        public System.Double? Max { get; set; }//;
         
         // Key: min Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("min")]
-        public double Min { get; set; }//;
+        public System.Double? Min { get; set; }//;
         
         // Key: regex Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regex")]
-        public string Regex { get; set; }//;
+        public System.String? Regex { get; set; }//;
     }
     
     // Id: StatusEnum Namespace: cloud.project.dataProcessing

@@ -15,23 +15,23 @@ namespace _ipLoadbalancing_frontendTcp {
         
         // Key: allowedSource Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedSource")]
-        public string[] AllowedSource { get; set; }//;
+        public System.String[]? AllowedSource { get; set; }//;
         
         // Key: dedicatedIpfo Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedIpfo")]
-        public string[] DedicatedIpfo { get; set; }//;
+        public System.String[]? DedicatedIpfo { get; set; }//;
         
         // Key: defaultFarmId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultFarmId")]
-        public long DefaultFarmId { get; set; }//;
+        public System.Int64? DefaultFarmId { get; set; }//;
         
         // Key: defaultSslId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultSslId")]
-        public long DefaultSslId { get; set; }//;
+        public System.Int64? DefaultSslId { get; set; }//;
         
         // Key: deniedSource Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deniedSource")]
-        public string[] DeniedSource { get; set; }//;
+        public System.String[]? DeniedSource { get; set; }//;
         
         // Key: disabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabled")]
@@ -39,7 +39,7 @@ namespace _ipLoadbalancing_frontendTcp {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: frontendId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frontendId")]
@@ -55,11 +55,11 @@ namespace _ipLoadbalancing_frontendTcp {
         
         // Key: vrackNetworkId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrackNetworkId")]
-        public long VrackNetworkId { get; set; }//;
+        public System.Int64? VrackNetworkId { get; set; }//;
         
         // Key: vrackVrouterId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrackVrouterId")]
-        public long VrackVrouterId { get; set; }//;
+        public System.Int64? VrackVrouterId { get; set; }//;
         
         // Key: zone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]

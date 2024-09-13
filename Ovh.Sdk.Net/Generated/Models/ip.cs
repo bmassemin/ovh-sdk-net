@@ -63,7 +63,7 @@ namespace _ip {
         
         // Key: logs Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logs")]
-        public string Logs { get; set; }//;
+        public System.String? Logs { get; set; }//;
         
         // Key: state Type: ip.ArpStateEnum FullType: ip.ArpStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -97,7 +97,7 @@ namespace _ip {
         
         // Key: logs Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logs")]
-        public string Logs { get; set; }//;
+        public System.String? Logs { get; set; }//;
         
         // Key: state Type: ip.BlockedIpStateEnum FullType: ip.BlockedIpStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -210,7 +210,7 @@ namespace _ip {
         
         // Key: nexthop Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nexthop")]
-        public string[] Nexthop { get; set; }//;
+        public System.String[]? Nexthop { get; set; }//;
         
         // Key: service Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("service")]
@@ -222,27 +222,27 @@ namespace _ip {
         
         // Key: cloudProject Type: ip.Destination[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cloudProject")]
-        public _ip.Destination[] CloudProject { get; set; }//;
+        public _ip.Destination[]? CloudProject { get; set; }//;
         
         // Key: dedicatedCloud Type: ip.Destination[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedCloud")]
-        public _ip.Destination[] DedicatedCloud { get; set; }//;
+        public _ip.Destination[]? DedicatedCloud { get; set; }//;
         
         // Key: dedicatedServer Type: ip.Destination[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dedicatedServer")]
-        public _ip.Destination[] DedicatedServer { get; set; }//;
+        public _ip.Destination[]? DedicatedServer { get; set; }//;
         
         // Key: hostingReseller Type: ip.Destination[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingReseller")]
-        public _ip.Destination[] HostingReseller { get; set; }//;
+        public _ip.Destination[]? HostingReseller { get; set; }//;
         
         // Key: ipLoadbalancing Type: ip.Destination[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLoadbalancing")]
-        public _ip.Destination[] IpLoadbalancing { get; set; }//;
+        public _ip.Destination[]? IpLoadbalancing { get; set; }//;
         
         // Key: vps Type: ip.Destination[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vps")]
-        public _ip.Destination[] Vps { get; set; }//;
+        public _ip.Destination[]? Vps { get; set; }//;
     }
     
     // Id: FirewallActionEnum Namespace: ip
@@ -288,11 +288,11 @@ namespace _ip {
         
         // Key: destinationPort Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destinationPort")]
-        public string DestinationPort { get; set; }//;
+        public System.String? DestinationPort { get; set; }//;
         
         // Key: fragments Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fragments")]
-        public bool Fragments { get; set; }//;
+        public System.Boolean? Fragments { get; set; }//;
         
         // Key: protocol Type: ip.FirewallProtocolEnum FullType: ip.FirewallProtocolEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("protocol")]
@@ -312,7 +312,7 @@ namespace _ip {
         
         // Key: sourcePort Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sourcePort")]
-        public string SourcePort { get; set; }//;
+        public System.String? SourcePort { get; set; }//;
         
         // Key: state Type: ip.FirewallRuleStateEnum FullType: ip.FirewallRuleStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -320,7 +320,7 @@ namespace _ip {
         
         // Key: tcpOption Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tcpOption")]
-        public string TcpOption { get; set; }//;
+        public System.String? TcpOption { get; set; }//;
     }
     
     // Id: FirewallOptionTCP Namespace: ip
@@ -328,11 +328,11 @@ namespace _ip {
         
         // Key: fragments Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fragments")]
-        public bool Fragments { get; set; }//;
+        public System.Boolean? Fragments { get; set; }//;
         
         // Key: option Type: ip.FirewallTCPOptionEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("option")]
-        public _ip.FirewallTCPOptionEnum Option { get; set; }//;
+        public _ip.FirewallTCPOptionEnum? Option { get; set; }//;
     }
     
     // Id: FirewallProtocolEnum Namespace: ip
@@ -565,7 +565,7 @@ namespace _ip {
         
         // Key: campus Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("campus")]
-        public string Campus { get; set; }//;
+        public System.String? Campus { get; set; }//;
         
         // Key: canBeTerminated Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("canBeTerminated")]
@@ -573,11 +573,11 @@ namespace _ip {
         
         // Key: country Type: coreTypes.CountryEnum FullType: coreTypes.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public _coreTypes.CountryEnum Country { get; set; }//;
+        public _coreTypes.CountryEnum? Country { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -589,19 +589,19 @@ namespace _ip {
         
         // Key: organisationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationId")]
-        public string OrganisationId { get; set; }//;
+        public System.String? OrganisationId { get; set; }//;
         
         // Key: regions Type: coreTypes.RegionCodenameEnum[] FullType: coreTypes.RegionCodenameEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regions")]
-        public _coreTypes.RegionCodenameEnum[] Regions { get; set; }//;
+        public _coreTypes.RegionCodenameEnum[]? Regions { get; set; }//;
         
         // Key: rir Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rir")]
-        public string Rir { get; set; }//;
+        public System.String? Rir { get; set; }//;
         
         // Key: routedTo Type: ip.RoutedTo FullType: ip.RoutedTo
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routedTo")]
-        public _ip.RoutedTo RoutedTo { get; set; }//;
+        public _ip.RoutedTo? RoutedTo { get; set; }//;
         
         // Key: type Type: ip.IpTypeEnum FullType: ip.IpTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -629,15 +629,15 @@ namespace _ip {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: destination Type: ip.RoutedTo FullType: ip.RoutedTo
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destination")]
-        public _ip.RoutedTo Destination { get; set; }//;
+        public _ip.RoutedTo? Destination { get; set; }//;
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: function Type: ip.TaskFunctionEnum FullType: ip.TaskFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -645,7 +645,7 @@ namespace _ip {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -729,7 +729,7 @@ namespace _ip {
         
         // Key: campus Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("campus")]
-        public string Campus { get; set; }//;
+        public System.String? Campus { get; set; }//;
         
         // Key: canBeTerminated Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("canBeTerminated")]
@@ -737,15 +737,15 @@ namespace _ip {
         
         // Key: country Type: coreTypes.CountryEnum FullType: coreTypes.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public _coreTypes.CountryEnum Country { get; set; }//;
+        public _coreTypes.CountryEnum? Country { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -757,19 +757,19 @@ namespace _ip {
         
         // Key: organisationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationId")]
-        public string OrganisationId { get; set; }//;
+        public System.String? OrganisationId { get; set; }//;
         
         // Key: regions Type: coreTypes.RegionCodenameEnum[] FullType: coreTypes.RegionCodenameEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regions")]
-        public _coreTypes.RegionCodenameEnum[] Regions { get; set; }//;
+        public _coreTypes.RegionCodenameEnum[]? Regions { get; set; }//;
         
         // Key: rir Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rir")]
-        public string Rir { get; set; }//;
+        public System.String? Rir { get; set; }//;
         
         // Key: routedTo Type: ip.RoutedTo FullType: ip.RoutedTo
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routedTo")]
-        public _ip.RoutedTo RoutedTo { get; set; }//;
+        public _ip.RoutedTo? RoutedTo { get; set; }//;
         
         // Key: type Type: ip.IpTypeEnum FullType: ip.IpTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -878,11 +878,11 @@ namespace _ip {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: netname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("netname")]
-        public string Netname { get; set; }//;
+        public System.String? Netname { get; set; }//;
     }
     
     // Id: RoutedTo Namespace: ip
@@ -890,7 +890,7 @@ namespace _ip {
         
         // Key: serviceName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
-        public string ServiceName { get; set; }//;
+        public System.String? ServiceName { get; set; }//;
     }
     
     // Id: ServiceIp Namespace: ip
@@ -902,11 +902,11 @@ namespace _ip {
         
         // Key: country Type: coreTypes.CountryEnum FullType: coreTypes.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public _coreTypes.CountryEnum Country { get; set; }//;
+        public _coreTypes.CountryEnum? Country { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -914,11 +914,11 @@ namespace _ip {
         
         // Key: organisationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationId")]
-        public string OrganisationId { get; set; }//;
+        public System.String? OrganisationId { get; set; }//;
         
         // Key: routedTo Type: ip.RoutedTo FullType: ip.RoutedTo
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routedTo")]
-        public _ip.RoutedTo RoutedTo { get; set; }//;
+        public _ip.RoutedTo? RoutedTo { get; set; }//;
         
         // Key: type Type: ip.IpTypeEnum FullType: ip.IpTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -934,15 +934,15 @@ namespace _ip {
         
         // Key: country Type: coreTypes.CountryEnum FullType: coreTypes.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public _coreTypes.CountryEnum Country { get; set; }//;
+        public _coreTypes.CountryEnum? Country { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -950,11 +950,11 @@ namespace _ip {
         
         // Key: organisationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationId")]
-        public string OrganisationId { get; set; }//;
+        public System.String? OrganisationId { get; set; }//;
         
         // Key: routedTo Type: ip.RoutedTo FullType: ip.RoutedTo
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routedTo")]
-        public _ip.RoutedTo RoutedTo { get; set; }//;
+        public _ip.RoutedTo? RoutedTo { get; set; }//;
         
         // Key: type Type: ip.IpTypeEnum FullType: ip.IpTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -999,11 +999,11 @@ namespace _ip {
         
         // Key: averageSpamscore Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("averageSpamscore")]
-        public long AverageSpamscore { get; set; }//;
+        public System.Int64? AverageSpamscore { get; set; }//;
         
         // Key: detectedSpams Type: ip.SpamTarget[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("detectedSpams")]
-        public _ip.SpamTarget[] DetectedSpams { get; set; }//;
+        public _ip.SpamTarget[]? DetectedSpams { get; set; }//;
         
         // Key: numberOfSpams Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("numberOfSpams")]

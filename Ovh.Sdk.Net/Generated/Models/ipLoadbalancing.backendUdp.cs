@@ -15,7 +15,7 @@ namespace _ipLoadbalancing_backendUdp {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: farmId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("farmId")]
@@ -27,7 +27,7 @@ namespace _ipLoadbalancing_backendUdp {
         
         // Key: vrackNetworkId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrackNetworkId")]
-        public long VrackNetworkId { get; set; }//;
+        public System.Int64? VrackNetworkId { get; set; }//;
         
         // Key: zone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]

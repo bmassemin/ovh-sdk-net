@@ -43,7 +43,7 @@ namespace _dedicated_cluster {
         
         // Key: systemStorage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("systemStorage")]
-        public string SystemStorage { get; set; }//;
+        public System.String? SystemStorage { get; set; }//;
     }
     
     // Id: AvailabilitiesRawRegion Namespace: dedicated.cluster
@@ -55,7 +55,7 @@ namespace _dedicated_cluster {
         
         // Key: lastRule Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastRule")]
-        public string LastRule { get; set; }//;
+        public System.String? LastRule { get; set; }//;
         
         // Key: parentAvailable Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentAvailable")]
@@ -99,7 +99,7 @@ namespace _dedicated_cluster {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -183,6 +183,6 @@ namespace _dedicated_cluster {
         
         // Key: systemStorage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("systemStorage")]
-        public string SystemStorage { get; set; }//;
+        public System.String? SystemStorage { get; set; }//;
     }
 }

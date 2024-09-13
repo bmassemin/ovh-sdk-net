@@ -260,11 +260,11 @@ namespace _cdn {
         
         // Key: category Type: cdn.OptionCategoryEnum FullType: cdn.OptionCategoryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("category")]
-        public _cdn.OptionCategoryEnum Category { get; set; }//;
+        public _cdn.OptionCategoryEnum? Category { get; set; }//;
         
         // Key: config Type: cdn.availableOptions.config FullType: cdn.availableOptions.config
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("config")]
-        public _cdn_availableOptions.config Config { get; set; }//;
+        public _cdn_availableOptions.config? Config { get; set; }//;
         
         // Key: maxItems Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxItems")]
@@ -316,7 +316,7 @@ namespace _cdn {
         
         // Key: comment Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]

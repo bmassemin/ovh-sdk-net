@@ -15,15 +15,15 @@ namespace _dedicated_nasTask {
         
         // Key: details Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("details")]
-        public string Details { get; set; }//;
+        public System.String? Details { get; set; }//;
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: operation Type: dedicated.storage.TaskFunctionEnum FullType: dedicated.storage.TaskFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operation")]
@@ -31,7 +31,7 @@ namespace _dedicated_nasTask {
         
         // Key: partitionName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partitionName")]
-        public string PartitionName { get; set; }//;
+        public System.String? PartitionName { get; set; }//;
         
         // Key: status Type: dedicated.TaskStatusEnum FullType: dedicated.TaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -39,7 +39,7 @@ namespace _dedicated_nasTask {
         
         // Key: storageName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storageName")]
-        public string StorageName { get; set; }//;
+        public System.String? StorageName { get; set; }//;
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
@@ -47,6 +47,6 @@ namespace _dedicated_nasTask {
         
         // Key: todoDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("todoDate")]
-        public System.DateTime TodoDate { get; set; }//;
+        public System.DateTime? TodoDate { get; set; }//;
     }
 }

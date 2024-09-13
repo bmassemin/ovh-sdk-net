@@ -35,7 +35,7 @@ namespace _cloud_project_ai_capabilities {
         
         // Key: gpuInformation Type: cloud.project.ai.capabilities.flavor.GpuInformation FullType: cloud.project.ai.capabilities.flavor.GpuInformation
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpuInformation")]
-        public _cloud_project_ai_capabilities_flavor.GpuInformation GpuInformation { get; set; }//;
+        public _cloud_project_ai_capabilities_flavor.GpuInformation? GpuInformation { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]

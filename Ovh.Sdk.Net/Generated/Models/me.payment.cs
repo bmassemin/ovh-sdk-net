@@ -15,7 +15,7 @@ namespace _me_payment {
         
         // Key: formSessionId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("formSessionId")]
-        public string FormSessionId { get; set; }//;
+        public System.String? FormSessionId { get; set; }//;
         
         // Key: icon Type: me.payment.Icon FullType: me.payment.Icon
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("icon")]
@@ -27,7 +27,7 @@ namespace _me_payment {
         
         // Key: merchantId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("merchantId")]
-        public string MerchantId { get; set; }//;
+        public System.String? MerchantId { get; set; }//;
         
         // Key: oneshot Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("oneshot")]
@@ -35,11 +35,11 @@ namespace _me_payment {
         
         // Key: organizationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organizationId")]
-        public string OrganizationId { get; set; }//;
+        public System.String? OrganizationId { get; set; }//;
         
         // Key: paymentSubType Type: me.payment.AvailableSubTypeEnum FullType: me.payment.AvailableSubTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentSubType")]
-        public _me_payment.AvailableSubTypeEnum PaymentSubType { get; set; }//;
+        public _me_payment.AvailableSubTypeEnum? PaymentSubType { get; set; }//;
         
         // Key: paymentType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentType")]
@@ -121,7 +121,7 @@ namespace _me_payment {
         
         // Key: data Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("data")]
-        public string Data { get; set; }//;
+        public System.String? Data { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -129,7 +129,7 @@ namespace _me_payment {
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: IntegrationEnum Namespace: me.payment
@@ -162,7 +162,7 @@ namespace _me_payment {
         
         // Key: billingContactId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("billingContactId")]
-        public long BillingContactId { get; set; }//;
+        public System.Int64? BillingContactId { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -174,15 +174,15 @@ namespace _me_payment {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: formSessionId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("formSessionId")]
-        public string FormSessionId { get; set; }//;
+        public System.String? FormSessionId { get; set; }//;
         
         // Key: icon Type: me.payment.Icon FullType: me.payment.Icon
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("icon")]
@@ -190,11 +190,11 @@ namespace _me_payment {
         
         // Key: integration Type: me.payment.IntegrationEnum FullType: me.payment.IntegrationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("integration")]
-        public _me_payment.IntegrationEnum Integration { get; set; }//;
+        public _me_payment.IntegrationEnum? Integration { get; set; }//;
         
         // Key: label Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("label")]
-        public string Label { get; set; }//;
+        public System.String? Label { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -202,15 +202,15 @@ namespace _me_payment {
         
         // Key: merchantId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("merchantId")]
-        public string MerchantId { get; set; }//;
+        public System.String? MerchantId { get; set; }//;
         
         // Key: oneclick Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("oneclick")]
-        public bool Oneclick { get; set; }//;
+        public System.Boolean? Oneclick { get; set; }//;
         
         // Key: paymentMeanId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentMeanId")]
-        public long PaymentMeanId { get; set; }//;
+        public System.Int64? PaymentMeanId { get; set; }//;
         
         // Key: paymentMethodId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentMethodId")]
@@ -218,7 +218,7 @@ namespace _me_payment {
         
         // Key: paymentSubType Type: me.payment.AvailableSubTypeEnum FullType: me.payment.AvailableSubTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentSubType")]
-        public _me_payment.AvailableSubTypeEnum PaymentSubType { get; set; }//;
+        public _me_payment.AvailableSubTypeEnum? PaymentSubType { get; set; }//;
         
         // Key: paymentType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentType")]

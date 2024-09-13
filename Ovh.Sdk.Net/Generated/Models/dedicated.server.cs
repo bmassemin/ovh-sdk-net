@@ -108,11 +108,11 @@ namespace _dedicated_server {
         
         // Key: quota Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
-        public _complexType.UnitAndValue<long> Quota { get; set; }//;
+        public _complexType.UnitAndValue<long>? Quota { get; set; }//;
         
         // Key: readOnlyDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readOnlyDate")]
-        public System.DateTime ReadOnlyDate { get; set; }//;
+        public System.DateTime? ReadOnlyDate { get; set; }//;
         
         // Key: type Type: dedicated.server.BackupStorageTypeEnum FullType: dedicated.server.BackupStorageTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -120,7 +120,7 @@ namespace _dedicated_server {
         
         // Key: usage Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usage")]
-        public _complexType.UnitAndValue<long> Usage { get; set; }//;
+        public _complexType.UnitAndValue<long>? Usage { get; set; }//;
     }
     
     // Id: BackupFtpAcl Namespace: dedicated.server
@@ -166,11 +166,11 @@ namespace _dedicated_server {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: function Type: dedicated.TaskFunctionEnum FullType: dedicated.TaskFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -178,7 +178,7 @@ namespace _dedicated_server {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: needSchedule Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("needSchedule")]
@@ -186,11 +186,11 @@ namespace _dedicated_server {
         
         // Key: note Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("note")]
-        public string Note { get; set; }//;
+        public System.String? Note { get; set; }//;
         
         // Key: plannedInterventionId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plannedInterventionId")]
-        public long PlannedInterventionId { get; set; }//;
+        public System.Int64? PlannedInterventionId { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -202,7 +202,7 @@ namespace _dedicated_server {
         
         // Key: tags Type: complexType.SafeKeyValueCanBeNull<string>[] FullType: complexType.SafeKeyValueCanBeNull<string>[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tags")]
-        public _complexType.SafeKeyValueCanBeNull<string> Tags { get; set; }//;
+        public _complexType.SafeKeyValueCanBeNull<string>? Tags { get; set; }//;
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
@@ -210,7 +210,7 @@ namespace _dedicated_server {
         
         // Key: ticketReference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ticketReference")]
-        public string TicketReference { get; set; }//;
+        public System.String? TicketReference { get; set; }//;
     }
     
     // Id: BitFormatEnum Namespace: dedicated.server
@@ -294,7 +294,7 @@ namespace _dedicated_server {
         
         // Key: password Type: password FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
-        public string Password { get; set; }//;
+        public System.String? Password { get; set; }//;
         
         // Key: type Type: dedicated.server.AccessTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -302,11 +302,11 @@ namespace _dedicated_server {
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: user Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
-        public string User { get; set; }//;
+        public System.String? User { get; set; }//;
     }
     
     // Id: AccessTypeEnum Namespace: dedicated.server
@@ -441,11 +441,11 @@ namespace _dedicated_server {
         
         // Key: agreements Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("agreements")]
-        public long[] Agreements { get; set; }//;
+        public System.Int64[]? Agreements { get; set; }//;
         
         // Key: archive Type: dedicated.server.backup.BackupContainer FullType: dedicated.server.backup.BackupContainer
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("archive")]
-        public _dedicated_server_backup.BackupContainer Archive { get; set; }//;
+        public _dedicated_server_backup.BackupContainer? Archive { get; set; }//;
         
         // Key: status Type: dedicated.server.backup.BackupStatus FullType: dedicated.server.backup.BackupStatus
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -453,7 +453,7 @@ namespace _dedicated_server {
         
         // Key: storage Type: dedicated.server.backup.BackupContainer FullType: dedicated.server.backup.BackupContainer
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public _dedicated_server_backup.BackupContainer Storage { get; set; }//;
+        public _dedicated_server_backup.BackupContainer? Storage { get; set; }//;
     }
     
     // Id: BackupStorageCapacityEnum Namespace: dedicated.server
@@ -473,7 +473,7 @@ namespace _dedicated_server {
         
         // Key: capacities Type: dedicated.server.BackupStorageCapacityEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("capacities")]
-        public _dedicated_server.BackupStorageCapacityEnum[] Capacities { get; set; }//;
+        public _dedicated_server.BackupStorageCapacityEnum[]? Capacities { get; set; }//;
         
         // Key: orderable Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderable")]
@@ -485,19 +485,19 @@ namespace _dedicated_server {
         
         // Key: InternetToOvh Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("InternetToOvh")]
-        public _complexType.UnitAndValue<long> InternetToOvh { get; set; }//;
+        public _complexType.UnitAndValue<long>? InternetToOvh { get; set; }//;
         
         // Key: OvhToInternet Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("OvhToInternet")]
-        public _complexType.UnitAndValue<long> OvhToInternet { get; set; }//;
+        public _complexType.UnitAndValue<long>? OvhToInternet { get; set; }//;
         
         // Key: OvhToOvh Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("OvhToOvh")]
-        public _complexType.UnitAndValue<long> OvhToOvh { get; set; }//;
+        public _complexType.UnitAndValue<long>? OvhToOvh { get; set; }//;
         
         // Key: type Type: dedicated.server.BandwidthTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _dedicated_server.BandwidthTypeEnum Type { get; set; }//;
+        public _dedicated_server.BandwidthTypeEnum? Type { get; set; }//;
     }
     
     // Id: BandwidthOrderEnum Namespace: dedicated.server
@@ -519,15 +519,15 @@ namespace _dedicated_server {
         
         // Key: platinum Type: dedicated.server.BandwidthOrderEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("platinum")]
-        public _dedicated_server.BandwidthOrderEnum[] Platinum { get; set; }//;
+        public _dedicated_server.BandwidthOrderEnum[]? Platinum { get; set; }//;
         
         // Key: premium Type: dedicated.server.BandwidthOrderEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("premium")]
-        public _dedicated_server.BandwidthOrderEnum[] Premium { get; set; }//;
+        public _dedicated_server.BandwidthOrderEnum[]? Premium { get; set; }//;
         
         // Key: ultimate Type: dedicated.server.BandwidthOrderEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ultimate")]
-        public _dedicated_server.BandwidthOrderEnum[] Ultimate { get; set; }//;
+        public _dedicated_server.BandwidthOrderEnum[]? Ultimate { get; set; }//;
     }
     
     // Id: BandwidthTypeEnum Namespace: dedicated.server
@@ -557,11 +557,11 @@ namespace _dedicated_server {
         
         // Key: bandwidth Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bandwidth")]
-        public _complexType.UnitAndValue<long> Bandwidth { get; set; }//;
+        public _complexType.UnitAndValue<long>? Bandwidth { get; set; }//;
         
         // Key: type Type: dedicated.server.BandwidthvRackTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _dedicated_server.BandwidthvRackTypeEnum Type { get; set; }//;
+        public _dedicated_server.BandwidthvRackTypeEnum? Type { get; set; }//;
     }
     
     // Id: BandwidthvRackOrderEnum Namespace: dedicated.server
@@ -581,7 +581,7 @@ namespace _dedicated_server {
         
         // Key: vrack Type: dedicated.server.BandwidthvRackOrderEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
-        public _dedicated_server.BandwidthvRackOrderEnum[] Vrack { get; set; }//;
+        public _dedicated_server.BandwidthvRackOrderEnum[]? Vrack { get; set; }//;
     }
     
     // Id: BandwidthvRackTypeEnum Namespace: dedicated.server
@@ -748,7 +748,7 @@ namespace _dedicated_server {
         
         // Key: message Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("message")]
-        public string Message { get; set; }//;
+        public System.String? Message { get; set; }//;
         
         // Key: status Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -898,15 +898,15 @@ namespace _dedicated_server {
         
         // Key: bootId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bootId")]
-        public long BootId { get; set; }//;
+        public System.Int64? BootId { get; set; }//;
         
         // Key: bootScript Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bootScript")]
-        public string BootScript { get; set; }//;
+        public System.String? BootScript { get; set; }//;
         
         // Key: commercialRange Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("commercialRange")]
-        public string CommercialRange { get; set; }//;
+        public System.String? CommercialRange { get; set; }//;
         
         // Key: datacenter Type: dedicated.DatacenterEnum FullType: dedicated.DatacenterEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
@@ -918,7 +918,7 @@ namespace _dedicated_server {
         
         // Key: linkSpeed Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("linkSpeed")]
-        public long LinkSpeed { get; set; }//;
+        public System.Int64? LinkSpeed { get; set; }//;
         
         // Key: monitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoring")]
@@ -958,19 +958,19 @@ namespace _dedicated_server {
         
         // Key: rescueMail Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rescueMail")]
-        public string RescueMail { get; set; }//;
+        public System.String? RescueMail { get; set; }//;
         
         // Key: rescueSshKey Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rescueSshKey")]
-        public string RescueSshKey { get; set; }//;
+        public System.String? RescueSshKey { get; set; }//;
         
         // Key: reverse Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reverse")]
-        public string Reverse { get; set; }//;
+        public System.String? Reverse { get; set; }//;
         
         // Key: rootDevice Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rootDevice")]
-        public string RootDevice { get; set; }//;
+        public System.String? RootDevice { get; set; }//;
         
         // Key: serverId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverId")]
@@ -994,15 +994,15 @@ namespace _dedicated_server {
         
         // Key: bootId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bootId")]
-        public long BootId { get; set; }//;
+        public System.Int64? BootId { get; set; }//;
         
         // Key: bootScript Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bootScript")]
-        public string BootScript { get; set; }//;
+        public System.String? BootScript { get; set; }//;
         
         // Key: commercialRange Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("commercialRange")]
-        public string CommercialRange { get; set; }//;
+        public System.String? CommercialRange { get; set; }//;
         
         // Key: datacenter Type: dedicated.DatacenterEnum FullType: dedicated.DatacenterEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
@@ -1010,7 +1010,7 @@ namespace _dedicated_server {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -1018,7 +1018,7 @@ namespace _dedicated_server {
         
         // Key: linkSpeed Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("linkSpeed")]
-        public long LinkSpeed { get; set; }//;
+        public System.Int64? LinkSpeed { get; set; }//;
         
         // Key: monitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoring")]
@@ -1058,19 +1058,19 @@ namespace _dedicated_server {
         
         // Key: rescueMail Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rescueMail")]
-        public string RescueMail { get; set; }//;
+        public System.String? RescueMail { get; set; }//;
         
         // Key: rescueSshKey Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rescueSshKey")]
-        public string RescueSshKey { get; set; }//;
+        public System.String? RescueSshKey { get; set; }//;
         
         // Key: reverse Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reverse")]
-        public string Reverse { get; set; }//;
+        public System.String? Reverse { get; set; }//;
         
         // Key: rootDevice Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rootDevice")]
-        public string RootDevice { get; set; }//;
+        public System.String? RootDevice { get; set; }//;
         
         // Key: serverId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverId")]
@@ -1125,7 +1125,7 @@ namespace _dedicated_server {
         
         // Key: model Type: dedicated.server.FirewallModelEnum FullType: dedicated.server.FirewallModelEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
-        public _dedicated_server.FirewallModelEnum Model { get; set; }//;
+        public _dedicated_server.FirewallModelEnum? Model { get; set; }//;
     }
     
     // Id: FirewallModeEnum Namespace: dedicated.server
@@ -1266,59 +1266,59 @@ namespace _dedicated_server {
         
         // Key: coresPerProcessor Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coresPerProcessor")]
-        public long CoresPerProcessor { get; set; }//;
+        public System.Int64? CoresPerProcessor { get; set; }//;
         
         // Key: defaultHardwareRaidSize Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultHardwareRaidSize")]
-        public _complexType.UnitAndValue<long> DefaultHardwareRaidSize { get; set; }//;
+        public _complexType.UnitAndValue<long>? DefaultHardwareRaidSize { get; set; }//;
         
         // Key: defaultHardwareRaidType Type: dedicated.server.HardwareSpecificationsRaidHardEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultHardwareRaidType")]
-        public _dedicated_server.HardwareSpecificationsRaidHardEnum DefaultHardwareRaidType { get; set; }//;
+        public _dedicated_server.HardwareSpecificationsRaidHardEnum? DefaultHardwareRaidType { get; set; }//;
         
         // Key: description Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: diskGroups Type: dedicated.server.HardwareSpecificationsDisk[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskGroups")]
-        public _dedicated_server.HardwareSpecificationsDisk[] DiskGroups { get; set; }//;
+        public _dedicated_server.HardwareSpecificationsDisk[]? DiskGroups { get; set; }//;
         
         // Key: expansionCards Type: dedicated.server.HardwareSpecificationsExpansionCard[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expansionCards")]
-        public _dedicated_server.HardwareSpecificationsExpansionCard[] ExpansionCards { get; set; }//;
+        public _dedicated_server.HardwareSpecificationsExpansionCard[]? ExpansionCards { get; set; }//;
         
         // Key: formFactor Type: dedicated.server.FormFactorEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("formFactor")]
-        public _dedicated_server.FormFactorEnum FormFactor { get; set; }//;
+        public _dedicated_server.FormFactorEnum? FormFactor { get; set; }//;
         
         // Key: memorySize Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memorySize")]
-        public _complexType.UnitAndValue<long> MemorySize { get; set; }//;
+        public _complexType.UnitAndValue<long>? MemorySize { get; set; }//;
         
         // Key: motherboard Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("motherboard")]
-        public string Motherboard { get; set; }//;
+        public System.String? Motherboard { get; set; }//;
         
         // Key: numberOfProcessors Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("numberOfProcessors")]
-        public long NumberOfProcessors { get; set; }//;
+        public System.Int64? NumberOfProcessors { get; set; }//;
         
         // Key: processorArchitecture Type: dedicated.server.CpuFamilyEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("processorArchitecture")]
-        public _dedicated_server.CpuFamilyEnum ProcessorArchitecture { get; set; }//;
+        public _dedicated_server.CpuFamilyEnum? ProcessorArchitecture { get; set; }//;
         
         // Key: processorName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("processorName")]
-        public string ProcessorName { get; set; }//;
+        public System.String? ProcessorName { get; set; }//;
         
         // Key: threadsPerProcessor Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("threadsPerProcessor")]
-        public long ThreadsPerProcessor { get; set; }//;
+        public System.Int64? ThreadsPerProcessor { get; set; }//;
         
         // Key: usbKeys Type: complexType.UnitAndValue<long>[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usbKeys")]
-        public _complexType.UnitAndValue<long> UsbKeys { get; set; }//;
+        public _complexType.UnitAndValue<long>? UsbKeys { get; set; }//;
     }
     
     // Id: HardwareSpecificationsDisk Namespace: dedicated.server
@@ -1326,35 +1326,35 @@ namespace _dedicated_server {
         
         // Key: defaultHardwareRaidSize Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultHardwareRaidSize")]
-        public _complexType.UnitAndValue<long> DefaultHardwareRaidSize { get; set; }//;
+        public _complexType.UnitAndValue<long>? DefaultHardwareRaidSize { get; set; }//;
         
         // Key: defaultHardwareRaidType Type: dedicated.server.HardwareSpecificationsRaidHardEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultHardwareRaidType")]
-        public _dedicated_server.HardwareSpecificationsRaidHardEnum DefaultHardwareRaidType { get; set; }//;
+        public _dedicated_server.HardwareSpecificationsRaidHardEnum? DefaultHardwareRaidType { get; set; }//;
         
         // Key: description Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: diskGroupId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskGroupId")]
-        public long DiskGroupId { get; set; }//;
+        public System.Int64? DiskGroupId { get; set; }//;
         
         // Key: diskSize Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskSize")]
-        public _complexType.UnitAndValue<long> DiskSize { get; set; }//;
+        public _complexType.UnitAndValue<long>? DiskSize { get; set; }//;
         
         // Key: diskType Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskType")]
-        public string DiskType { get; set; }//;
+        public System.String? DiskType { get; set; }//;
         
         // Key: numberOfDisks Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("numberOfDisks")]
-        public long NumberOfDisks { get; set; }//;
+        public System.Int64? NumberOfDisks { get; set; }//;
         
         // Key: raidController Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("raidController")]
-        public string RaidController { get; set; }//;
+        public System.String? RaidController { get; set; }//;
     }
     
     // Id: HardwareSpecificationsExpansionCard Namespace: dedicated.server
@@ -1412,31 +1412,27 @@ namespace _dedicated_server {
         
         // Key: customHostname Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customHostname")]
-        public string CustomHostname { get; set; }//;
+        public System.String? CustomHostname { get; set; }//;
         
         // Key: diskGroupId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskGroupId")]
-        public long DiskGroupId { get; set; }//;
+        public System.Int64? DiskGroupId { get; set; }//;
         
         // Key: noRaid Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("noRaid")]
-        public bool NoRaid { get; set; }//;
+        public System.Boolean? NoRaid { get; set; }//;
         
         // Key: postInstallationScriptLink Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postInstallationScriptLink")]
-        public string PostInstallationScriptLink { get; set; }//;
+        public System.String? PostInstallationScriptLink { get; set; }//;
         
         // Key: postInstallationScriptReturn Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postInstallationScriptReturn")]
-        public string PostInstallationScriptReturn { get; set; }//;
+        public System.String? PostInstallationScriptReturn { get; set; }//;
         
         // Key: softRaidDevices Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("softRaidDevices")]
-        public long SoftRaidDevices { get; set; }//;
-        
-        // Key: sshKeyName Type: string FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshKeyName")]
-        public string SshKeyName { get; set; }//;
+        public System.Int64? SoftRaidDevices { get; set; }//;
     }
     
     // Id: InstallTemplate Namespace: dedicated.server
@@ -1444,11 +1440,11 @@ namespace _dedicated_server {
         
         // Key: ovh Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovh")]
-        public string[] Ovh { get; set; }//;
+        public System.String[]? Ovh { get; set; }//;
         
         // Key: personal Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("personal")]
-        public string[] Personal { get; set; }//;
+        public System.String[]? Personal { get; set; }//;
     }
     
     // Id: InstallationProgressStatus Namespace: dedicated.server
@@ -1460,7 +1456,7 @@ namespace _dedicated_server {
         
         // Key: progress Type: dedicated.server.InstallationProgressSteps[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("progress")]
-        public _dedicated_server.InstallationProgressSteps[] Progress { get; set; }//;
+        public _dedicated_server.InstallationProgressSteps[]? Progress { get; set; }//;
     }
     
     // Id: InstallationProgressStatusEnum Namespace: dedicated.server
@@ -1500,7 +1496,7 @@ namespace _dedicated_server {
         
         // Key: error Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: status Type: dedicated.server.InstallationProgressStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -1524,7 +1520,7 @@ namespace _dedicated_server {
         
         // Key: date Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateTime Date { get; set; }//;
+        public System.DateTime? Date { get; set; }//;
         
         // Key: interventionId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interventionId")]
@@ -1532,7 +1528,7 @@ namespace _dedicated_server {
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public string Type { get; set; }//;
+        public System.String? Type { get; set; }//;
     }
     
     // Id: IpBlockSizeEnum Namespace: dedicated.server
@@ -1618,11 +1614,11 @@ namespace _dedicated_server {
         
         // Key: ipv4 Type: dedicated.server.IpOrderableDetails[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public _dedicated_server.IpOrderableDetails[] Ipv4 { get; set; }//;
+        public _dedicated_server.IpOrderableDetails[]? Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: dedicated.server.IpOrderableDetails[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public _dedicated_server.IpOrderableDetails[] Ipv6 { get; set; }//;
+        public _dedicated_server.IpOrderableDetails[]? Ipv6 { get; set; }//;
     }
     
     // Id: IpOrderableDetails Namespace: dedicated.server
@@ -1638,7 +1634,7 @@ namespace _dedicated_server {
         
         // Key: ipNumber Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipNumber")]
-        public long IpNumber { get; set; }//;
+        public System.Int64? IpNumber { get; set; }//;
         
         // Key: number Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
@@ -1646,7 +1642,7 @@ namespace _dedicated_server {
         
         // Key: optionRequired Type: dedicated.server.OptionRequiredEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("optionRequired")]
-        public _dedicated_server.OptionRequiredEnum OptionRequired { get; set; }//;
+        public _dedicated_server.OptionRequiredEnum? OptionRequired { get; set; }//;
         
         // Key: type Type: dedicated.server.IpTypeOrderableEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1699,11 +1695,11 @@ namespace _dedicated_server {
         
         // Key: expiration Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiration")]
-        public System.DateTime Expiration { get; set; }//;
+        public System.DateTime? Expiration { get; set; }//;
         
         // Key: value Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: IpmiSupportedFeatures Namespace: dedicated.server
@@ -1731,11 +1727,11 @@ namespace _dedicated_server {
         
         // Key: date Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateTime Date { get; set; }//;
+        public System.DateTime? Date { get; set; }//;
         
         // Key: status Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public string Status { get; set; }//;
+        public System.String? Status { get; set; }//;
     }
     
     // Id: IpmiTestTypeEnum Namespace: dedicated.server
@@ -1779,7 +1775,7 @@ namespace _dedicated_server {
         
         // Key: value Type: complexType.UnitAndValue<double> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public _complexType.UnitAndValue<double> Value { get; set; }//;
+        public _complexType.UnitAndValue<double>? Value { get; set; }//;
     }
     
     // Id: MrtgTypeEnum Namespace: dedicated.server
@@ -1829,27 +1825,27 @@ namespace _dedicated_server {
         
         // Key: bandwidth Type: dedicated.server.BandwidthDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bandwidth")]
-        public _dedicated_server.BandwidthDetails Bandwidth { get; set; }//;
+        public _dedicated_server.BandwidthDetails? Bandwidth { get; set; }//;
         
         // Key: connection Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connection")]
-        public _complexType.UnitAndValue<long> Connection { get; set; }//;
+        public _complexType.UnitAndValue<long>? Connection { get; set; }//;
         
         // Key: ola Type: dedicated.server.OlaDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ola")]
-        public _dedicated_server.OlaDetails Ola { get; set; }//;
+        public _dedicated_server.OlaDetails? Ola { get; set; }//;
         
         // Key: routing Type: dedicated.server.RoutingDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routing")]
-        public _dedicated_server.RoutingDetails Routing { get; set; }//;
+        public _dedicated_server.RoutingDetails? Routing { get; set; }//;
         
         // Key: switching Type: dedicated.server.SwitchingDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("switching")]
-        public _dedicated_server.SwitchingDetails Switching { get; set; }//;
+        public _dedicated_server.SwitchingDetails? Switching { get; set; }//;
         
         // Key: traffic Type: dedicated.server.TrafficDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("traffic")]
-        public _dedicated_server.TrafficDetails Traffic { get; set; }//;
+        public _dedicated_server.TrafficDetails? Traffic { get; set; }//;
         
         // Key: vmac Type: dedicated.server.VmacDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmac")]
@@ -1857,7 +1853,7 @@ namespace _dedicated_server {
         
         // Key: vrack Type: dedicated.server.BandwidthvRackDetails FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
-        public _dedicated_server.BandwidthvRackDetails Vrack { get; set; }//;
+        public _dedicated_server.BandwidthvRackDetails? Vrack { get; set; }//;
     }
     
     // Id: Networking Namespace: dedicated.server
@@ -1865,7 +1861,7 @@ namespace _dedicated_server {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: interfaces Type: dedicated.server.Interfaces[] FullType: dedicated.server.Interfaces[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interfaces")]
@@ -1873,7 +1869,7 @@ namespace _dedicated_server {
         
         // Key: status Type: dedicated.server.NetworkingOperationEnum FullType: dedicated.server.NetworkingOperationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _dedicated_server.NetworkingOperationEnum Status { get; set; }//;
+        public _dedicated_server.NetworkingOperationEnum? Status { get; set; }//;
     }
     
     // Id: NetworkingOperationEnum Namespace: dedicated.server
@@ -1925,7 +1921,7 @@ namespace _dedicated_server {
         
         // Key: supportedModes Type: dedicated.virtualNetworkInterface.VirtualNetworkInterfaceModeEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("supportedModes")]
-        public _dedicated_virtualNetworkInterface.VirtualNetworkInterfaceModeEnum[] SupportedModes { get; set; }//;
+        public _dedicated_virtualNetworkInterface.VirtualNetworkInterfaceModeEnum[]? SupportedModes { get; set; }//;
     }
     
     // Id: OlaInterface Namespace: dedicated.server
@@ -1959,11 +1955,11 @@ namespace _dedicated_server {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: function Type: dedicated.OperationFunctionEnum FullType: dedicated.OperationFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -1971,7 +1967,7 @@ namespace _dedicated_server {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: operationId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operationId")]
@@ -2105,11 +2101,11 @@ namespace _dedicated_server {
         
         // Key: gpu Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpu")]
-        public string Gpu { get; set; }//;
+        public System.String? Gpu { get; set; }//;
         
         // Key: memory Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memory")]
-        public string Memory { get; set; }//;
+        public System.String? Memory { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
@@ -2117,7 +2113,7 @@ namespace _dedicated_server {
         
         // Key: regions Type: dedicated.server.AvailabilityByRegion[] FullType: dedicated.server.AvailabilityByRegion[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regions")]
-        public _dedicated_server.AvailabilityByRegion[] Regions { get; set; }//;
+        public _dedicated_server.AvailabilityByRegion[]? Regions { get; set; }//;
         
         // Key: server Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
@@ -2125,11 +2121,11 @@ namespace _dedicated_server {
         
         // Key: storage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public string Storage { get; set; }//;
+        public System.String? Storage { get; set; }//;
         
         // Key: systemStorage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("systemStorage")]
-        public string SystemStorage { get; set; }//;
+        public System.String? SystemStorage { get; set; }//;
     }
     
     // Id: RoutingDetails Namespace: dedicated.server
@@ -2137,11 +2133,11 @@ namespace _dedicated_server {
         
         // Key: ipv4 Type: dedicated.server.RoutingDetailsIpv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public _dedicated_server.RoutingDetailsIpv4 Ipv4 { get; set; }//;
+        public _dedicated_server.RoutingDetailsIpv4? Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: dedicated.server.RoutingDetailsIpv6 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public _dedicated_server.RoutingDetailsIpv6 Ipv6 { get; set; }//;
+        public _dedicated_server.RoutingDetailsIpv6? Ipv6 { get; set; }//;
     }
     
     // Id: RoutingDetailsIpv4 Namespace: dedicated.server
@@ -2149,15 +2145,15 @@ namespace _dedicated_server {
         
         // Key: gateway Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public string Gateway { get; set; }//;
+        public System.String? Gateway { get; set; }//;
         
         // Key: ip Type: ipv4 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: network Type: ipv4Block FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public string Network { get; set; }//;
+        public System.String? Network { get; set; }//;
     }
     
     // Id: RoutingDetailsIpv6 Namespace: dedicated.server
@@ -2165,15 +2161,15 @@ namespace _dedicated_server {
         
         // Key: gateway Type: ipv6 FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public string Gateway { get; set; }//;
+        public System.String? Gateway { get; set; }//;
         
         // Key: ip Type: ipv6Block FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: network Type: ipv6Block FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public string Network { get; set; }//;
+        public System.String? Network { get; set; }//;
     }
     
     // Id: ServerBurst Namespace: dedicated.server
@@ -2181,7 +2177,7 @@ namespace _dedicated_server {
         
         // Key: capacity Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("capacity")]
-        public _complexType.UnitAndValue<long> Capacity { get; set; }//;
+        public _complexType.UnitAndValue<long>? Capacity { get; set; }//;
         
         // Key: status Type: dedicated.server.BurstStatusEnum FullType: dedicated.server.BurstStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -2251,7 +2247,7 @@ namespace _dedicated_server {
         
         // Key: levels Type: dedicated.server.SupportLevelOrderableEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("levels")]
-        public _dedicated_server.SupportLevelOrderableEnum[] Levels { get; set; }//;
+        public _dedicated_server.SupportLevelOrderableEnum[]? Levels { get; set; }//;
         
         // Key: orderable Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderable")]
@@ -2280,7 +2276,7 @@ namespace _dedicated_server {
         
         // Key: slot_id Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slot_id")]
-        public long Slot_id { get; set; }//;
+        public System.Int64? Slot_id { get; set; }//;
     }
     
     // Id: SwitchingDetails Namespace: dedicated.server
@@ -2288,7 +2284,7 @@ namespace _dedicated_server {
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
     
     // Id: TrafficDetails Namespace: dedicated.server
@@ -2296,27 +2292,27 @@ namespace _dedicated_server {
         
         // Key: inputQuotaSize Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inputQuotaSize")]
-        public _complexType.UnitAndValue<long> InputQuotaSize { get; set; }//;
+        public _complexType.UnitAndValue<long>? InputQuotaSize { get; set; }//;
         
         // Key: inputQuotaUsed Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inputQuotaUsed")]
-        public _complexType.UnitAndValue<long> InputQuotaUsed { get; set; }//;
+        public _complexType.UnitAndValue<long>? InputQuotaUsed { get; set; }//;
         
         // Key: isThrottled Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isThrottled")]
-        public bool IsThrottled { get; set; }//;
+        public System.Boolean? IsThrottled { get; set; }//;
         
         // Key: outputQuotaSize Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("outputQuotaSize")]
-        public _complexType.UnitAndValue<long> OutputQuotaSize { get; set; }//;
+        public _complexType.UnitAndValue<long>? OutputQuotaSize { get; set; }//;
         
         // Key: outputQuotaUsed Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("outputQuotaUsed")]
-        public _complexType.UnitAndValue<long> OutputQuotaUsed { get; set; }//;
+        public _complexType.UnitAndValue<long>? OutputQuotaUsed { get; set; }//;
         
         // Key: resetQuotaDate Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resetQuotaDate")]
-        public string ResetQuotaDate { get; set; }//;
+        public System.String? ResetQuotaDate { get; set; }//;
     }
     
     // Id: TrafficOrderEnum Namespace: dedicated.server
@@ -2341,7 +2337,7 @@ namespace _dedicated_server {
         
         // Key: traffic Type: dedicated.server.TrafficOrderEnum[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("traffic")]
-        public _dedicated_server.TrafficOrderEnum[] Traffic { get; set; }//;
+        public _dedicated_server.TrafficOrderEnum[]? Traffic { get; set; }//;
     }
     
     // Id: UsbKeyCapacityEnum Namespace: dedicated.server
@@ -2371,7 +2367,7 @@ namespace _dedicated_server {
         
         // Key: optionRequired Type: dedicated.server.OptionRequiredEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("optionRequired")]
-        public _dedicated_server.OptionRequiredEnum OptionRequired { get; set; }//;
+        public _dedicated_server.OptionRequiredEnum? OptionRequired { get; set; }//;
         
         // Key: orderable Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderable")]
@@ -2431,7 +2427,7 @@ namespace _dedicated_server {
         
         // Key: vrack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
-        public string Vrack { get; set; }//;
+        public System.String? Vrack { get; set; }//;
     }
     
     // Id: VmacDetails Namespace: dedicated.server
@@ -2461,7 +2457,7 @@ namespace _dedicated_server {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

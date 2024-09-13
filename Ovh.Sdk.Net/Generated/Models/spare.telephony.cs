@@ -35,7 +35,7 @@ namespace _spare_telephony {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: macAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("macAddress")]

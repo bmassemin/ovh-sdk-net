@@ -190,7 +190,7 @@ namespace _webPaaS {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: metadata Type: webPaaS.SubscriptionMetadata FullType: webPaaS.SubscriptionMetadata
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metadata")]
@@ -202,7 +202,7 @@ namespace _webPaaS {
         
         // Key: partnerProjectId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnerProjectId")]
-        public string PartnerProjectId { get; set; }//;
+        public System.String? PartnerProjectId { get; set; }//;
         
         // Key: projectName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("projectName")]
@@ -214,7 +214,7 @@ namespace _webPaaS {
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
-        public System.DateTime StartDate { get; set; }//;
+        public System.DateTime? StartDate { get; set; }//;
         
         // Key: status Type: webPaaS.StatusEnum FullType: webPaaS.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -250,7 +250,7 @@ namespace _webPaaS {
         
         // Key: customer Type: webPaaS.subscription.Customer FullType: webPaaS.subscription.Customer
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customer")]
-        public _webPaaS_subscription.Customer Customer { get; set; }//;
+        public _webPaaS_subscription.Customer? Customer { get; set; }//;
         
         // Key: partnerConsole Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnerConsole")]
@@ -258,7 +258,7 @@ namespace _webPaaS {
         
         // Key: project Type: webPaaS.subscriptionMetadata.Project FullType: webPaaS.subscriptionMetadata.Project
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("project")]
-        public _webPaaS_subscriptionMetadata.Project Project { get; set; }//;
+        public _webPaaS_subscriptionMetadata.Project? Project { get; set; }//;
     }
     
     // Id: Subscription Namespace: webPaaS
@@ -274,11 +274,11 @@ namespace _webPaaS {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: metadata Type: webPaaS.SubscriptionMetadata FullType: webPaaS.SubscriptionMetadata
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metadata")]
@@ -290,7 +290,7 @@ namespace _webPaaS {
         
         // Key: partnerProjectId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnerProjectId")]
-        public string PartnerProjectId { get; set; }//;
+        public System.String? PartnerProjectId { get; set; }//;
         
         // Key: projectName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("projectName")]
@@ -302,7 +302,7 @@ namespace _webPaaS {
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
-        public System.DateTime StartDate { get; set; }//;
+        public System.DateTime? StartDate { get; set; }//;
         
         // Key: status Type: webPaaS.StatusEnum FullType: webPaaS.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

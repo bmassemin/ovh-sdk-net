@@ -47,7 +47,7 @@ namespace _hosting_privateDatabase_Whitelist {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: service Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("service")]

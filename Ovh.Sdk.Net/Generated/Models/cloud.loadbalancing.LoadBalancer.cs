@@ -127,7 +127,7 @@ namespace _cloud_loadbalancing_loadbalancer {
         
         // Key: weight Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("weight")]
-        public long Weight { get; set; }//;
+        public System.Int64? Weight { get; set; }//;
     }
     
     // Id: PoolCreate Namespace: cloud.loadbalancing.loadbalancer
@@ -139,7 +139,7 @@ namespace _cloud_loadbalancing_loadbalancer {
         
         // Key: healthMonitor Type: cloud.loadbalancing.HealthMonitorCreate FullType: cloud.loadbalancing.HealthMonitorCreate
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("healthMonitor")]
-        public _cloud_loadbalancing.HealthMonitorCreate HealthMonitor { get; set; }//;
+        public _cloud_loadbalancing.HealthMonitorCreate? HealthMonitor { get; set; }//;
         
         // Key: members Type: cloud.loadbalancing.loadbalancer.MemberCreate[] FullType: cloud.loadbalancing.loadbalancer.MemberCreate[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("members")]

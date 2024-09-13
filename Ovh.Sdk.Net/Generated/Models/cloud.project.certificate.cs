@@ -19,7 +19,7 @@ namespace _cloud_project_certificate {
         
         // Key: chain Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("chain")]
-        public string Chain { get; set; }//;
+        public System.String? Chain { get; set; }//;
         
         // Key: key Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]

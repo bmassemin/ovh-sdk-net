@@ -27,7 +27,7 @@ namespace _vip {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]

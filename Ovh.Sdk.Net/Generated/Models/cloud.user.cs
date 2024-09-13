@@ -158,7 +158,7 @@ namespace _cloud_user {
         
         // Key: openstackId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("openstackId")]
-        public string OpenstackId { get; set; }//;
+        public System.String? OpenstackId { get; set; }//;
         
         // Key: roles Type: cloud.role.Role[] FullType: cloud.role.Role[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("roles")]
@@ -190,7 +190,7 @@ namespace _cloud_user {
         
         // Key: openstackId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("openstackId")]
-        public string OpenstackId { get; set; }//;
+        public System.String? OpenstackId { get; set; }//;
         
         // Key: password Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]

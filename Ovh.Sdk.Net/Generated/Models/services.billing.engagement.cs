@@ -47,7 +47,7 @@ namespace _services_billing_engagement {
         
         // Key: endRule Type: services.billing.engagement.EndRule FullType: services.billing.engagement.EndRule
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endRule")]
-        public _services_billing_engagement.EndRule EndRule { get; set; }//;
+        public _services_billing_engagement.EndRule? EndRule { get; set; }//;
     }
     
     // Id: EngagementFlushOrder Namespace: services.billing.engagement
@@ -79,7 +79,7 @@ namespace _services_billing_engagement {
         
         // Key: endDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateOnly EndDate { get; set; }//;
+        public System.DateOnly? EndDate { get; set; }//;
         
         // Key: startDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -95,7 +95,7 @@ namespace _services_billing_engagement {
         
         // Key: order Type: order.Order FullType: order.Order
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("order")]
-        public _order.Order Order { get; set; }//;
+        public _order.Order? Order { get; set; }//;
         
         // Key: pricing Type: services.billing.Pricing FullType: services.billing.Pricing
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricing")]

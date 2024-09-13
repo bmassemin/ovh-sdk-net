@@ -15,39 +15,39 @@ namespace _cdn_domain_option {
         
         // Key: destination Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destination")]
-        public string Destination { get; set; }//;
+        public System.String? Destination { get; set; }//;
         
         // Key: followUri Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("followUri")]
-        public bool FollowUri { get; set; }//;
+        public System.Boolean? FollowUri { get; set; }//;
         
         // Key: origins Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("origins")]
-        public string Origins { get; set; }//;
+        public System.String? Origins { get; set; }//;
         
         // Key: patternType Type: cdn.OptionPatternTypeEnum FullType: cdn.OptionPatternTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("patternType")]
-        public _cdn.OptionPatternTypeEnum PatternType { get; set; }//;
+        public _cdn.OptionPatternTypeEnum? PatternType { get; set; }//;
         
         // Key: priority Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("priority")]
-        public long Priority { get; set; }//;
+        public System.Int64? Priority { get; set; }//;
         
         // Key: queryParameters Type: cdn.OptionQueryParametersEnum FullType: cdn.OptionQueryParametersEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queryParameters")]
-        public _cdn.OptionQueryParametersEnum QueryParameters { get; set; }//;
+        public _cdn.OptionQueryParametersEnum? QueryParameters { get; set; }//;
         
         // Key: resources Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resources")]
-        public string[] Resources { get; set; }//;
+        public System.String[]? Resources { get; set; }//;
         
         // Key: statusCode Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("statusCode")]
-        public long StatusCode { get; set; }//;
+        public System.Int64? StatusCode { get; set; }//;
         
         // Key: ttl Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ttl")]
-        public long Ttl { get; set; }//;
+        public System.Int64? Ttl { get; set; }//;
     }
     
     // Id: extra Namespace: cdn.domain.option
@@ -55,10 +55,10 @@ namespace _cdn_domain_option {
         
         // Key: quota Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
-        public long Quota { get; set; }//;
+        public System.Int64? Quota { get; set; }//;
         
         // Key: usage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usage")]
-        public long Usage { get; set; }//;
+        public System.Int64? Usage { get; set; }//;
     }
 }

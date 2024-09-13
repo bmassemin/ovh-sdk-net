@@ -23,7 +23,7 @@ namespace _services_expanded_technical_baremetalServer {
         
         // Key: aggregation Type: services.expanded.technical.baremetalServer.Aggregation FullType: services.expanded.technical.baremetalServer.Aggregation
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("aggregation")]
-        public _services_expanded_technical_baremetalServer.Aggregation Aggregation { get; set; }//;
+        public _services_expanded_technical_baremetalServer.Aggregation? Aggregation { get; set; }//;
         
         // Key: burst Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("burst")]
@@ -99,7 +99,7 @@ namespace _services_expanded_technical_baremetalServer {
         
         // Key: extensionCard Type: services.expanded.technical.baremetalServer.server.ExtensionCard FullType: services.expanded.technical.baremetalServer.server.ExtensionCard
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("extensionCard")]
-        public _services_expanded_technical_baremetalServer_server.ExtensionCard ExtensionCard { get; set; }//;
+        public _services_expanded_technical_baremetalServer_server.ExtensionCard? ExtensionCard { get; set; }//;
         
         // Key: frame Type: services.expanded.technical.baremetalServer.server.Frame FullType: services.expanded.technical.baremetalServer.server.Frame
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frame")]
@@ -107,7 +107,7 @@ namespace _services_expanded_technical_baremetalServer {
         
         // Key: network Type: services.expanded.technical.baremetalServer.server.Network FullType: services.expanded.technical.baremetalServer.server.Network
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public _services_expanded_technical_baremetalServer_server.Network Network { get; set; }//;
+        public _services_expanded_technical_baremetalServer_server.Network? Network { get; set; }//;
         
         // Key: range Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("range")]
@@ -115,11 +115,11 @@ namespace _services_expanded_technical_baremetalServer {
         
         // Key: services Type: services.expanded.technical.baremetalServer.server.Services FullType: services.expanded.technical.baremetalServer.server.Services
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("services")]
-        public _services_expanded_technical_baremetalServer_server.Services Services { get; set; }//;
+        public _services_expanded_technical_baremetalServer_server.Services? Services { get; set; }//;
         
         // Key: useCase Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("useCase")]
-        public string UseCase { get; set; }//;
+        public System.String? UseCase { get; set; }//;
     }
     
     // Id: Storage Namespace: services.expanded.technical.baremetalServer
@@ -139,7 +139,7 @@ namespace _services_expanded_technical_baremetalServer {
         
         // Key: raidDetails Type: services.expanded.technical.baremetalServer.storage.Raid FullType: services.expanded.technical.baremetalServer.storage.Raid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("raidDetails")]
-        public _services_expanded_technical_baremetalServer_storage.Raid RaidDetails { get; set; }//;
+        public _services_expanded_technical_baremetalServer_storage.Raid? RaidDetails { get; set; }//;
     }
     
     // Id: Vrack Namespace: services.expanded.technical.baremetalServer
@@ -147,7 +147,7 @@ namespace _services_expanded_technical_baremetalServer {
         
         // Key: aggregation Type: services.expanded.technical.baremetalServer.Aggregation FullType: services.expanded.technical.baremetalServer.Aggregation
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("aggregation")]
-        public _services_expanded_technical_baremetalServer.Aggregation Aggregation { get; set; }//;
+        public _services_expanded_technical_baremetalServer.Aggregation? Aggregation { get; set; }//;
         
         // Key: burst Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("burst")]

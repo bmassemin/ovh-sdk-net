@@ -15,38 +15,38 @@ namespace _cdn_operation {
         
         // Key: anycastIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("anycastIp")]
-        public string AnycastIp { get; set; }//;
+        public System.String? AnycastIp { get; set; }//;
         
         // Key: cluster Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cluster")]
-        public string Cluster { get; set; }//;
+        public System.String? Cluster { get; set; }//;
         
         // Key: date Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateOnly Date { get; set; }//;
+        public System.DateOnly? Date { get; set; }//;
         
         // Key: domainName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainName")]
-        public string DomainName { get; set; }//;
+        public System.String? DomainName { get; set; }//;
         
         // Key: fingerprint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fingerprint")]
-        public string Fingerprint { get; set; }//;
+        public System.String? Fingerprint { get; set; }//;
         
         // Key: offer Type: cdn.OperationOfferEnum FullType: cdn.OperationOfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public _cdn.OperationOfferEnum Offer { get; set; }//;
+        public _cdn.OperationOfferEnum? Offer { get; set; }//;
         
         // Key: pattern Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pattern")]
-        public string Pattern { get; set; }//;
+        public System.String? Pattern { get; set; }//;
         
         // Key: service Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("service")]
-        public string Service { get; set; }//;
+        public System.String? Service { get; set; }//;
         
         // Key: sslId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslId")]
-        public long SslId { get; set; }//;
+        public System.Int64? SslId { get; set; }//;
     }
 }

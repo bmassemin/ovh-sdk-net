@@ -15,7 +15,7 @@ namespace _api {
         
         // Key: allowedIPs Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedIPs")]
-        public string[] AllowedIPs { get; set; }//;
+        public System.String[]? AllowedIPs { get; set; }//;
         
         // Key: applicationId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("applicationId")]
@@ -31,11 +31,11 @@ namespace _api {
         
         // Key: expiration Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiration")]
-        public System.DateTime Expiration { get; set; }//;
+        public System.DateTime? Expiration { get; set; }//;
         
         // Key: lastUse Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUse")]
-        public System.DateTime LastUse { get; set; }//;
+        public System.DateTime? LastUse { get; set; }//;
         
         // Key: ovhSupport Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhSupport")]
@@ -103,7 +103,7 @@ namespace _api {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: logId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logId")]

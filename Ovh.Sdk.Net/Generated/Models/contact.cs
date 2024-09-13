@@ -51,19 +51,19 @@ namespace _contact {
         
         // Key: line2 Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("line2")]
-        public string Line2 { get; set; }//;
+        public System.String? Line2 { get; set; }//;
         
         // Key: line3 Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("line3")]
-        public string Line3 { get; set; }//;
+        public System.String? Line3 { get; set; }//;
         
         // Key: otherDetails Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("otherDetails")]
-        public string OtherDetails { get; set; }//;
+        public System.String? OtherDetails { get; set; }//;
         
         // Key: province Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("province")]
-        public string Province { get; set; }//;
+        public System.String? Province { get; set; }//;
         
         // Key: zip Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zip")]
@@ -79,27 +79,27 @@ namespace _contact {
         
         // Key: birthCity Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthCity")]
-        public string BirthCity { get; set; }//;
+        public System.String? BirthCity { get; set; }//;
         
         // Key: birthCountry Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthCountry")]
-        public _nichandle.CountryEnum BirthCountry { get; set; }//;
+        public _nichandle.CountryEnum? BirthCountry { get; set; }//;
         
         // Key: birthDay Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthDay")]
-        public System.DateOnly BirthDay { get; set; }//;
+        public System.DateOnly? BirthDay { get; set; }//;
         
         // Key: birthZip Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthZip")]
-        public string BirthZip { get; set; }//;
+        public System.String? BirthZip { get; set; }//;
         
         // Key: cellPhone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cellPhone")]
-        public string CellPhone { get; set; }//;
+        public System.String? CellPhone { get; set; }//;
         
         // Key: companyNationalIdentificationNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("companyNationalIdentificationNumber")]
-        public string CompanyNationalIdentificationNumber { get; set; }//;
+        public System.String? CompanyNationalIdentificationNumber { get; set; }//;
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
@@ -107,7 +107,7 @@ namespace _contact {
         
         // Key: fax Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fax")]
-        public string Fax { get; set; }//;
+        public System.String? Fax { get; set; }//;
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
@@ -115,7 +115,7 @@ namespace _contact {
         
         // Key: gender Type: nichandle.GenderEnum FullType: nichandle.GenderEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gender")]
-        public _nichandle.GenderEnum Gender { get; set; }//;
+        public _nichandle.GenderEnum? Gender { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -135,31 +135,31 @@ namespace _contact {
         
         // Key: nationalIdentificationNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nationalIdentificationNumber")]
-        public string NationalIdentificationNumber { get; set; }//;
+        public System.String? NationalIdentificationNumber { get; set; }//;
         
         // Key: nationality Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nationality")]
-        public _nichandle.CountryEnum Nationality { get; set; }//;
+        public _nichandle.CountryEnum? Nationality { get; set; }//;
         
         // Key: organisationName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationName")]
-        public string OrganisationName { get; set; }//;
+        public System.String? OrganisationName { get; set; }//;
         
         // Key: organisationType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisationType")]
-        public string OrganisationType { get; set; }//;
+        public System.String? OrganisationType { get; set; }//;
         
         // Key: phone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
-        public string Phone { get; set; }//;
+        public System.String? Phone { get; set; }//;
         
         // Key: spareEmail Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spareEmail")]
-        public string SpareEmail { get; set; }//;
+        public System.String? SpareEmail { get; set; }//;
         
         // Key: vat Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vat")]
-        public string Vat { get; set; }//;
+        public System.String? Vat { get; set; }//;
     }
     
     // Id: FieldInformation Namespace: contact

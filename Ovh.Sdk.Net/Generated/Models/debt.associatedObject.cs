@@ -15,7 +15,7 @@ namespace _debt_associatedObject {
         
         // Key: description Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: paymentType Type: billing.PaymentMeanEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentType")]
@@ -23,7 +23,7 @@ namespace _debt_associatedObject {
         
         // Key: publicLabel Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicLabel")]
-        public string PublicLabel { get; set; }//;
+        public System.String? PublicLabel { get; set; }//;
     }
     
     // Id: TypeEnum Namespace: debt.associatedObject

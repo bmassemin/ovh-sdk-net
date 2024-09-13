@@ -27,7 +27,7 @@ namespace _cloud_quota_storage {
         
         // Key: quotaBytes Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quotaBytes")]
-        public long QuotaBytes { get; set; }//;
+        public System.Int64? QuotaBytes { get; set; }//;
     }
     
     // Id: QuotaUpdate Namespace: cloud.quota.storage

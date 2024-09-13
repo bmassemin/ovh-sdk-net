@@ -19,11 +19,11 @@ namespace _nutanix {
         
         // Key: deploymentType Type: nutanix.DeploymentTypeEnum FullType: nutanix.DeploymentTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deploymentType")]
-        public _nutanix.DeploymentTypeEnum DeploymentType { get; set; }//;
+        public _nutanix.DeploymentTypeEnum? DeploymentType { get; set; }//;
         
         // Key: erasureCoding Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("erasureCoding")]
-        public bool ErasureCoding { get; set; }//;
+        public System.Boolean? ErasureCoding { get; set; }//;
         
         // Key: fqn Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fqn")]
@@ -39,7 +39,7 @@ namespace _nutanix {
         
         // Key: redundancyFactor Type: nutanix.RedundancyFactorEnum FullType: nutanix.RedundancyFactorEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redundancyFactor")]
-        public _nutanix.RedundancyFactorEnum RedundancyFactor { get; set; }//;
+        public _nutanix.RedundancyFactorEnum? RedundancyFactor { get; set; }//;
         
         // Key: server Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
@@ -51,7 +51,7 @@ namespace _nutanix {
         
         // Key: systemStorage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("systemStorage")]
-        public string SystemStorage { get; set; }//;
+        public System.String? SystemStorage { get; set; }//;
     }
     
     // Id: AvailabilitiesRawDatacenter Namespace: nutanix
@@ -67,7 +67,7 @@ namespace _nutanix {
         
         // Key: lastRule Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastRule")]
-        public string LastRule { get; set; }//;
+        public System.String? LastRule { get; set; }//;
         
         // Key: parentAvailable Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentAvailable")]
@@ -158,11 +158,11 @@ namespace _nutanix {
         
         // Key: deploymentType Type: nutanix.DeploymentTypeEnum FullType: nutanix.DeploymentTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deploymentType")]
-        public _nutanix.DeploymentTypeEnum DeploymentType { get; set; }//;
+        public _nutanix.DeploymentTypeEnum? DeploymentType { get; set; }//;
         
         // Key: erasureCoding Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("erasureCoding")]
-        public bool ErasureCoding { get; set; }//;
+        public System.Boolean? ErasureCoding { get; set; }//;
         
         // Key: fqn Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fqn")]
@@ -178,7 +178,7 @@ namespace _nutanix {
         
         // Key: redundancyFactor Type: nutanix.RedundancyFactorEnum FullType: nutanix.RedundancyFactorEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redundancyFactor")]
-        public _nutanix.RedundancyFactorEnum RedundancyFactor { get; set; }//;
+        public _nutanix.RedundancyFactorEnum? RedundancyFactor { get; set; }//;
         
         // Key: server Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
@@ -190,7 +190,7 @@ namespace _nutanix {
         
         // Key: systemStorage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("systemStorage")]
-        public string SystemStorage { get; set; }//;
+        public System.String? SystemStorage { get; set; }//;
     }
     
     // Id: cluster Namespace: nutanix
@@ -336,7 +336,7 @@ namespace _nutanix {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]

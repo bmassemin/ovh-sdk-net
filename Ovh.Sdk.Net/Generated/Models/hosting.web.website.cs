@@ -55,11 +55,11 @@ namespace _hosting_web_website {
         
         // Key: vcsCommitId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vcsCommitId")]
-        public string VcsCommitId { get; set; }//;
+        public System.String? VcsCommitId { get; set; }//;
         
         // Key: vcsCommitMessage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vcsCommitMessage")]
-        public string VcsCommitMessage { get; set; }//;
+        public System.String? VcsCommitMessage { get; set; }//;
         
         // Key: websiteId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("websiteId")]
@@ -101,6 +101,6 @@ namespace _hosting_web_website {
         
         // Key: vcsBranch Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vcsBranch")]
-        public string VcsBranch { get; set; }//;
+        public System.String? VcsBranch { get; set; }//;
     }
 }

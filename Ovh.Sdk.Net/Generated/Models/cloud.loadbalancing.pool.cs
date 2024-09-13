@@ -47,7 +47,7 @@ namespace _cloud_loadbalancing_pool {
         
         // Key: weight Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("weight")]
-        public long Weight { get; set; }//;
+        public System.Int64? Weight { get; set; }//;
     }
     
     // Id: MemberUpdate Namespace: cloud.loadbalancing.pool
@@ -55,10 +55,10 @@ namespace _cloud_loadbalancing_pool {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: weight Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("weight")]
-        public long Weight { get; set; }//;
+        public System.Int64? Weight { get; set; }//;
     }
 }

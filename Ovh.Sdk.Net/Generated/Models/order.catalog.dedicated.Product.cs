@@ -31,7 +31,7 @@ namespace _order_catalog_dedicated_Product {
         
         // Key: datacenters Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenters")]
-        public string[] Datacenters { get; set; }//;
+        public System.String[]? Datacenters { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -39,7 +39,7 @@ namespace _order_catalog_dedicated_Product {
         
         // Key: options Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("options")]
-        public string Options { get; set; }//;
+        public System.String? Options { get; set; }//;
         
         // Key: price Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("price")]
@@ -55,11 +55,11 @@ namespace _order_catalog_dedicated_Product {
         
         // Key: restrictions Type: order.catalog.dedicated.Product.Compatibility.Restriction[] FullType: order.catalog.dedicated.Product.Compatibility.Restriction[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("restrictions")]
-        public _order_catalog_dedicated_Product_Compatibility.Restriction[] Restrictions { get; set; }//;
+        public _order_catalog_dedicated_Product_Compatibility.Restriction[]? Restrictions { get; set; }//;
         
         // Key: specificities Type: order.catalog.dedicated.TechDetails.Plan.Specificity[] FullType: order.catalog.dedicated.TechDetails.Plan.Specificity[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("specificities")]
-        public _order_catalog_dedicated_TechDetails_Plan.Specificity[] Specificities { get; set; }//;
+        public _order_catalog_dedicated_TechDetails_Plan.Specificity[]? Specificities { get; set; }//;
     }
     
     // Id: Price Namespace: order.catalog.dedicated.Product
@@ -71,11 +71,11 @@ namespace _order_catalog_dedicated_Product {
         
         // Key: hardzone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardzone")]
-        public string Hardzone { get; set; }//;
+        public System.String? Hardzone { get; set; }//;
         
         // Key: week Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("week")]
-        public string Week { get; set; }//;
+        public System.String? Week { get; set; }//;
     }
     
     // Id: Specification Namespace: order.catalog.dedicated.Product
@@ -83,19 +83,19 @@ namespace _order_catalog_dedicated_Product {
         
         // Key: cpu Type: order.catalog.dedicated.Product.Specification.CPU FullType: order.catalog.dedicated.Product.Specification.CPU
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpu")]
-        public _order_catalog_dedicated_Product_Specification.CPU Cpu { get; set; }//;
+        public _order_catalog_dedicated_Product_Specification.CPU? Cpu { get; set; }//;
         
         // Key: disks Type: order.catalog.dedicated.Product.Specification.Disk[] FullType: order.catalog.dedicated.Product.Specification.Disk[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disks")]
-        public _order_catalog_dedicated_Product_Specification.Disk[] Disks { get; set; }//;
+        public _order_catalog_dedicated_Product_Specification.Disk[]? Disks { get; set; }//;
         
         // Key: gpu Type: order.catalog.dedicated.Product.Specification.GPU FullType: order.catalog.dedicated.Product.Specification.GPU
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpu")]
-        public _order_catalog_dedicated_Product_Specification.GPU Gpu { get; set; }//;
+        public _order_catalog_dedicated_Product_Specification.GPU? Gpu { get; set; }//;
         
         // Key: memory Type: order.catalog.dedicated.Product.Specification.Memory FullType: order.catalog.dedicated.Product.Specification.Memory
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memory")]
-        public _order_catalog_dedicated_Product_Specification.Memory Memory { get; set; }//;
+        public _order_catalog_dedicated_Product_Specification.Memory? Memory { get; set; }//;
         
         // Key: network Type: order.catalog.dedicated.Product.Specification.Network FullType: order.catalog.dedicated.Product.Specification.Network
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]

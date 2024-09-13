@@ -15,31 +15,31 @@ namespace _dedicated_server_backup {
         
         // Key: cloudProject Type: dedicated.server.backup.BackupProject FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cloudProject")]
-        public _dedicated_server_backup.BackupProject CloudProject { get; set; }//;
+        public _dedicated_server_backup.BackupProject? CloudProject { get; set; }//;
         
         // Key: id Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public string Id { get; set; }//;
+        public System.String? Id { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: quota Type: dedicated.server.backup.BackupQuota FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
-        public _dedicated_server_backup.BackupQuota Quota { get; set; }//;
+        public _dedicated_server_backup.BackupQuota? Quota { get; set; }//;
         
         // Key: region Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
         
         // Key: sftp Type: dedicated.server.backup.BackupSftp FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sftp")]
-        public _dedicated_server_backup.BackupSftp Sftp { get; set; }//;
+        public _dedicated_server_backup.BackupSftp? Sftp { get; set; }//;
         
         // Key: swift Type: dedicated.server.backup.BackupSwift FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("swift")]
-        public _dedicated_server_backup.BackupSwift Swift { get; set; }//;
+        public _dedicated_server_backup.BackupSwift? Swift { get; set; }//;
     }
     
     // Id: BackupOffer Namespace: dedicated.server.backup
@@ -47,19 +47,19 @@ namespace _dedicated_server_backup {
         
         // Key: maxArchive Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxArchive")]
-        public _complexType.UnitAndValue<long> MaxArchive { get; set; }//;
+        public _complexType.UnitAndValue<long>? MaxArchive { get; set; }//;
         
         // Key: maxBandwidthArchive Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxBandwidthArchive")]
-        public _complexType.UnitAndValue<long> MaxBandwidthArchive { get; set; }//;
+        public _complexType.UnitAndValue<long>? MaxBandwidthArchive { get; set; }//;
         
         // Key: maxBandwidthStorage Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxBandwidthStorage")]
-        public _complexType.UnitAndValue<long> MaxBandwidthStorage { get; set; }//;
+        public _complexType.UnitAndValue<long>? MaxBandwidthStorage { get; set; }//;
         
         // Key: maxStorage Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxStorage")]
-        public _complexType.UnitAndValue<long> MaxStorage { get; set; }//;
+        public _complexType.UnitAndValue<long>? MaxStorage { get; set; }//;
     }
     
     // Id: BackupPassword Namespace: dedicated.server.backup
@@ -67,19 +67,19 @@ namespace _dedicated_server_backup {
         
         // Key: sftpArchive Type: password FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sftpArchive")]
-        public string SftpArchive { get; set; }//;
+        public System.String? SftpArchive { get; set; }//;
         
         // Key: sftpStorage Type: password FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sftpStorage")]
-        public string SftpStorage { get; set; }//;
+        public System.String? SftpStorage { get; set; }//;
         
         // Key: swiftArchive Type: password FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("swiftArchive")]
-        public string SwiftArchive { get; set; }//;
+        public System.String? SwiftArchive { get; set; }//;
         
         // Key: swiftStorage Type: password FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("swiftStorage")]
-        public string SwiftStorage { get; set; }//;
+        public System.String? SwiftStorage { get; set; }//;
     }
     
     // Id: BackupProject Namespace: dedicated.server.backup
@@ -87,11 +87,11 @@ namespace _dedicated_server_backup {
         
         // Key: description Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: projectId Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("projectId")]
-        public string ProjectId { get; set; }//;
+        public System.String? ProjectId { get; set; }//;
     }
     
     // Id: BackupQuota Namespace: dedicated.server.backup
@@ -99,19 +99,19 @@ namespace _dedicated_server_backup {
         
         // Key: maxBandwidth Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxBandwidth")]
-        public _complexType.UnitAndValue<long> MaxBandwidth { get; set; }//;
+        public _complexType.UnitAndValue<long>? MaxBandwidth { get; set; }//;
         
         // Key: maxStorage Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxStorage")]
-        public _complexType.UnitAndValue<long> MaxStorage { get; set; }//;
+        public _complexType.UnitAndValue<long>? MaxStorage { get; set; }//;
         
         // Key: storageUsed Type: complexType.UnitAndValue<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storageUsed")]
-        public _complexType.UnitAndValue<long> StorageUsed { get; set; }//;
+        public _complexType.UnitAndValue<long>? StorageUsed { get; set; }//;
         
         // Key: usagePercent Type: double FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usagePercent")]
-        public double UsagePercent { get; set; }//;
+        public System.Double? UsagePercent { get; set; }//;
     }
     
     // Id: BackupSftp Namespace: dedicated.server.backup
@@ -119,15 +119,15 @@ namespace _dedicated_server_backup {
         
         // Key: password Type: password FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
-        public string Password { get; set; }//;
+        public System.String? Password { get; set; }//;
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: username Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
-        public string Username { get; set; }//;
+        public System.String? Username { get; set; }//;
     }
     
     // Id: BackupStatus Namespace: dedicated.server.backup
@@ -139,7 +139,7 @@ namespace _dedicated_server_backup {
         
         // Key: reason Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reason")]
-        public string Reason { get; set; }//;
+        public System.String? Reason { get; set; }//;
     }
     
     // Id: BackupStatusCodeEnum Namespace: dedicated.server.backup
@@ -172,14 +172,14 @@ namespace _dedicated_server_backup {
         
         // Key: authUrl Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("authUrl")]
-        public string AuthUrl { get; set; }//;
+        public System.String? AuthUrl { get; set; }//;
         
         // Key: password Type: password FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
-        public string Password { get; set; }//;
+        public System.String? Password { get; set; }//;
         
         // Key: username Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
-        public string Username { get; set; }//;
+        public System.String? Username { get; set; }//;
     }
 }

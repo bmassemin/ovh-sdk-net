@@ -15,11 +15,11 @@ namespace _services_consumption {
         
         // Key: beginDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("beginDate")]
-        public System.DateTime BeginDate { get; set; }//;
+        public System.DateTime? BeginDate { get; set; }//;
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: pricingMode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricingMode")]
@@ -39,7 +39,7 @@ namespace _services_consumption {
         
         // Key: metadata Type: complexType.SafeKeyValue<string>[] FullType: complexType.SafeKeyValue<string>[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metadata")]
-        public _complexType.SafeKeyValue<string> Metadata { get; set; }//;
+        public _complexType.SafeKeyValue<string>? Metadata { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
@@ -59,7 +59,7 @@ namespace _services_consumption {
         
         // Key: uniqueId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("uniqueId")]
-        public string UniqueId { get; set; }//;
+        public System.String? UniqueId { get; set; }//;
     }
     
     // Id: PricePlanFamily Namespace: services.consumption
@@ -91,7 +91,7 @@ namespace _services_consumption {
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
-        public long OrderId { get; set; }//;
+        public System.Int64? OrderId { get; set; }//;
         
         // Key: price Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("price")]

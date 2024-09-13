@@ -15,19 +15,19 @@ namespace _order_catalog_public {
         
         // Key: addons Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("addons")]
-        public string[] Addons { get; set; }//;
+        public System.String[]? Addons { get; set; }//;
         
         // Key: default Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("default")]
-        public string @default { get; set; }//;
+        public System.String? @default { get; set; }//;
         
         // Key: exclusive Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("exclusive")]
-        public bool Exclusive { get; set; }//;
+        public System.Boolean? Exclusive { get; set; }//;
         
         // Key: mandatory Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mandatory")]
-        public bool Mandatory { get; set; }//;
+        public System.Boolean? Mandatory { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -101,7 +101,7 @@ namespace _order_catalog_public {
         
         // Key: values Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("values")]
-        public string[] Values { get; set; }//;
+        public System.String[]? Values { get; set; }//;
     }
     
     // Id: ConsumptionConfiguration Namespace: order.catalog.public
@@ -113,7 +113,7 @@ namespace _order_catalog_public {
         
         // Key: pingEndPolicy Type: order.catalog.public.PingEndPolicyEnum FullType: order.catalog.public.PingEndPolicyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pingEndPolicy")]
-        public _order_catalog_public.PingEndPolicyEnum PingEndPolicy { get; set; }//;
+        public _order_catalog_public.PingEndPolicyEnum? PingEndPolicy { get; set; }//;
         
         // Key: prorataUnit Type: order.catalog.public.ProrataUnitEnum FullType: order.catalog.public.ProrataUnitEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prorataUnit")]
@@ -153,7 +153,7 @@ namespace _order_catalog_public {
         
         // Key: blobs Type: order.catalog.public.ProductBlob FullType: order.catalog.public.ProductBlob
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("blobs")]
-        public _order_catalog_public.ProductBlob Blobs { get; set; }//;
+        public _order_catalog_public.ProductBlob? Blobs { get; set; }//;
         
         // Key: configurations Type: order.catalog.public.Configuration[] FullType: order.catalog.public.Configuration[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("configurations")]
@@ -173,7 +173,7 @@ namespace _order_catalog_public {
         
         // Key: technical Type: order.catalog.public.DedicatedServerProductBlobTechnical FullType: order.catalog.public.DedicatedServerProductBlobTechnical
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technical")]
-        public _order_catalog_public.DedicatedServerProductBlobTechnical Technical { get; set; }//;
+        public _order_catalog_public.DedicatedServerProductBlobTechnical? Technical { get; set; }//;
     }
     
     // Id: DedicatedServerProductBlobTechnical Namespace: order.catalog.public
@@ -181,31 +181,31 @@ namespace _order_catalog_public {
         
         // Key: bandwidth Type: order.catalog.public.DedicatedServerProductBlobTechnicalNetwork FullType: order.catalog.public.DedicatedServerProductBlobTechnicalNetwork
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bandwidth")]
-        public _order_catalog_public.DedicatedServerProductBlobTechnicalNetwork Bandwidth { get; set; }//;
+        public _order_catalog_public.DedicatedServerProductBlobTechnicalNetwork? Bandwidth { get; set; }//;
         
         // Key: cpu Type: order.catalog.public.DedicatedServerProductBlobTechnicalCPU FullType: order.catalog.public.DedicatedServerProductBlobTechnicalCPU
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpu")]
-        public _order_catalog_public.DedicatedServerProductBlobTechnicalCPU Cpu { get; set; }//;
+        public _order_catalog_public.DedicatedServerProductBlobTechnicalCPU? Cpu { get; set; }//;
         
         // Key: gpu Type: order.catalog.public.DedicatedServerProductBlobTechnicalGPU FullType: order.catalog.public.DedicatedServerProductBlobTechnicalGPU
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpu")]
-        public _order_catalog_public.DedicatedServerProductBlobTechnicalGPU Gpu { get; set; }//;
+        public _order_catalog_public.DedicatedServerProductBlobTechnicalGPU? Gpu { get; set; }//;
         
         // Key: memory Type: order.catalog.public.DedicatedServerProductBlobTechnicalMemory FullType: order.catalog.public.DedicatedServerProductBlobTechnicalMemory
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memory")]
-        public _order_catalog_public.DedicatedServerProductBlobTechnicalMemory Memory { get; set; }//;
+        public _order_catalog_public.DedicatedServerProductBlobTechnicalMemory? Memory { get; set; }//;
         
         // Key: server Type: order.catalog.public.DedicatedServerProductBlobTechnicalServer FullType: order.catalog.public.DedicatedServerProductBlobTechnicalServer
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
-        public _order_catalog_public.DedicatedServerProductBlobTechnicalServer Server { get; set; }//;
+        public _order_catalog_public.DedicatedServerProductBlobTechnicalServer? Server { get; set; }//;
         
         // Key: storage Type: order.catalog.public.DedicatedServerProductBlobTechnicalStorage FullType: order.catalog.public.DedicatedServerProductBlobTechnicalStorage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public _order_catalog_public.DedicatedServerProductBlobTechnicalStorage Storage { get; set; }//;
+        public _order_catalog_public.DedicatedServerProductBlobTechnicalStorage? Storage { get; set; }//;
         
         // Key: vrack Type: order.catalog.public.DedicatedServerProductBlobTechnicalNetwork FullType: order.catalog.public.DedicatedServerProductBlobTechnicalNetwork
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
-        public _order_catalog_public.DedicatedServerProductBlobTechnicalNetwork Vrack { get; set; }//;
+        public _order_catalog_public.DedicatedServerProductBlobTechnicalNetwork? Vrack { get; set; }//;
     }
     
     // Id: DedicatedServerProductBlobTechnicalCPU Namespace: order.catalog.public
@@ -309,7 +309,7 @@ namespace _order_catalog_public {
         
         // Key: burst Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("burst")]
-        public long Burst { get; set; }//;
+        public System.Int64? Burst { get; set; }//;
         
         // Key: guaranteed Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guaranteed")]
@@ -321,7 +321,7 @@ namespace _order_catalog_public {
         
         // Key: limit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("limit")]
-        public long Limit { get; set; }//;
+        public System.Int64? Limit { get; set; }//;
     }
     
     // Id: DedicatedServerProductBlobTechnicalServer Namespace: order.catalog.public
@@ -403,7 +403,7 @@ namespace _order_catalog_public {
         
         // Key: blobs Type: order.catalog.public.ProductBlob FullType: order.catalog.public.ProductBlob
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("blobs")]
-        public _order_catalog_public.ProductBlob Blobs { get; set; }//;
+        public _order_catalog_public.ProductBlob? Blobs { get; set; }//;
         
         // Key: configurations Type: order.catalog.public.Configuration[] FullType: order.catalog.public.Configuration[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("configurations")]
@@ -411,11 +411,11 @@ namespace _order_catalog_public {
         
         // Key: consumptionConfiguration Type: order.catalog.public.ConsumptionConfiguration FullType: order.catalog.public.ConsumptionConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("consumptionConfiguration")]
-        public _order_catalog_public.ConsumptionConfiguration ConsumptionConfiguration { get; set; }//;
+        public _order_catalog_public.ConsumptionConfiguration? ConsumptionConfiguration { get; set; }//;
         
         // Key: family Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("family")]
-        public string Family { get; set; }//;
+        public System.String? Family { get; set; }//;
         
         // Key: invoiceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("invoiceName")]
@@ -463,7 +463,7 @@ namespace _order_catalog_public {
         
         // Key: engagementConfiguration Type: order.catalog.public.EngagementConfiguration FullType: order.catalog.public.EngagementConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engagementConfiguration")]
-        public _order_catalog_public.EngagementConfiguration EngagementConfiguration { get; set; }//;
+        public _order_catalog_public.EngagementConfiguration? EngagementConfiguration { get; set; }//;
         
         // Key: interval Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interval")]
@@ -491,7 +491,7 @@ namespace _order_catalog_public {
         
         // Key: promotions Type: order.catalog.public.Promotion[] FullType: order.catalog.public.Promotion[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("promotions")]
-        public _order_catalog_public.Promotion[] Promotions { get; set; }//;
+        public _order_catalog_public.Promotion[]? Promotions { get; set; }//;
         
         // Key: quantity Type: order.catalog.public.PricingMinMax FullType: order.catalog.public.PricingMinMax
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quantity")]
@@ -519,7 +519,7 @@ namespace _order_catalog_public {
         
         // Key: max Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("max")]
-        public long Max { get; set; }//;
+        public System.Int64? Max { get; set; }//;
         
         // Key: min Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("min")]
@@ -531,11 +531,11 @@ namespace _order_catalog_public {
         
         // Key: blobs Type: order.catalog.public.ProductBlob FullType: order.catalog.public.ProductBlob
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("blobs")]
-        public _order_catalog_public.ProductBlob Blobs { get; set; }//;
+        public _order_catalog_public.ProductBlob? Blobs { get; set; }//;
         
         // Key: configurations Type: order.catalog.public.Configuration[] FullType: order.catalog.public.Configuration[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("configurations")]
-        public _order_catalog_public.Configuration[] Configurations { get; set; }//;
+        public _order_catalog_public.Configuration[]? Configurations { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -551,27 +551,27 @@ namespace _order_catalog_public {
         
         // Key: commercial Type: order.catalog.public.ProductBlobCommercial FullType: order.catalog.public.ProductBlobCommercial
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("commercial")]
-        public _order_catalog_public.ProductBlobCommercial Commercial { get; set; }//;
+        public _order_catalog_public.ProductBlobCommercial? Commercial { get; set; }//;
         
         // Key: marketing Type: order.catalog.public.ProductBlobMarketing FullType: order.catalog.public.ProductBlobMarketing
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("marketing")]
-        public _order_catalog_public.ProductBlobMarketing Marketing { get; set; }//;
+        public _order_catalog_public.ProductBlobMarketing? Marketing { get; set; }//;
         
         // Key: meta Type: order.catalog.public.ProductBlobMeta FullType: order.catalog.public.ProductBlobMeta
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("meta")]
-        public _order_catalog_public.ProductBlobMeta Meta { get; set; }//;
+        public _order_catalog_public.ProductBlobMeta? Meta { get; set; }//;
         
         // Key: tags Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tags")]
-        public string[] Tags { get; set; }//;
+        public System.String[]? Tags { get; set; }//;
         
         // Key: technical Type: order.catalog.public.ProductBlobTechnical FullType: order.catalog.public.ProductBlobTechnical
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technical")]
-        public _order_catalog_public.ProductBlobTechnical Technical { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnical? Technical { get; set; }//;
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: ProductBlobCommercial Namespace: order.catalog.public
@@ -579,35 +579,35 @@ namespace _order_catalog_public {
         
         // Key: brick Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("brick")]
-        public string Brick { get; set; }//;
+        public System.String? Brick { get; set; }//;
         
         // Key: brickSubtype Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("brickSubtype")]
-        public string BrickSubtype { get; set; }//;
+        public System.String? BrickSubtype { get; set; }//;
         
         // Key: connection Type: order.catalog.public.ProductBlobConnection FullType: order.catalog.public.ProductBlobConnection
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connection")]
-        public _order_catalog_public.ProductBlobConnection Connection { get; set; }//;
+        public _order_catalog_public.ProductBlobConnection? Connection { get; set; }//;
         
         // Key: features Type: order.catalog.public.ProductBlobCommercialFeatures[] FullType: order.catalog.public.ProductBlobCommercialFeatures[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("features")]
-        public _order_catalog_public.ProductBlobCommercialFeatures[] Features { get; set; }//;
+        public _order_catalog_public.ProductBlobCommercialFeatures[]? Features { get; set; }//;
         
         // Key: line Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("line")]
-        public string Line { get; set; }//;
+        public System.String? Line { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: price Type: order.catalog.public.ProductBlobCommercialPrice FullType: order.catalog.public.ProductBlobCommercialPrice
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("price")]
-        public _order_catalog_public.ProductBlobCommercialPrice Price { get; set; }//;
+        public _order_catalog_public.ProductBlobCommercialPrice? Price { get; set; }//;
         
         // Key: range Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("range")]
-        public string Range { get; set; }//;
+        public System.String? Range { get; set; }//;
     }
     
     // Id: ProductBlobCommercialFeatures Namespace: order.catalog.public
@@ -615,11 +615,11 @@ namespace _order_catalog_public {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: ProductBlobCommercialPrice Namespace: order.catalog.public
@@ -627,19 +627,19 @@ namespace _order_catalog_public {
         
         // Key: display Type: order.catalog.public.ProductBlobCommercialPriceDisplay FullType: order.catalog.public.ProductBlobCommercialPriceDisplay
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("display")]
-        public _order_catalog_public.ProductBlobCommercialPriceDisplay Display { get; set; }//;
+        public _order_catalog_public.ProductBlobCommercialPriceDisplay? Display { get; set; }//;
         
         // Key: interval Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interval")]
-        public string Interval { get; set; }//;
+        public System.String? Interval { get; set; }//;
         
         // Key: precision Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("precision")]
-        public long Precision { get; set; }//;
+        public System.Int64? Precision { get; set; }//;
         
         // Key: unit Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unit")]
-        public string Unit { get; set; }//;
+        public System.String? Unit { get; set; }//;
     }
     
     // Id: ProductBlobCommercialPriceDisplay Namespace: order.catalog.public
@@ -731,87 +731,87 @@ namespace _order_catalog_public {
         
         // Key: bandwidth Type: order.catalog.public.ProductBlobTechnicalNetwork FullType: order.catalog.public.ProductBlobTechnicalNetwork
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bandwidth")]
-        public _order_catalog_public.ProductBlobTechnicalNetwork Bandwidth { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalNetwork? Bandwidth { get; set; }//;
         
         // Key: connection Type: order.catalog.public.ProductBlobConnection FullType: order.catalog.public.ProductBlobConnection
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connection")]
-        public _order_catalog_public.ProductBlobConnection Connection { get; set; }//;
+        public _order_catalog_public.ProductBlobConnection? Connection { get; set; }//;
         
         // Key: connectionPerSeconds Type: order.catalog.public.ProductBlobTechnicalPerSeconds FullType: order.catalog.public.ProductBlobTechnicalPerSeconds
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connectionPerSeconds")]
-        public _order_catalog_public.ProductBlobTechnicalPerSeconds ConnectionPerSeconds { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalPerSeconds? ConnectionPerSeconds { get; set; }//;
         
         // Key: cpu Type: order.catalog.public.ProductBlobTechnicalCPU FullType: order.catalog.public.ProductBlobTechnicalCPU
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpu")]
-        public _order_catalog_public.ProductBlobTechnicalCPU Cpu { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalCPU? Cpu { get; set; }//;
         
         // Key: datacenter Type: order.catalog.public.ProductBlobTechnicalDatacenter FullType: order.catalog.public.ProductBlobTechnicalDatacenter
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
-        public _order_catalog_public.ProductBlobTechnicalDatacenter Datacenter { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalDatacenter? Datacenter { get; set; }//;
         
         // Key: ephemeralLocalStorage Type: order.catalog.public.ProductBlobTechnicalEphemeralStorage FullType: order.catalog.public.ProductBlobTechnicalEphemeralStorage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ephemeralLocalStorage")]
-        public _order_catalog_public.ProductBlobTechnicalEphemeralStorage EphemeralLocalStorage { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalEphemeralStorage? EphemeralLocalStorage { get; set; }//;
         
         // Key: gpu Type: order.catalog.public.ProductBlobTechnicalGPU FullType: order.catalog.public.ProductBlobTechnicalGPU
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpu")]
-        public _order_catalog_public.ProductBlobTechnicalGPU Gpu { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalGPU? Gpu { get; set; }//;
         
         // Key: license Type: order.catalog.public.ProductBlobTechnicalLicense FullType: order.catalog.public.ProductBlobTechnicalLicense
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("license")]
-        public _order_catalog_public.ProductBlobTechnicalLicense License { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalLicense? License { get; set; }//;
         
         // Key: memory Type: order.catalog.public.ProductBlobTechnicalMemory FullType: order.catalog.public.ProductBlobTechnicalMemory
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memory")]
-        public _order_catalog_public.ProductBlobTechnicalMemory Memory { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalMemory? Memory { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: nodes Type: order.catalog.public.ProductBlobTechnicalNodes FullType: order.catalog.public.ProductBlobTechnicalNodes
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nodes")]
-        public _order_catalog_public.ProductBlobTechnicalNodes Nodes { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalNodes? Nodes { get; set; }//;
         
         // Key: nvme Type: order.catalog.public.ProductBlobTechnicalNvme FullType: order.catalog.public.ProductBlobTechnicalNvme
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nvme")]
-        public _order_catalog_public.ProductBlobTechnicalNvme Nvme { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalNvme? Nvme { get; set; }//;
         
         // Key: os Type: order.catalog.public.ProductBlobTechnicalOS FullType: order.catalog.public.ProductBlobTechnicalOS
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("os")]
-        public _order_catalog_public.ProductBlobTechnicalOS Os { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalOS? Os { get; set; }//;
         
         // Key: provider Type: order.catalog.public.ProductBlobTechnicalProvider FullType: order.catalog.public.ProductBlobTechnicalProvider
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("provider")]
-        public _order_catalog_public.ProductBlobTechnicalProvider Provider { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalProvider? Provider { get; set; }//;
         
         // Key: requestPerSeconds Type: order.catalog.public.ProductBlobTechnicalPerSeconds FullType: order.catalog.public.ProductBlobTechnicalPerSeconds
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("requestPerSeconds")]
-        public _order_catalog_public.ProductBlobTechnicalPerSeconds RequestPerSeconds { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalPerSeconds? RequestPerSeconds { get; set; }//;
         
         // Key: server Type: order.catalog.public.ProductBlobTechnicalServer FullType: order.catalog.public.ProductBlobTechnicalServer
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
-        public _order_catalog_public.ProductBlobTechnicalServer Server { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalServer? Server { get; set; }//;
         
         // Key: storage Type: order.catalog.public.ProductBlobTechnicalStorage FullType: order.catalog.public.ProductBlobTechnicalStorage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public _order_catalog_public.ProductBlobTechnicalStorage Storage { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalStorage? Storage { get; set; }//;
         
         // Key: throughput Type: order.catalog.public.ProductBlobTechnicalThroughput FullType: order.catalog.public.ProductBlobTechnicalThroughput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("throughput")]
-        public _order_catalog_public.ProductBlobTechnicalThroughput Throughput { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalThroughput? Throughput { get; set; }//;
         
         // Key: virtualization Type: order.catalog.public.ProductBlobTechnicalVirtualization FullType: order.catalog.public.ProductBlobTechnicalVirtualization
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("virtualization")]
-        public _order_catalog_public.ProductBlobTechnicalVirtualization Virtualization { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalVirtualization? Virtualization { get; set; }//;
         
         // Key: volume Type: order.catalog.public.ProductBlobTechnicalVolume FullType: order.catalog.public.ProductBlobTechnicalVolume
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volume")]
-        public _order_catalog_public.ProductBlobTechnicalVolume Volume { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalVolume? Volume { get; set; }//;
         
         // Key: vrack Type: order.catalog.public.ProductBlobTechnicalNetwork FullType: order.catalog.public.ProductBlobTechnicalNetwork
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
-        public _order_catalog_public.ProductBlobTechnicalNetwork Vrack { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalNetwork? Vrack { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalCPU Namespace: order.catalog.public
@@ -819,47 +819,47 @@ namespace _order_catalog_public {
         
         // Key: boost Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("boost")]
-        public double Boost { get; set; }//;
+        public System.Double? Boost { get; set; }//;
         
         // Key: brand Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("brand")]
-        public string Brand { get; set; }//;
+        public System.String? Brand { get; set; }//;
         
         // Key: cores Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cores")]
-        public long Cores { get; set; }//;
+        public System.Int64? Cores { get; set; }//;
         
         // Key: customizable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customizable")]
-        public bool Customizable { get; set; }//;
+        public System.Boolean? Customizable { get; set; }//;
         
         // Key: frequency Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frequency")]
-        public double Frequency { get; set; }//;
+        public System.Double? Frequency { get; set; }//;
         
         // Key: maxFrequency Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxFrequency")]
-        public double MaxFrequency { get; set; }//;
+        public System.Double? MaxFrequency { get; set; }//;
         
         // Key: model Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
-        public string Model { get; set; }//;
+        public System.String? Model { get; set; }//;
         
         // Key: number Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
-        public long Number { get; set; }//;
+        public System.Int64? Number { get; set; }//;
         
         // Key: score Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("score")]
-        public long Score { get; set; }//;
+        public System.Int64? Score { get; set; }//;
         
         // Key: threads Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("threads")]
-        public long Threads { get; set; }//;
+        public System.Int64? Threads { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public string Type { get; set; }//;
+        public System.String? Type { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalDatacenter Namespace: order.catalog.public
@@ -867,23 +867,23 @@ namespace _order_catalog_public {
         
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: country Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public string Country { get; set; }//;
+        public System.String? Country { get; set; }//;
         
         // Key: countryCode Type: nichandle.OvhSubsidiaryEnum FullType: nichandle.OvhSubsidiaryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countryCode")]
-        public _nichandle.OvhSubsidiaryEnum CountryCode { get; set; }//;
+        public _nichandle.OvhSubsidiaryEnum? CountryCode { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalDisk Namespace: order.catalog.public
@@ -895,11 +895,11 @@ namespace _order_catalog_public {
         
         // Key: interface Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interface")]
-        public string @interface { get; set; }//;
+        public System.String? @interface { get; set; }//;
         
         // Key: iops Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iops")]
-        public long Iops { get; set; }//;
+        public System.Int64? Iops { get; set; }//;
         
         // Key: maximumCapacity Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximumCapacity")]
@@ -907,23 +907,23 @@ namespace _order_catalog_public {
         
         // Key: number Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
-        public long Number { get; set; }//;
+        public System.Int64? Number { get; set; }//;
         
         // Key: sizeUnit Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sizeUnit")]
-        public string SizeUnit { get; set; }//;
+        public System.String? SizeUnit { get; set; }//;
         
         // Key: specs Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("specs")]
-        public string Specs { get; set; }//;
+        public System.String? Specs { get; set; }//;
         
         // Key: technology Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technology")]
-        public string Technology { get; set; }//;
+        public System.String? Technology { get; set; }//;
         
         // Key: usage Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usage")]
-        public string Usage { get; set; }//;
+        public System.String? Usage { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalEphemeralStorage Namespace: order.catalog.public
@@ -931,7 +931,7 @@ namespace _order_catalog_public {
         
         // Key: disks Type: order.catalog.public.ProductBlobTechnicalDisk[] FullType: order.catalog.public.ProductBlobTechnicalDisk[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disks")]
-        public _order_catalog_public.ProductBlobTechnicalDisk[] Disks { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalDisk[]? Disks { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalFrame Namespace: order.catalog.public
@@ -955,7 +955,7 @@ namespace _order_catalog_public {
         
         // Key: brand Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("brand")]
-        public string Brand { get; set; }//;
+        public System.String? Brand { get; set; }//;
         
         // Key: memory Type: order.catalog.public.ProductBlobTechnicalMemory FullType: order.catalog.public.ProductBlobTechnicalMemory
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memory")]
@@ -963,15 +963,15 @@ namespace _order_catalog_public {
         
         // Key: model Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
-        public string Model { get; set; }//;
+        public System.String? Model { get; set; }//;
         
         // Key: number Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
-        public long Number { get; set; }//;
+        public System.Int64? Number { get; set; }//;
         
         // Key: performance Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("performance")]
-        public double Performance { get; set; }//;
+        public System.Double? Performance { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalLicense Namespace: order.catalog.public
@@ -979,51 +979,51 @@ namespace _order_catalog_public {
         
         // Key: application Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("application")]
-        public string Application { get; set; }//;
+        public System.String? Application { get; set; }//;
         
         // Key: cores Type: order.catalog.public.ProductBlobTechnicalLicenseCores FullType: order.catalog.public.ProductBlobTechnicalLicenseCores
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cores")]
-        public _order_catalog_public.ProductBlobTechnicalLicenseCores Cores { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalLicenseCores? Cores { get; set; }//;
         
         // Key: cpu Type: order.catalog.public.ProductBlobTechnicalCPU FullType: order.catalog.public.ProductBlobTechnicalCPU
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpu")]
-        public _order_catalog_public.ProductBlobTechnicalCPU Cpu { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalCPU? Cpu { get; set; }//;
         
         // Key: distribution Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("distribution")]
-        public string Distribution { get; set; }//;
+        public System.String? Distribution { get; set; }//;
         
         // Key: edition Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("edition")]
-        public string Edition { get; set; }//;
+        public System.String? Edition { get; set; }//;
         
         // Key: family Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("family")]
-        public string Family { get; set; }//;
+        public System.String? Family { get; set; }//;
         
         // Key: feature Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("feature")]
-        public string Feature { get; set; }//;
+        public System.String? Feature { get; set; }//;
         
         // Key: flavor Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavor")]
-        public string Flavor { get; set; }//;
+        public System.String? Flavor { get; set; }//;
         
         // Key: images Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("images")]
-        public string[] Images { get; set; }//;
+        public System.String[]? Images { get; set; }//;
         
         // Key: nbOfAccount Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nbOfAccount")]
-        public long NbOfAccount { get; set; }//;
+        public System.Int64? NbOfAccount { get; set; }//;
         
         // Key: package Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("package")]
-        public string Package { get; set; }//;
+        public System.String? Package { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public string Version { get; set; }//;
+        public System.String? Version { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalLicenseCores Namespace: order.catalog.public
@@ -1035,7 +1035,7 @@ namespace _order_catalog_public {
         
         // Key: total Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("total")]
-        public long Total { get; set; }//;
+        public System.Int64? Total { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalMemory Namespace: order.catalog.public
@@ -1043,23 +1043,23 @@ namespace _order_catalog_public {
         
         // Key: customizable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customizable")]
-        public bool Customizable { get; set; }//;
+        public System.Boolean? Customizable { get; set; }//;
         
         // Key: ecc Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ecc")]
-        public bool Ecc { get; set; }//;
+        public System.Boolean? Ecc { get; set; }//;
         
         // Key: frequency Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frequency")]
-        public long Frequency { get; set; }//;
+        public System.Int64? Frequency { get; set; }//;
         
         // Key: interface Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interface")]
-        public string @interface { get; set; }//;
+        public System.String? @interface { get; set; }//;
         
         // Key: ramType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ramType")]
-        public string RamType { get; set; }//;
+        public System.String? RamType { get; set; }//;
         
         // Key: size Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
@@ -1067,7 +1067,7 @@ namespace _order_catalog_public {
         
         // Key: sizeUnit Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sizeUnit")]
-        public string SizeUnit { get; set; }//;
+        public System.String? SizeUnit { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalNetwork Namespace: order.catalog.public
@@ -1075,31 +1075,31 @@ namespace _order_catalog_public {
         
         // Key: burst Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("burst")]
-        public long Burst { get; set; }//;
+        public System.Int64? Burst { get; set; }//;
         
         // Key: capacity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("capacity")]
-        public long Capacity { get; set; }//;
+        public System.Int64? Capacity { get; set; }//;
         
         // Key: guaranteed Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guaranteed")]
-        public bool Guaranteed { get; set; }//;
+        public System.Boolean? Guaranteed { get; set; }//;
         
         // Key: interfaces Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interfaces")]
-        public long Interfaces { get; set; }//;
+        public System.Int64? Interfaces { get; set; }//;
         
         // Key: isMax Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isMax")]
-        public bool IsMax { get; set; }//;
+        public System.Boolean? IsMax { get; set; }//;
         
         // Key: level Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("level")]
-        public double Level { get; set; }//;
+        public System.Double? Level { get; set; }//;
         
         // Key: limit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("limit")]
-        public long Limit { get; set; }//;
+        public System.Int64? Limit { get; set; }//;
         
         // Key: max Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("max")]
@@ -1111,11 +1111,11 @@ namespace _order_catalog_public {
         
         // Key: shared Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shared")]
-        public bool Shared { get; set; }//;
+        public System.Boolean? Shared { get; set; }//;
         
         // Key: traffic Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("traffic")]
-        public long Traffic { get; set; }//;
+        public System.Int64? Traffic { get; set; }//;
         
         // Key: unit Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unit")]
@@ -1123,7 +1123,7 @@ namespace _order_catalog_public {
         
         // Key: unlimited Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unlimited")]
-        public bool Unlimited { get; set; }//;
+        public System.Boolean? Unlimited { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalNodes Namespace: order.catalog.public
@@ -1139,7 +1139,7 @@ namespace _order_catalog_public {
         
         // Key: disks Type: order.catalog.public.ProductBlobTechnicalDisk[] FullType: order.catalog.public.ProductBlobTechnicalDisk[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disks")]
-        public _order_catalog_public.ProductBlobTechnicalDisk[] Disks { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalDisk[]? Disks { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalOS Namespace: order.catalog.public
@@ -1147,19 +1147,19 @@ namespace _order_catalog_public {
         
         // Key: distribution Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("distribution")]
-        public string Distribution { get; set; }//;
+        public System.String? Distribution { get; set; }//;
         
         // Key: edition Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("edition")]
-        public string Edition { get; set; }//;
+        public System.String? Edition { get; set; }//;
         
         // Key: family Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("family")]
-        public string Family { get; set; }//;
+        public System.String? Family { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public string Version { get; set; }//;
+        public System.String? Version { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalPerSeconds Namespace: order.catalog.public
@@ -1171,7 +1171,7 @@ namespace _order_catalog_public {
         
         // Key: unit Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unit")]
-        public string Unit { get; set; }//;
+        public System.String? Unit { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalProvider Namespace: order.catalog.public
@@ -1183,7 +1183,7 @@ namespace _order_catalog_public {
         
         // Key: reference Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reference")]
-        public bool Reference { get; set; }//;
+        public System.Boolean? Reference { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalRaid Namespace: order.catalog.public
@@ -1191,11 +1191,11 @@ namespace _order_catalog_public {
         
         // Key: cardModel Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cardModel")]
-        public string CardModel { get; set; }//;
+        public System.String? CardModel { get; set; }//;
         
         // Key: cardSize Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cardSize")]
-        public string CardSize { get; set; }//;
+        public System.String? CardSize { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1215,7 +1215,7 @@ namespace _order_catalog_public {
         
         // Key: network Type: order.catalog.public.ProductBlobTechnicalNetwork FullType: order.catalog.public.ProductBlobTechnicalNetwork
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public _order_catalog_public.ProductBlobTechnicalNetwork Network { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalNetwork? Network { get; set; }//;
         
         // Key: range Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("range")]
@@ -1235,7 +1235,7 @@ namespace _order_catalog_public {
         
         // Key: includedBackup Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("includedBackup")]
-        public long IncludedBackup { get; set; }//;
+        public System.Int64? IncludedBackup { get; set; }//;
         
         // Key: sla Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sla")]
@@ -1247,19 +1247,19 @@ namespace _order_catalog_public {
         
         // Key: disks Type: order.catalog.public.ProductBlobTechnicalDisk[] FullType: order.catalog.public.ProductBlobTechnicalDisk[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disks")]
-        public _order_catalog_public.ProductBlobTechnicalDisk[] Disks { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalDisk[]? Disks { get; set; }//;
         
         // Key: hotSwap Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hotSwap")]
-        public bool HotSwap { get; set; }//;
+        public System.Boolean? HotSwap { get; set; }//;
         
         // Key: raid Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("raid")]
-        public string Raid { get; set; }//;
+        public System.String? Raid { get; set; }//;
         
         // Key: raidDetails Type: order.catalog.public.ProductBlobTechnicalRaid FullType: order.catalog.public.ProductBlobTechnicalRaid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("raidDetails")]
-        public _order_catalog_public.ProductBlobTechnicalRaid RaidDetails { get; set; }//;
+        public _order_catalog_public.ProductBlobTechnicalRaid? RaidDetails { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalThroughput Namespace: order.catalog.public
@@ -1275,7 +1275,7 @@ namespace _order_catalog_public {
         
         // Key: hypervisor Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hypervisor")]
-        public string Hypervisor { get; set; }//;
+        public System.String? Hypervisor { get; set; }//;
     }
     
     // Id: ProductBlobTechnicalVolume Namespace: order.catalog.public
@@ -1335,11 +1335,11 @@ namespace _order_catalog_public {
         
         // Key: duration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public long Duration { get; set; }//;
+        public System.Int64? Duration { get; set; }//;
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: isGlobalQuantityLimited Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isGlobalQuantityLimited")]
@@ -1351,7 +1351,7 @@ namespace _order_catalog_public {
         
         // Key: quantity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quantity")]
-        public long Quantity { get; set; }//;
+        public System.Int64? Quantity { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -1359,7 +1359,7 @@ namespace _order_catalog_public {
         
         // Key: tags Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tags")]
-        public string[] Tags { get; set; }//;
+        public System.String[]? Tags { get; set; }//;
         
         // Key: total Type: order.catalog.public.PromotionDiscountTotal FullType: order.catalog.public.PromotionDiscountTotal
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("total")]

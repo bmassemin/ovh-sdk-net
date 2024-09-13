@@ -15,10 +15,10 @@ namespace _cloud_common {
         
         // Key: from Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("from")]
-        public System.DateTime From { get; set; }//;
+        public System.DateTime? From { get; set; }//;
         
         // Key: to Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("to")]
-        public System.DateTime To { get; set; }//;
+        public System.DateTime? To { get; set; }//;
     }
 }

@@ -15,7 +15,7 @@ namespace _dedicatedCloud_nsxt {
         
         // Key: number Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
-        public long Number { get; set; }//;
+        public System.Int64? Number { get; set; }//;
     }
     
     // Id: NsxtEdgeSizeEnum Namespace: dedicatedCloud.nsxt

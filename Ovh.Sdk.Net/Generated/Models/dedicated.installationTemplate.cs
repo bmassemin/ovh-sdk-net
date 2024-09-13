@@ -23,7 +23,7 @@ namespace _dedicated_installationTemplate {
         
         // Key: customization Type: dedicated.TemplateOsProperties FullType: dedicated.TemplateOsProperties
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customization")]
-        public _dedicated.TemplateOsProperties Customization { get; set; }//;
+        public _dedicated.TemplateOsProperties? Customization { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -47,19 +47,19 @@ namespace _dedicated_installationTemplate {
         
         // Key: hardRaidConfiguration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardRaidConfiguration")]
-        public bool HardRaidConfiguration { get; set; }//;
+        public System.Boolean? HardRaidConfiguration { get; set; }//;
         
         // Key: inputs Type: dedicated.TemplateOsInput[] FullType: dedicated.TemplateOsInput[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inputs")]
-        public _dedicated.TemplateOsInput[] Inputs { get; set; }//;
+        public _dedicated.TemplateOsInput[]? Inputs { get; set; }//;
         
         // Key: license Type: dedicated.TemplateOsInfoLicense FullType: dedicated.TemplateOsInfoLicense
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("license")]
-        public _dedicated.TemplateOsInfoLicense License { get; set; }//;
+        public _dedicated.TemplateOsInfoLicense? License { get; set; }//;
         
         // Key: lvmReady Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lvmReady")]
-        public bool LvmReady { get; set; }//;
+        public System.Boolean? LvmReady { get; set; }//;
         
         // Key: noPartitioning Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("noPartitioning")]
@@ -67,7 +67,7 @@ namespace _dedicated_installationTemplate {
         
         // Key: project Type: dedicated.TemplateOsInfoProject FullType: dedicated.TemplateOsInfoProject
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("project")]
-        public _dedicated.TemplateOsInfoProject Project { get; set; }//;
+        public _dedicated.TemplateOsInfoProject? Project { get; set; }//;
         
         // Key: softRaidOnlyMirroring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("softRaidOnlyMirroring")]
@@ -131,7 +131,7 @@ namespace _dedicated_installationTemplate {
         
         // Key: raid Type: dedicated.server.PartitionRaidEnum FullType: dedicated.server.PartitionRaidEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("raid")]
-        public _dedicated_server.PartitionRaidEnum Raid { get; set; }//;
+        public _dedicated_server.PartitionRaidEnum? Raid { get; set; }//;
         
         // Key: size Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
@@ -143,6 +143,6 @@ namespace _dedicated_installationTemplate {
         
         // Key: volumeName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumeName")]
-        public string VolumeName { get; set; }//;
+        public System.String? VolumeName { get; set; }//;
     }
 }

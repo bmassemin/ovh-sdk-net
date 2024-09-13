@@ -69,11 +69,11 @@ namespace _overTheBox {
         
         // Key: hardwareName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardwareName")]
-        public string HardwareName { get; set; }//;
+        public System.String? HardwareName { get; set; }//;
         
         // Key: hardwarePrice Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardwarePrice")]
-        public _order.Price HardwarePrice { get; set; }//;
+        public _order.Price? HardwarePrice { get; set; }//;
         
         // Key: offer Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -107,7 +107,7 @@ namespace _overTheBox {
         
         // Key: deviceActionId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deviceActionId")]
-        public string DeviceActionId { get; set; }//;
+        public System.String? DeviceActionId { get; set; }//;
     }
     
     // Id: Device Namespace: overTheBox
@@ -139,7 +139,7 @@ namespace _overTheBox {
         
         // Key: system Type: overTheBox.DeviceSystem FullType: overTheBox.DeviceSystem
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("system")]
-        public _overTheBox.DeviceSystem System { get; set; }//;
+        public _overTheBox.DeviceSystem? System { get; set; }//;
         
         // Key: systemVersion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("systemVersion")]
@@ -203,19 +203,19 @@ namespace _overTheBox {
         
         // Key: device Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("device")]
-        public string Device { get; set; }//;
+        public System.String? Device { get; set; }//;
         
         // Key: dnsServers Type: ip[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnsServers")]
-        public string[] DnsServers { get; set; }//;
+        public System.String[]? DnsServers { get; set; }//;
         
         // Key: gateway Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public string Gateway { get; set; }//;
+        public System.String? Gateway { get; set; }//;
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: multipathStatus Type: overTheBox.MultipathStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("multipathStatus")]
@@ -227,11 +227,11 @@ namespace _overTheBox {
         
         // Key: netmask Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("netmask")]
-        public string Netmask { get; set; }//;
+        public System.String? Netmask { get; set; }//;
         
         // Key: publicIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicIp")]
-        public string PublicIp { get; set; }//;
+        public System.String? PublicIp { get; set; }//;
     }
     
     // Id: DeviceSystem Namespace: overTheBox
@@ -239,35 +239,35 @@ namespace _overTheBox {
         
         // Key: cpu Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpu")]
-        public string Cpu { get; set; }//;
+        public System.String? Cpu { get; set; }//;
         
         // Key: hostname Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
-        public string Hostname { get; set; }//;
+        public System.String? Hostname { get; set; }//;
         
         // Key: kernel Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kernel")]
-        public string Kernel { get; set; }//;
+        public System.String? Kernel { get; set; }//;
         
         // Key: mac Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mac")]
-        public string Mac { get; set; }//;
+        public System.String? Mac { get; set; }//;
         
         // Key: model Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
-        public string Model { get; set; }//;
+        public System.String? Model { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: offerName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerName")]
-        public string OfferName { get; set; }//;
+        public System.String? OfferName { get; set; }//;
         
         // Key: ovhName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhName")]
-        public string OvhName { get; set; }//;
+        public System.String? OvhName { get; set; }//;
     }
     
     // Id: GraphEndpoint Namespace: overTheBox
@@ -295,7 +295,7 @@ namespace _overTheBox {
         
         // Key: mac Type: macAddress FullType: macAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mac")]
-        public string Mac { get; set; }//;
+        public System.String? Mac { get; set; }//;
         
         // Key: model Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
@@ -323,11 +323,11 @@ namespace _overTheBox {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: mac Type: macAddress FullType: macAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mac")]
-        public string Mac { get; set; }//;
+        public System.String? Mac { get; set; }//;
         
         // Key: model Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
@@ -390,7 +390,7 @@ namespace _overTheBox {
         
         // Key: authorizedBy Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("authorizedBy")]
-        public string AuthorizedBy { get; set; }//;
+        public System.String? AuthorizedBy { get; set; }//;
         
         // Key: connectionInfos Type: overTheBox.RemoteAccessConnectionInfos FullType: overTheBox.RemoteAccessConnectionInfos
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connectionInfos")]
@@ -398,7 +398,7 @@ namespace _overTheBox {
         
         // Key: deletedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deletedAt")]
-        public System.DateTime DeletedAt { get; set; }//;
+        public System.DateTime? DeletedAt { get; set; }//;
         
         // Key: dockerVersion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dockerVersion")]
@@ -430,11 +430,11 @@ namespace _overTheBox {
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: port Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
     }
     
     // Id: RemoteAccessStatusEnum Namespace: overTheBox
@@ -474,7 +474,7 @@ namespace _overTheBox {
         
         // Key: publicKey Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicKey")]
-        public string PublicKey { get; set; }//;
+        public System.String? PublicKey { get; set; }//;
         
         // Key: user Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
@@ -506,11 +506,11 @@ namespace _overTheBox {
         
         // Key: customerDescription Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerDescription")]
-        public string CustomerDescription { get; set; }//;
+        public System.String? CustomerDescription { get; set; }//;
         
         // Key: graphEndpoint Type: overTheBox.GraphEndpoint FullType: overTheBox.GraphEndpoint
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("graphEndpoint")]
-        public _overTheBox.GraphEndpoint GraphEndpoint { get; set; }//;
+        public _overTheBox.GraphEndpoint? GraphEndpoint { get; set; }//;
         
         // Key: offer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -594,15 +594,15 @@ namespace _overTheBox {
         
         // Key: customerDescription Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerDescription")]
-        public string CustomerDescription { get; set; }//;
+        public System.String? CustomerDescription { get; set; }//;
         
         // Key: graphEndpoint Type: overTheBox.GraphEndpoint FullType: overTheBox.GraphEndpoint
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("graphEndpoint")]
-        public _overTheBox.GraphEndpoint GraphEndpoint { get; set; }//;
+        public _overTheBox.GraphEndpoint? GraphEndpoint { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: offer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]

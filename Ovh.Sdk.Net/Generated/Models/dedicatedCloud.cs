@@ -15,7 +15,7 @@ namespace _dedicatedCloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: network Type: ipv4Block FullType: ipv4Block
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
@@ -56,7 +56,7 @@ namespace _dedicatedCloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -108,47 +108,47 @@ namespace _dedicatedCloud {
         
         // Key: backupDurationInReport Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupDurationInReport")]
-        public bool BackupDurationInReport { get; set; }//;
+        public System.Boolean? BackupDurationInReport { get; set; }//;
         
         // Key: backupOffer Type: dedicatedCloud.backup.OfferTypeEnum FullType: dedicatedCloud.backup.OfferTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupOffer")]
-        public _dedicatedCloud_backup.OfferTypeEnum BackupOffer { get; set; }//;
+        public _dedicatedCloud_backup.OfferTypeEnum? BackupOffer { get; set; }//;
         
         // Key: backupSizeInReport Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupSizeInReport")]
-        public bool BackupSizeInReport { get; set; }//;
+        public System.Boolean? BackupSizeInReport { get; set; }//;
         
         // Key: diskSizeInReport Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskSizeInReport")]
-        public bool DiskSizeInReport { get; set; }//;
+        public System.Boolean? DiskSizeInReport { get; set; }//;
         
         // Key: encryption Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryption")]
-        public bool Encryption { get; set; }//;
+        public System.Boolean? Encryption { get; set; }//;
         
         // Key: fullDayInReport Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fullDayInReport")]
-        public bool FullDayInReport { get; set; }//;
+        public System.Boolean? FullDayInReport { get; set; }//;
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
-        public string Hostname { get; set; }//;
+        public System.String? Hostname { get; set; }//;
         
         // Key: mailAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailAddress")]
-        public string MailAddress { get; set; }//;
+        public System.String? MailAddress { get; set; }//;
         
         // Key: replicationZone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("replicationZone")]
-        public string ReplicationZone { get; set; }//;
+        public System.String? ReplicationZone { get; set; }//;
         
         // Key: restorePointInReport Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("restorePointInReport")]
-        public bool RestorePointInReport { get; set; }//;
+        public System.Boolean? RestorePointInReport { get; set; }//;
         
         // Key: scheduleHour Type: time FullType: time
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scheduleHour")]
-        public System.TimeOnly ScheduleHour { get; set; }//;
+        public System.TimeOnly? ScheduleHour { get; set; }//;
         
         // Key: state Type: dedicatedCloud.BackupStateEnum FullType: dedicatedCloud.BackupStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -156,7 +156,7 @@ namespace _dedicatedCloud {
         
         // Key: vmwareVmId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmwareVmId")]
-        public string VmwareVmId { get; set; }//;
+        public System.String? VmwareVmId { get; set; }//;
     }
     
     // Id: BackupJob Namespace: dedicatedCloud
@@ -164,23 +164,23 @@ namespace _dedicatedCloud {
         
         // Key: allocatedDisk Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allocatedDisk")]
-        public double AllocatedDisk { get; set; }//;
+        public System.Double? AllocatedDisk { get; set; }//;
         
         // Key: backupDays Type: dedicatedCloud.backup.BackupDaysEnum[] FullType: dedicatedCloud.backup.BackupDaysEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupDays")]
-        public _dedicatedCloud_backup.BackupDaysEnum[] BackupDays { get; set; }//;
+        public _dedicatedCloud_backup.BackupDaysEnum[]? BackupDays { get; set; }//;
         
         // Key: encryption Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryption")]
-        public bool Encryption { get; set; }//;
+        public System.Boolean? Encryption { get; set; }//;
         
         // Key: offerType Type: dedicatedCloud.backup.OfferTypeEnum FullType: dedicatedCloud.backup.OfferTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerType")]
-        public _dedicatedCloud_backup.OfferTypeEnum OfferType { get; set; }//;
+        public _dedicatedCloud_backup.OfferTypeEnum? OfferType { get; set; }//;
         
         // Key: retentionTime Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionTime")]
-        public long RetentionTime { get; set; }//;
+        public System.Int64? RetentionTime { get; set; }//;
         
         // Key: state Type: dedicatedCloud.backup.StateEnum FullType: dedicatedCloud.backup.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -188,7 +188,7 @@ namespace _dedicatedCloud {
         
         // Key: vmName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmName")]
-        public string VmName { get; set; }//;
+        public System.String? VmName { get; set; }//;
     }
     
     // Id: BackupRepository Namespace: dedicatedCloud
@@ -196,15 +196,15 @@ namespace _dedicatedCloud {
         
         // Key: lastSuccessfulReplicationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastSuccessfulReplicationDate")]
-        public System.DateTime LastSuccessfulReplicationDate { get; set; }//;
+        public System.DateTime? LastSuccessfulReplicationDate { get; set; }//;
         
         // Key: replication Type: dedicatedCloud.option.StateEnum FullType: dedicatedCloud.option.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("replication")]
-        public _dedicatedCloud_option.StateEnum Replication { get; set; }//;
+        public _dedicatedCloud_option.StateEnum? Replication { get; set; }//;
         
         // Key: replicationZone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("replicationZone")]
-        public string ReplicationZone { get; set; }//;
+        public System.String? ReplicationZone { get; set; }//;
         
         // Key: repositoryId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("repositoryId")]
@@ -216,7 +216,7 @@ namespace _dedicatedCloud {
         
         // Key: syncStatus Type: dedicatedCloud.backup.ReplicationSyncStatus FullType: dedicatedCloud.backup.ReplicationSyncStatus
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("syncStatus")]
-        public _dedicatedCloud_backup.ReplicationSyncStatus SyncStatus { get; set; }//;
+        public _dedicatedCloud_backup.ReplicationSyncStatus? SyncStatus { get; set; }//;
     }
     
     // Id: BackupStateEnum Namespace: dedicatedCloud
@@ -301,7 +301,7 @@ namespace _dedicatedCloud {
         
         // Key: autoscale Type: dedicatedCloud.cluster.AutoScale FullType: dedicatedCloud.cluster.AutoScale
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]
-        public _dedicatedCloud_cluster.AutoScale Autoscale { get; set; }//;
+        public _dedicatedCloud_cluster.AutoScale? Autoscale { get; set; }//;
         
         // Key: clusterId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterId")]
@@ -657,7 +657,7 @@ namespace _dedicatedCloud {
         
         // Key: range Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("range")]
-        public string Range { get; set; }//;
+        public System.String? Range { get; set; }//;
     }
     
     // Id: Datacenter Namespace: dedicatedCloud
@@ -681,7 +681,7 @@ namespace _dedicatedCloud {
         
         // Key: horizonViewName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("horizonViewName")]
-        public string HorizonViewName { get; set; }//;
+        public System.String? HorizonViewName { get; set; }//;
         
         // Key: isRemovable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isRemovable")]
@@ -753,7 +753,7 @@ namespace _dedicatedCloud {
         
         // Key: ldapHostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ldapHostname")]
-        public string LdapHostname { get; set; }//;
+        public System.String? LdapHostname { get; set; }//;
         
         // Key: ldapTcpPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ldapTcpPort")]
@@ -765,7 +765,7 @@ namespace _dedicatedCloud {
         
         // Key: sslThumbprint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslThumbprint")]
-        public string SslThumbprint { get; set; }//;
+        public System.String? SslThumbprint { get; set; }//;
         
         // Key: state Type: dedicatedCloud.optionAccessNetwork.StateEnum FullType: dedicatedCloud.optionAccessNetwork.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -781,15 +781,15 @@ namespace _dedicatedCloud {
         
         // Key: activeNode Type: dedicatedCloud.filer.NodeTypeEnum FullType: dedicatedCloud.filer.NodeTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("activeNode")]
-        public _dedicatedCloud_filer.NodeTypeEnum ActiveNode { get; set; }//;
+        public _dedicatedCloud_filer.NodeTypeEnum? ActiveNode { get; set; }//;
         
         // Key: billingType Type: dedicatedCloud.ressources.BillingTypeEnum FullType: dedicatedCloud.ressources.BillingTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("billingType")]
-        public _dedicatedCloud_ressources.BillingTypeEnum BillingType { get; set; }//;
+        public _dedicatedCloud_ressources.BillingTypeEnum? BillingType { get; set; }//;
         
         // Key: connectionState Type: dedicatedCloud.filer.ConnexionStateEnum FullType: dedicatedCloud.filer.ConnexionStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connectionState")]
-        public _dedicatedCloud_filer.ConnexionStateEnum ConnectionState { get; set; }//;
+        public _dedicatedCloud_filer.ConnexionStateEnum? ConnectionState { get; set; }//;
         
         // Key: filerId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filerId")]
@@ -817,7 +817,7 @@ namespace _dedicatedCloud {
         
         // Key: resourceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceName")]
-        public string ResourceName { get; set; }//;
+        public System.String? ResourceName { get; set; }//;
         
         // Key: size Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
@@ -825,19 +825,19 @@ namespace _dedicatedCloud {
         
         // Key: slave Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slave")]
-        public string Slave { get; set; }//;
+        public System.String? Slave { get; set; }//;
         
         // Key: spaceFree Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spaceFree")]
-        public double SpaceFree { get; set; }//;
+        public System.Double? SpaceFree { get; set; }//;
         
         // Key: spaceProvisionned Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spaceProvisionned")]
-        public double SpaceProvisionned { get; set; }//;
+        public System.Double? SpaceProvisionned { get; set; }//;
         
         // Key: spaceUsed Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spaceUsed")]
-        public double SpaceUsed { get; set; }//;
+        public System.Double? SpaceUsed { get; set; }//;
         
         // Key: state Type: dedicatedCloud.filer.StateEnum FullType: dedicatedCloud.filer.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -845,7 +845,7 @@ namespace _dedicatedCloud {
         
         // Key: vmTotal Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmTotal")]
-        public long VmTotal { get; set; }//;
+        public System.Int64? VmTotal { get; set; }//;
     }
     
     // Id: GenerationEnum Namespace: dedicatedCloud
@@ -863,7 +863,7 @@ namespace _dedicatedCloud {
         
         // Key: build Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("build")]
-        public string Build { get; set; }//;
+        public System.String? Build { get; set; }//;
         
         // Key: state Type: dedicatedCloud.option.StateEnum FullType: dedicatedCloud.option.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -871,7 +871,7 @@ namespace _dedicatedCloud {
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public string Version { get; set; }//;
+        public System.String? Version { get; set; }//;
     }
     
     // Id: Hds Namespace: dedicatedCloud
@@ -899,11 +899,11 @@ namespace _dedicatedCloud {
         
         // Key: clusterName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterName")]
-        public string ClusterName { get; set; }//;
+        public System.String? ClusterName { get; set; }//;
         
         // Key: connectionState Type: dedicatedCloud.hostSystemConnectionState FullType: dedicatedCloud.hostSystemConnectionState
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connectionState")]
-        public _dedicatedCloud.hostSystemConnectionState ConnectionState { get; set; }//;
+        public _dedicatedCloud.hostSystemConnectionState? ConnectionState { get; set; }//;
         
         // Key: cpu Type: complexType.UnitAndValue<double> FullType: complexType.UnitAndValue<double>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpu")]
@@ -911,19 +911,19 @@ namespace _dedicatedCloud {
         
         // Key: cpuMax Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpuMax")]
-        public long CpuMax { get; set; }//;
+        public System.Int64? CpuMax { get; set; }//;
         
         // Key: cpuMaxCore Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpuMaxCore")]
-        public long CpuMaxCore { get; set; }//;
+        public System.Int64? CpuMaxCore { get; set; }//;
         
         // Key: cpuNum Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpuNum")]
-        public long CpuNum { get; set; }//;
+        public System.Int64? CpuNum { get; set; }//;
         
         // Key: cpuUsed Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpuUsed")]
-        public long CpuUsed { get; set; }//;
+        public System.Int64? CpuUsed { get; set; }//;
         
         // Key: hostId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostId")]
@@ -931,11 +931,11 @@ namespace _dedicatedCloud {
         
         // Key: inMaintenance Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inMaintenance")]
-        public bool InMaintenance { get; set; }//;
+        public System.Boolean? InMaintenance { get; set; }//;
         
         // Key: memoryUsed Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memoryUsed")]
-        public double MemoryUsed { get; set; }//;
+        public System.Double? MemoryUsed { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -943,7 +943,7 @@ namespace _dedicatedCloud {
         
         // Key: parentHostId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentHostId")]
-        public long ParentHostId { get; set; }//;
+        public System.Int64? ParentHostId { get; set; }//;
         
         // Key: profile Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("profile")]
@@ -963,7 +963,7 @@ namespace _dedicatedCloud {
         
         // Key: resourceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceName")]
-        public string ResourceName { get; set; }//;
+        public System.String? ResourceName { get; set; }//;
         
         // Key: state Type: dedicatedCloud.host.StateEnum FullType: dedicatedCloud.host.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -971,15 +971,15 @@ namespace _dedicatedCloud {
         
         // Key: uptime Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("uptime")]
-        public long Uptime { get; set; }//;
+        public System.Int64? Uptime { get; set; }//;
         
         // Key: vmTotal Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmTotal")]
-        public long VmTotal { get; set; }//;
+        public System.Int64? VmTotal { get; set; }//;
         
         // Key: vmVcpuTotal Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmVcpuTotal")]
-        public long VmVcpuTotal { get; set; }//;
+        public System.Int64? VmVcpuTotal { get; set; }//;
     }
     
     // Id: HostProfile Namespace: dedicatedCloud
@@ -1091,7 +1091,7 @@ namespace _dedicatedCloud {
         
         // Key: identityProviderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("identityProviderId")]
-        public long IdentityProviderId { get; set; }//;
+        public System.Int64? IdentityProviderId { get; set; }//;
         
         // Key: state Type: dedicatedCloud.option.StateEnum FullType: dedicatedCloud.option.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1195,7 +1195,7 @@ namespace _dedicatedCloud {
         
         // Key: reverse Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reverse")]
-        public string Reverse { get; set; }//;
+        public System.String? Reverse { get; set; }//;
         
         // Key: usage Type: dedicatedCloud.ipUsageEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usage")]
@@ -1203,7 +1203,7 @@ namespace _dedicatedCloud {
         
         // Key: usageDetails Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usageDetails")]
-        public string UsageDetails { get; set; }//;
+        public System.String? UsageDetails { get; set; }//;
     }
     
     // Id: LogSubscriptionResource Namespace: dedicatedCloud
@@ -1261,7 +1261,7 @@ namespace _dedicatedCloud {
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: Nsxt Namespace: dedicatedCloud
@@ -1269,7 +1269,7 @@ namespace _dedicatedCloud {
         
         // Key: datacentersState Type: dedicatedCloud.option.DatacenterOptionState[] FullType: dedicatedCloud.option.DatacenterOptionState[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacentersState")]
-        public _dedicatedCloud_option.DatacenterOptionState[] DatacentersState { get; set; }//;
+        public _dedicatedCloud_option.DatacenterOptionState[]? DatacentersState { get; set; }//;
         
         // Key: state Type: dedicatedCloud.option.StateEnum FullType: dedicatedCloud.option.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1277,11 +1277,11 @@ namespace _dedicatedCloud {
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public string Version { get; set; }//;
+        public System.String? Version { get; set; }//;
     }
     
     // Id: NsxtEdge Namespace: dedicatedCloud
@@ -1289,7 +1289,7 @@ namespace _dedicatedCloud {
         
         // Key: diskLocation Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskLocation")]
-        public string DiskLocation { get; set; }//;
+        public System.String? DiskLocation { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -1297,7 +1297,7 @@ namespace _dedicatedCloud {
         
         // Key: moRef Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("moRef")]
-        public string MoRef { get; set; }//;
+        public System.String? MoRef { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1425,15 +1425,15 @@ namespace _dedicatedCloud {
         
         // Key: customerIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerIp")]
-        public string CustomerIp { get; set; }//;
+        public System.String? CustomerIp { get; set; }//;
         
         // Key: customerNetmask Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerNetmask")]
-        public string CustomerNetmask { get; set; }//;
+        public System.String? CustomerNetmask { get; set; }//;
         
         // Key: customerPortGroup Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerPortGroup")]
-        public string CustomerPortGroup { get; set; }//;
+        public System.String? CustomerPortGroup { get; set; }//;
         
         // Key: state Type: dedicatedCloud.option.StateEnum FullType: dedicatedCloud.option.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1445,7 +1445,7 @@ namespace _dedicatedCloud {
         
         // Key: creationTime Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationTime")]
-        public string CreationTime { get; set; }//;
+        public System.String? CreationTime { get; set; }//;
         
         // Key: isCorrupted Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isCorrupted")]
@@ -1461,7 +1461,7 @@ namespace _dedicatedCloud {
         
         // Key: type Type: dedicatedCloud.backup.BackupTypeEnum FullType: dedicatedCloud.backup.BackupTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _dedicatedCloud_backup.BackupTypeEnum Type { get; set; }//;
+        public _dedicatedCloud_backup.BackupTypeEnum? Type { get; set; }//;
     }
     
     // Id: Right Namespace: dedicatedCloud
@@ -1501,7 +1501,7 @@ namespace _dedicatedCloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: enabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enabled")]
@@ -1629,7 +1629,7 @@ namespace _dedicatedCloud {
         
         // Key: sslThumbprint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslThumbprint")]
-        public string SslThumbprint { get; set; }//;
+        public System.String? SslThumbprint { get; set; }//;
         
         // Key: state Type: dedicatedCloud.optionAccessNetwork.StateEnum FullType: dedicatedCloud.optionAccessNetwork.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1641,7 +1641,7 @@ namespace _dedicatedCloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1649,15 +1649,15 @@ namespace _dedicatedCloud {
         
         // Key: state Type: dedicatedCloud.TagStateEnum FullType: dedicatedCloud.TagStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _dedicatedCloud.TagStateEnum State { get; set; }//;
+        public _dedicatedCloud.TagStateEnum? State { get; set; }//;
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public string Version { get; set; }//;
+        public System.String? Version { get; set; }//;
     }
     
     // Id: TagStateEnum Namespace: dedicatedCloud
@@ -1690,23 +1690,23 @@ namespace _dedicatedCloud {
         
         // Key: createdBy Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdBy")]
-        public string CreatedBy { get; set; }//;
+        public System.String? CreatedBy { get; set; }//;
         
         // Key: createdFrom Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdFrom")]
-        public string CreatedFrom { get; set; }//;
+        public System.String? CreatedFrom { get; set; }//;
         
         // Key: datacenterId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenterId")]
-        public long DatacenterId { get; set; }//;
+        public System.Int64? DatacenterId { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: executionDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("executionDate")]
@@ -1714,23 +1714,23 @@ namespace _dedicatedCloud {
         
         // Key: filerId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filerId")]
-        public long FilerId { get; set; }//;
+        public System.Int64? FilerId { get; set; }//;
         
         // Key: hostId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostId")]
-        public long HostId { get; set; }//;
+        public System.Int64? HostId { get; set; }//;
         
         // Key: lastModificationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastModificationDate")]
-        public System.DateTime LastModificationDate { get; set; }//;
+        public System.DateTime? LastModificationDate { get; set; }//;
         
         // Key: maintenanceDateFrom Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maintenanceDateFrom")]
-        public System.DateTime MaintenanceDateFrom { get; set; }//;
+        public System.DateTime? MaintenanceDateFrom { get; set; }//;
         
         // Key: maintenanceDateTo Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maintenanceDateTo")]
-        public System.DateTime MaintenanceDateTo { get; set; }//;
+        public System.DateTime? MaintenanceDateTo { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1738,19 +1738,19 @@ namespace _dedicatedCloud {
         
         // Key: network Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public string Network { get; set; }//;
+        public System.String? Network { get; set; }//;
         
         // Key: networkAccessId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkAccessId")]
-        public long NetworkAccessId { get; set; }//;
+        public System.Int64? NetworkAccessId { get; set; }//;
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
-        public long OrderId { get; set; }//;
+        public System.Int64? OrderId { get; set; }//;
         
         // Key: parentTaskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentTaskId")]
-        public long ParentTaskId { get; set; }//;
+        public System.Int64? ParentTaskId { get; set; }//;
         
         // Key: progress Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("progress")]
@@ -1770,11 +1770,11 @@ namespace _dedicatedCloud {
         
         // Key: userId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userId")]
-        public long UserId { get; set; }//;
+        public System.Int64? UserId { get; set; }//;
         
         // Key: vlanId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vlanId")]
-        public long VlanId { get; set; }//;
+        public System.Int64? VlanId { get; set; }//;
     }
     
     // Id: TaskStateEnum Namespace: dedicatedCloud
@@ -1841,15 +1841,15 @@ namespace _dedicatedCloud {
         
         // Key: activationState Type: dedicatedCloud.user.ActivationStateEnum FullType: dedicatedCloud.user.ActivationStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("activationState")]
-        public _dedicatedCloud_user.ActivationStateEnum ActivationState { get; set; }//;
+        public _dedicatedCloud_user.ActivationStateEnum? ActivationState { get; set; }//;
         
         // Key: activeDirectoryId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("activeDirectoryId")]
-        public long ActiveDirectoryId { get; set; }//;
+        public System.Int64? ActiveDirectoryId { get; set; }//;
         
         // Key: activeDirectoryType Type: dedicatedCloud.user.TypeEnum FullType: dedicatedCloud.user.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("activeDirectoryType")]
-        public _dedicatedCloud_user.TypeEnum ActiveDirectoryType { get; set; }//;
+        public _dedicatedCloud_user.TypeEnum? ActiveDirectoryType { get; set; }//;
         
         // Key: canManageIpFailOvers Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("canManageIpFailOvers")]
@@ -1865,7 +1865,7 @@ namespace _dedicatedCloud {
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: encryptionRight Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryptionRight")]
@@ -1873,7 +1873,7 @@ namespace _dedicatedCloud {
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: fullAdminRo Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fullAdminRo")]
@@ -1881,11 +1881,11 @@ namespace _dedicatedCloud {
         
         // Key: identityProviderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("identityProviderId")]
-        public long IdentityProviderId { get; set; }//;
+        public System.Int64? IdentityProviderId { get; set; }//;
         
         // Key: identityProviderType Type: dedicatedCloud.user.IdentityProviderTypeEnum FullType: dedicatedCloud.user.IdentityProviderTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("identityProviderType")]
-        public _dedicatedCloud_user.IdentityProviderTypeEnum IdentityProviderType { get; set; }//;
+        public _dedicatedCloud_user.IdentityProviderTypeEnum? IdentityProviderType { get; set; }//;
         
         // Key: isEnableManageable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isEnableManageable")]
@@ -1897,7 +1897,7 @@ namespace _dedicatedCloud {
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: login Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("login")]
@@ -1913,7 +1913,7 @@ namespace _dedicatedCloud {
         
         // Key: phoneNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phoneNumber")]
-        public string PhoneNumber { get; set; }//;
+        public System.String? PhoneNumber { get; set; }//;
         
         // Key: receiveAlerts Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("receiveAlerts")]
@@ -1925,7 +1925,7 @@ namespace _dedicatedCloud {
         
         // Key: type Type: dedicatedCloud.user.TypeEnum FullType: dedicatedCloud.user.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _dedicatedCloud_user.TypeEnum Type { get; set; }//;
+        public _dedicatedCloud_user.TypeEnum? Type { get; set; }//;
         
         // Key: userId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userId")]
@@ -2064,67 +2064,67 @@ namespace _dedicatedCloud {
         
         // Key: backup Type: dedicatedCloud.backup.Backup FullType: dedicatedCloud.backup.Backup
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backup")]
-        public _dedicatedCloud_backup.Backup Backup { get; set; }//;
+        public _dedicatedCloud_backup.Backup? Backup { get; set; }//;
         
         // Key: cdroms Type: dedicatedCloud.virtualMachineCdrom[] FullType: dedicatedCloud.virtualMachineCdrom[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cdroms")]
-        public _dedicatedCloud.virtualMachineCdrom[] Cdroms { get; set; }//;
+        public _dedicatedCloud.virtualMachineCdrom[]? Cdroms { get; set; }//;
         
         // Key: clusterName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterName")]
-        public string ClusterName { get; set; }//;
+        public System.String? ClusterName { get; set; }//;
         
         // Key: cpuMax Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpuMax")]
-        public double CpuMax { get; set; }//;
+        public System.Double? CpuMax { get; set; }//;
         
         // Key: cpuNum Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpuNum")]
-        public long CpuNum { get; set; }//;
+        public System.Int64? CpuNum { get; set; }//;
         
         // Key: cpuReady Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpuReady")]
-        public double CpuReady { get; set; }//;
+        public System.Double? CpuReady { get; set; }//;
         
         // Key: cpuReadyPercent Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpuReadyPercent")]
-        public double CpuReadyPercent { get; set; }//;
+        public System.Double? CpuReadyPercent { get; set; }//;
         
         // Key: cpuUsed Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpuUsed")]
-        public long CpuUsed { get; set; }//;
+        public System.Int64? CpuUsed { get; set; }//;
         
         // Key: filers Type: dedicatedCloud.vmFiler[] FullType: dedicatedCloud.vmFiler[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filers")]
-        public _dedicatedCloud.vmFiler[] Filers { get; set; }//;
+        public _dedicatedCloud.vmFiler[]? Filers { get; set; }//;
         
         // Key: folderName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("folderName")]
-        public string FolderName { get; set; }//;
+        public System.String? FolderName { get; set; }//;
         
         // Key: guestOsFamily Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guestOsFamily")]
-        public string GuestOsFamily { get; set; }//;
+        public System.String? GuestOsFamily { get; set; }//;
         
         // Key: hostName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostName")]
-        public string HostName { get; set; }//;
+        public System.String? HostName { get; set; }//;
         
         // Key: license Type: dedicatedCloud.spla.KmsLicenseIncludingLegacyEnum FullType: dedicatedCloud.spla.KmsLicenseIncludingLegacyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("license")]
-        public _dedicatedCloud_spla.KmsLicenseIncludingLegacyEnum License { get; set; }//;
+        public _dedicatedCloud_spla.KmsLicenseIncludingLegacyEnum? License { get; set; }//;
         
         // Key: memoryMax Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memoryMax")]
-        public long MemoryMax { get; set; }//;
+        public System.Int64? MemoryMax { get; set; }//;
         
         // Key: memoryTps Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memoryTps")]
-        public string MemoryTps { get; set; }//;
+        public System.String? MemoryTps { get; set; }//;
         
         // Key: memoryUsed Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memoryUsed")]
-        public long MemoryUsed { get; set; }//;
+        public System.Int64? MemoryUsed { get; set; }//;
         
         // Key: moRef Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("moRef")]
@@ -2132,27 +2132,27 @@ namespace _dedicatedCloud {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: netPacketRx Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("netPacketRx")]
-        public double NetPacketRx { get; set; }//;
+        public System.Double? NetPacketRx { get; set; }//;
         
         // Key: netPacketTx Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("netPacketTx")]
-        public double NetPacketTx { get; set; }//;
+        public System.Double? NetPacketTx { get; set; }//;
         
         // Key: netRx Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("netRx")]
-        public double NetRx { get; set; }//;
+        public System.Double? NetRx { get; set; }//;
         
         // Key: netTx Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("netTx")]
-        public double NetTx { get; set; }//;
+        public System.Double? NetTx { get; set; }//;
         
         // Key: networks Type: dedicatedCloud.vmNetwork[] FullType: dedicatedCloud.vmNetwork[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networks")]
-        public _dedicatedCloud.vmNetwork[] Networks { get; set; }//;
+        public _dedicatedCloud.vmNetwork[]? Networks { get; set; }//;
         
         // Key: powerState Type: dedicatedCloud.virtualMachinePowerState FullType: dedicatedCloud.virtualMachinePowerState
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("powerState")]
@@ -2160,27 +2160,27 @@ namespace _dedicatedCloud {
         
         // Key: readLatency Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readLatency")]
-        public double ReadLatency { get; set; }//;
+        public System.Double? ReadLatency { get; set; }//;
         
         // Key: readPerSecond Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readPerSecond")]
-        public double ReadPerSecond { get; set; }//;
+        public System.Double? ReadPerSecond { get; set; }//;
         
         // Key: readRate Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readRate")]
-        public double ReadRate { get; set; }//;
+        public System.Double? ReadRate { get; set; }//;
         
         // Key: roleFt Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("roleFt")]
-        public string RoleFt { get; set; }//;
+        public System.String? RoleFt { get; set; }//;
         
         // Key: snapshotNum Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("snapshotNum")]
-        public long SnapshotNum { get; set; }//;
+        public System.Int64? SnapshotNum { get; set; }//;
         
         // Key: stateFt Type: dedicatedCloud.virtualMachineFaultToleranceState FullType: dedicatedCloud.virtualMachineFaultToleranceState
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stateFt")]
-        public _dedicatedCloud.virtualMachineFaultToleranceState StateFt { get; set; }//;
+        public _dedicatedCloud.virtualMachineFaultToleranceState? StateFt { get; set; }//;
         
         // Key: vmId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmId")]
@@ -2188,23 +2188,23 @@ namespace _dedicatedCloud {
         
         // Key: vmwareTools Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmwareTools")]
-        public string VmwareTools { get; set; }//;
+        public System.String? VmwareTools { get; set; }//;
         
         // Key: vmwareToolsVersion Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmwareToolsVersion")]
-        public string VmwareToolsVersion { get; set; }//;
+        public System.String? VmwareToolsVersion { get; set; }//;
         
         // Key: writeLatency Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("writeLatency")]
-        public double WriteLatency { get; set; }//;
+        public System.Double? WriteLatency { get; set; }//;
         
         // Key: writePerSecond Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("writePerSecond")]
-        public double WritePerSecond { get; set; }//;
+        public System.Double? WritePerSecond { get; set; }//;
         
         // Key: writeRate Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("writeRate")]
-        public double WriteRate { get; set; }//;
+        public System.Double? WriteRate { get; set; }//;
     }
     
     // Id: Vrops Namespace: dedicatedCloud
@@ -2216,19 +2216,19 @@ namespace _dedicatedCloud {
         
         // Key: upgrades Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("upgrades")]
-        public string[] Upgrades { get; set; }//;
+        public System.String[]? Upgrades { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: vROpsPublicIP Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vROpsPublicIP")]
-        public string VROpsPublicIP { get; set; }//;
+        public System.String? VROpsPublicIP { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public string Version { get; set; }//;
+        public System.String? Version { get; set; }//;
     }
     
     // Id: VropsOutgoingFlow Namespace: dedicatedCloud
@@ -2264,7 +2264,7 @@ namespace _dedicatedCloud {
         
         // Key: connectionState Type: dedicatedCloud.filer.ConnexionStateEnum FullType: dedicatedCloud.filer.ConnexionStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connectionState")]
-        public _dedicatedCloud_filer.ConnexionStateEnum ConnectionState { get; set; }//;
+        public _dedicatedCloud_filer.ConnexionStateEnum? ConnectionState { get; set; }//;
         
         // Key: datacenterId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenterId")]
@@ -2280,19 +2280,19 @@ namespace _dedicatedCloud {
         
         // Key: spaceFree Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spaceFree")]
-        public double SpaceFree { get; set; }//;
+        public System.Double? SpaceFree { get; set; }//;
         
         // Key: spaceProvisioned Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spaceProvisioned")]
-        public double SpaceProvisioned { get; set; }//;
+        public System.Double? SpaceProvisioned { get; set; }//;
         
         // Key: spaceUsed Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spaceUsed")]
-        public double SpaceUsed { get; set; }//;
+        public System.Double? SpaceUsed { get; set; }//;
         
         // Key: vmTotal Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmTotal")]
-        public long VmTotal { get; set; }//;
+        public System.Int64? VmTotal { get; set; }//;
     }
     
     // Id: ZpoolStockProfile Namespace: dedicatedCloud
@@ -2316,7 +2316,7 @@ namespace _dedicatedCloud {
         
         // Key: addons Type: dedicatedCloud.requiredAddon[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("addons")]
-        public _dedicatedCloud.requiredAddon[] Addons { get; set; }//;
+        public _dedicatedCloud.requiredAddon[]? Addons { get; set; }//;
         
         // Key: estimateRequired Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("estimateRequired")]
@@ -2328,7 +2328,7 @@ namespace _dedicatedCloud {
         
         // Key: upgradeCode Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("upgradeCode")]
-        public string UpgradeCode { get; set; }//;
+        public System.String? UpgradeCode { get; set; }//;
         
         // Key: upgradeRequired Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("upgradeRequired")]
@@ -2388,7 +2388,7 @@ namespace _dedicatedCloud {
         
         // Key: servicePackName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("servicePackName")]
-        public string ServicePackName { get; set; }//;
+        public System.String? ServicePackName { get; set; }//;
         
         // Key: spla Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spla")]
@@ -2396,7 +2396,7 @@ namespace _dedicatedCloud {
         
         // Key: sslV3 Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslV3")]
-        public bool SslV3 { get; set; }//;
+        public System.Boolean? SslV3 { get; set; }//;
         
         // Key: state Type: dedicatedCloud.StateEnum FullType: dedicatedCloud.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -2468,7 +2468,7 @@ namespace _dedicatedCloud {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: location Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("location")]
@@ -2488,7 +2488,7 @@ namespace _dedicatedCloud {
         
         // Key: servicePackName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("servicePackName")]
-        public string ServicePackName { get; set; }//;
+        public System.String? ServicePackName { get; set; }//;
         
         // Key: spla Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spla")]
@@ -2496,7 +2496,7 @@ namespace _dedicatedCloud {
         
         // Key: sslV3 Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslV3")]
-        public bool SslV3 { get; set; }//;
+        public System.Boolean? SslV3 { get; set; }//;
         
         // Key: state Type: dedicatedCloud.StateEnum FullType: dedicatedCloud.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -2710,7 +2710,7 @@ namespace _dedicatedCloud {
         
         // Key: resources Type: dedicatedCloud.resourceNewPricesEntry[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resources")]
-        public _dedicatedCloud.resourceNewPricesEntry[] Resources { get; set; }//;
+        public _dedicatedCloud.resourceNewPricesEntry[]? Resources { get; set; }//;
     }
     
     // Id: resourceNewPricesEntry Namespace: dedicatedCloud
@@ -2873,11 +2873,11 @@ namespace _dedicatedCloud {
         
         // Key: connected Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connected")]
-        public bool Connected { get; set; }//;
+        public System.Boolean? Connected { get; set; }//;
         
         // Key: iso Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iso")]
-        public string Iso { get; set; }//;
+        public System.String? Iso { get; set; }//;
     }
     
     // Id: virtualMachineFaultToleranceState Namespace: dedicatedCloud
@@ -2907,7 +2907,7 @@ namespace _dedicatedCloud {
         
         // Key: guestOsFamily Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guestOsFamily")]
-        public string GuestOsFamily { get; set; }//;
+        public System.String? GuestOsFamily { get; set; }//;
         
         // Key: license Type: dedicatedCloud.spla.KmsLicenseIncludingLegacyEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("license")]
@@ -3011,27 +3011,27 @@ namespace _dedicatedCloud {
         
         // Key: carpState Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("carpState")]
-        public string CarpState { get; set; }//;
+        public System.String? CarpState { get; set; }//;
         
         // Key: deviceName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deviceName")]
-        public string DeviceName { get; set; }//;
+        public System.String? DeviceName { get; set; }//;
         
         // Key: portGroupKey Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portGroupKey")]
-        public string PortGroupKey { get; set; }//;
+        public System.String? PortGroupKey { get; set; }//;
         
         // Key: portKey Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portKey")]
-        public string PortKey { get; set; }//;
+        public System.String? PortKey { get; set; }//;
         
         // Key: portKeySecurityPolicy Type: dedicatedCloud.DvsSecurityPolicy FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portKeySecurityPolicy")]
-        public _dedicatedCloud.DvsSecurityPolicy PortKeySecurityPolicy { get; set; }//;
+        public _dedicatedCloud.DvsSecurityPolicy? PortKeySecurityPolicy { get; set; }//;
         
         // Key: switchUuid Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("switchUuid")]
-        public string SwitchUuid { get; set; }//;
+        public System.String? SwitchUuid { get; set; }//;
         
         // Key: type Type: dedicatedCloud.vmNetworkBackingTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -3039,11 +3039,11 @@ namespace _dedicatedCloud {
         
         // Key: useAutoDetect Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("useAutoDetect")]
-        public bool UseAutoDetect { get; set; }//;
+        public System.Boolean? UseAutoDetect { get; set; }//;
         
         // Key: valueMoref Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("valueMoref")]
-        public string ValueMoref { get; set; }//;
+        public System.String? ValueMoref { get; set; }//;
     }
     
     // Id: vmNetworkBackingTypeEnum Namespace: dedicatedCloud

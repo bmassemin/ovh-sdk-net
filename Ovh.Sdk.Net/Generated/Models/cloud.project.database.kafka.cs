@@ -99,7 +99,7 @@ namespace _cloud_project_database_kafka {
         
         // Key: networkId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkId")]
-        public System.Guid NetworkId { get; set; }//;
+        public System.Guid? NetworkId { get; set; }//;
         
         // Key: networkType Type: cloud.project.database.NetworkTypeEnum FullType: cloud.project.database.NetworkTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkType")]
@@ -131,11 +131,11 @@ namespace _cloud_project_database_kafka {
         
         // Key: storage Type: cloud.project.database.service.Storage FullType: cloud.project.database.service.Storage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public _cloud_project_database_service.Storage Storage { get; set; }//;
+        public _cloud_project_database_service.Storage? Storage { get; set; }//;
         
         // Key: subnetId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subnetId")]
-        public System.Guid SubnetId { get; set; }//;
+        public System.Guid? SubnetId { get; set; }//;
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]

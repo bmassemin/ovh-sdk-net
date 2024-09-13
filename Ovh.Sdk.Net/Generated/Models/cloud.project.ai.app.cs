@@ -51,23 +51,23 @@ namespace _cloud_project_ai_app {
         
         // Key: command Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("command")]
-        public string[] Command { get; set; }//;
+        public System.String[]? Command { get; set; }//;
         
         // Key: defaultHttpPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultHttpPort")]
-        public long DefaultHttpPort { get; set; }//;
+        public System.Int64? DefaultHttpPort { get; set; }//;
         
         // Key: deploymentStrategy Type: cloud.project.ai.app.DeploymentStrategy FullType: cloud.project.ai.app.DeploymentStrategy
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deploymentStrategy")]
-        public _cloud_project_ai_app.DeploymentStrategy DeploymentStrategy { get; set; }//;
+        public _cloud_project_ai_app.DeploymentStrategy? DeploymentStrategy { get; set; }//;
         
         // Key: envVars Type: cloud.project.ai.job.JobEnv[] FullType: cloud.project.ai.job.JobEnv[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("envVars")]
-        public _cloud_project_ai_job.JobEnv[] EnvVars { get; set; }//;
+        public _cloud_project_ai_job.JobEnv[]? EnvVars { get; set; }//;
         
         // Key: grpcPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grpcPort")]
-        public long GrpcPort { get; set; }//;
+        public System.Int64? GrpcPort { get; set; }//;
         
         // Key: image Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("image")]
@@ -75,7 +75,7 @@ namespace _cloud_project_ai_app {
         
         // Key: labels Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
-        public Dictionary<string, string> Labels { get; set; }//;
+        public Dictionary<string, string>? Labels { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -83,11 +83,11 @@ namespace _cloud_project_ai_app {
         
         // Key: partnerId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnerId")]
-        public string PartnerId { get; set; }//;
+        public System.String? PartnerId { get; set; }//;
         
         // Key: probe Type: cloud.project.ai.app.Probe FullType: cloud.project.ai.app.Probe
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("probe")]
-        public _cloud_project_ai_app.Probe Probe { get; set; }//;
+        public _cloud_project_ai_app.Probe? Probe { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -99,15 +99,15 @@ namespace _cloud_project_ai_app {
         
         // Key: scalingStrategy Type: cloud.project.ai.app.ScalingStrategy FullType: cloud.project.ai.app.ScalingStrategy
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scalingStrategy")]
-        public _cloud_project_ai_app.ScalingStrategy ScalingStrategy { get; set; }//;
+        public _cloud_project_ai_app.ScalingStrategy? ScalingStrategy { get; set; }//;
         
         // Key: unsecureHttp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unsecureHttp")]
-        public bool UnsecureHttp { get; set; }//;
+        public System.Boolean? UnsecureHttp { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.Volume[] FullType: cloud.project.ai.volume.Volume[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.Volume[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.Volume[]? Volumes { get; set; }//;
     }
     
     // Id: AppSpecInput Namespace: cloud.project.ai.app
@@ -115,23 +115,23 @@ namespace _cloud_project_ai_app {
         
         // Key: command Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("command")]
-        public string[] Command { get; set; }//;
+        public System.String[]? Command { get; set; }//;
         
         // Key: defaultHttpPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultHttpPort")]
-        public long DefaultHttpPort { get; set; }//;
+        public System.Int64? DefaultHttpPort { get; set; }//;
         
         // Key: deploymentStrategy Type: cloud.project.ai.app.DeploymentStrategy FullType: cloud.project.ai.app.DeploymentStrategy
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deploymentStrategy")]
-        public _cloud_project_ai_app.DeploymentStrategy DeploymentStrategy { get; set; }//;
+        public _cloud_project_ai_app.DeploymentStrategy? DeploymentStrategy { get; set; }//;
         
         // Key: envVars Type: cloud.project.ai.job.JobEnv[] FullType: cloud.project.ai.job.JobEnv[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("envVars")]
-        public _cloud_project_ai_job.JobEnv[] EnvVars { get; set; }//;
+        public _cloud_project_ai_job.JobEnv[]? EnvVars { get; set; }//;
         
         // Key: grpcPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grpcPort")]
-        public long GrpcPort { get; set; }//;
+        public System.Int64? GrpcPort { get; set; }//;
         
         // Key: image Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("image")]
@@ -139,7 +139,7 @@ namespace _cloud_project_ai_app {
         
         // Key: labels Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
-        public Dictionary<string, string> Labels { get; set; }//;
+        public Dictionary<string, string>? Labels { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -147,11 +147,11 @@ namespace _cloud_project_ai_app {
         
         // Key: partnerId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnerId")]
-        public string PartnerId { get; set; }//;
+        public System.String? PartnerId { get; set; }//;
         
         // Key: probe Type: cloud.project.ai.app.ProbeInput FullType: cloud.project.ai.app.ProbeInput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("probe")]
-        public _cloud_project_ai_app.ProbeInput Probe { get; set; }//;
+        public _cloud_project_ai_app.ProbeInput? Probe { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -163,15 +163,15 @@ namespace _cloud_project_ai_app {
         
         // Key: scalingStrategy Type: cloud.project.ai.app.ScalingStrategyInput FullType: cloud.project.ai.app.ScalingStrategyInput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scalingStrategy")]
-        public _cloud_project_ai_app.ScalingStrategyInput ScalingStrategy { get; set; }//;
+        public _cloud_project_ai_app.ScalingStrategyInput? ScalingStrategy { get; set; }//;
         
         // Key: unsecureHttp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unsecureHttp")]
-        public bool UnsecureHttp { get; set; }//;
+        public System.Boolean? UnsecureHttp { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.Volume[] FullType: cloud.project.ai.volume.Volume[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.Volume[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.Volume[]? Volumes { get; set; }//;
     }
     
     // Id: AppStateEnum Namespace: cloud.project.ai.app
@@ -233,7 +233,7 @@ namespace _cloud_project_ai_app {
         
         // Key: grpcAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grpcAddress")]
-        public string GrpcAddress { get; set; }//;
+        public System.String? GrpcAddress { get; set; }//;
         
         // Key: history Type: cloud.project.ai.app.AppStateHistory[] FullType: cloud.project.ai.app.AppStateHistory[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("history")]
@@ -245,31 +245,31 @@ namespace _cloud_project_ai_app {
         
         // Key: infoUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("infoUrl")]
-        public string InfoUrl { get; set; }//;
+        public System.String? InfoUrl { get; set; }//;
         
         // Key: internalServiceIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internalServiceIp")]
-        public string InternalServiceIp { get; set; }//;
+        public System.String? InternalServiceIp { get; set; }//;
         
         // Key: lastTransitionDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastTransitionDate")]
-        public System.DateTime LastTransitionDate { get; set; }//;
+        public System.DateTime? LastTransitionDate { get; set; }//;
         
         // Key: monitoringUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoringUrl")]
-        public string MonitoringUrl { get; set; }//;
+        public System.String? MonitoringUrl { get; set; }//;
         
         // Key: state Type: cloud.project.ai.app.AppStateEnum FullType: cloud.project.ai.app.AppStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _cloud_project_ai_app.AppStateEnum State { get; set; }//;
+        public _cloud_project_ai_app.AppStateEnum? State { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.VolumeStatus[] FullType: cloud.project.ai.volume.VolumeStatus[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.VolumeStatus[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.VolumeStatus[]? Volumes { get; set; }//;
     }
     
     // Id: DeploymentStrategy Namespace: cloud.project.ai.app
@@ -277,15 +277,15 @@ namespace _cloud_project_ai_app {
         
         // Key: maxSurge Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxSurge")]
-        public string MaxSurge { get; set; }//;
+        public System.String? MaxSurge { get; set; }//;
         
         // Key: maxUnavailable Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxUnavailable")]
-        public string MaxUnavailable { get; set; }//;
+        public System.String? MaxUnavailable { get; set; }//;
         
         // Key: progressDeadlineSeconds Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("progressDeadlineSeconds")]
-        public long ProgressDeadlineSeconds { get; set; }//;
+        public System.Int64? ProgressDeadlineSeconds { get; set; }//;
     }
     
     // Id: Probe Namespace: cloud.project.ai.app
@@ -293,11 +293,11 @@ namespace _cloud_project_ai_app {
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
-        public string Path { get; set; }//;
+        public System.String? Path { get; set; }//;
         
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
     }
     
     // Id: ProbeInput Namespace: cloud.project.ai.app
@@ -305,11 +305,11 @@ namespace _cloud_project_ai_app {
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
-        public string Path { get; set; }//;
+        public System.String? Path { get; set; }//;
         
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
     }
     
     // Id: ScalingAutomaticStrategy Namespace: cloud.project.ai.app
@@ -383,11 +383,11 @@ namespace _cloud_project_ai_app {
         
         // Key: automatic Type: cloud.project.ai.app.ScalingAutomaticStrategy FullType: cloud.project.ai.app.ScalingAutomaticStrategy
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("automatic")]
-        public _cloud_project_ai_app.ScalingAutomaticStrategy Automatic { get; set; }//;
+        public _cloud_project_ai_app.ScalingAutomaticStrategy? Automatic { get; set; }//;
         
         // Key: fixed Type: cloud.project.ai.app.ScalingFixedStrategy FullType: cloud.project.ai.app.ScalingFixedStrategy
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fixed")]
-        public _cloud_project_ai_app.ScalingFixedStrategy @fixed { get; set; }//;
+        public _cloud_project_ai_app.ScalingFixedStrategy? @fixed { get; set; }//;
     }
     
     // Id: ScalingStrategyInput Namespace: cloud.project.ai.app
@@ -395,11 +395,11 @@ namespace _cloud_project_ai_app {
         
         // Key: automatic Type: cloud.project.ai.app.ScalingAutomaticStrategyInput FullType: cloud.project.ai.app.ScalingAutomaticStrategyInput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("automatic")]
-        public _cloud_project_ai_app.ScalingAutomaticStrategyInput Automatic { get; set; }//;
+        public _cloud_project_ai_app.ScalingAutomaticStrategyInput? Automatic { get; set; }//;
         
         // Key: fixed Type: cloud.project.ai.app.ScalingFixedStrategyInput FullType: cloud.project.ai.app.ScalingFixedStrategyInput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fixed")]
-        public _cloud_project_ai_app.ScalingFixedStrategyInput @fixed { get; set; }//;
+        public _cloud_project_ai_app.ScalingFixedStrategyInput? @fixed { get; set; }//;
     }
     
     // Id: UpdateInput Namespace: cloud.project.ai.app
@@ -407,38 +407,38 @@ namespace _cloud_project_ai_app {
         
         // Key: command Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("command")]
-        public string[] Command { get; set; }//;
+        public System.String[]? Command { get; set; }//;
         
         // Key: cpu Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpu")]
-        public long Cpu { get; set; }//;
+        public System.Int64? Cpu { get; set; }//;
         
         // Key: defaultHttpPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultHttpPort")]
-        public long DefaultHttpPort { get; set; }//;
+        public System.Int64? DefaultHttpPort { get; set; }//;
         
         // Key: deploymentStrategy Type: cloud.project.ai.app.DeploymentStrategy FullType: cloud.project.ai.app.DeploymentStrategy
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deploymentStrategy")]
-        public _cloud_project_ai_app.DeploymentStrategy DeploymentStrategy { get; set; }//;
+        public _cloud_project_ai_app.DeploymentStrategy? DeploymentStrategy { get; set; }//;
         
         // Key: envVars Type: cloud.project.ai.Env[] FullType: cloud.project.ai.Env[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("envVars")]
-        public _cloud_project_ai.Env[] EnvVars { get; set; }//;
+        public _cloud_project_ai.Env[]? EnvVars { get; set; }//;
         
         // Key: flavor Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavor")]
-        public string Flavor { get; set; }//;
+        public System.String? Flavor { get; set; }//;
         
         // Key: gpu Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpu")]
-        public long Gpu { get; set; }//;
+        public System.Int64? Gpu { get; set; }//;
         
         // Key: grpcPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grpcPort")]
-        public long GrpcPort { get; set; }//;
+        public System.Int64? GrpcPort { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
 }

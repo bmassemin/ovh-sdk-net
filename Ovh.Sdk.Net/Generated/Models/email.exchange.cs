@@ -15,19 +15,23 @@ namespace _email_exchange {
         
         // Key: SAMAccountName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("SAMAccountName")]
-        public string SAMAccountName { get; set; }//;
+        public System.String? SAMAccountName { get; set; }//;
         
         // Key: accountLicense Type: email.exchange.OvhLicenceEnum FullType: email.exchange.OvhLicenceEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accountLicense")]
         public _email_exchange.OvhLicenceEnum AccountLicense { get; set; }//;
         
+        // Key: authenticationPolicyId Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("authenticationPolicyId")]
+        public System.Int64? AuthenticationPolicyId { get; set; }//;
+        
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: company Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("company")]
-        public string Company { get; set; }//;
+        public System.String? Company { get; set; }//;
         
         // Key: configured Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("configured")]
@@ -35,35 +39,35 @@ namespace _email_exchange {
         
         // Key: countryCode Type: email.exchange.CountryCodeEnum FullType: email.exchange.CountryCodeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countryCode")]
-        public _email_exchange.CountryCodeEnum CountryCode { get; set; }//;
+        public _email_exchange.CountryCodeEnum? CountryCode { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: currentUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentUsage")]
-        public long CurrentUsage { get; set; }//;
+        public System.Int64? CurrentUsage { get; set; }//;
         
         // Key: customIsolationId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customIsolationId")]
-        public long CustomIsolationId { get; set; }//;
+        public System.Int64? CustomIsolationId { get; set; }//;
         
         // Key: deleteAtExpiration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteAtExpiration")]
-        public bool DeleteAtExpiration { get; set; }//;
+        public System.Boolean? DeleteAtExpiration { get; set; }//;
         
         // Key: deleteOutlookAtExpiration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteOutlookAtExpiration")]
-        public bool DeleteOutlookAtExpiration { get; set; }//;
+        public System.Boolean? DeleteOutlookAtExpiration { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -71,31 +75,31 @@ namespace _email_exchange {
         
         // Key: exchangeGuid Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("exchangeGuid")]
-        public string ExchangeGuid { get; set; }//;
+        public System.String? ExchangeGuid { get; set; }//;
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: expirationOutlookDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationOutlookDate")]
-        public System.DateTime ExpirationOutlookDate { get; set; }//;
+        public System.DateTime? ExpirationOutlookDate { get; set; }//;
         
         // Key: fax Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fax")]
-        public string Fax { get; set; }//;
+        public System.String? Fax { get; set; }//;
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: forwardingEmail Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("forwardingEmail")]
-        public string ForwardingEmail { get; set; }//;
+        public System.String? ForwardingEmail { get; set; }//;
         
         // Key: guid Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guid")]
-        public string Guid { get; set; }//;
+        public System.String? Guid { get; set; }//;
         
         // Key: hiddenFromGAL Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hiddenFromGAL")]
@@ -107,31 +111,31 @@ namespace _email_exchange {
         
         // Key: initial Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initial")]
-        public string Initial { get; set; }//;
+        public System.String? Initial { get; set; }//;
         
         // Key: jobDepartment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("jobDepartment")]
-        public string JobDepartment { get; set; }//;
+        public System.String? JobDepartment { get; set; }//;
         
         // Key: jobTitle Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("jobTitle")]
-        public string JobTitle { get; set; }//;
+        public System.String? JobTitle { get; set; }//;
         
         // Key: lastLogoffDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogoffDate")]
-        public System.DateTime LastLogoffDate { get; set; }//;
+        public System.DateTime? LastLogoffDate { get; set; }//;
         
         // Key: lastLogonDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogonDate")]
-        public System.DateTime LastLogonDate { get; set; }//;
+        public System.DateTime? LastLogonDate { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: litigation Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("litigation")]
@@ -139,7 +143,7 @@ namespace _email_exchange {
         
         // Key: litigationPeriod Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("litigationPeriod")]
-        public long LitigationPeriod { get; set; }//;
+        public System.Int64? LitigationPeriod { get; set; }//;
         
         // Key: login Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("login")]
@@ -147,15 +151,15 @@ namespace _email_exchange {
         
         // Key: mailSenderDisplay Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailSenderDisplay")]
-        public string MailSenderDisplay { get; set; }//;
+        public System.String? MailSenderDisplay { get; set; }//;
         
         // Key: mailingFilter Type: email.exchange.MailingFilterEnum[] FullType: email.exchange.MailingFilterEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailingFilter")]
-        public _email_exchange.MailingFilterEnum[] MailingFilter { get; set; }//;
+        public _email_exchange.MailingFilterEnum[]? MailingFilter { get; set; }//;
         
         // Key: mobile Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mobile")]
-        public string Mobile { get; set; }//;
+        public System.String? Mobile { get; set; }//;
         
         // Key: numberOfAliases Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("numberOfAliases")]
@@ -163,7 +167,7 @@ namespace _email_exchange {
         
         // Key: office Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("office")]
-        public string Office { get; set; }//;
+        public System.String? Office { get; set; }//;
         
         // Key: outlookLicense Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("outlookLicense")]
@@ -175,15 +179,15 @@ namespace _email_exchange {
         
         // Key: passwordLastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordLastUpdate")]
-        public System.DateTime PasswordLastUpdate { get; set; }//;
+        public System.DateTime? PasswordLastUpdate { get; set; }//;
         
         // Key: phone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
-        public string Phone { get; set; }//;
+        public System.String? Phone { get; set; }//;
         
         // Key: postalCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postalCode")]
-        public string PostalCode { get; set; }//;
+        public System.String? PostalCode { get; set; }//;
         
         // Key: primaryEmailAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("primaryEmailAddress")]
@@ -195,23 +199,23 @@ namespace _email_exchange {
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
         
         // Key: renewOutlookPeriod Type: email.exchange.renewPeriodEnum FullType: email.exchange.renewPeriodEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewOutlookPeriod")]
-        public _email_exchange.renewPeriodEnum RenewOutlookPeriod { get; set; }//;
+        public _email_exchange.renewPeriodEnum? RenewOutlookPeriod { get; set; }//;
         
         // Key: renewPeriod Type: email.exchange.renewPeriodEnum FullType: email.exchange.renewPeriodEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewPeriod")]
-        public _email_exchange.renewPeriodEnum RenewPeriod { get; set; }//;
+        public _email_exchange.renewPeriodEnum? RenewPeriod { get; set; }//;
         
         // Key: sbrDestination Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sbrDestination")]
-        public string SbrDestination { get; set; }//;
+        public System.String? SbrDestination { get; set; }//;
         
         // Key: sendConnectorId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sendConnectorId")]
-        public long SendConnectorId { get; set; }//;
+        public System.Int64? SendConnectorId { get; set; }//;
         
         // Key: spamAndVirusConfiguration Type: email.exchange.spamAndVirusConfiguration FullType: email.exchange.spamAndVirusConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamAndVirusConfiguration")]
@@ -223,7 +227,7 @@ namespace _email_exchange {
         
         // Key: spamTicketNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamTicketNumber")]
-        public long SpamTicketNumber { get; set; }//;
+        public System.Int64? SpamTicketNumber { get; set; }//;
         
         // Key: state Type: email.exchange.ObjectStateEnum FullType: email.exchange.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -235,11 +239,11 @@ namespace _email_exchange {
         
         // Key: streetAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetAddress")]
-        public string StreetAddress { get; set; }//;
+        public System.String? StreetAddress { get; set; }//;
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
     
     // Id: AccountLicense Namespace: email.exchange
@@ -1146,7 +1150,7 @@ namespace _email_exchange {
         
         // Key: cnameToCheck Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cnameToCheck")]
-        public string CnameToCheck { get; set; }//;
+        public System.String? CnameToCheck { get; set; }//;
         
         // Key: dkimDiagnostics Type: email.exchange.DomainDkimDiagnostics FullType: email.exchange.DomainDkimDiagnostics
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dkimDiagnostics")]
@@ -1178,7 +1182,7 @@ namespace _email_exchange {
         
         // Key: main Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("main")]
-        public bool Main { get; set; }//;
+        public System.Boolean? Main { get; set; }//;
         
         // Key: mxIsValid Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mxIsValid")]
@@ -1186,11 +1190,11 @@ namespace _email_exchange {
         
         // Key: mxRecord Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mxRecord")]
-        public string[] MxRecord { get; set; }//;
+        public System.String[]? MxRecord { get; set; }//;
         
         // Key: mxRelay Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mxRelay")]
-        public string MxRelay { get; set; }//;
+        public System.String? MxRelay { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1198,15 +1202,15 @@ namespace _email_exchange {
         
         // Key: organization2010 Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organization2010")]
-        public string Organization2010 { get; set; }//;
+        public System.String? Organization2010 { get; set; }//;
         
         // Key: sbrDefault Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sbrDefault")]
-        public string SbrDefault { get; set; }//;
+        public System.String? SbrDefault { get; set; }//;
         
         // Key: sendConnectorIdDefault Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sendConnectorIdDefault")]
-        public long SendConnectorIdDefault { get; set; }//;
+        public System.Int64? SendConnectorIdDefault { get; set; }//;
         
         // Key: spfIsValid Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spfIsValid")]
@@ -1214,7 +1218,7 @@ namespace _email_exchange {
         
         // Key: spfRecord Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spfRecord")]
-        public string[] SpfRecord { get; set; }//;
+        public System.String[]? SpfRecord { get; set; }//;
         
         // Key: srvIsValid Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("srvIsValid")]
@@ -1222,7 +1226,7 @@ namespace _email_exchange {
         
         // Key: srvRecord Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("srvRecord")]
-        public string[] SrvRecord { get; set; }//;
+        public System.String[]? SrvRecord { get; set; }//;
         
         // Key: state Type: email.exchange.ObjectStateEnum FullType: email.exchange.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1242,11 +1246,11 @@ namespace _email_exchange {
         
         // Key: errorCode Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorCode")]
-        public long ErrorCode { get; set; }//;
+        public System.Int64? ErrorCode { get; set; }//;
         
         // Key: message Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("message")]
-        public string Message { get; set; }//;
+        public System.String? Message { get; set; }//;
         
         // Key: state Type: email.exchange.DomainDkimDiagnosticsStateEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1291,15 +1295,19 @@ namespace _email_exchange {
         
         // Key: cnameDcvRecord Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cnameDcvRecord")]
-        public string CnameDcvRecord { get; set; }//;
+        public System.String? CnameDcvRecord { get; set; }//;
         
         // Key: complexityEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("complexityEnabled")]
         public bool ComplexityEnabled { get; set; }//;
         
+        // Key: defaultAuthenticationPolicyId Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultAuthenticationPolicyId")]
+        public System.Int64? DefaultAuthenticationPolicyId { get; set; }//;
+        
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -1307,11 +1315,11 @@ namespace _email_exchange {
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
-        public string Hostname { get; set; }//;
+        public System.String? Hostname { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: lockoutDuration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutDuration")]
@@ -1323,11 +1331,11 @@ namespace _email_exchange {
         
         // Key: lockoutThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutThreshold")]
-        public long LockoutThreshold { get; set; }//;
+        public System.Int64? LockoutThreshold { get; set; }//;
         
         // Key: maxPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxPasswordAge")]
-        public long MaxPasswordAge { get; set; }//;
+        public System.Int64? MaxPasswordAge { get; set; }//;
         
         // Key: maxReceiveSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxReceiveSize")]
@@ -1339,11 +1347,11 @@ namespace _email_exchange {
         
         // Key: minPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordAge")]
-        public long MinPasswordAge { get; set; }//;
+        public System.Int64? MinPasswordAge { get; set; }//;
         
         // Key: minPasswordLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordLength")]
-        public long MinPasswordLength { get; set; }//;
+        public System.Int64? MinPasswordLength { get; set; }//;
         
         // Key: offer Type: email.exchange.ServiceOfferEnum FullType: email.exchange.ServiceOfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -1351,7 +1359,7 @@ namespace _email_exchange {
         
         // Key: passwordHistoryCount Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordHistoryCount")]
-        public long PasswordHistoryCount { get; set; }//;
+        public System.Int64? PasswordHistoryCount { get; set; }//;
         
         // Key: spamAndVirusConfiguration Type: email.exchange.spamAndVirusConfiguration FullType: email.exchange.spamAndVirusConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamAndVirusConfiguration")]
@@ -1359,7 +1367,7 @@ namespace _email_exchange {
         
         // Key: sslExpirationDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslExpirationDate")]
-        public System.DateOnly SslExpirationDate { get; set; }//;
+        public System.DateOnly? SslExpirationDate { get; set; }//;
         
         // Key: state Type: email.exchange.ServiceStateEnum FullType: email.exchange.ServiceStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1371,7 +1379,7 @@ namespace _email_exchange {
         
         // Key: webUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("webUrl")]
-        public string WebUrl { get; set; }//;
+        public System.String? WebUrl { get; set; }//;
     }
     
     // Id: ExchangeService Namespace: email.exchange
@@ -1383,15 +1391,19 @@ namespace _email_exchange {
         
         // Key: cnameDcvRecord Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cnameDcvRecord")]
-        public string CnameDcvRecord { get; set; }//;
+        public System.String? CnameDcvRecord { get; set; }//;
         
         // Key: complexityEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("complexityEnabled")]
         public bool ComplexityEnabled { get; set; }//;
         
+        // Key: defaultAuthenticationPolicyId Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultAuthenticationPolicyId")]
+        public System.Int64? DefaultAuthenticationPolicyId { get; set; }//;
+        
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -1399,15 +1411,15 @@ namespace _email_exchange {
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
-        public string Hostname { get; set; }//;
+        public System.String? Hostname { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: lockoutDuration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutDuration")]
@@ -1419,11 +1431,11 @@ namespace _email_exchange {
         
         // Key: lockoutThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockoutThreshold")]
-        public long LockoutThreshold { get; set; }//;
+        public System.Int64? LockoutThreshold { get; set; }//;
         
         // Key: maxPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxPasswordAge")]
-        public long MaxPasswordAge { get; set; }//;
+        public System.Int64? MaxPasswordAge { get; set; }//;
         
         // Key: maxReceiveSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxReceiveSize")]
@@ -1435,11 +1447,11 @@ namespace _email_exchange {
         
         // Key: minPasswordAge Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordAge")]
-        public long MinPasswordAge { get; set; }//;
+        public System.Int64? MinPasswordAge { get; set; }//;
         
         // Key: minPasswordLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minPasswordLength")]
-        public long MinPasswordLength { get; set; }//;
+        public System.Int64? MinPasswordLength { get; set; }//;
         
         // Key: offer Type: email.exchange.ServiceOfferEnum FullType: email.exchange.ServiceOfferEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -1447,7 +1459,7 @@ namespace _email_exchange {
         
         // Key: passwordHistoryCount Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordHistoryCount")]
-        public long PasswordHistoryCount { get; set; }//;
+        public System.Int64? PasswordHistoryCount { get; set; }//;
         
         // Key: spamAndVirusConfiguration Type: email.exchange.spamAndVirusConfiguration FullType: email.exchange.spamAndVirusConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamAndVirusConfiguration")]
@@ -1455,7 +1467,7 @@ namespace _email_exchange {
         
         // Key: sslExpirationDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslExpirationDate")]
-        public System.DateOnly SslExpirationDate { get; set; }//;
+        public System.DateOnly? SslExpirationDate { get; set; }//;
         
         // Key: state Type: email.exchange.ServiceStateEnum FullType: email.exchange.ServiceStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1467,7 +1479,7 @@ namespace _email_exchange {
         
         // Key: webUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("webUrl")]
-        public string WebUrl { get; set; }//;
+        public System.String? WebUrl { get; set; }//;
     }
     
     // Id: Export Namespace: email.exchange
@@ -1824,11 +1836,11 @@ namespace _email_exchange {
         
         // Key: currentDiskUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentDiskUsage")]
-        public long CurrentDiskUsage { get; set; }//;
+        public System.Int64? CurrentDiskUsage { get; set; }//;
         
         // Key: diskSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskSize")]
-        public long DiskSize { get; set; }//;
+        public System.Int64? DiskSize { get; set; }//;
         
         // Key: individual2010 Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("individual2010")]
@@ -1840,7 +1852,7 @@ namespace _email_exchange {
         
         // Key: ipV6 Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipV6")]
-        public string IpV6 { get; set; }//;
+        public System.String? IpV6 { get; set; }//;
         
         // Key: isAValid Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isAValid")]
@@ -1872,7 +1884,7 @@ namespace _email_exchange {
         
         // Key: version Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public long Version { get; set; }//;
+        public System.Int64? Version { get; set; }//;
     }
     
     // Id: ServerStateEnum Namespace: email.exchange
@@ -1958,7 +1970,7 @@ namespace _email_exchange {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: function Type: email.exchange.TaskFunctionEnum FullType: email.exchange.TaskFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -2415,7 +2427,7 @@ namespace _email_exchange {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: recordType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordType")]
@@ -2431,11 +2443,11 @@ namespace _email_exchange {
         
         // Key: targetRecord Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetRecord")]
-        public string TargetRecord { get; set; }//;
+        public System.String? TargetRecord { get; set; }//;
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
     
     // Id: dkimStatusEnum Namespace: email.exchange
@@ -2488,11 +2500,11 @@ namespace _email_exchange {
         
         // Key: currentUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentUsage")]
-        public long CurrentUsage { get; set; }//;
+        public System.Int64? CurrentUsage { get; set; }//;
         
         // Key: guid Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guid")]
-        public string Guid { get; set; }//;
+        public System.String? Guid { get; set; }//;
         
         // Key: quota Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
@@ -2504,7 +2516,7 @@ namespace _email_exchange {
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
     
     // Id: exchangeAccountDiagnosis Namespace: email.exchange
@@ -2572,7 +2584,7 @@ namespace _email_exchange {
         
         // Key: lastPasswordChange Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastPasswordChange")]
-        public System.DateTime LastPasswordChange { get; set; }//;
+        public System.DateTime? LastPasswordChange { get; set; }//;
         
         // Key: state Type: email.exchange.ObjectStateEnum FullType: email.exchange.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -2580,7 +2592,7 @@ namespace _email_exchange {
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
         
         // Key: upn Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("upn")]
@@ -2608,7 +2620,7 @@ namespace _email_exchange {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
@@ -2720,11 +2732,11 @@ namespace _email_exchange {
         
         // Key: memberAccountId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memberAccountId")]
-        public long MemberAccountId { get; set; }//;
+        public System.Int64? MemberAccountId { get; set; }//;
         
         // Key: memberContactId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memberContactId")]
-        public long MemberContactId { get; set; }//;
+        public System.Int64? MemberContactId { get; set; }//;
         
         // Key: memberEmailAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memberEmailAddress")]
@@ -2784,7 +2796,7 @@ namespace _email_exchange {
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: hiddenFromGAL Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hiddenFromGAL")]
@@ -2796,15 +2808,15 @@ namespace _email_exchange {
         
         // Key: initials Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initials")]
-        public string Initials { get; set; }//;
+        public System.String? Initials { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: organization2010 Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organization2010")]
-        public string Organization2010 { get; set; }//;
+        public System.String? Organization2010 { get; set; }//;
         
         // Key: state Type: email.exchange.ObjectStateEnum FullType: email.exchange.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -2864,7 +2876,7 @@ namespace _email_exchange {
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: delegateEmailAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("delegateEmailAddress")]
@@ -2893,6 +2905,70 @@ namespace _email_exchange {
         // Key: state Type: email.exchange.activeSyncNotificationStateEnum FullType: email.exchange.activeSyncNotificationStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
         public _email_exchange.activeSyncNotificationStateEnum State { get; set; }//;
+    }
+    
+    // Id: exchangeServiceAuthenticationPolicy Namespace: email.exchange
+    public class exchangeServiceAuthenticationPolicy {
+        
+        // Key: blockLegacyAuthActiveSync Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockLegacyAuthActiveSync")]
+        public bool BlockLegacyAuthActiveSync { get; set; }//;
+        
+        // Key: blockLegacyAuthAutodiscover Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockLegacyAuthAutodiscover")]
+        public bool BlockLegacyAuthAutodiscover { get; set; }//;
+        
+        // Key: blockLegacyAuthImap Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockLegacyAuthImap")]
+        public bool BlockLegacyAuthImap { get; set; }//;
+        
+        // Key: blockLegacyAuthMapi Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockLegacyAuthMapi")]
+        public bool BlockLegacyAuthMapi { get; set; }//;
+        
+        // Key: blockLegacyAuthOfflineAddressBook Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockLegacyAuthOfflineAddressBook")]
+        public bool BlockLegacyAuthOfflineAddressBook { get; set; }//;
+        
+        // Key: blockLegacyAuthPop Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockLegacyAuthPop")]
+        public bool BlockLegacyAuthPop { get; set; }//;
+        
+        // Key: blockLegacyAuthWebServices Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockLegacyAuthWebServices")]
+        public bool BlockLegacyAuthWebServices { get; set; }//;
+        
+        // Key: blockModernAuthActiveSync Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockModernAuthActiveSync")]
+        public bool BlockModernAuthActiveSync { get; set; }//;
+        
+        // Key: blockModernAuthAutodiscover Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockModernAuthAutodiscover")]
+        public bool BlockModernAuthAutodiscover { get; set; }//;
+        
+        // Key: blockModernAuthImap Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockModernAuthImap")]
+        public bool BlockModernAuthImap { get; set; }//;
+        
+        // Key: blockModernAuthMapi Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockModernAuthMapi")]
+        public bool BlockModernAuthMapi { get; set; }//;
+        
+        // Key: blockModernAuthOfflineAddressBook Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockModernAuthOfflineAddressBook")]
+        public bool BlockModernAuthOfflineAddressBook { get; set; }//;
+        
+        // Key: blockModernAuthPop Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockModernAuthPop")]
+        public bool BlockModernAuthPop { get; set; }//;
+        
+        // Key: blockModernAuthWebServices Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockModernAuthWebServices")]
+        public bool BlockModernAuthWebServices { get; set; }//;
+        
+        // Key: id Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public long Id { get; set; }//;
     }
     
     // Id: exchangeServiceAuthorizedIp Namespace: email.exchange
@@ -2944,7 +3020,7 @@ namespace _email_exchange {
         
         // Key: updateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updateDate")]
-        public System.DateTime UpdateDate { get; set; }//;
+        public System.DateTime? UpdateDate { get; set; }//;
     }
     
     // Id: exchangeServiceDevice Namespace: email.exchange
@@ -2980,7 +3056,7 @@ namespace _email_exchange {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
@@ -3012,7 +3088,7 @@ namespace _email_exchange {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
@@ -3092,7 +3168,7 @@ namespace _email_exchange {
         
         // Key: company Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("company")]
-        public string Company { get; set; }//;
+        public System.String? Company { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -3104,7 +3180,7 @@ namespace _email_exchange {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: hiddenFromGAL Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hiddenFromGAL")]
@@ -3116,7 +3192,7 @@ namespace _email_exchange {
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: mailingListAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailingListAddress")]
@@ -3124,11 +3200,11 @@ namespace _email_exchange {
         
         // Key: maxReceiveSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxReceiveSize")]
-        public long MaxReceiveSize { get; set; }//;
+        public System.Int64? MaxReceiveSize { get; set; }//;
         
         // Key: maxSendSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxSendSize")]
-        public long MaxSendSize { get; set; }//;
+        public System.Int64? MaxSendSize { get; set; }//;
         
         // Key: senderAuthentification Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("senderAuthentification")]
@@ -3140,7 +3216,7 @@ namespace _email_exchange {
         
         // Key: spamTicketNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamTicketNumber")]
-        public long SpamTicketNumber { get; set; }//;
+        public System.Int64? SpamTicketNumber { get; set; }//;
         
         // Key: state Type: email.exchange.ObjectStateEnum FullType: email.exchange.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -3192,7 +3268,7 @@ namespace _email_exchange {
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: defaultPermission Type: email.exchange.PublicFolderRightTypeEnum FullType: email.exchange.PublicFolderRightTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultPermission")]
@@ -3200,27 +3276,27 @@ namespace _email_exchange {
         
         // Key: hasSubFolders Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hasSubFolders")]
-        public bool HasSubFolders { get; set; }//;
+        public System.Boolean? HasSubFolders { get; set; }//;
         
         // Key: itemCount Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("itemCount")]
-        public long ItemCount { get; set; }//;
+        public System.Int64? ItemCount { get; set; }//;
         
         // Key: lastAccessTime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastAccessTime")]
-        public System.DateTime LastAccessTime { get; set; }//;
+        public System.DateTime? LastAccessTime { get; set; }//;
         
         // Key: lastModificationTime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastModificationTime")]
-        public System.DateTime LastModificationTime { get; set; }//;
+        public System.DateTime? LastModificationTime { get; set; }//;
         
         // Key: lastUserAccessTime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUserAccessTime")]
-        public System.DateTime LastUserAccessTime { get; set; }//;
+        public System.DateTime? LastUserAccessTime { get; set; }//;
         
         // Key: lastUserModificationTime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUserModificationTime")]
-        public System.DateTime LastUserModificationTime { get; set; }//;
+        public System.DateTime? LastUserModificationTime { get; set; }//;
         
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
@@ -3240,7 +3316,7 @@ namespace _email_exchange {
         
         // Key: totalItemSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("totalItemSize")]
-        public long TotalItemSize { get; set; }//;
+        public System.Int64? TotalItemSize { get; set; }//;
         
         // Key: type Type: email.exchange.PublicFolderTypeEnum FullType: email.exchange.PublicFolderTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -3278,11 +3354,11 @@ namespace _email_exchange {
         
         // Key: company Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("company")]
-        public string Company { get; set; }//;
+        public System.String? Company { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: deleteComments Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteComments")]
@@ -3338,11 +3414,11 @@ namespace _email_exchange {
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public long Id { get; set; }//;
+        public System.Int64? Id { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: maxSendSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxSendSize")]
@@ -3370,7 +3446,7 @@ namespace _email_exchange {
         
         // Key: taskPendingId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
-        public long TaskPendingId { get; set; }//;
+        public System.Int64? TaskPendingId { get; set; }//;
     }
     
     // Id: sharedAccount Namespace: email.exchange
@@ -3378,19 +3454,19 @@ namespace _email_exchange {
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
+        public System.DateTime? CreationDate { get; set; }//;
         
         // Key: currentUsage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentUsage")]
-        public long CurrentUsage { get; set; }//;
+        public System.Int64? CurrentUsage { get; set; }//;
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: firstName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
-        public string FirstName { get; set; }//;
+        public System.String? FirstName { get; set; }//;
         
         // Key: hiddenFromGAL Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hiddenFromGAL")]
@@ -3402,23 +3478,23 @@ namespace _email_exchange {
         
         // Key: initials Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initials")]
-        public string Initials { get; set; }//;
+        public System.String? Initials { get; set; }//;
         
         // Key: lastLogoffDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogoffDate")]
-        public System.DateTime LastLogoffDate { get; set; }//;
+        public System.DateTime? LastLogoffDate { get; set; }//;
         
         // Key: lastLogonDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastLogonDate")]
-        public System.DateTime LastLogonDate { get; set; }//;
+        public System.DateTime? LastLogonDate { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
-        public string LastName { get; set; }//;
+        public System.String? LastName { get; set; }//;
         
         // Key: mailingFilter Type: email.exchange.MailingFilterEnum[] FullType: email.exchange.MailingFilterEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailingFilter")]
-        public _email_exchange.MailingFilterEnum[] MailingFilter { get; set; }//;
+        public _email_exchange.MailingFilterEnum[]? MailingFilter { get; set; }//;
         
         // Key: quota Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
@@ -3434,7 +3510,7 @@ namespace _email_exchange {
         
         // Key: spamTicketNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spamTicketNumber")]
-        public long SpamTicketNumber { get; set; }//;
+        public System.Int64? SpamTicketNumber { get; set; }//;
         
         // Key: state Type: email.exchange.ObjectStateEnum FullType: email.exchange.ObjectStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]

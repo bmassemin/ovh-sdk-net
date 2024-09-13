@@ -15,111 +15,111 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: bandwidthTestUnit Type: xdsl.lineDiagnostic.BandwidthTestUnitEnum FullType: xdsl.lineDiagnostic.BandwidthTestUnitEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bandwidthTestUnit")]
-        public _xdsl_lineDiagnostic.BandwidthTestUnitEnum BandwidthTestUnit { get; set; }//;
+        public _xdsl_lineDiagnostic.BandwidthTestUnitEnum? BandwidthTestUnit { get; set; }//;
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: conditionsAccepted Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditionsAccepted")]
-        public bool ConditionsAccepted { get; set; }//;
+        public System.Boolean? ConditionsAccepted { get; set; }//;
         
         // Key: contactPhone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contactPhone")]
-        public string ContactPhone { get; set; }//;
+        public System.String? ContactPhone { get; set; }//;
         
         // Key: datetimeOfAppearance Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datetimeOfAppearance")]
-        public System.DateTime DatetimeOfAppearance { get; set; }//;
+        public System.DateTime? DatetimeOfAppearance { get; set; }//;
         
         // Key: downloadBandwidthTest Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("downloadBandwidthTest")]
-        public long DownloadBandwidthTest { get; set; }//;
+        public System.Int64? DownloadBandwidthTest { get; set; }//;
         
         // Key: endAfternoonHours Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endAfternoonHours")]
-        public string EndAfternoonHours { get; set; }//;
+        public System.String? EndAfternoonHours { get; set; }//;
         
         // Key: endMorningHours Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endMorningHours")]
-        public string EndMorningHours { get; set; }//;
+        public System.String? EndMorningHours { get; set; }//;
         
         // Key: followBySms Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("followBySms")]
-        public bool FollowBySms { get; set; }//;
+        public System.Boolean? FollowBySms { get; set; }//;
         
         // Key: hasModemKeptSynchronization Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hasModemKeptSynchronization")]
-        public bool HasModemKeptSynchronization { get; set; }//;
+        public System.Boolean? HasModemKeptSynchronization { get; set; }//;
         
         // Key: idAppointment Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("idAppointment")]
-        public long IdAppointment { get; set; }//;
+        public System.Int64? IdAppointment { get; set; }//;
         
         // Key: individualSite Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("individualSite")]
-        public bool IndividualSite { get; set; }//;
+        public System.Boolean? IndividualSite { get; set; }//;
         
         // Key: modemIsSynchronized Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("modemIsSynchronized")]
-        public bool ModemIsSynchronized { get; set; }//;
+        public System.Boolean? ModemIsSynchronized { get; set; }//;
         
         // Key: modemMac Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("modemMac")]
-        public string ModemMac { get; set; }//;
+        public System.String? ModemMac { get; set; }//;
         
         // Key: modemStillSynchronized Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("modemStillSynchronized")]
-        public bool ModemStillSynchronized { get; set; }//;
+        public System.Boolean? ModemStillSynchronized { get; set; }//;
         
         // Key: modemType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("modemType")]
-        public string ModemType { get; set; }//;
+        public System.String? ModemType { get; set; }//;
         
         // Key: ovhTicket Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhTicket")]
-        public string OvhTicket { get; set; }//;
+        public System.String? OvhTicket { get; set; }//;
         
         // Key: problemType Type: xdsl.lineDiagnostic.ProblemTypeEnum FullType: xdsl.lineDiagnostic.ProblemTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("problemType")]
-        public _xdsl_lineDiagnostic.ProblemTypeEnum ProblemType { get; set; }//;
+        public _xdsl_lineDiagnostic.ProblemTypeEnum? ProblemType { get; set; }//;
         
         // Key: resolvedAfterTests Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resolvedAfterTests")]
-        public bool ResolvedAfterTests { get; set; }//;
+        public System.Boolean? ResolvedAfterTests { get; set; }//;
         
         // Key: secureSite Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("secureSite")]
-        public bool SecureSite { get; set; }//;
+        public System.Boolean? SecureSite { get; set; }//;
         
         // Key: severalInternetConnections Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("severalInternetConnections")]
-        public bool SeveralInternetConnections { get; set; }//;
+        public System.Boolean? SeveralInternetConnections { get; set; }//;
         
         // Key: siteClosedDays Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("siteClosedDays")]
-        public string SiteClosedDays { get; set; }//;
+        public System.String? SiteClosedDays { get; set; }//;
         
         // Key: siteDigicode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("siteDigicode")]
-        public string SiteDigicode { get; set; }//;
+        public System.String? SiteDigicode { get; set; }//;
         
         // Key: siteOpening Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("siteOpening")]
-        public string SiteOpening { get; set; }//;
+        public System.String? SiteOpening { get; set; }//;
         
         // Key: startAfternoonHours Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startAfternoonHours")]
-        public string StartAfternoonHours { get; set; }//;
+        public System.String? StartAfternoonHours { get; set; }//;
         
         // Key: startMorningHours Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startMorningHours")]
-        public string StartMorningHours { get; set; }//;
+        public System.String? StartMorningHours { get; set; }//;
         
         // Key: uploadBandwidthTest Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("uploadBandwidthTest")]
-        public long UploadBandwidthTest { get; set; }//;
+        public System.Int64? UploadBandwidthTest { get; set; }//;
     }
     
     // Id: BandwidthTestUnitEnum Namespace: xdsl.lineDiagnostic
@@ -137,39 +137,39 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: crcError Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("crcError")]
-        public long CrcError { get; set; }//;
+        public System.Int64? CrcError { get; set; }//;
         
         // Key: downstreamAttenuation Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("downstreamAttenuation")]
-        public double DownstreamAttenuation { get; set; }//;
+        public System.Double? DownstreamAttenuation { get; set; }//;
         
         // Key: downstreamMargin Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("downstreamMargin")]
-        public double DownstreamMargin { get; set; }//;
+        public System.Double? DownstreamMargin { get; set; }//;
         
         // Key: downstreamSync Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("downstreamSync")]
-        public double DownstreamSync { get; set; }//;
+        public System.Double? DownstreamSync { get; set; }//;
         
         // Key: ifName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ifName")]
-        public string IfName { get; set; }//;
+        public System.String? IfName { get; set; }//;
         
         // Key: profile Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("profile")]
-        public string Profile { get; set; }//;
+        public System.String? Profile { get; set; }//;
         
         // Key: upstreamAttenuation Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("upstreamAttenuation")]
-        public double UpstreamAttenuation { get; set; }//;
+        public System.Double? UpstreamAttenuation { get; set; }//;
         
         // Key: upstreamMargin Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("upstreamMargin")]
-        public double UpstreamMargin { get; set; }//;
+        public System.Double? UpstreamMargin { get; set; }//;
         
         // Key: upstreamSync Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("upstreamSync")]
-        public double UpstreamSync { get; set; }//;
+        public System.Double? UpstreamSync { get; set; }//;
     }
     
     // Id: CustomerActionToDo Namespace: xdsl.lineDiagnostic
@@ -264,7 +264,7 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -272,7 +272,7 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: diagnosticDoneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diagnosticDoneDate")]
-        public System.DateTime DiagnosticDoneDate { get; set; }//;
+        public System.DateTime? DiagnosticDoneDate { get; set; }//;
         
         // Key: error Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
@@ -288,7 +288,7 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: robotAction Type: xdsl.lineDiagnostic.RobotActionsEnum FullType: xdsl.lineDiagnostic.RobotActionsEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("robotAction")]
-        public _xdsl_lineDiagnostic.RobotActionsEnum RobotAction { get; set; }//;
+        public _xdsl_lineDiagnostic.RobotActionsEnum? RobotAction { get; set; }//;
         
         // Key: seltTest Type: xdsl.lineDiagnostic.SeltResult FullType: xdsl.lineDiagnostic.SeltResult
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("seltTest")]
@@ -376,19 +376,19 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: down Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("down")]
-        public double Down { get; set; }//;
+        public System.Double? Down { get; set; }//;
         
         // Key: mitigation Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mitigation")]
-        public string Mitigation { get; set; }//;
+        public System.String? Mitigation { get; set; }//;
         
         // Key: ping Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ping")]
-        public double Ping { get; set; }//;
+        public System.Double? Ping { get; set; }//;
         
         // Key: up Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("up")]
-        public double Up { get; set; }//;
+        public System.Double? Up { get; set; }//;
     }
     
     // Id: LineDetails Namespace: xdsl.lineDiagnostic
@@ -400,27 +400,27 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: accessPing Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accessPing")]
-        public bool AccessPing { get; set; }//;
+        public System.Boolean? AccessPing { get; set; }//;
         
         // Key: address Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public string Address { get; set; }//;
+        public System.String? Address { get; set; }//;
         
         // Key: connectionInfo Type: xdsl.lineDiagnostic.ConnectionInformations FullType: xdsl.lineDiagnostic.ConnectionInformations
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("connectionInfo")]
-        public _xdsl_lineDiagnostic.ConnectionInformations ConnectionInfo { get; set; }//;
+        public _xdsl_lineDiagnostic.ConnectionInformations? ConnectionInfo { get; set; }//;
         
         // Key: contactPhone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contactPhone")]
-        public string ContactPhone { get; set; }//;
+        public System.String? ContactPhone { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: dslamIsSynchronized Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dslamIsSynchronized")]
-        public bool DslamIsSynchronized { get; set; }//;
+        public System.Boolean? DslamIsSynchronized { get; set; }//;
         
         // Key: gtr Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gtr")]
@@ -432,7 +432,7 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: lineCapabilities Type: xdsl.lineDiagnostic.LineCapabilities FullType: xdsl.lineDiagnostic.LineCapabilities
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lineCapabilities")]
-        public _xdsl_lineDiagnostic.LineCapabilities LineCapabilities { get; set; }//;
+        public _xdsl_lineDiagnostic.LineCapabilities? LineCapabilities { get; set; }//;
         
         // Key: lineType Type: xdsl.DslTypeEnum FullType: xdsl.DslTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lineType")]
@@ -440,7 +440,7 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: nra Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nra")]
-        public string Nra { get; set; }//;
+        public System.String? Nra { get; set; }//;
         
         // Key: number Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
@@ -452,7 +452,7 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: sections Type: xdsl.lineDiagnostic.Section[] FullType: xdsl.lineDiagnostic.Section[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sections")]
-        public _xdsl_lineDiagnostic.Section[] Sections { get; set; }//;
+        public _xdsl_lineDiagnostic.Section[]? Sections { get; set; }//;
     }
     
     // Id: PossibleValue Namespace: xdsl.lineDiagnostic
@@ -460,15 +460,15 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public long Id { get; set; }//;
+        public System.Int64? Id { get; set; }//;
         
         // Key: label Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("label")]
-        public string Label { get; set; }//;
+        public System.String? Label { get; set; }//;
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: ProblemTypeEnum Namespace: xdsl.lineDiagnostic
@@ -486,7 +486,7 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: defaultValue Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultValue")]
-        public string DefaultValue { get; set; }//;
+        public System.String? DefaultValue { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -494,7 +494,7 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: enumValues Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enumValues")]
-        public string[] EnumValues { get; set; }//;
+        public System.String[]? EnumValues { get; set; }//;
         
         // Key: name Type: xdsl.lineDiagnostic.QuestionsEnum FullType: xdsl.lineDiagnostic.QuestionsEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -502,11 +502,11 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: possibleValues Type: xdsl.lineDiagnostic.PossibleValue[] FullType: xdsl.lineDiagnostic.PossibleValue[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("possibleValues")]
-        public _xdsl_lineDiagnostic.PossibleValue[] PossibleValues { get; set; }//;
+        public _xdsl_lineDiagnostic.PossibleValue[]? PossibleValues { get; set; }//;
         
         // Key: required Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("required")]
-        public bool Required { get; set; }//;
+        public System.Boolean? Required { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -704,23 +704,23 @@ namespace _xdsl_lineDiagnostic {
         
         // Key: date Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateTime Date { get; set; }//;
+        public System.DateTime? Date { get; set; }//;
         
         // Key: distance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("distance")]
-        public long Distance { get; set; }//;
+        public System.Int64? Distance { get; set; }//;
         
         // Key: preloc Type: xdsl.lineDiagnostic.SeltPrelocEnum FullType: xdsl.lineDiagnostic.SeltPrelocEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("preloc")]
-        public _xdsl_lineDiagnostic.SeltPrelocEnum Preloc { get; set; }//;
+        public _xdsl_lineDiagnostic.SeltPrelocEnum? Preloc { get; set; }//;
         
         // Key: state Type: xdsl.lineDiagnostic.SeltStateEnum FullType: xdsl.lineDiagnostic.SeltStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _xdsl_lineDiagnostic.SeltStateEnum State { get; set; }//;
+        public _xdsl_lineDiagnostic.SeltStateEnum? State { get; set; }//;
         
         // Key: status Type: xdsl.lineDiagnostic.SeltStatusEnum FullType: xdsl.lineDiagnostic.SeltStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _xdsl_lineDiagnostic.SeltStatusEnum Status { get; set; }//;
+        public _xdsl_lineDiagnostic.SeltStatusEnum? Status { get; set; }//;
     }
     
     // Id: SeltStateEnum Namespace: xdsl.lineDiagnostic

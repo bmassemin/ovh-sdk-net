@@ -23,7 +23,7 @@ namespace _cloud_project_database_m3db {
         
         // Key: resolution Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resolution")]
-        public System.TimeSpan Resolution { get; set; }//;
+        public System.TimeSpan? Resolution { get; set; }//;
         
         // Key: retention Type: cloud.project.database.m3db.namespace.Retention FullType: cloud.project.database.m3db.namespace.Retention
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retention")]

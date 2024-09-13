@@ -71,6 +71,6 @@ namespace _cloud_instance_CreateInput_Network_Private {
         
         // Key: vlanId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vlanId")]
-        public long VlanId { get; set; }//;
+        public System.Int64? VlanId { get; set; }//;
     }
 }

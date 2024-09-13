@@ -19,11 +19,11 @@ namespace _xdsl_eligibility {
         
         // Key: meetingSlot Type: xdsl.eligibility.MeetingSlot FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("meetingSlot")]
-        public _xdsl_eligibility.MeetingSlot MeetingSlot { get; set; }//;
+        public _xdsl_eligibility.MeetingSlot? MeetingSlot { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
     
     // Id: MeetingSlot Namespace: xdsl.eligibility
@@ -35,7 +35,7 @@ namespace _xdsl_eligibility {
         
         // Key: slotId Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slotId")]
-        public string SlotId { get; set; }//;
+        public System.String? SlotId { get; set; }//;
         
         // Key: startDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]

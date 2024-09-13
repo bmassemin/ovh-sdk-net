@@ -46,7 +46,7 @@ namespace _cloud_share {
         
         // Key: capabilities Type: cloud.share.Capability[] FullType: cloud.share.Capability[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("capabilities")]
-        public _cloud_share.Capability[] Capabilities { get; set; }//;
+        public _cloud_share.Capability[]? Capabilities { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -54,11 +54,11 @@ namespace _cloud_share {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: exportLocations Type: cloud.share.ExportLocationObject[] FullType: cloud.share.ExportLocationObject[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("exportLocations")]
-        public _cloud_share.ExportLocationObject[] ExportLocations { get; set; }//;
+        public _cloud_share.ExportLocationObject[]? ExportLocations { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -70,7 +70,7 @@ namespace _cloud_share {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: protocol Type: cloud.share.ProtocolEnum FullType: cloud.share.ProtocolEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("protocol")]

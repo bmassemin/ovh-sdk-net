@@ -27,7 +27,7 @@ namespace _cloud_storage {
         
         // Key: lockedUntilDays Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockedUntilDays")]
-        public long LockedUntilDays { get; set; }//;
+        public System.Int64? LockedUntilDays { get; set; }//;
     }
     
     // Id: Container Namespace: cloud.storage
@@ -35,11 +35,11 @@ namespace _cloud_storage {
         
         // Key: archive Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("archive")]
-        public bool Archive { get; set; }//;
+        public System.Boolean? Archive { get; set; }//;
         
         // Key: containerType Type: cloud.storage.TypeEnum FullType: cloud.storage.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("containerType")]
-        public _cloud_storage.TypeEnum ContainerType { get; set; }//;
+        public _cloud_storage.TypeEnum? ContainerType { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]

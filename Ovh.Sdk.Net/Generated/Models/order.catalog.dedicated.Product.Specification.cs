@@ -15,31 +15,31 @@ namespace _order_catalog_dedicated_Product_Specification {
         
         // Key: boost Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("boost")]
-        public double Boost { get; set; }//;
+        public System.Double? Boost { get; set; }//;
         
         // Key: brand Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("brand")]
-        public string Brand { get; set; }//;
+        public System.String? Brand { get; set; }//;
         
         // Key: cores Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cores")]
-        public long Cores { get; set; }//;
+        public System.Int64? Cores { get; set; }//;
         
         // Key: frequency Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frequency")]
-        public double Frequency { get; set; }//;
+        public System.Double? Frequency { get; set; }//;
         
         // Key: model Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
-        public string Model { get; set; }//;
+        public System.String? Model { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: threads Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("threads")]
-        public long Threads { get; set; }//;
+        public System.Int64? Threads { get; set; }//;
     }
     
     // Id: Disk Namespace: order.catalog.dedicated.Product.Specification
@@ -51,7 +51,7 @@ namespace _order_catalog_dedicated_Product_Specification {
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: raid Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("raid")]
@@ -71,15 +71,15 @@ namespace _order_catalog_dedicated_Product_Specification {
         
         // Key: model Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("model")]
-        public string Model { get; set; }//;
+        public System.String? Model { get; set; }//;
         
         // Key: number Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
-        public long Number { get; set; }//;
+        public System.Int64? Number { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
     }
     
     // Id: Memory Namespace: order.catalog.dedicated.Product.Specification
@@ -87,15 +87,15 @@ namespace _order_catalog_dedicated_Product_Specification {
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: size Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
-        public long Size { get; set; }//;
+        public System.Int64? Size { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public string Type { get; set; }//;
+        public System.String? Type { get; set; }//;
     }
     
     // Id: Network Namespace: order.catalog.dedicated.Product.Specification

@@ -392,7 +392,7 @@ namespace _startup {
         
         // Key: acceptanceStatus Type: startup.acceptanceStatusEnum FullType: startup.acceptanceStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("acceptanceStatus")]
-        public _startup.acceptanceStatusEnum AcceptanceStatus { get; set; }//;
+        public _startup.acceptanceStatusEnum? AcceptanceStatus { get; set; }//;
         
         // Key: awarness Type: startup.awarnessEnum FullType: startup.awarnessEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("awarness")]
@@ -404,7 +404,7 @@ namespace _startup {
         
         // Key: eventCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eventCode")]
-        public string EventCode { get; set; }//;
+        public System.String? EventCode { get; set; }//;
         
         // Key: fundRaising Type: startup.startup.fundRaising FullType: startup.startup.fundRaising
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fundRaising")]

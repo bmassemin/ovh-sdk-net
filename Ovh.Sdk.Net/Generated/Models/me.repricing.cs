@@ -51,7 +51,7 @@ namespace _me_repricing {
         
         // Key: route Type: services.expanded.Route FullType: services.expanded.Route
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("route")]
-        public _services_expanded.Route Route { get; set; }//;
+        public _services_expanded.Route? Route { get; set; }//;
         
         // Key: serviceId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceId")]

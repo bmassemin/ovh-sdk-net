@@ -1,7 +1,5 @@
 ﻿using System.CodeDom;
 using System.CodeDom.Compiler;
-using System.Net;
-using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text.Json.Serialization;
@@ -32,67 +30,63 @@ if (Directory.Exists(rootPath))
 Directory.CreateDirectory(rootPath);
 Directory.CreateDirectory(Path.Combine(rootPath, "Models"));
 
-var definitions = await service.GetApiDefinitionsAsync();
+var definitions = await service.GetApiDefinitionsAsync("1.0");
 
 var namespaces = new Dictionary<string, CodeNamespace>();
 var duplicates = new HashSet<string>();
 var types = new Dictionary<string, (string ns, string type)>();
 
 foreach (var apis in definitions)
+foreach (var pair in apis.Models)
 {
-    foreach (var pair in apis.Models)
-    {
-        var model = pair.Value;
-        var fullName = pair.Key;
-        var ns = model.Namespace;
-        var typeName = fullName.Substring(ns.Length + 1);
-        if (string.IsNullOrEmpty(typeName))
-            typeName = fullName;
-        if (pair.Key.Contains("<") && !pair.Key.Contains("<T>"))
-            continue;
-        var cleanNamespace = CleanNamespace(ns);
-        var name = CleanModelId(typeName);
-        types[fullName] = (cleanNamespace, name);
-    }
+    var model = pair.Value;
+    var fullName = pair.Key;
+    var ns = model.Namespace;
+    var typeName = fullName.Substring(ns.Length + 1);
+    if (string.IsNullOrEmpty(typeName))
+        typeName = fullName;
+    if (pair.Key.Contains("<") && !pair.Key.Contains("<T>"))
+        continue;
+    var cleanNamespace = CleanNamespace(ns);
+    var name = CleanModelId(typeName);
+    types[fullName] = (cleanNamespace, name);
 }
 
 foreach (var apis in definitions)
+foreach (var pair in apis.Models)
 {
-    foreach (var pair in apis.Models)
+    var model = pair.Value;
+    var fullName = pair.Key;
+    var ns = model.Namespace;
+    var typeName = fullName.Substring(ns.Length + 1);
+
+    if (string.IsNullOrEmpty(typeName))
+        typeName = fullName;
+
+    if (pair.Key.Contains("<") && !pair.Key.Contains("<T>"))
+        continue;
+
+    if (!duplicates.Add(pair.Key))
+        continue;
+
+    var cleanNamespace = CleanNamespace(ns);
+    if (!namespaces.TryGetValue(ns, out var codeNs))
     {
-        var model = pair.Value;
-        var fullName = pair.Key;
-        var ns = model.Namespace;
-        var typeName = fullName.Substring(ns.Length + 1);
+        codeNs = new CodeNamespace(cleanNamespace);
+        namespaces[ns] = codeNs;
+    }
 
-        if (string.IsNullOrEmpty(typeName))
-            typeName = fullName;
+    var name = CleanModelId(typeName);
 
-        if (pair.Key.Contains("<") && !pair.Key.Contains("<T>"))
-            continue;
-
-        if (!duplicates.Add(pair.Key))
-            continue;
-
-        var cleanNamespace = CleanNamespace(ns);
-        if (!namespaces.TryGetValue(ns, out var codeNs))
-        {
-            codeNs = new CodeNamespace(cleanNamespace);
-            namespaces[ns] = codeNs;
-        }
-
-        var name = CleanModelId(typeName);
-
-        if (model.EnumType == null)
-        {
-            var code = GenerateClass(model, name);
-            codeNs.Types.Add(code);
-        }
-        else
-        {
-            var code = GenerateEnum(model, name);
-            codeNs.Types.Add(code);
-        }
+    if (model.EnumType == null)
+    {
+        var code = GenerateClass(model, name);
+        codeNs.Types.Add(code);
+    }
+    else
+    {
+        var code = GenerateEnum(model, name);
+        codeNs.Types.Add(code);
     }
 }
 
@@ -103,7 +97,7 @@ foreach (var codeNamespace in namespaces)
     var modelProvider = new CSharpCodeProvider();
     var path = codeNamespace.Key;
     var fullPath = Path.Combine(rootPath, "Models", path);
-    await using StreamWriter swModel = new StreamWriter($"{fullPath}.cs", true);
+    await using var swModel = new StreamWriter($"{fullPath}.cs", true);
     modelProvider.GenerateCodeFromCompileUnit(modelUnit, swModel, new CodeGeneratorOptions());
 }
 
@@ -115,153 +109,144 @@ methodUnit.Namespaces.Add(methodNamespace);
 var clientClass = new CodeTypeDeclaration("Client")
 {
     IsClass = true,
-    TypeAttributes = TypeAttributes.Public,
+    IsPartial = true,
+    TypeAttributes = TypeAttributes.Public
 };
 methodNamespace.Types.Add(clientClass);
-CodeMemberField clientField = new CodeMemberField("HttpClient", "_client")
-{
-    Attributes = MemberAttributes.Private | MemberAttributes.Final
-};
-clientClass.Members.Add(clientField);
-CodeConstructor constructor = new CodeConstructor
-{
-    Attributes = MemberAttributes.Public
-};
-constructor.Parameters.Add(new CodeParameterDeclarationExpression("HttpClient", "client"));
-constructor.Statements.Add(new CodeAssignStatement(
-    new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "_client"),
-    new CodeArgumentReferenceExpression("client")
-));
-clientClass.Members.Add(constructor);
 
 foreach (var apis in definitions)
+foreach (var api in apis.Apis)
 {
-    foreach (var api in apis.Apis)
+    var path = GetMethodName("/v1" + api.Path);
+    foreach (var operation in api.Operations)
     {
-        var path = GetMethodName(api.Path);
-        foreach (var operation in api.Operations)
+        string innerCodeType = null!;
+        var code = new CodeMemberMethod
         {
-            string innerCodeType = null!;
-            var code = new CodeMemberMethod
-            {
-                Name = operation.HttpMethod.ToLower().FirstCharToUpper() + path,
-                Comments = { new CodeCommentStatement($"Path: {api.Path}") },
-                // ReSharper disable once BitwiseOperatorOnEnumWithoutFlags
-                Attributes = MemberAttributes.Public | MemberAttributes.Final,
-            };
-            if (operation.ResponseType != null && operation.ResponseType != "void")
-            {
-                innerCodeType = GetCodeType(operation.ResponseType);
-                code.ReturnType = new CodeTypeReference("Task<" + innerCodeType + ">");
-                var returnStatement = new CodeMethodReturnStatement(new CodeDefaultValueExpression(code.ReturnType));
-                code.Statements.Add(returnStatement);
-            }
-            else
-            {
-                code.ReturnType = new CodeTypeReference(typeof(Task));
-                var returnStatement = new CodeMethodReturnStatement(new CodePropertyReferenceExpression(new CodeTypeReferenceExpression("Task"), "CompletedTask"));
-                code.Statements.Add(returnStatement);
-            }
-
-            foreach (var parameter in operation.Parameters.OrderBy(x => !x.Required))
-            {
-                var paramName = parameter.Name ?? "body";
-                var param = new CodeParameterDeclarationExpression(GetCodeType(parameter.DataType), CleanParamName(paramName));
-                if (!parameter.Required)
-                    param.CustomAttributes.Add(new CodeAttributeDeclaration(new CodeTypeReference(typeof(OptionalAttribute))));
-                code.Parameters.Add(param);
-            }
-
-            switch (operation.HttpMethod)
-            {
-                case "GET":
-                    var finalPath = api.Path;
-                    var pathParameters = operation.Parameters.Where(x => x.ParamType == "path").ToArray();
-                    var queryParameters = operation.Parameters.Where(x => x.ParamType == "query").ToArray();
-                    if (queryParameters.Any())
-                        finalPath += "?{queryParameters}";
-
-                    var callParams = new List<CodeExpression>();
-                    if (pathParameters.Any() || queryParameters.Any())
-                    {
-                        if (queryParameters.Any())
-                        {
-                        }
-
-                        var stringFormatParams = new List<CodeExpression>
-                        {
-                            new CodePrimitiveExpression(finalPath)
-                        };
-                        var formatParams = new List<CodeVariableReferenceExpression>();
-                        foreach (var parameter in pathParameters)
-                            formatParams.Add(new CodeVariableReferenceExpression(parameter.Name));
-                        if (queryParameters.Any())
-                            formatParams.Add(new CodeVariableReferenceExpression("queryParameters"));
-                        stringFormatParams.AddRange(formatParams);
-                        var stringFormat = new CodeMethodInvokeExpression(new CodeMethodReferenceExpression(new CodeTypeReferenceExpression(typeof(string)), "Format"),
-                            stringFormatParams.ToArray());
-                        callParams.Add(stringFormat);
-                    }
-                    else
-                    {
-                        callParams.Add(new CodePrimitiveExpression(finalPath));
-                    }
-
-                    var getFromJsonAsyncCall = new CodeMethodReturnStatement(
-                        new CodeMethodInvokeExpression(
-                            new CodeMethodReferenceExpression(
-                                new CodeVariableReferenceExpression("_client"),
-                                "GetFromJsonAsync",
-                                new CodeTypeReference(innerCodeType)
-                            ),
-                            callParams.ToArray()
-                        )
-                    );
-                    code.Statements.Clear();
-                    code.Statements.Add(getFromJsonAsyncCall);
-                    break;
-            }
-
-            clientClass.Members.Add(code);
+            Name = operation.HttpMethod.ToLower().FirstCharToUpper() + path,
+            Comments = { new CodeCommentStatement($"Path: {"/v1" + api.Path}") },
+            // ReSharper disable once BitwiseOperatorOnEnumWithoutFlags
+            Attributes = MemberAttributes.Public | MemberAttributes.Final
+        };
+        var nonVoid = operation.ResponseType != null && operation.ResponseType != "void";
+        if (nonVoid)
+        {
+            innerCodeType = GetCodeType(operation.ResponseType);
+            code.ReturnType = new CodeTypeReference("Task<" + innerCodeType + ">");
         }
+        else
+        {
+            code.ReturnType = new CodeTypeReference("Task");
+        }
+
+        const string objectBodyParamName = "_body";
+
+        foreach (var parameter in operation.Parameters.OrderBy(x => !x.Required))
+        {
+            var paramName = parameter.Name ?? objectBodyParamName;
+            var param = new CodeParameterDeclarationExpression(GetCodeType(parameter.DataType), CleanParamName(paramName));
+            if (!parameter.Required)
+                param.CustomAttributes.Add(new CodeAttributeDeclaration(new CodeTypeReference(typeof(OptionalAttribute))));
+            code.Parameters.Add(param);
+        }
+
+        var finalPath = "/v1" + api.Path;
+        var pathParameters = operation.Parameters.Where(x => x.ParamType == "path").ToArray();
+        var queryParameters = operation.Parameters.Where(x => x.ParamType == "query").ToArray();
+        if (queryParameters.Any())
+        {
+            finalPath += "{queryParameters}";
+            code.Statements.AddRange(GenerateQueryParams(operation));
+        }
+
+        CodeExpression bodyParam = new CodePrimitiveExpression(null);
+        if (operation.Parameters.Any(x => x.ParamType == "body" && x.Name == null))
+        {
+            bodyParam = new CodeVariableReferenceExpression(objectBodyParamName);
+        }
+        else if (operation.Parameters.Any(x => x.ParamType == "body"))
+        {
+            var bodyParameters = operation.Parameters.Where(x => x.ParamType == "body").Select(x => (x.Name!, CleanParamName(x.Name!))).ToList();
+            var bodyDic = CreateDictionary(objectBodyParamName, bodyParameters);
+            code.Statements.AddRange(bodyDic);
+            bodyParam = new CodeVariableReferenceExpression(objectBodyParamName);
+        }
+
+        code.Statements.Add(new CodeSnippetStatement("var uri = $\"" + finalPath + "\";"));
+
+        var parameters = new List<CodeExpression>
+        {
+            new CodePrimitiveExpression(operation.HttpMethod),
+            new CodeVariableReferenceExpression("uri"),
+            bodyParam,
+            new CodePrimitiveExpression(!operation.NoAuthentication)
+        };
+
+        CodeMethodReferenceExpression methodRef;
+
+        if (nonVoid)
+            methodRef = new CodeMethodReferenceExpression(new CodeThisReferenceExpression(), "SendAsync", new CodeTypeReference(innerCodeType));
+        else
+            methodRef = new CodeMethodReferenceExpression(new CodeThisReferenceExpression(), "SendAsync");
+
+        var call = new CodeMethodInvokeExpression(
+            methodRef,
+            parameters.ToArray()
+        );
+        code.Statements.Add(new CodeMethodReturnStatement(call));
+
+
+        clientClass.Members.Add(code);
     }
 }
 
 var methodProvider = new CSharpCodeProvider();
 var methodPath = Path.Combine(rootPath, "Client");
-await using StreamWriter swMethod = new StreamWriter($"{methodPath}.cs", true);
+await using var swMethod = new StreamWriter($"{methodPath}.cs", true);
 methodProvider.GenerateCodeFromCompileUnit(methodUnit, swMethod, new CodeGeneratorOptions());
 
-CodeStatement[]? GenerateQueryParams(Operation operation)
+CodeStatement[] GenerateQueryParams(Operation operation)
 {
-    if (operation.Parameters.All(x => x.ParamType != "query"))
-        return null;
+    var statements = new List<CodeStatement>();
+    var values = operation.Parameters.Where(x => x.ParamType == "query").Select(x => (x.Name!, CleanParamName(x.Name!))).ToList();
+    var dictionary = CreateDictionary("queryParametersTemp", values);
+    statements.AddRange(dictionary);
 
-    var queryParams = operation.Parameters.Where(x => x.ParamType == "query").ToArray();
-    var queryParamVariable = new CodeVariableDeclarationStatement(typeof(string), "queryParams", new CodePrimitiveExpression(string.Empty));
-    var queryParamNullityConditions = new List<CodeBinaryOperatorExpression>();
-    foreach (var param in queryParams)
+    var createQueryParamsInvoke =
+        new CodeMethodInvokeExpression(new CodeThisReferenceExpression(), "CreateQueryParams", new CodeVariableReferenceExpression("queryParametersTemp"));
+
+    // Déclarez la variable queryParameters et initialisez-la avec le résultat de l'appel de méthode
+    var queryParametersVariable = new CodeVariableDeclarationStatement(
+        new CodeTypeReference("var"),
+        "queryParameters",
+        createQueryParamsInvoke
+    );
+    statements.Add(queryParametersVariable);
+
+    return statements.ToArray();
+}
+
+CodeStatement[] CreateDictionary(string varName, List<(string keyName, string varRef)> values)
+{
+    var statements = new List<CodeStatement>();
+    var createDictionary = new CodeObjectCreateExpression(
+        new CodeTypeReference(typeof(Dictionary<string, object>))
+    );
+    var dictionaryVariable = new CodeVariableDeclarationStatement(
+        new CodeTypeReference("Dictionary", new CodeTypeReference("System.String"), new CodeTypeReference("System.Object")),
+        varName,
+        createDictionary
+    );
+    statements.Add(dictionaryVariable);
+    foreach (var parameter in values)
     {
-        var ifStatement = new CodeBinaryOperatorExpression(
-            new CodeVariableReferenceExpression(CleanParamName(param.Name!)),
-            CodeBinaryOperatorType.IdentityInequality,
-            new CodePrimitiveExpression(null)
-        );
-        queryParamNullityConditions.Add(ifStatement);
+        var add = new CodeMethodInvokeExpression(
+            new CodeVariableReferenceExpression(varName),
+            "Add", new CodePrimitiveExpression(parameter.keyName), new CodeVariableReferenceExpression(parameter.varRef));
+        statements.Add(new CodeExpressionStatement(add));
     }
 
-    var lastIf = queryParamNullityConditions[0];
-    for (int i = 1; i < queryParamNullityConditions.Count - 1; i++)
-    {
-        lastIf = new CodeBinaryOperatorExpression
-        {
-            Left = lastIf,
-            Right = queryParamNullityConditions[i],
-            Operator = CodeBinaryOperatorType.BooleanOr
-        };
-    }
-
-    return [queryParamVariable, new CodeConditionStatement(lastIf)];
+    return statements.ToArray();
 }
 
 string CleanParamName(string value)
@@ -300,12 +285,14 @@ CodeTypeDeclaration GenerateClass(Model model, string className)
     var klass = new CodeTypeDeclaration(className)
     {
         IsClass = true,
-        Comments = { new CodeCommentStatement($"Id: {model.Id} Namespace: {model.Namespace}") },
+        Comments = { new CodeCommentStatement($"Id: {model.Id} Namespace: {model.Namespace}") }
     };
 
     foreach (var prop in model.Properties!)
     {
         var type = GetCodeType(prop.Value.Type);
+        if (prop.Value.CanBeNull)
+            type += "?";
 
         var prefix = prop.Key.Equals(className, StringComparison.InvariantCultureIgnoreCase);
         var fieldName = CleanFieldName(prop.Key, prefix);
@@ -316,7 +303,7 @@ CodeTypeDeclaration GenerateClass(Model model, string className)
             Name = fieldName + " { get; set; }//",
             // ReSharper disable once BitwiseOperatorOnEnumWithoutFlags
             Attributes = MemberAttributes.Public | MemberAttributes.Final,
-            Comments = { new CodeCommentStatement($"Key: {prop.Key} Type: {prop.Value.Type} FullType: {prop.Value.FullType}") },
+            Comments = { new CodeCommentStatement($"Key: {prop.Key} Type: {prop.Value.Type} FullType: {prop.Value.FullType}") }
         };
         property.CustomAttributes.Add(
             new CodeAttributeDeclaration(
@@ -398,7 +385,7 @@ string CleanType(string value)
     if (value == "double")
         return "double";
 
-    string type = value;
+    var type = value;
     var array = value.EndsWith("[]");
     if (array)
         type = value[..^2];
@@ -413,7 +400,7 @@ string CleanType(string value)
     if (genPos > 0)
         type = value[..genPos] + "<T>";
 
-    if (!types.TryGetValue(type, out (string ns, string type) tuple))
+    if (!types.TryGetValue(type, out var tuple))
         throw new Exception("Unknown type");
 
     var temp = $"{tuple.ns}.{tuple.type}";

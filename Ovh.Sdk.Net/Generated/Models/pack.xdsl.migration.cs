@@ -35,11 +35,11 @@ namespace _pack_xdsl_migration {
         
         // Key: due Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("due")]
-        public _order.Price Due { get; set; }//;
+        public _order.Price? Due { get; set; }//;
         
         // Key: engageMonths Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engageMonths")]
-        public long EngageMonths { get; set; }//;
+        public System.Int64? EngageMonths { get; set; }//;
         
         // Key: engaged Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engaged")]
@@ -51,27 +51,27 @@ namespace _pack_xdsl_migration {
         
         // Key: firstYearPromo Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstYearPromo")]
-        public _order.Price FirstYearPromo { get; set; }//;
+        public _order.Price? FirstYearPromo { get; set; }//;
         
         // Key: gtrComfortFees Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gtrComfortFees")]
-        public _order.Price GtrComfortFees { get; set; }//;
+        public _order.Price? GtrComfortFees { get; set; }//;
         
         // Key: installFees Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("installFees")]
-        public _order.Price InstallFees { get; set; }//;
+        public _order.Price? InstallFees { get; set; }//;
         
         // Key: modemMacToReturn Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("modemMacToReturn")]
-        public string ModemMacToReturn { get; set; }//;
+        public System.String? ModemMacToReturn { get; set; }//;
         
         // Key: modemOptions Type: pack.xdsl.migration.OfferModemOption[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("modemOptions")]
-        public _pack_xdsl_migration.OfferModemOption[] ModemOptions { get; set; }//;
+        public _pack_xdsl_migration.OfferModemOption[]? ModemOptions { get; set; }//;
         
         // Key: modemRental Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("modemRental")]
-        public _order.Price ModemRental { get; set; }//;
+        public _order.Price? ModemRental { get; set; }//;
         
         // Key: multiOtp Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("multiOtp")]
@@ -99,15 +99,15 @@ namespace _pack_xdsl_migration {
         
         // Key: promotion Type: pack.xdsl.migrationAndAddressMove.Promotion FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("promotion")]
-        public _pack_xdsl_migrationAndAddressMove.Promotion Promotion { get; set; }//;
+        public _pack_xdsl_migrationAndAddressMove.Promotion? Promotion { get; set; }//;
         
         // Key: providerAI Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("providerAI")]
-        public _order.Price ProviderAI { get; set; }//;
+        public _order.Price? ProviderAI { get; set; }//;
         
         // Key: providerOrange Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("providerOrange")]
-        public _order.Price ProviderOrange { get; set; }//;
+        public _order.Price? ProviderOrange { get; set; }//;
         
         // Key: subServicesToDelete Type: pack.xdsl.migration.SubServiceToDelete[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subServicesToDelete")]
@@ -151,7 +151,7 @@ namespace _pack_xdsl_migration {
         
         // Key: optionalPrice Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("optionalPrice")]
-        public _order.Price OptionalPrice { get; set; }//;
+        public _order.Price? OptionalPrice { get; set; }//;
     }
     
     // Id: OfferModemOption Namespace: pack.xdsl.migration
@@ -163,7 +163,7 @@ namespace _pack_xdsl_migration {
         
         // Key: price Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("price")]
-        public _order.Price Price { get; set; }//;
+        public _order.Price? Price { get; set; }//;
     }
     
     // Id: OfferOption Namespace: pack.xdsl.migration

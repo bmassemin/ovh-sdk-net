@@ -19,7 +19,7 @@ namespace _services_expanded_technical_baremetalServer_storage {
         
         // Key: dwpd Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dwpd")]
-        public long Dwpd { get; set; }//;
+        public System.Int64? Dwpd { get; set; }//;
         
         // Key: interface Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interface")]
@@ -27,7 +27,7 @@ namespace _services_expanded_technical_baremetalServer_storage {
         
         // Key: latency Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("latency")]
-        public long Latency { get; set; }//;
+        public System.Int64? Latency { get; set; }//;
         
         // Key: number Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
@@ -35,7 +35,7 @@ namespace _services_expanded_technical_baremetalServer_storage {
         
         // Key: read Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("read")]
-        public long Read { get; set; }//;
+        public System.Int64? Read { get; set; }//;
         
         // Key: specs Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("specs")]
@@ -47,11 +47,11 @@ namespace _services_expanded_technical_baremetalServer_storage {
         
         // Key: usage Type: services.expanded.technical.baremetalServer.storage.Disk.UsageEnum FullType: services.expanded.technical.baremetalServer.storage.Disk.UsageEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usage")]
-        public _services_expanded_technical_baremetalServer_storage_Disk.UsageEnum Usage { get; set; }//;
+        public _services_expanded_technical_baremetalServer_storage_Disk.UsageEnum? Usage { get; set; }//;
         
         // Key: write Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("write")]
-        public long Write { get; set; }//;
+        public System.Int64? Write { get; set; }//;
     }
     
     // Id: Raid Namespace: services.expanded.technical.baremetalServer.storage
@@ -59,11 +59,11 @@ namespace _services_expanded_technical_baremetalServer_storage {
         
         // Key: cardModel Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cardModel")]
-        public string CardModel { get; set; }//;
+        public System.String? CardModel { get; set; }//;
         
         // Key: cardSize Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cardSize")]
-        public string CardSize { get; set; }//;
+        public System.String? CardSize { get; set; }//;
         
         // Key: type Type: services.expanded.technical.baremetalServer.storage.Raid.TypeEnum FullType: services.expanded.technical.baremetalServer.storage.Raid.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]

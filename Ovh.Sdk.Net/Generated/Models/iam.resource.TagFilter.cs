@@ -15,5 +15,20 @@ namespace _iam_resource_TagFilter {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("EQ")]
         EQ,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("EXISTS")]
+        EXISTS,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ILIKE")]
+        ILIKE,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("LIKE")]
+        LIKE,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("NEQ")]
+        NEQ,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("NEXISTS")]
+        NEXISTS,
     }
 }

@@ -31,19 +31,19 @@ namespace _webPaaS_subscriptionMetadata {
         
         // Key: renewDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewDate")]
-        public System.DateTime RenewDate { get; set; }//;
+        public System.DateTime? RenewDate { get; set; }//;
         
         // Key: storage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storage")]
-        public long Storage { get; set; }//;
+        public System.Int64? Storage { get; set; }//;
         
         // Key: storageUnit Type: webPaaS.StorageUnitEnum FullType: webPaaS.StorageUnitEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storageUnit")]
-        public _webPaaS.StorageUnitEnum StorageUnit { get; set; }//;
+        public _webPaaS.StorageUnitEnum? StorageUnit { get; set; }//;
         
         // Key: userLicenses Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userLicenses")]
-        public long UserLicenses { get; set; }//;
+        public System.Int64? UserLicenses { get; set; }//;
         
         // Key: vcpu Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vcpu")]

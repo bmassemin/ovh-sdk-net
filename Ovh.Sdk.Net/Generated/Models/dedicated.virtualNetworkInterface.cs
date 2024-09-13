@@ -39,7 +39,7 @@ namespace _dedicated_virtualNetworkInterface {
         
         // Key: vrack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
-        public string Vrack { get; set; }//;
+        public System.String? Vrack { get; set; }//;
     }
     
     // Id: VirtualNetworkInterfaceModeEnum Namespace: dedicated.virtualNetworkInterface

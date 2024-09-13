@@ -19,7 +19,7 @@ namespace _dedicated_ceph_userGet {
         
         // Key: mdsCaps Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mdsCaps")]
-        public string MdsCaps { get; set; }//;
+        public System.String? MdsCaps { get; set; }//;
         
         // Key: monCaps Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monCaps")]

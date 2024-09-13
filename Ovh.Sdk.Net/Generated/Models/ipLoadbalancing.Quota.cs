@@ -15,23 +15,23 @@ namespace _ipLoadbalancing_Quota {
         
         // Key: alert Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alert")]
-        public long Alert { get; set; }//;
+        public System.Int64? Alert { get; set; }//;
         
         // Key: included Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("included")]
-        public long Included { get; set; }//;
+        public System.Int64? Included { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: resetDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resetDate")]
-        public System.DateTime ResetDate { get; set; }//;
+        public System.DateTime? ResetDate { get; set; }//;
         
         // Key: total Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("total")]
-        public long Total { get; set; }//;
+        public System.Int64? Total { get; set; }//;
         
         // Key: zone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]

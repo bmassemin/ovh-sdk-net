@@ -15,19 +15,19 @@ namespace _debt_entry {
         
         // Key: id Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public string Id { get; set; }//;
+        public System.String? Id { get; set; }//;
         
         // Key: paymentInfo Type: debt.associatedObject.PaymentInfo FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentInfo")]
-        public _debt_associatedObject.PaymentInfo PaymentInfo { get; set; }//;
+        public _debt_associatedObject.PaymentInfo? PaymentInfo { get; set; }//;
         
         // Key: subId Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subId")]
-        public string SubId { get; set; }//;
+        public System.String? SubId { get; set; }//;
         
         // Key: type Type: debt.associatedObject.TypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _debt_associatedObject.TypeEnum Type { get; set; }//;
+        public _debt_associatedObject.TypeEnum? Type { get; set; }//;
     }
     
     // Id: OperationEnum Namespace: debt.entry

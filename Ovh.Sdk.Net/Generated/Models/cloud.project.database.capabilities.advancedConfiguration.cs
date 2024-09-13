@@ -19,11 +19,11 @@ namespace _cloud_project_database_capabilities_advancedConfiguration {
         
         // Key: maximum Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximum")]
-        public double Maximum { get; set; }//;
+        public System.Double? Maximum { get; set; }//;
         
         // Key: minimum Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minimum")]
-        public double Minimum { get; set; }//;
+        public System.Double? Minimum { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -35,6 +35,6 @@ namespace _cloud_project_database_capabilities_advancedConfiguration {
         
         // Key: values Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("values")]
-        public string[] Values { get; set; }//;
+        public System.String[]? Values { get; set; }//;
     }
 }

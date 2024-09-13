@@ -39,7 +39,7 @@ namespace _services {
         
         // Key: engagedUpTo Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engagedUpTo")]
-        public System.DateOnly EngagedUpTo { get; set; }//;
+        public System.DateOnly? EngagedUpTo { get; set; }//;
         
         // Key: expiration Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiration")]
@@ -47,11 +47,11 @@ namespace _services {
         
         // Key: possibleRenewPeriod Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("possibleRenewPeriod")]
-        public long[] PossibleRenewPeriod { get; set; }//;
+        public System.Int64[]? PossibleRenewPeriod { get; set; }//;
         
         // Key: renew Type: service.RenewType FullType: service.RenewType
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renew")]
-        public _service.RenewType Renew { get; set; }//;
+        public _service.RenewType? Renew { get; set; }//;
         
         // Key: renewalType Type: service.RenewalTypeEnum FullType: service.RenewalTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewalType")]

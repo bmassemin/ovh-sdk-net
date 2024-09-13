@@ -39,7 +39,7 @@ namespace _hosting_PrivateDatabase_Configuration {
         
         // Key: unit Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unit")]
-        public string Unit { get; set; }//;
+        public System.String? Unit { get; set; }//;
         
         // Key: value Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]

@@ -25,39 +25,39 @@ namespace _ipLoadbalancing {
         
         // Key: forceSsl Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("forceSsl")]
-        public bool ForceSsl { get; set; }//;
+        public System.Boolean? ForceSsl { get; set; }//;
         
         // Key: interval Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interval")]
-        public long Interval { get; set; }//;
+        public System.Int64? Interval { get; set; }//;
         
         // Key: match Type: ipLoadbalancing.ProbeExpectMatchEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("match")]
-        public _ipLoadbalancing.ProbeExpectMatchEnum Match { get; set; }//;
+        public _ipLoadbalancing.ProbeExpectMatchEnum? Match { get; set; }//;
         
         // Key: method Type: ipLoadbalancing.ProbeMethodEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("method")]
-        public _ipLoadbalancing.ProbeMethodEnum Method { get; set; }//;
+        public _ipLoadbalancing.ProbeMethodEnum? Method { get; set; }//;
         
         // Key: negate Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("negate")]
-        public bool Negate { get; set; }//;
+        public System.Boolean? Negate { get; set; }//;
         
         // Key: pattern Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pattern")]
-        public string Pattern { get; set; }//;
+        public System.String? Pattern { get; set; }//;
         
         // Key: port Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
         
         // Key: type Type: ipLoadbalancing.ProbeTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _ipLoadbalancing.ProbeTypeEnum Type { get; set; }//;
+        public _ipLoadbalancing.ProbeTypeEnum? Type { get; set; }//;
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: BalanceHTTPEnum Namespace: ipLoadbalancing
@@ -124,7 +124,7 @@ namespace _ipLoadbalancing {
         
         // Key: displayName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: routeId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routeId")]
@@ -144,7 +144,7 @@ namespace _ipLoadbalancing {
         
         // Key: method Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("method")]
-        public string[] Method { get; set; }//;
+        public System.String[]? Method { get; set; }//;
         
         // Key: negatableMatches Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("negatableMatches")]
@@ -188,7 +188,7 @@ namespace _ipLoadbalancing {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: ipLoadbalancing Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLoadbalancing")]
@@ -196,15 +196,15 @@ namespace _ipLoadbalancing {
         
         // Key: ipv4 Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public string Ipv4 { get; set; }//;
+        public System.String? Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string Ipv6 { get; set; }//;
+        public System.String? Ipv6 { get; set; }//;
         
         // Key: metricsToken Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metricsToken")]
-        public string MetricsToken { get; set; }//;
+        public System.String? MetricsToken { get; set; }//;
         
         // Key: offer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -220,7 +220,7 @@ namespace _ipLoadbalancing {
         
         // Key: sslConfiguration Type: ipLoadbalancing.SslConfigurationEnum FullType: ipLoadbalancing.SslConfigurationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslConfiguration")]
-        public _ipLoadbalancing.SslConfigurationEnum SslConfiguration { get; set; }//;
+        public _ipLoadbalancing.SslConfigurationEnum? SslConfiguration { get; set; }//;
         
         // Key: state Type: ipLoadbalancing.IpStateEnum FullType: ipLoadbalancing.IpStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -232,7 +232,7 @@ namespace _ipLoadbalancing {
         
         // Key: vrackName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrackName")]
-        public string VrackName { get; set; }//;
+        public System.String? VrackName { get; set; }//;
         
         // Key: zone Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
@@ -266,11 +266,11 @@ namespace _ipLoadbalancing {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: ipLoadbalancing Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipLoadbalancing")]
@@ -278,15 +278,15 @@ namespace _ipLoadbalancing {
         
         // Key: ipv4 Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv4")]
-        public string Ipv4 { get; set; }//;
+        public System.String? Ipv4 { get; set; }//;
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string Ipv6 { get; set; }//;
+        public System.String? Ipv6 { get; set; }//;
         
         // Key: metricsToken Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("metricsToken")]
-        public string MetricsToken { get; set; }//;
+        public System.String? MetricsToken { get; set; }//;
         
         // Key: offer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
@@ -302,7 +302,7 @@ namespace _ipLoadbalancing {
         
         // Key: sslConfiguration Type: ipLoadbalancing.SslConfigurationEnum FullType: ipLoadbalancing.SslConfigurationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslConfiguration")]
-        public _ipLoadbalancing.SslConfigurationEnum SslConfiguration { get; set; }//;
+        public _ipLoadbalancing.SslConfigurationEnum? SslConfiguration { get; set; }//;
         
         // Key: state Type: ipLoadbalancing.IpStateEnum FullType: ipLoadbalancing.IpStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -314,7 +314,7 @@ namespace _ipLoadbalancing {
         
         // Key: vrackName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrackName")]
-        public string VrackName { get; set; }//;
+        public System.String? VrackName { get; set; }//;
         
         // Key: zone Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
@@ -467,7 +467,7 @@ namespace _ipLoadbalancing {
         
         // Key: destination Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destination")]
-        public string Destination { get; set; }//;
+        public System.String? Destination { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -475,7 +475,7 @@ namespace _ipLoadbalancing {
         
         // Key: status Type: long[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public long[] Status { get; set; }//;
+        public System.Int64[]? Status { get; set; }//;
         
         // Key: type Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -487,7 +487,7 @@ namespace _ipLoadbalancing {
         
         // Key: enum Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enum")]
-        public string[] @enum { get; set; }//;
+        public System.String[]? @enum { get; set; }//;
         
         // Key: hasSubField Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hasSubField")]
@@ -515,11 +515,11 @@ namespace _ipLoadbalancing {
         
         // Key: status Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public long Status { get; set; }//;
+        public System.Int64? Status { get; set; }//;
         
         // Key: target Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("target")]
-        public string Target { get; set; }//;
+        public System.String? Target { get; set; }//;
         
         // Key: type Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -543,7 +543,7 @@ namespace _ipLoadbalancing {
         
         // Key: pattern Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pattern")]
-        public string Pattern { get; set; }//;
+        public System.String? Pattern { get; set; }//;
         
         // Key: ruleId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ruleId")]
@@ -551,7 +551,7 @@ namespace _ipLoadbalancing {
         
         // Key: subField Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subField")]
-        public string SubField { get; set; }//;
+        public System.String? SubField { get; set; }//;
     }
     
     // Id: RouteRuleMatchesEnum Namespace: ipLoadbalancing
@@ -606,7 +606,7 @@ namespace _ipLoadbalancing {
         
         // Key: target Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("target")]
-        public string Target { get; set; }//;
+        public System.String? Target { get; set; }//;
         
         // Key: type Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -618,15 +618,15 @@ namespace _ipLoadbalancing {
         
         // Key: checkCode Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("checkCode")]
-        public string CheckCode { get; set; }//;
+        public System.String? CheckCode { get; set; }//;
         
         // Key: checkStatus Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("checkStatus")]
-        public string CheckStatus { get; set; }//;
+        public System.String? CheckStatus { get; set; }//;
         
         // Key: checkTime Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("checkTime")]
-        public System.DateTime CheckTime { get; set; }//;
+        public System.DateTime? CheckTime { get; set; }//;
         
         // Key: instanceId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("instanceId")]
@@ -634,11 +634,11 @@ namespace _ipLoadbalancing {
         
         // Key: lastCheckContent Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastCheckContent")]
-        public string LastCheckContent { get; set; }//;
+        public System.String? LastCheckContent { get; set; }//;
         
         // Key: status Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public string Status { get; set; }//;
+        public System.String? Status { get; set; }//;
     }
     
     // Id: SslConfigurationEnum Namespace: ipLoadbalancing
@@ -791,7 +791,7 @@ namespace _ipLoadbalancing {
         
         // Key: vrackName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrackName")]
-        public string VrackName { get; set; }//;
+        public System.String? VrackName { get; set; }//;
     }
     
     // Id: VrackNetworkCreationRules Namespace: ipLoadbalancing

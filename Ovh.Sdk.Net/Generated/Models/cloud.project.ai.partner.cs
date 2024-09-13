@@ -15,7 +15,7 @@ namespace _cloud_project_ai_partner {
         
         // Key: signedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("signedAt")]
-        public System.DateTime SignedAt { get; set; }//;
+        public System.DateTime? SignedAt { get; set; }//;
         
         // Key: termsOfService Type: map[string]cloud.project.ai.partner.ContractTermsLocale FullType: map[string]cloud.project.ai.partner.ContractTermsLocale
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("termsOfService")]
@@ -35,7 +35,7 @@ namespace _cloud_project_ai_partner {
         
         // Key: contract Type: cloud.project.ai.partner.Contract FullType: cloud.project.ai.partner.Contract
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contract")]
-        public _cloud_project_ai_partner.Contract Contract { get; set; }//;
+        public _cloud_project_ai_partner.Contract? Contract { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]

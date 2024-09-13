@@ -15,11 +15,11 @@ namespace _billing_order {
         
         // Key: id Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public string Id { get; set; }//;
+        public System.String? Id { get; set; }//;
         
         // Key: type Type: billing.order.associatedObject.TypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _billing_order_associatedObject.TypeEnum Type { get; set; }//;
+        public _billing_order_associatedObject.TypeEnum? Type { get; set; }//;
     }
     
     // Id: AvailablePaymentMean Namespace: billing.order
@@ -27,7 +27,7 @@ namespace _billing_order {
         
         // Key: fields Type: billing.order.AvailablePaymentMeanField[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fields")]
-        public _billing_order.AvailablePaymentMeanField[] Fields { get; set; }//;
+        public _billing_order.AvailablePaymentMeanField[]? Fields { get; set; }//;
         
         // Key: integration Type: billing.order.PaymentMeanIntegrationEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("integration")]
@@ -39,7 +39,7 @@ namespace _billing_order {
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: AvailablePaymentMeanField Namespace: billing.order
@@ -51,7 +51,7 @@ namespace _billing_order {
         
         // Key: options Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("options")]
-        public string[] Options { get; set; }//;
+        public System.String[]? Options { get; set; }//;
         
         // Key: type Type: billing.order.PaymentMeanFieldTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -59,7 +59,7 @@ namespace _billing_order {
         
         // Key: value Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: ConsumptionDetails Namespace: billing.order
@@ -67,15 +67,15 @@ namespace _billing_order {
         
         // Key: fileFormat Type: consumption.ConsumptionExportFormatsEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fileFormat")]
-        public _consumption.ConsumptionExportFormatsEnum FileFormat { get; set; }//;
+        public _consumption.ConsumptionExportFormatsEnum? FileFormat { get; set; }//;
         
         // Key: fileURL Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fileURL")]
-        public string FileURL { get; set; }//;
+        public System.String? FileURL { get; set; }//;
         
         // Key: message Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("message")]
-        public string Message { get; set; }//;
+        public System.String? Message { get; set; }//;
         
         // Key: taskId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
@@ -147,7 +147,7 @@ namespace _billing_order {
         
         // Key: htmlForm Type: text FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("htmlForm")]
-        public string HtmlForm { get; set; }//;
+        public System.String? HtmlForm { get; set; }//;
         
         // Key: httpMethod Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("httpMethod")]
@@ -155,7 +155,7 @@ namespace _billing_order {
         
         // Key: logo Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logo")]
-        public string Logo { get; set; }//;
+        public System.String? Logo { get; set; }//;
         
         // Key: parameters Type: billing.order.paymentMean.HttpParameter[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parameters")]
@@ -163,7 +163,7 @@ namespace _billing_order {
         
         // Key: subType Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subType")]
-        public string SubType { get; set; }//;
+        public System.String? SubType { get; set; }//;
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
@@ -201,35 +201,35 @@ namespace _billing_order {
         
         // Key: creditCard Type: billing.order.PaymentMean[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creditCard")]
-        public _billing_order.PaymentMean[] CreditCard { get; set; }//;
+        public _billing_order.PaymentMean[]? CreditCard { get; set; }//;
         
         // Key: edinar Type: billing.order.PaymentMean[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("edinar")]
-        public _billing_order.PaymentMean[] Edinar { get; set; }//;
+        public _billing_order.PaymentMean[]? Edinar { get; set; }//;
         
         // Key: fidelityPoints Type: billing.order.PaymentMean[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fidelityPoints")]
-        public _billing_order.PaymentMean[] FidelityPoints { get; set; }//;
+        public _billing_order.PaymentMean[]? FidelityPoints { get; set; }//;
         
         // Key: ideal Type: billing.order.PaymentMean[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ideal")]
-        public _billing_order.PaymentMean[] Ideal { get; set; }//;
+        public _billing_order.PaymentMean[]? Ideal { get; set; }//;
         
         // Key: multibanco Type: billing.order.PaymentMean[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("multibanco")]
-        public _billing_order.PaymentMean[] Multibanco { get; set; }//;
+        public _billing_order.PaymentMean[]? Multibanco { get; set; }//;
         
         // Key: ovhAccount Type: billing.order.PaymentMean[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhAccount")]
-        public _billing_order.PaymentMean[] OvhAccount { get; set; }//;
+        public _billing_order.PaymentMean[]? OvhAccount { get; set; }//;
         
         // Key: paypal Type: billing.order.PaymentMean[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paypal")]
-        public _billing_order.PaymentMean[] Paypal { get; set; }//;
+        public _billing_order.PaymentMean[]? Paypal { get; set; }//;
         
         // Key: promotion Type: billing.order.PaymentMean[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("promotion")]
-        public _billing_order.PaymentMean[] Promotion { get; set; }//;
+        public _billing_order.PaymentMean[]? Promotion { get; set; }//;
     }
     
     // Id: PaymentMethods Namespace: billing.order

@@ -19,7 +19,7 @@ namespace _cloud_project_ai_volume {
         
         // Key: archive Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("archive")]
-        public string Archive { get; set; }//;
+        public System.String? Archive { get; set; }//;
         
         // Key: container Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("container")]
@@ -27,11 +27,11 @@ namespace _cloud_project_ai_volume {
         
         // Key: internal Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internal")]
-        public bool @internal { get; set; }//;
+        public System.Boolean? @internal { get; set; }//;
         
         // Key: prefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public string Prefix { get; set; }//;
+        public System.String? Prefix { get; set; }//;
     }
     
     // Id: DataSync Namespace: cloud.project.ai.volume
@@ -103,7 +103,7 @@ namespace _cloud_project_ai_volume {
         
         // Key: volume Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volume")]
-        public System.Guid Volume { get; set; }//;
+        public System.Guid? Volume { get; set; }//;
     }
     
     // Id: DataSyncStateEnum Namespace: cloud.project.ai.volume
@@ -133,7 +133,7 @@ namespace _cloud_project_ai_volume {
         
         // Key: endedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endedAt")]
-        public System.DateTime EndedAt { get; set; }//;
+        public System.DateTime? EndedAt { get; set; }//;
         
         // Key: info Type: cloud.project.ai.Info FullType: cloud.project.ai.Info
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("info")]
@@ -149,7 +149,7 @@ namespace _cloud_project_ai_volume {
         
         // Key: startedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startedAt")]
-        public System.DateTime StartedAt { get; set; }//;
+        public System.DateTime? StartedAt { get; set; }//;
         
         // Key: state Type: cloud.project.ai.volume.DataSyncStateEnum FullType: cloud.project.ai.volume.DataSyncStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -161,7 +161,7 @@ namespace _cloud_project_ai_volume {
         
         // Key: archive Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("archive")]
-        public string Archive { get; set; }//;
+        public System.String? Archive { get; set; }//;
         
         // Key: container Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("container")]
@@ -169,11 +169,11 @@ namespace _cloud_project_ai_volume {
         
         // Key: internal Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("internal")]
-        public bool @internal { get; set; }//;
+        public System.Boolean? @internal { get; set; }//;
         
         // Key: prefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public string Prefix { get; set; }//;
+        public System.String? Prefix { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -201,7 +201,7 @@ namespace _cloud_project_ai_volume {
         
         // Key: eta Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eta")]
-        public long Eta { get; set; }//;
+        public System.Int64? Eta { get; set; }//;
         
         // Key: failed Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("failed")]
@@ -261,7 +261,7 @@ namespace _cloud_project_ai_volume {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
     
     // Id: Volume Namespace: cloud.project.ai.volume
@@ -273,15 +273,15 @@ namespace _cloud_project_ai_volume {
         
         // Key: container Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("container")]
-        public string Container { get; set; }//;
+        public System.String? Container { get; set; }//;
         
         // Key: dataStore Type: cloud.project.ai.volume.DataStore FullType: cloud.project.ai.volume.DataStore
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dataStore")]
-        public _cloud_project_ai_volume.DataStore DataStore { get; set; }//;
+        public _cloud_project_ai_volume.DataStore? DataStore { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public System.Guid Id { get; set; }//;
+        public System.Guid? Id { get; set; }//;
         
         // Key: mountPath Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mountPath")]
@@ -293,43 +293,43 @@ namespace _cloud_project_ai_volume {
         
         // Key: prefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public string Prefix { get; set; }//;
+        public System.String? Prefix { get; set; }//;
         
         // Key: privateSwift Type: cloud.project.ai.volume.PrivateSwift FullType: cloud.project.ai.volume.PrivateSwift
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("privateSwift")]
-        public _cloud_project_ai_volume.PrivateSwift PrivateSwift { get; set; }//;
+        public _cloud_project_ai_volume.PrivateSwift? PrivateSwift { get; set; }//;
         
         // Key: publicGit Type: cloud.project.ai.volume.PublicGit FullType: cloud.project.ai.volume.PublicGit
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicGit")]
-        public _cloud_project_ai_volume.PublicGit PublicGit { get; set; }//;
+        public _cloud_project_ai_volume.PublicGit? PublicGit { get; set; }//;
         
         // Key: publicSwift Type: cloud.project.ai.volume.PublicSwift FullType: cloud.project.ai.volume.PublicSwift
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicSwift")]
-        public _cloud_project_ai_volume.PublicSwift PublicSwift { get; set; }//;
+        public _cloud_project_ai_volume.PublicSwift? PublicSwift { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
         
         // Key: standalone Type: cloud.project.ai.volume.Standalone FullType: cloud.project.ai.volume.Standalone
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("standalone")]
-        public _cloud_project_ai_volume.Standalone Standalone { get; set; }//;
+        public _cloud_project_ai_volume.Standalone? Standalone { get; set; }//;
         
         // Key: targetDataStore Type: cloud.project.ai.volume.DataStore FullType: cloud.project.ai.volume.DataStore
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetDataStore")]
-        public _cloud_project_ai_volume.DataStore TargetDataStore { get; set; }//;
+        public _cloud_project_ai_volume.DataStore? TargetDataStore { get; set; }//;
         
         // Key: targetPrivateSwift Type: cloud.project.ai.volume.PrivateSwift FullType: cloud.project.ai.volume.PrivateSwift
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetPrivateSwift")]
-        public _cloud_project_ai_volume.PrivateSwift TargetPrivateSwift { get; set; }//;
+        public _cloud_project_ai_volume.PrivateSwift? TargetPrivateSwift { get; set; }//;
         
         // Key: volumeSource Type: cloud.project.ai.volume.VolumeSource FullType: cloud.project.ai.volume.VolumeSource
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumeSource")]
-        public _cloud_project_ai_volume.VolumeSource VolumeSource { get; set; }//;
+        public _cloud_project_ai_volume.VolumeSource? VolumeSource { get; set; }//;
         
         // Key: volumeTarget Type: cloud.project.ai.volume.VolumeTarget FullType: cloud.project.ai.volume.VolumeTarget
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumeTarget")]
-        public _cloud_project_ai_volume.VolumeTarget VolumeTarget { get; set; }//;
+        public _cloud_project_ai_volume.VolumeTarget? VolumeTarget { get; set; }//;
     }
     
     // Id: VolumeSource Namespace: cloud.project.ai.volume
@@ -337,19 +337,19 @@ namespace _cloud_project_ai_volume {
         
         // Key: dataStore Type: cloud.project.ai.volume.DataStore FullType: cloud.project.ai.volume.DataStore
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dataStore")]
-        public _cloud_project_ai_volume.DataStore DataStore { get; set; }//;
+        public _cloud_project_ai_volume.DataStore? DataStore { get; set; }//;
         
         // Key: publicGit Type: cloud.project.ai.volume.PublicGit FullType: cloud.project.ai.volume.PublicGit
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicGit")]
-        public _cloud_project_ai_volume.PublicGit PublicGit { get; set; }//;
+        public _cloud_project_ai_volume.PublicGit? PublicGit { get; set; }//;
         
         // Key: publicSwift Type: cloud.project.ai.volume.PublicSwift FullType: cloud.project.ai.volume.PublicSwift
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicSwift")]
-        public _cloud_project_ai_volume.PublicSwift PublicSwift { get; set; }//;
+        public _cloud_project_ai_volume.PublicSwift? PublicSwift { get; set; }//;
         
         // Key: standalone Type: cloud.project.ai.volume.Standalone FullType: cloud.project.ai.volume.Standalone
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("standalone")]
-        public _cloud_project_ai_volume.Standalone Standalone { get; set; }//;
+        public _cloud_project_ai_volume.Standalone? Standalone { get; set; }//;
     }
     
     // Id: VolumeStatus Namespace: cloud.project.ai.volume
@@ -373,6 +373,6 @@ namespace _cloud_project_ai_volume {
         
         // Key: targetDataStore Type: cloud.project.ai.volume.DataStore FullType: cloud.project.ai.volume.DataStore
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetDataStore")]
-        public _cloud_project_ai_volume.DataStore TargetDataStore { get; set; }//;
+        public _cloud_project_ai_volume.DataStore? TargetDataStore { get; set; }//;
     }
 }

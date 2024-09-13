@@ -15,11 +15,11 @@ namespace _me_geolocation {
         
         // Key: continent Type: me.geolocation.ContinentEnum FullType: me.geolocation.ContinentEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("continent")]
-        public _me_geolocation.ContinentEnum Continent { get; set; }//;
+        public _me_geolocation.ContinentEnum? Continent { get; set; }//;
         
         // Key: countryCode Type: me.geolocation.CountryEnum FullType: me.geolocation.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countryCode")]
-        public _me_geolocation.CountryEnum CountryCode { get; set; }//;
+        public _me_geolocation.CountryEnum? CountryCode { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]

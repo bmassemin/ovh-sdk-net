@@ -63,7 +63,7 @@ namespace _order_catalog_pcc {
         
         // Key: cityName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cityName")]
-        public string CityName { get; set; }//;
+        public System.String? CityName { get; set; }//;
         
         // Key: countryCode Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("countryCode")]
@@ -83,7 +83,7 @@ namespace _order_catalog_pcc {
         
         // Key: managementFees Type: order.catalog.pcc.managementFees FullType: order.catalog.pcc.managementFees
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("managementFees")]
-        public _order_catalog_pcc.managementFees ManagementFees { get; set; }//;
+        public _order_catalog_pcc.managementFees? ManagementFees { get; set; }//;
         
         // Key: orderable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderable")]
@@ -135,7 +135,7 @@ namespace _order_catalog_pcc {
         
         // Key: storagesPack Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storagesPack")]
-        public string[] StoragesPack { get; set; }//;
+        public System.String[]? StoragesPack { get; set; }//;
     }
     
     // Id: HostCpuSpecifications Namespace: order.catalog.pcc
@@ -279,7 +279,7 @@ namespace _order_catalog_pcc {
         
         // Key: showInOrderFunnel Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("showInOrderFunnel")]
-        public bool ShowInOrderFunnel { get; set; }//;
+        public System.Boolean? ShowInOrderFunnel { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -303,7 +303,7 @@ namespace _order_catalog_pcc {
         
         // Key: disabledElementForOrderType Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabledElementForOrderType")]
-        public string[] DisabledElementForOrderType { get; set; }//;
+        public System.String[]? DisabledElementForOrderType { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -319,7 +319,7 @@ namespace _order_catalog_pcc {
         
         // Key: showInOrderFunnel Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("showInOrderFunnel")]
-        public bool ShowInOrderFunnel { get; set; }//;
+        public System.Boolean? ShowInOrderFunnel { get; set; }//;
         
         // Key: upgradableTo Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("upgradableTo")]
@@ -383,7 +383,7 @@ namespace _order_catalog_pcc {
         
         // Key: disabledElementForOrderType Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabledElementForOrderType")]
-        public string[] DisabledElementForOrderType { get; set; }//;
+        public System.String[]? DisabledElementForOrderType { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]

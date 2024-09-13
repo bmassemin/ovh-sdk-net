@@ -55,7 +55,7 @@ namespace _debt {
         
         // Key: dueDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dueDate")]
-        public System.DateTime DueDate { get; set; }//;
+        public System.DateTime? DueDate { get; set; }//;
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
@@ -103,6 +103,6 @@ namespace _debt {
         
         // Key: type Type: debt.entry.OperationEnum FullType: debt.entry.OperationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _debt_entry.OperationEnum Type { get; set; }//;
+        public _debt_entry.OperationEnum? Type { get; set; }//;
     }
 }

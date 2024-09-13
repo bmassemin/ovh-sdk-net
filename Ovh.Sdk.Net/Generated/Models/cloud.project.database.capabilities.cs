@@ -87,7 +87,7 @@ namespace _cloud_project_database_capabilities {
         
         // Key: parameters Type: cloud.project.database.capabilities.integration.Parameter[] FullType: cloud.project.database.capabilities.integration.Parameter[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parameters")]
-        public _cloud_project_database_capabilities_integration.Parameter[] Parameters { get; set; }//;
+        public _cloud_project_database_capabilities_integration.Parameter[]? Parameters { get; set; }//;
         
         // Key: sourceEngine Type: cloud.project.database.EngineEnum FullType: cloud.project.database.EngineEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sourceEngine")]

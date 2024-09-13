@@ -79,11 +79,11 @@ namespace _cloud_billingView {
         
         // Key: incomingBandwidth Type: cloud.billingView.BandwidthInstance FullType: cloud.billingView.BandwidthInstance
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("incomingBandwidth")]
-        public _cloud_billingView.BandwidthInstance IncomingBandwidth { get; set; }//;
+        public _cloud_billingView.BandwidthInstance? IncomingBandwidth { get; set; }//;
         
         // Key: outgoingBandwidth Type: cloud.billingView.BandwidthInstance FullType: cloud.billingView.BandwidthInstance
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("outgoingBandwidth")]
-        public _cloud_billingView.BandwidthInstance OutgoingBandwidth { get; set; }//;
+        public _cloud_billingView.BandwidthInstance? OutgoingBandwidth { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -183,7 +183,7 @@ namespace _cloud_billingView {
         
         // Key: instance Type: cloud.billingView.InstanceSnapshot FullType: cloud.billingView.InstanceSnapshot
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("instance")]
-        public _cloud_billingView.InstanceSnapshot Instance { get; set; }//;
+        public _cloud_billingView.InstanceSnapshot? Instance { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -195,7 +195,7 @@ namespace _cloud_billingView {
         
         // Key: volume Type: cloud.billingView.VolumeSnapshot FullType: cloud.billingView.VolumeSnapshot
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volume")]
-        public _cloud_billingView.VolumeSnapshot Volume { get; set; }//;
+        public _cloud_billingView.VolumeSnapshot? Volume { get; set; }//;
     }
     
     // Id: HourlyStorage Namespace: cloud.billingView
@@ -203,23 +203,23 @@ namespace _cloud_billingView {
         
         // Key: bucketName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bucketName")]
-        public string BucketName { get; set; }//;
+        public System.String? BucketName { get; set; }//;
         
         // Key: incomingBandwidth Type: cloud.billingView.BandwidthStorage FullType: cloud.billingView.BandwidthStorage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("incomingBandwidth")]
-        public _cloud_billingView.BandwidthStorage IncomingBandwidth { get; set; }//;
+        public _cloud_billingView.BandwidthStorage? IncomingBandwidth { get; set; }//;
         
         // Key: incomingInternalBandwidth Type: cloud.billingView.BandwidthStorage FullType: cloud.billingView.BandwidthStorage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("incomingInternalBandwidth")]
-        public _cloud_billingView.BandwidthStorage IncomingInternalBandwidth { get; set; }//;
+        public _cloud_billingView.BandwidthStorage? IncomingInternalBandwidth { get; set; }//;
         
         // Key: outgoingBandwidth Type: cloud.billingView.BandwidthStorage FullType: cloud.billingView.BandwidthStorage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("outgoingBandwidth")]
-        public _cloud_billingView.BandwidthStorage OutgoingBandwidth { get; set; }//;
+        public _cloud_billingView.BandwidthStorage? OutgoingBandwidth { get; set; }//;
         
         // Key: outgoingInternalBandwidth Type: cloud.billingView.BandwidthStorage FullType: cloud.billingView.BandwidthStorage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("outgoingInternalBandwidth")]
-        public _cloud_billingView.BandwidthStorage OutgoingInternalBandwidth { get; set; }//;
+        public _cloud_billingView.BandwidthStorage? OutgoingInternalBandwidth { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -227,7 +227,7 @@ namespace _cloud_billingView {
         
         // Key: stored Type: cloud.billingView.StoredStorage FullType: cloud.billingView.StoredStorage
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stored")]
-        public _cloud_billingView.StoredStorage Stored { get; set; }//;
+        public _cloud_billingView.StoredStorage? Stored { get; set; }//;
         
         // Key: totalPrice Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("totalPrice")]
@@ -391,7 +391,7 @@ namespace _cloud_billingView {
         
         // Key: certification Type: cloud.billingView.MonthlyCertification[] FullType: cloud.billingView.MonthlyCertification[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certification")]
-        public _cloud_billingView.MonthlyCertification[] Certification { get; set; }//;
+        public _cloud_billingView.MonthlyCertification[]? Certification { get; set; }//;
         
         // Key: instance Type: cloud.billingView.MonthlyInstance[] FullType: cloud.billingView.MonthlyInstance[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("instance")]

@@ -15,7 +15,7 @@ namespace _ipLoadbalancing_VrackNetwork {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: farmId Type: ipLoadbalancing.DefinedFarm[] FullType: ipLoadbalancing.DefinedFarm[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("farmId")]

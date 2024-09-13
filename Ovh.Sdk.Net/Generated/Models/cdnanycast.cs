@@ -31,7 +31,7 @@ namespace _cdnanycast {
         
         // Key: lastQuotaOrder Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastQuotaOrder")]
-        public System.DateTime LastQuotaOrder { get; set; }//;
+        public System.DateTime? LastQuotaOrder { get; set; }//;
         
         // Key: logUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logUrl")]
@@ -39,7 +39,7 @@ namespace _cdnanycast {
         
         // Key: offer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public string Offer { get; set; }//;
+        public System.String? Offer { get; set; }//;
         
         // Key: quota Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
@@ -71,11 +71,11 @@ namespace _cdnanycast {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastQuotaOrder Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastQuotaOrder")]
-        public System.DateTime LastQuotaOrder { get; set; }//;
+        public System.DateTime? LastQuotaOrder { get; set; }//;
         
         // Key: logUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logUrl")]
@@ -83,7 +83,7 @@ namespace _cdnanycast {
         
         // Key: offer Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public string Offer { get; set; }//;
+        public System.String? Offer { get; set; }//;
         
         // Key: quota Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
@@ -286,15 +286,15 @@ namespace _cdnanycast {
         
         // Key: certificateValidFrom Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificateValidFrom")]
-        public System.DateTime CertificateValidFrom { get; set; }//;
+        public System.DateTime? CertificateValidFrom { get; set; }//;
         
         // Key: certificateValidTo Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificateValidTo")]
-        public System.DateTime CertificateValidTo { get; set; }//;
+        public System.DateTime? CertificateValidTo { get; set; }//;
         
         // Key: cn Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cn")]
-        public string Cn { get; set; }//;
+        public System.String? Cn { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -342,7 +342,7 @@ namespace _cdnanycast {
         
         // Key: value Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public long Value { get; set; }//;
+        public System.Int64? Value { get; set; }//;
     }
     
     // Id: StatsPeriodEnum Namespace: cdnanycast
@@ -386,7 +386,7 @@ namespace _cdnanycast {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: function Type: cdnanycast.TaskFunctionEnum FullType: cdnanycast.TaskFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]

@@ -19,11 +19,11 @@ namespace _ssl {
         
         // Key: certificate Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificate")]
-        public string _Certificate { get; set; }//;
+        public System.String? _Certificate { get; set; }//;
         
         // Key: chain Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("chain")]
-        public string Chain { get; set; }//;
+        public System.String? Chain { get; set; }//;
         
         // Key: commonName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("commonName")]
@@ -51,11 +51,11 @@ namespace _ssl {
         
         // Key: validityEnd Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validityEnd")]
-        public System.DateTime ValidityEnd { get; set; }//;
+        public System.DateTime? ValidityEnd { get; set; }//;
         
         // Key: validityStart Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validityStart")]
-        public System.DateTime ValidityStart { get; set; }//;
+        public System.DateTime? ValidityStart { get; set; }//;
     }
     
     // Id: CertificateAuthorityEnum Namespace: ssl
@@ -106,11 +106,11 @@ namespace _ssl {
         
         // Key: certificate Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificate")]
-        public string Certificate { get; set; }//;
+        public System.String? Certificate { get; set; }//;
         
         // Key: chain Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("chain")]
-        public string Chain { get; set; }//;
+        public System.String? Chain { get; set; }//;
         
         // Key: commonName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("commonName")]
@@ -122,7 +122,7 @@ namespace _ssl {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
@@ -142,11 +142,11 @@ namespace _ssl {
         
         // Key: validityEnd Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validityEnd")]
-        public System.DateTime ValidityEnd { get; set; }//;
+        public System.DateTime? ValidityEnd { get; set; }//;
         
         // Key: validityStart Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validityStart")]
-        public System.DateTime ValidityStart { get; set; }//;
+        public System.DateTime? ValidityStart { get; set; }//;
     }
     
     // Id: Operation Namespace: ssl
@@ -154,7 +154,7 @@ namespace _ssl {
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: function Type: ssl.OperationFunctionEnum FullType: ssl.OperationFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]

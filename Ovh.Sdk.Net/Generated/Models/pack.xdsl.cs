@@ -15,11 +15,11 @@ namespace _pack_xdsl {
         
         // Key: error Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
-        public string Error { get; set; }//;
+        public System.String? Error { get; set; }//;
         
         // Key: result Type: T FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
-        public T Result { get; set; }//;
+        public T? Result { get; set; }//;
         
         // Key: status Type: pack.xdsl.AsyncTaskStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -44,11 +44,11 @@ namespace _pack_xdsl {
         
         // Key: address Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public string Address { get; set; }//;
+        public System.String? Address { get; set; }//;
         
         // Key: city Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: country Type: nichandle.CountryEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
@@ -60,27 +60,27 @@ namespace _pack_xdsl {
         
         // Key: firstname Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstname")]
-        public string Firstname { get; set; }//;
+        public System.String? Firstname { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: organisation Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisation")]
-        public string Organisation { get; set; }//;
+        public System.String? Organisation { get; set; }//;
         
         // Key: phone Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
-        public string Phone { get; set; }//;
+        public System.String? Phone { get; set; }//;
         
         // Key: phoneCountry Type: nichandle.CountryEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phoneCountry")]
-        public _nichandle.CountryEnum PhoneCountry { get; set; }//;
+        public _nichandle.CountryEnum? PhoneCountry { get; set; }//;
         
         // Key: zip Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zip")]
-        public string Zip { get; set; }//;
+        public System.String? Zip { get; set; }//;
     }
     
     // Id: DomainActionEnum Namespace: pack.xdsl
@@ -142,7 +142,7 @@ namespace _pack_xdsl {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: offerDescription Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerDescription")]
@@ -166,11 +166,11 @@ namespace _pack_xdsl {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: offerDescription Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerDescription")]
@@ -287,11 +287,11 @@ namespace _pack_xdsl {
         
         // Key: comment Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: subsidiary Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subsidiary")]
-        public string Subsidiary { get; set; }//;
+        public System.String? Subsidiary { get; set; }//;
         
         // Key: type Type: pack.xdsl.ResiliationReasonEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -307,7 +307,7 @@ namespace _pack_xdsl {
         
         // Key: engageDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engageDate")]
-        public System.DateTime EngageDate { get; set; }//;
+        public System.DateTime? EngageDate { get; set; }//;
         
         // Key: minResiliationDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minResiliationDate")]
@@ -549,15 +549,15 @@ namespace _pack_xdsl {
         
         // Key: deposit Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deposit")]
-        public _order.Price Deposit { get; set; }//;
+        public _order.Price? Deposit { get; set; }//;
         
         // Key: fees Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fees")]
-        public _order.Price Fees { get; set; }//;
+        public _order.Price? Fees { get; set; }//;
         
         // Key: image Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("image")]
-        public string Image { get; set; }//;
+        public System.String? Image { get; set; }//;
         
         // Key: label Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("label")]
@@ -565,7 +565,7 @@ namespace _pack_xdsl {
         
         // Key: max Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("max")]
-        public long Max { get; set; }//;
+        public System.Int64? Max { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -577,7 +577,7 @@ namespace _pack_xdsl {
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: VoIPLineOrder Namespace: pack.xdsl

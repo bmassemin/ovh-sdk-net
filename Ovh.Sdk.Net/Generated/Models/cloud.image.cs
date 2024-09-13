@@ -19,7 +19,7 @@ namespace _cloud_image {
         
         // Key: flavorType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavorType")]
-        public string FlavorType { get; set; }//;
+        public System.String? FlavorType { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -39,7 +39,7 @@ namespace _cloud_image {
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public string PlanCode { get; set; }//;
+        public System.String? PlanCode { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -55,7 +55,7 @@ namespace _cloud_image {
         
         // Key: tags Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tags")]
-        public string[] Tags { get; set; }//;
+        public System.String[]? Tags { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]

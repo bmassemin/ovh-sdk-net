@@ -15,7 +15,7 @@ namespace _order_catalog_cloud {
         
         // Key: unit Type: order.catalog.cloud.Blob.Unit FullType: order.catalog.cloud.Blob.Unit
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unit")]
-        public _order_catalog_cloud_Blob.Unit Unit { get; set; }//;
+        public _order_catalog_cloud_Blob.Unit? Unit { get; set; }//;
     }
     
     // Id: RegionPrice Namespace: order.catalog.cloud

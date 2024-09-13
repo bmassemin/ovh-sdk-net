@@ -101,11 +101,11 @@ namespace _billing {
         
         // Key: periodEnd Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("periodEnd")]
-        public System.DateOnly PeriodEnd { get; set; }//;
+        public System.DateOnly? PeriodEnd { get; set; }//;
         
         // Key: periodStart Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("periodStart")]
-        public System.DateOnly PeriodStart { get; set; }//;
+        public System.DateOnly? PeriodStart { get; set; }//;
         
         // Key: quantity Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quantity")]
@@ -207,7 +207,7 @@ namespace _billing {
         
         // Key: paymentInfo Type: debt.associatedObject.PaymentInfo FullType: debt.associatedObject.PaymentInfo
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentInfo")]
-        public _debt_associatedObject.PaymentInfo PaymentInfo { get; set; }//;
+        public _debt_associatedObject.PaymentInfo? PaymentInfo { get; set; }//;
         
         // Key: pdfUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pdfUrl")]
@@ -251,7 +251,7 @@ namespace _billing {
         
         // Key: alertThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alertThreshold")]
-        public long AlertThreshold { get; set; }//;
+        public System.Int64? AlertThreshold { get; set; }//;
         
         // Key: balance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("balance")]
@@ -319,11 +319,11 @@ namespace _billing {
         
         // Key: domainsToMigrate Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainsToMigrate")]
-        public long DomainsToMigrate { get; set; }//;
+        public System.Int64? DomainsToMigrate { get; set; }//;
         
         // Key: migratedDomains Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("migratedDomains")]
-        public long MigratedDomains { get; set; }//;
+        public System.Int64? MigratedDomains { get; set; }//;
         
         // Key: status Type: billing.BillingTaskStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -375,11 +375,11 @@ namespace _billing {
         
         // Key: date Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateTime Date { get; set; }//;
+        public System.DateTime? Date { get; set; }//;
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
@@ -403,7 +403,7 @@ namespace _billing {
         
         // Key: retractionDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retractionDate")]
-        public System.DateTime RetractionDate { get; set; }//;
+        public System.DateTime? RetractionDate { get; set; }//;
         
         // Key: tax Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tax")]
@@ -427,7 +427,7 @@ namespace _billing {
         
         // Key: detailType Type: order.OrderDetailTypeEnum FullType: order.OrderDetailTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("detailType")]
-        public _order.OrderDetailTypeEnum DetailType { get; set; }//;
+        public _order.OrderDetailTypeEnum? DetailType { get; set; }//;
         
         // Key: domain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -455,7 +455,7 @@ namespace _billing {
         
         // Key: alertThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alertThreshold")]
-        public long AlertThreshold { get; set; }//;
+        public System.Int64? AlertThreshold { get; set; }//;
         
         // Key: balance Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("balance")]
@@ -491,7 +491,7 @@ namespace _billing {
         
         // Key: paymentIdentifier Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentIdentifier")]
-        public string PaymentIdentifier { get; set; }//;
+        public System.String? PaymentIdentifier { get; set; }//;
         
         // Key: paymentType Type: billing.PaymentMeanEnum FullType: billing.PaymentMeanEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("paymentType")]
@@ -593,7 +593,7 @@ namespace _billing {
         
         // Key: originalBillId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("originalBillId")]
-        public string OriginalBillId { get; set; }//;
+        public System.String? OriginalBillId { get; set; }//;
         
         // Key: password Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
@@ -798,7 +798,7 @@ namespace _billing {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]

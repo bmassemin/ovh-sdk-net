@@ -163,23 +163,23 @@ namespace _cloud_quota {
         
         // Key: instance Type: cloud.quota.InstanceUsageQuotas FullType: cloud.quota.InstanceUsageQuotas
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("instance")]
-        public _cloud_quota.InstanceUsageQuotas Instance { get; set; }//;
+        public _cloud_quota.InstanceUsageQuotas? Instance { get; set; }//;
         
         // Key: keymanager Type: cloud.quota.KeymanagerQuotas FullType: cloud.quota.KeymanagerQuotas
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keymanager")]
-        public _cloud_quota.KeymanagerQuotas Keymanager { get; set; }//;
+        public _cloud_quota.KeymanagerQuotas? Keymanager { get; set; }//;
         
         // Key: keypair Type: cloud.quota.KeypairQuotas FullType: cloud.quota.KeypairQuotas
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keypair")]
-        public _cloud_quota.KeypairQuotas Keypair { get; set; }//;
+        public _cloud_quota.KeypairQuotas? Keypair { get; set; }//;
         
         // Key: loadbalancer Type: cloud.quota.LoadbalancerQuotas FullType: cloud.quota.LoadbalancerQuotas
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("loadbalancer")]
-        public _cloud_quota.LoadbalancerQuotas Loadbalancer { get; set; }//;
+        public _cloud_quota.LoadbalancerQuotas? Loadbalancer { get; set; }//;
         
         // Key: network Type: cloud.quota.NetworkQuotas FullType: cloud.quota.NetworkQuotas
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network")]
-        public _cloud_quota.NetworkQuotas Network { get; set; }//;
+        public _cloud_quota.NetworkQuotas? Network { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -187,11 +187,11 @@ namespace _cloud_quota {
         
         // Key: share Type: cloud.quota.share.Quota FullType: cloud.quota.share.Quota
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("share")]
-        public _cloud_quota_share.Quota Share { get; set; }//;
+        public _cloud_quota_share.Quota? Share { get; set; }//;
         
         // Key: volume Type: cloud.quota.VolumeUsageQuotas FullType: cloud.quota.VolumeUsageQuotas
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volume")]
-        public _cloud_quota.VolumeUsageQuotas Volume { get; set; }//;
+        public _cloud_quota.VolumeUsageQuotas? Volume { get; set; }//;
     }
     
     // Id: VolumeQuota Namespace: cloud.quota

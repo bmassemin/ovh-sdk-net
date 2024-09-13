@@ -15,7 +15,7 @@ namespace _iam_resource {
         
         // Key: operator Type: iam.resource.TagFilter.OperatorEnum FullType: iam.resource.TagFilter.OperatorEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operator")]
-        public _iam_resource_TagFilter.OperatorEnum @operator { get; set; }//;
+        public _iam_resource_TagFilter.OperatorEnum? @operator { get; set; }//;
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]

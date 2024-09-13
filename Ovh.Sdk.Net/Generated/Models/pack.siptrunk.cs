@@ -23,7 +23,7 @@ namespace _pack_siptrunk {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: packName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("packName")]

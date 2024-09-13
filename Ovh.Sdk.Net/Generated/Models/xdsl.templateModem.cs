@@ -39,7 +39,7 @@ namespace _xdsl_templateModem {
         
         // Key: secondaryDNS Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("secondaryDNS")]
-        public string SecondaryDNS { get; set; }//;
+        public System.String? SecondaryDNS { get; set; }//;
         
         // Key: serverEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverEnabled")]
@@ -79,23 +79,23 @@ namespace _xdsl_templateModem {
         
         // Key: LANandDHCP Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("LANandDHCP")]
-        public bool LANandDHCP { get; set; }//;
+        public System.Boolean? LANandDHCP { get; set; }//;
         
         // Key: WLANList Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("WLANList")]
-        public string[] WLANList { get; set; }//;
+        public System.String[]? WLANList { get; set; }//;
         
         // Key: dmzIP Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dmzIP")]
-        public bool DmzIP { get; set; }//;
+        public System.Boolean? DmzIP { get; set; }//;
         
         // Key: mtuSize Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mtuSize")]
-        public bool MtuSize { get; set; }//;
+        public System.Boolean? MtuSize { get; set; }//;
         
         // Key: portMappingList Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portMappingList")]
-        public string[] PortMappingList { get; set; }//;
+        public System.String[]? PortMappingList { get; set; }//;
     }
     
     // Id: PortMapping Namespace: xdsl.templateModem
@@ -103,15 +103,15 @@ namespace _xdsl_templateModem {
         
         // Key: allowedRemoteIp Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedRemoteIp")]
-        public string AllowedRemoteIp { get; set; }//;
+        public System.String? AllowedRemoteIp { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: externalPortEnd Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("externalPortEnd")]
-        public long ExternalPortEnd { get; set; }//;
+        public System.Int64? ExternalPortEnd { get; set; }//;
         
         // Key: externalPortStart Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("externalPortStart")]

@@ -23,15 +23,15 @@ namespace _serviceList {
         
         // Key: engagementDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("engagementDate")]
-        public System.DateOnly EngagementDate { get; set; }//;
+        public System.DateOnly? EngagementDate { get; set; }//;
         
         // Key: expirationDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateOnly ExpirationDate { get; set; }//;
+        public System.DateOnly? ExpirationDate { get; set; }//;
         
         // Key: nextBillingDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nextBillingDate")]
-        public System.DateOnly NextBillingDate { get; set; }//;
+        public System.DateOnly? NextBillingDate { get; set; }//;
         
         // Key: plan Type: service.Plan FullType: service.Plan
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plan")]
@@ -43,7 +43,7 @@ namespace _serviceList {
         
         // Key: renew Type: service.Renew FullType: service.Renew
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renew")]
-        public _service.Renew Renew { get; set; }//;
+        public _service.Renew? Renew { get; set; }//;
         
         // Key: resource Type: service.Resource FullType: service.Resource
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resource")]

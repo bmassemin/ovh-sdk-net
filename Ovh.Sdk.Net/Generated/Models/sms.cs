@@ -28,11 +28,11 @@ namespace _sms {
         
         // Key: automaticRecreditAmount Type: sms.PackQuantityAutomaticRecreditEnum FullType: sms.PackQuantityAutomaticRecreditEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("automaticRecreditAmount")]
-        public _sms.PackQuantityAutomaticRecreditEnum AutomaticRecreditAmount { get; set; }//;
+        public _sms.PackQuantityAutomaticRecreditEnum? AutomaticRecreditAmount { get; set; }//;
         
         // Key: callBack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callBack")]
-        public string CallBack { get; set; }//;
+        public System.String? CallBack { get; set; }//;
         
         // Key: channel Type: sms.ChannelEnum FullType: sms.ChannelEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("channel")]
@@ -72,7 +72,7 @@ namespace _sms {
         
         // Key: stopCallBack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stopCallBack")]
-        public string StopCallBack { get; set; }//;
+        public System.String? StopCallBack { get; set; }//;
         
         // Key: templates Type: sms.Templates FullType: sms.Templates
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("templates")]
@@ -88,11 +88,11 @@ namespace _sms {
         
         // Key: automaticRecreditAmount Type: sms.PackQuantityAutomaticRecreditEnum FullType: sms.PackQuantityAutomaticRecreditEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("automaticRecreditAmount")]
-        public _sms.PackQuantityAutomaticRecreditEnum AutomaticRecreditAmount { get; set; }//;
+        public _sms.PackQuantityAutomaticRecreditEnum? AutomaticRecreditAmount { get; set; }//;
         
         // Key: callBack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callBack")]
-        public string CallBack { get; set; }//;
+        public System.String? CallBack { get; set; }//;
         
         // Key: channel Type: sms.ChannelEnum FullType: sms.ChannelEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("channel")]
@@ -116,7 +116,7 @@ namespace _sms {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -136,7 +136,7 @@ namespace _sms {
         
         // Key: stopCallBack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stopCallBack")]
-        public string StopCallBack { get; set; }//;
+        public System.String? StopCallBack { get; set; }//;
         
         // Key: templates Type: sms.Templates FullType: sms.Templates
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("templates")]
@@ -210,11 +210,11 @@ namespace _sms {
         
         // Key: finishedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishedAt")]
-        public System.DateTime FinishedAt { get; set; }//;
+        public System.DateTime? FinishedAt { get; set; }//;
         
         // Key: from Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("from")]
-        public string From { get; set; }//;
+        public System.String? From { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -234,19 +234,19 @@ namespace _sms {
         
         // Key: receivers Type: phoneNumber[] FullType: phoneNumber[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("receivers")]
-        public string[] Receivers { get; set; }//;
+        public System.String[]? Receivers { get; set; }//;
         
         // Key: sentAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sentAt")]
-        public System.DateTime SentAt { get; set; }//;
+        public System.DateTime? SentAt { get; set; }//;
         
         // Key: slotID Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slotID")]
-        public string SlotID { get; set; }//;
+        public System.String? SlotID { get; set; }//;
         
         // Key: startedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startedAt")]
-        public System.DateTime StartedAt { get; set; }//;
+        public System.DateTime? StartedAt { get; set; }//;
         
         // Key: status Type: sms.BatchStatusEnum FullType: sms.BatchStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -429,7 +429,7 @@ namespace _sms {
         
         // Key: batchID Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("batchID")]
-        public System.Guid BatchID { get; set; }//;
+        public System.Guid? BatchID { get; set; }//;
         
         // Key: dateCreation Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dateCreation")]
@@ -441,7 +441,7 @@ namespace _sms {
         
         // Key: smsOutgoingID Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("smsOutgoingID")]
-        public long SmsOutgoingID { get; set; }//;
+        public System.Int64? SmsOutgoingID { get; set; }//;
     }
     
     // Id: CharsetEnum Namespace: sms
@@ -1182,7 +1182,7 @@ namespace _sms {
         
         // Key: substitution Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("substitution")]
-        public string Substitution { get; set; }//;
+        public System.String? Substitution { get; set; }//;
     }
     
     // Id: Hlr Namespace: sms
@@ -1306,7 +1306,7 @@ namespace _sms {
         
         // Key: deliveredAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deliveredAt")]
-        public System.DateTime DeliveredAt { get; set; }//;
+        public System.DateTime? DeliveredAt { get; set; }//;
         
         // Key: deliveryReceipt Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deliveryReceipt")]
@@ -1346,7 +1346,7 @@ namespace _sms {
         
         // Key: sentAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sentAt")]
-        public System.DateTime SentAt { get; set; }//;
+        public System.DateTime? SentAt { get; set; }//;
     }
     
     // Id: JobEstimate Namespace: sms
@@ -1374,7 +1374,7 @@ namespace _sms {
         
         // Key: batchID Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("batchID")]
-        public System.Guid BatchID { get; set; }//;
+        public System.Guid? BatchID { get; set; }//;
         
         // Key: creationDatetime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDatetime")]
@@ -1386,7 +1386,7 @@ namespace _sms {
         
         // Key: deliveredAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deliveredAt")]
-        public System.DateTime DeliveredAt { get; set; }//;
+        public System.DateTime? DeliveredAt { get; set; }//;
         
         // Key: deliveryReceipt Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deliveryReceipt")]
@@ -1406,7 +1406,7 @@ namespace _sms {
         
         // Key: messageID Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("messageID")]
-        public System.Guid MessageID { get; set; }//;
+        public System.Guid? MessageID { get; set; }//;
         
         // Key: messageLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("messageLength")]
@@ -1430,7 +1430,7 @@ namespace _sms {
         
         // Key: sentAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sentAt")]
-        public System.DateTime SentAt { get; set; }//;
+        public System.DateTime? SentAt { get; set; }//;
         
         // Key: tag Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tag")]
@@ -1458,7 +1458,7 @@ namespace _sms {
         
         // Key: creditQuantityMax Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creditQuantityMax")]
-        public long CreditQuantityMax { get; set; }//;
+        public System.Int64? CreditQuantityMax { get; set; }//;
         
         // Key: creditQuantityMin Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creditQuantityMin")]
@@ -1466,15 +1466,15 @@ namespace _sms {
         
         // Key: discountCreditPrice Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("discountCreditPrice")]
-        public _order.Price DiscountCreditPrice { get; set; }//;
+        public _order.Price? DiscountCreditPrice { get; set; }//;
         
         // Key: discountPercentage Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("discountPercentage")]
-        public long DiscountPercentage { get; set; }//;
+        public System.Int64? DiscountPercentage { get; set; }//;
         
         // Key: discountSmsPrice Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("discountSmsPrice")]
-        public _order.Price DiscountSmsPrice { get; set; }//;
+        public _order.Price? DiscountSmsPrice { get; set; }//;
         
         // Key: smsPrice Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("smsPrice")]
@@ -1482,7 +1482,7 @@ namespace _sms {
         
         // Key: smsQuantityMax Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("smsQuantityMax")]
-        public long SmsQuantityMax { get; set; }//;
+        public System.Int64? SmsQuantityMax { get; set; }//;
         
         // Key: smsQuantityMin Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("smsQuantityMin")]
@@ -1498,11 +1498,11 @@ namespace _sms {
         
         // Key: giftPrice Type: double FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("giftPrice")]
-        public double GiftPrice { get; set; }//;
+        public System.Double? GiftPrice { get; set; }//;
         
         // Key: giftQuantity Type: double FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("giftQuantity")]
-        public double GiftQuantity { get; set; }//;
+        public System.Double? GiftQuantity { get; set; }//;
         
         // Key: language Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("language")]
@@ -1522,7 +1522,7 @@ namespace _sms {
         
         // Key: totalPrice Type: double FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("totalPrice")]
-        public double TotalPrice { get; set; }//;
+        public System.Double? TotalPrice { get; set; }//;
     }
     
     // Id: PackQuantityAutomaticRecreditEnum Namespace: sms
@@ -1596,11 +1596,11 @@ namespace _sms {
         
         // Key: homeMobile Type: internationalPhoneNumber FullType: internationalPhoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("homeMobile")]
-        public string HomeMobile { get; set; }//;
+        public System.String? HomeMobile { get; set; }//;
         
         // Key: homePhone Type: internationalPhoneNumber FullType: internationalPhoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("homePhone")]
-        public string HomePhone { get; set; }//;
+        public System.String? HomePhone { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -1616,11 +1616,11 @@ namespace _sms {
         
         // Key: workMobile Type: internationalPhoneNumber FullType: internationalPhoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("workMobile")]
-        public string WorkMobile { get; set; }//;
+        public System.String? WorkMobile { get; set; }//;
         
         // Key: workPhone Type: internationalPhoneNumber FullType: internationalPhoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("workPhone")]
-        public string WorkPhone { get; set; }//;
+        public System.String? WorkPhone { get; set; }//;
     }
     
     // Id: PriorityEnum Namespace: sms
@@ -1757,7 +1757,7 @@ namespace _sms {
         
         // Key: cgiUrl Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cgiUrl")]
-        public string CgiUrl { get; set; }//;
+        public System.String? CgiUrl { get; set; }//;
         
         // Key: responseType Type: sms.ResponseTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("responseType")]
@@ -1765,15 +1765,15 @@ namespace _sms {
         
         // Key: text Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("text")]
-        public string Text { get; set; }//;
+        public System.String? Text { get; set; }//;
         
         // Key: trackingDefaultSmsSender Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trackingDefaultSmsSender")]
-        public string TrackingDefaultSmsSender { get; set; }//;
+        public System.String? TrackingDefaultSmsSender { get; set; }//;
         
         // Key: trackingOptions Type: sms.ResponseTrackingOptions[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trackingOptions")]
-        public _sms.ResponseTrackingOptions[] TrackingOptions { get; set; }//;
+        public _sms.ResponseTrackingOptions[]? TrackingOptions { get; set; }//;
     }
     
     // Id: ResponseTrackingMediaEnum Namespace: sms
@@ -1848,7 +1848,7 @@ namespace _sms {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -1868,11 +1868,11 @@ namespace _sms {
         
         // Key: type Type: sms.TypeSenderEnum FullType: sms.TypeSenderEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _sms.TypeSenderEnum Type { get; set; }//;
+        public _sms.TypeSenderEnum? Type { get; set; }//;
         
         // Key: validationMedia Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validationMedia")]
-        public string ValidationMedia { get; set; }//;
+        public System.String? ValidationMedia { get; set; }//;
     }
     
     // Id: SenderAvailable Namespace: sms
@@ -1896,7 +1896,7 @@ namespace _sms {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: documentID Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("documentID")]
@@ -1912,7 +1912,7 @@ namespace _sms {
         
         // Key: putUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("putUrl")]
-        public string PutUrl { get; set; }//;
+        public System.String? PutUrl { get; set; }//;
         
         // Key: size Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
@@ -2115,19 +2115,19 @@ namespace _sms {
         
         // Key: emailBody Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("emailBody")]
-        public string EmailBody { get; set; }//;
+        public System.String? EmailBody { get; set; }//;
         
         // Key: emailFrom Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("emailFrom")]
-        public string EmailFrom { get; set; }//;
+        public System.String? EmailFrom { get; set; }//;
         
         // Key: emailSubject Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("emailSubject")]
-        public string EmailSubject { get; set; }//;
+        public System.String? EmailSubject { get; set; }//;
         
         // Key: smsBody Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("smsBody")]
-        public string SmsBody { get; set; }//;
+        public System.String? SmsBody { get; set; }//;
     }
     
     // Id: TodoGeneralPublicFunctionsEnum Namespace: sms
@@ -2197,7 +2197,7 @@ namespace _sms {
         
         // Key: callBack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callBack")]
-        public string CallBack { get; set; }//;
+        public System.String? CallBack { get; set; }//;
         
         // Key: ipRestrictions Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipRestrictions")]
@@ -2217,7 +2217,7 @@ namespace _sms {
         
         // Key: stopCallBack Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stopCallBack")]
-        public string StopCallBack { get; set; }//;
+        public System.String? StopCallBack { get; set; }//;
     }
     
     // Id: VirtualNumber Namespace: sms
@@ -2253,7 +2253,7 @@ namespace _sms {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: number Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]

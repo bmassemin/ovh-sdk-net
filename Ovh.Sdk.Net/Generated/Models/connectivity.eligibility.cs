@@ -28,7 +28,7 @@ namespace _connectivity_eligibility {
         
         // Key: building Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("building")]
-        public string Building { get; set; }//;
+        public System.String? Building { get; set; }//;
         
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
@@ -36,15 +36,15 @@ namespace _connectivity_eligibility {
         
         // Key: door Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("door")]
-        public string Door { get; set; }//;
+        public System.String? Door { get; set; }//;
         
         // Key: floor Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("floor")]
-        public string Floor { get; set; }//;
+        public System.String? Floor { get; set; }//;
         
         // Key: housingComplex Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("housingComplex")]
-        public string HousingComplex { get; set; }//;
+        public System.String? HousingComplex { get; set; }//;
         
         // Key: inseeCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inseeCode")]
@@ -52,23 +52,23 @@ namespace _connectivity_eligibility {
         
         // Key: ownerName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownerName")]
-        public string OwnerName { get; set; }//;
+        public System.String? OwnerName { get; set; }//;
         
         // Key: stairs Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stairs")]
-        public string Stairs { get; set; }//;
+        public System.String? Stairs { get; set; }//;
         
         // Key: streetCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetCode")]
-        public string StreetCode { get; set; }//;
+        public System.String? StreetCode { get; set; }//;
         
         // Key: streetName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetName")]
-        public string StreetName { get; set; }//;
+        public System.String? StreetName { get; set; }//;
         
         // Key: streetNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetNumber")]
-        public string StreetNumber { get; set; }//;
+        public System.String? StreetNumber { get; set; }//;
         
         // Key: zipCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zipCode")]
@@ -84,7 +84,7 @@ namespace _connectivity_eligibility {
         
         // Key: nro Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nro")]
-        public string Nro { get; set; }//;
+        public System.String? Nro { get; set; }//;
         
         // Key: reference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reference")]
@@ -92,7 +92,7 @@ namespace _connectivity_eligibility {
         
         // Key: stairs Type: connectivity.eligibility.BuildingStair[] FullType: connectivity.eligibility.BuildingStair[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stairs")]
-        public _connectivity_eligibility.BuildingStair[] Stairs { get; set; }//;
+        public _connectivity_eligibility.BuildingStair[]? Stairs { get; set; }//;
         
         // Key: type Type: connectivity.eligibility.BuildingTypeEnum FullType: connectivity.eligibility.BuildingTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -134,7 +134,7 @@ namespace _connectivity_eligibility {
         
         // Key: locality Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("locality")]
-        public string Locality { get; set; }//;
+        public System.String? Locality { get; set; }//;
         
         // Key: zipCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zipCode")]
@@ -146,15 +146,15 @@ namespace _connectivity_eligibility {
         
         // Key: availablePairs Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("availablePairs")]
-        public long AvailablePairs { get; set; }//;
+        public System.Int64? AvailablePairs { get; set; }//;
         
         // Key: maxAvailablePairs Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxAvailablePairs")]
-        public long MaxAvailablePairs { get; set; }//;
+        public System.Int64? MaxAvailablePairs { get; set; }//;
         
         // Key: nra Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nra")]
-        public string Nra { get; set; }//;
+        public System.String? Nra { get; set; }//;
         
         // Key: sectionsLengths Type: connectivity.eligibility.SectionLength[] FullType: connectivity.eligibility.SectionLength[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sectionsLengths")]
@@ -166,7 +166,7 @@ namespace _connectivity_eligibility {
         
         // Key: underConstruction Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("underConstruction")]
-        public bool UnderConstruction { get; set; }//;
+        public System.Boolean? UnderConstruction { get; set; }//;
         
         // Key: unlistedNumber Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unlistedNumber")]
@@ -194,19 +194,19 @@ namespace _connectivity_eligibility {
         
         // Key: address Type: connectivity.eligibility.Address FullType: connectivity.eligibility.Address
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public _connectivity_eligibility.Address Address { get; set; }//;
+        public _connectivity_eligibility.Address? Address { get; set; }//;
         
         // Key: copperInfo Type: connectivity.eligibility.CopperInfo FullType: connectivity.eligibility.CopperInfo
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("copperInfo")]
-        public _connectivity_eligibility.CopperInfo CopperInfo { get; set; }//;
+        public _connectivity_eligibility.CopperInfo? CopperInfo { get; set; }//;
         
         // Key: fiberInfo Type: connectivity.eligibility.FiberInfo FullType: connectivity.eligibility.FiberInfo
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fiberInfo")]
-        public _connectivity_eligibility.FiberInfo FiberInfo { get; set; }//;
+        public _connectivity_eligibility.FiberInfo? FiberInfo { get; set; }//;
         
         // Key: portability Type: connectivity.eligibility.Portability FullType: connectivity.eligibility.Portability
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portability")]
-        public _connectivity_eligibility.Portability Portability { get; set; }//;
+        public _connectivity_eligibility.Portability? Portability { get; set; }//;
         
         // Key: reference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reference")]
@@ -235,7 +235,7 @@ namespace _connectivity_eligibility {
         
         // Key: buildingName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("buildingName")]
-        public string BuildingName { get; set; }//;
+        public System.String? BuildingName { get; set; }//;
         
         // Key: buildingReference Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("buildingReference")]
@@ -247,7 +247,7 @@ namespace _connectivity_eligibility {
         
         // Key: nro Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nro")]
-        public string Nro { get; set; }//;
+        public System.String? Nro { get; set; }//;
         
         // Key: operatorCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operatorCode")]
@@ -321,7 +321,7 @@ namespace _connectivity_eligibility {
         
         // Key: slotId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slotId")]
-        public string SlotId { get; set; }//;
+        public System.String? SlotId { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -329,7 +329,7 @@ namespace _connectivity_eligibility {
         
         // Key: uiCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("uiCode")]
-        public string UiCode { get; set; }//;
+        public System.String? UiCode { get; set; }//;
     }
     
     // Id: Meetings Namespace: connectivity.eligibility
@@ -353,7 +353,7 @@ namespace _connectivity_eligibility {
         
         // Key: availabilityDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityDate")]
-        public System.DateTime AvailabilityDate { get; set; }//;
+        public System.DateTime? AvailabilityDate { get; set; }//;
         
         // Key: code Type: connectivity.eligibility.MessageCodeEnum FullType: connectivity.eligibility.MessageCodeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("code")]
@@ -516,15 +516,15 @@ namespace _connectivity_eligibility {
         
         // Key: estimatedDownloadRate Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("estimatedDownloadRate")]
-        public double EstimatedDownloadRate { get; set; }//;
+        public System.Double? EstimatedDownloadRate { get; set; }//;
         
         // Key: estimatedUploadRate Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("estimatedUploadRate")]
-        public double EstimatedUploadRate { get; set; }//;
+        public System.Double? EstimatedUploadRate { get; set; }//;
         
         // Key: multiOtp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("multiOtp")]
-        public bool MultiOtp { get; set; }//;
+        public System.Boolean? MultiOtp { get; set; }//;
         
         // Key: reasons Type: connectivity.eligibility.Message[] FullType: connectivity.eligibility.Message[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reasons")]
@@ -564,7 +564,7 @@ namespace _connectivity_eligibility {
         
         // Key: pairs Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pairs")]
-        public long Pairs { get; set; }//;
+        public System.Int64? Pairs { get; set; }//;
         
         // Key: provider Type: connectivity.eligibility.OfferProductProviderEnum FullType: connectivity.eligibility.OfferProductProviderEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("provider")]
@@ -576,7 +576,7 @@ namespace _connectivity_eligibility {
         
         // Key: unbundlingType Type: connectivity.eligibility.OfferProductUnbundlingTypeEnum FullType: connectivity.eligibility.OfferProductUnbundlingTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unbundlingType")]
-        public _connectivity_eligibility.OfferProductUnbundlingTypeEnum UnbundlingType { get; set; }//;
+        public _connectivity_eligibility.OfferProductUnbundlingTypeEnum? UnbundlingType { get; set; }//;
         
         // Key: uploadRate Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("uploadRate")]
@@ -667,11 +667,11 @@ namespace _connectivity_eligibility {
         
         // Key: quarantineEndDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quarantineEndDate")]
-        public System.DateTime QuarantineEndDate { get; set; }//;
+        public System.DateTime? QuarantineEndDate { get; set; }//;
         
         // Key: type Type: connectivity.eligibility.PortabilityTypeEnum FullType: connectivity.eligibility.PortabilityTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _connectivity_eligibility.PortabilityTypeEnum Type { get; set; }//;
+        public _connectivity_eligibility.PortabilityTypeEnum? Type { get; set; }//;
     }
     
     // Id: PortabilityEligibility Namespace: connectivity.eligibility
@@ -738,7 +738,7 @@ namespace _connectivity_eligibility {
         
         // Key: hexacle Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hexacle")]
-        public string Hexacle { get; set; }//;
+        public System.String? Hexacle { get; set; }//;
         
         // Key: number Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]

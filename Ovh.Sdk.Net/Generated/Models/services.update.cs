@@ -15,14 +15,14 @@ namespace _services_update {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: renew Type: services.update.Service.Renew FullType: services.update.Service.Renew
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renew")]
-        public _services_update_Service.Renew Renew { get; set; }//;
+        public _services_update_Service.Renew? Renew { get; set; }//;
         
         // Key: terminationPolicy Type: services.expanded.terminationPolicyEnum FullType: services.expanded.terminationPolicyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("terminationPolicy")]
-        public _services_expanded.terminationPolicyEnum TerminationPolicy { get; set; }//;
+        public _services_expanded.terminationPolicyEnum? TerminationPolicy { get; set; }//;
     }
 }

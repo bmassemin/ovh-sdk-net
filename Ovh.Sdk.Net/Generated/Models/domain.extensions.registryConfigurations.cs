@@ -15,7 +15,7 @@ namespace _domain_extensions_registryConfigurations {
         
         // Key: allowedPeriodsInMonths Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedPeriodsInMonths")]
-        public long[] AllowedPeriodsInMonths { get; set; }//;
+        public System.Int64[]? AllowedPeriodsInMonths { get; set; }//;
     }
     
     // Id: DNSRegistryConfiguration Namespace: domain.extensions.registryConfigurations
@@ -27,11 +27,11 @@ namespace _domain_extensions_registryConfigurations {
         
         // Key: maxNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxNumber")]
-        public long MaxNumber { get; set; }//;
+        public System.Int64? MaxNumber { get; set; }//;
         
         // Key: minNumber Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minNumber")]
-        public long MinNumber { get; set; }//;
+        public System.Int64? MinNumber { get; set; }//;
     }
     
     // Id: DomainRegistryConfiguration Namespace: domain.extensions.registryConfigurations
@@ -55,11 +55,11 @@ namespace _domain_extensions_registryConfigurations {
         
         // Key: maxLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxLength")]
-        public long MaxLength { get; set; }//;
+        public System.Int64? MaxLength { get; set; }//;
         
         // Key: minLength Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minLength")]
-        public long MinLength { get; set; }//;
+        public System.Int64? MinLength { get; set; }//;
     }
     
     // Id: LifecycleRegistryConfiguration Namespace: domain.extensions.registryConfigurations
@@ -95,11 +95,11 @@ namespace _domain_extensions_registryConfigurations {
         
         // Key: maxMonths Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxMonths")]
-        public long MaxMonths { get; set; }//;
+        public System.Int64? MaxMonths { get; set; }//;
         
         // Key: minMonths Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minMonths")]
-        public long MinMonths { get; set; }//;
+        public System.Int64? MinMonths { get; set; }//;
     }
     
     // Id: RegistryConfigurations Namespace: domain.extensions.registryConfigurations
@@ -123,11 +123,11 @@ namespace _domain_extensions_registryConfigurations {
         
         // Key: allowedPeriodsInMonths Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedPeriodsInMonths")]
-        public long[] AllowedPeriodsInMonths { get; set; }//;
+        public System.Int64[]? AllowedPeriodsInMonths { get; set; }//;
         
         // Key: gracePeriodInDays Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gracePeriodInDays")]
-        public long GracePeriodInDays { get; set; }//;
+        public System.Int64? GracePeriodInDays { get; set; }//;
     }
     
     // Id: RestoreLifecycleRegistryConfiguration Namespace: domain.extensions.registryConfigurations
@@ -135,7 +135,7 @@ namespace _domain_extensions_registryConfigurations {
         
         // Key: gracePeriodInDays Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gracePeriodInDays")]
-        public long GracePeriodInDays { get; set; }//;
+        public System.Int64? GracePeriodInDays { get; set; }//;
     }
     
     // Id: TransferLifecycleRegistryConfiguration Namespace: domain.extensions.registryConfigurations
@@ -143,6 +143,6 @@ namespace _domain_extensions_registryConfigurations {
         
         // Key: allowedPeriodsInMonths Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedPeriodsInMonths")]
-        public long[] AllowedPeriodsInMonths { get; set; }//;
+        public System.Int64[]? AllowedPeriodsInMonths { get; set; }//;
     }
 }

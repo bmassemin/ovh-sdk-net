@@ -55,19 +55,19 @@ namespace _cloud_project_ai_job {
         
         // Key: command Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("command")]
-        public string[] Command { get; set; }//;
+        public System.String[]? Command { get; set; }//;
         
         // Key: defaultHttpPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultHttpPort")]
-        public long DefaultHttpPort { get; set; }//;
+        public System.Int64? DefaultHttpPort { get; set; }//;
         
         // Key: envVars Type: cloud.project.ai.job.JobEnv[] FullType: cloud.project.ai.job.JobEnv[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("envVars")]
-        public _cloud_project_ai_job.JobEnv[] EnvVars { get; set; }//;
+        public _cloud_project_ai_job.JobEnv[]? EnvVars { get; set; }//;
         
         // Key: grpcPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grpcPort")]
-        public long GrpcPort { get; set; }//;
+        public System.Int64? GrpcPort { get; set; }//;
         
         // Key: image Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("image")]
@@ -75,7 +75,7 @@ namespace _cloud_project_ai_job {
         
         // Key: labels Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
-        public Dictionary<string, string> Labels { get; set; }//;
+        public Dictionary<string, string>? Labels { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -83,11 +83,11 @@ namespace _cloud_project_ai_job {
         
         // Key: partnerId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnerId")]
-        public string PartnerId { get; set; }//;
+        public System.String? PartnerId { get; set; }//;
         
         // Key: readUser Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readUser")]
-        public string ReadUser { get; set; }//;
+        public System.String? ReadUser { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -99,27 +99,27 @@ namespace _cloud_project_ai_job {
         
         // Key: shutdown Type: cloud.project.ai.ShutdownStrategyEnum FullType: cloud.project.ai.ShutdownStrategyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shutdown")]
-        public _cloud_project_ai.ShutdownStrategyEnum Shutdown { get; set; }//;
+        public _cloud_project_ai.ShutdownStrategyEnum? Shutdown { get; set; }//;
         
         // Key: sshPublicKeys Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshPublicKeys")]
-        public string[] SshPublicKeys { get; set; }//;
+        public System.String[]? SshPublicKeys { get; set; }//;
         
         // Key: timeout Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeout")]
-        public long Timeout { get; set; }//;
+        public System.Int64? Timeout { get; set; }//;
         
         // Key: timeoutAutoRestart Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutAutoRestart")]
-        public bool TimeoutAutoRestart { get; set; }//;
+        public System.Boolean? TimeoutAutoRestart { get; set; }//;
         
         // Key: unsecureHttp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unsecureHttp")]
-        public bool UnsecureHttp { get; set; }//;
+        public System.Boolean? UnsecureHttp { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.Volume[] FullType: cloud.project.ai.volume.Volume[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.Volume[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.Volume[]? Volumes { get; set; }//;
     }
     
     // Id: JobSpecInput Namespace: cloud.project.ai.job
@@ -127,19 +127,19 @@ namespace _cloud_project_ai_job {
         
         // Key: command Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("command")]
-        public string[] Command { get; set; }//;
+        public System.String[]? Command { get; set; }//;
         
         // Key: defaultHttpPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultHttpPort")]
-        public long DefaultHttpPort { get; set; }//;
+        public System.Int64? DefaultHttpPort { get; set; }//;
         
         // Key: envVars Type: cloud.project.ai.job.JobEnv[] FullType: cloud.project.ai.job.JobEnv[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("envVars")]
-        public _cloud_project_ai_job.JobEnv[] EnvVars { get; set; }//;
+        public _cloud_project_ai_job.JobEnv[]? EnvVars { get; set; }//;
         
         // Key: grpcPort Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grpcPort")]
-        public long GrpcPort { get; set; }//;
+        public System.Int64? GrpcPort { get; set; }//;
         
         // Key: image Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("image")]
@@ -147,7 +147,7 @@ namespace _cloud_project_ai_job {
         
         // Key: labels Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
-        public Dictionary<string, string> Labels { get; set; }//;
+        public Dictionary<string, string>? Labels { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -155,11 +155,11 @@ namespace _cloud_project_ai_job {
         
         // Key: partnerId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partnerId")]
-        public string PartnerId { get; set; }//;
+        public System.String? PartnerId { get; set; }//;
         
         // Key: readUser Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readUser")]
-        public string ReadUser { get; set; }//;
+        public System.String? ReadUser { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -171,27 +171,27 @@ namespace _cloud_project_ai_job {
         
         // Key: shutdown Type: cloud.project.ai.ShutdownStrategyEnum FullType: cloud.project.ai.ShutdownStrategyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shutdown")]
-        public _cloud_project_ai.ShutdownStrategyEnum Shutdown { get; set; }//;
+        public _cloud_project_ai.ShutdownStrategyEnum? Shutdown { get; set; }//;
         
         // Key: sshPublicKeys Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshPublicKeys")]
-        public string[] SshPublicKeys { get; set; }//;
+        public System.String[]? SshPublicKeys { get; set; }//;
         
         // Key: timeout Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeout")]
-        public long Timeout { get; set; }//;
+        public System.Int64? Timeout { get; set; }//;
         
         // Key: timeoutAutoRestart Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutAutoRestart")]
-        public bool TimeoutAutoRestart { get; set; }//;
+        public System.Boolean? TimeoutAutoRestart { get; set; }//;
         
         // Key: unsecureHttp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unsecureHttp")]
-        public bool UnsecureHttp { get; set; }//;
+        public System.Boolean? UnsecureHttp { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.Volume[] FullType: cloud.project.ai.volume.Volume[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.Volume[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.Volume[]? Volumes { get; set; }//;
     }
     
     // Id: JobStateEnum Namespace: cloud.project.ai.job
@@ -246,23 +246,23 @@ namespace _cloud_project_ai_job {
         
         // Key: duration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public long Duration { get; set; }//;
+        public System.Int64? Duration { get; set; }//;
         
         // Key: exitCode Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("exitCode")]
-        public long ExitCode { get; set; }//;
+        public System.Int64? ExitCode { get; set; }//;
         
         // Key: externalIp Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("externalIp")]
-        public string ExternalIp { get; set; }//;
+        public System.String? ExternalIp { get; set; }//;
         
         // Key: finalizedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finalizedAt")]
-        public System.DateTime FinalizedAt { get; set; }//;
+        public System.DateTime? FinalizedAt { get; set; }//;
         
         // Key: grpcAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grpcAddress")]
-        public string GrpcAddress { get; set; }//;
+        public System.String? GrpcAddress { get; set; }//;
         
         // Key: history Type: cloud.project.ai.job.JobStatusHistory[] FullType: cloud.project.ai.job.JobStatusHistory[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("history")]
@@ -274,55 +274,55 @@ namespace _cloud_project_ai_job {
         
         // Key: infoUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("infoUrl")]
-        public string InfoUrl { get; set; }//;
+        public System.String? InfoUrl { get; set; }//;
         
         // Key: initializingAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("initializingAt")]
-        public System.DateTime InitializingAt { get; set; }//;
+        public System.DateTime? InitializingAt { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: lastTransitionDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastTransitionDate")]
-        public System.DateTime LastTransitionDate { get; set; }//;
+        public System.DateTime? LastTransitionDate { get; set; }//;
         
         // Key: monitoringUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoringUrl")]
-        public string MonitoringUrl { get; set; }//;
+        public System.String? MonitoringUrl { get; set; }//;
         
         // Key: queuedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queuedAt")]
-        public System.DateTime QueuedAt { get; set; }//;
+        public System.DateTime? QueuedAt { get; set; }//;
         
         // Key: sshUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshUrl")]
-        public string SshUrl { get; set; }//;
+        public System.String? SshUrl { get; set; }//;
         
         // Key: startedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startedAt")]
-        public System.DateTime StartedAt { get; set; }//;
+        public System.DateTime? StartedAt { get; set; }//;
         
         // Key: state Type: cloud.project.ai.job.JobStateEnum FullType: cloud.project.ai.job.JobStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public _cloud_project_ai_job.JobStateEnum State { get; set; }//;
+        public _cloud_project_ai_job.JobStateEnum? State { get; set; }//;
         
         // Key: stoppedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stoppedAt")]
-        public System.DateTime StoppedAt { get; set; }//;
+        public System.DateTime? StoppedAt { get; set; }//;
         
         // Key: timeoutAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutAt")]
-        public System.DateTime TimeoutAt { get; set; }//;
+        public System.DateTime? TimeoutAt { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: volumes Type: cloud.project.ai.volume.VolumeStatus[] FullType: cloud.project.ai.volume.VolumeStatus[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumes")]
-        public _cloud_project_ai_volume.VolumeStatus[] Volumes { get; set; }//;
+        public _cloud_project_ai_volume.VolumeStatus[]? Volumes { get; set; }//;
     }
     
     // Id: JobStatusHistory Namespace: cloud.project.ai.job
@@ -366,11 +366,11 @@ namespace _cloud_project_ai_job {
         
         // Key: link Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("link")]
-        public string Link { get; set; }//;
+        public System.String? Link { get; set; }//;
         
         // Key: logo Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logo")]
-        public string Logo { get; set; }//;
+        public System.String? Logo { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

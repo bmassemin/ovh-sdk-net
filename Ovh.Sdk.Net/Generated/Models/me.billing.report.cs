@@ -23,7 +23,7 @@ namespace _me_billing_report {
         
         // Key: report Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("report")]
-        public string Report { get; set; }//;
+        public System.String? Report { get; set; }//;
         
         // Key: status Type: me.billing.report.consumption.StatusEnum FullType: me.billing.report.consumption.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

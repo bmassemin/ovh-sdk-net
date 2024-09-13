@@ -113,7 +113,7 @@ namespace _services_savingsPlans {
         
         // Key: terminationDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("terminationDate")]
-        public System.DateOnly TerminationDate { get; set; }//;
+        public System.DateOnly? TerminationDate { get; set; }//;
     }
     
     // Id: SimulatedSavingsPlan Namespace: services.savingsPlans

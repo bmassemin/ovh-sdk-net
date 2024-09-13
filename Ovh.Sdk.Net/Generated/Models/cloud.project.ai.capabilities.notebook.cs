@@ -63,7 +63,7 @@ namespace _cloud_project_ai_capabilities_notebook {
         
         // Key: savedPaths Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("savedPaths")]
-        public string[] SavedPaths { get; set; }//;
+        public System.String[]? SavedPaths { get; set; }//;
         
         // Key: versions Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("versions")]

@@ -55,11 +55,11 @@ namespace _domain_zone {
         
         // Key: subDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subDomain")]
-        public string SubDomain { get; set; }//;
+        public System.String? SubDomain { get; set; }//;
         
         // Key: ttl Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ttl")]
-        public long Ttl { get; set; }//;
+        public System.Int64? Ttl { get; set; }//;
         
         // Key: zone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
@@ -95,7 +95,7 @@ namespace _domain_zone {
         
         // Key: subDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subDomain")]
-        public string SubDomain { get; set; }//;
+        public System.String? SubDomain { get; set; }//;
         
         // Key: target Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("target")]
@@ -103,7 +103,7 @@ namespace _domain_zone {
         
         // Key: ttl Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ttl")]
-        public long Ttl { get; set; }//;
+        public System.Int64? Ttl { get; set; }//;
         
         // Key: zone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zone")]
@@ -123,7 +123,7 @@ namespace _domain_zone {
         
         // Key: subDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subDomain")]
-        public string SubDomain { get; set; }//;
+        public System.String? SubDomain { get; set; }//;
         
         // Key: target Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("target")]
@@ -198,7 +198,7 @@ namespace _domain_zone {
         
         // Key: subDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subDomain")]
-        public string SubDomain { get; set; }//;
+        public System.String? SubDomain { get; set; }//;
         
         // Key: target Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("target")]
@@ -206,7 +206,7 @@ namespace _domain_zone {
         
         // Key: ttl Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ttl")]
-        public long Ttl { get; set; }//;
+        public System.Int64? Ttl { get; set; }//;
     }
     
     // Id: Redirection Namespace: domain.zone
@@ -214,7 +214,7 @@ namespace _domain_zone {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -222,11 +222,11 @@ namespace _domain_zone {
         
         // Key: keywords Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keywords")]
-        public string Keywords { get; set; }//;
+        public System.String? Keywords { get; set; }//;
         
         // Key: subDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subDomain")]
-        public string SubDomain { get; set; }//;
+        public System.String? SubDomain { get; set; }//;
         
         // Key: target Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("target")]
@@ -234,7 +234,7 @@ namespace _domain_zone {
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
-        public string Title { get; set; }//;
+        public System.String? Title { get; set; }//;
         
         // Key: type Type: domain.zone.RedirectionTypeEnum FullType: domain.zone.RedirectionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -250,11 +250,11 @@ namespace _domain_zone {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: keywords Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keywords")]
-        public string Keywords { get; set; }//;
+        public System.String? Keywords { get; set; }//;
         
         // Key: subDomain Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subDomain")]
@@ -266,7 +266,7 @@ namespace _domain_zone {
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
-        public string Title { get; set; }//;
+        public System.String? Title { get; set; }//;
         
         // Key: type Type: domain.zone.RedirectionTypeEnum FullType: domain.zone.RedirectionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -291,11 +291,11 @@ namespace _domain_zone {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: keywords Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keywords")]
-        public string Keywords { get; set; }//;
+        public System.String? Keywords { get; set; }//;
         
         // Key: target Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("target")]
@@ -303,7 +303,7 @@ namespace _domain_zone {
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
-        public string Title { get; set; }//;
+        public System.String? Title { get; set; }//;
         
         // Key: type Type: domain.zone.RedirectionTypeEnum FullType: domain.zone.RedirectionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -381,7 +381,7 @@ namespace _domain_zone {
         
         // Key: errors Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("errors")]
-        public string[] Errors { get; set; }//;
+        public System.String[]? Errors { get; set; }//;
         
         // Key: isDeployed Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isDeployed")]
@@ -389,7 +389,7 @@ namespace _domain_zone {
         
         // Key: warnings Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("warnings")]
-        public string[] Warnings { get; set; }//;
+        public System.String[]? Warnings { get; set; }//;
     }
     
     // Id: Task Namespace: domain.zone
@@ -409,7 +409,7 @@ namespace _domain_zone {
         
         // Key: comment Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("comment")]
-        public string Comment { get; set; }//;
+        public System.String? Comment { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -417,7 +417,7 @@ namespace _domain_zone {
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: function Type: domain.TaskFunctionEnum FullType: domain.TaskFunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -429,7 +429,7 @@ namespace _domain_zone {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: status Type: domain.TaskStatusEnum FullType: domain.TaskStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -489,7 +489,7 @@ namespace _domain_zone {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]

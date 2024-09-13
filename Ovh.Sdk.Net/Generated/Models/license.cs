@@ -1521,7 +1521,7 @@ namespace _license {
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -3682,7 +3682,7 @@ namespace _license {
         
         // Key: amount Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("amount")]
-        public string Amount { get; set; }//;
+        public System.String? Amount { get; set; }//;
         
         // Key: canBeDeleted Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("canBeDeleted")]
@@ -3698,7 +3698,7 @@ namespace _license {
         
         // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public string Version { get; set; }//;
+        public System.String? Version { get; set; }//;
     }
     
     // Id: OptionLabel Namespace: license

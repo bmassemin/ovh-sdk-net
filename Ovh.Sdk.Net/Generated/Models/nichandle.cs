@@ -938,35 +938,35 @@ namespace _nichandle {
         
         // Key: address Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public string Address { get; set; }//;
+        public System.String? Address { get; set; }//;
         
         // Key: area Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("area")]
-        public string Area { get; set; }//;
+        public System.String? Area { get; set; }//;
         
         // Key: birthCity Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthCity")]
-        public string BirthCity { get; set; }//;
+        public System.String? BirthCity { get; set; }//;
         
         // Key: birthDay Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthDay")]
-        public string BirthDay { get; set; }//;
+        public System.String? BirthDay { get; set; }//;
         
         // Key: city Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: companyNationalIdentificationNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("companyNationalIdentificationNumber")]
-        public string CompanyNationalIdentificationNumber { get; set; }//;
+        public System.String? CompanyNationalIdentificationNumber { get; set; }//;
         
         // Key: complementaryAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("complementaryAddress")]
-        public string ComplementaryAddress { get; set; }//;
+        public System.String? ComplementaryAddress { get; set; }//;
         
         // Key: corporationType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("corporationType")]
-        public string CorporationType { get; set; }//;
+        public System.String? CorporationType { get; set; }//;
         
         // Key: country Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
@@ -978,7 +978,7 @@ namespace _nichandle {
         
         // Key: customerCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customerCode")]
-        public string CustomerCode { get; set; }//;
+        public System.String? CustomerCode { get; set; }//;
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
@@ -986,23 +986,23 @@ namespace _nichandle {
         
         // Key: fax Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fax")]
-        public string Fax { get; set; }//;
+        public System.String? Fax { get; set; }//;
         
         // Key: firstname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstname")]
-        public string Firstname { get; set; }//;
+        public System.String? Firstname { get; set; }//;
         
         // Key: italianSDI Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("italianSDI")]
-        public string ItalianSDI { get; set; }//;
+        public System.String? ItalianSDI { get; set; }//;
         
         // Key: kycValidated Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kycValidated")]
-        public bool KycValidated { get; set; }//;
+        public System.Boolean? KycValidated { get; set; }//;
         
         // Key: language Type: nichandle.LanguageEnum FullType: nichandle.LanguageEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("language")]
-        public _nichandle.LanguageEnum Language { get; set; }//;
+        public _nichandle.LanguageEnum? Language { get; set; }//;
         
         // Key: legalform Type: nichandle.LegalFormEnum FullType: nichandle.LegalFormEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("legalform")]
@@ -1010,11 +1010,11 @@ namespace _nichandle {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: nationalIdentificationNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nationalIdentificationNumber")]
-        public string NationalIdentificationNumber { get; set; }//;
+        public System.String? NationalIdentificationNumber { get; set; }//;
         
         // Key: nichandle Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nichandle")]
@@ -1022,7 +1022,7 @@ namespace _nichandle {
         
         // Key: organisation Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisation")]
-        public string Organisation { get; set; }//;
+        public System.String? Organisation { get; set; }//;
         
         // Key: ovhCompany Type: nichandle.OvhCompanyEnum FullType: nichandle.OvhCompanyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhCompany")]
@@ -1034,27 +1034,27 @@ namespace _nichandle {
         
         // Key: phone Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
-        public string Phone { get; set; }//;
+        public System.String? Phone { get; set; }//;
         
         // Key: phoneCountry Type: nichandle.CountryEnum FullType: nichandle.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phoneCountry")]
-        public _nichandle.CountryEnum PhoneCountry { get; set; }//;
+        public _nichandle.CountryEnum? PhoneCountry { get; set; }//;
         
         // Key: phoneType Type: nichandle.PhoneTypeEnum FullType: nichandle.PhoneTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phoneType")]
-        public _nichandle.PhoneTypeEnum PhoneType { get; set; }//;
+        public _nichandle.PhoneTypeEnum? PhoneType { get; set; }//;
         
         // Key: purposeOfPurchase Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("purposeOfPurchase")]
-        public string PurposeOfPurchase { get; set; }//;
+        public System.String? PurposeOfPurchase { get; set; }//;
         
         // Key: sex Type: nichandle.GenderEnum FullType: nichandle.GenderEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sex")]
-        public _nichandle.GenderEnum Sex { get; set; }//;
+        public _nichandle.GenderEnum? Sex { get; set; }//;
         
         // Key: spareEmail Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("spareEmail")]
-        public string SpareEmail { get; set; }//;
+        public System.String? SpareEmail { get; set; }//;
         
         // Key: state Type: nichandle.StateEnum FullType: nichandle.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -1062,11 +1062,11 @@ namespace _nichandle {
         
         // Key: vat Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vat")]
-        public string Vat { get; set; }//;
+        public System.String? Vat { get; set; }//;
         
         // Key: zip Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zip")]
-        public string Zip { get; set; }//;
+        public System.String? Zip { get; set; }//;
     }
     
     // Id: OvhCompanyEnum Namespace: nichandle
@@ -1131,19 +1131,19 @@ namespace _nichandle {
         
         // Key: acceptedFormats Type: domain.DocumentFormatsEnum[] FullType: domain.DocumentFormatsEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("acceptedFormats")]
-        public _domain.DocumentFormatsEnum[] AcceptedFormats { get; set; }//;
+        public _domain.DocumentFormatsEnum[]? AcceptedFormats { get; set; }//;
         
         // Key: acceptedValues Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("acceptedValues")]
-        public string[] AcceptedValues { get; set; }//;
+        public System.String[]? AcceptedValues { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: fields Type: xander.ContactFieldEnum[] FullType: xander.ContactFieldEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fields")]
-        public _xander.ContactFieldEnum[] Fields { get; set; }//;
+        public _xander.ContactFieldEnum[]? Fields { get; set; }//;
         
         // Key: key Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
@@ -1151,11 +1151,11 @@ namespace _nichandle {
         
         // Key: maximumSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximumSize")]
-        public long MaximumSize { get; set; }//;
+        public System.Int64? MaximumSize { get; set; }//;
         
         // Key: minimumSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minimumSize")]
-        public long MinimumSize { get; set; }//;
+        public System.Int64? MinimumSize { get; set; }//;
         
         // Key: readOnly Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readOnly")]
@@ -1163,7 +1163,7 @@ namespace _nichandle {
         
         // Key: template Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("template")]
-        public string Template { get; set; }//;
+        public System.String? Template { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1171,7 +1171,7 @@ namespace _nichandle {
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: DomainTaskProgressBar Namespace: nichandle
@@ -1183,15 +1183,15 @@ namespace _nichandle {
         
         // Key: expectedDoneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expectedDoneDate")]
-        public System.DateTime ExpectedDoneDate { get; set; }//;
+        public System.DateTime? ExpectedDoneDate { get; set; }//;
         
         // Key: followUpSteps Type: domain.OperationStep[] FullType: domain.OperationStep[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("followUpSteps")]
-        public _domain.OperationStep[] FollowUpSteps { get; set; }//;
+        public _domain.OperationStep[]? FollowUpSteps { get; set; }//;
         
         // Key: lastUpdateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdateDate")]
-        public System.DateTime LastUpdateDate { get; set; }//;
+        public System.DateTime? LastUpdateDate { get; set; }//;
         
         // Key: progress Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("progress")]
@@ -1309,11 +1309,11 @@ namespace _nichandle {
         
         // Key: state Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public string State { get; set; }//;
+        public System.String? State { get; set; }//;
         
         // Key: zip Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zip")]
-        public string Zip { get; set; }//;
+        public System.String? Zip { get; set; }//;
     }
     
     // Id: ManagerPreference Namespace: nichandle
@@ -1337,7 +1337,7 @@ namespace _nichandle {
         
         // Key: lastRenew Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastRenew")]
-        public System.DateTime LastRenew { get; set; }//;
+        public System.DateTime? LastRenew { get; set; }//;
         
         // Key: renewDay Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewDay")]
@@ -1365,7 +1365,7 @@ namespace _nichandle {
         
         // Key: updateDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updateDate")]
-        public System.DateTime UpdateDate { get; set; }//;
+        public System.DateTime? UpdateDate { get; set; }//;
     }
     
     // Id: NotificationStatusEnum Namespace: nichandle
@@ -1400,7 +1400,7 @@ namespace _nichandle {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -1420,7 +1420,7 @@ namespace _nichandle {
         
         // Key: registered Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("registered")]
-        public bool Registered { get; set; }//;
+        public System.Boolean? Registered { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1492,19 +1492,19 @@ namespace _nichandle {
         
         // Key: defaultValue Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultValue")]
-        public string DefaultValue { get; set; }//;
+        public System.String? DefaultValue { get; set; }//;
         
         // Key: examples Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("examples")]
-        public string[] Examples { get; set; }//;
+        public System.String[]? Examples { get; set; }//;
         
         // Key: fieldName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fieldName")]
-        public string FieldName { get; set; }//;
+        public System.String? FieldName { get; set; }//;
         
         // Key: in Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("in")]
-        public string[] @in { get; set; }//;
+        public System.String[]? @in { get; set; }//;
         
         // Key: mandatory Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mandatory")]
@@ -1512,19 +1512,19 @@ namespace _nichandle {
         
         // Key: maxLength Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxLength")]
-        public long MaxLength { get; set; }//;
+        public System.Int64? MaxLength { get; set; }//;
         
         // Key: minLength Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minLength")]
-        public long MinLength { get; set; }//;
+        public System.Int64? MinLength { get; set; }//;
         
         // Key: prefix Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public string Prefix { get; set; }//;
+        public System.String? Prefix { get; set; }//;
         
         // Key: regularExpression Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regularExpression")]
-        public string RegularExpression { get; set; }//;
+        public System.String? RegularExpression { get; set; }//;
     }
     
     // Id: CreationRules Namespace: nichandle
@@ -1654,7 +1654,7 @@ namespace _nichandle {
         
         // Key: consumerKey Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("consumerKey")]
-        public string ConsumerKey { get; set; }//;
+        public System.String? ConsumerKey { get; set; }//;
         
         // Key: ovhIdentifier Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ovhIdentifier")]

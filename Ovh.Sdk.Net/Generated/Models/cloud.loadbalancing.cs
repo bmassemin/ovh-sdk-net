@@ -19,7 +19,7 @@ namespace _cloud_loadbalancing {
         
         // Key: gateway Type: cloud.network.CreateGatewaySummary FullType: cloud.network.CreateGatewaySummary
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public _cloud_network.CreateGatewaySummary Gateway { get; set; }//;
+        public _cloud_network.CreateGatewaySummary? Gateway { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -31,7 +31,7 @@ namespace _cloud_loadbalancing {
         
         // Key: gateway Type: cloud.network.CreateGatewaySummary FullType: cloud.network.CreateGatewaySummary
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public _cloud_network.CreateGatewaySummary Gateway { get; set; }//;
+        public _cloud_network.CreateGatewaySummary? Gateway { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -135,7 +135,7 @@ namespace _cloud_loadbalancing {
         
         // Key: httpConfiguration Type: cloud.loadbalancing.HealthMonitorHTTPConfiguration FullType: cloud.loadbalancing.HealthMonitorHTTPConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("httpConfiguration")]
-        public _cloud_loadbalancing.HealthMonitorHTTPConfiguration HttpConfiguration { get; set; }//;
+        public _cloud_loadbalancing.HealthMonitorHTTPConfiguration? HttpConfiguration { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -147,7 +147,7 @@ namespace _cloud_loadbalancing {
         
         // Key: maxRetriesDown Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxRetriesDown")]
-        public long MaxRetriesDown { get; set; }//;
+        public System.Int64? MaxRetriesDown { get; set; }//;
         
         // Key: monitorType Type: cloud.loadbalancing.LoadBalancerHealthMonitorTypeEnum FullType: cloud.loadbalancing.LoadBalancerHealthMonitorTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitorType")]
@@ -183,7 +183,7 @@ namespace _cloud_loadbalancing {
         
         // Key: httpConfiguration Type: cloud.loadbalancing.HealthMonitorHTTPConfiguration FullType: cloud.loadbalancing.HealthMonitorHTTPConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("httpConfiguration")]
-        public _cloud_loadbalancing.HealthMonitorHTTPConfiguration HttpConfiguration { get; set; }//;
+        public _cloud_loadbalancing.HealthMonitorHTTPConfiguration? HttpConfiguration { get; set; }//;
         
         // Key: maxRetries Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxRetries")]
@@ -191,7 +191,7 @@ namespace _cloud_loadbalancing {
         
         // Key: maxRetriesDown Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxRetriesDown")]
-        public long MaxRetriesDown { get; set; }//;
+        public System.Int64? MaxRetriesDown { get; set; }//;
         
         // Key: monitorType Type: cloud.loadbalancing.LoadBalancerHealthMonitorTypeEnum FullType: cloud.loadbalancing.LoadBalancerHealthMonitorTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitorType")]
@@ -231,7 +231,7 @@ namespace _cloud_loadbalancing {
         
         // Key: httpVersion Type: cloud.loadbalancing.LoadBalancerHealthMonitorHTTPVersionEnum FullType: cloud.loadbalancing.LoadBalancerHealthMonitorHTTPVersionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("httpVersion")]
-        public _cloud_loadbalancing.LoadBalancerHealthMonitorHTTPVersionEnum HttpVersion { get; set; }//;
+        public _cloud_loadbalancing.LoadBalancerHealthMonitorHTTPVersionEnum? HttpVersion { get; set; }//;
         
         // Key: urlPath Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("urlPath")]
@@ -275,19 +275,19 @@ namespace _cloud_loadbalancing {
         
         // Key: redirectHttpCode Type: cloud.loadbalancing.L7PolicyRedirectHTTPCodeEnum FullType: cloud.loadbalancing.L7PolicyRedirectHTTPCodeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectHttpCode")]
-        public _cloud_loadbalancing.L7PolicyRedirectHTTPCodeEnum RedirectHttpCode { get; set; }//;
+        public _cloud_loadbalancing.L7PolicyRedirectHTTPCodeEnum? RedirectHttpCode { get; set; }//;
         
         // Key: redirectPoolId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectPoolId")]
-        public System.Guid RedirectPoolId { get; set; }//;
+        public System.Guid? RedirectPoolId { get; set; }//;
         
         // Key: redirectPrefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectPrefix")]
-        public string RedirectPrefix { get; set; }//;
+        public System.String? RedirectPrefix { get; set; }//;
         
         // Key: redirectUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectUrl")]
-        public string RedirectUrl { get; set; }//;
+        public System.String? RedirectUrl { get; set; }//;
     }
     
     // Id: L7PolicyActionEnum Namespace: cloud.loadbalancing
@@ -345,19 +345,19 @@ namespace _cloud_loadbalancing {
         
         // Key: redirectHttpCode Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectHttpCode")]
-        public long RedirectHttpCode { get; set; }//;
+        public System.Int64? RedirectHttpCode { get; set; }//;
         
         // Key: redirectPoolId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectPoolId")]
-        public System.Guid RedirectPoolId { get; set; }//;
+        public System.Guid? RedirectPoolId { get; set; }//;
         
         // Key: redirectPrefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectPrefix")]
-        public string RedirectPrefix { get; set; }//;
+        public System.String? RedirectPrefix { get; set; }//;
         
         // Key: redirectUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectUrl")]
-        public string RedirectUrl { get; set; }//;
+        public System.String? RedirectUrl { get; set; }//;
     }
     
     // Id: L7Rule Namespace: cloud.loadbalancing
@@ -448,19 +448,19 @@ namespace _cloud_loadbalancing {
         
         // Key: allowedCidrs Type: ipv4Block[] FullType: ipv4Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedCidrs")]
-        public string[] AllowedCidrs { get; set; }//;
+        public System.String[]? AllowedCidrs { get; set; }//;
         
         // Key: certificateId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificateId")]
-        public System.Guid CertificateId { get; set; }//;
+        public System.Guid? CertificateId { get; set; }//;
         
         // Key: defaultPoolId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultPoolId")]
-        public System.Guid DefaultPoolId { get; set; }//;
+        public System.Guid? DefaultPoolId { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -492,15 +492,15 @@ namespace _cloud_loadbalancing {
         
         // Key: timeoutClientData Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutClientData")]
-        public long TimeoutClientData { get; set; }//;
+        public System.Int64? TimeoutClientData { get; set; }//;
         
         // Key: timeoutMemberData Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutMemberData")]
-        public long TimeoutMemberData { get; set; }//;
+        public System.Int64? TimeoutMemberData { get; set; }//;
         
         // Key: tlsVersions Type: cloud.loadbalancing.ListenerTlsVersionEnum[] FullType: cloud.loadbalancing.ListenerTlsVersionEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tlsVersions")]
-        public _cloud_loadbalancing.ListenerTlsVersionEnum[] TlsVersions { get; set; }//;
+        public _cloud_loadbalancing.ListenerTlsVersionEnum[]? TlsVersions { get; set; }//;
     }
     
     // Id: ListenerProtocolEnum Namespace: cloud.loadbalancing
@@ -560,7 +560,7 @@ namespace _cloud_loadbalancing {
         
         // Key: floatingIp Type: cloud.loadbalancing.LoadBalancer.FloatingIp FullType: cloud.loadbalancing.LoadBalancer.FloatingIp
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("floatingIp")]
-        public _cloud_loadbalancing_LoadBalancer.FloatingIp FloatingIp { get; set; }//;
+        public _cloud_loadbalancing_LoadBalancer.FloatingIp? FloatingIp { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -738,7 +738,7 @@ namespace _cloud_loadbalancing {
         
         // Key: listenerId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("listenerId")]
-        public System.Guid ListenerId { get; set; }//;
+        public System.Guid? ListenerId { get; set; }//;
         
         // Key: loadbalancerId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("loadbalancerId")]
@@ -762,7 +762,7 @@ namespace _cloud_loadbalancing {
         
         // Key: sessionPersistence Type: cloud.loadbalancing.PoolSessionPersistence FullType: cloud.loadbalancing.PoolSessionPersistence
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sessionPersistence")]
-        public _cloud_loadbalancing.PoolSessionPersistence SessionPersistence { get; set; }//;
+        public _cloud_loadbalancing.PoolSessionPersistence? SessionPersistence { get; set; }//;
     }
     
     // Id: PoolAlgorithmEnum Namespace: cloud.loadbalancing
@@ -803,7 +803,7 @@ namespace _cloud_loadbalancing {
         
         // Key: sessionPersistence Type: cloud.loadbalancing.PoolSessionPersistence FullType: cloud.loadbalancing.PoolSessionPersistence
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sessionPersistence")]
-        public _cloud_loadbalancing.PoolSessionPersistence SessionPersistence { get; set; }//;
+        public _cloud_loadbalancing.PoolSessionPersistence? SessionPersistence { get; set; }//;
     }
     
     // Id: PoolProtocolEnum Namespace: cloud.loadbalancing
@@ -864,15 +864,15 @@ namespace _cloud_loadbalancing {
         
         // Key: algorithm Type: cloud.loadbalancing.PoolAlgorithmEnum FullType: cloud.loadbalancing.PoolAlgorithmEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("algorithm")]
-        public _cloud_loadbalancing.PoolAlgorithmEnum Algorithm { get; set; }//;
+        public _cloud_loadbalancing.PoolAlgorithmEnum? Algorithm { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: sessionPersistence Type: cloud.loadbalancing.PoolSessionPersistence FullType: cloud.loadbalancing.PoolSessionPersistence
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sessionPersistence")]
-        public _cloud_loadbalancing.PoolSessionPersistence SessionPersistence { get; set; }//;
+        public _cloud_loadbalancing.PoolSessionPersistence? SessionPersistence { get; set; }//;
     }
     
     // Id: UpdateHealthMonitor Namespace: cloud.loadbalancing

@@ -67,19 +67,19 @@ namespace _cloud_project_loadbalancer {
         
         // Key: dispatch Type: cloud.project.loadbalancer.ActionDispatch[] FullType: cloud.project.loadbalancer.ActionDispatch[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dispatch")]
-        public _cloud_project_loadbalancer.ActionDispatch[] Dispatch { get; set; }//;
+        public _cloud_project_loadbalancer.ActionDispatch[]? Dispatch { get; set; }//;
         
         // Key: redirect Type: cloud.project.loadbalancer.ActionRedirect[] FullType: cloud.project.loadbalancer.ActionRedirect[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirect")]
-        public _cloud_project_loadbalancer.ActionRedirect[] Redirect { get; set; }//;
+        public _cloud_project_loadbalancer.ActionRedirect[]? Redirect { get; set; }//;
         
         // Key: reject Type: cloud.project.loadbalancer.ActionReject[] FullType: cloud.project.loadbalancer.ActionReject[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reject")]
-        public _cloud_project_loadbalancer.ActionReject[] Reject { get; set; }//;
+        public _cloud_project_loadbalancer.ActionReject[]? Reject { get; set; }//;
         
         // Key: rewrite Type: cloud.project.loadbalancer.ActionRewrite[] FullType: cloud.project.loadbalancer.ActionRewrite[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rewrite")]
-        public _cloud_project_loadbalancer.ActionRewrite[] Rewrite { get; set; }//;
+        public _cloud_project_loadbalancer.ActionRewrite[]? Rewrite { get; set; }//;
     }
     
     // Id: Address Namespace: cloud.project.loadbalancer
@@ -91,7 +91,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: ipv6 Type: ipv6 FullType: ipv6
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string Ipv6 { get; set; }//;
+        public System.String? Ipv6 { get; set; }//;
     }
     
     // Id: Addresses Namespace: cloud.project.loadbalancer
@@ -103,7 +103,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: ipv6 Type: ipv6Block[] FullType: ipv6Block[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipv6")]
-        public string[] Ipv6 { get; set; }//;
+        public System.String[]? Ipv6 { get; set; }//;
     }
     
     // Id: ApplicationConfiguration Namespace: cloud.project.loadbalancer
@@ -111,7 +111,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: actions Type: cloud.project.loadbalancer.Actions FullType: cloud.project.loadbalancer.Actions
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("actions")]
-        public _cloud_project_loadbalancer.Actions Actions { get; set; }//;
+        public _cloud_project_loadbalancer.Actions? Actions { get; set; }//;
         
         // Key: certificates Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificates")]
@@ -119,7 +119,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: conditions Type: cloud.project.loadbalancer.Condition[] FullType: cloud.project.loadbalancer.Condition[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditions")]
-        public _cloud_project_loadbalancer.Condition[] Conditions { get; set; }//;
+        public _cloud_project_loadbalancer.Condition[]? Conditions { get; set; }//;
         
         // Key: entryPoints Type: cloud.project.loadbalancer.EntryPoint[] FullType: cloud.project.loadbalancer.EntryPoint[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("entryPoints")]
@@ -131,7 +131,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: targets Type: cloud.project.loadbalancer.Target[] FullType: cloud.project.loadbalancer.Target[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targets")]
-        public _cloud_project_loadbalancer.Target[] Targets { get; set; }//;
+        public _cloud_project_loadbalancer.Target[]? Targets { get; set; }//;
         
         // Key: version Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
@@ -143,7 +143,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: actions Type: cloud.project.loadbalancer.Actions FullType: cloud.project.loadbalancer.Actions
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("actions")]
-        public _cloud_project_loadbalancer.Actions Actions { get; set; }//;
+        public _cloud_project_loadbalancer.Actions? Actions { get; set; }//;
         
         // Key: certificates Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificates")]
@@ -151,7 +151,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: conditions Type: cloud.project.loadbalancer.Condition[] FullType: cloud.project.loadbalancer.Condition[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditions")]
-        public _cloud_project_loadbalancer.Condition[] Conditions { get; set; }//;
+        public _cloud_project_loadbalancer.Condition[]? Conditions { get; set; }//;
         
         // Key: entryPoints Type: cloud.project.loadbalancer.EntryPoint[] FullType: cloud.project.loadbalancer.EntryPoint[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("entryPoints")]
@@ -159,11 +159,11 @@ namespace _cloud_project_loadbalancer {
         
         // Key: networking Type: cloud.project.loadbalancer.configuration.networking.Networking FullType: cloud.project.loadbalancer.configuration.networking.Networking
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networking")]
-        public _cloud_project_loadbalancer_configuration_networking.Networking Networking { get; set; }//;
+        public _cloud_project_loadbalancer_configuration_networking.Networking? Networking { get; set; }//;
         
         // Key: targets Type: cloud.project.loadbalancer.Target[] FullType: cloud.project.loadbalancer.Target[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targets")]
-        public _cloud_project_loadbalancer.Target[] Targets { get; set; }//;
+        public _cloud_project_loadbalancer.Target[]? Targets { get; set; }//;
         
         // Key: version Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
@@ -195,7 +195,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: balancer Type: cloud.project.loadbalancer.backend.BalancerAlgorithmEnum FullType: cloud.project.loadbalancer.backend.BalancerAlgorithmEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("balancer")]
-        public _cloud_project_loadbalancer_backend.BalancerAlgorithmEnum Balancer { get; set; }//;
+        public _cloud_project_loadbalancer_backend.BalancerAlgorithmEnum? Balancer { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -203,7 +203,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: proxyProtocol Type: cloud.project.loadbalancer.backend.ProxyProtocolEnum FullType: cloud.project.loadbalancer.backend.ProxyProtocolEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("proxyProtocol")]
-        public _cloud_project_loadbalancer_backend.ProxyProtocolEnum ProxyProtocol { get; set; }//;
+        public _cloud_project_loadbalancer_backend.ProxyProtocolEnum? ProxyProtocol { get; set; }//;
         
         // Key: servers Type: cloud.project.loadbalancer.Server[] FullType: cloud.project.loadbalancer.Server[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("servers")]
@@ -211,7 +211,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: sticky Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sticky")]
-        public bool Sticky { get; set; }//;
+        public System.Boolean? Sticky { get; set; }//;
     }
     
     // Id: BackendSelector Namespace: cloud.project.loadbalancer
@@ -227,7 +227,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: key Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
-        public string Key { get; set; }//;
+        public System.String? Key { get; set; }//;
         
         // Key: match Type: cloud.project.loadbalancer.condition.MatchEnum FullType: cloud.project.loadbalancer.condition.MatchEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("match")]
@@ -239,7 +239,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: negate Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("negate")]
-        public bool Negate { get; set; }//;
+        public System.Boolean? Negate { get; set; }//;
         
         // Key: type Type: cloud.project.loadbalancer.condition.TypeEnum FullType: cloud.project.loadbalancer.condition.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -291,7 +291,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: networking Type: cloud.project.loadbalancer.configuration.networking.Networking FullType: cloud.project.loadbalancer.configuration.networking.Networking
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networking")]
-        public _cloud_project_loadbalancer_configuration_networking.Networking Networking { get; set; }//;
+        public _cloud_project_loadbalancer_configuration_networking.Networking? Networking { get; set; }//;
         
         // Key: version Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
@@ -315,11 +315,11 @@ namespace _cloud_project_loadbalancer {
         
         // Key: defaultTarget Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("defaultTarget")]
-        public string DefaultTarget { get; set; }//;
+        public System.String? DefaultTarget { get; set; }//;
         
         // Key: disableH2 Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disableH2")]
-        public bool DisableH2 { get; set; }//;
+        public System.Boolean? DisableH2 { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -327,11 +327,11 @@ namespace _cloud_project_loadbalancer {
         
         // Key: portRanges Type: cloud.project.loadbalancer.PortRange[] FullType: cloud.project.loadbalancer.PortRange[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portRanges")]
-        public _cloud_project_loadbalancer.PortRange[] PortRanges { get; set; }//;
+        public _cloud_project_loadbalancer.PortRange[]? PortRanges { get; set; }//;
         
         // Key: ports Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ports")]
-        public long[] Ports { get; set; }//;
+        public System.Int64[]? Ports { get; set; }//;
         
         // Key: rules Type: cloud.project.loadbalancer.Rule[] FullType: cloud.project.loadbalancer.Rule[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rules")]
@@ -351,7 +351,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: mode Type: cloud.project.loadbalancer.frontend.ModeEnum FullType: cloud.project.loadbalancer.frontend.ModeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mode")]
-        public _cloud_project_loadbalancer_frontend.ModeEnum Mode { get; set; }//;
+        public _cloud_project_loadbalancer_frontend.ModeEnum? Mode { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -359,15 +359,15 @@ namespace _cloud_project_loadbalancer {
         
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
         
         // Key: portRanges Type: cloud.project.loadbalancer.PortRange[] FullType: cloud.project.loadbalancer.PortRange[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portRanges")]
-        public _cloud_project_loadbalancer.PortRange[] PortRanges { get; set; }//;
+        public _cloud_project_loadbalancer.PortRange[]? PortRanges { get; set; }//;
         
         // Key: ports Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ports")]
-        public long[] Ports { get; set; }//;
+        public System.Int64[]? Ports { get; set; }//;
         
         // Key: tls Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tls")]
@@ -427,7 +427,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: conditions Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditions")]
-        public string[] Conditions { get; set; }//;
+        public System.String[]? Conditions { get; set; }//;
     }
     
     // Id: Server Namespace: cloud.project.loadbalancer
@@ -443,7 +443,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: noCheck Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("noCheck")]
-        public bool NoCheck { get; set; }//;
+        public System.Boolean? NoCheck { get; set; }//;
         
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
@@ -451,7 +451,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: weight Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("weight")]
-        public long Weight { get; set; }//;
+        public System.Int64? Weight { get; set; }//;
     }
     
     // Id: SizeEnum Namespace: cloud.project.loadbalancer
@@ -476,7 +476,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: httpRequestsPerSecond Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("httpRequestsPerSecond")]
-        public double HttpRequestsPerSecond { get; set; }//;
+        public System.Double? HttpRequestsPerSecond { get; set; }//;
         
         // Key: status Type: cloud.project.loadbalancer.stats.StatusEnum FullType: cloud.project.loadbalancer.stats.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -522,7 +522,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: balancer Type: cloud.project.loadbalancer.target.BalancerAlgorithmEnum FullType: cloud.project.loadbalancer.target.BalancerAlgorithmEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("balancer")]
-        public _cloud_project_loadbalancer_target.BalancerAlgorithmEnum Balancer { get; set; }//;
+        public _cloud_project_loadbalancer_target.BalancerAlgorithmEnum? Balancer { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -530,7 +530,7 @@ namespace _cloud_project_loadbalancer {
         
         // Key: proxyProtocol Type: cloud.project.loadbalancer.target.ProxyProtocolEnum FullType: cloud.project.loadbalancer.target.ProxyProtocolEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("proxyProtocol")]
-        public _cloud_project_loadbalancer_target.ProxyProtocolEnum ProxyProtocol { get; set; }//;
+        public _cloud_project_loadbalancer_target.ProxyProtocolEnum? ProxyProtocol { get; set; }//;
         
         // Key: servers Type: cloud.project.loadbalancer.Server[] FullType: cloud.project.loadbalancer.Server[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("servers")]
@@ -538,6 +538,6 @@ namespace _cloud_project_loadbalancer {
         
         // Key: sticky Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sticky")]
-        public bool Sticky { get; set; }//;
+        public System.Boolean? Sticky { get; set; }//;
     }
 }

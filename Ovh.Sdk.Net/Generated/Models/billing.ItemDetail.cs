@@ -15,7 +15,7 @@ namespace _billing_ItemDetail {
         
         // Key: action Type: billing.ItemDetail.OrderActionEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("action")]
-        public _billing_ItemDetail.OrderActionEnum Action { get; set; }//;
+        public _billing_ItemDetail.OrderActionEnum? Action { get; set; }//;
         
         // Key: configurations Type: billing.ItemDetail.OrderConfiguration[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("configurations")]
@@ -27,7 +27,7 @@ namespace _billing_ItemDetail {
         
         // Key: type Type: billing.ItemDetail.OrderDetailTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _billing_ItemDetail.OrderDetailTypeEnum Type { get; set; }//;
+        public _billing_ItemDetail.OrderDetailTypeEnum? Type { get; set; }//;
     }
     
     // Id: OrderActionEnum Namespace: billing.ItemDetail
@@ -79,15 +79,15 @@ namespace _billing_ItemDetail {
         
         // Key: code Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("code")]
-        public string Code { get; set; }//;
+        public System.String? Code { get; set; }//;
         
         // Key: duration Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public string Duration { get; set; }//;
+        public System.String? Duration { get; set; }//;
         
         // Key: pricingMode Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricingMode")]
-        public string PricingMode { get; set; }//;
+        public System.String? PricingMode { get; set; }//;
         
         // Key: product Type: billing.ItemDetail.OrderPlanProduct FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("product")]
@@ -95,7 +95,7 @@ namespace _billing_ItemDetail {
         
         // Key: quantity Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quantity")]
-        public long Quantity { get; set; }//;
+        public System.Int64? Quantity { get; set; }//;
     }
     
     // Id: OrderPlanProduct Namespace: billing.ItemDetail
@@ -103,6 +103,6 @@ namespace _billing_ItemDetail {
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
 }

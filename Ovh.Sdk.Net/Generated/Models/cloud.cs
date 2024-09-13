@@ -143,7 +143,7 @@ namespace _cloud {
         
         // Key: executions Type: cloud.Execution[] FullType: cloud.Execution[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("executions")]
-        public _cloud.Execution[] Executions { get; set; }//;
+        public _cloud.Execution[]? Executions { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -163,7 +163,7 @@ namespace _cloud {
         
         // Key: automaticDeletionAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("automaticDeletionAt")]
-        public System.DateTime AutomaticDeletionAt { get; set; }//;
+        public System.DateTime? AutomaticDeletionAt { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -171,7 +171,7 @@ namespace _cloud {
         
         // Key: lockedUntil Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockedUntil")]
-        public System.DateTime LockedUntil { get; set; }//;
+        public System.DateTime? LockedUntil { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -252,11 +252,11 @@ namespace _cloud {
         
         // Key: bill Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bill")]
-        public string Bill { get; set; }//;
+        public System.String? Bill { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -264,7 +264,7 @@ namespace _cloud {
         
         // Key: products Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("products")]
-        public string[] Products { get; set; }//;
+        public System.String[]? Products { get; set; }//;
         
         // Key: total_credit Type: order.Price FullType: order.Price
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("total_credit")]
@@ -276,11 +276,11 @@ namespace _cloud {
         
         // Key: validity Type: cloud.common.VoucherValidity FullType: cloud.common.VoucherValidity
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validity")]
-        public _cloud_common.VoucherValidity Validity { get; set; }//;
+        public _cloud_common.VoucherValidity? Validity { get; set; }//;
         
         // Key: voucher Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("voucher")]
-        public string Voucher { get; set; }//;
+        public System.String? Voucher { get; set; }//;
     }
     
     // Id: Execution Namespace: cloud
@@ -433,7 +433,7 @@ namespace _cloud {
         
         // Key: completedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("completedAt")]
-        public System.DateTime CompletedAt { get; set; }//;
+        public System.DateTime? CompletedAt { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -449,15 +449,15 @@ namespace _cloud {
         
         // Key: regions Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regions")]
-        public string[] Regions { get; set; }//;
+        public System.String[]? Regions { get; set; }//;
         
         // Key: resourceId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceId")]
-        public string ResourceId { get; set; }//;
+        public System.String? ResourceId { get; set; }//;
         
         // Key: startedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startedAt")]
-        public System.DateTime StartedAt { get; set; }//;
+        public System.DateTime? StartedAt { get; set; }//;
         
         // Key: status Type: cloud.OperationStatusEnum FullType: cloud.OperationStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -465,7 +465,7 @@ namespace _cloud {
         
         // Key: subOperations Type: cloud.SubOperation[] FullType: cloud.SubOperation[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subOperations")]
-        public _cloud.SubOperation[] SubOperations { get; set; }//;
+        public _cloud.SubOperation[]? SubOperations { get; set; }//;
     }
     
     // Id: OperationStatusEnum Namespace: cloud
@@ -500,11 +500,11 @@ namespace _cloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: expiration Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiration")]
-        public System.DateTime Expiration { get; set; }//;
+        public System.DateTime? Expiration { get; set; }//;
         
         // Key: manualQuota Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("manualQuota")]
@@ -512,7 +512,7 @@ namespace _cloud {
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
-        public long OrderId { get; set; }//;
+        public System.Int64? OrderId { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
@@ -520,7 +520,7 @@ namespace _cloud {
         
         // Key: projectName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("projectName")]
-        public string ProjectName { get; set; }//;
+        public System.String? ProjectName { get; set; }//;
         
         // Key: project_id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("project_id")]
@@ -572,11 +572,11 @@ namespace _cloud {
         
         // Key: email Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: login Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("login")]
-        public string Login { get; set; }//;
+        public System.String? Login { get; set; }//;
     }
     
     // Id: ProjectInstanceBulkCreation Namespace: cloud
@@ -584,7 +584,7 @@ namespace _cloud {
         
         // Key: autobackup Type: cloud.instance.AutoBackup FullType: cloud.instance.AutoBackup
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autobackup")]
-        public _cloud_instance.AutoBackup Autobackup { get; set; }//;
+        public _cloud_instance.AutoBackup? Autobackup { get; set; }//;
         
         // Key: flavorId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavorId")]
@@ -592,15 +592,15 @@ namespace _cloud {
         
         // Key: groupId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupId")]
-        public string GroupId { get; set; }//;
+        public System.String? GroupId { get; set; }//;
         
         // Key: imageId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("imageId")]
-        public string ImageId { get; set; }//;
+        public System.String? ImageId { get; set; }//;
         
         // Key: monthlyBilling Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyBilling")]
-        public bool MonthlyBilling { get; set; }//;
+        public System.Boolean? MonthlyBilling { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -608,7 +608,7 @@ namespace _cloud {
         
         // Key: networks Type: cloud.instance.NetworkBulkParams[] FullType: cloud.instance.NetworkBulkParams[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networks")]
-        public _cloud_instance.NetworkBulkParams[] Networks { get; set; }//;
+        public _cloud_instance.NetworkBulkParams[]? Networks { get; set; }//;
         
         // Key: number Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
@@ -620,15 +620,15 @@ namespace _cloud {
         
         // Key: sshKeyId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshKeyId")]
-        public string SshKeyId { get; set; }//;
+        public System.String? SshKeyId { get; set; }//;
         
         // Key: userData Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userData")]
-        public string UserData { get; set; }//;
+        public System.String? UserData { get; set; }//;
         
         // Key: volumeId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumeId")]
-        public string VolumeId { get; set; }//;
+        public System.String? VolumeId { get; set; }//;
     }
     
     // Id: ProjectInstanceCreation Namespace: cloud
@@ -636,7 +636,7 @@ namespace _cloud {
         
         // Key: autobackup Type: cloud.instance.AutoBackup FullType: cloud.instance.AutoBackup
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autobackup")]
-        public _cloud_instance.AutoBackup Autobackup { get; set; }//;
+        public _cloud_instance.AutoBackup? Autobackup { get; set; }//;
         
         // Key: flavorId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavorId")]
@@ -644,15 +644,15 @@ namespace _cloud {
         
         // Key: groupId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupId")]
-        public string GroupId { get; set; }//;
+        public System.String? GroupId { get; set; }//;
         
         // Key: imageId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("imageId")]
-        public string ImageId { get; set; }//;
+        public System.String? ImageId { get; set; }//;
         
         // Key: monthlyBilling Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyBilling")]
-        public bool MonthlyBilling { get; set; }//;
+        public System.Boolean? MonthlyBilling { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -660,7 +660,7 @@ namespace _cloud {
         
         // Key: networks Type: cloud.instance.NetworkParams[] FullType: cloud.instance.NetworkParams[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networks")]
-        public _cloud_instance.NetworkParams[] Networks { get; set; }//;
+        public _cloud_instance.NetworkParams[]? Networks { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -668,15 +668,15 @@ namespace _cloud {
         
         // Key: sshKeyId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshKeyId")]
-        public string SshKeyId { get; set; }//;
+        public System.String? SshKeyId { get; set; }//;
         
         // Key: userData Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userData")]
-        public string UserData { get; set; }//;
+        public System.String? UserData { get; set; }//;
         
         // Key: volumeId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumeId")]
-        public string VolumeId { get; set; }//;
+        public System.String? VolumeId { get; set; }//;
     }
     
     // Id: ProjectInstanceGroupCreation Namespace: cloud
@@ -700,7 +700,7 @@ namespace _cloud {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: networkId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("networkId")]
@@ -728,7 +728,7 @@ namespace _cloud {
         
         // Key: imageId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("imageId")]
-        public string ImageId { get; set; }//;
+        public System.String? ImageId { get; set; }//;
         
         // Key: rescue Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rescue")]
@@ -772,7 +772,7 @@ namespace _cloud {
         
         // Key: customization Type: cloud.ProjectKubeCustomization FullType: cloud.ProjectKubeCustomization
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customization")]
-        public _cloud.ProjectKubeCustomization Customization { get; set; }//;
+        public _cloud.ProjectKubeCustomization? Customization { get; set; }//;
         
         // Key: kubeProxyMode Type: cloud.kube.KubeProxyModeEnum FullType: cloud.kube.KubeProxyModeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kubeProxyMode")]
@@ -808,7 +808,7 @@ namespace _cloud {
         
         // Key: updatePolicy Type: cloud.kube.UpdatePolicyEnum FullType: cloud.kube.UpdatePolicyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatePolicy")]
-        public _cloud_kube.UpdatePolicyEnum UpdatePolicy { get; set; }//;
+        public _cloud_kube.UpdatePolicyEnum? UpdatePolicy { get; set; }//;
         
         // Key: version Type: cloud.kube.VersionEnum FullType: cloud.kube.VersionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
@@ -820,11 +820,11 @@ namespace _cloud {
         
         // Key: antiAffinity Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("antiAffinity")]
-        public bool AntiAffinity { get; set; }//;
+        public System.Boolean? AntiAffinity { get; set; }//;
         
         // Key: autoscale Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]
-        public bool Autoscale { get; set; }//;
+        public System.Boolean? Autoscale { get; set; }//;
         
         // Key: desiredNodes Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("desiredNodes")]
@@ -844,7 +844,7 @@ namespace _cloud {
         
         // Key: monthlyBilled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyBilled")]
-        public bool MonthlyBilled { get; set; }//;
+        public System.Boolean? MonthlyBilled { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -860,11 +860,11 @@ namespace _cloud {
         
         // Key: apiServer Type: cloud.ProjectKubeCustomizationAPIServer FullType: cloud.ProjectKubeCustomizationAPIServer
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("apiServer")]
-        public _cloud.ProjectKubeCustomizationAPIServer ApiServer { get; set; }//;
+        public _cloud.ProjectKubeCustomizationAPIServer? ApiServer { get; set; }//;
         
         // Key: kubeProxy Type: cloud.ProjectKubeCustomizationKubeProxy FullType: cloud.ProjectKubeCustomizationKubeProxy
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kubeProxy")]
-        public _cloud.ProjectKubeCustomizationKubeProxy KubeProxy { get; set; }//;
+        public _cloud.ProjectKubeCustomizationKubeProxy? KubeProxy { get; set; }//;
     }
     
     // Id: ProjectKubeCustomizationAPIServer Namespace: cloud
@@ -872,7 +872,7 @@ namespace _cloud {
         
         // Key: admissionPlugins Type: cloud.ProjectKubeCustomizationAPIServerAdmissionPlugins FullType: cloud.ProjectKubeCustomizationAPIServerAdmissionPlugins
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("admissionPlugins")]
-        public _cloud.ProjectKubeCustomizationAPIServerAdmissionPlugins AdmissionPlugins { get; set; }//;
+        public _cloud.ProjectKubeCustomizationAPIServerAdmissionPlugins? AdmissionPlugins { get; set; }//;
     }
     
     // Id: ProjectKubeCustomizationAPIServerAdmissionPlugins Namespace: cloud
@@ -880,11 +880,11 @@ namespace _cloud {
         
         // Key: disabled Type: cloud.ProjectKubeCustomizationAPIServerAdmissionPluginsEnum[] FullType: cloud.ProjectKubeCustomizationAPIServerAdmissionPluginsEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabled")]
-        public _cloud.ProjectKubeCustomizationAPIServerAdmissionPluginsEnum[] Disabled { get; set; }//;
+        public _cloud.ProjectKubeCustomizationAPIServerAdmissionPluginsEnum[]? Disabled { get; set; }//;
         
         // Key: enabled Type: cloud.ProjectKubeCustomizationAPIServerAdmissionPluginsEnum[] FullType: cloud.ProjectKubeCustomizationAPIServerAdmissionPluginsEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enabled")]
-        public _cloud.ProjectKubeCustomizationAPIServerAdmissionPluginsEnum[] Enabled { get; set; }//;
+        public _cloud.ProjectKubeCustomizationAPIServerAdmissionPluginsEnum[]? Enabled { get; set; }//;
     }
     
     // Id: ProjectKubeCustomizationAPIServerAdmissionPluginsEnum Namespace: cloud
@@ -902,11 +902,11 @@ namespace _cloud {
         
         // Key: iptables Type: cloud.ProjectKubeCustomizationKubeProxyIptables FullType: cloud.ProjectKubeCustomizationKubeProxyIptables
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iptables")]
-        public _cloud.ProjectKubeCustomizationKubeProxyIptables Iptables { get; set; }//;
+        public _cloud.ProjectKubeCustomizationKubeProxyIptables? Iptables { get; set; }//;
         
         // Key: ipvs Type: cloud.ProjectKubeCustomizationKubeProxyIpvs FullType: cloud.ProjectKubeCustomizationKubeProxyIpvs
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipvs")]
-        public _cloud.ProjectKubeCustomizationKubeProxyIpvs Ipvs { get; set; }//;
+        public _cloud.ProjectKubeCustomizationKubeProxyIpvs? Ipvs { get; set; }//;
     }
     
     // Id: ProjectKubeCustomizationKubeProxyIptables Namespace: cloud
@@ -914,11 +914,11 @@ namespace _cloud {
         
         // Key: minSyncPeriod Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minSyncPeriod")]
-        public System.TimeSpan MinSyncPeriod { get; set; }//;
+        public System.TimeSpan? MinSyncPeriod { get; set; }//;
         
         // Key: syncPeriod Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("syncPeriod")]
-        public System.TimeSpan SyncPeriod { get; set; }//;
+        public System.TimeSpan? SyncPeriod { get; set; }//;
     }
     
     // Id: ProjectKubeCustomizationKubeProxyIpvs Namespace: cloud
@@ -926,27 +926,27 @@ namespace _cloud {
         
         // Key: minSyncPeriod Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minSyncPeriod")]
-        public System.TimeSpan MinSyncPeriod { get; set; }//;
+        public System.TimeSpan? MinSyncPeriod { get; set; }//;
         
         // Key: scheduler Type: cloud.kube.KubeProxyIpvsSchedulerEnum FullType: cloud.kube.KubeProxyIpvsSchedulerEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scheduler")]
-        public _cloud_kube.KubeProxyIpvsSchedulerEnum Scheduler { get; set; }//;
+        public _cloud_kube.KubeProxyIpvsSchedulerEnum? Scheduler { get; set; }//;
         
         // Key: syncPeriod Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("syncPeriod")]
-        public System.TimeSpan SyncPeriod { get; set; }//;
+        public System.TimeSpan? SyncPeriod { get; set; }//;
         
         // Key: tcpFinTimeout Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tcpFinTimeout")]
-        public System.TimeSpan TcpFinTimeout { get; set; }//;
+        public System.TimeSpan? TcpFinTimeout { get; set; }//;
         
         // Key: tcpTimeout Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tcpTimeout")]
-        public System.TimeSpan TcpTimeout { get; set; }//;
+        public System.TimeSpan? TcpTimeout { get; set; }//;
         
         // Key: udpTimeout Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("udpTimeout")]
-        public System.TimeSpan UdpTimeout { get; set; }//;
+        public System.TimeSpan? UdpTimeout { get; set; }//;
     }
     
     // Id: ProjectKubeIpRestrictionUpsert Namespace: cloud
@@ -978,11 +978,11 @@ namespace _cloud {
         
         // Key: antiAffinity Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("antiAffinity")]
-        public bool AntiAffinity { get; set; }//;
+        public System.Boolean? AntiAffinity { get; set; }//;
         
         // Key: autoscale Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]
-        public bool Autoscale { get; set; }//;
+        public System.Boolean? Autoscale { get; set; }//;
         
         // Key: autoscaling Type: cloud.ProjectKubeNodePoolAutoscalingParams FullType: cloud.ProjectKubeNodePoolAutoscalingParams
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscaling")]
@@ -1006,7 +1006,7 @@ namespace _cloud {
         
         // Key: monthlyBilled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monthlyBilled")]
-        public bool MonthlyBilled { get; set; }//;
+        public System.Boolean? MonthlyBilled { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1022,7 +1022,7 @@ namespace _cloud {
         
         // Key: autoscale Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]
-        public bool Autoscale { get; set; }//;
+        public System.Boolean? Autoscale { get; set; }//;
         
         // Key: autoscaling Type: cloud.ProjectKubeNodePoolAutoscalingParams FullType: cloud.ProjectKubeNodePoolAutoscalingParams
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscaling")]
@@ -1054,7 +1054,7 @@ namespace _cloud {
         
         // Key: caContent Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("caContent")]
-        public string CaContent { get; set; }//;
+        public System.String? CaContent { get; set; }//;
         
         // Key: clientId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientId")]
@@ -1062,11 +1062,11 @@ namespace _cloud {
         
         // Key: groupsClaim Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupsClaim")]
-        public string[] GroupsClaim { get; set; }//;
+        public System.String[]? GroupsClaim { get; set; }//;
         
         // Key: groupsPrefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupsPrefix")]
-        public string GroupsPrefix { get; set; }//;
+        public System.String? GroupsPrefix { get; set; }//;
         
         // Key: issuerUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("issuerUrl")]
@@ -1074,19 +1074,19 @@ namespace _cloud {
         
         // Key: requiredClaim Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("requiredClaim")]
-        public string[] RequiredClaim { get; set; }//;
+        public System.String[]? RequiredClaim { get; set; }//;
         
         // Key: signingAlgorithms Type: cloud.kube.OpenIdConnectSigningAlgorithmsEnum[] FullType: cloud.kube.OpenIdConnectSigningAlgorithmsEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("signingAlgorithms")]
-        public _cloud_kube.OpenIdConnectSigningAlgorithmsEnum[] SigningAlgorithms { get; set; }//;
+        public _cloud_kube.OpenIdConnectSigningAlgorithmsEnum[]? SigningAlgorithms { get; set; }//;
         
         // Key: usernameClaim Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usernameClaim")]
-        public string UsernameClaim { get; set; }//;
+        public System.String? UsernameClaim { get; set; }//;
         
         // Key: usernamePrefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usernamePrefix")]
-        public string UsernamePrefix { get; set; }//;
+        public System.String? UsernamePrefix { get; set; }//;
     }
     
     // Id: ProjectKubeOpenIdConnectUpdate Namespace: cloud
@@ -1094,7 +1094,7 @@ namespace _cloud {
         
         // Key: caContent Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("caContent")]
-        public string CaContent { get; set; }//;
+        public System.String? CaContent { get; set; }//;
         
         // Key: clientId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientId")]
@@ -1102,11 +1102,11 @@ namespace _cloud {
         
         // Key: groupsClaim Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupsClaim")]
-        public string[] GroupsClaim { get; set; }//;
+        public System.String[]? GroupsClaim { get; set; }//;
         
         // Key: groupsPrefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupsPrefix")]
-        public string GroupsPrefix { get; set; }//;
+        public System.String? GroupsPrefix { get; set; }//;
         
         // Key: issuerUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("issuerUrl")]
@@ -1114,19 +1114,19 @@ namespace _cloud {
         
         // Key: requiredClaim Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("requiredClaim")]
-        public string[] RequiredClaim { get; set; }//;
+        public System.String[]? RequiredClaim { get; set; }//;
         
         // Key: signingAlgorithms Type: cloud.kube.OpenIdConnectSigningAlgorithmsEnum[] FullType: cloud.kube.OpenIdConnectSigningAlgorithmsEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("signingAlgorithms")]
-        public _cloud_kube.OpenIdConnectSigningAlgorithmsEnum[] SigningAlgorithms { get; set; }//;
+        public _cloud_kube.OpenIdConnectSigningAlgorithmsEnum[]? SigningAlgorithms { get; set; }//;
         
         // Key: usernameClaim Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usernameClaim")]
-        public string UsernameClaim { get; set; }//;
+        public System.String? UsernameClaim { get; set; }//;
         
         // Key: usernamePrefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usernamePrefix")]
-        public string UsernamePrefix { get; set; }//;
+        public System.String? UsernamePrefix { get; set; }//;
     }
     
     // Id: ProjectKubeResetCreation Namespace: cloud
@@ -1178,7 +1178,7 @@ namespace _cloud {
         
         // Key: force Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("force")]
-        public bool Force { get; set; }//;
+        public System.Boolean? Force { get; set; }//;
     }
     
     // Id: ProjectKubeUpdate Namespace: cloud
@@ -1198,7 +1198,7 @@ namespace _cloud {
         
         // Key: force Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("force")]
-        public bool Force { get; set; }//;
+        public System.Boolean? Force { get; set; }//;
         
         // Key: strategy Type: cloud.kube.UpdateStrategyEnum FullType: cloud.kube.UpdateStrategyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("strategy")]
@@ -1210,7 +1210,7 @@ namespace _cloud {
         
         // Key: loadBalancersSubnetId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("loadBalancersSubnetId")]
-        public System.Guid LoadBalancersSubnetId { get; set; }//;
+        public System.Guid? LoadBalancersSubnetId { get; set; }//;
     }
     
     // Id: ProjectKubeUpdatePolicyUpdate Namespace: cloud
@@ -1238,11 +1238,11 @@ namespace _cloud {
         
         // Key: regions Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regions")]
-        public string[] Regions { get; set; }//;
+        public System.String[]? Regions { get; set; }//;
         
         // Key: vlanId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vlanId")]
-        public long VlanId { get; set; }//;
+        public System.Int64? VlanId { get; set; }//;
     }
     
     // Id: ProjectNetworkPrivateRegionCreation Namespace: cloud
@@ -1294,7 +1294,7 @@ namespace _cloud {
         
         // Key: gatewayIp Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayIp")]
-        public string GatewayIp { get; set; }//;
+        public System.String? GatewayIp { get; set; }//;
     }
     
     // Id: ProjectNetworkPrivateUpdate Namespace: cloud
@@ -1334,7 +1334,7 @@ namespace _cloud {
         
         // Key: maxExecutionCount Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxExecutionCount")]
-        public long MaxExecutionCount { get; set; }//;
+        public System.Int64? MaxExecutionCount { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1358,7 +1358,7 @@ namespace _cloud {
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
     }
     
     // Id: ProjectStorageCorsCreation Namespace: cloud
@@ -1402,7 +1402,7 @@ namespace _cloud {
         
         // Key: containerType Type: cloud.storage.TypeEnum FullType: cloud.storage.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("containerType")]
-        public _cloud_storage.TypeEnum ContainerType { get; set; }//;
+        public _cloud_storage.TypeEnum? ContainerType { get; set; }//;
     }
     
     // Id: ProjectStorageUserCreation Namespace: cloud
@@ -1410,7 +1410,7 @@ namespace _cloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: right Type: cloud.storage.RightEnum FullType: cloud.storage.RightEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("right")]
@@ -1422,15 +1422,15 @@ namespace _cloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: role Type: cloud.user.RoleEnum FullType: cloud.user.RoleEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
-        public _cloud_user.RoleEnum Role { get; set; }//;
+        public _cloud_user.RoleEnum? Role { get; set; }//;
         
         // Key: roles Type: cloud.user.RoleEnum[] FullType: cloud.user.RoleEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("roles")]
-        public _cloud_user.RoleEnum[] Roles { get; set; }//;
+        public _cloud_user.RoleEnum[]? Roles { get; set; }//;
     }
     
     // Id: ProjectUserRoleCreation Namespace: cloud
@@ -1470,15 +1470,15 @@ namespace _cloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: imageId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("imageId")]
-        public string ImageId { get; set; }//;
+        public System.String? ImageId { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -1490,7 +1490,7 @@ namespace _cloud {
         
         // Key: snapshotId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("snapshotId")]
-        public string SnapshotId { get; set; }//;
+        public System.String? SnapshotId { get; set; }//;
         
         // Key: type Type: cloud.volume.VolumeTypeEnum FullType: cloud.volume.VolumeTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -1510,11 +1510,11 @@ namespace _cloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
     
     // Id: ProjectVolumeUpdate Namespace: cloud
@@ -1522,11 +1522,11 @@ namespace _cloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
     }
     
     // Id: ProjectVolumeUpsizeCreation Namespace: cloud
@@ -1550,15 +1550,15 @@ namespace _cloud {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: expiration Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiration")]
-        public System.DateTime Expiration { get; set; }//;
+        public System.DateTime? Expiration { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: manualQuota Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("manualQuota")]
@@ -1566,7 +1566,7 @@ namespace _cloud {
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
-        public long OrderId { get; set; }//;
+        public System.Int64? OrderId { get; set; }//;
         
         // Key: planCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
@@ -1574,7 +1574,7 @@ namespace _cloud {
         
         // Key: projectName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("projectName")]
-        public string ProjectName { get; set; }//;
+        public System.String? ProjectName { get; set; }//;
         
         // Key: project_id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("project_id")]
@@ -1658,6 +1658,9 @@ namespace _cloud {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
         region,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("region-multizones")]
+        region_multizones,
     }
     
     // Id: ServiceStatusEnum Namespace: cloud
@@ -1679,7 +1682,7 @@ namespace _cloud {
         
         // Key: encryption Type: cloud.StorageEncryptionObject FullType: cloud.StorageEncryptionObject
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryption")]
-        public _cloud.StorageEncryptionObject Encryption { get; set; }//;
+        public _cloud.StorageEncryptionObject? Encryption { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1707,7 +1710,7 @@ namespace _cloud {
         
         // Key: versioning Type: cloud.StorageVersioningObject FullType: cloud.StorageVersioningObject
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("versioning")]
-        public _cloud.StorageVersioningObject Versioning { get; set; }//;
+        public _cloud.StorageVersioningObject? Versioning { get; set; }//;
         
         // Key: virtualHost Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("virtualHost")]
@@ -1719,7 +1722,7 @@ namespace _cloud {
         
         // Key: encryption Type: cloud.StorageEncryptionObject FullType: cloud.StorageEncryptionObject
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryption")]
-        public _cloud.StorageEncryptionObject Encryption { get; set; }//;
+        public _cloud.StorageEncryptionObject? Encryption { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1727,11 +1730,11 @@ namespace _cloud {
         
         // Key: ownerId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownerId")]
-        public long OwnerId { get; set; }//;
+        public System.Int64? OwnerId { get; set; }//;
         
         // Key: versioning Type: cloud.StorageVersioningObject FullType: cloud.StorageVersioningObject
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("versioning")]
-        public _cloud.StorageVersioningObject Versioning { get; set; }//;
+        public _cloud.StorageVersioningObject? Versioning { get; set; }//;
     }
     
     // Id: StorageEncryptionObject Namespace: cloud
@@ -1739,7 +1742,7 @@ namespace _cloud {
         
         // Key: sseAlgorithm Type: cloud.storage.EncryptionAlgorithmEnum FullType: cloud.storage.EncryptionAlgorithmEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sseAlgorithm")]
-        public _cloud_storage.EncryptionAlgorithmEnum SseAlgorithm { get; set; }//;
+        public _cloud_storage.EncryptionAlgorithmEnum? SseAlgorithm { get; set; }//;
     }
     
     // Id: StorageObject Namespace: cloud
@@ -1751,11 +1754,11 @@ namespace _cloud {
         
         // Key: isDeleteMarker Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isDeleteMarker")]
-        public bool IsDeleteMarker { get; set; }//;
+        public System.Boolean? IsDeleteMarker { get; set; }//;
         
         // Key: isLatest Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isLatest")]
-        public bool IsLatest { get; set; }//;
+        public System.Boolean? IsLatest { get; set; }//;
         
         // Key: key Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
@@ -1771,11 +1774,11 @@ namespace _cloud {
         
         // Key: storageClass Type: cloud.storage.StorageClassEnum FullType: cloud.storage.StorageClassEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storageClass")]
-        public _cloud_storage.StorageClassEnum StorageClass { get; set; }//;
+        public _cloud_storage.StorageClassEnum? StorageClass { get; set; }//;
         
         // Key: versionId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("versionId")]
-        public string VersionId { get; set; }//;
+        public System.String? VersionId { get; set; }//;
     }
     
     // Id: StorageObjectVersion Namespace: cloud
@@ -1787,11 +1790,11 @@ namespace _cloud {
         
         // Key: isDeleteMarker Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isDeleteMarker")]
-        public bool IsDeleteMarker { get; set; }//;
+        public System.Boolean? IsDeleteMarker { get; set; }//;
         
         // Key: isLatest Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isLatest")]
-        public bool IsLatest { get; set; }//;
+        public System.Boolean? IsLatest { get; set; }//;
         
         // Key: key Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
@@ -1807,7 +1810,7 @@ namespace _cloud {
         
         // Key: storageClass Type: cloud.storage.StorageClassEnum FullType: cloud.storage.StorageClassEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("storageClass")]
-        public _cloud_storage.StorageClassEnum StorageClass { get; set; }//;
+        public _cloud_storage.StorageClassEnum? StorageClass { get; set; }//;
         
         // Key: versionId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("versionId")]
@@ -1819,7 +1822,7 @@ namespace _cloud {
         
         // Key: status Type: cloud.storage.VersioningStatusEnum FullType: cloud.storage.VersioningStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _cloud_storage.VersioningStatusEnum Status { get; set; }//;
+        public _cloud_storage.VersioningStatusEnum? Status { get; set; }//;
     }
     
     // Id: SubOperation Namespace: cloud
@@ -1831,7 +1834,7 @@ namespace _cloud {
         
         // Key: completedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("completedAt")]
-        public System.DateTime CompletedAt { get; set; }//;
+        public System.DateTime? CompletedAt { get; set; }//;
         
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -1843,15 +1846,15 @@ namespace _cloud {
         
         // Key: regions Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("regions")]
-        public string[] Regions { get; set; }//;
+        public System.String[]? Regions { get; set; }//;
         
         // Key: resourceId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceId")]
-        public string ResourceId { get; set; }//;
+        public System.String? ResourceId { get; set; }//;
         
         // Key: startedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startedAt")]
-        public System.DateTime StartedAt { get; set; }//;
+        public System.DateTime? StartedAt { get; set; }//;
         
         // Key: status Type: cloud.OperationStatusEnum FullType: cloud.OperationStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

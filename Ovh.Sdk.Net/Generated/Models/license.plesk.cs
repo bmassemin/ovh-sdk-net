@@ -27,11 +27,11 @@ namespace _license_plesk {
         
         // Key: domainNumber Type: license.DomainNumberEnum FullType: license.DomainNumberEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainNumber")]
-        public _license.DomainNumberEnum DomainNumber { get; set; }//;
+        public _license.DomainNumberEnum? DomainNumber { get; set; }//;
         
         // Key: informationKey Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("informationKey")]
-        public string InformationKey { get; set; }//;
+        public System.String? InformationKey { get; set; }//;
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -47,7 +47,7 @@ namespace _license_plesk {
         
         // Key: productKey Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("productKey")]
-        public string ProductKey { get; set; }//;
+        public System.String? ProductKey { get; set; }//;
         
         // Key: status Type: license.StateEnum FullType: license.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -75,15 +75,15 @@ namespace _license_plesk {
         
         // Key: domainNumber Type: license.DomainNumberEnum FullType: license.DomainNumberEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainNumber")]
-        public _license.DomainNumberEnum DomainNumber { get; set; }//;
+        public _license.DomainNumberEnum? DomainNumber { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: informationKey Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("informationKey")]
-        public string InformationKey { get; set; }//;
+        public System.String? InformationKey { get; set; }//;
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -99,7 +99,7 @@ namespace _license_plesk {
         
         // Key: productKey Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("productKey")]
-        public string ProductKey { get; set; }//;
+        public System.String? ProductKey { get; set; }//;
         
         // Key: status Type: license.StateEnum FullType: license.StateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

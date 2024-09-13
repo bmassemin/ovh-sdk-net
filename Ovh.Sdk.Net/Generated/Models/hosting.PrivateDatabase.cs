@@ -111,7 +111,7 @@ namespace _hosting_PrivateDatabase {
         
         // Key: endDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: startDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -376,7 +376,7 @@ namespace _hosting_privateDatabase {
         
         // Key: unit Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unit")]
-        public string Unit { get; set; }//;
+        public System.String? Unit { get; set; }//;
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
@@ -420,7 +420,7 @@ namespace _hosting_privateDatabase {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: Configuration Namespace: hosting.privateDatabase
@@ -440,7 +440,7 @@ namespace _hosting_privateDatabase {
         
         // Key: taskId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public string TaskId { get; set; }//;
+        public System.String? TaskId { get; set; }//;
     }
     
     // Id: CpuThrottle Namespace: hosting.privateDatabase
@@ -448,7 +448,7 @@ namespace _hosting_privateDatabase {
         
         // Key: endDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime EndDate { get; set; }//;
+        public System.DateTime? EndDate { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -460,7 +460,7 @@ namespace _hosting_privateDatabase {
         
         // Key: backupTime Type: time FullType: time
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupTime")]
-        public System.TimeOnly BackupTime { get; set; }//;
+        public System.TimeOnly? BackupTime { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -637,15 +637,15 @@ namespace _hosting_privateDatabase {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: graphEndpoint Type: hosting.privateDatabase.GraphEndpoint FullType: hosting.privateDatabase.GraphEndpoint
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("graphEndpoint")]
-        public _hosting_privateDatabase.GraphEndpoint GraphEndpoint { get; set; }//;
+        public _hosting_privateDatabase.GraphEndpoint? GraphEndpoint { get; set; }//;
         
         // Key: guiURL Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guiURL")]
-        public string GuiURL { get; set; }//;
+        public System.String? GuiURL { get; set; }//;
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
@@ -653,7 +653,7 @@ namespace _hosting_privateDatabase {
         
         // Key: hostnameFtp Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostnameFtp")]
-        public string HostnameFtp { get; set; }//;
+        public System.String? HostnameFtp { get; set; }//;
         
         // Key: infrastructure Type: hosting.privateDatabase.InfrastructureEnum FullType: hosting.privateDatabase.InfrastructureEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("infrastructure")]
@@ -661,7 +661,7 @@ namespace _hosting_privateDatabase {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: lastCheck Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastCheck")]
@@ -677,7 +677,7 @@ namespace _hosting_privateDatabase {
         
         // Key: portFtp Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portFtp")]
-        public long PortFtp { get; set; }//;
+        public System.Int64? PortFtp { get; set; }//;
         
         // Key: quotaSize Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quotaSize")]
@@ -705,7 +705,7 @@ namespace _hosting_privateDatabase {
         
         // Key: tlsCa Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tlsCa")]
-        public string TlsCa { get; set; }//;
+        public System.String? TlsCa { get; set; }//;
         
         // Key: type Type: hosting.privateDatabase.TypeEnum FullType: hosting.privateDatabase.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -741,15 +741,15 @@ namespace _hosting_privateDatabase {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: graphEndpoint Type: hosting.privateDatabase.GraphEndpoint FullType: hosting.privateDatabase.GraphEndpoint
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("graphEndpoint")]
-        public _hosting_privateDatabase.GraphEndpoint GraphEndpoint { get; set; }//;
+        public _hosting_privateDatabase.GraphEndpoint? GraphEndpoint { get; set; }//;
         
         // Key: guiURL Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("guiURL")]
-        public string GuiURL { get; set; }//;
+        public System.String? GuiURL { get; set; }//;
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
@@ -757,11 +757,11 @@ namespace _hosting_privateDatabase {
         
         // Key: hostnameFtp Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostnameFtp")]
-        public string HostnameFtp { get; set; }//;
+        public System.String? HostnameFtp { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: infrastructure Type: hosting.privateDatabase.InfrastructureEnum FullType: hosting.privateDatabase.InfrastructureEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("infrastructure")]
@@ -769,7 +769,7 @@ namespace _hosting_privateDatabase {
         
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: lastCheck Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastCheck")]
@@ -785,7 +785,7 @@ namespace _hosting_privateDatabase {
         
         // Key: portFtp Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portFtp")]
-        public long PortFtp { get; set; }//;
+        public System.Int64? PortFtp { get; set; }//;
         
         // Key: quotaSize Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quotaSize")]
@@ -813,7 +813,7 @@ namespace _hosting_privateDatabase {
         
         // Key: tlsCa Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tlsCa")]
-        public string TlsCa { get; set; }//;
+        public System.String? TlsCa { get; set; }//;
         
         // Key: type Type: hosting.privateDatabase.TypeEnum FullType: hosting.privateDatabase.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -859,15 +859,15 @@ namespace _hosting_privateDatabase {
         
         // Key: databaseName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseName")]
-        public string DatabaseName { get; set; }//;
+        public System.String? DatabaseName { get; set; }//;
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: dumpId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dumpId")]
-        public long DumpId { get; set; }//;
+        public System.Int64? DumpId { get; set; }//;
         
         // Key: function Type: hosting.privateDatabase.task.FunctionEnum FullType: hosting.privateDatabase.task.FunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -879,7 +879,7 @@ namespace _hosting_privateDatabase {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -891,7 +891,7 @@ namespace _hosting_privateDatabase {
         
         // Key: userName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userName")]
-        public string UserName { get; set; }//;
+        public System.String? UserName { get; set; }//;
     }
     
     // Id: TemporaryUrlInformations Namespace: hosting.privateDatabase
@@ -989,7 +989,7 @@ namespace _hosting_privateDatabase {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: service Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("service")]
@@ -1005,7 +1005,7 @@ namespace _hosting_privateDatabase {
         
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public long TaskId { get; set; }//;
+        public System.Int64? TaskId { get; set; }//;
     }
     
     // Id: availableOrderCapacities Namespace: hosting.privateDatabase
@@ -1033,7 +1033,7 @@ namespace _hosting_privateDatabase {
         
         // Key: backupTime Type: time FullType: time
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupTime")]
-        public System.TimeOnly BackupTime { get; set; }//;
+        public System.TimeOnly? BackupTime { get; set; }//;
         
         // Key: creationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
@@ -1061,7 +1061,7 @@ namespace _hosting_privateDatabase {
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -1229,15 +1229,15 @@ namespace _hosting_privateDatabase {
         
         // Key: databaseName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseName")]
-        public string DatabaseName { get; set; }//;
+        public System.String? DatabaseName { get; set; }//;
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: dumpId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dumpId")]
-        public long DumpId { get; set; }//;
+        public System.Int64? DumpId { get; set; }//;
         
         // Key: function Type: hosting.PrivateDatabase.task.FunctionEnum FullType: hosting.PrivateDatabase.task.FunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -1249,7 +1249,7 @@ namespace _hosting_privateDatabase {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: startDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
@@ -1261,7 +1261,7 @@ namespace _hosting_privateDatabase {
         
         // Key: userName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userName")]
-        public string UserName { get; set; }//;
+        public System.String? UserName { get; set; }//;
     }
     
     // Id: user Namespace: hosting.privateDatabase
@@ -1305,7 +1305,7 @@ namespace _hosting_privateDatabase {
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: service Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("service")]
@@ -1321,6 +1321,6 @@ namespace _hosting_privateDatabase {
         
         // Key: taskId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public string TaskId { get; set; }//;
+        public System.String? TaskId { get; set; }//;
     }
 }

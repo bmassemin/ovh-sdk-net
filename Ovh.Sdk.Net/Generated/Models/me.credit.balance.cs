@@ -19,7 +19,7 @@ namespace _me_credit_balance {
         
         // Key: balanceSubName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("balanceSubName")]
-        public string BalanceSubName { get; set; }//;
+        public System.String? BalanceSubName { get; set; }//;
         
         // Key: expiring Type: me.credit.balance.ExpiringMovement[] FullType: me.credit.balance.ExpiringMovement[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiring")]
@@ -27,7 +27,7 @@ namespace _me_credit_balance {
         
         // Key: serviceId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceId")]
-        public long ServiceId { get; set; }//;
+        public System.Int64? ServiceId { get; set; }//;
     }
     
     // Id: BookedMovement Namespace: me.credit.balance
@@ -39,7 +39,7 @@ namespace _me_credit_balance {
         
         // Key: balanceSubName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("balanceSubName")]
-        public string BalanceSubName { get; set; }//;
+        public System.String? BalanceSubName { get; set; }//;
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
@@ -87,11 +87,11 @@ namespace _me_credit_balance {
         
         // Key: destinationObject Type: me.credit.balance.movement.SubObject FullType: me.credit.balance.movement.SubObject
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destinationObject")]
-        public _me_credit_balance_movement.SubObject DestinationObject { get; set; }//;
+        public _me_credit_balance_movement.SubObject? DestinationObject { get; set; }//;
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
@@ -103,7 +103,7 @@ namespace _me_credit_balance {
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
-        public long OrderId { get; set; }//;
+        public System.Int64? OrderId { get; set; }//;
         
         // Key: sourceObject Type: me.credit.balance.movement.SubObject FullType: me.credit.balance.movement.SubObject
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sourceObject")]

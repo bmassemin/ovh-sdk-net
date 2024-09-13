@@ -38,23 +38,23 @@ namespace _hosting_web_module {
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: password Type: password FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
-        public string Password { get; set; }//;
+        public System.String? Password { get; set; }//;
         
         // Key: port Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
         
         // Key: prefix Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public string Prefix { get; set; }//;
+        public System.String? Prefix { get; set; }//;
         
         // Key: server Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
-        public string Server { get; set; }//;
+        public System.String? Server { get; set; }//;
         
         // Key: type Type: hosting.web.module.DependencyTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -62,7 +62,7 @@ namespace _hosting_web_module {
         
         // Key: user Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
-        public string User { get; set; }//;
+        public System.String? User { get; set; }//;
     }
     
     // Id: DependencyTypeEnum Namespace: hosting.web.module

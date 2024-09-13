@@ -23,15 +23,15 @@ namespace _services_expanded_Renew {
         
         // Key: mode Type: services.expanded.Renew.ModeEnum FullType: services.expanded.Renew.ModeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mode")]
-        public _services_expanded_Renew.ModeEnum Mode { get; set; }//;
+        public _services_expanded_Renew.ModeEnum? Mode { get; set; }//;
         
         // Key: nextDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nextDate")]
-        public System.DateTime NextDate { get; set; }//;
+        public System.DateTime? NextDate { get; set; }//;
         
         // Key: period Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("period")]
-        public System.TimeSpan Period { get; set; }//;
+        public System.TimeSpan? Period { get; set; }//;
     }
     
     // Id: ModeEnum Namespace: services.expanded.Renew

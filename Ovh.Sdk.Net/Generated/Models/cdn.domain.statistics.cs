@@ -19,6 +19,6 @@ namespace _cdn_domain_statistics {
         
         // Key: value Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public double Value { get; set; }//;
+        public System.Double? Value { get; set; }//;
     }
 }

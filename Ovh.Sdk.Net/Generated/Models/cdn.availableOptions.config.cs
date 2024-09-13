@@ -15,22 +15,22 @@ namespace _cdn_availableOptions_config {
         
         // Key: length Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("length")]
-        public long Length { get; set; }//;
+        public System.Int64? Length { get; set; }//;
         
         // Key: maximum Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maximum")]
-        public long Maximum { get; set; }//;
+        public System.Int64? Maximum { get; set; }//;
         
         // Key: message Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("message")]
-        public string Message { get; set; }//;
+        public System.String? Message { get; set; }//;
         
         // Key: minimum Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minimum")]
-        public long Minimum { get; set; }//;
+        public System.Int64? Minimum { get; set; }//;
         
         // Key: type Type: cdn.OptionConfigParamTypeEnum FullType: cdn.OptionConfigParamTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _cdn.OptionConfigParamTypeEnum Type { get; set; }//;
+        public _cdn.OptionConfigParamTypeEnum? Type { get; set; }//;
     }
 }

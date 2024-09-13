@@ -32,7 +32,7 @@ namespace _xdsl_orderFollowup {
         
         // Key: doneDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: durationUnit Type: xdsl.orderFollowup.DurationUnitEnum FullType: xdsl.orderFollowup.DurationUnitEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("durationUnit")]

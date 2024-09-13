@@ -83,7 +83,7 @@ namespace _me_incident {
         
         // Key: orderId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("orderId")]
-        public long OrderId { get; set; }//;
+        public System.Int64? OrderId { get; set; }//;
         
         // Key: proposedOffer Type: me.incident.ProposedOffer FullType: me.incident.ProposedOffer
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("proposedOffer")]
@@ -91,7 +91,7 @@ namespace _me_incident {
         
         // Key: serviceToMigrate Type: me.incident.ServiceToMigrate FullType: me.incident.ServiceToMigrate
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceToMigrate")]
-        public _me_incident.ServiceToMigrate ServiceToMigrate { get; set; }//;
+        public _me_incident.ServiceToMigrate? ServiceToMigrate { get; set; }//;
     }
     
     // Id: ServiceToMigrate Namespace: me.incident
@@ -107,7 +107,7 @@ namespace _me_incident {
         
         // Key: route Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("route")]
-        public string Route { get; set; }//;
+        public System.String? Route { get; set; }//;
         
         // Key: serviceId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceId")]

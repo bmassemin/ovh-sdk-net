@@ -15,7 +15,7 @@ namespace _audit {
         
         // Key: authDetails Type: audit.LogAuthDetails FullType: audit.LogAuthDetails
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("authDetails")]
-        public _audit.LogAuthDetails AuthDetails { get; set; }//;
+        public _audit.LogAuthDetails? AuthDetails { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -23,11 +23,11 @@ namespace _audit {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: loginSuccessDetails Type: audit.LogLoginSuccessDetails FullType: audit.LogLoginSuccessDetails
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("loginSuccessDetails")]
-        public _audit.LogLoginSuccessDetails LoginSuccessDetails { get; set; }//;
+        public _audit.LogLoginSuccessDetails? LoginSuccessDetails { get; set; }//;
         
         // Key: type Type: audit.LogTypeEnum FullType: audit.LogTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -35,7 +35,7 @@ namespace _audit {
         
         // Key: userPasswordChangedDetails Type: audit.LogUserPasswordChangedDetails FullType: audit.LogUserPasswordChangedDetails
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userPasswordChangedDetails")]
-        public _audit.LogUserPasswordChangedDetails UserPasswordChangedDetails { get; set; }//;
+        public _audit.LogUserPasswordChangedDetails? UserPasswordChangedDetails { get; set; }//;
     }
     
     // Id: LogAuthDetails Namespace: audit
@@ -80,7 +80,7 @@ namespace _audit {
         
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
-        public string User { get; set; }//;
+        public System.String? User { get; set; }//;
     }
     
     // Id: LogAuthUserTypeEnum Namespace: audit
@@ -101,7 +101,7 @@ namespace _audit {
         
         // Key: mfaType Type: audit.LogAuthMFATypeEnum FullType: audit.LogAuthMFATypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mfaType")]
-        public _audit.LogAuthMFATypeEnum MfaType { get; set; }//;
+        public _audit.LogAuthMFATypeEnum? MfaType { get; set; }//;
         
         // Key: userAgent Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAgent")]

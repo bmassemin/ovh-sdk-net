@@ -15,18 +15,18 @@ namespace _dedicatedCloud_vendor {
         
         // Key: datacenterId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenterId")]
-        public long DatacenterId { get; set; }//;
+        public System.Int64? DatacenterId { get; set; }//;
         
         // Key: filerId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filerId")]
-        public long FilerId { get; set; }//;
+        public System.Int64? FilerId { get; set; }//;
         
         // Key: hostId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostId")]
-        public long HostId { get; set; }//;
+        public System.Int64? HostId { get; set; }//;
         
         // Key: vmId Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("vmId")]
-        public long VmId { get; set; }//;
+        public System.Int64? VmId { get; set; }//;
     }
 }

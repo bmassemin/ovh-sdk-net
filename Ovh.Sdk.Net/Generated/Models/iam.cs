@@ -15,7 +15,7 @@ namespace _iam {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -23,7 +23,7 @@ namespace _iam {
         
         // Key: tags Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tags")]
-        public Dictionary<string, string> Tags { get; set; }//;
+        public Dictionary<string, string>? Tags { get; set; }//;
         
         // Key: urn Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("urn")]

@@ -19,7 +19,7 @@ namespace _dedicated_nasha {
         
         // Key: aclDescription Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("aclDescription")]
-        public string AclDescription { get; set; }//;
+        public System.String? AclDescription { get; set; }//;
         
         // Key: ip Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -35,11 +35,11 @@ namespace _dedicated_nasha {
         
         // Key: partitionCapacity Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partitionCapacity")]
-        public long PartitionCapacity { get; set; }//;
+        public System.Int64? PartitionCapacity { get; set; }//;
         
         // Key: partitionDescription Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partitionDescription")]
-        public string PartitionDescription { get; set; }//;
+        public System.String? PartitionDescription { get; set; }//;
         
         // Key: partitionName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partitionName")]
@@ -55,7 +55,7 @@ namespace _dedicated_nasha {
         
         // Key: usedBySnapshots Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usedBySnapshots")]
-        public long UsedBySnapshots { get; set; }//;
+        public System.Int64? UsedBySnapshots { get; set; }//;
     }
     
     // Id: Quota Namespace: dedicated.nasha
@@ -87,11 +87,11 @@ namespace _dedicated_nasha {
         
         // Key: customName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customName")]
-        public string CustomName { get; set; }//;
+        public System.String? CustomName { get; set; }//;
         
         // Key: datacenter Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
-        public string Datacenter { get; set; }//;
+        public System.String? Datacenter { get; set; }//;
         
         // Key: diskType Type: dedicated.storage.DiskTypeEnum FullType: dedicated.storage.DiskTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskType")]
@@ -99,7 +99,7 @@ namespace _dedicated_nasha {
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: monitored Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitored")]
@@ -127,11 +127,11 @@ namespace _dedicated_nasha {
         
         // Key: customName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("customName")]
-        public string CustomName { get; set; }//;
+        public System.String? CustomName { get; set; }//;
         
         // Key: datacenter Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
-        public string Datacenter { get; set; }//;
+        public System.String? Datacenter { get; set; }//;
         
         // Key: diskType Type: dedicated.storage.DiskTypeEnum FullType: dedicated.storage.DiskTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskType")]
@@ -139,11 +139,11 @@ namespace _dedicated_nasha {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: ip Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
         
         // Key: monitored Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitored")]
@@ -167,7 +167,7 @@ namespace _dedicated_nasha {
         
         // Key: expiration Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiration")]
-        public string Expiration { get; set; }//;
+        public System.String? Expiration { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

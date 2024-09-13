@@ -35,6 +35,6 @@ namespace _cloud_project_database_availability_specifications {
         
         // Key: step Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("step")]
-        public _complexType.UnitAndValue<long> Step { get; set; }//;
+        public _complexType.UnitAndValue<long>? Step { get; set; }//;
     }
 }

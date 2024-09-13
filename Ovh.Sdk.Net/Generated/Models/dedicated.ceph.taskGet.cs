@@ -19,7 +19,7 @@ namespace _dedicated_ceph_taskGet {
         
         // Key: finishDate Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public string FinishDate { get; set; }//;
+        public System.String? FinishDate { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]

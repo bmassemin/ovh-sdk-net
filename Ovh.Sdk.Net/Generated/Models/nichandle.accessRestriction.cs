@@ -29,7 +29,7 @@ namespace _nichandle_accessRestriction {
         
         // Key: lastUsedDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUsedDate")]
-        public System.DateTime LastUsedDate { get; set; }//;
+        public System.DateTime? LastUsedDate { get; set; }//;
         
         // Key: remaining Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remaining")]
@@ -89,7 +89,7 @@ namespace _nichandle_accessRestriction {
         
         // Key: lastUsedDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUsedDate")]
-        public System.DateTime LastUsedDate { get; set; }//;
+        public System.DateTime? LastUsedDate { get; set; }//;
         
         // Key: phoneNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phoneNumber")]
@@ -153,7 +153,7 @@ namespace _nichandle_accessRestriction {
         
         // Key: lastUsedDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUsedDate")]
-        public System.DateTime LastUsedDate { get; set; }//;
+        public System.DateTime? LastUsedDate { get; set; }//;
         
         // Key: status Type: nichandle.accessRestriction.TOTPStatusEnum FullType: nichandle.accessRestriction.TOTPStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
@@ -209,7 +209,7 @@ namespace _nichandle_accessRestriction {
         
         // Key: lastUsedDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUsedDate")]
-        public System.DateTime LastUsedDate { get; set; }//;
+        public System.DateTime? LastUsedDate { get; set; }//;
         
         // Key: status Type: nichandle.accessRestriction.U2FStatusEnum FullType: nichandle.accessRestriction.U2FStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

@@ -27,7 +27,7 @@ namespace _cloud_order {
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
-        public string ServiceName { get; set; }//;
+        public System.String? ServiceName { get; set; }//;
         
         // Key: status Type: cloud.order.StatusEnum FullType: cloud.order.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

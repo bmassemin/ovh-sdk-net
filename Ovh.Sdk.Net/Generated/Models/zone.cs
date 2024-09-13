@@ -113,7 +113,7 @@ namespace _zone {
         
         // Key: errors Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("errors")]
-        public string[] Errors { get; set; }//;
+        public System.String[]? Errors { get; set; }//;
         
         // Key: isDeployed Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isDeployed")]
@@ -121,6 +121,6 @@ namespace _zone {
         
         // Key: warnings Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("warnings")]
-        public string[] Warnings { get; set; }//;
+        public System.String[]? Warnings { get; set; }//;
     }
 }

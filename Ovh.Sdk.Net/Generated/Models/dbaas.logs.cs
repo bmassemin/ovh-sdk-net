@@ -139,7 +139,7 @@ namespace _dbaas_logs {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: isEditable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isEditable")]
@@ -159,7 +159,7 @@ namespace _dbaas_logs {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
     }
     
     // Id: Archive Namespace: dbaas.logs
@@ -171,7 +171,7 @@ namespace _dbaas_logs {
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
-        public System.DateTime CreatedAt { get; set; }//;
+        public System.DateTime? CreatedAt { get; set; }//;
         
         // Key: filename Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filename")]
@@ -315,7 +315,7 @@ namespace _dbaas_logs {
         
         // Key: duration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public System.TimeSpan Duration { get; set; }//;
+        public System.TimeSpan? Duration { get; set; }//;
         
         // Key: isSupported Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isSupported")]
@@ -331,15 +331,15 @@ namespace _dbaas_logs {
         
         // Key: archiveAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("archiveAllowedNetworks")]
-        public string[] ArchiveAllowedNetworks { get; set; }//;
+        public System.String[]? ArchiveAllowedNetworks { get; set; }//;
         
         // Key: directInputAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("directInputAllowedNetworks")]
-        public string[] DirectInputAllowedNetworks { get; set; }//;
+        public System.String[]? DirectInputAllowedNetworks { get; set; }//;
         
         // Key: queryAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queryAllowedNetworks")]
-        public string[] QueryAllowedNetworks { get; set; }//;
+        public System.String[]? QueryAllowedNetworks { get; set; }//;
     }
     
     // Id: Dashboard Namespace: dbaas.logs
@@ -367,7 +367,7 @@ namespace _dbaas_logs {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
     }
     
     // Id: DeliveryStatusEnum Namespace: dbaas.logs
@@ -412,7 +412,7 @@ namespace _dbaas_logs {
         
         // Key: nbArchive Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nbArchive")]
-        public long NbArchive { get; set; }//;
+        public System.Int64? NbArchive { get; set; }//;
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
@@ -564,7 +564,7 @@ namespace _dbaas_logs {
         
         // Key: alertNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alertNotifyEnabled")]
-        public bool AlertNotifyEnabled { get; set; }//;
+        public System.Boolean? AlertNotifyEnabled { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -572,11 +572,11 @@ namespace _dbaas_logs {
         
         // Key: currentSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentSize")]
-        public long CurrentSize { get; set; }//;
+        public System.Int64? CurrentSize { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: indexId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexId")]
@@ -596,11 +596,11 @@ namespace _dbaas_logs {
         
         // Key: nbShard Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nbShard")]
-        public long NbShard { get; set; }//;
+        public System.Int64? NbShard { get; set; }//;
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
     }
     
     // Id: Input Namespace: dbaas.logs
@@ -608,11 +608,11 @@ namespace _dbaas_logs {
         
         // Key: allowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedNetworks")]
-        public string[] AllowedNetworks { get; set; }//;
+        public System.String[]? AllowedNetworks { get; set; }//;
         
         // Key: autoscale Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]
-        public bool Autoscale { get; set; }//;
+        public System.Boolean? Autoscale { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -628,7 +628,7 @@ namespace _dbaas_logs {
         
         // Key: exposedPort Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("exposedPort")]
-        public string ExposedPort { get; set; }//;
+        public System.String? ExposedPort { get; set; }//;
         
         // Key: hostname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
@@ -644,15 +644,15 @@ namespace _dbaas_logs {
         
         // Key: maxScaleInstance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxScaleInstance")]
-        public long MaxScaleInstance { get; set; }//;
+        public System.Int64? MaxScaleInstance { get; set; }//;
         
         // Key: minScaleInstance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minScaleInstance")]
-        public long MinScaleInstance { get; set; }//;
+        public System.Int64? MinScaleInstance { get; set; }//;
         
         // Key: nbInstance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nbInstance")]
-        public long NbInstance { get; set; }//;
+        public System.Int64? NbInstance { get; set; }//;
         
         // Key: publicAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicAddress")]
@@ -660,7 +660,7 @@ namespace _dbaas_logs {
         
         // Key: scalingNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scalingNotifyEnabled")]
-        public bool ScalingNotifyEnabled { get; set; }//;
+        public System.Boolean? ScalingNotifyEnabled { get; set; }//;
         
         // Key: sslCertificate Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sslCertificate")]
@@ -680,7 +680,7 @@ namespace _dbaas_logs {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
     }
     
     // Id: InputAction Namespace: dbaas.logs
@@ -734,7 +734,7 @@ namespace _dbaas_logs {
         
         // Key: filterSection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filterSection")]
-        public string FilterSection { get; set; }//;
+        public System.String? FilterSection { get; set; }//;
         
         // Key: inputSection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inputSection")]
@@ -742,7 +742,7 @@ namespace _dbaas_logs {
         
         // Key: patternSection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("patternSection")]
-        public string PatternSection { get; set; }//;
+        public System.String? PatternSection { get; set; }//;
     }
     
     // Id: InputCreation Namespace: dbaas.logs
@@ -750,11 +750,11 @@ namespace _dbaas_logs {
         
         // Key: allowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedNetworks")]
-        public string[] AllowedNetworks { get; set; }//;
+        public System.String[]? AllowedNetworks { get; set; }//;
         
         // Key: autoscale Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]
-        public bool Autoscale { get; set; }//;
+        public System.Boolean? Autoscale { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -766,23 +766,23 @@ namespace _dbaas_logs {
         
         // Key: exposedPort Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("exposedPort")]
-        public string ExposedPort { get; set; }//;
+        public System.String? ExposedPort { get; set; }//;
         
         // Key: maxScaleInstance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxScaleInstance")]
-        public long MaxScaleInstance { get; set; }//;
+        public System.Int64? MaxScaleInstance { get; set; }//;
         
         // Key: minScaleInstance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minScaleInstance")]
-        public long MinScaleInstance { get; set; }//;
+        public System.Int64? MinScaleInstance { get; set; }//;
         
         // Key: nbInstance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nbInstance")]
-        public long NbInstance { get; set; }//;
+        public System.Int64? NbInstance { get; set; }//;
         
         // Key: scalingNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scalingNotifyEnabled")]
-        public bool ScalingNotifyEnabled { get; set; }//;
+        public System.Boolean? ScalingNotifyEnabled { get; set; }//;
         
         // Key: streamId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streamId")]
@@ -814,11 +814,11 @@ namespace _dbaas_logs {
         
         // Key: allowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedNetworks")]
-        public string[] AllowedNetworks { get; set; }//;
+        public System.String[]? AllowedNetworks { get; set; }//;
         
         // Key: autoscale Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoscale")]
-        public bool Autoscale { get; set; }//;
+        public System.Boolean? Autoscale { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -830,23 +830,23 @@ namespace _dbaas_logs {
         
         // Key: exposedPort Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("exposedPort")]
-        public string ExposedPort { get; set; }//;
+        public System.String? ExposedPort { get; set; }//;
         
         // Key: maxScaleInstance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxScaleInstance")]
-        public long MaxScaleInstance { get; set; }//;
+        public System.Int64? MaxScaleInstance { get; set; }//;
         
         // Key: minScaleInstance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minScaleInstance")]
-        public long MinScaleInstance { get; set; }//;
+        public System.Int64? MinScaleInstance { get; set; }//;
         
         // Key: nbInstance Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nbInstance")]
-        public long NbInstance { get; set; }//;
+        public System.Int64? NbInstance { get; set; }//;
         
         // Key: scalingNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("scalingNotifyEnabled")]
-        public bool ScalingNotifyEnabled { get; set; }//;
+        public System.Boolean? ScalingNotifyEnabled { get; set; }//;
         
         // Key: streamId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streamId")]
@@ -862,7 +862,7 @@ namespace _dbaas_logs {
         
         // Key: filterSection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filterSection")]
-        public string FilterSection { get; set; }//;
+        public System.String? FilterSection { get; set; }//;
         
         // Key: inputSection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inputSection")]
@@ -870,7 +870,7 @@ namespace _dbaas_logs {
         
         // Key: patternSection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("patternSection")]
-        public string PatternSection { get; set; }//;
+        public System.String? PatternSection { get; set; }//;
     }
     
     // Id: Member Namespace: dbaas.logs
@@ -882,7 +882,7 @@ namespace _dbaas_logs {
         
         // Key: note Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("note")]
-        public string Note { get; set; }//;
+        public System.String? Note { get; set; }//;
         
         // Key: username Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
@@ -894,7 +894,7 @@ namespace _dbaas_logs {
         
         // Key: aliasId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("aliasId")]
-        public System.Guid AliasId { get; set; }//;
+        public System.Guid? AliasId { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -902,19 +902,19 @@ namespace _dbaas_logs {
         
         // Key: dashboardId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dashboardId")]
-        public System.Guid DashboardId { get; set; }//;
+        public System.Guid? DashboardId { get; set; }//;
         
         // Key: encryptionKeyId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryptionKeyId")]
-        public System.Guid EncryptionKeyId { get; set; }//;
+        public System.Guid? EncryptionKeyId { get; set; }//;
         
         // Key: indexId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexId")]
-        public System.Guid IndexId { get; set; }//;
+        public System.Guid? IndexId { get; set; }//;
         
         // Key: inputId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inputId")]
-        public System.Guid InputId { get; set; }//;
+        public System.Guid? InputId { get; set; }//;
         
         // Key: operationId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operationId")]
@@ -922,11 +922,11 @@ namespace _dbaas_logs {
         
         // Key: osdId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("osdId")]
-        public System.Guid OsdId { get; set; }//;
+        public System.Guid? OsdId { get; set; }//;
         
         // Key: roleId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("roleId")]
-        public System.Guid RoleId { get; set; }//;
+        public System.Guid? RoleId { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
@@ -938,19 +938,19 @@ namespace _dbaas_logs {
         
         // Key: streamId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streamId")]
-        public System.Guid StreamId { get; set; }//;
+        public System.Guid? StreamId { get; set; }//;
         
         // Key: subscriptionId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subscriptionId")]
-        public System.Guid SubscriptionId { get; set; }//;
+        public System.Guid? SubscriptionId { get; set; }//;
         
         // Key: tokenId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tokenId")]
-        public System.Guid TokenId { get; set; }//;
+        public System.Guid? TokenId { get; set; }//;
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
     }
     
     // Id: OperationStateEnum Namespace: dbaas.logs
@@ -1010,7 +1010,7 @@ namespace _dbaas_logs {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
     }
     
     // Id: OsdCreation Namespace: dbaas.logs
@@ -1050,7 +1050,7 @@ namespace _dbaas_logs {
         
         // Key: streamId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streamId")]
-        public System.Guid StreamId { get; set; }//;
+        public System.Guid? StreamId { get; set; }//;
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
@@ -1078,15 +1078,15 @@ namespace _dbaas_logs {
         
         // Key: conditionType Type: dbaas.logs.StreamAlertConditionConditionTypeEnum FullType: dbaas.logs.StreamAlertConditionConditionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditionType")]
-        public _dbaas_logs.StreamAlertConditionConditionTypeEnum ConditionType { get; set; }//;
+        public _dbaas_logs.StreamAlertConditionConditionTypeEnum? ConditionType { get; set; }//;
         
         // Key: constraintType Type: dbaas.logs.StreamAlertConditionConstraintTypeEnum FullType: dbaas.logs.StreamAlertConditionConstraintTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("constraintType")]
-        public _dbaas_logs.StreamAlertConditionConstraintTypeEnum ConstraintType { get; set; }//;
+        public _dbaas_logs.StreamAlertConditionConstraintTypeEnum? ConstraintType { get; set; }//;
         
         // Key: field Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("field")]
-        public string Field { get; set; }//;
+        public System.String? Field { get; set; }//;
         
         // Key: grace Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grace")]
@@ -1094,23 +1094,23 @@ namespace _dbaas_logs {
         
         // Key: queryFilter Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queryFilter")]
-        public string QueryFilter { get; set; }//;
+        public System.String? QueryFilter { get; set; }//;
         
         // Key: repeatNotificationsEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("repeatNotificationsEnabled")]
-        public bool RepeatNotificationsEnabled { get; set; }//;
+        public System.Boolean? RepeatNotificationsEnabled { get; set; }//;
         
         // Key: threshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("threshold")]
-        public long Threshold { get; set; }//;
+        public System.Int64? Threshold { get; set; }//;
         
         // Key: thresholdType Type: dbaas.logs.StreamAlertConditionThresholdTypeEnum FullType: dbaas.logs.StreamAlertConditionThresholdTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("thresholdType")]
-        public _dbaas_logs.StreamAlertConditionThresholdTypeEnum ThresholdType { get; set; }//;
+        public _dbaas_logs.StreamAlertConditionThresholdTypeEnum? ThresholdType { get; set; }//;
         
         // Key: time Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("time")]
-        public long Time { get; set; }//;
+        public System.Int64? Time { get; set; }//;
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
@@ -1118,7 +1118,7 @@ namespace _dbaas_logs {
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: OutputGraylogStreamAlertUpdate Namespace: dbaas.logs
@@ -1130,15 +1130,15 @@ namespace _dbaas_logs {
         
         // Key: conditionType Type: dbaas.logs.StreamAlertConditionConditionTypeEnum FullType: dbaas.logs.StreamAlertConditionConditionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditionType")]
-        public _dbaas_logs.StreamAlertConditionConditionTypeEnum ConditionType { get; set; }//;
+        public _dbaas_logs.StreamAlertConditionConditionTypeEnum? ConditionType { get; set; }//;
         
         // Key: constraintType Type: dbaas.logs.StreamAlertConditionConstraintTypeEnum FullType: dbaas.logs.StreamAlertConditionConstraintTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("constraintType")]
-        public _dbaas_logs.StreamAlertConditionConstraintTypeEnum ConstraintType { get; set; }//;
+        public _dbaas_logs.StreamAlertConditionConstraintTypeEnum? ConstraintType { get; set; }//;
         
         // Key: field Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("field")]
-        public string Field { get; set; }//;
+        public System.String? Field { get; set; }//;
         
         // Key: grace Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grace")]
@@ -1146,23 +1146,23 @@ namespace _dbaas_logs {
         
         // Key: queryFilter Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queryFilter")]
-        public string QueryFilter { get; set; }//;
+        public System.String? QueryFilter { get; set; }//;
         
         // Key: repeatNotificationsEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("repeatNotificationsEnabled")]
-        public bool RepeatNotificationsEnabled { get; set; }//;
+        public System.Boolean? RepeatNotificationsEnabled { get; set; }//;
         
         // Key: threshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("threshold")]
-        public long Threshold { get; set; }//;
+        public System.Int64? Threshold { get; set; }//;
         
         // Key: thresholdType Type: dbaas.logs.StreamAlertConditionThresholdTypeEnum FullType: dbaas.logs.StreamAlertConditionThresholdTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("thresholdType")]
-        public _dbaas_logs.StreamAlertConditionThresholdTypeEnum ThresholdType { get; set; }//;
+        public _dbaas_logs.StreamAlertConditionThresholdTypeEnum? ThresholdType { get; set; }//;
         
         // Key: time Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("time")]
-        public long Time { get; set; }//;
+        public System.Int64? Time { get; set; }//;
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
@@ -1170,7 +1170,7 @@ namespace _dbaas_logs {
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: OutputGraylogStreamCreation Namespace: dbaas.logs
@@ -1178,27 +1178,27 @@ namespace _dbaas_logs {
         
         // Key: coldStorageCompression Type: dbaas.logs.StreamColdStorageCompressionEnum FullType: dbaas.logs.StreamColdStorageCompressionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageCompression")]
-        public _dbaas_logs.StreamColdStorageCompressionEnum ColdStorageCompression { get; set; }//;
+        public _dbaas_logs.StreamColdStorageCompressionEnum? ColdStorageCompression { get; set; }//;
         
         // Key: coldStorageContent Type: dbaas.logs.StreamColdStorageContentEnum FullType: dbaas.logs.StreamColdStorageContentEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageContent")]
-        public _dbaas_logs.StreamColdStorageContentEnum ColdStorageContent { get; set; }//;
+        public _dbaas_logs.StreamColdStorageContentEnum? ColdStorageContent { get; set; }//;
         
         // Key: coldStorageEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageEnabled")]
-        public bool ColdStorageEnabled { get; set; }//;
+        public System.Boolean? ColdStorageEnabled { get; set; }//;
         
         // Key: coldStorageNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageNotifyEnabled")]
-        public bool ColdStorageNotifyEnabled { get; set; }//;
+        public System.Boolean? ColdStorageNotifyEnabled { get; set; }//;
         
         // Key: coldStorageRetention Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageRetention")]
-        public long ColdStorageRetention { get; set; }//;
+        public System.Int64? ColdStorageRetention { get; set; }//;
         
         // Key: coldStorageTarget Type: dbaas.logs.StreamColdStorageTargetEnum FullType: dbaas.logs.StreamColdStorageTargetEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageTarget")]
-        public _dbaas_logs.StreamColdStorageTargetEnum ColdStorageTarget { get; set; }//;
+        public _dbaas_logs.StreamColdStorageTargetEnum? ColdStorageTarget { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -1206,31 +1206,31 @@ namespace _dbaas_logs {
         
         // Key: encryptionKeysIds Type: uuid[] FullType: uuid[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryptionKeysIds")]
-        public System.Guid[] EncryptionKeysIds { get; set; }//;
+        public System.Guid[]? EncryptionKeysIds { get; set; }//;
         
         // Key: indexingEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingEnabled")]
-        public bool IndexingEnabled { get; set; }//;
+        public System.Boolean? IndexingEnabled { get; set; }//;
         
         // Key: indexingMaxSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingMaxSize")]
-        public long IndexingMaxSize { get; set; }//;
+        public System.Int64? IndexingMaxSize { get; set; }//;
         
         // Key: indexingNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingNotifyEnabled")]
-        public bool IndexingNotifyEnabled { get; set; }//;
+        public System.Boolean? IndexingNotifyEnabled { get; set; }//;
         
         // Key: parentStreamId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentStreamId")]
-        public System.Guid ParentStreamId { get; set; }//;
+        public System.Guid? ParentStreamId { get; set; }//;
         
         // Key: pauseIndexingOnMaxSize Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pauseIndexingOnMaxSize")]
-        public bool PauseIndexingOnMaxSize { get; set; }//;
+        public System.Boolean? PauseIndexingOnMaxSize { get; set; }//;
         
         // Key: retentionId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionId")]
-        public System.Guid RetentionId { get; set; }//;
+        public System.Guid? RetentionId { get; set; }//;
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
@@ -1238,7 +1238,7 @@ namespace _dbaas_logs {
         
         // Key: webSocketEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("webSocketEnabled")]
-        public bool WebSocketEnabled { get; set; }//;
+        public System.Boolean? WebSocketEnabled { get; set; }//;
     }
     
     // Id: OutputGraylogStreamRuleCreation Namespace: dbaas.logs
@@ -1250,7 +1250,7 @@ namespace _dbaas_logs {
         
         // Key: isInverted Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isInverted")]
-        public bool IsInverted { get; set; }//;
+        public System.Boolean? IsInverted { get; set; }//;
         
         // Key: operator Type: dbaas.logs.StreamRuleOperatorEnum FullType: dbaas.logs.StreamRuleOperatorEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operator")]
@@ -1266,27 +1266,27 @@ namespace _dbaas_logs {
         
         // Key: coldStorageCompression Type: dbaas.logs.StreamColdStorageCompressionEnum FullType: dbaas.logs.StreamColdStorageCompressionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageCompression")]
-        public _dbaas_logs.StreamColdStorageCompressionEnum ColdStorageCompression { get; set; }//;
+        public _dbaas_logs.StreamColdStorageCompressionEnum? ColdStorageCompression { get; set; }//;
         
         // Key: coldStorageContent Type: dbaas.logs.StreamColdStorageContentEnum FullType: dbaas.logs.StreamColdStorageContentEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageContent")]
-        public _dbaas_logs.StreamColdStorageContentEnum ColdStorageContent { get; set; }//;
+        public _dbaas_logs.StreamColdStorageContentEnum? ColdStorageContent { get; set; }//;
         
         // Key: coldStorageEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageEnabled")]
-        public bool ColdStorageEnabled { get; set; }//;
+        public System.Boolean? ColdStorageEnabled { get; set; }//;
         
         // Key: coldStorageNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageNotifyEnabled")]
-        public bool ColdStorageNotifyEnabled { get; set; }//;
+        public System.Boolean? ColdStorageNotifyEnabled { get; set; }//;
         
         // Key: coldStorageRetention Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageRetention")]
-        public long ColdStorageRetention { get; set; }//;
+        public System.Int64? ColdStorageRetention { get; set; }//;
         
         // Key: coldStorageTarget Type: dbaas.logs.StreamColdStorageTargetEnum FullType: dbaas.logs.StreamColdStorageTargetEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageTarget")]
-        public _dbaas_logs.StreamColdStorageTargetEnum ColdStorageTarget { get; set; }//;
+        public _dbaas_logs.StreamColdStorageTargetEnum? ColdStorageTarget { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -1294,23 +1294,23 @@ namespace _dbaas_logs {
         
         // Key: encryptionKeysIds Type: uuid[] FullType: uuid[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryptionKeysIds")]
-        public System.Guid[] EncryptionKeysIds { get; set; }//;
+        public System.Guid[]? EncryptionKeysIds { get; set; }//;
         
         // Key: indexingEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingEnabled")]
-        public bool IndexingEnabled { get; set; }//;
+        public System.Boolean? IndexingEnabled { get; set; }//;
         
         // Key: indexingMaxSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingMaxSize")]
-        public long IndexingMaxSize { get; set; }//;
+        public System.Int64? IndexingMaxSize { get; set; }//;
         
         // Key: indexingNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingNotifyEnabled")]
-        public bool IndexingNotifyEnabled { get; set; }//;
+        public System.Boolean? IndexingNotifyEnabled { get; set; }//;
         
         // Key: pauseIndexingOnMaxSize Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pauseIndexingOnMaxSize")]
-        public bool PauseIndexingOnMaxSize { get; set; }//;
+        public System.Boolean? PauseIndexingOnMaxSize { get; set; }//;
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
@@ -1318,7 +1318,7 @@ namespace _dbaas_logs {
         
         // Key: webSocketEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("webSocketEnabled")]
-        public bool WebSocketEnabled { get; set; }//;
+        public System.Boolean? WebSocketEnabled { get; set; }//;
     }
     
     // Id: OutputOpenSearchAliasCreation Namespace: dbaas.logs
@@ -1362,7 +1362,7 @@ namespace _dbaas_logs {
         
         // Key: alertNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alertNotifyEnabled")]
-        public bool AlertNotifyEnabled { get; set; }//;
+        public System.Boolean? AlertNotifyEnabled { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -1370,7 +1370,7 @@ namespace _dbaas_logs {
         
         // Key: nbShard Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nbShard")]
-        public long NbShard { get; set; }//;
+        public System.Int64? NbShard { get; set; }//;
         
         // Key: suffix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("suffix")]
@@ -1382,7 +1382,7 @@ namespace _dbaas_logs {
         
         // Key: alertNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alertNotifyEnabled")]
-        public bool AlertNotifyEnabled { get; set; }//;
+        public System.Boolean? AlertNotifyEnabled { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -1394,19 +1394,19 @@ namespace _dbaas_logs {
         
         // Key: aliasId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("aliasId")]
-        public System.Guid AliasId { get; set; }//;
+        public System.Guid? AliasId { get; set; }//;
         
         // Key: dashboardId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dashboardId")]
-        public System.Guid DashboardId { get; set; }//;
+        public System.Guid? DashboardId { get; set; }//;
         
         // Key: indexId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexId")]
-        public System.Guid IndexId { get; set; }//;
+        public System.Guid? IndexId { get; set; }//;
         
         // Key: osdId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("osdId")]
-        public System.Guid OsdId { get; set; }//;
+        public System.Guid? OsdId { get; set; }//;
         
         // Key: permissionId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("permissionId")]
@@ -1414,11 +1414,11 @@ namespace _dbaas_logs {
         
         // Key: permissionType Type: dbaas.logs.PermissionTypeEnum FullType: dbaas.logs.PermissionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("permissionType")]
-        public _dbaas_logs.PermissionTypeEnum PermissionType { get; set; }//;
+        public _dbaas_logs.PermissionTypeEnum? PermissionType { get; set; }//;
         
         // Key: streamId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streamId")]
-        public System.Guid StreamId { get; set; }//;
+        public System.Guid? StreamId { get; set; }//;
     }
     
     // Id: PermissionTypeEnum Namespace: dbaas.logs
@@ -1460,7 +1460,7 @@ namespace _dbaas_logs {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
     }
     
     // Id: RoleCreation Namespace: dbaas.logs
@@ -1480,7 +1480,7 @@ namespace _dbaas_logs {
         
         // Key: note Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("note")]
-        public string Note { get; set; }//;
+        public System.String? Note { get; set; }//;
         
         // Key: username Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
@@ -1492,7 +1492,7 @@ namespace _dbaas_logs {
         
         // Key: note Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("note")]
-        public string Note { get; set; }//;
+        public System.String? Note { get; set; }//;
     }
     
     // Id: RolePermissionAliasCreation Namespace: dbaas.logs
@@ -1512,7 +1512,7 @@ namespace _dbaas_logs {
         
         // Key: permissionType Type: dbaas.logs.PermissionTypeEnum FullType: dbaas.logs.PermissionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("permissionType")]
-        public _dbaas_logs.PermissionTypeEnum PermissionType { get; set; }//;
+        public _dbaas_logs.PermissionTypeEnum? PermissionType { get; set; }//;
     }
     
     // Id: RolePermissionIndexCreation Namespace: dbaas.logs
@@ -1524,7 +1524,7 @@ namespace _dbaas_logs {
         
         // Key: permissionType Type: dbaas.logs.PermissionTypeEnum FullType: dbaas.logs.PermissionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("permissionType")]
-        public _dbaas_logs.PermissionTypeEnum PermissionType { get; set; }//;
+        public _dbaas_logs.PermissionTypeEnum? PermissionType { get; set; }//;
     }
     
     // Id: RolePermissionOsdCreation Namespace: dbaas.logs
@@ -1536,7 +1536,7 @@ namespace _dbaas_logs {
         
         // Key: permissionType Type: dbaas.logs.PermissionTypeEnum FullType: dbaas.logs.PermissionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("permissionType")]
-        public _dbaas_logs.PermissionTypeEnum PermissionType { get; set; }//;
+        public _dbaas_logs.PermissionTypeEnum? PermissionType { get; set; }//;
     }
     
     // Id: RolePermissionStreamCreation Namespace: dbaas.logs
@@ -1568,7 +1568,7 @@ namespace _dbaas_logs {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: isClusterOwner Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isClusterOwner")]
@@ -1588,7 +1588,7 @@ namespace _dbaas_logs {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
         
         // Key: username Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
@@ -1642,11 +1642,11 @@ namespace _dbaas_logs {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: isClusterOwner Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isClusterOwner")]
@@ -1666,7 +1666,7 @@ namespace _dbaas_logs {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
         
         // Key: username Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
@@ -1686,27 +1686,27 @@ namespace _dbaas_logs {
         
         // Key: coldStorageCompression Type: dbaas.logs.StreamColdStorageCompressionEnum FullType: dbaas.logs.StreamColdStorageCompressionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageCompression")]
-        public _dbaas_logs.StreamColdStorageCompressionEnum ColdStorageCompression { get; set; }//;
+        public _dbaas_logs.StreamColdStorageCompressionEnum? ColdStorageCompression { get; set; }//;
         
         // Key: coldStorageContent Type: dbaas.logs.StreamColdStorageContentEnum FullType: dbaas.logs.StreamColdStorageContentEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageContent")]
-        public _dbaas_logs.StreamColdStorageContentEnum ColdStorageContent { get; set; }//;
+        public _dbaas_logs.StreamColdStorageContentEnum? ColdStorageContent { get; set; }//;
         
         // Key: coldStorageEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageEnabled")]
-        public bool ColdStorageEnabled { get; set; }//;
+        public System.Boolean? ColdStorageEnabled { get; set; }//;
         
         // Key: coldStorageNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageNotifyEnabled")]
-        public bool ColdStorageNotifyEnabled { get; set; }//;
+        public System.Boolean? ColdStorageNotifyEnabled { get; set; }//;
         
         // Key: coldStorageRetention Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageRetention")]
-        public long ColdStorageRetention { get; set; }//;
+        public System.Int64? ColdStorageRetention { get; set; }//;
         
         // Key: coldStorageTarget Type: dbaas.logs.StreamColdStorageTargetEnum FullType: dbaas.logs.StreamColdStorageTargetEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("coldStorageTarget")]
-        public _dbaas_logs.StreamColdStorageTargetEnum ColdStorageTarget { get; set; }//;
+        public _dbaas_logs.StreamColdStorageTargetEnum? ColdStorageTarget { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -1718,23 +1718,23 @@ namespace _dbaas_logs {
         
         // Key: encryptionKeysIds Type: uuid[] FullType: uuid[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("encryptionKeysIds")]
-        public System.Guid[] EncryptionKeysIds { get; set; }//;
+        public System.Guid[]? EncryptionKeysIds { get; set; }//;
         
         // Key: indexingCurrentSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingCurrentSize")]
-        public long IndexingCurrentSize { get; set; }//;
+        public System.Int64? IndexingCurrentSize { get; set; }//;
         
         // Key: indexingEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingEnabled")]
-        public bool IndexingEnabled { get; set; }//;
+        public System.Boolean? IndexingEnabled { get; set; }//;
         
         // Key: indexingMaxSize Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingMaxSize")]
-        public long IndexingMaxSize { get; set; }//;
+        public System.Int64? IndexingMaxSize { get; set; }//;
         
         // Key: indexingNotifyEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexingNotifyEnabled")]
-        public bool IndexingNotifyEnabled { get; set; }//;
+        public System.Boolean? IndexingNotifyEnabled { get; set; }//;
         
         // Key: isEditable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isEditable")]
@@ -1754,11 +1754,11 @@ namespace _dbaas_logs {
         
         // Key: parentStreamId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentStreamId")]
-        public System.Guid ParentStreamId { get; set; }//;
+        public System.Guid? ParentStreamId { get; set; }//;
         
         // Key: pauseIndexingOnMaxSize Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pauseIndexingOnMaxSize")]
-        public bool PauseIndexingOnMaxSize { get; set; }//;
+        public System.Boolean? PauseIndexingOnMaxSize { get; set; }//;
         
         // Key: retentionId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionId")]
@@ -1774,11 +1774,11 @@ namespace _dbaas_logs {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
         
         // Key: webSocketEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("webSocketEnabled")]
-        public bool WebSocketEnabled { get; set; }//;
+        public System.Boolean? WebSocketEnabled { get; set; }//;
     }
     
     // Id: StreamAlertCondition Namespace: dbaas.logs
@@ -1794,15 +1794,15 @@ namespace _dbaas_logs {
         
         // Key: conditionType Type: dbaas.logs.StreamAlertConditionConditionTypeEnum FullType: dbaas.logs.StreamAlertConditionConditionTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditionType")]
-        public _dbaas_logs.StreamAlertConditionConditionTypeEnum ConditionType { get; set; }//;
+        public _dbaas_logs.StreamAlertConditionConditionTypeEnum? ConditionType { get; set; }//;
         
         // Key: constraintType Type: dbaas.logs.StreamAlertConditionConstraintTypeEnum FullType: dbaas.logs.StreamAlertConditionConstraintTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("constraintType")]
-        public _dbaas_logs.StreamAlertConditionConstraintTypeEnum ConstraintType { get; set; }//;
+        public _dbaas_logs.StreamAlertConditionConstraintTypeEnum? ConstraintType { get; set; }//;
         
         // Key: field Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("field")]
-        public string Field { get; set; }//;
+        public System.String? Field { get; set; }//;
         
         // Key: grace Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("grace")]
@@ -1810,23 +1810,23 @@ namespace _dbaas_logs {
         
         // Key: queryFilter Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queryFilter")]
-        public string QueryFilter { get; set; }//;
+        public System.String? QueryFilter { get; set; }//;
         
         // Key: repeatNotificationsEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("repeatNotificationsEnabled")]
-        public bool RepeatNotificationsEnabled { get; set; }//;
+        public System.Boolean? RepeatNotificationsEnabled { get; set; }//;
         
         // Key: threshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("threshold")]
-        public long Threshold { get; set; }//;
+        public System.Int64? Threshold { get; set; }//;
         
         // Key: thresholdType Type: dbaas.logs.StreamAlertConditionThresholdTypeEnum FullType: dbaas.logs.StreamAlertConditionThresholdTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("thresholdType")]
-        public _dbaas_logs.StreamAlertConditionThresholdTypeEnum ThresholdType { get; set; }//;
+        public _dbaas_logs.StreamAlertConditionThresholdTypeEnum? ThresholdType { get; set; }//;
         
         // Key: time Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("time")]
-        public long Time { get; set; }//;
+        public System.Int64? Time { get; set; }//;
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
@@ -1834,7 +1834,7 @@ namespace _dbaas_logs {
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: StreamAlertConditionConditionTypeEnum Namespace: dbaas.logs
@@ -1939,11 +1939,11 @@ namespace _dbaas_logs {
         
         // Key: isInverted Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isInverted")]
-        public bool IsInverted { get; set; }//;
+        public System.Boolean? IsInverted { get; set; }//;
         
         // Key: operator Type: dbaas.logs.StreamRuleOperatorEnum FullType: dbaas.logs.StreamRuleOperatorEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operator")]
-        public _dbaas_logs.StreamRuleOperatorEnum @operator { get; set; }//;
+        public _dbaas_logs.StreamRuleOperatorEnum? @operator { get; set; }//;
         
         // Key: ruleId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ruleId")]
@@ -1979,15 +1979,15 @@ namespace _dbaas_logs {
         
         // Key: stderr Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stderr")]
-        public string Stderr { get; set; }//;
+        public System.String? Stderr { get; set; }//;
         
         // Key: stdout Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stdout")]
-        public string Stdout { get; set; }//;
+        public System.String? Stdout { get; set; }//;
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
     }
     
     // Id: Token Namespace: dbaas.logs
@@ -1995,7 +1995,7 @@ namespace _dbaas_logs {
         
         // Key: clusterId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterId")]
-        public System.Guid ClusterId { get; set; }//;
+        public System.Guid? ClusterId { get; set; }//;
         
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
@@ -2011,7 +2011,7 @@ namespace _dbaas_logs {
         
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
+        public System.DateTime? UpdatedAt { get; set; }//;
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
@@ -2023,7 +2023,7 @@ namespace _dbaas_logs {
         
         // Key: clusterId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterId")]
-        public System.Guid ClusterId { get; set; }//;
+        public System.Guid? ClusterId { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -2035,7 +2035,7 @@ namespace _dbaas_logs {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
     }
     
     // Id: Url Namespace: dbaas.logs

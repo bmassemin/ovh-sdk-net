@@ -23,7 +23,7 @@ namespace _cloud_project_ai_registry {
         
         // Key: password Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
-        public string Password { get; set; }//;
+        public System.String? Password { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
@@ -35,7 +35,7 @@ namespace _cloud_project_ai_registry {
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
@@ -43,7 +43,7 @@ namespace _cloud_project_ai_registry {
         
         // Key: username Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
-        public string Username { get; set; }//;
+        public System.String? Username { get; set; }//;
     }
     
     // Id: RegistryUpdateInput Namespace: cloud.project.ai.registry
@@ -51,14 +51,14 @@ namespace _cloud_project_ai_registry {
         
         // Key: password Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
-        public string Password { get; set; }//;
+        public System.String? Password { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
         
         // Key: username Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
-        public string Username { get; set; }//;
+        public System.String? Username { get; set; }//;
     }
 }

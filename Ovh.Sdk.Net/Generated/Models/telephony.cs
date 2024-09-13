@@ -59,7 +59,7 @@ namespace _telephony {
         
         // Key: birthDate Type: date FullType: date
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("birthDate")]
-        public System.DateOnly BirthDate { get; set; }//;
+        public System.DateOnly? BirthDate { get; set; }//;
         
         // Key: cedex Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cedex")]
@@ -215,15 +215,15 @@ namespace _telephony {
         
         // Key: address Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public string Address { get; set; }//;
+        public System.String? Address { get; set; }//;
         
         // Key: ape Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ape")]
-        public string Ape { get; set; }//;
+        public System.String? Ape { get; set; }//;
         
         // Key: brand Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("brand")]
-        public string Brand { get; set; }//;
+        public System.String? Brand { get; set; }//;
         
         // Key: entrepriseNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("entrepriseNumber")]
@@ -239,7 +239,7 @@ namespace _telephony {
         
         // Key: siren Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("siren")]
-        public string Siren { get; set; }//;
+        public System.String? Siren { get; set; }//;
     }
     
     // Id: EntrepriseNumberInformationsTask Namespace: telephony
@@ -438,7 +438,7 @@ namespace _telephony {
         
         // Key: fullGreetingSoundId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fullGreetingSoundId")]
-        public long FullGreetingSoundId { get; set; }//;
+        public System.Int64? FullGreetingSoundId { get; set; }//;
         
         // Key: greetingType Type: telephony.VoicemailGreetingEnum FullType: telephony.VoicemailGreetingEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("greetingType")]
@@ -458,7 +458,7 @@ namespace _telephony {
         
         // Key: shortGreetingSoundId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shortGreetingSoundId")]
-        public long ShortGreetingSoundId { get; set; }//;
+        public System.Int64? ShortGreetingSoundId { get; set; }//;
         
         // Key: temporaryGreetingActivated Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("temporaryGreetingActivated")]
@@ -466,7 +466,7 @@ namespace _telephony {
         
         // Key: temporaryGreetingSoundId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("temporaryGreetingSoundId")]
-        public long TemporaryGreetingSoundId { get; set; }//;
+        public System.Int64? TemporaryGreetingSoundId { get; set; }//;
         
         // Key: unreadMessages Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unreadMessages")]
@@ -718,11 +718,11 @@ namespace _telephony {
         
         // Key: message Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("message")]
-        public string Message { get; set; }//;
+        public System.String? Message { get; set; }//;
         
         // Key: objectCreated Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("objectCreated")]
-        public string ObjectCreated { get; set; }//;
+        public System.String? ObjectCreated { get; set; }//;
         
         // Key: serviceType Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceType")]
@@ -782,7 +782,7 @@ namespace _telephony {
         
         // Key: description Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -794,7 +794,7 @@ namespace _telephony {
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: AntihackActionEnum Namespace: telephony
@@ -958,7 +958,7 @@ namespace _telephony {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: overrideDisplayedNumber Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("overrideDisplayedNumber")]
@@ -982,15 +982,15 @@ namespace _telephony {
         
         // Key: answerDatetime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("answerDatetime")]
-        public System.DateTime AnswerDatetime { get; set; }//;
+        public System.DateTime? AnswerDatetime { get; set; }//;
         
         // Key: application Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("application")]
-        public string Application { get; set; }//;
+        public System.String? Application { get; set; }//;
         
         // Key: applicationResult Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("applicationResult")]
-        public string ApplicationResult { get; set; }//;
+        public System.String? ApplicationResult { get; set; }//;
         
         // Key: billingNumber Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("billingNumber")]
@@ -998,31 +998,31 @@ namespace _telephony {
         
         // Key: callCreatedDatetime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callCreatedDatetime")]
-        public System.DateTime CallCreatedDatetime { get; set; }//;
+        public System.DateTime? CallCreatedDatetime { get; set; }//;
         
         // Key: callDuration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callDuration")]
-        public long CallDuration { get; set; }//;
+        public System.Int64? CallDuration { get; set; }//;
         
         // Key: callee Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callee")]
-        public string Callee { get; set; }//;
+        public System.String? Callee { get; set; }//;
         
         // Key: caller Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("caller")]
-        public string Caller { get; set; }//;
+        public System.String? Caller { get; set; }//;
         
         // Key: dtmf Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dtmf")]
-        public string Dtmf { get; set; }//;
+        public System.String? Dtmf { get; set; }//;
         
         // Key: hangupCause Type: telephony.CallsGeneratorHangupCauseEnum FullType: telephony.CallsGeneratorHangupCauseEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hangupCause")]
-        public _telephony.CallsGeneratorHangupCauseEnum HangupCause { get; set; }//;
+        public _telephony.CallsGeneratorHangupCauseEnum? HangupCause { get; set; }//;
         
         // Key: hangupDatetime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hangupDatetime")]
-        public System.DateTime HangupDatetime { get; set; }//;
+        public System.DateTime? HangupDatetime { get; set; }//;
         
         // Key: identifier Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("identifier")]
@@ -1030,7 +1030,7 @@ namespace _telephony {
         
         // Key: transferFrom Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("transferFrom")]
-        public string TransferFrom { get; set; }//;
+        public System.String? TransferFrom { get; set; }//;
         
         // Key: uuid Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("uuid")]
@@ -1389,7 +1389,7 @@ namespace _telephony {
         
         // Key: administrationCode Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("administrationCode")]
-        public string AdministrationCode { get; set; }//;
+        public System.String? AdministrationCode { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1469,7 +1469,7 @@ namespace _telephony {
         
         // Key: recordUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordUrl")]
-        public string RecordUrl { get; set; }//;
+        public System.String? RecordUrl { get; set; }//;
     }
     
     // Id: ConferenceHistoryEvent Namespace: telephony
@@ -1572,11 +1572,11 @@ namespace _telephony {
         
         // Key: announceFilename Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("announceFilename")]
-        public string AnnounceFilename { get; set; }//;
+        public System.String? AnnounceFilename { get; set; }//;
         
         // Key: announceSoundId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("announceSoundId")]
-        public long AnnounceSoundId { get; set; }//;
+        public System.Int64? AnnounceSoundId { get; set; }//;
         
         // Key: anonymousRejection Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("anonymousRejection")]
@@ -1604,7 +1604,7 @@ namespace _telephony {
         
         // Key: reportEmail Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reportEmail")]
-        public string ReportEmail { get; set; }//;
+        public System.String? ReportEmail { get; set; }//;
         
         // Key: reportStatus Type: telephony.ConferenceReportStatusEnum FullType: telephony.ConferenceReportStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reportStatus")]
@@ -1641,11 +1641,11 @@ namespace _telephony {
         
         // Key: announceFilename Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("announceFilename")]
-        public string AnnounceFilename { get; set; }//;
+        public System.String? AnnounceFilename { get; set; }//;
         
         // Key: announceSoundId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("announceSoundId")]
-        public long AnnounceSoundId { get; set; }//;
+        public System.Int64? AnnounceSoundId { get; set; }//;
         
         // Key: anonymousRejection Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("anonymousRejection")]
@@ -1661,7 +1661,7 @@ namespace _telephony {
         
         // Key: expirationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
+        public System.DateTime? ExpirationDate { get; set; }//;
         
         // Key: language Type: telephony.ConferenceLanguageEnum FullType: telephony.ConferenceLanguageEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("language")]
@@ -1677,7 +1677,7 @@ namespace _telephony {
         
         // Key: reportEmail Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reportEmail")]
-        public string ReportEmail { get; set; }//;
+        public System.String? ReportEmail { get; set; }//;
         
         // Key: reportStatus Type: telephony.ConferenceReportStatusEnum FullType: telephony.ConferenceReportStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reportStatus")]
@@ -1759,39 +1759,39 @@ namespace _telephony {
         
         // Key: address Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
-        public string Address { get; set; }//;
+        public System.String? Address { get; set; }//;
         
         // Key: city Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
-        public string City { get; set; }//;
+        public System.String? City { get; set; }//;
         
         // Key: country Type: coreTypes.CountryEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
-        public _coreTypes.CountryEnum Country { get; set; }//;
+        public _coreTypes.CountryEnum? Country { get; set; }//;
         
         // Key: email Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: firstname Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstname")]
-        public string Firstname { get; set; }//;
+        public System.String? Firstname { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: organisation Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("organisation")]
-        public string Organisation { get; set; }//;
+        public System.String? Organisation { get; set; }//;
         
         // Key: phone Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
-        public string Phone { get; set; }//;
+        public System.String? Phone { get; set; }//;
         
         // Key: zip Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zip")]
-        public string Zip { get; set; }//;
+        public System.String? Zip { get; set; }//;
     }
     
     // Id: DatetimeAndIpvalue Namespace: telephony
@@ -1803,7 +1803,7 @@ namespace _telephony {
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
+        public System.String? Ip { get; set; }//;
     }
     
     // Id: Ddi Namespace: telephony
@@ -1815,7 +1815,7 @@ namespace _telephony {
         
         // Key: destination Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destination")]
-        public string Destination { get; set; }//;
+        public System.String? Destination { get; set; }//;
         
         // Key: featureType Type: telephony.TypeEnum FullType: telephony.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("featureType")]
@@ -1855,11 +1855,11 @@ namespace _telephony {
         
         // Key: cancelLimitDatetime Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cancelLimitDatetime")]
-        public System.DateTime CancelLimitDatetime { get; set; }//;
+        public System.DateTime? CancelLimitDatetime { get; set; }//;
         
         // Key: effectiveDatetime Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("effectiveDatetime")]
-        public System.DateTime EffectiveDatetime { get; set; }//;
+        public System.DateTime? EffectiveDatetime { get; set; }//;
         
         // Key: pricePerCallWithoutTax Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("pricePerCallWithoutTax")]
@@ -1883,7 +1883,7 @@ namespace _telephony {
         
         // Key: updateRateCodePriceWithoutTax Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updateRateCodePriceWithoutTax")]
-        public _order.Price UpdateRateCodePriceWithoutTax { get; set; }//;
+        public _order.Price? UpdateRateCodePriceWithoutTax { get; set; }//;
     }
     
     // Id: Device Namespace: telephony
@@ -1899,7 +1899,7 @@ namespace _telephony {
         
         // Key: lastRegistrationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastRegistrationDate")]
-        public System.DateTime LastRegistrationDate { get; set; }//;
+        public System.DateTime? LastRegistrationDate { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -1919,7 +1919,7 @@ namespace _telephony {
         
         // Key: userAgent Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAgent")]
-        public string UserAgent { get; set; }//;
+        public System.String? UserAgent { get; set; }//;
     }
     
     // Id: DeviceCreateInput Namespace: telephony
@@ -2046,7 +2046,7 @@ namespace _telephony {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -2066,7 +2066,7 @@ namespace _telephony {
         
         // Key: validationDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validationDate")]
-        public System.DateTime ValidationDate { get; set; }//;
+        public System.DateTime? ValidationDate { get; set; }//;
     }
     
     // Id: EasyHunting Namespace: telephony
@@ -2118,19 +2118,19 @@ namespace _telephony {
         
         // Key: toneOnClosing Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("toneOnClosing")]
-        public long ToneOnClosing { get; set; }//;
+        public System.Int64? ToneOnClosing { get; set; }//;
         
         // Key: toneOnHold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("toneOnHold")]
-        public long ToneOnHold { get; set; }//;
+        public System.Int64? ToneOnHold { get; set; }//;
         
         // Key: toneOnOpening Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("toneOnOpening")]
-        public long ToneOnOpening { get; set; }//;
+        public System.Int64? ToneOnOpening { get; set; }//;
         
         // Key: voicemail Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("voicemail")]
-        public string Voicemail { get; set; }//;
+        public System.String? Voicemail { get; set; }//;
     }
     
     // Id: EasyHuntingScreenListsConditions Namespace: telephony
@@ -2138,7 +2138,7 @@ namespace _telephony {
         
         // Key: callerIdNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callerIdNumber")]
-        public string CallerIdNumber { get; set; }//;
+        public System.String? CallerIdNumber { get; set; }//;
         
         // Key: conditionId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditionId")]
@@ -2146,7 +2146,7 @@ namespace _telephony {
         
         // Key: destinationNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destinationNumber")]
-        public string DestinationNumber { get; set; }//;
+        public System.String? DestinationNumber { get; set; }//;
         
         // Key: screenListType Type: telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum FullType: telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("screenListType")]
@@ -2207,35 +2207,35 @@ namespace _telephony {
         
         // Key: slot1Number Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slot1Number")]
-        public string Slot1Number { get; set; }//;
+        public System.String? Slot1Number { get; set; }//;
         
         // Key: slot1Type Type: telephony.TimeConditionsSettingsForwardTypeEnum FullType: telephony.TimeConditionsSettingsForwardTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slot1Type")]
-        public _telephony.TimeConditionsSettingsForwardTypeEnum Slot1Type { get; set; }//;
+        public _telephony.TimeConditionsSettingsForwardTypeEnum? Slot1Type { get; set; }//;
         
         // Key: slot2Number Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slot2Number")]
-        public string Slot2Number { get; set; }//;
+        public System.String? Slot2Number { get; set; }//;
         
         // Key: slot2Type Type: telephony.TimeConditionsSettingsForwardTypeEnum FullType: telephony.TimeConditionsSettingsForwardTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slot2Type")]
-        public _telephony.TimeConditionsSettingsForwardTypeEnum Slot2Type { get; set; }//;
+        public _telephony.TimeConditionsSettingsForwardTypeEnum? Slot2Type { get; set; }//;
         
         // Key: slot3Number Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slot3Number")]
-        public string Slot3Number { get; set; }//;
+        public System.String? Slot3Number { get; set; }//;
         
         // Key: slot3Type Type: telephony.TimeConditionsSettingsForwardTypeEnum FullType: telephony.TimeConditionsSettingsForwardTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slot3Type")]
-        public _telephony.TimeConditionsSettingsForwardTypeEnum Slot3Type { get; set; }//;
+        public _telephony.TimeConditionsSettingsForwardTypeEnum? Slot3Type { get; set; }//;
         
         // Key: unavailableNumber Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unavailableNumber")]
-        public string UnavailableNumber { get; set; }//;
+        public System.String? UnavailableNumber { get; set; }//;
         
         // Key: unavailableType Type: telephony.TimeConditionsSettingsForwardTypeEnum FullType: telephony.TimeConditionsSettingsForwardTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unavailableType")]
-        public _telephony.TimeConditionsSettingsForwardTypeEnum UnavailableType { get; set; }//;
+        public _telephony.TimeConditionsSettingsForwardTypeEnum? UnavailableType { get; set; }//;
     }
     
     // Id: Event Namespace: telephony
@@ -2279,11 +2279,11 @@ namespace _telephony {
         
         // Key: emailError Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("emailError")]
-        public string EmailError { get; set; }//;
+        public System.String? EmailError { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: EventToken Namespace: telephony
@@ -2303,7 +2303,7 @@ namespace _telephony {
         
         // Key: notifications Type: telephony.LineNotificationsOptions FullType: telephony.LineNotificationsOptions
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("notifications")]
-        public _telephony.LineNotificationsOptions Notifications { get; set; }//;
+        public _telephony.LineNotificationsOptions? Notifications { get; set; }//;
         
         // Key: offers Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offers")]
@@ -2335,11 +2335,11 @@ namespace _telephony {
         
         // Key: dateEnd Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dateEnd")]
-        public System.DateTime DateEnd { get; set; }//;
+        public System.DateTime? DateEnd { get; set; }//;
         
         // Key: dateStart Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dateStart")]
-        public System.DateTime DateStart { get; set; }//;
+        public System.DateTime? DateStart { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -2402,11 +2402,11 @@ namespace _telephony {
         
         // Key: called Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("called")]
-        public string Called { get; set; }//;
+        public System.String? Called { get; set; }//;
         
         // Key: calling Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("calling")]
-        public string Calling { get; set; }//;
+        public System.String? Calling { get; set; }//;
         
         // Key: consumptionId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("consumptionId")]
@@ -2506,11 +2506,11 @@ namespace _telephony {
         
         // Key: blacklistedNumbers Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("blacklistedNumbers")]
-        public string[] BlacklistedNumbers { get; set; }//;
+        public System.String[]? BlacklistedNumbers { get; set; }//;
         
         // Key: blacklistedTSI Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("blacklistedTSI")]
-        public string[] BlacklistedTSI { get; set; }//;
+        public System.String[]? BlacklistedTSI { get; set; }//;
         
         // Key: callNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callNumber")]
@@ -2522,7 +2522,7 @@ namespace _telephony {
         
         // Key: filteringList Type: telephony.FaxScreenListTypeEnum FullType: telephony.FaxScreenListTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filteringList")]
-        public _telephony.FaxScreenListTypeEnum FilteringList { get; set; }//;
+        public _telephony.FaxScreenListTypeEnum? FilteringList { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
@@ -2530,11 +2530,11 @@ namespace _telephony {
         
         // Key: whitelistedNumbers Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("whitelistedNumbers")]
-        public string[] WhitelistedNumbers { get; set; }//;
+        public System.String[]? WhitelistedNumbers { get; set; }//;
         
         // Key: whitelistedTSI Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("whitelistedTSI")]
-        public string[] WhitelistedTSI { get; set; }//;
+        public System.String[]? WhitelistedTSI { get; set; }//;
     }
     
     // Id: FaxScreenListTypeEnum Namespace: telephony
@@ -2558,11 +2558,11 @@ namespace _telephony {
         
         // Key: default Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("default")]
-        public string @default { get; set; }//;
+        public System.String? @default { get; set; }//;
         
         // Key: function Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
-        public string Function { get; set; }//;
+        public System.String? Function { get; set; }//;
         
         // Key: keyNum Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keyNum")]
@@ -2574,7 +2574,7 @@ namespace _telephony {
         
         // Key: parameter Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("parameter")]
-        public string Parameter { get; set; }//;
+        public System.String? Parameter { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -2594,7 +2594,7 @@ namespace _telephony {
         
         // Key: description Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -2606,7 +2606,7 @@ namespace _telephony {
         
         // Key: url Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: HistoryConsumption Namespace: telephony
@@ -2694,7 +2694,7 @@ namespace _telephony {
         
         // Key: notifications Type: telephony.LineNotificationsOptions FullType: telephony.LineNotificationsOptions
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("notifications")]
-        public _telephony.LineNotificationsOptions Notifications { get; set; }//;
+        public _telephony.LineNotificationsOptions? Notifications { get; set; }//;
         
         // Key: offers Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offers")]
@@ -2744,15 +2744,15 @@ namespace _telephony {
         
         // Key: email Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public string Email { get; set; }//;
+        public System.String? Email { get; set; }//;
         
         // Key: frequency Type: telephony.LineNotificationsLogsFrequencyEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frequency")]
-        public _telephony.LineNotificationsLogsFrequencyEnum Frequency { get; set; }//;
+        public _telephony.LineNotificationsLogsFrequencyEnum? Frequency { get; set; }//;
         
         // Key: sendIfNull Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sendIfNull")]
-        public bool SendIfNull { get; set; }//;
+        public System.Boolean? SendIfNull { get; set; }//;
     }
     
     // Id: LineNotificationsOptions Namespace: telephony
@@ -2760,7 +2760,7 @@ namespace _telephony {
         
         // Key: logs Type: telephony.LineNotificationsLogsOptions FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logs")]
-        public _telephony.LineNotificationsLogsOptions Logs { get; set; }//;
+        public _telephony.LineNotificationsLogsOptions? Logs { get; set; }//;
     }
     
     // Id: LineOffer Namespace: telephony
@@ -2776,7 +2776,7 @@ namespace _telephony {
         
         // Key: price Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("price")]
-        public _order.Price Price { get; set; }//;
+        public _order.Price? Price { get; set; }//;
     }
     
     // Id: LineOffersAndContracts Namespace: telephony
@@ -2959,7 +2959,7 @@ namespace _telephony {
         
         // Key: lockOutCallPassword Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockOutCallPassword")]
-        public string LockOutCallPassword { get; set; }//;
+        public System.String? LockOutCallPassword { get; set; }//;
         
         // Key: recordOutgoingCallsBeta Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordOutgoingCallsBeta")]
@@ -2967,15 +2967,15 @@ namespace _telephony {
         
         // Key: toneOnCallWaitingSoundId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("toneOnCallWaitingSoundId")]
-        public long ToneOnCallWaitingSoundId { get; set; }//;
+        public System.Int64? ToneOnCallWaitingSoundId { get; set; }//;
         
         // Key: toneOnHoldSoundId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("toneOnHoldSoundId")]
-        public long ToneOnHoldSoundId { get; set; }//;
+        public System.Int64? ToneOnHoldSoundId { get; set; }//;
         
         // Key: toneRingbackSoundId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("toneRingbackSoundId")]
-        public long ToneRingbackSoundId { get; set; }//;
+        public System.Int64? ToneRingbackSoundId { get; set; }//;
         
         // Key: voicemailExternalNumber Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("voicemailExternalNumber")]
@@ -2999,7 +2999,7 @@ namespace _telephony {
         
         // Key: fees Type: order.Price FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fees")]
-        public _order.Price Fees { get; set; }//;
+        public _order.Price? Fees { get; set; }//;
         
         // Key: maxline Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxline")]
@@ -3079,7 +3079,7 @@ namespace _telephony {
         
         // Key: partOfPool Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("partOfPool")]
-        public string PartOfPool { get; set; }//;
+        public System.String? PartOfPool { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
@@ -3111,7 +3111,7 @@ namespace _telephony {
         
         // Key: askedCity Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("askedCity")]
-        public string AskedCity { get; set; }//;
+        public System.String? AskedCity { get; set; }//;
         
         // Key: city Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
@@ -3127,7 +3127,7 @@ namespace _telephony {
         
         // Key: matchingCriteria Type: telephony.NumberDetailedZoneMatchingCriteriaEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("matchingCriteria")]
-        public _telephony.NumberDetailedZoneMatchingCriteriaEnum MatchingCriteria { get; set; }//;
+        public _telephony.NumberDetailedZoneMatchingCriteriaEnum? MatchingCriteria { get; set; }//;
         
         // Key: number Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
@@ -3143,7 +3143,7 @@ namespace _telephony {
         
         // Key: zipCode Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zipCode")]
-        public string ZipCode { get; set; }//;
+        public System.String? ZipCode { get; set; }//;
         
         // Key: zneList Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("zneList")]
@@ -3325,11 +3325,11 @@ namespace _telephony {
         
         // Key: color Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("color")]
-        public string Color { get; set; }//;
+        public System.String? Color { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -3385,11 +3385,11 @@ namespace _telephony {
         
         // Key: schedulerCategory Type: telephony.SchedulerCategoryEnum FullType: telephony.SchedulerCategoryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("schedulerCategory")]
-        public _telephony.SchedulerCategoryEnum SchedulerCategory { get; set; }//;
+        public _telephony.SchedulerCategoryEnum? SchedulerCategory { get; set; }//;
         
         // Key: screenListType Type: telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum FullType: telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("screenListType")]
-        public _telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum ScreenListType { get; set; }//;
+        public _telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum? ScreenListType { get; set; }//;
     }
     
     // Id: OvhPabxDialplanExtensionConditionScreenList Namespace: telephony
@@ -3397,7 +3397,7 @@ namespace _telephony {
         
         // Key: callerIdNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callerIdNumber")]
-        public string CallerIdNumber { get; set; }//;
+        public System.String? CallerIdNumber { get; set; }//;
         
         // Key: conditionId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditionId")]
@@ -3405,11 +3405,11 @@ namespace _telephony {
         
         // Key: destinationNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destinationNumber")]
-        public string DestinationNumber { get; set; }//;
+        public System.String? DestinationNumber { get; set; }//;
         
         // Key: screenListType Type: telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum FullType: telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("screenListType")]
-        public _telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum ScreenListType { get; set; }//;
+        public _telephony.OvhPabxDialplanExtensionConditionScreenListTypeEnum? ScreenListType { get; set; }//;
     }
     
     // Id: OvhPabxDialplanExtensionConditionScreenListTypeEnum Namespace: telephony
@@ -3482,7 +3482,7 @@ namespace _telephony {
         
         // Key: actionParam Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("actionParam")]
-        public string ActionParam { get; set; }//;
+        public System.String? ActionParam { get; set; }//;
         
         // Key: negativeAction Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("negativeAction")]
@@ -3552,11 +3552,11 @@ namespace _telephony {
         
         // Key: crmUrlTemplate Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("crmUrlTemplate")]
-        public string CrmUrlTemplate { get; set; }//;
+        public System.String? CrmUrlTemplate { get; set; }//;
         
         // Key: g729 Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("g729")]
-        public bool G729 { get; set; }//;
+        public System.Boolean? G729 { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -3576,11 +3576,11 @@ namespace _telephony {
         
         // Key: breakStatus Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("breakStatus")]
-        public long BreakStatus { get; set; }//;
+        public System.Int64? BreakStatus { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: number Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("number")]
@@ -3700,35 +3700,35 @@ namespace _telephony {
         
         // Key: actionOnClosure Type: telephony.OvhPabxQueueActionEnum FullType: telephony.OvhPabxQueueActionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("actionOnClosure")]
-        public _telephony.OvhPabxQueueActionEnum ActionOnClosure { get; set; }//;
+        public _telephony.OvhPabxQueueActionEnum? ActionOnClosure { get; set; }//;
         
         // Key: actionOnClosureParam Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("actionOnClosureParam")]
-        public string ActionOnClosureParam { get; set; }//;
+        public System.String? ActionOnClosureParam { get; set; }//;
         
         // Key: actionOnOverflow Type: telephony.OvhPabxQueueActionEnum FullType: telephony.OvhPabxQueueActionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("actionOnOverflow")]
-        public _telephony.OvhPabxQueueActionEnum ActionOnOverflow { get; set; }//;
+        public _telephony.OvhPabxQueueActionEnum? ActionOnOverflow { get; set; }//;
         
         // Key: actionOnOverflowParam Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("actionOnOverflowParam")]
-        public string ActionOnOverflowParam { get; set; }//;
+        public System.String? ActionOnOverflowParam { get; set; }//;
         
         // Key: askForRecordDisabling Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("askForRecordDisabling")]
-        public bool AskForRecordDisabling { get; set; }//;
+        public System.Boolean? AskForRecordDisabling { get; set; }//;
         
         // Key: confirmKey Type: telephony.OvhPabxIvrMenuKeyEnum FullType: telephony.OvhPabxIvrMenuKeyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("confirmKey")]
-        public _telephony.OvhPabxIvrMenuKeyEnum ConfirmKey { get; set; }//;
+        public _telephony.OvhPabxIvrMenuKeyEnum? ConfirmKey { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: followCallForwards Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("followCallForwards")]
-        public bool FollowCallForwards { get; set; }//;
+        public System.Boolean? FollowCallForwards { get; set; }//;
         
         // Key: maxMember Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxMember")]
@@ -3744,19 +3744,19 @@ namespace _telephony {
         
         // Key: record Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("record")]
-        public bool Record { get; set; }//;
+        public System.Boolean? Record { get; set; }//;
         
         // Key: recordDisablingDigit Type: telephony.OvhPabxHuntingQueueRecordDisablingDigitEnum FullType: telephony.OvhPabxHuntingQueueRecordDisablingDigitEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordDisablingDigit")]
-        public _telephony.OvhPabxHuntingQueueRecordDisablingDigitEnum RecordDisablingDigit { get; set; }//;
+        public _telephony.OvhPabxHuntingQueueRecordDisablingDigitEnum? RecordDisablingDigit { get; set; }//;
         
         // Key: recordDisablingLanguage Type: telephony.OvhPabxHuntingQueueRecordDisablingLanguageEnum FullType: telephony.OvhPabxHuntingQueueRecordDisablingLanguageEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordDisablingLanguage")]
-        public _telephony.OvhPabxHuntingQueueRecordDisablingLanguageEnum RecordDisablingLanguage { get; set; }//;
+        public _telephony.OvhPabxHuntingQueueRecordDisablingLanguageEnum? RecordDisablingLanguage { get; set; }//;
         
         // Key: soundOnHold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("soundOnHold")]
-        public long SoundOnHold { get; set; }//;
+        public System.Int64? SoundOnHold { get; set; }//;
         
         // Key: strategy Type: telephony.OvhPabxHuntingQueueStrategyEnum FullType: telephony.OvhPabxHuntingQueueStrategyEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("strategy")]
@@ -3772,7 +3772,7 @@ namespace _telephony {
         
         // Key: answered Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("answered")]
-        public System.DateTime Answered { get; set; }//;
+        public System.DateTime? Answered { get; set; }//;
         
         // Key: begin Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("begin")]
@@ -3792,7 +3792,7 @@ namespace _telephony {
         
         // Key: end Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("end")]
-        public System.DateTime End { get; set; }//;
+        public System.DateTime? End { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -3800,7 +3800,7 @@ namespace _telephony {
         
         // Key: onHold Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("onHold")]
-        public bool OnHold { get; set; }//;
+        public System.Boolean? OnHold { get; set; }//;
         
         // Key: queue Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queue")]
@@ -3974,11 +3974,11 @@ namespace _telephony {
         
         // Key: greetSound Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("greetSound")]
-        public long GreetSound { get; set; }//;
+        public System.Int64? GreetSound { get; set; }//;
         
         // Key: greetSoundTts Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("greetSoundTts")]
-        public long GreetSoundTts { get; set; }//;
+        public System.Int64? GreetSoundTts { get; set; }//;
         
         // Key: interDigitTimeout Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("interDigitTimeout")]
@@ -3986,11 +3986,11 @@ namespace _telephony {
         
         // Key: invalidSound Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("invalidSound")]
-        public long InvalidSound { get; set; }//;
+        public System.Int64? InvalidSound { get; set; }//;
         
         // Key: invalidSoundTts Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("invalidSoundTts")]
-        public long InvalidSoundTts { get; set; }//;
+        public System.Int64? InvalidSoundTts { get; set; }//;
         
         // Key: menuId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("menuId")]
@@ -4044,11 +4044,11 @@ namespace _telephony {
         
         // Key: agent Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("agent")]
-        public string Agent { get; set; }//;
+        public System.String? Agent { get; set; }//;
         
         // Key: callEnd Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callEnd")]
-        public System.DateTime CallEnd { get; set; }//;
+        public System.DateTime? CallEnd { get; set; }//;
         
         // Key: callStart Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("callStart")]
@@ -4064,7 +4064,7 @@ namespace _telephony {
         
         // Key: destinationNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destinationNumber")]
-        public string DestinationNumber { get; set; }//;
+        public System.String? DestinationNumber { get; set; }//;
         
         // Key: duration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
@@ -4158,7 +4158,7 @@ namespace _telephony {
         
         // Key: mgcpIpRestriction Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mgcpIpRestriction")]
-        public string MgcpIpRestriction { get; set; }//;
+        public System.String? MgcpIpRestriction { get; set; }//;
         
         // Key: phoneConfiguration Type: telephony.PhoneConfigurationProperty[] FullType: telephony.PhoneConfigurationProperty[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phoneConfiguration")]
@@ -4170,7 +4170,7 @@ namespace _telephony {
         
         // Key: userPassword Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userPassword")]
-        public string UserPassword { get; set; }//;
+        public System.String? UserPassword { get; set; }//;
     }
     
     // Id: PhoneConfigurationLevelEnum Namespace: telephony
@@ -4188,43 +4188,43 @@ namespace _telephony {
         
         // Key: default Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("default")]
-        public string @default { get; set; }//;
+        public System.String? @default { get; set; }//;
         
         // Key: description Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: enum Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enum")]
-        public string[] @enum { get; set; }//;
+        public System.String[]? @enum { get; set; }//;
         
         // Key: group Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
-        public string Group { get; set; }//;
+        public System.String? Group { get; set; }//;
         
         // Key: level Type: telephony.PhoneConfigurationLevelEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("level")]
-        public _telephony.PhoneConfigurationLevelEnum Level { get; set; }//;
+        public _telephony.PhoneConfigurationLevelEnum? Level { get; set; }//;
         
         // Key: maxlength Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxlength")]
-        public long Maxlength { get; set; }//;
+        public System.Int64? Maxlength { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
+        public System.String? Name { get; set; }//;
         
         // Key: rangeValue Type: complexType.Range<long> FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rangeValue")]
-        public _complexType.Range<long> RangeValue { get; set; }//;
+        public _complexType.Range<long>? RangeValue { get; set; }//;
         
         // Key: type Type: telephony.PhoneConfigurationTypeEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public _telephony.PhoneConfigurationTypeEnum Type { get; set; }//;
+        public _telephony.PhoneConfigurationTypeEnum? Type { get; set; }//;
         
         // Key: value Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: PhoneConfigurationTypeEnum Namespace: telephony
@@ -4254,7 +4254,7 @@ namespace _telephony {
         
         // Key: login Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("login")]
-        public string Login { get; set; }//;
+        public System.String? Login { get; set; }//;
         
         // Key: password Type: password FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
@@ -4290,11 +4290,11 @@ namespace _telephony {
         
         // Key: homeMobile Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("homeMobile")]
-        public string HomeMobile { get; set; }//;
+        public System.String? HomeMobile { get; set; }//;
         
         // Key: homePhone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("homePhone")]
-        public string HomePhone { get; set; }//;
+        public System.String? HomePhone { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -4310,11 +4310,11 @@ namespace _telephony {
         
         // Key: workMobile Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("workMobile")]
-        public string WorkMobile { get; set; }//;
+        public System.String? WorkMobile { get; set; }//;
         
         // Key: workPhone Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("workPhone")]
-        public string WorkPhone { get; set; }//;
+        public System.String? WorkPhone { get; set; }//;
     }
     
     // Id: PhonebookMaster Namespace: telephony
@@ -4346,7 +4346,7 @@ namespace _telephony {
         
         // Key: desiredExecutionDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("desiredExecutionDate")]
-        public System.DateTime DesiredExecutionDate { get; set; }//;
+        public System.DateTime? DesiredExecutionDate { get; set; }//;
         
         // Key: error Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
@@ -4362,7 +4362,7 @@ namespace _telephony {
         
         // Key: lineToRedirectTo Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lineToRedirectTo")]
-        public string LineToRedirectTo { get; set; }//;
+        public System.String? LineToRedirectTo { get; set; }//;
         
         // Key: numbersList Type: string[] FullType: string[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("numbersList")]
@@ -4382,7 +4382,7 @@ namespace _telephony {
         
         // Key: rio Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rio")]
-        public string Rio { get; set; }//;
+        public System.String? Rio { get; set; }//;
     }
     
     // Id: PortabilityCountryEnum Namespace: telephony
@@ -4403,7 +4403,7 @@ namespace _telephony {
         
         // Key: building Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("building")]
-        public string Building { get; set; }//;
+        public System.String? Building { get; set; }//;
         
         // Key: city Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
@@ -4411,11 +4411,11 @@ namespace _telephony {
         
         // Key: door Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("door")]
-        public string Door { get; set; }//;
+        public System.String? Door { get; set; }//;
         
         // Key: floor Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("floor")]
-        public string Floor { get; set; }//;
+        public System.String? Floor { get; set; }//;
         
         // Key: name Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -4423,11 +4423,11 @@ namespace _telephony {
         
         // Key: siret Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("siret")]
-        public string Siret { get; set; }//;
+        public System.String? Siret { get; set; }//;
         
         // Key: stair Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stair")]
-        public string Stair { get; set; }//;
+        public System.String? Stair { get; set; }//;
         
         // Key: streetName Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetName")]
@@ -4447,7 +4447,7 @@ namespace _telephony {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: documentId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("documentId")]
@@ -4463,7 +4463,7 @@ namespace _telephony {
         
         // Key: putUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("putUrl")]
-        public string PutUrl { get; set; }//;
+        public System.String? PutUrl { get; set; }//;
         
         // Key: size Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
@@ -4487,11 +4487,11 @@ namespace _telephony {
         
         // Key: description Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: doneDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: duration Type: telephony.PortabilityStepDuration FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
@@ -4499,7 +4499,7 @@ namespace _telephony {
         
         // Key: infos Type: telephony.PortabilityStepInfos FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("infos")]
-        public _telephony.PortabilityStepInfos Infos { get; set; }//;
+        public _telephony.PortabilityStepInfos? Infos { get; set; }//;
         
         // Key: name Type: telephony.PortabilityStepNameEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -4543,15 +4543,15 @@ namespace _telephony {
         
         // Key: lastProposedDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastProposedDate")]
-        public System.DateTime LastProposedDate { get; set; }//;
+        public System.DateTime? LastProposedDate { get; set; }//;
         
         // Key: reason Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reason")]
-        public string Reason { get; set; }//;
+        public System.String? Reason { get; set; }//;
         
         // Key: reasonType Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reasonType")]
-        public string ReasonType { get; set; }//;
+        public System.String? ReasonType { get; set; }//;
     }
     
     // Id: PortabilityStepNameEnum Namespace: telephony
@@ -4630,11 +4630,11 @@ namespace _telephony {
         
         // Key: called Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("called")]
-        public string Called { get; set; }//;
+        public System.String? Called { get; set; }//;
         
         // Key: calling Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("calling")]
-        public string Calling { get; set; }//;
+        public System.String? Calling { get; set; }//;
         
         // Key: consumptionId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("consumptionId")]
@@ -4662,7 +4662,7 @@ namespace _telephony {
         
         // Key: hangupNature Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hangupNature")]
-        public string HangupNature { get; set; }//;
+        public System.String? HangupNature { get; set; }//;
         
         // Key: planType Type: telephony.VoiceConsumptionPlanTypeEnum FullType: telephony.VoiceConsumptionPlanTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planType")]
@@ -4682,7 +4682,7 @@ namespace _telephony {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
@@ -4794,7 +4794,7 @@ namespace _telephony {
         
         // Key: destination Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("destination")]
-        public string Destination { get; set; }//;
+        public System.String? Destination { get; set; }//;
         
         // Key: featureType Type: telephony.TypeEnum FullType: telephony.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("featureType")]
@@ -4818,7 +4818,7 @@ namespace _telephony {
         
         // Key: domain Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
-        public string Domain { get; set; }//;
+        public System.String? Domain { get; set; }//;
         
         // Key: ip Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
@@ -4826,19 +4826,19 @@ namespace _telephony {
         
         // Key: localIp Type: ip FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("localIp")]
-        public string LocalIp { get; set; }//;
+        public System.String? LocalIp { get; set; }//;
         
         // Key: localPort Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("localPort")]
-        public long LocalPort { get; set; }//;
+        public System.Int64? LocalPort { get; set; }//;
         
         // Key: port Type: long FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
-        public long Port { get; set; }//;
+        public System.Int64? Port { get; set; }//;
         
         // Key: userAgent Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAgent")]
-        public string UserAgent { get; set; }//;
+        public System.String? UserAgent { get; set; }//;
     }
     
     // Id: RepaymentConsumption Namespace: telephony
@@ -4846,11 +4846,11 @@ namespace _telephony {
         
         // Key: called Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("called")]
-        public string Called { get; set; }//;
+        public System.String? Called { get; set; }//;
         
         // Key: calling Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("calling")]
-        public string Calling { get; set; }//;
+        public System.String? Calling { get; set; }//;
         
         // Key: consumptionId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("consumptionId")]
@@ -4858,27 +4858,27 @@ namespace _telephony {
         
         // Key: creationDatetime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDatetime")]
-        public System.DateTime CreationDatetime { get; set; }//;
+        public System.DateTime? CreationDatetime { get; set; }//;
         
         // Key: dialed Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dialed")]
-        public string Dialed { get; set; }//;
+        public System.String? Dialed { get; set; }//;
         
         // Key: duration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
-        public long Duration { get; set; }//;
+        public System.Int64? Duration { get; set; }//;
         
         // Key: operator Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operator")]
-        public string @operator { get; set; }//;
+        public System.String? @operator { get; set; }//;
         
         // Key: price Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("price")]
-        public double Price { get; set; }//;
+        public System.Double? Price { get; set; }//;
         
         // Key: repayable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("repayable")]
-        public bool Repayable { get; set; }//;
+        public System.Boolean? Repayable { get; set; }//;
     }
     
     // Id: ResellerPanelPasswordUpdateStatusEnum Namespace: telephony
@@ -4906,7 +4906,7 @@ namespace _telephony {
         
         // Key: passwordUpdateStatus Type: telephony.ResellerPanelPasswordUpdateStatusEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordUpdateStatus")]
-        public _telephony.ResellerPanelPasswordUpdateStatusEnum PasswordUpdateStatus { get; set; }//;
+        public _telephony.ResellerPanelPasswordUpdateStatusEnum? PasswordUpdateStatus { get; set; }//;
     }
     
     // Id: ResetPhoneCodeInfo Namespace: telephony
@@ -4914,15 +4914,15 @@ namespace _telephony {
         
         // Key: activationCode Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("activationCode")]
-        public string ActivationCode { get; set; }//;
+        public System.String? ActivationCode { get; set; }//;
         
         // Key: keyBook Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keyBook")]
-        public string KeyBook { get; set; }//;
+        public System.String? KeyBook { get; set; }//;
         
         // Key: serverURL Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serverURL")]
-        public string ServerURL { get; set; }//;
+        public System.String? ServerURL { get; set; }//;
     }
     
     // Id: ResetPhoneInfo Namespace: telephony
@@ -4930,7 +4930,7 @@ namespace _telephony {
         
         // Key: resetCodeInfo Type: telephony.ResetPhoneCodeInfo FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resetCodeInfo")]
-        public _telephony.ResetPhoneCodeInfo ResetCodeInfo { get; set; }//;
+        public _telephony.ResetPhoneCodeInfo? ResetCodeInfo { get; set; }//;
         
         // Key: resetPhoneMethod Type: telephony.ResetPhoneMethodEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resetPhoneMethod")]
@@ -4968,11 +4968,11 @@ namespace _telephony {
         
         // Key: newMerchandise Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("newMerchandise")]
-        public string NewMerchandise { get; set; }//;
+        public System.String? NewMerchandise { get; set; }//;
         
         // Key: offerTypeNew Type: telephony.RmaOfferTypeEnum FullType: telephony.RmaOfferTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerTypeNew")]
-        public _telephony.RmaOfferTypeEnum OfferTypeNew { get; set; }//;
+        public _telephony.RmaOfferTypeEnum? OfferTypeNew { get; set; }//;
         
         // Key: offerTypeOld Type: telephony.RmaOfferTypeEnum FullType: telephony.RmaOfferTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offerTypeOld")]
@@ -4984,7 +4984,7 @@ namespace _telephony {
         
         // Key: receptionDatetime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("receptionDatetime")]
-        public System.DateTime ReceptionDatetime { get; set; }//;
+        public System.DateTime? ReceptionDatetime { get; set; }//;
         
         // Key: shippingContact Type: telephony.Contact FullType: telephony.Contact
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shippingContact")]
@@ -5000,7 +5000,7 @@ namespace _telephony {
         
         // Key: terminationDatetime Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("terminationDatetime")]
-        public System.DateTime TerminationDatetime { get; set; }//;
+        public System.DateTime? TerminationDatetime { get; set; }//;
         
         // Key: type Type: telephony.RmaTypeEnum FullType: telephony.RmaTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -5083,11 +5083,11 @@ namespace _telephony {
         
         // Key: doneDate Type: datetime FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime DoneDate { get; set; }//;
+        public System.DateTime? DoneDate { get; set; }//;
         
         // Key: infos Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("infos")]
-        public string Infos { get; set; }//;
+        public System.String? Infos { get; set; }//;
         
         // Key: name Type: telephony.RmaStepNameEnum FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -5179,7 +5179,7 @@ namespace _telephony {
         
         // Key: typology Type: telephony.portability.SpecialNumberCategoryEnum FullType: telephony.portability.SpecialNumberCategoryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("typology")]
-        public _telephony_portability.SpecialNumberCategoryEnum Typology { get; set; }//;
+        public _telephony_portability.SpecialNumberCategoryEnum? Typology { get; set; }//;
     }
     
     // Id: Scheduler Namespace: telephony
@@ -5227,7 +5227,7 @@ namespace _telephony {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: title Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
@@ -5462,7 +5462,7 @@ namespace _telephony {
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
+        public System.String? Description { get; set; }//;
         
         // Key: filename Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filename")]
@@ -5478,7 +5478,7 @@ namespace _telephony {
         
         // Key: putUrl Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("putUrl")]
-        public string PutUrl { get; set; }//;
+        public System.String? PutUrl { get; set; }//;
         
         // Key: size Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
@@ -5529,7 +5529,7 @@ namespace _telephony {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
@@ -5541,7 +5541,7 @@ namespace _telephony {
         
         // Key: billingAccount Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("billingAccount")]
-        public string BillingAccount { get; set; }//;
+        public System.String? BillingAccount { get; set; }//;
         
         // Key: domain Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
@@ -5570,7 +5570,7 @@ namespace _telephony {
         
         // Key: associatedDeviceMac Type: macAddress FullType: macAddress
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("associatedDeviceMac")]
-        public string AssociatedDeviceMac { get; set; }//;
+        public System.String? AssociatedDeviceMac { get; set; }//;
         
         // Key: country Type: telephony.ServiceNumberCountryEnum FullType: telephony.ServiceNumberCountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("country")]
@@ -5726,7 +5726,7 @@ namespace _telephony {
         
         // Key: timeout Type: telephony.TimeConditionsTimeoutEnum FullType: telephony.TimeConditionsTimeoutEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeout")]
-        public _telephony.TimeConditionsTimeoutEnum Timeout { get; set; }//;
+        public _telephony.TimeConditionsTimeoutEnum? Timeout { get; set; }//;
         
         // Key: unavailableNumber Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unavailableNumber")]
@@ -5863,7 +5863,7 @@ namespace _telephony {
         
         // Key: value Type: double FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public double Value { get; set; }//;
+        public System.Double? Value { get; set; }//;
     }
     
     // Id: TokenExpirationEnum Namespace: telephony
@@ -5980,7 +5980,7 @@ namespace _telephony {
         
         // Key: validatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("validatedAt")]
-        public System.DateTime ValidatedAt { get; set; }//;
+        public System.DateTime? ValidatedAt { get; set; }//;
     }
     
     // Id: TrunkExternalDisplayedNumberStatusEnum Namespace: telephony
@@ -6122,11 +6122,11 @@ namespace _telephony {
         
         // Key: called Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("called")]
-        public string Called { get; set; }//;
+        public System.String? Called { get; set; }//;
         
         // Key: calling Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("calling")]
-        public string Calling { get; set; }//;
+        public System.String? Calling { get; set; }//;
         
         // Key: consumptionId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("consumptionId")]
@@ -6150,7 +6150,7 @@ namespace _telephony {
         
         // Key: dialed Type: phoneNumber FullType: phoneNumber
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dialed")]
-        public string Dialed { get; set; }//;
+        public System.String? Dialed { get; set; }//;
         
         // Key: duration Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("duration")]
@@ -6158,7 +6158,7 @@ namespace _telephony {
         
         // Key: hangupNature Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hangupNature")]
-        public string HangupNature { get; set; }//;
+        public System.String? HangupNature { get; set; }//;
         
         // Key: planType Type: telephony.VoiceConsumptionPlanTypeEnum FullType: telephony.VoiceConsumptionPlanTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("planType")]

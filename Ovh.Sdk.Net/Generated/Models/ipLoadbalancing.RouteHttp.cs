@@ -19,11 +19,11 @@ namespace _ipLoadbalancing_RouteHttp {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: frontendId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("frontendId")]
-        public long FrontendId { get; set; }//;
+        public System.Int64? FrontendId { get; set; }//;
         
         // Key: routeId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("routeId")]

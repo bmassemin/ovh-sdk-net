@@ -34,27 +34,27 @@ namespace _domain_configurations {
         
         // Key: audience Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("audience")]
-        public string Audience { get; set; }//;
+        public System.String? Audience { get; set; }//;
         
         // Key: authInfo Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("authInfo")]
-        public string AuthInfo { get; set; }//;
+        public System.String? AuthInfo { get; set; }//;
         
         // Key: isFor Type: domain.IsForEnum[] FullType: domain.IsForEnum[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isFor")]
-        public _domain.IsForEnum[] IsFor { get; set; }//;
+        public _domain.IsForEnum[]? IsFor { get; set; }//;
         
         // Key: otherPurpose Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("otherPurpose")]
-        public string OtherPurpose { get; set; }//;
+        public System.String? OtherPurpose { get; set; }//;
         
         // Key: reason Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reason")]
-        public string Reason { get; set; }//;
+        public System.String? Reason { get; set; }//;
         
         // Key: represent Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("represent")]
-        public string Represent { get; set; }//;
+        public System.String? Represent { get; set; }//;
     }
     
     // Id: CustomFieldsUpdatePayload Namespace: domain.configurations
@@ -70,7 +70,7 @@ namespace _domain_configurations {
         
         // Key: status Type: domain.configurations.ObfuscationStatusEnum FullType: domain.configurations.ObfuscationStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _domain_configurations.ObfuscationStatusEnum Status { get; set; }//;
+        public _domain_configurations.ObfuscationStatusEnum? Status { get; set; }//;
         
         // Key: type Type: domain.configurations.ContactTypeEnum FullType: domain.configurations.ContactTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]

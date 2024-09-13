@@ -35,11 +35,11 @@ namespace _order_upgrade {
         
         // Key: operation Type: order.upgrade.Operation FullType: order.upgrade.Operation
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operation")]
-        public _order_upgrade.Operation Operation { get; set; }//;
+        public _order_upgrade.Operation? Operation { get; set; }//;
         
         // Key: order Type: order.Order FullType: order.Order
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("order")]
-        public _order.Order Order { get; set; }//;
+        public _order.Order? Order { get; set; }//;
     }
     
     // Id: OperationProduct Namespace: order.upgrade

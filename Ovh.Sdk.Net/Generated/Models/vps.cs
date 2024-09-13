@@ -31,7 +31,7 @@ namespace _vps {
         
         // Key: schedule Type: time FullType: time
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("schedule")]
-        public System.TimeOnly Schedule { get; set; }//;
+        public System.TimeOnly? Schedule { get; set; }//;
         
         // Key: state Type: vps.BackupStateEnum FullType: vps.BackupStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -47,11 +47,11 @@ namespace _vps {
         
         // Key: quota Type: complexType.UnitAndValue_long FullType: complexType.UnitAndValue_long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
-        public _complexType.UnitAndValue_long Quota { get; set; }//;
+        public _complexType.UnitAndValue_long? Quota { get; set; }//;
         
         // Key: readOnlyDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readOnlyDate")]
-        public System.DateTime ReadOnlyDate { get; set; }//;
+        public System.DateTime? ReadOnlyDate { get; set; }//;
         
         // Key: type Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -59,7 +59,7 @@ namespace _vps {
         
         // Key: usage Type: complexType.UnitAndValue_long FullType: complexType.UnitAndValue_long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usage")]
-        public _complexType.UnitAndValue_long Usage { get; set; }//;
+        public _complexType.UnitAndValue_long? Usage { get; set; }//;
     }
     
     // Id: BackupStateEnum Namespace: vps
@@ -101,15 +101,15 @@ namespace _vps {
         
         // Key: lowFreeSpaceThreshold Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lowFreeSpaceThreshold")]
-        public long LowFreeSpaceThreshold { get; set; }//;
+        public System.Int64? LowFreeSpaceThreshold { get; set; }//;
         
         // Key: monitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoring")]
-        public bool Monitoring { get; set; }//;
+        public System.Boolean? Monitoring { get; set; }//;
         
         // Key: serviceName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
-        public string ServiceName { get; set; }//;
+        public System.String? ServiceName { get; set; }//;
         
         // Key: size Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
@@ -153,7 +153,7 @@ namespace _vps {
         
         // Key: gateway Type: ip FullType: ip
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gateway")]
-        public string Gateway { get; set; }//;
+        public System.String? Gateway { get; set; }//;
         
         // Key: geolocation Type: vps.ip.GeolocationEnum FullType: vps.ip.GeolocationEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("geolocation")]
@@ -165,11 +165,11 @@ namespace _vps {
         
         // Key: macAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("macAddress")]
-        public string MacAddress { get; set; }//;
+        public System.String? MacAddress { get; set; }//;
         
         // Key: reverse Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("reverse")]
-        public string Reverse { get; set; }//;
+        public System.String? Reverse { get; set; }//;
         
         // Key: type Type: vps.ip.TypeEnum FullType: vps.ip.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -272,7 +272,7 @@ namespace _vps {
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
     }
     
     // Id: Software Namespace: vps
@@ -494,11 +494,11 @@ namespace _vps {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: keymap Type: vps.VpsKeymapEnum FullType: vps.VpsKeymapEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keymap")]
-        public _vps.VpsKeymapEnum Keymap { get; set; }//;
+        public _vps.VpsKeymapEnum? Keymap { get; set; }//;
         
         // Key: memoryLimit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memoryLimit")]
@@ -526,7 +526,7 @@ namespace _vps {
         
         // Key: slaMonitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slaMonitoring")]
-        public bool SlaMonitoring { get; set; }//;
+        public System.Boolean? SlaMonitoring { get; set; }//;
         
         // Key: state Type: vps.VpsStateEnum FullType: vps.VpsStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -550,15 +550,15 @@ namespace _vps {
         
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
+        public System.String? DisplayName { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: keymap Type: vps.VpsKeymapEnum FullType: vps.VpsKeymapEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keymap")]
-        public _vps.VpsKeymapEnum Keymap { get; set; }//;
+        public _vps.VpsKeymapEnum? Keymap { get; set; }//;
         
         // Key: memoryLimit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memoryLimit")]
@@ -586,7 +586,7 @@ namespace _vps {
         
         // Key: slaMonitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("slaMonitoring")]
-        public bool SlaMonitoring { get; set; }//;
+        public System.Boolean? SlaMonitoring { get; set; }//;
         
         // Key: state Type: vps.VpsStateEnum FullType: vps.VpsStateEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
@@ -835,7 +835,7 @@ namespace _vps {
         
         // Key: value Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public double Value { get; set; }//;
+        public System.Double? Value { get; set; }//;
     }
     
     // Id: VpsVersionEnum Namespace: vps

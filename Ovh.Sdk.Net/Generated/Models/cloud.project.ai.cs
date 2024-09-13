@@ -47,7 +47,7 @@ namespace _cloud_project_ai {
         
         // Key: endpoint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endpoint")]
-        public string Endpoint { get; set; }//;
+        public System.String? Endpoint { get; set; }//;
         
         // Key: owner Type: cloud.project.ai.DataStoreOwnerEnum FullType: cloud.project.ai.DataStoreOwnerEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("owner")]
@@ -63,27 +63,27 @@ namespace _cloud_project_ai {
         
         // Key: accessKey Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("accessKey")]
-        public string AccessKey { get; set; }//;
+        public System.String? AccessKey { get; set; }//;
         
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public string Region { get; set; }//;
+        public System.String? Region { get; set; }//;
         
         // Key: s3Url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("s3Url")]
-        public string S3Url { get; set; }//;
+        public System.String? S3Url { get; set; }//;
         
         // Key: secretKey Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("secretKey")]
-        public string SecretKey { get; set; }//;
+        public System.String? SecretKey { get; set; }//;
         
         // Key: token Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("token")]
-        public string Token { get; set; }//;
+        public System.String? Token { get; set; }//;
         
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
+        public System.String? Url { get; set; }//;
     }
     
     // Id: DataStoreCredentialsInput Namespace: cloud.project.ai
@@ -91,11 +91,11 @@ namespace _cloud_project_ai {
         
         // Key: git Type: cloud.project.ai.GitCredentialsInput FullType: cloud.project.ai.GitCredentialsInput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("git")]
-        public _cloud_project_ai.GitCredentialsInput Git { get; set; }//;
+        public _cloud_project_ai.GitCredentialsInput? Git { get; set; }//;
         
         // Key: s3 Type: cloud.project.ai.S3CredentialsInput FullType: cloud.project.ai.S3CredentialsInput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("s3")]
-        public _cloud_project_ai.S3CredentialsInput S3 { get; set; }//;
+        public _cloud_project_ai.S3CredentialsInput? S3 { get; set; }//;
     }
     
     // Id: DataStoreInput Namespace: cloud.project.ai
@@ -119,7 +119,7 @@ namespace _cloud_project_ai {
         
         // Key: prefix Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public string Prefix { get; set; }//;
+        public System.String? Prefix { get; set; }//;
         
         // Key: type Type: cloud.project.ai.DataStoreTypeEnum FullType: cloud.project.ai.DataStoreTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -158,7 +158,7 @@ namespace _cloud_project_ai {
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: GenericResponse Namespace: cloud.project.ai
@@ -174,11 +174,11 @@ namespace _cloud_project_ai {
         
         // Key: basicAuth Type: cloud.project.ai.BasicAuthCredentialsInput FullType: cloud.project.ai.BasicAuthCredentialsInput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("basicAuth")]
-        public _cloud_project_ai.BasicAuthCredentialsInput BasicAuth { get; set; }//;
+        public _cloud_project_ai.BasicAuthCredentialsInput? BasicAuth { get; set; }//;
         
         // Key: sshKeypair Type: cloud.project.ai.SshCredentialsInput FullType: cloud.project.ai.SshCredentialsInput
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sshKeypair")]
-        public _cloud_project_ai.SshCredentialsInput SshKeypair { get; set; }//;
+        public _cloud_project_ai.SshCredentialsInput? SshKeypair { get; set; }//;
     }
     
     // Id: Info Namespace: cloud.project.ai
@@ -365,7 +365,7 @@ namespace _cloud_project_ai {
         
         // Key: value Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
-        public string Value { get; set; }//;
+        public System.String? Value { get; set; }//;
     }
     
     // Id: LogLine Namespace: cloud.project.ai
@@ -373,11 +373,11 @@ namespace _cloud_project_ai {
         
         // Key: content Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("content")]
-        public string Content { get; set; }//;
+        public System.String? Content { get; set; }//;
         
         // Key: timestamp Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("timestamp")]
-        public System.DateTime Timestamp { get; set; }//;
+        public System.DateTime? Timestamp { get; set; }//;
     }
     
     // Id: Logs Namespace: cloud.project.ai
@@ -385,7 +385,7 @@ namespace _cloud_project_ai {
         
         // Key: lastActivity Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastActivity")]
-        public System.DateTime LastActivity { get; set; }//;
+        public System.DateTime? LastActivity { get; set; }//;
         
         // Key: logs Type: cloud.project.ai.LogLine[] FullType: cloud.project.ai.LogLine[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("logs")]
@@ -423,15 +423,15 @@ namespace _cloud_project_ai {
         
         // Key: gpuBrand Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpuBrand")]
-        public string GpuBrand { get; set; }//;
+        public System.String? GpuBrand { get; set; }//;
         
         // Key: gpuMemory Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpuMemory")]
-        public long GpuMemory { get; set; }//;
+        public System.Int64? GpuMemory { get; set; }//;
         
         // Key: gpuModel Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpuModel")]
-        public string GpuModel { get; set; }//;
+        public System.String? GpuModel { get; set; }//;
         
         // Key: memory Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memory")]
@@ -451,43 +451,43 @@ namespace _cloud_project_ai {
         
         // Key: cpu Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cpu")]
-        public long Cpu { get; set; }//;
+        public System.Int64? Cpu { get; set; }//;
         
         // Key: ephemeralStorage Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ephemeralStorage")]
-        public long EphemeralStorage { get; set; }//;
+        public System.Int64? EphemeralStorage { get; set; }//;
         
         // Key: flavor Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavor")]
-        public string Flavor { get; set; }//;
+        public System.String? Flavor { get; set; }//;
         
         // Key: gpu Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpu")]
-        public long Gpu { get; set; }//;
+        public System.Int64? Gpu { get; set; }//;
         
         // Key: gpuBrand Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpuBrand")]
-        public string GpuBrand { get; set; }//;
+        public System.String? GpuBrand { get; set; }//;
         
         // Key: gpuMemory Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpuMemory")]
-        public long GpuMemory { get; set; }//;
+        public System.Int64? GpuMemory { get; set; }//;
         
         // Key: gpuModel Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gpuModel")]
-        public string GpuModel { get; set; }//;
+        public System.String? GpuModel { get; set; }//;
         
         // Key: memory Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("memory")]
-        public long Memory { get; set; }//;
+        public System.Int64? Memory { get; set; }//;
         
         // Key: privateNetwork Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("privateNetwork")]
-        public long PrivateNetwork { get; set; }//;
+        public System.Int64? PrivateNetwork { get; set; }//;
         
         // Key: publicNetwork Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicNetwork")]
-        public long PublicNetwork { get; set; }//;
+        public System.Int64? PublicNetwork { get; set; }//;
     }
     
     // Id: S3CredentialsInput Namespace: cloud.project.ai

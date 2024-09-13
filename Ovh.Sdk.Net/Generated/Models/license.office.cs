@@ -891,7 +891,7 @@ namespace _license_office {
         
         // Key: lastUpdate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
+        public System.DateTime? LastUpdate { get; set; }//;
         
         // Key: licenseId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("licenseId")]
@@ -915,7 +915,7 @@ namespace _license_office {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: function Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -939,7 +939,7 @@ namespace _license_office {
         
         // Key: finishDate Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("finishDate")]
-        public System.DateTime FinishDate { get; set; }//;
+        public System.DateTime? FinishDate { get; set; }//;
         
         // Key: function Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -1079,7 +1079,7 @@ namespace _license_office {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
@@ -1111,11 +1111,11 @@ namespace _license_office {
         
         // Key: notifyEmail Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("notifyEmail")]
-        public string NotifyEmail { get; set; }//;
+        public System.String? NotifyEmail { get; set; }//;
         
         // Key: password Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
-        public string Password { get; set; }//;
+        public System.String? Password { get; set; }//;
         
         // Key: shouldSendMail Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shouldSendMail")]
@@ -1147,7 +1147,7 @@ namespace _license_office {
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata Iam { get; set; }//;
+        public _iam.ResourceMetadata? Iam { get; set; }//;
         
         // Key: lastName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
