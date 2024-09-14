@@ -2,7 +2,6 @@
 
 ```csharp
 using Ovh.Sdk.Net;
-using Ovh.Sdk.Net.Sample;
 
 var client = new Client(new HttpClient
 {
