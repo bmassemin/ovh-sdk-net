@@ -1,3 +1,5 @@
+![NuGet Version](https://img.shields.io/nuget/v/OVHSDK)
+
 # How to use
 
 ```csharp
