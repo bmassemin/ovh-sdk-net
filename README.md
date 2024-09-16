@@ -1,4 +1,4 @@
-![NuGet Version](https://img.shields.io/nuget/v/OVHSDK)
+![NuGet Version](https://img.shields.io/nuget/v/OVHSDK?link=https%3A%2F%2Fwww.nuget.org%2Fpackages%2FOVHSDK)
 
 # How to use
 
