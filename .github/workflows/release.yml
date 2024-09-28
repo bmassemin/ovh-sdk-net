@@ -25,7 +25,7 @@ jobs:
 
       # 2. Setup .NET SDK
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.x'  # Utilisation de .NET 8
 
@@ -72,7 +72,7 @@ jobs:
 
       # 7. Setup .NET SDK
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.x'  # Utilisation de .NET 8
 
@@ -96,7 +96,7 @@ jobs:
 
       # 11. Create GitHub Release (configure secrets GITHUB_TOKEN)
       - name: Create GitHub release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: |
             '**/*.nupkg'
