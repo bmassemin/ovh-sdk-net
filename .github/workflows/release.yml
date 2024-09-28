@@ -81,8 +81,8 @@ jobs:
         run: |
           dotnet tool install --global dotnet-version-cli
           dotnet-version -f Ovh.Sdk.Net/Ovh.Sdk.Net.csproj patch
-          git add .
-          git commit -m "Bump patch version"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git push
 
       # 9. Build in Release mode and generate symbols
