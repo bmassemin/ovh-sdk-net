@@ -79,6 +79,7 @@ jobs:
       # 8. Increment patch version using a tool like `dotnet-version-cli` or `bump-version`
       - name: Increment patch version
         run: |
+          git pull --rebase
           dotnet tool install --global dotnet-version-cli
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
