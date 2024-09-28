@@ -94,11 +94,7 @@ jobs:
       - name: Push NuGet package (.nupkg)
         run: dotnet nuget push '**/*.nupkg' --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
 
-      # 11. Push NuGet symbols package (.snupkg)
-      - name: Push NuGet symbols package (.snupkg)
-        run: dotnet nuget push '**/*.snupkg' --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
-
-      # 12. Create GitHub Release (configure secrets GITHUB_TOKEN)
+      # 11. Create GitHub Release (configure secrets GITHUB_TOKEN)
       - name: Create GitHub release
         uses: softprops/action-gh-release@v1
         with:
