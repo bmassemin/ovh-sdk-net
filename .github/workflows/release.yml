@@ -6,7 +6,7 @@ on:
     - cron: '0 0 * * *'  # Exécution régulière à minuit (modifiez si besoin)
   push:
     branches:
-      - ci  # Exécute le workflow sur un push dans la branche 'test-branch'
+      - main  # Exécute le workflow sur un push dans la branche 'test-branch'
 
 permissions:
   contents: write  # Donne l'accès en écriture aux contenus du dépôt
