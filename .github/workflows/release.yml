@@ -88,7 +88,7 @@ jobs:
 
       # 9. Build in Release mode and generate symbols
       - name: Build in Release mode with Symbols
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build --configuration Release
 
       # 10. Push NuGet package (.nupkg)
       - name: Push NuGet package (.nupkg)
