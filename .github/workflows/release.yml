@@ -80,8 +80,7 @@ jobs:
       - name: Increment patch version
         run: |
           dotnet tool install --global dotnet-version-cli
-          cd Ovh.Sdk.Net
-          dotnet-version patch
+          dotnet-version -f Ovh.Sdk.Net/Ovh.Sdk.Net.csproj patch
           git add .
           git commit -m "Bump patch version"
           git push
