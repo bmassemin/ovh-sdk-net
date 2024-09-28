@@ -8,6 +8,9 @@ on:
     branches:
       - ci  # Exécute le workflow sur un push dans la branche 'test-branch'
 
+permissions:
+  contents: write  # Donne l'accès en écriture aux contenus du dépôt
+
 jobs:
   generate_and_build:
     runs-on: ubuntu-latest
