@@ -1,0 +1,103 @@
+name: .NET Build & Release Workflow
+
+# Le workflow s'exécute soit sur un cron régulier, soit sur un push dans une branche de test
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Exécution régulière à minuit (modifiez si besoin)
+  push:
+    branches:
+      - ci  # Exécute le workflow sur un push dans la branche 'test-branch'
+
+jobs:
+  generate_and_build:
+    runs-on: ubuntu-latest
+
+    outputs:
+      changed: ${{ steps.git_diff.outputs.changed }}
+
+    steps:
+      # 1. Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Setup .NET SDK
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'  # Utilisation de .NET 8
+
+      # 3. Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # 4. Run the Generator project to generate files in 'Ovh.Sdk.Net/Generated'
+      - name: Run Generator to generate files
+        run: | 
+          dotnet run --project ./Generator
+          git diff
+
+      # 5. Check for changes in 'Ovh.Sdk.Net/Generated' and commit changes if necessary
+      - name: Check for changes in Ovh.Sdk.Net/Generated and commit
+        id: git_diff
+        run: |
+          git fetch
+          git diff
+          if git diff --exit-code Ovh.Sdk.Net/Generated; then
+            echo "No changes detected in Ovh.Sdk.Net/Generated"
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected in Ovh.Sdk.Net/Generated"
+            git config user.name "GitHub Actions"
+            git config user.email "actions@github.com"
+            git add Ovh.Sdk.Net/Generated
+            git commit -m "Update generated files in Ovh.Sdk.Net/Generated"
+            git push
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+  release:
+    needs: generate_and_build
+    runs-on: ubuntu-latest
+    if: needs.generate_and_build.outputs.changed == 'true'
+
+    steps:
+      # 6. Checkout the repository with the latest changes
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 7. Setup .NET SDK
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'  # Utilisation de .NET 8
+
+      # 8. Increment patch version using a tool like `dotnet-version-cli` or `bump-version`
+      - name: Increment patch version
+        run: |
+          dotnet tool install --global dotnet-version-cli
+          dotnet-version patch
+          git add .
+          git commit -m "Bump patch version"
+          git push
+
+      # 9. Build in Release mode and generate symbols
+      - name: Build in Release mode with Symbols
+        run: dotnet build --configuration Release --no-restore /p:IncludeSymbols=true /p:SymbolPackageFormat=snupkg
+
+      # 10. Push NuGet package (.nupkg)
+      - name: Push NuGet package (.nupkg)
+        run: dotnet nuget push '**/*.nupkg' --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+
+      # 11. Push NuGet symbols package (.snupkg)
+      - name: Push NuGet symbols package (.snupkg)
+        run: dotnet nuget push '**/*.snupkg' --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+
+      # 12. Create GitHub Release (configure secrets GITHUB_TOKEN)
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            '**/*.nupkg'
+            '**/*.snupkg'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

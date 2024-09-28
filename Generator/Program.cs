@@ -1,5 +1,6 @@
 ﻿using System.CodeDom;
 using System.CodeDom.Compiler;
+using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text.Json.Serialization;
@@ -24,7 +25,17 @@ var service = new Service(new Client(new HttpClient
     BaseAddress = new Uri("https://api.ovh.com")
 }));
 
-const string rootPath = @"..\..\..\..\Ovh.Sdk.Net\Generated";
+
+string rootPath;
+if (Debugger.IsAttached)
+{
+    rootPath = @"..\..\..\..\Ovh.Sdk.Net\Generated";
+}
+else
+{
+    rootPath = @"Ovh.Sdk.Net\Generated";
+}
+
 if (Directory.Exists(rootPath))
     Directory.Delete(rootPath, true);
 Directory.CreateDirectory(rootPath);
