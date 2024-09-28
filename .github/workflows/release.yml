@@ -80,9 +80,9 @@ jobs:
       - name: Increment patch version
         run: |
           dotnet tool install --global dotnet-version-cli
-          dotnet-version -f Ovh.Sdk.Net/Ovh.Sdk.Net.csproj patch
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
+          dotnet-version -f Ovh.Sdk.Net/Ovh.Sdk.Net.csproj patch
           git push
 
       # 9. Build in Release mode and generate symbols
