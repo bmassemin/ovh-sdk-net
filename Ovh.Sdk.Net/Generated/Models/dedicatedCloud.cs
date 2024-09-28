@@ -3021,6 +3021,10 @@ namespace _dedicatedCloud {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portGroupKey")]
         public System.String? PortGroupKey { get; set; }//;
         
+        // Key: portGroupName Type: string FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("portGroupName")]
+        public System.String? PortGroupName { get; set; }//;
+        
         // Key: portKey Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("portKey")]
         public System.String? PortKey { get; set; }//;

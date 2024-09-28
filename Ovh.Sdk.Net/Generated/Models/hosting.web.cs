@@ -1475,6 +1475,18 @@ namespace _hosting_web {
     // Id: Website Namespace: hosting.web
     public class Website {
         
+        // Key: domains Type: hosting.web.website.Domain[] FullType: hosting.web.website.Domain[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("domains")]
+        public _hosting_web_website.Domain[] Domains { get; set; }//;
+        
+        // Key: hostingDisplayName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingDisplayName")]
+        public string HostingDisplayName { get; set; }//;
+        
+        // Key: hostingServiceName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostingServiceName")]
+        public string HostingServiceName { get; set; }//;
+        
         // Key: id Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
         public long Id { get; set; }//;

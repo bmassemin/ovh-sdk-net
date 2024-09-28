@@ -29,4 +29,88 @@ namespace _iam {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("urn")]
         public string Urn { get; set; }//;
     }
+    
+    // Id: AuthorizeBatchRequest Namespace: iam
+    public class AuthorizeBatchRequest {
+        
+        // Key: actions Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("actions")]
+        public string[] Actions { get; set; }//;
+        
+        // Key: resourceURNs Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceURNs")]
+        public string[] ResourceURNs { get; set; }//;
+    }
+    
+    // Id: AuthorizeBatchResponse Namespace: iam
+    public class AuthorizeBatchResponse {
+        
+        // Key: authorizedActions Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("authorizedActions")]
+        public string[] AuthorizedActions { get; set; }//;
+        
+        // Key: resourceURN Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceURN")]
+        public string ResourceURN { get; set; }//;
+        
+        // Key: unauthorizedActions Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("unauthorizedActions")]
+        public string[] UnauthorizedActions { get; set; }//;
+    }
+    
+    // Id: AuthorizeRequest Namespace: iam
+    public class AuthorizeRequest {
+        
+        // Key: actions Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("actions")]
+        public string[] Actions { get; set; }//;
+    }
+    
+    // Id: AuthorizeResponse Namespace: iam
+    public class AuthorizeResponse {
+        
+        // Key: authorizedActions Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("authorizedActions")]
+        public string[] AuthorizedActions { get; set; }//;
+        
+        // Key: unauthorizedActions Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("unauthorizedActions")]
+        public string[] UnauthorizedActions { get; set; }//;
+    }
+    
+    // Id: PermissionsGroup Namespace: iam
+    public class PermissionsGroup {
+        
+        // Key: createdAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
+        public System.DateTime CreatedAt { get; set; }//;
+        
+        // Key: description Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public string Description { get; set; }//;
+        
+        // Key: id Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public System.Guid Id { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public string Name { get; set; }//;
+        
+        // Key: owner Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("owner")]
+        public string Owner { get; set; }//;
+        
+        // Key: permissions Type: iam.policy.Permissions FullType: iam.policy.Permissions
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("permissions")]
+        public _iam_policy.Permissions Permissions { get; set; }//;
+        
+        // Key: updatedAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
+        public System.DateTime? UpdatedAt { get; set; }//;
+        
+        // Key: urn Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("urn")]
+        public string Urn { get; set; }//;
+    }
 }

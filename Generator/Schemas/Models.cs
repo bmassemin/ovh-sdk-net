@@ -84,7 +84,7 @@ namespace Generator.Schemas
     public class ApiList
     {
         public string ApiVersion { get; set; }
-        public ApiDescription[] Apis { get; set; }
+        public ApiDescription[]? Apis { get; set; }
         public string ResourcePath { get; set; }
         public Dictionary<string, Model> Models { get; set; }
     }

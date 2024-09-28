@@ -34,6 +34,42 @@ namespace _allDom {
         public string Domain { get; set; }//;
     }
     
+    // Id: AllDomService Namespace: allDom
+    public class AllDomService {
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public string Name { get; set; }//;
+        
+        // Key: offer Type: allDom.OfferEnum FullType: allDom.OfferEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
+        public _allDom.OfferEnum Offer { get; set; }//;
+        
+        // Key: type Type: allDom.TypeEnum FullType: allDom.TypeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
+        public _allDom.TypeEnum Type { get; set; }//;
+    }
+    
+    // Id: AllDomService Namespace: allDom
+    public class AllDomServiceWithIAM {
+        
+        // Key: iam Type: iam.ResourceMetadata FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
+        public _iam.ResourceMetadata? Iam { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public string Name { get; set; }//;
+        
+        // Key: offer Type: allDom.OfferEnum FullType: allDom.OfferEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
+        public _allDom.OfferEnum Offer { get; set; }//;
+        
+        // Key: type Type: allDom.TypeEnum FullType: allDom.TypeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
+        public _allDom.TypeEnum Type { get; set; }//;
+    }
+    
     // Id: AllDom Namespace: allDom
     public class AllDomWithIAM {
         
@@ -52,6 +88,27 @@ namespace _allDom {
         // Key: type Type: allDom.TypeEnum FullType: allDom.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
         public _allDom.TypeEnum Type { get; set; }//;
+    }
+    
+    // Id: Domain Namespace: allDom
+    public class Domain {
+        
+        // Key: domain Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
+        public string _Domain { get; set; }//;
+    }
+    
+    // Id: OfferEnum Namespace: allDom
+    public enum OfferEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("diamond")]
+        diamond,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("gold")]
+        gold,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("platinum")]
+        platinum,
     }
     
     // Id: TypeEnum Namespace: allDom

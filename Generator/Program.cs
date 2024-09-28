@@ -30,7 +30,8 @@ if (Directory.Exists(rootPath))
 Directory.CreateDirectory(rootPath);
 Directory.CreateDirectory(Path.Combine(rootPath, "Models"));
 
-var definitions = await service.GetApiDefinitionsAsync("1.0");
+var definitions = await service.GetApiDefinitionsAsync("v1");
+definitions = definitions.Concat(await service.GetApiDefinitionsAsync("v2")).ToList();
 
 var namespaces = new Dictionary<string, CodeNamespace>();
 var duplicates = new HashSet<string>();
@@ -114,17 +115,17 @@ var clientClass = new CodeTypeDeclaration("Client")
 };
 methodNamespace.Types.Add(clientClass);
 
-foreach (var apis in definitions)
-foreach (var api in apis.Apis)
+foreach (var apis in definitions.Where(x => x.Apis != null))
+foreach (var api in apis.Apis!)
 {
-    var path = GetMethodName("/v1" + api.Path);
+    var path = GetMethodName("/" + apis.ApiVersion + api.Path);
     foreach (var operation in api.Operations)
     {
         string innerCodeType = null!;
         var code = new CodeMemberMethod
         {
             Name = operation.HttpMethod.ToLower().FirstCharToUpper() + path,
-            Comments = { new CodeCommentStatement($"Path: {"/v1" + api.Path}") },
+            Comments = { new CodeCommentStatement($"Path: {"/" + apis.ApiVersion + api.Path}") },
             // ReSharper disable once BitwiseOperatorOnEnumWithoutFlags
             Attributes = MemberAttributes.Public | MemberAttributes.Final
         };
@@ -140,23 +141,26 @@ foreach (var api in apis.Apis)
         }
 
         const string objectBodyParamName = "_body";
+        const string objectHeadersParamName = "headers";
 
         foreach (var parameter in operation.Parameters.OrderBy(x => !x.Required))
         {
             var paramName = parameter.Name ?? objectBodyParamName;
-            var param = new CodeParameterDeclarationExpression(GetCodeType(parameter.DataType), CleanParamName(paramName));
+            var param = new CodeParameterDeclarationExpression(GetCodeType(parameter.DataType) + (parameter.Required ? "" : "?"), CleanParamName(paramName));
             if (!parameter.Required)
+            {
                 param.CustomAttributes.Add(new CodeAttributeDeclaration(new CodeTypeReference(typeof(OptionalAttribute))));
+            }
+
             code.Parameters.Add(param);
         }
 
-        var finalPath = "/v1" + api.Path;
-        var pathParameters = operation.Parameters.Where(x => x.ParamType == "path").ToArray();
+        var finalPath = "/" + apis.ApiVersion + api.Path;
         var queryParameters = operation.Parameters.Where(x => x.ParamType == "query").ToArray();
         if (queryParameters.Any())
         {
             finalPath += "{queryParameters}";
-            code.Statements.AddRange(GenerateQueryParams(operation));
+            code.Statements.AddRange(ParametersToMap(operation.Parameters.Where(x => x.ParamType == "query").Select(x => x).ToArray(), "queryParameters", "CreateQueryParams"));
         }
 
         CodeExpression bodyParam = new CodePrimitiveExpression(null);
@@ -172,12 +176,20 @@ foreach (var api in apis.Apis)
             bodyParam = new CodeVariableReferenceExpression(objectBodyParamName);
         }
 
-        code.Statements.Add(new CodeSnippetStatement("var uri = $\"" + finalPath + "\";"));
+        CodeExpression headersParam = new CodePrimitiveExpression(null);
+        if (operation.Parameters.Any(x => x.ParamType == "header"))
+        {
+            code.Statements.AddRange(ParametersToMap(operation.Parameters.Where(x => x.ParamType == "header").Select(x => x).ToArray(), objectHeadersParamName, "CreateHeaders"));
+            headersParam = new CodeVariableReferenceExpression(objectHeadersParamName);
+        }
+
+        code.Statements.Add(new CodeVariableDeclarationStatement(typeof(string), "uri", new CodeSnippetExpression("$\"" + finalPath + "\"")));
 
         var parameters = new List<CodeExpression>
         {
             new CodePrimitiveExpression(operation.HttpMethod),
             new CodeVariableReferenceExpression("uri"),
+            headersParam,
             bodyParam,
             new CodePrimitiveExpression(!operation.NoAuthentication)
         };
@@ -204,6 +216,26 @@ var methodProvider = new CSharpCodeProvider();
 var methodPath = Path.Combine(rootPath, "Client");
 await using var swMethod = new StreamWriter($"{methodPath}.cs", true);
 methodProvider.GenerateCodeFromCompileUnit(methodUnit, swMethod, new CodeGeneratorOptions());
+
+CodeStatement[] ParametersToMap(Parameter[] parameters, string varName, string methodName)
+{
+    var statements = new List<CodeStatement>();
+    var values = parameters.Select(x => (x.Name!, CleanParamName(x.Name!))).ToList();
+    var dictionary = CreateDictionary(varName + "Temp", values);
+    statements.AddRange(dictionary);
+
+    var methodInvoke =
+        new CodeMethodInvokeExpression(new CodeThisReferenceExpression(), methodName, new CodeVariableReferenceExpression(varName + "Temp"));
+
+    var queryParametersVariable = new CodeVariableDeclarationStatement(
+        new CodeTypeReference("var"),
+        varName,
+        methodInvoke
+    );
+    statements.Add(queryParametersVariable);
+
+    return statements.ToArray();
+}
 
 CodeStatement[] GenerateQueryParams(Operation operation)
 {
@@ -252,7 +284,7 @@ CodeStatement[] CreateDictionary(string varName, List<(string keyName, string va
 string CleanParamName(string value)
 {
     var split = value.Split('.');
-    return split[0] + string.Join("", split[1..].Select(x => x.FirstCharToUpper()));
+    return split[0].Replace("-", "_") + string.Join("", split[1..].Select(x => x.FirstCharToUpper()));
 }
 
 string GetMethodName(string value)

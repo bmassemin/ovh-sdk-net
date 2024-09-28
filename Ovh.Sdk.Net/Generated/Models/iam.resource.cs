@@ -21,4 +21,48 @@ namespace _iam_resource {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
         public string Value { get; set; }//;
     }
+    
+    // Id: AddTag Namespace: iam.resource
+    public class AddTag {
+        
+        // Key: key Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
+        public string Key { get; set; }//;
+        
+        // Key: value Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
+        public string Value { get; set; }//;
+    }
+    
+    // Id: Resource Namespace: iam.resource
+    public class Resource {
+        
+        // Key: displayName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
+        public string DisplayName { get; set; }//;
+        
+        // Key: id Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public System.Guid Id { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public string Name { get; set; }//;
+        
+        // Key: owner Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("owner")]
+        public string Owner { get; set; }//;
+        
+        // Key: tags Type: map[string]string FullType: map[string]string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("tags")]
+        public Dictionary<string, string>? Tags { get; set; }//;
+        
+        // Key: type Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
+        public string Type { get; set; }//;
+        
+        // Key: urn Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("urn")]
+        public string Urn { get; set; }//;
+    }
 }

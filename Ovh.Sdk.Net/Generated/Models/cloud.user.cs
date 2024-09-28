@@ -84,6 +84,15 @@ namespace _cloud_user {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("infrastructure_supervisor")]
         infrastructure_supervisor,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("key-manager_operator")]
+        key_manager_operator,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("key-manager_read")]
+        key_manager_read,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("load-balancer_operator")]
+        load_balancer_operator,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("network_operator")]
         network_operator,
         

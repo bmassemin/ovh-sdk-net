@@ -10,42 +10,6 @@
 namespace _hosting_PrivateDatabase {
     
     
-    // Id: AvailableOrderCapacities Namespace: hosting.PrivateDatabase
-    public class AvailableOrderCapacities {
-        
-        // Key: datacenter Type: hosting.PrivateDatabase.DatacenterEnum[] FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
-        public _hosting_PrivateDatabase.DatacenterEnum[] Datacenter { get; set; }//;
-        
-        // Key: offer Type: hosting.PrivateDatabase.OfferEnum FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public _hosting_PrivateDatabase.OfferEnum Offer { get; set; }//;
-        
-        // Key: ram Type: hosting.PrivateDatabase.AvailableRamSizeEnum[] FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ram")]
-        public _hosting_PrivateDatabase.AvailableRamSizeEnum[] Ram { get; set; }//;
-        
-        // Key: version Type: hosting.PrivateDatabase.AvailableVersionEnum[] FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public _hosting_PrivateDatabase.AvailableVersionEnum[] Version { get; set; }//;
-    }
-    
-    // Id: AvailableRamSizeEnum Namespace: hosting.PrivateDatabase
-    public enum AvailableRamSizeEnum {
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("1024")]
-        _1024,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("2048")]
-        _2048,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("4096")]
-        _4096,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("512")]
-        _512,
-    }
-    
     // Id: AvailableVersionEnum Namespace: hosting.PrivateDatabase
     public enum AvailableVersionEnum {
         
@@ -106,18 +70,6 @@ namespace _hosting_PrivateDatabase {
         public bool Update { get; set; }//;
     }
     
-    // Id: CpuThrottle Namespace: hosting.PrivateDatabase
-    public class CpuThrottle {
-        
-        // Key: endDate Type: datetime FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("endDate")]
-        public System.DateTime? EndDate { get; set; }//;
-        
-        // Key: startDate Type: datetime FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
-        public System.DateTime StartDate { get; set; }//;
-    }
-    
     // Id: DatacenterEnum Namespace: hosting.PrivateDatabase
     public enum DatacenterEnum {
         
@@ -153,30 +105,6 @@ namespace _hosting_PrivateDatabase {
         public string ReadTokenId { get; set; }//;
     }
     
-    // Id: LogSubscriptionResource Namespace: hosting.PrivateDatabase
-    public class LogSubscriptionResource {
-        
-        // Key: name Type: string FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
-        
-        // Key: type Type: string FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public string Type { get; set; }//;
-    }
-    
-    // Id: LogSubscriptionResponse Namespace: hosting.PrivateDatabase
-    public class LogSubscriptionResponse {
-        
-        // Key: operationId Type: uuid FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("operationId")]
-        public System.Guid OperationId { get; set; }//;
-        
-        // Key: serviceName Type: string FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
-        public string ServiceName { get; set; }//;
-    }
-    
     // Id: OfferEnum Namespace: hosting.PrivateDatabase
     public enum OfferEnum {
         
@@ -185,18 +113,6 @@ namespace _hosting_PrivateDatabase {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("public")]
         @public,
-    }
-    
-    // Id: Oom Namespace: hosting.PrivateDatabase
-    public class Oom {
-        
-        // Key: date Type: datetime FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public System.DateTime Date { get; set; }//;
-        
-        // Key: sizeReached Type: long FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("sizeReached")]
-        public long SizeReached { get; set; }//;
     }
     
     // Id: StateEnum Namespace: hosting.PrivateDatabase
@@ -219,18 +135,6 @@ namespace _hosting_PrivateDatabase {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("stopped")]
         stopped,
-    }
-    
-    // Id: TemporaryLogsLink Namespace: hosting.PrivateDatabase
-    public class TemporaryLogsLink {
-        
-        // Key: expirationDate Type: datetime FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime ExpirationDate { get; set; }//;
-        
-        // Key: url Type: string FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
     }
     
     // Id: TypeEnum Namespace: hosting.PrivateDatabase
@@ -421,26 +325,6 @@ namespace _hosting_privateDatabase {
         // Key: taskId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
         public System.Int64? TaskId { get; set; }//;
-    }
-    
-    // Id: Configuration Namespace: hosting.privateDatabase
-    public class Configuration {
-        
-        // Key: details Type: hosting.PrivateDatabase.Configuration.Detail[] FullType: hosting.PrivateDatabase.Configuration.Detail[]
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("details")]
-        public _hosting_PrivateDatabase_Configuration.Detail[] Details { get; set; }//;
-        
-        // Key: lastUpdate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
-        
-        // Key: status Type: hosting.PrivateDatabase.Configuration.Status FullType: hosting.PrivateDatabase.Configuration.Status
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _hosting_PrivateDatabase_Configuration.Status Status { get; set; }//;
-        
-        // Key: taskId Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public System.String? TaskId { get; set; }//;
     }
     
     // Id: CpuThrottle Namespace: hosting.privateDatabase
@@ -1028,299 +912,11 @@ namespace _hosting_privateDatabase {
         public _hosting_privateDatabase.AvailableVersionEnum[] Version { get; set; }//;
     }
     
-    // Id: database Namespace: hosting.privateDatabase
-    public class database {
-        
-        // Key: backupTime Type: time FullType: time
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupTime")]
-        public System.TimeOnly? BackupTime { get; set; }//;
-        
-        // Key: creationDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
-        
-        // Key: databaseName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseName")]
-        public string DatabaseName { get; set; }//;
-        
-        // Key: quotaUsed Type: complexType.UnitAndValue<long> FullType: complexType.UnitAndValue<long>
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("quotaUsed")]
-        public _complexType.UnitAndValue<long> QuotaUsed { get; set; }//;
-        
-        // Key: users Type: hosting.PrivateDatabase.Database.User[] FullType: hosting.PrivateDatabase.Database.User[]
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("users")]
-        public _hosting_PrivateDatabase_Database.User[] Users { get; set; }//;
-    }
-    
-    // Id: database.copy Namespace: hosting.privateDatabase
-    public class database_copy {
-        
-        // Key: creationDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
-        
-        // Key: expirationDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
-        public System.DateTime? ExpirationDate { get; set; }//;
-        
-        // Key: id Type: uuid FullType: uuid
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public System.Guid Id { get; set; }//;
-        
-        // Key: lastUpdate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
-        
-        // Key: status Type: hosting.PrivateDatabase.Database.Copy.Status FullType: hosting.PrivateDatabase.Database.Copy.Status
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _hosting_PrivateDatabase_Database_Copy.Status Status { get; set; }//;
-    }
-    
-    // Id: database.dump Namespace: hosting.privateDatabase
-    public class database_dump {
-        
-        // Key: creationDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
-        
-        // Key: databaseName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseName")]
-        public string DatabaseName { get; set; }//;
-        
-        // Key: deletionDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("deletionDate")]
-        public System.DateTime DeletionDate { get; set; }//;
-        
-        // Key: id Type: long FullType: long
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public long Id { get; set; }//;
-        
-        // Key: url Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
-    }
-    
-    // Id: database.extension Namespace: hosting.privateDatabase
-    public class database_extension {
-        
-        // Key: description Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public string Description { get; set; }//;
-        
-        // Key: extensionName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("extensionName")]
-        public string ExtensionName { get; set; }//;
-        
-        // Key: requiredExtensions Type: string[] FullType: string[]
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("requiredExtensions")]
-        public string[] RequiredExtensions { get; set; }//;
-        
-        // Key: status Type: hosting.PrivateDatabase.Database.Extension.Status FullType: hosting.PrivateDatabase.Database.Extension.Status
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _hosting_PrivateDatabase_Database_Extension.Status Status { get; set; }//;
-    }
-    
-    // Id: dump Namespace: hosting.privateDatabase
-    public class dump {
-        
-        // Key: creationDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
-        
-        // Key: databaseName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseName")]
-        public string DatabaseName { get; set; }//;
-        
-        // Key: deletionDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("deletionDate")]
-        public System.DateTime DeletionDate { get; set; }//;
-        
-        // Key: dumpId Type: long FullType: long
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dumpId")]
-        public long DumpId { get; set; }//;
-        
-        // Key: orphan Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("orphan")]
-        public bool Orphan { get; set; }//;
-        
-        // Key: url Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
-        public string Url { get; set; }//;
-    }
-    
-    // Id: grant Namespace: hosting.privateDatabase
-    public class grant {
-        
-        // Key: creationDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
-        
-        // Key: databaseName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseName")]
-        public string DatabaseName { get; set; }//;
-        
-        // Key: grant Type: hosting.PrivateDatabase.grant.GrantEnum FullType: hosting.PrivateDatabase.grant.GrantEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("grant")]
-        public _hosting_PrivateDatabase_grant.GrantEnum _Grant { get; set; }//;
-    }
-    
-    // Id: ldpKind Namespace: hosting.privateDatabase
-    public class ldpKind {
-        
-        // Key: additionalReturnedFields Type: string[] FullType: string[]
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("additionalReturnedFields")]
-        public string[] AdditionalReturnedFields { get; set; }//;
-        
-        // Key: createdAt Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
-        public System.DateTime CreatedAt { get; set; }//;
-        
-        // Key: displayName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
-        public string DisplayName { get; set; }//;
-        
-        // Key: kindId Type: uuid FullType: uuid
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("kindId")]
-        public System.Guid KindId { get; set; }//;
-        
-        // Key: name Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public string Name { get; set; }//;
-        
-        // Key: updatedAt Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
-    }
-    
-    // Id: ldpSubscription Namespace: hosting.privateDatabase
-    public class ldpSubscription {
-        
-        // Key: createdAt Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
-        public System.DateTime CreatedAt { get; set; }//;
-        
-        // Key: kind Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("kind")]
-        public string Kind { get; set; }//;
-        
-        // Key: resource Type: hosting.PrivateDatabase.LogSubscriptionResource FullType: hosting.PrivateDatabase.LogSubscriptionResource
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resource")]
-        public _hosting_PrivateDatabase.LogSubscriptionResource Resource { get; set; }//;
-        
-        // Key: serviceName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
-        public string ServiceName { get; set; }//;
-        
-        // Key: streamId Type: uuid FullType: uuid
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("streamId")]
-        public System.Guid StreamId { get; set; }//;
-        
-        // Key: subscriptionId Type: uuid FullType: uuid
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("subscriptionId")]
-        public System.Guid SubscriptionId { get; set; }//;
-        
-        // Key: updatedAt Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public System.DateTime UpdatedAt { get; set; }//;
-    }
-    
-    // Id: task Namespace: hosting.privateDatabase
-    public class task {
-        
-        // Key: databaseName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("databaseName")]
-        public System.String? DatabaseName { get; set; }//;
-        
-        // Key: doneDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("doneDate")]
-        public System.DateTime? DoneDate { get; set; }//;
-        
-        // Key: dumpId Type: long FullType: long
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dumpId")]
-        public System.Int64? DumpId { get; set; }//;
-        
-        // Key: function Type: hosting.PrivateDatabase.task.FunctionEnum FullType: hosting.PrivateDatabase.task.FunctionEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
-        public _hosting_PrivateDatabase_task.FunctionEnum Function { get; set; }//;
-        
-        // Key: id Type: long FullType: long
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public long Id { get; set; }//;
-        
-        // Key: lastUpdate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime? LastUpdate { get; set; }//;
-        
-        // Key: startDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("startDate")]
-        public System.DateTime StartDate { get; set; }//;
-        
-        // Key: status Type: hosting.PrivateDatabase.task.StatusEnum FullType: hosting.PrivateDatabase.task.StatusEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _hosting_PrivateDatabase_task.StatusEnum Status { get; set; }//;
-        
-        // Key: userName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userName")]
-        public System.String? UserName { get; set; }//;
-    }
-    
-    // Id: user Namespace: hosting.privateDatabase
-    public class user {
-        
-        // Key: creationDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
-        
-        // Key: databases Type: hosting.PrivateDatabase.User.Database[] FullType: hosting.PrivateDatabase.User.Database[]
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("databases")]
-        public _hosting_PrivateDatabase_User.Database[] Databases { get; set; }//;
-        
-        // Key: userName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userName")]
-        public string UserName { get; set; }//;
-    }
-    
     // Id: webhostingNetwork Namespace: hosting.privateDatabase
     public class webhostingNetwork {
         
         // Key: status Type: hosting.privateDatabase.webhostingNetwork.StatusEnum FullType: hosting.privateDatabase.webhostingNetwork.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
         public _hosting_privateDatabase_webhostingNetwork.StatusEnum Status { get; set; }//;
-    }
-    
-    // Id: whitelist Namespace: hosting.privateDatabase
-    public class whitelist {
-        
-        // Key: creationDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
-        public System.DateTime CreationDate { get; set; }//;
-        
-        // Key: ip Type: ipBlock FullType: ipBlock
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
-        public string Ip { get; set; }//;
-        
-        // Key: lastUpdate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public System.DateTime LastUpdate { get; set; }//;
-        
-        // Key: name Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public System.String? Name { get; set; }//;
-        
-        // Key: service Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("service")]
-        public bool Service { get; set; }//;
-        
-        // Key: sftp Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("sftp")]
-        public bool Sftp { get; set; }//;
-        
-        // Key: status Type: hosting.PrivateDatabase.Whitelist.Status FullType: hosting.PrivateDatabase.Whitelist.Status
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public _hosting_PrivateDatabase_Whitelist.Status Status { get; set; }//;
-        
-        // Key: taskId Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskId")]
-        public System.String? TaskId { get; set; }//;
     }
 }

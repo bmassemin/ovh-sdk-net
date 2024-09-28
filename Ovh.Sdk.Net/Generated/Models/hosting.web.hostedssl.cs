@@ -21,6 +21,9 @@ namespace _hosting_web_hostedssl {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("LETSENCRYPT")]
         LETSENCRYPT,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("SECTIGO")]
+        SECTIGO,
     }
     
     // Id: ReportStatusEnum Namespace: hosting.web.hostedssl

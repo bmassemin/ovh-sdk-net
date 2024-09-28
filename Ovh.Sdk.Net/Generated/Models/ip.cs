@@ -490,8 +490,17 @@ namespace _ip {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("arkSurvivalEvolved")]
         arkSurvivalEvolved,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("arkSurvivalEvolvedV311.78+")]
+        arkSurvivalEvolvedV311_78_plus_,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("arma")]
         arma,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("counterStrike2")]
+        counterStrike2,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("fiveM")]
+        fiveM,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("gtaMultiTheftAutoSanAndreas")]
         gtaMultiTheftAutoSanAndreas,
@@ -501,6 +510,12 @@ namespace _ip {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hl2Source")]
         hl2Source,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("minecraftBedrockWithRacknetCookie")]
+        minecraftBedrockWithRacknetCookie,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("minecraftJava")]
+        minecraftJava,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("minecraftPocketEdition")]
         minecraftPocketEdition,
@@ -525,6 +540,9 @@ namespace _ip {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("trackmaniaShootmania")]
         trackmaniaShootmania,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("valheim")]
+        valheim,
     }
     
     // Id: GameMitigationRuleStateEnum Namespace: ip

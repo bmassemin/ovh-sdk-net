@@ -17,15 +17,15 @@ namespace _services {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("canDeleteAtExpiration")]
         public bool CanDeleteAtExpiration { get; set; }//;
         
-        // Key: contactAdmin Type: string FullType: coreTypes.AccountId:string
+        // Key: contactAdmin Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contactAdmin")]
         public string ContactAdmin { get; set; }//;
         
-        // Key: contactBilling Type: string FullType: coreTypes.AccountId:string
+        // Key: contactBilling Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contactBilling")]
         public string ContactBilling { get; set; }//;
         
-        // Key: contactTech Type: string FullType: coreTypes.AccountId:string
+        // Key: contactTech Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("contactTech")]
         public string ContactTech { get; set; }//;
         
@@ -57,7 +57,7 @@ namespace _services {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("renewalType")]
         public _service.RenewalTypeEnum RenewalType { get; set; }//;
         
-        // Key: serviceId Type: long FullType: coreTypes.ServiceId:long
+        // Key: serviceId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceId")]
         public long ServiceId { get; set; }//;
         

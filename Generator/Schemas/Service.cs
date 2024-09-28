@@ -18,6 +18,7 @@ namespace Generator.Schemas
                     throw new NotSupportedException("Only JSON format is supported");
 
                 var list = await client.GetApiAsync(version, api.Path, Format.Json);
+                list.ApiVersion = version;
                 result.Add(list);
             }
 

@@ -355,6 +355,9 @@ namespace _cloud {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ie")]
         ie,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("in")]
+        @in,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("it")]
         it,
         
@@ -1659,8 +1662,8 @@ namespace _cloud {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
         region,
         
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("region-multizones")]
-        region_multizones,
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("region-3-az")]
+        region_3_az,
     }
     
     // Id: ServiceStatusEnum Namespace: cloud

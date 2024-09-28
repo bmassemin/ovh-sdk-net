@@ -74,6 +74,22 @@ namespace _hosting_web_website {
         public bool Reset { get; set; }//;
     }
     
+    // Id: Domain Namespace: hosting.web.website
+    public class Domain {
+        
+        // Key: cdn Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("cdn")]
+        public bool Cdn { get; set; }//;
+        
+        // Key: fqdn Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("fqdn")]
+        public string Fqdn { get; set; }//;
+        
+        // Key: ssl Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssl")]
+        public bool Ssl { get; set; }//;
+    }
+    
     // Id: StatusEnum Namespace: hosting.web.website
     public enum StatusEnum {
         

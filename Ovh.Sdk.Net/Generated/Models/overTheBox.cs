@@ -75,6 +75,10 @@ namespace _overTheBox {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardwarePrice")]
         public _order.Price? HardwarePrice { get; set; }//;
         
+        // Key: hardwares Type: overTheBox.HardwareDetails[] FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardwares")]
+        public _overTheBox.HardwareDetails[] Hardwares { get; set; }//;
+        
         // Key: offer Type: string FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
         public string Offer { get; set; }//;
@@ -312,6 +316,22 @@ namespace _overTheBox {
         // Key: serial Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serial")]
         public string Serial { get; set; }//;
+    }
+    
+    // Id: HardwareDetails Namespace: overTheBox
+    public class HardwareDetails {
+        
+        // Key: hardwareDisplayName Type: string FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardwareDisplayName")]
+        public System.String? HardwareDisplayName { get; set; }//;
+        
+        // Key: hardwareName Type: string FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardwareName")]
+        public System.String? HardwareName { get; set; }//;
+        
+        // Key: hardwarePrice Type: order.Price FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardwarePrice")]
+        public _order.Price? HardwarePrice { get; set; }//;
     }
     
     // Id: Hardware Namespace: overTheBox

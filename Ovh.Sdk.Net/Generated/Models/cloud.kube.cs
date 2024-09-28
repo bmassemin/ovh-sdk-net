@@ -757,5 +757,8 @@ namespace _cloud_kube {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("1.30")]
         _1_30,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("1.31")]
+        _1_31,
     }
 }

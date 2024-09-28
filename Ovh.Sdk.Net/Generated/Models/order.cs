@@ -313,17 +313,4 @@ namespace _order {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("percentage")]
         percentage,
     }
-    
-    // Id: ContextTypeEnum Namespace: order
-    public enum ContextTypeEnum {
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("discover")]
-        discover,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("standard")]
-        standard,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("welcome")]
-        welcome,
-    }
 }

@@ -13,23 +13,23 @@ namespace _service {
     // Id: RenewType Namespace: service
     public class RenewType {
         
-        // Key: automatic Type: boolean FullType: 
+        // Key: automatic Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("automatic")]
         public bool Automatic { get; set; }//;
         
-        // Key: deleteAtExpiration Type: boolean FullType: 
+        // Key: deleteAtExpiration Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteAtExpiration")]
         public bool DeleteAtExpiration { get; set; }//;
         
-        // Key: forced Type: boolean FullType: 
+        // Key: forced Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("forced")]
         public bool Forced { get; set; }//;
         
-        // Key: manualPayment Type: boolean FullType: 
+        // Key: manualPayment Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("manualPayment")]
         public System.Boolean? ManualPayment { get; set; }//;
         
-        // Key: period Type: long FullType: 
+        // Key: period Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("period")]
         public System.Int64? Period { get; set; }//;
     }
