@@ -34,6 +34,7 @@ jobs:
       - name: Run Generator to generate files
         run: | 
           dotnet run --project ./Generator
+          git status
           git diff
 
       # 5. Check for changes in 'Ovh.Sdk.Net/Generated' and commit changes if necessary
@@ -41,6 +42,7 @@ jobs:
         id: git_diff
         run: |
           git fetch
+          git status
           git diff
           if git diff --exit-code Ovh.Sdk.Net/Generated; then
             echo "No changes detected in Ovh.Sdk.Net/Generated"
