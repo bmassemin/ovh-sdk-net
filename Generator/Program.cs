@@ -108,7 +108,7 @@ foreach (var codeNamespace in namespaces)
     modelUnit.Namespaces.Add(codeNamespace.Value);
     var modelProvider = new CSharpCodeProvider();
     var path = codeNamespace.Key;
-    var fullPath = Path.Combine(rootPath, "Models", path);
+    var fullPath = Path.Combine(rootPath, "Models", path.ToLower());
     await using var swModel = new StreamWriter($"{fullPath}.cs", true);
     modelProvider.GenerateCodeFromCompileUnit(modelUnit, swModel, new CodeGeneratorOptions());
 }
