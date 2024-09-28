@@ -13,7 +13,7 @@ namespace _agreements {
     // Id: AgreementStateEnum Namespace: agreements
     public enum AgreementStateEnum {
         
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("coucou")]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ko")]
         ko,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("obsolete")]
