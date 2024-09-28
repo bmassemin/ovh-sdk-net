@@ -29,11 +29,11 @@ var service = new Service(new Client(new HttpClient
 string rootPath;
 if (Debugger.IsAttached)
 {
-    rootPath = @"..\..\..\..\Ovh.Sdk.Net\Generated";
+    rootPath = Path.Combine("..", "..", "..", "..", "Ovh.Sdk.Net", "Generated");
 }
 else
 {
-    rootPath = @"Ovh.Sdk.Net\Generated";
+    rootPath = Path.Combine("Ovh.Sdk.Net", "Generated");
 }
 
 if (Directory.Exists(rootPath))
