@@ -44,6 +44,9 @@ namespace _vps_ip {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ie")]
         ie,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("in")]
+        @in,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("it")]
         it,
         
