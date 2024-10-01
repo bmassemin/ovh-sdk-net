@@ -31048,6 +31048,12 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
         }
         
+        // Path: /v1/order/catalog/public/sslGateway
+        public Task<_order_catalog_public.Catalog> GetV1OrderCatalogPublicSslGatewayAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
+            string uri = $"/v1/order/catalog/public/sslGateway";
+            return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
+        }
+        
         // Path: /v1/order/catalog/public/telephony
         public Task<_order_catalog_public.Catalog> GetV1OrderCatalogPublicTelephonyAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
             string uri = $"/v1/order/catalog/public/telephony";
@@ -50172,20 +50178,20 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag/{key}
-        public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
-            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
-            var queryParameters = this.CreateQueryParams(queryParametersTemp);
-            string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}{queryParameters}";
-            return this.SendAsync("DELETE", uri, null, null, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag
         public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
             var queryParameters = this.CreateQueryParams(queryParametersTemp);
             string uri = $"/v2/iam/resource/{resourceURN}/tag{queryParameters}";
             return this.SendAsync("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag/{key}
+        public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}{queryParameters}";
+            return this.SendAsync("DELETE", uri, null, null, true);
         }
         
         // Path: /v2/iam/resourceGroup
