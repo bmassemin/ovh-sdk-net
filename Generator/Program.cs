@@ -186,7 +186,7 @@ foreach (var api in apis.Apis!)
 
         var finalPath = "/" + apis.ApiVersion + api.Path;
         var queryParameters = operation.Parameters.Where(x => x.ParamType == "query").ToArray();
-        if (queryParameters.Length == 0)
+        if (queryParameters.Length > 0)
         {
             finalPath += "{queryParameters}";
             code.Statements.AddRange(ParametersToMap(operation.Parameters.Where(x => x.ParamType == "query").Select(x => x).ToArray(), "queryParameters", "CreateQueryParams"));
