@@ -5991,6 +5991,18 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud_storage.PresignedURL>("POST", uri, null, _body, true);
         }
         
+        // Path: /v1/cloud/project/{serviceName}/region/{regionName}/volume
+        public Task<_cloud_region.Volume[]> GetV1CloudProjectServiceNameRegionRegionNameVolumeAsync(string regionName, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/region/{regionName}/volume";
+            return this.SendAsync<_cloud_region.Volume[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/region/{regionName}/volume/{volumeId}
+        public Task<_cloud_region.Volume> GetV1CloudProjectServiceNameRegionRegionNameVolumeVolumeIdAsync(string regionName, string serviceName, System.Guid volumeId) {
+            string uri = $"/v1/cloud/project/{serviceName}/region/{regionName}/volume/{volumeId}";
+            return this.SendAsync<_cloud_region.Volume>("GET", uri, null, null, true);
+        }
+        
         // Path: /v1/cloud/project/{serviceName}/region/{regionName}/volumeBackup
         public Task<_cloud_volumeBackup.VolumeBackup[]> GetV1CloudProjectServiceNameRegionRegionNameVolumeBackupAsync(string regionName, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/region/{regionName}/volumeBackup";
