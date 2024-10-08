@@ -34756,6 +34756,66 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<System.TimeSpan[]>("GET", uri, null, null, true);
         }
         
+        // Path: /v1/services/{serviceId}/savingsPlans/contracts
+        public Task<_order.Contract[]> GetV1ServicesServiceIdSavingsPlansContractsAsync(long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/contracts";
+            return this.SendAsync<_order.Contract[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/services/{serviceId}/savingsPlans/subscribable
+        public Task<_services_savingsPlans.SubscribableSavingsPlanOffer[]> GetV1ServicesServiceIdSavingsPlansSubscribableAsync(long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribable";
+            return this.SendAsync<_services_savingsPlans.SubscribableSavingsPlanOffer[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/services/{serviceId}/savingsPlans/subscribe/execute
+        public Task<_services_savingsPlans.SavingsPlan> PostV1ServicesServiceIdSavingsPlansSubscribeExecuteAsync(_services_savingsPlans.Subscribe _body, long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribe/execute";
+            return this.SendAsync<_services_savingsPlans.SavingsPlan>("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v1/services/{serviceId}/savingsPlans/subscribe/simulate
+        public Task<_services_savingsPlans.SimulatedSavingsPlan> PostV1ServicesServiceIdSavingsPlansSubscribeSimulateAsync(_services_savingsPlans.Subscribe _body, long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribe/simulate";
+            return this.SendAsync<_services_savingsPlans.SimulatedSavingsPlan>("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v1/services/{serviceId}/savingsPlans/subscribed
+        public Task<_services_savingsPlans.SavingsPlan[]> GetV1ServicesServiceIdSavingsPlansSubscribedAsync(long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribed";
+            return this.SendAsync<_services_savingsPlans.SavingsPlan[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}
+        public Task<_services_savingsPlans.SavingsPlan> GetV1ServicesServiceIdSavingsPlansSubscribedSavingsPlanIdAsync(System.Guid savingsPlanId, long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}";
+            return this.SendAsync<_services_savingsPlans.SavingsPlan>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}
+        public Task<_services_savingsPlans.SavingsPlan> PutV1ServicesServiceIdSavingsPlansSubscribedSavingsPlanIdAsync(_services_savingsPlans.SavingsPlan _body, System.Guid savingsPlanId, long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}";
+            return this.SendAsync<_services_savingsPlans.SavingsPlan>("PUT", uri, null, _body, true);
+        }
+        
+        // Path: /v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}/changePeriodEndAction
+        public Task<_services_savingsPlans.SavingsPlan> PostV1ServicesServiceIdSavingsPlansSubscribedSavingsPlanIdChangePeriodEndActionAsync(_services_savingsPlans.ChangePeriodEndAction _body, System.Guid savingsPlanId, long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}/changePeriodEndAction";
+            return this.SendAsync<_services_savingsPlans.SavingsPlan>("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}/changeSize
+        public Task<_services_savingsPlans.SavingsPlan> PostV1ServicesServiceIdSavingsPlansSubscribedSavingsPlanIdChangeSizeAsync(_services_savingsPlans.ChangeSize _body, System.Guid savingsPlanId, long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}/changeSize";
+            return this.SendAsync<_services_savingsPlans.SavingsPlan>("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}/periods
+        public Task<_services_savingsPlans_SavingsPlan.Period[]> GetV1ServicesServiceIdSavingsPlansSubscribedSavingsPlanIdPeriodsAsync(System.Guid savingsPlanId, long serviceId) {
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}/periods";
+            return this.SendAsync<_services_savingsPlans_SavingsPlan.Period[]>("GET", uri, null, null, true);
+        }
+        
         // Path: /v1/services/{serviceId}/technicalDetails
         public Task<_services_expanded.TechnicalDetails> GetV1ServicesServiceIdTechnicalDetailsAsync(long serviceId) {
             string uri = $"/v1/services/{serviceId}/technicalDetails";

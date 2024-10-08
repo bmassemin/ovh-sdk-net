@@ -39,7 +39,19 @@ namespace _dedicatedCloud_syslogForward {
     // Id: SourceTypeEnum Namespace: dedicatedCloud.syslogForward
     public enum SourceTypeEnum {
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("esxi")]
+        esxi,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nsxtEdge")]
         nsxtEdge,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("nsxtManager")]
+        nsxtManager,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("nsxv")]
+        nsxv,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("vcsa")]
+        vcsa,
     }
 }

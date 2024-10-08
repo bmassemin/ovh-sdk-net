@@ -635,6 +635,9 @@ namespace _domain {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autorenew_in_progress")]
         autorenew_in_progress,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("autorenew_registry_in_progress")]
+        autorenew_registry_in_progress,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleted")]
         deleted,
         
