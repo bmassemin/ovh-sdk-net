@@ -46,10 +46,6 @@ namespace _dedicated_installationTemplate {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("filesystems")]
         public required _dedicated_server.FileSystemEnum[] Filesystems { get; set; }//;
         
-        // Key: hardRaidConfiguration Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hardRaidConfiguration")]
-        public System.Boolean? HardRaidConfiguration { get; set; }//;
-        
         // Key: inputs Type: dedicated.TemplateOsInput[] FullType: dedicated.TemplateOsInput[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("inputs")]
         public _dedicated.TemplateOsInput[]? Inputs { get; set; }//;
