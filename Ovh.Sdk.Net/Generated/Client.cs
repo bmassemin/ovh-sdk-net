@@ -87,6 +87,12 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<long>("GET", uri, null, null, false);
         }
         
+        // Path: /v1/auth/token
+        public Task<_auth.Token> PostV1AuthTokenAsync() {
+            string uri = $"/v1/auth/token";
+            return this.SendAsync<_auth.Token>("POST", uri, null, null, true);
+        }
+        
         // Path: /v1/cdn/dedicated
         public Task<System.String[]> GetV1CdnDedicatedAsync([System.Runtime.InteropServices.OptionalAttribute()] Dictionary<string, _iam_resource.TagFilter[]>? iamTags) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();

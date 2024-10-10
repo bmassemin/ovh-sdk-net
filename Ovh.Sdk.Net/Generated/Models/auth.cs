@@ -415,6 +415,14 @@ namespace _auth {
         UNPRIVILEGED,
     }
     
+    // Id: Token Namespace: auth
+    public class Token {
+        
+        // Key: token Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("token")]
+        public required System.String _Token { get; set; }//;
+    }
+    
     // Id: User Namespace: auth
     public class User {
         
