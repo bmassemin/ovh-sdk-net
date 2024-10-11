@@ -124,7 +124,7 @@ namespace _auth {
         
         // Key: allowedIPs Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedIPs")]
-        public required System.String[] AllowedIPs { get; set; }//;
+        public System.String[]? AllowedIPs { get; set; }//;
         
         // Key: redirection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirection")]

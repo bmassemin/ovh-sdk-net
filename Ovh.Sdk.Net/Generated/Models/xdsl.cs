@@ -102,6 +102,10 @@ namespace _xdsl {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lnsRateLimit")]
         public System.Int64? LnsRateLimit { get; set; }//;
         
+        // Key: mailSending Type: xdsl.mailSendingAccessStatusEnum FullType: xdsl.mailSendingAccessStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailSending")]
+        public required _xdsl.mailSendingAccessStatusEnum MailSending { get; set; }//;
+        
         // Key: monitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoring")]
         public required System.Boolean Monitoring { get; set; }//;
@@ -347,6 +351,10 @@ namespace _xdsl {
         // Key: lnsRateLimit Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lnsRateLimit")]
         public System.Int64? LnsRateLimit { get; set; }//;
+        
+        // Key: mailSending Type: xdsl.mailSendingAccessStatusEnum FullType: xdsl.mailSendingAccessStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailSending")]
+        public required _xdsl.mailSendingAccessStatusEnum MailSending { get; set; }//;
         
         // Key: monitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoring")]
@@ -1854,6 +1862,29 @@ namespace _xdsl {
         // Key: macAddress Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("macAddress")]
         public required System.String MacAddress { get; set; }//;
+    }
+    
+    // Id: mailSendingAccessStatusEnum Namespace: xdsl
+    public enum mailSendingAccessStatusEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockedForSpam")]
+        blockedForSpam,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabled")]
+        disabled,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("enabled")]
+        enabled,
+    }
+    
+    // Id: mailSendingStatusEnum Namespace: xdsl
+    public enum mailSendingStatusEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabled")]
+        disabled,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("enabled")]
+        enabled,
     }
     
     // Id: xdslEmailPro Namespace: xdsl

@@ -42072,6 +42072,12 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_complexType_UnitAndValues_xdsl.TimestampAndValue>("GET", uri, null, null, true);
         }
         
+        // Path: /v1/xdsl/{serviceName}/mailSending
+        public Task<_xdsl.Task> PostV1XdslServiceNameMailSendingAsync(_xdsl_mailSending.post _body, string serviceName) {
+            string uri = $"/v1/xdsl/{serviceName}/mailSending";
+            return this.SendAsync<_xdsl.Task>("POST", uri, null, _body, true);
+        }
+        
         // Path: /v1/xdsl/{serviceName}/modem
         public Task<_xdsl.Modem> GetV1XdslServiceNameModemAsync(string serviceName) {
             string uri = $"/v1/xdsl/{serviceName}/modem";
