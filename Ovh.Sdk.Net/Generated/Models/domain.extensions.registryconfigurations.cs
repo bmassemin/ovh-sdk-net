@@ -145,5 +145,9 @@ namespace _domain_extensions_registryConfigurations {
         // Key: allowedPeriodsInMonths Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedPeriodsInMonths")]
         public System.Int64[]? AllowedPeriodsInMonths { get; set; }//;
+        
+        // Key: includeRenew Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("includeRenew")]
+        public required System.Boolean IncludeRenew { get; set; }//;
     }
 }

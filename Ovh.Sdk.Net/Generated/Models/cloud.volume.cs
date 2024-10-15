@@ -188,8 +188,14 @@ namespace _cloud_volume {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("classic")]
         classic,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("classic-BETA")]
+        classic_BETA,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("high-speed")]
         high_speed,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("high-speed-BETA")]
+        high_speed_BETA,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("high-speed-gen2")]
         high_speed_gen2,

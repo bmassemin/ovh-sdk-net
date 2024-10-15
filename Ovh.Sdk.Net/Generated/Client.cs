@@ -19372,15 +19372,13 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/license/officePrepaid/{serviceName}/parentTenant
-        public Task<_license_office.OfficeTenant> GetV1LicenseOfficePrepaidServiceNameParentTenantAsync(string serviceName) {
+        public Task<_license_officePrepaid.OfficeTenantNative> GetV1LicenseOfficePrepaidServiceNameParentTenantAsync(string serviceName) {
             string uri = $"/v1/license/officePrepaid/{serviceName}/parentTenant";
-            return this.SendAsync<_license_office.OfficeTenant>("GET", uri, null, null, true);
+            return this.SendAsync<_license_officePrepaid.OfficeTenantNative>("GET", uri, null, null, true);
         }
         
         // Path: /v1/license/officePrepaid/{serviceName}/parentTenant
-        public Task PutV1LicenseOfficePrepaidServiceNameParentTenantAsync(string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.String? displayName) {
-            Dictionary<string, object> _body = new System.Collections.Generic.Dictionary<string, object>();
-            _body.Add("displayName", displayName);
+        public Task PutV1LicenseOfficePrepaidServiceNameParentTenantAsync(_license_officePrepaid.OfficeTenantPutParentTenant _body, string serviceName) {
             string uri = $"/v1/license/officePrepaid/{serviceName}/parentTenant";
             return this.SendAsync("PUT", uri, null, _body, true);
         }
@@ -34769,8 +34767,11 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/services/{serviceId}/savingsPlans/subscribable
-        public Task<_services_savingsPlans.SubscribableSavingsPlanOffer[]> GetV1ServicesServiceIdSavingsPlansSubscribableAsync(long serviceId) {
-            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribable";
+        public Task<_services_savingsPlans.SubscribableSavingsPlanOffer[]> GetV1ServicesServiceIdSavingsPlansSubscribableAsync(long serviceId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? productCode) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("productCode", productCode);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/services/{serviceId}/savingsPlans/subscribable{queryParameters}";
             return this.SendAsync<_services_savingsPlans.SubscribableSavingsPlanOffer[]>("GET", uri, null, null, true);
         }
         
@@ -42665,6 +42666,47 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync("POST", uri, null, _body, true);
         }
         
+        // Path: /v2/domain/name
+        public Task<_domain.DomainWithIAM[]> GetV2DomainNameAsync([System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size, [System.Runtime.InteropServices.OptionalAttribute()] Dictionary<string, _iam_resource.TagFilter[]>? iamTags) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("iamTags", iamTags);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/domain/name{queryParameters}";
+            return this.SendAsync<_domain.DomainWithIAM[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/domain/name/{domainName}
+        public Task<_domain.DomainWithIAM> GetV2DomainNameDomainNameAsync(string domainName) {
+            string uri = $"/v2/domain/name/{domainName}";
+            return this.SendAsync<_domain.DomainWithIAM>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/domain/name/{domainName}
+        public Task<_domain.Domain> PutV2DomainNameDomainNameAsync(_domain.Domain _body, string domainName) {
+            string uri = $"/v2/domain/name/{domainName}";
+            return this.SendAsync<_domain.Domain>("PUT", uri, null, _body, true);
+        }
+        
+        // Path: /v2/domain/name/{domainName}/task
+        public Task<_common.Task[]> GetV2DomainNameDomainNameTaskAsync(string domainName, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size) {
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/domain/name/{domainName}/task";
+            return this.SendAsync<_common.Task[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/domain/name/{domainName}/task/{taskId}
+        public Task<_common.Task> GetV2DomainNameDomainNameTaskTaskIdAsync(string domainName, System.Guid taskId) {
+            string uri = $"/v2/domain/name/{domainName}/task/{taskId}";
+            return this.SendAsync<_common.Task>("GET", uri, null, null, true);
+        }
+        
         // Path: /v2/iam/logs/forward
         public Task<_iam_logs.ForwardResponse> PostV2IamLogsForwardAsync(_iam_logs.ForwardRequest _body) {
             string uri = $"/v2/iam/logs/forward";
@@ -42806,16 +42848,16 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag/{key}
-        public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
-            string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
-            return this.SendAsync("DELETE", uri, null, null, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag
         public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
             string uri = $"/v2/iam/resource/{resourceURN}/tag";
             return this.SendAsync("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag/{key}
+        public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
+            string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
+            return this.SendAsync("DELETE", uri, null, null, true);
         }
         
         // Path: /v2/iam/resourceGroup

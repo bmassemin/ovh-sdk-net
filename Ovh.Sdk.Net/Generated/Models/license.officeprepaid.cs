@@ -841,6 +841,50 @@ namespace _license_officePrepaid {
         public required System.DateTime TodoDate { get; set; }//;
     }
     
+    // Id: OfficeTenantNative Namespace: license.officePrepaid
+    public class OfficeTenantNative {
+        
+        // Key: address Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("address")]
+        public required System.String Address { get; set; }//;
+        
+        // Key: city Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
+        public required System.String City { get; set; }//;
+        
+        // Key: creationDate Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("creationDate")]
+        public required System.DateTime CreationDate { get; set; }//;
+        
+        // Key: displayName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
+        public required System.String DisplayName { get; set; }//;
+        
+        // Key: firstName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("firstName")]
+        public required System.String FirstName { get; set; }//;
+        
+        // Key: lastName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastName")]
+        public required System.String LastName { get; set; }//;
+        
+        // Key: phone Type: phoneNumber FullType: phoneNumber
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
+        public required System.String Phone { get; set; }//;
+        
+        // Key: serviceType Type: license.officePrepaid.ServiceTypeEnum FullType: license.officePrepaid.ServiceTypeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceType")]
+        public required _license_officePrepaid.ServiceTypeEnum ServiceType { get; set; }//;
+        
+        // Key: status Type: license.officePrepaid.ServiceStateEnum FullType: license.officePrepaid.ServiceStateEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
+        public required _license_officePrepaid.ServiceStateEnum Status { get; set; }//;
+        
+        // Key: zipCode Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("zipCode")]
+        public required System.String ZipCode { get; set; }//;
+    }
+    
     // Id: OfficeTenantPostChangePassword Namespace: license.officePrepaid
     public class OfficeTenantPostChangePassword {
         
@@ -855,6 +899,18 @@ namespace _license_officePrepaid {
         // Key: shouldSendMail Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("shouldSendMail")]
         public required System.Boolean ShouldSendMail { get; set; }//;
+    }
+    
+    // Id: OfficeTenantPutParentTenant Namespace: license.officePrepaid
+    public class OfficeTenantPutParentTenant {
+        
+        // Key: displayName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
+        public required System.String DisplayName { get; set; }//;
+        
+        // Key: serviceName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
+        public required System.String ServiceName { get; set; }//;
     }
     
     // Id: OfficeUser Namespace: license.officePrepaid
@@ -1059,6 +1115,38 @@ namespace _license_officePrepaid {
         // Key: usageLocation Type: license.officePrepaid.CountryEnum FullType: license.officePrepaid.CountryEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("usageLocation")]
         public required _license_officePrepaid.CountryEnum UsageLocation { get; set; }//;
+    }
+    
+    // Id: ServiceStateEnum Namespace: license.officePrepaid
+    public enum ServiceStateEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("creating")]
+        creating,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("inMaintenance")]
+        inMaintenance,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ok")]
+        ok,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("reopening")]
+        reopening,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("suspended")]
+        suspended,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("suspending")]
+        suspending,
+    }
+    
+    // Id: ServiceTypeEnum Namespace: license.officePrepaid
+    public enum ServiceTypeEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("payAsYouGo")]
+        payAsYouGo,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("prepaid")]
+        prepaid,
     }
     
     // Id: StatisticsLineNative Namespace: license.officePrepaid

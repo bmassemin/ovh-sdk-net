@@ -1516,4 +1516,44 @@ namespace _domain {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("step")]
         public required System.String Step { get; set; }//;
     }
+    
+    // Id: DomainCurrentState Namespace: domain
+    public class DomainCurrentState {
+        
+        // Key: additionalStates Type: domain.resource.currentState.AdditionalStatesEnum[] FullType: domain.resource.currentState.AdditionalStatesEnum[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("additionalStates")]
+        public required _domain_resource_currentState.AdditionalStatesEnum[] AdditionalStates { get; set; }//;
+        
+        // Key: dnsConfiguration Type: domain.resource.currentState.DnsConfiguration FullType: domain.resource.currentState.DnsConfiguration
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnsConfiguration")]
+        public required _domain_resource_currentState.DnsConfiguration DnsConfiguration { get; set; }//;
+        
+        // Key: extension Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("extension")]
+        public required System.String Extension { get; set; }//;
+        
+        // Key: mainState Type: domain.resource.currentState.MainStateEnum FullType: domain.resource.currentState.MainStateEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("mainState")]
+        public required _domain_resource_currentState.MainStateEnum MainState { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
+        // Key: protectionState Type: domain.resource.ProtectionStateEnum FullType: domain.resource.ProtectionStateEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("protectionState")]
+        public required _domain_resource.ProtectionStateEnum ProtectionState { get; set; }//;
+        
+        // Key: suspensionState Type: domain.resource.currentState.SuspensionStateEnum FullType: domain.resource.currentState.SuspensionStateEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("suspensionState")]
+        public required _domain_resource_currentState.SuspensionStateEnum SuspensionState { get; set; }//;
+    }
+    
+    // Id: DomainTargetSpec Namespace: domain
+    public class DomainTargetSpec {
+        
+        // Key: dnsConfiguration Type: domain.resource.targetSpec.DnsConfiguration FullType: domain.resource.targetSpec.DnsConfiguration
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnsConfiguration")]
+        public required _domain_resource_targetSpec.DnsConfiguration DnsConfiguration { get; set; }//;
+    }
 }
