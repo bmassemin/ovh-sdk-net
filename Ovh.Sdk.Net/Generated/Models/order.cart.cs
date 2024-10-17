@@ -700,20 +700,4 @@ namespace _order_cart {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expire")]
         public required System.DateTime Expire { get; set; }//;
     }
-    
-    // Id: WebHostingProductInformation Namespace: order.cart
-    public class WebHostingProductInformation {
-        
-        // Key: description Type: hosting.web.Capabilities FullType: hosting.web.Capabilities
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public required _hosting_web.Capabilities Description { get; set; }//;
-        
-        // Key: planCode Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
-        public required System.String PlanCode { get; set; }//;
-        
-        // Key: prices Type: order.cart.GenericProductPricing[] FullType: order.cart.GenericProductPricing[]
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("prices")]
-        public required _order_cart.GenericProductPricing[] Prices { get; set; }//;
-    }
 }

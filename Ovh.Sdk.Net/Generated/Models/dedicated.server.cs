@@ -913,6 +913,10 @@ namespace _dedicated_server {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
         public required _dedicated.DatacenterEnum Datacenter { get; set; }//;
         
+        // Key: efiBootloaderPath Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("efiBootloaderPath")]
+        public System.String? EfiBootloaderPath { get; set; }//;
+        
         // Key: ip Type: ipv4 FullType: ipv4
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
         public required System.String Ip { get; set; }//;
@@ -1008,6 +1012,10 @@ namespace _dedicated_server {
         // Key: datacenter Type: dedicated.DatacenterEnum FullType: dedicated.DatacenterEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("datacenter")]
         public required _dedicated.DatacenterEnum Datacenter { get; set; }//;
+        
+        // Key: efiBootloaderPath Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("efiBootloaderPath")]
+        public System.String? EfiBootloaderPath { get; set; }//;
         
         // Key: iam Type: iam.ResourceMetadata FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]

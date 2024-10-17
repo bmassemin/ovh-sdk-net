@@ -281,17 +281,9 @@ namespace _zimbra {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alias")]
         public required System.String _Alias { get; set; }//;
         
-        // Key: aliasTarget Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("aliasTarget")]
-        public required System.String AliasTarget { get; set; }//;
-        
-        // Key: organizationId Type: uuid FullType: uuid
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("organizationId")]
-        public required System.Guid OrganizationId { get; set; }//;
-        
-        // Key: organizationLabel Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("organizationLabel")]
-        public required System.String OrganizationLabel { get; set; }//;
+        // Key: aliasTargetId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("aliasTargetId")]
+        public required System.Guid AliasTargetId { get; set; }//;
     }
     
     // Id: AliasBase Namespace: zimbra
@@ -301,13 +293,9 @@ namespace _zimbra {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alias")]
         public required System.String Alias { get; set; }//;
         
-        // Key: aliasTarget Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("aliasTarget")]
-        public required System.String AliasTarget { get; set; }//;
-        
-        // Key: organizationId Type: uuid FullType: uuid
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("organizationId")]
-        public required System.Guid OrganizationId { get; set; }//;
+        // Key: aliasTargetId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("aliasTargetId")]
+        public required System.Guid AliasTargetId { get; set; }//;
     }
     
     // Id: AliasPostPayload Namespace: zimbra
@@ -989,6 +977,66 @@ namespace _zimbra {
         // Key: used Type: double FullType: double
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("used")]
         public required System.Double Used { get; set; }//;
+    }
+    
+    // Id: Redirection Namespace: zimbra
+    public class Redirection {
+        
+        // Key: redirection Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirection")]
+        public required System.String _Redirection { get; set; }//;
+        
+        // Key: redirectionTargetId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectionTargetId")]
+        public required System.Guid RedirectionTargetId { get; set; }//;
+    }
+    
+    // Id: RedirectionBase Namespace: zimbra
+    public class RedirectionBase {
+        
+        // Key: redirection Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirection")]
+        public required System.String Redirection { get; set; }//;
+        
+        // Key: redirectionTargetId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirectionTargetId")]
+        public required System.Guid RedirectionTargetId { get; set; }//;
+    }
+    
+    // Id: RedirectionPostPayload Namespace: zimbra
+    public class RedirectionPostPayload {
+        
+        // Key: targetSpec Type: zimbra.RedirectionBase FullType: zimbra.RedirectionBase
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
+        public required _zimbra.RedirectionBase TargetSpec { get; set; }//;
+    }
+    
+    // Id: RedirectionResponse Namespace: zimbra
+    public class RedirectionResponse {
+        
+        // Key: checksum Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("checksum")]
+        public required System.String Checksum { get; set; }//;
+        
+        // Key: currentState Type: zimbra.Redirection FullType: zimbra.Redirection
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentState")]
+        public required _zimbra.Redirection CurrentState { get; set; }//;
+        
+        // Key: currentTasks Type: common.CurrentTask[] FullType: common.CurrentTask[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentTasks")]
+        public required _common.CurrentTask[] CurrentTasks { get; set; }//;
+        
+        // Key: id Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.Guid Id { get; set; }//;
+        
+        // Key: resourceStatus Type: common.ResourceStatusEnum FullType: common.ResourceStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceStatus")]
+        public required _common.ResourceStatusEnum ResourceStatus { get; set; }//;
+        
+        // Key: targetSpec Type: zimbra.Redirection FullType: zimbra.Redirection
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
+        public required _zimbra.Redirection TargetSpec { get; set; }//;
     }
     
     // Id: expectedDNSConfig Namespace: zimbra

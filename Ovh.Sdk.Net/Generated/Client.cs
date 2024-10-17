@@ -24162,12 +24162,7 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/order/cart/{cartId}/ipReseller
-        public Task<_order_cart.Item> PostV1OrderCartCartIdIpResellerAsync(string cartId, string duration, string planCode, string pricingMode, long quantity) {
-            Dictionary<string, object> _body = new System.Collections.Generic.Dictionary<string, object>();
-            _body.Add("duration", duration);
-            _body.Add("planCode", planCode);
-            _body.Add("pricingMode", pricingMode);
-            _body.Add("quantity", quantity);
+        public Task<_order_cart.Item> PostV1OrderCartCartIdIpResellerAsync(_order_cart.GenericProductCreation _body, string cartId) {
             string uri = $"/v1/order/cart/{cartId}/ipReseller";
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, true);
         }
@@ -25168,23 +25163,6 @@ namespace Ovh.Sdk.Net {
         // Path: /v1/order/cart/{cartId}/telephony/options
         public Task<_order_cart.Item> PostV1OrderCartCartIdTelephonyOptionsAsync(_order_cart.GenericOptionCreation _body, string cartId) {
             string uri = $"/v1/order/cart/{cartId}/telephony/options";
-            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/vco
-        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdVcoAsync(string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/vco";
-            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/vco
-        public Task<_order_cart.Item> PostV1OrderCartCartIdVcoAsync(string cartId, string duration, string planCode, string pricingMode, long quantity) {
-            Dictionary<string, object> _body = new System.Collections.Generic.Dictionary<string, object>();
-            _body.Add("duration", duration);
-            _body.Add("planCode", planCode);
-            _body.Add("pricingMode", pricingMode);
-            _body.Add("quantity", quantity);
-            string uri = $"/v1/order/cart/{cartId}/vco";
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
         }
         
