@@ -104,6 +104,9 @@ namespace _okms {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("JWK")]
         JWK,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("PEM")]
+        PEM,
     }
     
     // Id: KeyOpsEnum Namespace: okms

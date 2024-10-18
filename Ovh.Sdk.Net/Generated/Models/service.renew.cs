@@ -48,6 +48,9 @@ namespace _service_renew {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("automaticV2016")]
         automaticV2016,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("automaticV2024")]
+        automaticV2024,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteAtEndEngagement")]
         deleteAtEndEngagement,
         

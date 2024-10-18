@@ -872,6 +872,10 @@ namespace _license_officePrepaid {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phone")]
         public required System.String Phone { get; set; }//;
         
+        // Key: serviceName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
+        public required System.String ServiceName { get; set; }//;
+        
         // Key: serviceType Type: license.officePrepaid.ServiceTypeEnum FullType: license.officePrepaid.ServiceTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceType")]
         public required _license_officePrepaid.ServiceTypeEnum ServiceType { get; set; }//;
