@@ -6003,6 +6003,12 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud_region.Volume[]>("GET", uri, null, null, true);
         }
         
+        // Path: /v1/cloud/project/{serviceName}/region/{regionName}/volume
+        public Task<_cloud_region_Volume_Create.Response> PostV1CloudProjectServiceNameRegionRegionNameVolumeAsync(_cloud_region_Volume.Create _body, string regionName, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/region/{regionName}/volume";
+            return this.SendAsync<_cloud_region_Volume_Create.Response>("POST", uri, null, _body, true);
+        }
+        
         // Path: /v1/cloud/project/{serviceName}/region/{regionName}/volume/{volumeId}
         public Task<_cloud_region.Volume> GetV1CloudProjectServiceNameRegionRegionNameVolumeVolumeIdAsync(string regionName, string serviceName, System.Guid volumeId) {
             string uri = $"/v1/cloud/project/{serviceName}/region/{regionName}/volume/{volumeId}";
@@ -42826,16 +42832,16 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag
-        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
-            string uri = $"/v2/iam/resource/{resourceURN}/tag";
-            return this.SendAsync("POST", uri, null, _body, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag/{key}
         public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
             string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
             return this.SendAsync("DELETE", uri, null, null, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag
+        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
+            string uri = $"/v2/iam/resource/{resourceURN}/tag";
+            return this.SendAsync("POST", uri, null, _body, true);
         }
         
         // Path: /v2/iam/resourceGroup
