@@ -798,6 +798,9 @@ namespace _coreTypes {
     // Id: RegionCodenameEnum Namespace: coreTypes
     public enum RegionCodenameEnum {
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("af-north-lz-rba")]
+        af_north_lz_rba,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ap-south-mum")]
         ap_south_mum,
         
@@ -816,6 +819,21 @@ namespace _coreTypes {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-central-waw")]
         eu_central_waw,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-east-lz-prg")]
+        eu_east_lz_prg,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-north-lz-osl")]
+        eu_north_lz_osl,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-north-lz-sto")]
+        eu_north_lz_sto,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-south-lz-mad")]
+        eu_south_lz_mad,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-south-lz-mil")]
+        eu_south_lz_mil,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-eri")]
         eu_west_eri,
         
@@ -824,6 +842,27 @@ namespace _coreTypes {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lim")]
         eu_west_lim,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-ams")]
+        eu_west_lz_ams,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-bru")]
+        eu_west_lz_bru,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-dln")]
+        eu_west_lz_dln,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-lux")]
+        eu_west_lz_lux,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-mrs")]
+        eu_west_lz_mrs,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-vie")]
+        eu_west_lz_vie,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-zrh")]
+        eu_west_lz_zrh,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-par")]
         eu_west_par,
@@ -834,11 +873,41 @@ namespace _coreTypes {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-sbg")]
         eu_west_sbg,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-atl")]
+        us_east_lz_atl,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-bos")]
+        us_east_lz_bos,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-chi")]
+        us_east_lz_chi,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-dal")]
+        us_east_lz_dal,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-mia")]
+        us_east_lz_mia,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-nyc")]
+        us_east_lz_nyc,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-vin")]
         us_east_vin,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-west-hil")]
         us_west_hil,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-west-lz-den")]
+        us_west_lz_den,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-west-lz-lax")]
+        us_west_lz_lax,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-west-lz-pao")]
+        us_west_lz_pao,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-west-lz-sea")]
+        us_west_lz_sea,
     }
     
     // Id: IpVersionEnum Namespace: coreTypes
