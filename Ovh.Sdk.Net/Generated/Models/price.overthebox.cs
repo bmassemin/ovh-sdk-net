@@ -14,7 +14,13 @@ namespace _price_OverTheBox {
     // Id: OfferEnum Namespace: price.OverTheBox
     public enum OfferEnum {
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("business.v1")]
+        business_v1,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plus.v1")]
         plus_v1,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("starter.v1")]
+        starter_v1,
     }
 }
