@@ -21449,6 +21449,51 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_audit_log.ForwardResponse>("POST", uri, null, _body, true);
         }
         
+        // Path: /v1/me/logs/audit/log/kind
+        public Task<System.String[]> GetV1MeLogsAuditLogKindAsync() {
+            string uri = $"/v1/me/logs/audit/log/kind";
+            return this.SendAsync<string[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/me/logs/audit/log/kind/{name}
+        public Task<_dbaas_logs.LogKind> GetV1MeLogsAuditLogKindNameAsync(string name) {
+            string uri = $"/v1/me/logs/audit/log/kind/{name}";
+            return this.SendAsync<_dbaas_logs.LogKind>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/me/logs/audit/log/subscription
+        public Task<System.Guid[]> GetV1MeLogsAuditLogSubscriptionAsync([System.Runtime.InteropServices.OptionalAttribute()] System.String? kind) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("kind", kind);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/me/logs/audit/log/subscription{queryParameters}";
+            return this.SendAsync<System.Guid[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/me/logs/audit/log/subscription
+        public Task<_dbaas_logs.LogSubscriptionResponse> PostV1MeLogsAuditLogSubscriptionAsync(_dbaas_logs.LogSubscriptionCreation _body) {
+            string uri = $"/v1/me/logs/audit/log/subscription";
+            return this.SendAsync<_dbaas_logs.LogSubscriptionResponse>("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v1/me/logs/audit/log/subscription/{subscriptionId}
+        public Task<_dbaas_logs.LogSubscriptionResponse> DeleteV1MeLogsAuditLogSubscriptionSubscriptionIdAsync(System.Guid subscriptionId) {
+            string uri = $"/v1/me/logs/audit/log/subscription/{subscriptionId}";
+            return this.SendAsync<_dbaas_logs.LogSubscriptionResponse>("DELETE", uri, null, null, true);
+        }
+        
+        // Path: /v1/me/logs/audit/log/subscription/{subscriptionId}
+        public Task<_dbaas_logs.LogSubscription> GetV1MeLogsAuditLogSubscriptionSubscriptionIdAsync(System.Guid subscriptionId) {
+            string uri = $"/v1/me/logs/audit/log/subscription/{subscriptionId}";
+            return this.SendAsync<_dbaas_logs.LogSubscription>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/me/logs/audit/log/url
+        public Task<_dbaas_logs.TemporaryLogsLink> PostV1MeLogsAuditLogUrlAsync(_dbaas_logs.LogUrlCreation _body) {
+            string uri = $"/v1/me/logs/audit/log/url";
+            return this.SendAsync<_dbaas_logs.TemporaryLogsLink>("POST", uri, null, _body, true);
+        }
+        
         // Path: /v1/me/mailingList/availableLists
         public Task<System.String[]> GetV1MeMailingListAvailableListsAsync() {
             string uri = $"/v1/me/mailingList/availableLists";

@@ -659,5 +659,20 @@ namespace _storage {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("SBG")]
         SBG,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ca-east-bhs")]
+        ca_east_bhs,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-gra")]
+        eu_west_gra,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lim")]
+        eu_west_lim,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-rbx")]
+        eu_west_rbx,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-sbg")]
+        eu_west_sbg,
     }
 }

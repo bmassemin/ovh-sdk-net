@@ -1628,6 +1628,9 @@ namespace _cloud {
     // Id: RegionContinentEnum Namespace: cloud
     public enum RegionContinentEnum {
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("AF")]
+        AF,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ASIA")]
         ASIA,
         
