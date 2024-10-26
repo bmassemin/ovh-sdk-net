@@ -42736,6 +42736,59 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_common.Task>("GET", uri, null, null, true);
         }
         
+        // Path: /v2/iam/log/kind
+        public Task<System.String[]> GetV2IamLogKindAsync([System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size) {
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/iam/log/kind";
+            return this.SendAsync<string[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/iam/log/kind/{name}
+        public Task<_dbaas_logs.LogKind> GetV2IamLogKindNameAsync(string name) {
+            string uri = $"/v2/iam/log/kind/{name}";
+            return this.SendAsync<_dbaas_logs.LogKind>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/iam/log/subscription
+        public Task<System.Guid[]> GetV2IamLogSubscriptionAsync([System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size, [System.Runtime.InteropServices.OptionalAttribute()] System.String? kind) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("kind", kind);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/iam/log/subscription{queryParameters}";
+            return this.SendAsync<System.Guid[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/iam/log/subscription
+        public Task<_dbaas_logs.LogSubscriptionResponse> PostV2IamLogSubscriptionAsync(_dbaas_logs.LogSubscriptionCreation _body) {
+            string uri = $"/v2/iam/log/subscription";
+            return this.SendAsync<_dbaas_logs.LogSubscriptionResponse>("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v2/iam/log/subscription/{subscriptionId}
+        public Task<_dbaas_logs.LogSubscriptionResponse> DeleteV2IamLogSubscriptionSubscriptionIdAsync(System.Guid subscriptionId) {
+            string uri = $"/v2/iam/log/subscription/{subscriptionId}";
+            return this.SendAsync<_dbaas_logs.LogSubscriptionResponse>("DELETE", uri, null, null, true);
+        }
+        
+        // Path: /v2/iam/log/subscription/{subscriptionId}
+        public Task<_dbaas_logs.LogSubscription> GetV2IamLogSubscriptionSubscriptionIdAsync(System.Guid subscriptionId) {
+            string uri = $"/v2/iam/log/subscription/{subscriptionId}";
+            return this.SendAsync<_dbaas_logs.LogSubscription>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/iam/log/url
+        public Task<_dbaas_logs.TemporaryLogsLink> PostV2IamLogUrlAsync(_dbaas_logs.LogUrlCreation _body) {
+            string uri = $"/v2/iam/log/url";
+            return this.SendAsync<_dbaas_logs.TemporaryLogsLink>("POST", uri, null, _body, true);
+        }
+        
         // Path: /v2/iam/logs/forward
         public Task<_iam_logs.ForwardResponse> PostV2IamLogsForwardAsync(_iam_logs.ForwardRequest _body) {
             string uri = $"/v2/iam/logs/forward";
@@ -42877,16 +42930,16 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag
-        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
-            string uri = $"/v2/iam/resource/{resourceURN}/tag";
-            return this.SendAsync("POST", uri, null, _body, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag/{key}
         public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
             string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
             return this.SendAsync("DELETE", uri, null, null, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag
+        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
+            string uri = $"/v2/iam/resource/{resourceURN}/tag";
+            return this.SendAsync("POST", uri, null, _body, true);
         }
         
         // Path: /v2/iam/resourceGroup
