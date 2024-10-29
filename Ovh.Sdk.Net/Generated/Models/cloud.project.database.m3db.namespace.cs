@@ -20,6 +20,30 @@ namespace _cloud_project_database_m3db_namespace {
         
         // Key: blockSizeDuration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockSizeDuration")]
+        public required System.TimeSpan BlockSizeDuration { get; set; }//;
+        
+        // Key: bufferFutureDuration Type: duration FullType: duration
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("bufferFutureDuration")]
+        public System.TimeSpan? BufferFutureDuration { get; set; }//;
+        
+        // Key: bufferPastDuration Type: duration FullType: duration
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("bufferPastDuration")]
+        public System.TimeSpan? BufferPastDuration { get; set; }//;
+        
+        // Key: periodDuration Type: duration FullType: duration
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("periodDuration")]
+        public System.TimeSpan? PeriodDuration { get; set; }//;
+    }
+    
+    // Id: RetentionCreation Namespace: cloud.project.database.m3db.namespace
+    public class RetentionCreation {
+        
+        // Key: blockDataExpirationDuration Type: duration FullType: duration
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockDataExpirationDuration")]
+        public System.TimeSpan? BlockDataExpirationDuration { get; set; }//;
+        
+        // Key: blockSizeDuration Type: duration FullType: duration
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("blockSizeDuration")]
         public System.TimeSpan? BlockSizeDuration { get; set; }//;
         
         // Key: bufferFutureDuration Type: duration FullType: duration
@@ -32,7 +56,7 @@ namespace _cloud_project_database_m3db_namespace {
         
         // Key: periodDuration Type: duration FullType: duration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("periodDuration")]
-        public required System.TimeSpan PeriodDuration { get; set; }//;
+        public System.TimeSpan? PeriodDuration { get; set; }//;
     }
     
     // Id: TypeEnum Namespace: cloud.project.database.m3db.namespace

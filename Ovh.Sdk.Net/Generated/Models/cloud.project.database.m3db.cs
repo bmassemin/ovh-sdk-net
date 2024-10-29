@@ -32,7 +32,7 @@ namespace _cloud_project_database_m3db {
         
         // Key: snapshotEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("snapshotEnabled")]
-        public required System.Boolean SnapshotEnabled { get; set; }//;
+        public System.Boolean? SnapshotEnabled { get; set; }//;
         
         // Key: type Type: cloud.project.database.m3db.namespace.TypeEnum FullType: cloud.project.database.m3db.namespace.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -40,7 +40,7 @@ namespace _cloud_project_database_m3db {
         
         // Key: writesToCommitLogEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("writesToCommitLogEnabled")]
-        public required System.Boolean WritesToCommitLogEnabled { get; set; }//;
+        public System.Boolean? WritesToCommitLogEnabled { get; set; }//;
     }
     
     // Id: NamespaceCreation Namespace: cloud.project.database.m3db
@@ -58,13 +58,13 @@ namespace _cloud_project_database_m3db {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resolution")]
         public required System.TimeSpan Resolution { get; set; }//;
         
-        // Key: retention Type: cloud.project.database.m3db.namespace.Retention FullType: cloud.project.database.m3db.namespace.Retention
+        // Key: retention Type: cloud.project.database.m3db.namespace.RetentionCreation FullType: cloud.project.database.m3db.namespace.RetentionCreation
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retention")]
-        public required _cloud_project_database_m3db_namespace.Retention Retention { get; set; }//;
+        public required _cloud_project_database_m3db_namespace.RetentionCreation Retention { get; set; }//;
         
         // Key: snapshotEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("snapshotEnabled")]
-        public required System.Boolean SnapshotEnabled { get; set; }//;
+        public System.Boolean? SnapshotEnabled { get; set; }//;
         
         // Key: type Type: cloud.project.database.m3db.namespace.TypeEnum FullType: cloud.project.database.m3db.namespace.TypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -72,7 +72,7 @@ namespace _cloud_project_database_m3db {
         
         // Key: writesToCommitLogEnabled Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("writesToCommitLogEnabled")]
-        public required System.Boolean WritesToCommitLogEnabled { get; set; }//;
+        public System.Boolean? WritesToCommitLogEnabled { get; set; }//;
     }
     
     // Id: User Namespace: cloud.project.database.m3db

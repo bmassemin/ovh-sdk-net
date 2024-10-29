@@ -382,12 +382,115 @@ namespace _zimbra {
         public System.String? Street { get; set; }//;
     }
     
+    // Id: DKIMDiagnostic Namespace: zimbra
+    public class DKIMDiagnostic {
+        
+        // Key: errorCode Type: zimbra.DKIMErrorCodeEnum FullType: zimbra.DKIMErrorCodeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorCode")]
+        public _zimbra.DKIMErrorCodeEnum? ErrorCode { get; set; }//;
+        
+        // Key: errorMessage Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorMessage")]
+        public System.String? ErrorMessage { get; set; }//;
+        
+        // Key: recordsFound Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordsFound")]
+        public System.String[]? RecordsFound { get; set; }//;
+        
+        // Key: status Type: zimbra.DiagnosticStatusEnum FullType: zimbra.DiagnosticStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
+        public required _zimbra.DiagnosticStatusEnum Status { get; set; }//;
+    }
+    
+    // Id: DKIMErrorCodeEnum Namespace: zimbra
+    public enum DKIMErrorCodeEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("INCORRECT_CNAME_RECORD")]
+        INCORRECT_CNAME_RECORD,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("MISSING_ONE_SELECTOR")]
+        MISSING_ONE_SELECTOR,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("OVH_NOT_INCLUDED")]
+        OVH_NOT_INCLUDED,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("TASK_FAILED")]
+        TASK_FAILED,
+    }
+    
     // Id: DNSOwnership Namespace: zimbra
     public class DNSOwnership {
         
         // Key: cname Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cname")]
         public System.String? Cname { get; set; }//;
+    }
+    
+    // Id: Diagnostic Namespace: zimbra
+    public class Diagnostic {
+        
+        // Key: dkim Type: zimbra.DKIMDiagnostic FullType: zimbra.DKIMDiagnostic
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dkim")]
+        public _zimbra.DKIMDiagnostic? Dkim { get; set; }//;
+        
+        // Key: errorCode Type: zimbra.GlobalDiagnosticErrorEnum FullType: zimbra.GlobalDiagnosticErrorEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorCode")]
+        public _zimbra.GlobalDiagnosticErrorEnum? ErrorCode { get; set; }//;
+        
+        // Key: errorMessage Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorMessage")]
+        public System.String? ErrorMessage { get; set; }//;
+        
+        // Key: mx Type: zimbra.MXDiagnostic FullType: zimbra.MXDiagnostic
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("mx")]
+        public _zimbra.MXDiagnostic? Mx { get; set; }//;
+        
+        // Key: spf Type: zimbra.SPFDiagnostic FullType: zimbra.SPFDiagnostic
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("spf")]
+        public _zimbra.SPFDiagnostic? Spf { get; set; }//;
+        
+        // Key: status Type: zimbra.GlobalDiagnosticStatusEnum FullType: zimbra.GlobalDiagnosticStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
+        public required _zimbra.GlobalDiagnosticStatusEnum Status { get; set; }//;
+    }
+    
+    // Id: DiagnosticResponse Namespace: zimbra
+    public class DiagnosticResponse {
+        
+        // Key: diagnostic Type: zimbra.Diagnostic FullType: zimbra.Diagnostic
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("diagnostic")]
+        public required _zimbra.Diagnostic Diagnostic { get; set; }//;
+        
+        // Key: domainId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainId")]
+        public required System.Guid DomainId { get; set; }//;
+        
+        // Key: domainName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainName")]
+        public required System.String DomainName { get; set; }//;
+        
+        // Key: id Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.Guid Id { get; set; }//;
+    }
+    
+    // Id: DiagnosticStatusEnum Namespace: zimbra
+    public enum DiagnosticStatusEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("DISABLED")]
+        DISABLED,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ERROR")]
+        ERROR,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("OK")]
+        OK,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("TO_CONFIGURE")]
+        TO_CONFIGURE,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("UPDATING")]
+        UPDATING,
     }
     
     // Id: DomainCurrentState Namespace: zimbra
@@ -503,6 +606,53 @@ namespace _zimbra {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("READY")]
         READY,
+    }
+    
+    // Id: GlobalDiagnosticErrorEnum Namespace: zimbra
+    public enum GlobalDiagnosticErrorEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("DNS_TIMEOUT")]
+        DNS_TIMEOUT,
+    }
+    
+    // Id: GlobalDiagnosticStatusEnum Namespace: zimbra
+    public enum GlobalDiagnosticStatusEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ERROR")]
+        ERROR,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("OK")]
+        OK,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("PARTIAL")]
+        PARTIAL,
+    }
+    
+    // Id: MXDiagnostic Namespace: zimbra
+    public class MXDiagnostic {
+        
+        // Key: errorCode Type: zimbra.MXErrorCodeEnum FullType: zimbra.MXErrorCodeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorCode")]
+        public _zimbra.MXErrorCodeEnum? ErrorCode { get; set; }//;
+        
+        // Key: errorMessage Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorMessage")]
+        public System.String? ErrorMessage { get; set; }//;
+        
+        // Key: recordsFound Type: zimbra.MXRecord[] FullType: zimbra.MXRecord[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordsFound")]
+        public _zimbra.MXRecord[]? RecordsFound { get; set; }//;
+        
+        // Key: status Type: zimbra.DiagnosticStatusEnum FullType: zimbra.DiagnosticStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
+        public required _zimbra.DiagnosticStatusEnum Status { get; set; }//;
+    }
+    
+    // Id: MXErrorCodeEnum Namespace: zimbra
+    public enum MXErrorCodeEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("MISSING_VALID_MX_RECORD")]
+        MISSING_VALID_MX_RECORD,
     }
     
     // Id: MXRecord Namespace: zimbra
@@ -1037,6 +1187,36 @@ namespace _zimbra {
         // Key: targetSpec Type: zimbra.Redirection FullType: zimbra.Redirection
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
         public required _zimbra.Redirection TargetSpec { get; set; }//;
+    }
+    
+    // Id: SPFDiagnostic Namespace: zimbra
+    public class SPFDiagnostic {
+        
+        // Key: errorCode Type: zimbra.SPFErrorCodeEnum FullType: zimbra.SPFErrorCodeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorCode")]
+        public _zimbra.SPFErrorCodeEnum? ErrorCode { get; set; }//;
+        
+        // Key: errorMessage Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("errorMessage")]
+        public System.String? ErrorMessage { get; set; }//;
+        
+        // Key: recordFound Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordFound")]
+        public System.String? RecordFound { get; set; }//;
+        
+        // Key: status Type: zimbra.DiagnosticStatusEnum FullType: zimbra.DiagnosticStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
+        public required _zimbra.DiagnosticStatusEnum Status { get; set; }//;
+    }
+    
+    // Id: SPFErrorCodeEnum Namespace: zimbra
+    public enum SPFErrorCodeEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("MISSING_RECORD")]
+        MISSING_RECORD,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("OVH_NOT_INCLUDED")]
+        OVH_NOT_INCLUDED,
     }
     
     // Id: expectedDNSConfig Namespace: zimbra

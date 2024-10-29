@@ -104,7 +104,7 @@ namespace _xdsl {
         
         // Key: mailSending Type: xdsl.mailSendingAccessStatusEnum FullType: xdsl.mailSendingAccessStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailSending")]
-        public required _xdsl.mailSendingAccessStatusEnum MailSending { get; set; }//;
+        public _xdsl.mailSendingAccessStatusEnum? MailSending { get; set; }//;
         
         // Key: monitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoring")]
@@ -354,7 +354,7 @@ namespace _xdsl {
         
         // Key: mailSending Type: xdsl.mailSendingAccessStatusEnum FullType: xdsl.mailSendingAccessStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mailSending")]
-        public required _xdsl.mailSendingAccessStatusEnum MailSending { get; set; }//;
+        public _xdsl.mailSendingAccessStatusEnum? MailSending { get; set; }//;
         
         // Key: monitoring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("monitoring")]

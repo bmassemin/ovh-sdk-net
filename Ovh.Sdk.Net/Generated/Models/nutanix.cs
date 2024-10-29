@@ -258,6 +258,67 @@ namespace _nutanix {
         public required System.String Vrack { get; set; }//;
     }
     
+    // Id: deploy Namespace: nutanix
+    public class deploy {
+        
+        // Key: ahvIp Type: ipv4 FullType: ipv4
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ahvIp")]
+        public required System.String AhvIp { get; set; }//;
+        
+        // Key: cvmIp Type: ipv4 FullType: ipv4
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("cvmIp")]
+        public required System.String CvmIp { get; set; }//;
+        
+        // Key: version Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
+        public required System.String Version { get; set; }//;
+    }
+    
+    // Id: nodeDetails Namespace: nutanix
+    public class nodeDetails {
+        
+        // Key: ahvIp Type: ipv4 FullType: ipv4
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ahvIp")]
+        public required System.String AhvIp { get; set; }//;
+        
+        // Key: cvmIp Type: ipv4 FullType: ipv4
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("cvmIp")]
+        public required System.String CvmIp { get; set; }//;
+        
+        // Key: server Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
+        public required System.String Server { get; set; }//;
+        
+        // Key: status Type: nutanix.nodeStatusEnum FullType: nutanix.nodeStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
+        public required _nutanix.nodeStatusEnum Status { get; set; }//;
+    }
+    
+    // Id: nodeStatusEnum Namespace: nutanix
+    public enum nodeStatusEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("DEPLOYED")]
+        DEPLOYED,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("DEPLOYING")]
+        DEPLOYING,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("DEPLOY_FAILURE")]
+        DEPLOY_FAILURE,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("UNDEPLOYED")]
+        UNDEPLOYED,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("UNDEPLOYING")]
+        UNDEPLOYING,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("UNDEPLOY_FAILURE")]
+        UNDEPLOY_FAILURE,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("UNKNOWN")]
+        UNKNOWN,
+    }
+    
     // Id: nodes Namespace: nutanix
     public class nodes {
         

@@ -1606,6 +1606,9 @@ namespace _dedicated {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("hexstring")]
         hexstring,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostname")]
+        hostname,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ip")]
         ip,
         

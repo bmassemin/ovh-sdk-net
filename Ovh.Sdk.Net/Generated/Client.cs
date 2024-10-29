@@ -23307,6 +23307,24 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<string>("POST", uri, null, _body, true);
         }
         
+        // Path: /v1/nutanix/{serviceName}/nodes
+        public Task<_nutanix.nodeDetails[]> GetV1NutanixServiceNameNodesAsync(string serviceName) {
+            string uri = $"/v1/nutanix/{serviceName}/nodes";
+            return this.SendAsync<_nutanix.nodeDetails[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/nutanix/{serviceName}/nodes/{server}
+        public Task<_nutanix.nodeDetails> GetV1NutanixServiceNameNodesServerAsync(string server, string serviceName) {
+            string uri = $"/v1/nutanix/{serviceName}/nodes/{server}";
+            return this.SendAsync<_nutanix.nodeDetails>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/nutanix/{serviceName}/nodes/{server}/deploy
+        public Task PutV1NutanixServiceNameNodesServerDeployAsync(_nutanix.deploy _body, string server, string serviceName) {
+            string uri = $"/v1/nutanix/{serviceName}/nodes/{server}/deploy";
+            return this.SendAsync("PUT", uri, null, _body, true);
+        }
+        
         // Path: /v1/nutanix/{serviceName}/serviceInfos
         public Task<_services.Service> GetV1NutanixServiceNameServiceInfosAsync(string serviceName) {
             string uri = $"/v1/nutanix/{serviceName}/serviceInfos";
