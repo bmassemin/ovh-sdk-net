@@ -303,6 +303,9 @@ namespace _nutanix {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("DEPLOYING")]
         DEPLOYING,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("DEPLOY_CANCELLED")]
+        DEPLOY_CANCELLED,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("DEPLOY_FAILURE")]
         DEPLOY_FAILURE,
         
@@ -311,6 +314,9 @@ namespace _nutanix {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("UNDEPLOYING")]
         UNDEPLOYING,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("UNDEPLOY_CANCELLED")]
+        UNDEPLOY_CANCELLED,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("UNDEPLOY_FAILURE")]
         UNDEPLOY_FAILURE,

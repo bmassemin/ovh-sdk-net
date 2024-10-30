@@ -647,8 +647,11 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/ai/data/region/{region}/alias
-        public Task<_cloud_project_ai.DataStore> PostV1CloudProjectServiceNameAiDataRegionRegionAliasAsync(_cloud_project_ai.DataStoreInput _body, string region, string serviceName) {
-            string uri = $"/v1/cloud/project/{serviceName}/ai/data/region/{region}/alias";
+        public Task<_cloud_project_ai.DataStore> PostV1CloudProjectServiceNameAiDataRegionRegionAliasAsync(_cloud_project_ai.DataStoreInput _body, string region, string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.Boolean? skipDataStoreConnectionCheck) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("skipDataStoreConnectionCheck", skipDataStoreConnectionCheck);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/cloud/project/{serviceName}/ai/data/region/{region}/alias{queryParameters}";
             return this.SendAsync<_cloud_project_ai.DataStore>("POST", uri, null, _body, true);
         }
         
@@ -26550,6 +26553,24 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
         }
         
+        // Path: /v1/order/catalog/public/vmwareCloudDirector
+        public Task<_order_catalog_public.Catalog> GetV1OrderCatalogPublicVmwareCloudDirectorAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/order/catalog/public/vmwareCloudDirector{queryParameters}";
+            return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
+        }
+        
+        // Path: /v1/order/catalog/public/vmwareCloudDirectorBackup
+        public Task<_order_catalog_public.Catalog> GetV1OrderCatalogPublicVmwareCloudDirectorBackupAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/order/catalog/public/vmwareCloudDirectorBackup{queryParameters}";
+            return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
+        }
+        
         // Path: /v1/order/catalog/public/vps
         public Task<_order_catalog_public.Catalog> GetV1OrderCatalogPublicVpsAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
@@ -26574,6 +26595,15 @@ namespace Ovh.Sdk.Net {
             queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
             var queryParameters = this.CreateQueryParams(queryParametersTemp);
             string uri = $"/v1/order/catalog/public/webPaaS{queryParameters}";
+            return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
+        }
+        
+        // Path: /v1/order/catalog/public/zimbra
+        public Task<_order_catalog_public.Catalog> GetV1OrderCatalogPublicZimbraAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/order/catalog/public/zimbra{queryParameters}";
             return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
         }
         
@@ -42948,16 +42978,16 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag/{key}
-        public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
-            string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
-            return this.SendAsync("DELETE", uri, null, null, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag
         public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
             string uri = $"/v2/iam/resource/{resourceURN}/tag";
             return this.SendAsync("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag/{key}
+        public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
+            string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
+            return this.SendAsync("DELETE", uri, null, null, true);
         }
         
         // Path: /v2/iam/resourceGroup
