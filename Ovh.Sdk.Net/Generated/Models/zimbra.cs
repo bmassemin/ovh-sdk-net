@@ -1132,6 +1132,10 @@ namespace _zimbra {
     // Id: Redirection Namespace: zimbra
     public class Redirection {
         
+        // Key: keepCopy Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("keepCopy")]
+        public required System.Boolean KeepCopy { get; set; }//;
+        
         // Key: redirection Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redirection")]
         public required System.String _Redirection { get; set; }//;
