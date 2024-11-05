@@ -20425,12 +20425,6 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_dbaas_logs.TemporaryLogsLink>("POST", uri, null, _body, true);
         }
         
-        // Path: /v1/me/api/logs/forward
-        public Task<_apilogs.ForwardResponse> PostV1MeApiLogsForwardAsync(_apilogs.ForwardRequest _body) {
-            string uri = $"/v1/me/api/logs/forward";
-            return this.SendAsync<_apilogs.ForwardResponse>("POST", uri, null, _body, true);
-        }
-        
         // Path: /v1/me/api/logs/self
         public Task<System.Int64[]> GetV1MeApiLogsSelfAsync() {
             string uri = $"/v1/me/api/logs/self";

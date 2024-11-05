@@ -89,6 +89,10 @@ namespace _cloud_share {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
         public required _cloud_share.StatusEnum Status { get; set; }//;
         
+        // Key: type Type: cloud.share.TypeEnum FullType: cloud.share.TypeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
+        public required _cloud_share.TypeEnum Type { get; set; }//;
+        
         // Key: updatedAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
         public required System.DateTime UpdatedAt { get; set; }//;
@@ -193,5 +197,12 @@ namespace _cloud_share {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unmanaged")]
         unmanaged,
+    }
+    
+    // Id: TypeEnum Namespace: cloud.share
+    public enum TypeEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("default")]
+        @default,
     }
 }
