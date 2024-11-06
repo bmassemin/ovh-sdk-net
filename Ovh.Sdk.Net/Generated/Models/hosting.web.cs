@@ -1202,6 +1202,10 @@ namespace _hosting_web {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastOvhConfigScan")]
         public System.DateTime? LastOvhConfigScan { get; set; }//;
         
+        // Key: multipleSSL Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("multipleSSL")]
+        public required System.Boolean MultipleSSL { get; set; }//;
+        
         // Key: offer Type: hosting.web.OfferCapabilitiesEnum FullType: hosting.web.OfferCapabilitiesEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
         public required _hosting_web.OfferCapabilitiesEnum Offer { get; set; }//;
@@ -1345,6 +1349,10 @@ namespace _hosting_web {
         // Key: lastOvhConfigScan Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastOvhConfigScan")]
         public System.DateTime? LastOvhConfigScan { get; set; }//;
+        
+        // Key: multipleSSL Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("multipleSSL")]
+        public required System.Boolean MultipleSSL { get; set; }//;
         
         // Key: offer Type: hosting.web.OfferCapabilitiesEnum FullType: hosting.web.OfferCapabilitiesEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]

@@ -35,6 +35,14 @@ namespace _publicCloud_rancher {
         public required System.String Description { get; set; }//;
     }
     
+    // Id: Networking Namespace: publicCloud.rancher
+    public class Networking {
+        
+        // Key: egressCidrBlocks Type: ipBlock[] FullType: ipBlock[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("egressCidrBlocks")]
+        public required System.String[] EgressCidrBlocks { get; set; }//;
+    }
+    
     // Id: PlanCapability Namespace: publicCloud.rancher
     public class PlanCapability {
         
@@ -191,6 +199,10 @@ namespace _publicCloud_rancher {
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public required System.String Name { get; set; }//;
+        
+        // Key: networking Type: publicCloud.rancher.Networking FullType: publicCloud.rancher.Networking
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("networking")]
+        public _publicCloud_rancher.Networking? Networking { get; set; }//;
         
         // Key: plan Type: publicCloud.rancher.PlanEnum FullType: publicCloud.rancher.PlanEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plan")]

@@ -86,6 +86,10 @@ namespace _ovhcloudconnect {
     // Id: Diagnostic Namespace: ovhcloudconnect
     public class Diagnostic {
         
+        // Key: date Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
+        public required System.DateTime Date { get; set; }//;
+        
         // Key: function Type: ovhcloudconnect.diagnostic.FunctionEnum FullType: ovhcloudconnect.diagnostic.FunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
         public required _ovhcloudconnect_diagnostic.FunctionEnum Function { get; set; }//;
@@ -97,6 +101,10 @@ namespace _ovhcloudconnect {
         // Key: result Type: ovhcloudconnect.DiagnosticResult[] FullType: ovhcloudconnect.DiagnosticResult[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
         public _ovhcloudconnect.DiagnosticResult[]? Result { get; set; }//;
+        
+        // Key: source Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("source")]
+        public required System.String Source { get; set; }//;
         
         // Key: status Type: ovhcloudconnect.task.StatusEnum FullType: ovhcloudconnect.task.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]

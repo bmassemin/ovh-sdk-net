@@ -2962,6 +2962,10 @@ namespace _telephony {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("lockOutCallPassword")]
         public System.String? LockOutCallPassword { get; set; }//;
         
+        // Key: proxy Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("proxy")]
+        public required System.String Proxy { get; set; }//;
+        
         // Key: recordOutgoingCallsBeta Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("recordOutgoingCallsBeta")]
         public required System.Boolean RecordOutgoingCallsBeta { get; set; }//;
