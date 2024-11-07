@@ -167,6 +167,54 @@ namespace _okms_serviceKey {
         public required _okms.KeyTypeEnum Type { get; set; }//;
     }
     
+    // Id: Response Namespace: okms.serviceKey
+    public class ResponseWithIAM {
+        
+        // Key: createdAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
+        public required System.DateTime CreatedAt { get; set; }//;
+        
+        // Key: curve Type: okms.KeyCurveEnum FullType: okms.KeyCurveEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("curve")]
+        public _okms.KeyCurveEnum? Curve { get; set; }//;
+        
+        // Key: iam Type: iam.ResourceMetadata FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
+        public _iam.ResourceMetadata? Iam { get; set; }//;
+        
+        // Key: id Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.Guid Id { get; set; }//;
+        
+        // Key: keys Type: okms.serviceKey.JsonWebKey[] FullType: okms.serviceKey.JsonWebKey[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("keys")]
+        public _okms_serviceKey.JsonWebKey[]? Keys { get; set; }//;
+        
+        // Key: keysPEM Type: okms.serviceKey.PEM[] FullType: okms.serviceKey.PEM[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("keysPEM")]
+        public _okms_serviceKey.PEM[]? KeysPEM { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
+        // Key: operations Type: okms.KeyOpsEnum[] FullType: okms.KeyOpsEnum[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("operations")]
+        public _okms.KeyOpsEnum[]? Operations { get; set; }//;
+        
+        // Key: size Type: okms.KeySizeEnum FullType: okms.KeySizeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
+        public _okms.KeySizeEnum? Size { get; set; }//;
+        
+        // Key: state Type: okms.KeyStateEnum FullType: okms.KeyStateEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
+        public required _okms.KeyStateEnum State { get; set; }//;
+        
+        // Key: type Type: okms.KeyTypeEnum FullType: okms.KeyTypeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
+        public required _okms.KeyTypeEnum Type { get; set; }//;
+    }
+    
     // Id: Update Namespace: okms.serviceKey
     public class Update {
         

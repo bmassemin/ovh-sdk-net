@@ -834,6 +834,9 @@ namespace _coreTypes {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-south-lz-mil")]
         eu_south_lz_mil,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-south-mil")]
+        eu_south_mil,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-eri")]
         eu_west_eri,
         

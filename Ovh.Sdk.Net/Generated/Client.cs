@@ -43120,13 +43120,16 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v2/okms/resource/{okmsId}/serviceKey
-        public Task<_okms_serviceKey.Response[]> GetV2OkmsResourceOkmsIdServiceKeyAsync(System.Guid okmsId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size) {
+        public Task<_okms_serviceKey.ResponseWithIAM[]> GetV2OkmsResourceOkmsIdServiceKeyAsync(System.Guid okmsId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size, [System.Runtime.InteropServices.OptionalAttribute()] Dictionary<string, _iam_resource.TagFilter[]>? iamTags) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("iamTags", iamTags);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
             Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
             headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
             headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
             var headers = this.CreateHeaders(headersTemp);
-            string uri = $"/v2/okms/resource/{okmsId}/serviceKey";
-            return this.SendAsync<_okms_serviceKey.Response[]>("GET", uri, headers, null, true);
+            string uri = $"/v2/okms/resource/{okmsId}/serviceKey{queryParameters}";
+            return this.SendAsync<_okms_serviceKey.ResponseWithIAM[]>("GET", uri, headers, null, true);
         }
         
         // Path: /v2/okms/resource/{okmsId}/serviceKey
@@ -43142,12 +43145,12 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v2/okms/resource/{okmsId}/serviceKey/{keyId}
-        public Task<_okms_serviceKey.Response> GetV2OkmsResourceOkmsIdServiceKeyKeyIdAsync(System.Guid keyId, System.Guid okmsId, [System.Runtime.InteropServices.OptionalAttribute()] _okms.KeyFormatEnum? format) {
+        public Task<_okms_serviceKey.ResponseWithIAM> GetV2OkmsResourceOkmsIdServiceKeyKeyIdAsync(System.Guid keyId, System.Guid okmsId, [System.Runtime.InteropServices.OptionalAttribute()] _okms.KeyFormatEnum? format) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
             queryParametersTemp.Add("format", format);
             var queryParameters = this.CreateQueryParams(queryParametersTemp);
             string uri = $"/v2/okms/resource/{okmsId}/serviceKey/{keyId}{queryParameters}";
-            return this.SendAsync<_okms_serviceKey.Response>("GET", uri, null, null, true);
+            return this.SendAsync<_okms_serviceKey.ResponseWithIAM>("GET", uri, null, null, true);
         }
         
         // Path: /v2/okms/resource/{okmsId}/serviceKey/{keyId}
