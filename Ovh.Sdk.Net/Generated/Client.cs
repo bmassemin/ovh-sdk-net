@@ -26331,6 +26331,15 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_catalog_public.DedicatedServerCatalog>("GET", uri, null, null, false);
         }
         
+        // Path: /v1/order/catalog/public/cephaas
+        public Task<_order_catalog_public.Catalog> GetV1OrderCatalogPublicCephaasAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/order/catalog/public/cephaas{queryParameters}";
+            return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
+        }
+        
         // Path: /v1/order/catalog/public/cloud
         public Task<_order_catalog_public.Catalog> GetV1OrderCatalogPublicCloudAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
