@@ -599,6 +599,9 @@ namespace _connectivity_eligibility {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("AXIONE")]
         AXIONE,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("BOUYGTEL")]
+        BOUYGTEL,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("BOUYGUES")]
         BOUYGUES,
         
