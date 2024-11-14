@@ -319,95 +319,6 @@ namespace _domain {
         enabled,
     }
     
-    // Id: Domain Namespace: domain
-    public class Domain {
-        
-        // Key: dnssecSupported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnssecSupported")]
-        public required System.Boolean DnssecSupported { get; set; }//;
-        
-        // Key: domain Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
-        public required System.String _Domain { get; set; }//;
-        
-        // Key: glueRecordIpv6Supported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("glueRecordIpv6Supported")]
-        public required System.Boolean GlueRecordIpv6Supported { get; set; }//;
-        
-        // Key: glueRecordMultiIpSupported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("glueRecordMultiIpSupported")]
-        public required System.Boolean GlueRecordMultiIpSupported { get; set; }//;
-        
-        // Key: hostSupported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostSupported")]
-        public required System.Boolean HostSupported { get; set; }//;
-        
-        // Key: lastUpdate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public required System.DateTime LastUpdate { get; set; }//;
-        
-        // Key: nameServerType Type: domain.DomainNsTypeEnum FullType: domain.DomainNsTypeEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("nameServerType")]
-        public required _domain.DomainNsTypeEnum NameServerType { get; set; }//;
-        
-        // Key: offer Type: domain.OfferEnum FullType: domain.OfferEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public required _domain.OfferEnum Offer { get; set; }//;
-        
-        // Key: owoSupported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("owoSupported")]
-        public required System.Boolean OwoSupported { get; set; }//;
-        
-        // Key: parentService Type: domain.ParentService FullType: domain.ParentService
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentService")]
-        public _domain.ParentService? ParentService { get; set; }//;
-        
-        // Key: state Type: domain.DomainStateEnum FullType: domain.DomainStateEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public required _domain.DomainStateEnum State { get; set; }//;
-        
-        // Key: suspensionState Type: domain.DomainSuspensionStateEnum FullType: domain.DomainSuspensionStateEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("suspensionState")]
-        public required _domain.DomainSuspensionStateEnum SuspensionState { get; set; }//;
-        
-        // Key: transferLockStatus Type: domain.DomainLockStatusEnum FullType: domain.DomainLockStatusEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("transferLockStatus")]
-        public required _domain.DomainLockStatusEnum TransferLockStatus { get; set; }//;
-        
-        // Key: whoisOwner Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("whoisOwner")]
-        public required System.String WhoisOwner { get; set; }//;
-    }
-    
-    // Id: DomainLockStatusEnum Namespace: domain
-    public enum DomainLockStatusEnum {
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("locked")]
-        locked,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("locking")]
-        locking,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("unavailable")]
-        unavailable,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("unlocked")]
-        unlocked,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("unlocking")]
-        unlocking,
-    }
-    
-    // Id: DomainNsTypeEnum Namespace: domain
-    public enum DomainNsTypeEnum {
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("external")]
-        external,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hosted")]
-        hosted,
-    }
-    
     // Id: DomainOptionEnum Namespace: domain
     public enum DomainOptionEnum {
         
@@ -673,80 +584,6 @@ namespace _domain {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("technical_suspended")]
         technical_suspended,
-    }
-    
-    // Id: DomainSuspensionStateEnum Namespace: domain
-    public enum DomainSuspensionStateEnum {
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("not_suspended")]
-        not_suspended,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("suspended")]
-        suspended,
-    }
-    
-    // Id: Domain Namespace: domain
-    public class DomainWithIAM {
-        
-        // Key: dnssecSupported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnssecSupported")]
-        public required System.Boolean DnssecSupported { get; set; }//;
-        
-        // Key: domain Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
-        public required System.String Domain { get; set; }//;
-        
-        // Key: glueRecordIpv6Supported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("glueRecordIpv6Supported")]
-        public required System.Boolean GlueRecordIpv6Supported { get; set; }//;
-        
-        // Key: glueRecordMultiIpSupported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("glueRecordMultiIpSupported")]
-        public required System.Boolean GlueRecordMultiIpSupported { get; set; }//;
-        
-        // Key: hostSupported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostSupported")]
-        public required System.Boolean HostSupported { get; set; }//;
-        
-        // Key: iam Type: iam.ResourceMetadata FullType: 
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
-        public _iam.ResourceMetadata? Iam { get; set; }//;
-        
-        // Key: lastUpdate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUpdate")]
-        public required System.DateTime LastUpdate { get; set; }//;
-        
-        // Key: nameServerType Type: domain.DomainNsTypeEnum FullType: domain.DomainNsTypeEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("nameServerType")]
-        public required _domain.DomainNsTypeEnum NameServerType { get; set; }//;
-        
-        // Key: offer Type: domain.OfferEnum FullType: domain.OfferEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("offer")]
-        public required _domain.OfferEnum Offer { get; set; }//;
-        
-        // Key: owoSupported Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("owoSupported")]
-        public required System.Boolean OwoSupported { get; set; }//;
-        
-        // Key: parentService Type: domain.ParentService FullType: domain.ParentService
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("parentService")]
-        public _domain.ParentService? ParentService { get; set; }//;
-        
-        // Key: state Type: domain.DomainStateEnum FullType: domain.DomainStateEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("state")]
-        public required _domain.DomainStateEnum State { get; set; }//;
-        
-        // Key: suspensionState Type: domain.DomainSuspensionStateEnum FullType: domain.DomainSuspensionStateEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("suspensionState")]
-        public required _domain.DomainSuspensionStateEnum SuspensionState { get; set; }//;
-        
-        // Key: transferLockStatus Type: domain.DomainLockStatusEnum FullType: domain.DomainLockStatusEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("transferLockStatus")]
-        public required _domain.DomainLockStatusEnum TransferLockStatus { get; set; }//;
-        
-        // Key: whoisOwner Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("whoisOwner")]
-        public required System.String WhoisOwner { get; set; }//;
     }
     
     // Id: IsForEnum Namespace: domain
@@ -1517,6 +1354,34 @@ namespace _domain {
         public required System.String Step { get; set; }//;
     }
     
+    // Id: Domain Namespace: domain
+    public class Domain {
+        
+        // Key: checksum Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("checksum")]
+        public required System.String Checksum { get; set; }//;
+        
+        // Key: currentState Type: domain.DomainCurrentState FullType: domain.DomainCurrentState
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentState")]
+        public required _domain.DomainCurrentState CurrentState { get; set; }//;
+        
+        // Key: currentTasks Type: common.CurrentTask[] FullType: common.CurrentTask[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentTasks")]
+        public _common.CurrentTask[]? CurrentTasks { get; set; }//;
+        
+        // Key: id Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.String Id { get; set; }//;
+        
+        // Key: resourceStatus Type: common.ResourceStatusEnum FullType: common.ResourceStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceStatus")]
+        public required _common.ResourceStatusEnum ResourceStatus { get; set; }//;
+        
+        // Key: targetSpec Type: domain.DomainTargetSpec FullType: domain.DomainTargetSpec
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
+        public required _domain.DomainTargetSpec TargetSpec { get; set; }//;
+    }
+    
     // Id: DomainCurrentState Namespace: domain
     public class DomainCurrentState {
         
@@ -1555,5 +1420,37 @@ namespace _domain {
         // Key: dnsConfiguration Type: domain.resource.targetSpec.DnsConfiguration FullType: domain.resource.targetSpec.DnsConfiguration
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnsConfiguration")]
         public required _domain_resource_targetSpec.DnsConfiguration DnsConfiguration { get; set; }//;
+    }
+    
+    // Id: Domain Namespace: domain
+    public class DomainWithIAM {
+        
+        // Key: checksum Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("checksum")]
+        public required System.String Checksum { get; set; }//;
+        
+        // Key: currentState Type: domain.DomainCurrentState FullType: domain.DomainCurrentState
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentState")]
+        public required _domain.DomainCurrentState CurrentState { get; set; }//;
+        
+        // Key: currentTasks Type: common.CurrentTask[] FullType: common.CurrentTask[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("currentTasks")]
+        public _common.CurrentTask[]? CurrentTasks { get; set; }//;
+        
+        // Key: iam Type: iam.ResourceMetadata FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("iam")]
+        public _iam.ResourceMetadata? Iam { get; set; }//;
+        
+        // Key: id Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.String Id { get; set; }//;
+        
+        // Key: resourceStatus Type: common.ResourceStatusEnum FullType: common.ResourceStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceStatus")]
+        public required _common.ResourceStatusEnum ResourceStatus { get; set; }//;
+        
+        // Key: targetSpec Type: domain.DomainTargetSpec FullType: domain.DomainTargetSpec
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
+        public required _domain.DomainTargetSpec TargetSpec { get; set; }//;
     }
 }

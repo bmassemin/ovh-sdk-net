@@ -63,6 +63,9 @@ namespace _service {
     // Id: StateEnum Namespace: service
     public enum StateEnum {
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("autorenewInProgress")]
+        autorenewInProgress,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("expired")]
         expired,
         

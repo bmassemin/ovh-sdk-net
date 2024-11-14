@@ -309,6 +309,10 @@ namespace _ovhcloudconnect {
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public required System.String Name { get; set; }//;
+        
+        // Key: type Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
+        public required System.String Type { get; set; }//;
     }
     
     // Id: PopConfig Namespace: ovhcloudconnect

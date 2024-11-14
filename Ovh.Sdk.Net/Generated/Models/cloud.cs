@@ -1715,6 +1715,10 @@ namespace _cloud {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
         public required System.String Region { get; set; }//;
         
+        // Key: replication Type: cloud.StorageReplicationObject FullType: cloud.StorageReplicationObject
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("replication")]
+        public _cloud.StorageReplicationObject? Replication { get; set; }//;
+        
         // Key: versioning Type: cloud.StorageVersioningObject FullType: cloud.StorageVersioningObject
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("versioning")]
         public _cloud.StorageVersioningObject? Versioning { get; set; }//;
@@ -1822,6 +1826,14 @@ namespace _cloud {
         // Key: versionId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("versionId")]
         public required System.String VersionId { get; set; }//;
+    }
+    
+    // Id: StorageReplicationObject Namespace: cloud
+    public class StorageReplicationObject {
+        
+        // Key: rules Type: cloud.storage.ReplicationRule[] FullType: cloud.storage.ReplicationRule[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("rules")]
+        public _cloud_storage.ReplicationRule[]? Rules { get; set; }//;
     }
     
     // Id: StorageVersioningObject Namespace: cloud

@@ -266,6 +266,28 @@ namespace _cloud_storage {
         public required System.Int64 MaxBuckets { get; set; }//;
     }
     
+    // Id: ReplicationRule Namespace: cloud.storage
+    public class ReplicationRule {
+        
+        // Key: id Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.String Id { get; set; }//;
+        
+        // Key: status Type: cloud.storage.ReplicationRuleStatusEnum FullType: cloud.storage.ReplicationRuleStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
+        public required _cloud_storage.ReplicationRuleStatusEnum Status { get; set; }//;
+    }
+    
+    // Id: ReplicationRuleStatusEnum Namespace: cloud.storage
+    public enum ReplicationRuleStatusEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabled")]
+        disabled,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("enabled")]
+        enabled,
+    }
+    
     // Id: RetrievalStateEnum Namespace: cloud.storage
     public enum RetrievalStateEnum {
         
