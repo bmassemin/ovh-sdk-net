@@ -88,7 +88,11 @@ namespace _ovhcloudconnect {
         
         // Key: date Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("date")]
-        public required System.DateTime Date { get; set; }//;
+        public System.DateTime? Date { get; set; }//;
+        
+        // Key: description Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public System.String? Description { get; set; }//;
         
         // Key: function Type: ovhcloudconnect.diagnostic.FunctionEnum FullType: ovhcloudconnect.diagnostic.FunctionEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("function")]
@@ -104,7 +108,7 @@ namespace _ovhcloudconnect {
         
         // Key: source Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("source")]
-        public required System.String Source { get; set; }//;
+        public System.String? Source { get; set; }//;
         
         // Key: status Type: ovhcloudconnect.task.StatusEnum FullType: ovhcloudconnect.task.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
