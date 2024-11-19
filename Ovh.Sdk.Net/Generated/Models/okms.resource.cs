@@ -22,6 +22,10 @@ namespace _okms_resource {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kmipEndpoint")]
         public required System.String KmipEndpoint { get; set; }//;
         
+        // Key: kmipObjectCount Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("kmipObjectCount")]
+        public required System.Int64 KmipObjectCount { get; set; }//;
+        
         // Key: publicCA Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicCA")]
         public System.String? PublicCA { get; set; }//;
@@ -33,6 +37,10 @@ namespace _okms_resource {
         // Key: restEndpoint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("restEndpoint")]
         public required System.String RestEndpoint { get; set; }//;
+        
+        // Key: serviceKeyCount Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceKeyCount")]
+        public required System.Int64 ServiceKeyCount { get; set; }//;
         
         // Key: swaggerEndpoint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("swaggerEndpoint")]
@@ -54,6 +62,10 @@ namespace _okms_resource {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kmipEndpoint")]
         public required System.String KmipEndpoint { get; set; }//;
         
+        // Key: kmipObjectCount Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("kmipObjectCount")]
+        public required System.Int64 KmipObjectCount { get; set; }//;
+        
         // Key: publicCA Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicCA")]
         public System.String? PublicCA { get; set; }//;
@@ -65,6 +77,10 @@ namespace _okms_resource {
         // Key: restEndpoint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("restEndpoint")]
         public required System.String RestEndpoint { get; set; }//;
+        
+        // Key: serviceKeyCount Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceKeyCount")]
+        public required System.Int64 ServiceKeyCount { get; set; }//;
         
         // Key: swaggerEndpoint Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("swaggerEndpoint")]
