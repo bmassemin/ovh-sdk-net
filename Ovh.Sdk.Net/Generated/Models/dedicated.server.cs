@@ -1237,6 +1237,10 @@ namespace _dedicated_server {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("capacity")]
         public required _complexType.UnitAndValue<long> Capacity { get; set; }//;
         
+        // Key: diskGroupId Type: long FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("diskGroupId")]
+        public required System.Int64 DiskGroupId { get; set; }//;
+        
         // Key: names Type: string[] FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("names")]
         public required System.String[] Names { get; set; }//;

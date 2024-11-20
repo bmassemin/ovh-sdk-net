@@ -48,6 +48,9 @@ namespace _ovhcloudconnect_task {
     // Id: StatusEnum Namespace: ovhcloudconnect.task
     public enum StatusEnum {
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("denied")]
+        denied,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("doing")]
         doing,
         

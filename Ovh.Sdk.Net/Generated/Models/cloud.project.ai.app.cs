@@ -78,6 +78,10 @@ namespace _cloud_project_ai_app {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
         public Dictionary<string, string>? Labels { get; set; }//;
         
+        // Key: livenessProbe Type: cloud.project.ai.app.Probe FullType: cloud.project.ai.app.Probe
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("livenessProbe")]
+        public _cloud_project_ai_app.Probe? LivenessProbe { get; set; }//;
+        
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public required System.String Name { get; set; }//;
@@ -141,6 +145,10 @@ namespace _cloud_project_ai_app {
         // Key: labels Type: map[string]string FullType: map[string]string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("labels")]
         public Dictionary<string, string>? Labels { get; set; }//;
+        
+        // Key: livenessProbe Type: cloud.project.ai.app.ProbeInput FullType: cloud.project.ai.app.ProbeInput
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("livenessProbe")]
+        public _cloud_project_ai_app.ProbeInput? LivenessProbe { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -292,25 +300,65 @@ namespace _cloud_project_ai_app {
     // Id: Probe Namespace: cloud.project.ai.app
     public class Probe {
         
+        // Key: failureThreshold Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("failureThreshold")]
+        public System.Int64? FailureThreshold { get; set; }//;
+        
+        // Key: initialDelaySeconds Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("initialDelaySeconds")]
+        public System.Int64? InitialDelaySeconds { get; set; }//;
+        
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
         public System.String? Path { get; set; }//;
         
+        // Key: periodSeconds Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("periodSeconds")]
+        public System.Int64? PeriodSeconds { get; set; }//;
+        
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
         public System.Int64? Port { get; set; }//;
+        
+        // Key: successThreshold Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("successThreshold")]
+        public System.Int64? SuccessThreshold { get; set; }//;
+        
+        // Key: timeoutSeconds Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutSeconds")]
+        public System.Int64? TimeoutSeconds { get; set; }//;
     }
     
     // Id: ProbeInput Namespace: cloud.project.ai.app
     public class ProbeInput {
         
+        // Key: failureThreshold Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("failureThreshold")]
+        public System.Int64? FailureThreshold { get; set; }//;
+        
+        // Key: initialDelaySeconds Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("initialDelaySeconds")]
+        public System.Int64? InitialDelaySeconds { get; set; }//;
+        
         // Key: path Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("path")]
         public System.String? Path { get; set; }//;
         
+        // Key: periodSeconds Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("periodSeconds")]
+        public System.Int64? PeriodSeconds { get; set; }//;
+        
         // Key: port Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("port")]
         public System.Int64? Port { get; set; }//;
+        
+        // Key: successThreshold Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("successThreshold")]
+        public System.Int64? SuccessThreshold { get; set; }//;
+        
+        // Key: timeoutSeconds Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("timeoutSeconds")]
+        public System.Int64? TimeoutSeconds { get; set; }//;
     }
     
     // Id: ScalingAutomaticStrategy Namespace: cloud.project.ai.app

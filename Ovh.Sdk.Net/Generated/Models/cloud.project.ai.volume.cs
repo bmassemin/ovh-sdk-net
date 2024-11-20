@@ -157,30 +157,6 @@ namespace _cloud_project_ai_volume {
         public required _cloud_project_ai_volume.DataSyncStateEnum State { get; set; }//;
     }
     
-    // Id: PrivateSwift Namespace: cloud.project.ai.volume
-    public class PrivateSwift {
-        
-        // Key: archive Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("archive")]
-        public System.String? Archive { get; set; }//;
-        
-        // Key: container Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("container")]
-        public required System.String Container { get; set; }//;
-        
-        // Key: internal Type: boolean FullType: boolean
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("internal")]
-        public System.Boolean? @internal { get; set; }//;
-        
-        // Key: prefix Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
-        public System.String? Prefix { get; set; }//;
-        
-        // Key: region Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public required System.String Region { get; set; }//;
-    }
-    
     // Id: Progress Namespace: cloud.project.ai.volume
     public class Progress {
         
@@ -296,10 +272,6 @@ namespace _cloud_project_ai_volume {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
         public System.String? Prefix { get; set; }//;
         
-        // Key: privateSwift Type: cloud.project.ai.volume.PrivateSwift FullType: cloud.project.ai.volume.PrivateSwift
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("privateSwift")]
-        public _cloud_project_ai_volume.PrivateSwift? PrivateSwift { get; set; }//;
-        
         // Key: publicGit Type: cloud.project.ai.volume.PublicGit FullType: cloud.project.ai.volume.PublicGit
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicGit")]
         public _cloud_project_ai_volume.PublicGit? PublicGit { get; set; }//;
@@ -319,10 +291,6 @@ namespace _cloud_project_ai_volume {
         // Key: targetDataStore Type: cloud.project.ai.volume.DataStore FullType: cloud.project.ai.volume.DataStore
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetDataStore")]
         public _cloud_project_ai_volume.DataStore? TargetDataStore { get; set; }//;
-        
-        // Key: targetPrivateSwift Type: cloud.project.ai.volume.PrivateSwift FullType: cloud.project.ai.volume.PrivateSwift
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetPrivateSwift")]
-        public _cloud_project_ai_volume.PrivateSwift? TargetPrivateSwift { get; set; }//;
         
         // Key: volumeSource Type: cloud.project.ai.volume.VolumeSource FullType: cloud.project.ai.volume.VolumeSource
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("volumeSource")]
