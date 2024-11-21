@@ -1575,6 +1575,10 @@ namespace _dbaas_logs {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isClusterOwner")]
         public required System.Boolean IsClusterOwner { get; set; }//;
         
+        // Key: isIamEnabled Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("isIamEnabled")]
+        public required System.Boolean IsIamEnabled { get; set; }//;
+        
         // Key: plan Type: dbaas.logs.ServicePlanEnum FullType: dbaas.logs.ServicePlanEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plan")]
         public required _dbaas_logs.ServicePlanEnum Plan { get; set; }//;
@@ -1652,6 +1656,10 @@ namespace _dbaas_logs {
         // Key: isClusterOwner Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("isClusterOwner")]
         public required System.Boolean IsClusterOwner { get; set; }//;
+        
+        // Key: isIamEnabled Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("isIamEnabled")]
+        public required System.Boolean IsIamEnabled { get; set; }//;
         
         // Key: plan Type: dbaas.logs.ServicePlanEnum FullType: dbaas.logs.ServicePlanEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plan")]
@@ -2037,6 +2045,10 @@ namespace _dbaas_logs {
         // Key: displayName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("displayName")]
         public System.String? DisplayName { get; set; }//;
+        
+        // Key: enableIam Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("enableIam")]
+        public System.Boolean? EnableIam { get; set; }//;
     }
     
     // Id: Url Namespace: dbaas.logs

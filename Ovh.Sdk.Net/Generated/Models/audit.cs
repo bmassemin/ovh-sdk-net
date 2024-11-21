@@ -196,21 +196,25 @@ namespace _audit {
     // Id: LogProviderDeletedDetails Namespace: audit
     public class LogProviderDeletedDetails {
         
-        // Key: group Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
-        public required System.String Group { get; set; }//;
+        // Key: ssoServiceURL Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssoServiceURL")]
+        public required System.String SsoServiceURL { get; set; }//;
     }
     
     // Id: LogProviderModifiedDetails Namespace: audit
     public class LogProviderModifiedDetails {
         
-        // Key: group Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
-        public required System.String Group { get; set; }//;
+        // Key: groupAttributeName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupAttributeName")]
+        public required System.String GroupAttributeName { get; set; }//;
         
-        // Key: role Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
-        public required System.String Role { get; set; }//;
+        // Key: ssoServiceURL Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssoServiceURL")]
+        public required System.String SsoServiceURL { get; set; }//;
+        
+        // Key: userAttributeName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAttributeName")]
+        public required System.String UserAttributeName { get; set; }//;
     }
     
     // Id: LogTypeEnum Namespace: audit

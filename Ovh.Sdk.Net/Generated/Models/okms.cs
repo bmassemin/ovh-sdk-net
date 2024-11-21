@@ -216,5 +216,14 @@ namespace _okms {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("EU_WEST_SBG")]
         EU_WEST_SBG,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-par")]
+        eu_west_par,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-rbx")]
+        eu_west_rbx,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-sbg")]
+        eu_west_sbg,
     }
 }

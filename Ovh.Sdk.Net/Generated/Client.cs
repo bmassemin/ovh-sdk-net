@@ -16976,11 +16976,8 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/hosting/web/{serviceName}/module/{id}
-        public Task<_hosting_web.task> DeleteV1HostingWebServiceNameModuleIdAsync(long id, string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.Boolean? purgeData) {
-            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
-            queryParametersTemp.Add("purgeData", purgeData);
-            var queryParameters = this.CreateQueryParams(queryParametersTemp);
-            string uri = $"/v1/hosting/web/{serviceName}/module/{id}{queryParameters}";
+        public Task<_hosting_web.task> DeleteV1HostingWebServiceNameModuleIdAsync(long id, string serviceName) {
+            string uri = $"/v1/hosting/web/{serviceName}/module/{id}";
             return this.SendAsync<_hosting_web.task>("DELETE", uri, null, null, true);
         }
         
@@ -42981,16 +42978,16 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag/{key}
-        public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
-            string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
-            return this.SendAsync("DELETE", uri, null, null, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag
         public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
             string uri = $"/v2/iam/resource/{resourceURN}/tag";
             return this.SendAsync("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag/{key}
+        public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
+            string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
+            return this.SendAsync("DELETE", uri, null, null, true);
         }
         
         // Path: /v2/iam/resourceGroup
