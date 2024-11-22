@@ -503,6 +503,9 @@ namespace _hosting_web {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("php8.3")]
         php8_3,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("php8.4")]
+        php8_4,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("python2")]
         python2,
         
@@ -987,6 +990,9 @@ namespace _hosting_web {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("phpfpm-8.3")]
         phpfpm_8_3,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("phpfpm-8.4")]
+        phpfpm_8_4,
     }
     
     // Id: PhpVersionStateEnum Namespace: hosting.web

@@ -50,6 +50,9 @@ namespace _hosting_web_ovhConfig {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("8.3")]
         _8_3,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("8.4")]
+        _8_4,
     }
     
     // Id: EngineNameEnum Namespace: hosting.web.ovhConfig
@@ -115,6 +118,9 @@ namespace _hosting_web_ovhConfig {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("8.3")]
         _8_3,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("8.4")]
+        _8_4,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("AUTO")]
         AUTO,
