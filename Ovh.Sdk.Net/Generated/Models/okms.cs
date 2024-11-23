@@ -211,12 +211,6 @@ namespace _okms {
     // Id: RegionEnum Namespace: okms
     public enum RegionEnum {
         
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("EU_WEST_RBX")]
-        EU_WEST_RBX,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("EU_WEST_SBG")]
-        EU_WEST_SBG,
-        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-par")]
         eu_west_par,
         

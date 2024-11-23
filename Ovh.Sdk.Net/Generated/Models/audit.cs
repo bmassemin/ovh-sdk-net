@@ -235,6 +235,15 @@ namespace _audit {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("LOGIN_SUCCESS")]
         LOGIN_SUCCESS,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("POLICY_CREATED")]
+        POLICY_CREATED,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("POLICY_DELETED")]
+        POLICY_DELETED,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("POLICY_MODIFIED")]
+        POLICY_MODIFIED,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("PROVIDER_CREATED")]
         PROVIDER_CREATED,
         
@@ -243,6 +252,15 @@ namespace _audit {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("PROVIDER_MODIFIED")]
         PROVIDER_MODIFIED,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("RESOURCE_GROUP_CREATED")]
+        RESOURCE_GROUP_CREATED,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("RESOURCE_GROUP_DELETED")]
+        RESOURCE_GROUP_DELETED,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("RESOURCE_GROUP_MODIFIED")]
+        RESOURCE_GROUP_MODIFIED,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("USER_CREATED")]
         USER_CREATED,
