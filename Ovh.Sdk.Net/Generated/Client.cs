@@ -19230,6 +19230,74 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<string>("POST", uri, null, null, true);
         }
         
+        // Path: /v1/license/hycu
+        public Task<System.String[]> GetV1LicenseHycuAsync([System.Runtime.InteropServices.OptionalAttribute()] Dictionary<string, _iam_resource.TagFilter[]>? iamTags) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("iamTags", iamTags);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/license/hycu{queryParameters}";
+            return this.SendAsync<string[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/license/hycu/{serviceName}
+        public Task<_hycu.StateWithIAM> GetV1LicenseHycuServiceNameAsync(string serviceName) {
+            string uri = $"/v1/license/hycu/{serviceName}";
+            return this.SendAsync<_hycu.StateWithIAM>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/license/hycu/{serviceName}
+        public Task PutV1LicenseHycuServiceNameAsync(_license_hycu.Hycu _body, string serviceName) {
+            string uri = $"/v1/license/hycu/{serviceName}";
+            return this.SendAsync("PUT", uri, null, _body, true);
+        }
+        
+        // Path: /v1/license/hycu/{serviceName}/activate
+        public Task PostV1LicenseHycuServiceNameActivateAsync(_hycu.ActivateLicensePayload _body, string serviceName) {
+            string uri = $"/v1/license/hycu/{serviceName}/activate";
+            return this.SendAsync("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v1/license/hycu/{serviceName}/confirmTermination
+        public Task<System.String> PostV1LicenseHycuServiceNameConfirmTerminationAsync(string serviceName, string token, [System.Runtime.InteropServices.OptionalAttribute()] System.String? commentary, [System.Runtime.InteropServices.OptionalAttribute()] _service.TerminationFutureUseEnum? futureUse, [System.Runtime.InteropServices.OptionalAttribute()] _service.TerminationReasonEnum? reason) {
+            Dictionary<string, object> _body = new System.Collections.Generic.Dictionary<string, object>();
+            _body.Add("commentary", commentary);
+            _body.Add("futureUse", futureUse);
+            _body.Add("reason", reason);
+            _body.Add("token", token);
+            string uri = $"/v1/license/hycu/{serviceName}/confirmTermination";
+            return this.SendAsync<string>("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v1/license/hycu/{serviceName}/license
+        public Task<_hycu.LicenseFile> GetV1LicenseHycuServiceNameLicenseAsync(string serviceName) {
+            string uri = $"/v1/license/hycu/{serviceName}/license";
+            return this.SendAsync<_hycu.LicenseFile>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/license/hycu/{serviceName}/refresh
+        public Task PostV1LicenseHycuServiceNameRefreshAsync(_hycu.RefreshLicensePayload _body, string serviceName) {
+            string uri = $"/v1/license/hycu/{serviceName}/refresh";
+            return this.SendAsync("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v1/license/hycu/{serviceName}/serviceInfos
+        public Task<_services.Service> GetV1LicenseHycuServiceNameServiceInfosAsync(string serviceName) {
+            string uri = $"/v1/license/hycu/{serviceName}/serviceInfos";
+            return this.SendAsync<_services.Service>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/license/hycu/{serviceName}/serviceInfos
+        public Task PutV1LicenseHycuServiceNameServiceInfosAsync(_services.Service _body, string serviceName) {
+            string uri = $"/v1/license/hycu/{serviceName}/serviceInfos";
+            return this.SendAsync("PUT", uri, null, _body, true);
+        }
+        
+        // Path: /v1/license/hycu/{serviceName}/terminate
+        public Task<System.String> PostV1LicenseHycuServiceNameTerminateAsync(string serviceName) {
+            string uri = $"/v1/license/hycu/{serviceName}/terminate";
+            return this.SendAsync<string>("POST", uri, null, null, true);
+        }
+        
         // Path: /v1/license/office
         public Task<System.String[]> GetV1LicenseOfficeAsync([System.Runtime.InteropServices.OptionalAttribute()] Dictionary<string, _iam_resource.TagFilter[]>? iamTags) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
@@ -23313,10 +23381,22 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_nutanix.nodeDetails>("GET", uri, null, null, true);
         }
         
+        // Path: /v1/nutanix/{serviceName}/nodes/{server}
+        public Task PutV1NutanixServiceNameNodesServerAsync(_nutanix.reinstall _body, string server, string serviceName) {
+            string uri = $"/v1/nutanix/{serviceName}/nodes/{server}";
+            return this.SendAsync("PUT", uri, null, _body, true);
+        }
+        
         // Path: /v1/nutanix/{serviceName}/nodes/{server}/deploy
         public Task PutV1NutanixServiceNameNodesServerDeployAsync(_nutanix.deploy _body, string server, string serviceName) {
             string uri = $"/v1/nutanix/{serviceName}/nodes/{server}/deploy";
             return this.SendAsync("PUT", uri, null, _body, true);
+        }
+        
+        // Path: /v1/nutanix/{serviceName}/nodes/{server}/terminate
+        public Task PostV1NutanixServiceNameNodesServerTerminateAsync(string server, string serviceName) {
+            string uri = $"/v1/nutanix/{serviceName}/nodes/{server}/terminate";
+            return this.SendAsync("POST", uri, null, null, true);
         }
         
         // Path: /v1/nutanix/{serviceName}/serviceInfos
@@ -24389,6 +24469,18 @@ namespace Ovh.Sdk.Net {
         // Path: /v1/order/cart/{cartId}/licenseDirectadmin
         public Task<_order_cart.Item> PostV1OrderCartCartIdLicenseDirectadminAsync(_order_cart.GenericProductCreation _body, string cartId) {
             string uri = $"/v1/order/cart/{cartId}/licenseDirectadmin";
+            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
+        }
+        
+        // Path: /v1/order/cart/{cartId}/licenseHycu
+        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdLicenseHycuAsync(string cartId) {
+            string uri = $"/v1/order/cart/{cartId}/licenseHycu";
+            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, false);
+        }
+        
+        // Path: /v1/order/cart/{cartId}/licenseHycu
+        public Task<_order_cart.Item> PostV1OrderCartCartIdLicenseHycuAsync(_order_cart.GenericProductCreation _body, string cartId) {
+            string uri = $"/v1/order/cart/{cartId}/licenseHycu";
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
         }
         
@@ -25625,6 +25717,30 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, true);
         }
         
+        // Path: /v1/order/cartServiceOption/licenseHycu
+        public Task<System.String[]> GetV1OrderCartServiceOptionLicenseHycuAsync() {
+            string uri = $"/v1/order/cartServiceOption/licenseHycu";
+            return this.SendAsync<string[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/order/cartServiceOption/licenseHycu/{serviceName}
+        public Task<_order_cart.GenericOptionDefinition[]> GetV1OrderCartServiceOptionLicenseHycuServiceNameAsync(string serviceName) {
+            string uri = $"/v1/order/cartServiceOption/licenseHycu/{serviceName}";
+            return this.SendAsync<_order_cart.GenericOptionDefinition[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/order/cartServiceOption/licenseHycu/{serviceName}
+        public Task<_order_cart.Item> PostV1OrderCartServiceOptionLicenseHycuServiceNameAsync(string cartId, string duration, string planCode, string pricingMode, long quantity, string serviceName) {
+            Dictionary<string, object> _body = new System.Collections.Generic.Dictionary<string, object>();
+            _body.Add("cartId", cartId);
+            _body.Add("duration", duration);
+            _body.Add("planCode", planCode);
+            _body.Add("pricingMode", pricingMode);
+            _body.Add("quantity", quantity);
+            string uri = $"/v1/order/cartServiceOption/licenseHycu/{serviceName}";
+            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, true);
+        }
+        
         // Path: /v1/order/cartServiceOption/logs
         public Task<System.String[]> GetV1OrderCartServiceOptionLogsAsync() {
             string uri = $"/v1/order/cartServiceOption/logs";
@@ -26138,6 +26254,15 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_catalog.Catalog>("GET", uri, null, null, false);
         }
         
+        // Path: /v1/order/catalog/formatted/licenseHycu
+        public Task<_order_catalog.Catalog> GetV1OrderCatalogFormattedLicenseHycuAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/order/catalog/formatted/licenseHycu{queryParameters}";
+            return this.SendAsync<_order_catalog.Catalog>("GET", uri, null, null, false);
+        }
+        
         // Path: /v1/order/catalog/formatted/licensePlesk
         public Task<_order_catalog.Catalog> GetV1OrderCatalogFormattedLicensePleskAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
@@ -26415,6 +26540,15 @@ namespace Ovh.Sdk.Net {
             queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
             var queryParameters = this.CreateQueryParams(queryParametersTemp);
             string uri = $"/v1/order/catalog/public/ipLoadbalancing{queryParameters}";
+            return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
+        }
+        
+        // Path: /v1/order/catalog/public/licenseHycu
+        public Task<_order_catalog_public.Catalog> GetV1OrderCatalogPublicLicenseHycuAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/order/catalog/public/licenseHycu{queryParameters}";
             return this.SendAsync<_order_catalog_public.Catalog>("GET", uri, null, null, false);
         }
         
@@ -29248,6 +29382,36 @@ namespace Ovh.Sdk.Net {
             _body.Add("autoPayWithPreferredPaymentMethod", autoPayWithPreferredPaymentMethod);
             _body.Add("quantity", quantity);
             string uri = $"/v1/order/upgrade/ipLoadbalancing/{serviceName}/{planCode}";
+            return this.SendAsync<_order_upgrade.OperationAndOrder>("POST", uri, null, _body, true);
+        }
+        
+        // Path: /v1/order/upgrade/licenseHycu
+        public Task<System.String[]> GetV1OrderUpgradeLicenseHycuAsync() {
+            string uri = $"/v1/order/upgrade/licenseHycu";
+            return this.SendAsync<string[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/order/upgrade/licenseHycu/{serviceName}
+        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderUpgradeLicenseHycuServiceNameAsync(string serviceName) {
+            string uri = $"/v1/order/upgrade/licenseHycu/{serviceName}";
+            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/order/upgrade/licenseHycu/{serviceName}/{planCode}
+        public Task<_order_upgrade.OperationAndOrder> GetV1OrderUpgradeLicenseHycuServiceNamePlanCodeAsync(string planCode, long quantity, string serviceName) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("quantity", quantity);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/order/upgrade/licenseHycu/{serviceName}/{planCode}{queryParameters}";
+            return this.SendAsync<_order_upgrade.OperationAndOrder>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/order/upgrade/licenseHycu/{serviceName}/{planCode}
+        public Task<_order_upgrade.OperationAndOrder> PostV1OrderUpgradeLicenseHycuServiceNamePlanCodeAsync(string planCode, long quantity, string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.Boolean? autoPayWithPreferredPaymentMethod) {
+            Dictionary<string, object> _body = new System.Collections.Generic.Dictionary<string, object>();
+            _body.Add("autoPayWithPreferredPaymentMethod", autoPayWithPreferredPaymentMethod);
+            _body.Add("quantity", quantity);
+            string uri = $"/v1/order/upgrade/licenseHycu/{serviceName}/{planCode}";
             return this.SendAsync<_order_upgrade.OperationAndOrder>("POST", uri, null, _body, true);
         }
         

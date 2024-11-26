@@ -113,30 +113,66 @@ namespace _cloud_network {
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public required System.String Name { get; set; }//;
+        
+        // Key: useDefaultPublicDNSResolver Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("useDefaultPublicDNSResolver")]
+        public System.Boolean? UseDefaultPublicDNSResolver { get; set; }//;
     }
     
     // Id: CreateSubnetForGatewaySummary Namespace: cloud.network
     public class CreateSubnetForGatewaySummary {
         
+        // Key: allocationPools Type: cloud.project.AllocationPool[] FullType: cloud.project.AllocationPool[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("allocationPools")]
+        public required _cloud_project.AllocationPool[] AllocationPools { get; set; }//;
+        
         // Key: cidr Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cidr")]
         public required System.String Cidr { get; set; }//;
+        
+        // Key: dnsNameServers Type: ip[] FullType: ip[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnsNameServers")]
+        public required System.String[] DnsNameServers { get; set; }//;
         
         // Key: enableDhcp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enableDhcp")]
         public required System.Boolean EnableDhcp { get; set; }//;
         
+        // Key: gatewayIp Type: ip FullType: ip
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayIp")]
+        public required System.String GatewayIp { get; set; }//;
+        
+        // Key: hostRoutes Type: cloud.network.HostRoute[] FullType: cloud.network.HostRoute[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostRoutes")]
+        public required _cloud_network.HostRoute[] HostRoutes { get; set; }//;
+        
         // Key: ipVersion Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipVersion")]
         public required System.Int64 IpVersion { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
+        // Key: useDefaultPublicDNSResolver Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("useDefaultPublicDNSResolver")]
+        public System.Boolean? UseDefaultPublicDNSResolver { get; set; }//;
     }
     
     // Id: CreateSubnetSummary Namespace: cloud.network
     public class CreateSubnetSummary {
         
+        // Key: allocationPools Type: cloud.project.AllocationPool[] FullType: cloud.project.AllocationPool[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("allocationPools")]
+        public required _cloud_project.AllocationPool[] AllocationPools { get; set; }//;
+        
         // Key: cidr Type: ipBlock FullType: ipBlock
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("cidr")]
         public required System.String Cidr { get; set; }//;
+        
+        // Key: dnsNameServers Type: ip[] FullType: ip[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dnsNameServers")]
+        public required System.String[] DnsNameServers { get; set; }//;
         
         // Key: enableDhcp Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enableDhcp")]
@@ -146,9 +182,25 @@ namespace _cloud_network {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("enableGatewayIp")]
         public required System.Boolean EnableGatewayIp { get; set; }//;
         
+        // Key: gatewayIp Type: ip FullType: ip
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayIp")]
+        public required System.String GatewayIp { get; set; }//;
+        
+        // Key: hostRoutes Type: cloud.network.HostRoute[] FullType: cloud.network.HostRoute[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("hostRoutes")]
+        public required _cloud_network.HostRoute[] HostRoutes { get; set; }//;
+        
         // Key: ipVersion Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipVersion")]
         public required System.Int64 IpVersion { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
+        // Key: useDefaultPublicDNSResolver Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("useDefaultPublicDNSResolver")]
+        public System.Boolean? UseDefaultPublicDNSResolver { get; set; }//;
     }
     
     // Id: Gateway Namespace: cloud.network

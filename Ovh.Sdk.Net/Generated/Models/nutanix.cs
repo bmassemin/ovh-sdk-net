@@ -367,6 +367,14 @@ namespace _nutanix {
         public required System.String Vip { get; set; }//;
     }
     
+    // Id: reinstall Namespace: nutanix
+    public class reinstall {
+        
+        // Key: version Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
+        public required System.String Version { get; set; }//;
+    }
+    
     // Id: state Namespace: nutanix
     public class state {
         
