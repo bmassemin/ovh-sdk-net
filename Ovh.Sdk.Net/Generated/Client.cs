@@ -1592,6 +1592,18 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud_project_database_service.Node>("GET", uri, null, null, true);
         }
         
+        // Path: /v1/cloud/project/{serviceName}/database/cassandra/{clusterId}/prometheus
+        public Task<_cloud_project_database_service.PrometheusEndpoint> GetV1CloudProjectServiceNameDatabaseCassandraClusterIdPrometheusAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/cassandra/{clusterId}/prometheus";
+            return this.SendAsync<_cloud_project_database_service.PrometheusEndpoint>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/cassandra/{clusterId}/prometheus/credentials/reset
+        public Task<_cloud_project_database_service.PrometheusAccess> PostV1CloudProjectServiceNameDatabaseCassandraClusterIdPrometheusCredentialsResetAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/cassandra/{clusterId}/prometheus/credentials/reset";
+            return this.SendAsync<_cloud_project_database_service.PrometheusAccess>("POST", uri, null, null, true);
+        }
+        
         // Path: /v1/cloud/project/{serviceName}/database/cassandra/{clusterId}/user
         public Task<System.Guid[]> GetV1CloudProjectServiceNameDatabaseCassandraClusterIdUserAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/cassandra/{clusterId}/user";
@@ -1629,9 +1641,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/grafana
-        public Task<_cloud_project_database.Service> PostV1CloudProjectServiceNameDatabaseGrafanaAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PostV1CloudProjectServiceNameDatabaseGrafanaAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/grafana";
-            return this.SendAsync<_cloud_project_database.Service>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/grafana/{clusterId}
@@ -1641,15 +1653,15 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/grafana/{clusterId}
-        public Task<_cloud_project_database.Service> GetV1CloudProjectServiceNameDatabaseGrafanaClusterIdAsync(System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> GetV1CloudProjectServiceNameDatabaseGrafanaClusterIdAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/grafana/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("GET", uri, null, null, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("GET", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/grafana/{clusterId}
-        public Task<_cloud_project_database.Service> PutV1CloudProjectServiceNameDatabaseGrafanaClusterIdAsync(_cloud_project_database.Service _body, System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PutV1CloudProjectServiceNameDatabaseGrafanaClusterIdAsync(_cloud_project_database.ServiceWithoutPrometheus _body, System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/grafana/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("PUT", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("PUT", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/grafana/{clusterId}/advancedConfiguration
@@ -1848,9 +1860,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafka
-        public Task<_cloud_project_database.Service> PostV1CloudProjectServiceNameDatabaseKafkaAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PostV1CloudProjectServiceNameDatabaseKafkaAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafka";
-            return this.SendAsync<_cloud_project_database.Service>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafka/{clusterId}
@@ -2187,9 +2199,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect
-        public Task<_cloud_project_database.Service> PostV1CloudProjectServiceNameDatabaseKafkaConnectAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PostV1CloudProjectServiceNameDatabaseKafkaConnectAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaConnect";
-            return this.SendAsync<_cloud_project_database.Service>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}
@@ -2199,15 +2211,15 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}
-        public Task<_cloud_project_database.Service> GetV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdAsync(System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> GetV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("GET", uri, null, null, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("GET", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}
-        public Task<_cloud_project_database.Service> PutV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdAsync(_cloud_project_database.Service _body, System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PutV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdAsync(_cloud_project_database.ServiceWithoutPrometheus _body, System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("PUT", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("PUT", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
@@ -2496,9 +2508,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker
-        public Task<_cloud_project_database.Service> PostV1CloudProjectServiceNameDatabaseKafkaMirrorMakerAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PostV1CloudProjectServiceNameDatabaseKafkaMirrorMakerAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaMirrorMaker";
-            return this.SendAsync<_cloud_project_database.Service>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}
@@ -2508,15 +2520,15 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}
-        public Task<_cloud_project_database.Service> GetV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdAsync(System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> GetV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("GET", uri, null, null, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("GET", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}
-        public Task<_cloud_project_database.Service> PutV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdAsync(_cloud_project_database.Service _body, System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PutV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdAsync(_cloud_project_database.ServiceWithoutPrometheus _body, System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("PUT", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("PUT", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/capabilities/integration
@@ -2667,9 +2679,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3aggregator
-        public Task<_cloud_project_database.Service> PostV1CloudProjectServiceNameDatabaseM3aggregatorAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PostV1CloudProjectServiceNameDatabaseM3aggregatorAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/m3aggregator";
-            return this.SendAsync<_cloud_project_database.Service>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3aggregator/{clusterId}
@@ -2679,15 +2691,15 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3aggregator/{clusterId}
-        public Task<_cloud_project_database.Service> GetV1CloudProjectServiceNameDatabaseM3aggregatorClusterIdAsync(System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> GetV1CloudProjectServiceNameDatabaseM3aggregatorClusterIdAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/m3aggregator/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("GET", uri, null, null, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("GET", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3aggregator/{clusterId}
-        public Task<_cloud_project_database.Service> PutV1CloudProjectServiceNameDatabaseM3aggregatorClusterIdAsync(_cloud_project_database.Service _body, System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PutV1CloudProjectServiceNameDatabaseM3aggregatorClusterIdAsync(_cloud_project_database.ServiceWithoutPrometheus _body, System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/m3aggregator/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("PUT", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("PUT", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3aggregator/{clusterId}/capabilities/integration
@@ -2808,9 +2820,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3db
-        public Task<_cloud_project_database.Service> PostV1CloudProjectServiceNameDatabaseM3dbAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PostV1CloudProjectServiceNameDatabaseM3dbAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/m3db";
-            return this.SendAsync<_cloud_project_database.Service>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3db/{clusterId}
@@ -2820,15 +2832,15 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3db/{clusterId}
-        public Task<_cloud_project_database.Service> GetV1CloudProjectServiceNameDatabaseM3dbClusterIdAsync(System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> GetV1CloudProjectServiceNameDatabaseM3dbClusterIdAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/m3db/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("GET", uri, null, null, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("GET", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3db/{clusterId}
-        public Task<_cloud_project_database.Service> PutV1CloudProjectServiceNameDatabaseM3dbClusterIdAsync(_cloud_project_database.Service _body, System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.ServiceWithoutPrometheus> PutV1CloudProjectServiceNameDatabaseM3dbClusterIdAsync(_cloud_project_database.ServiceWithoutPrometheus _body, System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/m3db/{clusterId}";
-            return this.SendAsync<_cloud_project_database.Service>("PUT", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("PUT", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/m3db/{clusterId}/advancedConfiguration
@@ -3245,6 +3257,18 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud_project_database_service.Node>("PUT", uri, null, _body, true);
         }
         
+        // Path: /v1/cloud/project/{serviceName}/database/mongodb/{clusterId}/prometheus
+        public Task<_cloud_project_database_mongodb.PrometheusEndpoint> GetV1CloudProjectServiceNameDatabaseMongodbClusterIdPrometheusAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/mongodb/{clusterId}/prometheus";
+            return this.SendAsync<_cloud_project_database_mongodb.PrometheusEndpoint>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/mongodb/{clusterId}/prometheus/credentials/reset
+        public Task<_cloud_project_database_service.PrometheusAccess> PostV1CloudProjectServiceNameDatabaseMongodbClusterIdPrometheusCredentialsResetAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/mongodb/{clusterId}/prometheus/credentials/reset";
+            return this.SendAsync<_cloud_project_database_service.PrometheusAccess>("POST", uri, null, null, true);
+        }
+        
         // Path: /v1/cloud/project/{serviceName}/database/mongodb/{clusterId}/restore
         public Task PostV1CloudProjectServiceNameDatabaseMongodbClusterIdRestoreAsync(_cloud_project_database_service.Restore _body, System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/mongodb/{clusterId}/restore";
@@ -3549,6 +3573,18 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud_project_database_service.Node>("GET", uri, null, null, true);
         }
         
+        // Path: /v1/cloud/project/{serviceName}/database/mysql/{clusterId}/prometheus
+        public Task<_cloud_project_database_service.PrometheusEndpoint> GetV1CloudProjectServiceNameDatabaseMysqlClusterIdPrometheusAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/mysql/{clusterId}/prometheus";
+            return this.SendAsync<_cloud_project_database_service.PrometheusEndpoint>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/mysql/{clusterId}/prometheus/credentials/reset
+        public Task<_cloud_project_database_service.PrometheusAccess> PostV1CloudProjectServiceNameDatabaseMysqlClusterIdPrometheusCredentialsResetAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/mysql/{clusterId}/prometheus/credentials/reset";
+            return this.SendAsync<_cloud_project_database_service.PrometheusAccess>("POST", uri, null, null, true);
+        }
+        
         // Path: /v1/cloud/project/{serviceName}/database/mysql/{clusterId}/queryStatistics
         public Task<_cloud_project_database_mysql.QueryStatistics> GetV1CloudProjectServiceNameDatabaseMysqlClusterIdQueryStatisticsAsync(System.Guid clusterId, string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? limit, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? offset) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
@@ -3842,6 +3878,18 @@ namespace Ovh.Sdk.Net {
         public Task<_cloud_project_database_opensearch.Permissions> GetV1CloudProjectServiceNameDatabaseOpensearchClusterIdPermissionsAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/opensearch/{clusterId}/permissions";
             return this.SendAsync<_cloud_project_database_opensearch.Permissions>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/opensearch/{clusterId}/prometheus
+        public Task<_cloud_project_database_service.PrometheusEndpoint> GetV1CloudProjectServiceNameDatabaseOpensearchClusterIdPrometheusAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/opensearch/{clusterId}/prometheus";
+            return this.SendAsync<_cloud_project_database_service.PrometheusEndpoint>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/opensearch/{clusterId}/prometheus/credentials/reset
+        public Task<_cloud_project_database_service.PrometheusAccess> PostV1CloudProjectServiceNameDatabaseOpensearchClusterIdPrometheusCredentialsResetAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/opensearch/{clusterId}/prometheus/credentials/reset";
+            return this.SendAsync<_cloud_project_database_service.PrometheusAccess>("POST", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/opensearch/{clusterId}/user
@@ -4163,6 +4211,18 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud_project_database_service.Node>("GET", uri, null, null, true);
         }
         
+        // Path: /v1/cloud/project/{serviceName}/database/postgresql/{clusterId}/prometheus
+        public Task<_cloud_project_database_service.PrometheusEndpoint> GetV1CloudProjectServiceNameDatabasePostgresqlClusterIdPrometheusAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/postgresql/{clusterId}/prometheus";
+            return this.SendAsync<_cloud_project_database_service.PrometheusEndpoint>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/postgresql/{clusterId}/prometheus/credentials/reset
+        public Task<_cloud_project_database_service.PrometheusAccess> PostV1CloudProjectServiceNameDatabasePostgresqlClusterIdPrometheusCredentialsResetAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/postgresql/{clusterId}/prometheus/credentials/reset";
+            return this.SendAsync<_cloud_project_database_service.PrometheusAccess>("POST", uri, null, null, true);
+        }
+        
         // Path: /v1/cloud/project/{serviceName}/database/postgresql/{clusterId}/queryStatistics
         public Task<_cloud_project_database_postgresql.QueryStatistics> GetV1CloudProjectServiceNameDatabasePostgresqlClusterIdQueryStatisticsAsync(System.Guid clusterId, string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? limit, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? offset) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
@@ -4432,6 +4492,18 @@ namespace Ovh.Sdk.Net {
         public Task<_cloud_project_database_service.Node> GetV1CloudProjectServiceNameDatabaseRedisClusterIdNodeNodeIdAsync(System.Guid clusterId, System.Guid nodeId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/redis/{clusterId}/node/{nodeId}";
             return this.SendAsync<_cloud_project_database_service.Node>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/redis/{clusterId}/prometheus
+        public Task<_cloud_project_database_service.PrometheusEndpoint> GetV1CloudProjectServiceNameDatabaseRedisClusterIdPrometheusAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/redis/{clusterId}/prometheus";
+            return this.SendAsync<_cloud_project_database_service.PrometheusEndpoint>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/redis/{clusterId}/prometheus/credentials/reset
+        public Task<_cloud_project_database_service.PrometheusAccess> PostV1CloudProjectServiceNameDatabaseRedisClusterIdPrometheusCredentialsResetAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/redis/{clusterId}/prometheus/credentials/reset";
+            return this.SendAsync<_cloud_project_database_service.PrometheusAccess>("POST", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/redis/{clusterId}/user
@@ -10851,6 +10923,14 @@ namespace Ovh.Sdk.Net {
         public Task<_dedicatedCloud.ldpSubscription> GetV1DedicatedCloudServiceNameLogSubscriptionSubscriptionIdAsync(string serviceName, System.Guid subscriptionId) {
             string uri = $"/v1/dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}";
             return this.SendAsync<_dedicatedCloud.ldpSubscription>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/dedicatedCloud/{serviceName}/log/url
+        public Task<_dedicatedCloud.LogsURL> PostV1DedicatedCloudServiceNameLogUrlAsync(string kind, string serviceName) {
+            Dictionary<string, object> _body = new System.Collections.Generic.Dictionary<string, object>();
+            _body.Add("kind", kind);
+            string uri = $"/v1/dedicatedCloud/{serviceName}/log/url";
+            return this.SendAsync<_dedicatedCloud.LogsURL>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/dedicatedCloud/{serviceName}/newPrices
@@ -25543,6 +25623,33 @@ namespace Ovh.Sdk.Net {
         // Path: /v1/order/cart/{cartId}/xdsl/options
         public Task<_order_cart.Item> PostV1OrderCartCartIdXdslOptionsAsync(_order_cart.GenericOptionCreation _body, string cartId) {
             string uri = $"/v1/order/cart/{cartId}/xdsl/options";
+            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
+        }
+        
+        // Path: /v1/order/cart/{cartId}/zimbra
+        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdZimbraAsync(string cartId) {
+            string uri = $"/v1/order/cart/{cartId}/zimbra";
+            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, false);
+        }
+        
+        // Path: /v1/order/cart/{cartId}/zimbra
+        public Task<_order_cart.Item> PostV1OrderCartCartIdZimbraAsync(_order_cart.GenericProductCreation _body, string cartId) {
+            string uri = $"/v1/order/cart/{cartId}/zimbra";
+            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
+        }
+        
+        // Path: /v1/order/cart/{cartId}/zimbra/options
+        public Task<_order_cart.GenericOptionDefinition[]> GetV1OrderCartCartIdZimbraOptionsAsync(string cartId, string planCode) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("planCode", planCode);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/order/cart/{cartId}/zimbra/options{queryParameters}";
+            return this.SendAsync<_order_cart.GenericOptionDefinition[]>("GET", uri, null, null, false);
+        }
+        
+        // Path: /v1/order/cart/{cartId}/zimbra/options
+        public Task<_order_cart.Item> PostV1OrderCartCartIdZimbraOptionsAsync(_order_cart.GenericOptionCreation _body, string cartId) {
+            string uri = $"/v1/order/cart/{cartId}/zimbra/options";
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
         }
         

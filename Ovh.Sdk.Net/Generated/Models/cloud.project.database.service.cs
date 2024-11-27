@@ -475,6 +475,30 @@ namespace _cloud_project_database_service {
         public required System.String Region { get; set; }//;
     }
     
+    // Id: PrometheusAccess Namespace: cloud.project.database.service
+    public class PrometheusAccess {
+        
+        // Key: password Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("password")]
+        public required System.String Password { get; set; }//;
+        
+        // Key: username Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
+        public required System.String Username { get; set; }//;
+    }
+    
+    // Id: PrometheusEndpoint Namespace: cloud.project.database.service
+    public class PrometheusEndpoint {
+        
+        // Key: targets Type: cloud.project.database.service.prometheus.Target[] FullType: cloud.project.database.service.prometheus.Target[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("targets")]
+        public required _cloud_project_database_service_prometheus.Target[] Targets { get; set; }//;
+        
+        // Key: username Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("username")]
+        public required System.String Username { get; set; }//;
+    }
+    
     // Id: Replication Namespace: cloud.project.database.service
     public class Replication {
         

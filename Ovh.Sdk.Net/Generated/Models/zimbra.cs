@@ -544,6 +544,10 @@ namespace _zimbra {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoConfigureMX")]
         public required System.Boolean AutoConfigureMX { get; set; }//;
         
+        // Key: autoConfigureSPF Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoConfigureSPF")]
+        public required System.Boolean AutoConfigureSPF { get; set; }//;
+        
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public required System.String Name { get; set; }//;

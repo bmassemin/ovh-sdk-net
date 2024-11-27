@@ -325,6 +325,10 @@ namespace _dbaas_logs {
         // Key: retentionId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionId")]
         public required System.Guid RetentionId { get; set; }//;
+        
+        // Key: retentionType Type: dbaas.logs.RetentionTypeEnum FullType: dbaas.logs.RetentionTypeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionType")]
+        public required _dbaas_logs.RetentionTypeEnum RetentionType { get; set; }//;
     }
     
     // Id: ClusterUpdate Namespace: dbaas.logs
@@ -1430,6 +1434,19 @@ namespace _dbaas_logs {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("READ_WRITE")]
         READ_WRITE,
+    }
+    
+    // Id: RetentionTypeEnum Namespace: dbaas.logs
+    public enum RetentionTypeEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("LOGS_COLD_STORAGE")]
+        LOGS_COLD_STORAGE,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("LOGS_INDEXING")]
+        LOGS_INDEXING,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("METRICS_TENANT")]
+        METRICS_TENANT,
     }
     
     // Id: Role Namespace: dbaas.logs

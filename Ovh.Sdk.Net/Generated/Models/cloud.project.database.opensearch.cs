@@ -102,6 +102,10 @@ namespace _cloud_project_database_opensearch {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disk")]
         public required _cloud_project_database_service.Disk Disk { get; set; }//;
         
+        // Key: enablePrometheus Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("enablePrometheus")]
+        public System.Boolean? EnablePrometheus { get; set; }//;
+        
         // Key: endpoints Type: cloud.project.database.service.Endpoint[] FullType: cloud.project.database.service.Endpoint[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endpoints")]
         public required _cloud_project_database_service.Endpoint[] Endpoints { get; set; }//;

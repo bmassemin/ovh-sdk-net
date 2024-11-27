@@ -1231,6 +1231,18 @@ namespace _dedicatedCloud {
         public required System.String ServiceName { get; set; }//;
     }
     
+    // Id: LogsURL Namespace: dedicatedCloud
+    public class LogsURL {
+        
+        // Key: expirationDate Type: datetime FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("expirationDate")]
+        public required System.DateTime ExpirationDate { get; set; }//;
+        
+        // Key: url Type: string FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
+        public required System.String Url { get; set; }//;
+    }
+    
     // Id: ManagementInterfaceEnum Namespace: dedicatedCloud
     public enum ManagementInterfaceEnum {
         
