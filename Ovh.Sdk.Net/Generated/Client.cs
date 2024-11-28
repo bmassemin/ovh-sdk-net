@@ -393,12 +393,6 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud_order_rule.Availability>("GET", uri, null, null, true);
         }
         
-        // Path: /v1/cloud/order/rule/instanceCategory
-        public Task<_cloud_order_rule.InstanceCategories> GetV1CloudOrderRuleInstanceCategoryAsync() {
-            string uri = $"/v1/cloud/order/rule/instanceCategory";
-            return this.SendAsync<_cloud_order_rule.InstanceCategories>("GET", uri, null, null, true);
-        }
-        
         // Path: /v1/cloud/project
         public Task<System.String[]> GetV1CloudProjectAsync([System.Runtime.InteropServices.OptionalAttribute()] Dictionary<string, _iam_resource.TagFilter[]>? iamTags) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();

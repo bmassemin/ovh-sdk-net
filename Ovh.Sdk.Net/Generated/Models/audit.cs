@@ -42,6 +42,18 @@ namespace _audit {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("loginSuccessDetails")]
         public _audit.LogLoginSuccessDetails? LoginSuccessDetails { get; set; }//;
         
+        // Key: policyCreatedDetails Type: audit.LogPolicyCreatedDetails FullType: audit.LogPolicyCreatedDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("policyCreatedDetails")]
+        public _audit.LogPolicyCreatedDetails? PolicyCreatedDetails { get; set; }//;
+        
+        // Key: policyDeletedDetails Type: audit.LogPolicyDeletedDetails FullType: audit.LogPolicyDeletedDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("policyDeletedDetails")]
+        public _audit.LogPolicyDeletedDetails? PolicyDeletedDetails { get; set; }//;
+        
+        // Key: policyModifiedDetails Type: audit.LogPolicyModifiedDetails FullType: audit.LogPolicyModifiedDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("policyModifiedDetails")]
+        public _audit.LogPolicyModifiedDetails? PolicyModifiedDetails { get; set; }//;
+        
         // Key: providerCreatedDetails Type: audit.LogProviderCreatedDetails FullType: audit.LogProviderCreatedDetails
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("providerCreatedDetails")]
         public _audit.LogProviderCreatedDetails? ProviderCreatedDetails { get; set; }//;
@@ -53,6 +65,18 @@ namespace _audit {
         // Key: providerModifiedDetails Type: audit.LogProviderModifiedDetails FullType: audit.LogProviderModifiedDetails
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("providerModifiedDetails")]
         public _audit.LogProviderModifiedDetails? ProviderModifiedDetails { get; set; }//;
+        
+        // Key: resourceGroupCreatedDetails Type: audit.LogResourceGroupCreatedDetails FullType: audit.LogResourceGroupCreatedDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceGroupCreatedDetails")]
+        public _audit.LogResourceGroupCreatedDetails? ResourceGroupCreatedDetails { get; set; }//;
+        
+        // Key: resourceGroupDeletedDetails Type: audit.LogResourceGroupDeletedDetails FullType: audit.LogResourceGroupDeletedDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceGroupDeletedDetails")]
+        public _audit.LogResourceGroupDeletedDetails? ResourceGroupDeletedDetails { get; set; }//;
+        
+        // Key: resourceGroupModifiedDetails Type: audit.LogResourceGroupModifiedDetails FullType: audit.LogResourceGroupModifiedDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceGroupModifiedDetails")]
+        public _audit.LogResourceGroupModifiedDetails? ResourceGroupModifiedDetails { get; set; }//;
         
         // Key: type Type: audit.LogTypeEnum FullType: audit.LogTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
@@ -140,9 +164,9 @@ namespace _audit {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
         public required System.String Group { get; set; }//;
         
-        // Key: role Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
-        public required System.String Role { get; set; }//;
+        // Key: new Type: audit.LogGroupDetails FullType: audit.LogGroupDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogGroupDetails? @new { get; set; }//;
     }
     
     // Id: LogGroupDeletedDetails Namespace: audit
@@ -151,6 +175,26 @@ namespace _audit {
         // Key: group Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
         public required System.String Group { get; set; }//;
+        
+        // Key: old Type: audit.LogGroupDetails FullType: audit.LogGroupDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogGroupDetails? Old { get; set; }//;
+    }
+    
+    // Id: LogGroupDetails Namespace: audit
+    public class LogGroupDetails {
+        
+        // Key: description Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public System.String? Description { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
+        // Key: role Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
+        public required System.String Role { get; set; }//;
     }
     
     // Id: LogGroupModifiedDetails Namespace: audit
@@ -160,9 +204,13 @@ namespace _audit {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
         public required System.String Group { get; set; }//;
         
-        // Key: role Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("role")]
-        public required System.String Role { get; set; }//;
+        // Key: new Type: audit.LogGroupDetails FullType: audit.LogGroupDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogGroupDetails? @new { get; set; }//;
+        
+        // Key: old Type: audit.LogGroupDetails FullType: audit.LogGroupDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogGroupDetails? Old { get; set; }//;
     }
     
     // Id: LogLoginSuccessDetails Namespace: audit
@@ -177,44 +225,240 @@ namespace _audit {
         public required System.String UserAgent { get; set; }//;
     }
     
+    // Id: LogPolicyChanges Namespace: audit
+    public class LogPolicyChanges {
+        
+        // Key: identities Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("identities")]
+        public System.String[]? Identities { get; set; }//;
+        
+        // Key: resources Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resources")]
+        public System.String[]? Resources { get; set; }//;
+    }
+    
+    // Id: LogPolicyCreatedDetails Namespace: audit
+    public class LogPolicyCreatedDetails {
+        
+        // Key: added Type: audit.LogPolicyChanges FullType: audit.LogPolicyChanges
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("added")]
+        public _audit.LogPolicyChanges? Added { get; set; }//;
+        
+        // Key: new Type: audit.LogPolicyDetails FullType: audit.LogPolicyDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogPolicyDetails? @new { get; set; }//;
+        
+        // Key: policyId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("policyId")]
+        public required System.Guid PolicyId { get; set; }//;
+        
+        // Key: policyName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("policyName")]
+        public required System.String PolicyName { get; set; }//;
+    }
+    
+    // Id: LogPolicyDeletedDetails Namespace: audit
+    public class LogPolicyDeletedDetails {
+        
+        // Key: old Type: audit.LogPolicyDetails FullType: audit.LogPolicyDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogPolicyDetails? Old { get; set; }//;
+        
+        // Key: policyId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("policyId")]
+        public required System.Guid PolicyId { get; set; }//;
+        
+        // Key: policyName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("policyName")]
+        public required System.String PolicyName { get; set; }//;
+        
+        // Key: removed Type: audit.LogPolicyChanges FullType: audit.LogPolicyChanges
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("removed")]
+        public _audit.LogPolicyChanges? Removed { get; set; }//;
+    }
+    
+    // Id: LogPolicyDetails Namespace: audit
+    public class LogPolicyDetails {
+        
+        // Key: description Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public required System.String Description { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+    }
+    
+    // Id: LogPolicyModifiedDetails Namespace: audit
+    public class LogPolicyModifiedDetails {
+        
+        // Key: added Type: audit.LogPolicyChanges FullType: audit.LogPolicyChanges
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("added")]
+        public _audit.LogPolicyChanges? Added { get; set; }//;
+        
+        // Key: new Type: audit.LogPolicyDetails FullType: audit.LogPolicyDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogPolicyDetails? @new { get; set; }//;
+        
+        // Key: old Type: audit.LogPolicyDetails FullType: audit.LogPolicyDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogPolicyDetails? Old { get; set; }//;
+        
+        // Key: policyId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("policyId")]
+        public required System.Guid PolicyId { get; set; }//;
+        
+        // Key: policyName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("policyName")]
+        public required System.String PolicyName { get; set; }//;
+        
+        // Key: removed Type: audit.LogPolicyChanges FullType: audit.LogPolicyChanges
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("removed")]
+        public _audit.LogPolicyChanges? Removed { get; set; }//;
+    }
+    
     // Id: LogProviderCreatedDetails Namespace: audit
     public class LogProviderCreatedDetails {
         
-        // Key: groupAttributeName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupAttributeName")]
-        public required System.String GroupAttributeName { get; set; }//;
+        // Key: new Type: audit.LogProviderDetails FullType: audit.LogProviderDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogProviderDetails? @new { get; set; }//;
         
         // Key: ssoServiceURL Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssoServiceURL")]
         public required System.String SsoServiceURL { get; set; }//;
-        
-        // Key: userAttributeName Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAttributeName")]
-        public required System.String UserAttributeName { get; set; }//;
     }
     
     // Id: LogProviderDeletedDetails Namespace: audit
     public class LogProviderDeletedDetails {
         
+        // Key: old Type: audit.LogProviderDetails FullType: audit.LogProviderDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogProviderDetails? Old { get; set; }//;
+        
         // Key: ssoServiceURL Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssoServiceURL")]
         public required System.String SsoServiceURL { get; set; }//;
     }
     
-    // Id: LogProviderModifiedDetails Namespace: audit
-    public class LogProviderModifiedDetails {
+    // Id: LogProviderDetails Namespace: audit
+    public class LogProviderDetails {
         
         // Key: groupAttributeName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("groupAttributeName")]
         public required System.String GroupAttributeName { get; set; }//;
         
-        // Key: ssoServiceURL Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssoServiceURL")]
-        public required System.String SsoServiceURL { get; set; }//;
+        // Key: requestSignatureEnabled Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("requestSignatureEnabled")]
+        public required System.Boolean RequestSignatureEnabled { get; set; }//;
         
         // Key: userAttributeName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAttributeName")]
         public required System.String UserAttributeName { get; set; }//;
+        
+        // Key: usersDisabled Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("usersDisabled")]
+        public required System.Boolean UsersDisabled { get; set; }//;
+    }
+    
+    // Id: LogProviderModifiedDetails Namespace: audit
+    public class LogProviderModifiedDetails {
+        
+        // Key: new Type: audit.LogProviderDetails FullType: audit.LogProviderDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogProviderDetails? @new { get; set; }//;
+        
+        // Key: old Type: audit.LogProviderDetails FullType: audit.LogProviderDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogProviderDetails? Old { get; set; }//;
+        
+        // Key: ssoServiceURL Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ssoServiceURL")]
+        public required System.String SsoServiceURL { get; set; }//;
+    }
+    
+    // Id: LogResourceGroupChanges Namespace: audit
+    public class LogResourceGroupChanges {
+        
+        // Key: resources Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resources")]
+        public System.String[]? Resources { get; set; }//;
+    }
+    
+    // Id: LogResourceGroupCreatedDetails Namespace: audit
+    public class LogResourceGroupCreatedDetails {
+        
+        // Key: added Type: audit.LogResourceGroupChanges FullType: audit.LogResourceGroupChanges
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("added")]
+        public _audit.LogResourceGroupChanges? Added { get; set; }//;
+        
+        // Key: new Type: audit.LogResourceGroupDetails FullType: audit.LogResourceGroupDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogResourceGroupDetails? @new { get; set; }//;
+        
+        // Key: resourceGroupId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceGroupId")]
+        public required System.Guid ResourceGroupId { get; set; }//;
+        
+        // Key: resourceGroupName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceGroupName")]
+        public required System.String ResourceGroupName { get; set; }//;
+    }
+    
+    // Id: LogResourceGroupDeletedDetails Namespace: audit
+    public class LogResourceGroupDeletedDetails {
+        
+        // Key: old Type: audit.LogResourceGroupDetails FullType: audit.LogResourceGroupDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogResourceGroupDetails? Old { get; set; }//;
+        
+        // Key: removed Type: audit.LogResourceGroupChanges FullType: audit.LogResourceGroupChanges
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("removed")]
+        public _audit.LogResourceGroupChanges? Removed { get; set; }//;
+        
+        // Key: resourceGroupId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceGroupId")]
+        public required System.Guid ResourceGroupId { get; set; }//;
+        
+        // Key: resourceGroupName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceGroupName")]
+        public required System.String ResourceGroupName { get; set; }//;
+    }
+    
+    // Id: LogResourceGroupDetails Namespace: audit
+    public class LogResourceGroupDetails {
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+    }
+    
+    // Id: LogResourceGroupModifiedDetails Namespace: audit
+    public class LogResourceGroupModifiedDetails {
+        
+        // Key: added Type: audit.LogResourceGroupChanges FullType: audit.LogResourceGroupChanges
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("added")]
+        public _audit.LogResourceGroupChanges? Added { get; set; }//;
+        
+        // Key: new Type: audit.LogResourceGroupDetails FullType: audit.LogResourceGroupDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogResourceGroupDetails? @new { get; set; }//;
+        
+        // Key: old Type: audit.LogResourceGroupDetails FullType: audit.LogResourceGroupDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogResourceGroupDetails? Old { get; set; }//;
+        
+        // Key: removed Type: audit.LogResourceGroupChanges FullType: audit.LogResourceGroupChanges
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("removed")]
+        public _audit.LogResourceGroupChanges? Removed { get; set; }//;
+        
+        // Key: resourceGroupId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceGroupId")]
+        public required System.Guid ResourceGroupId { get; set; }//;
+        
+        // Key: resourceGroupName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceGroupName")]
+        public required System.String ResourceGroupName { get; set; }//;
     }
     
     // Id: LogTypeEnum Namespace: audit
@@ -278,13 +522,9 @@ namespace _audit {
     // Id: LogUserCreatedDetails Namespace: audit
     public class LogUserCreatedDetails {
         
-        // Key: group Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
-        public required System.String Group { get; set; }//;
-        
-        // Key: passwordRecoveryEmail Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordRecoveryEmail")]
-        public required System.String PasswordRecoveryEmail { get; set; }//;
+        // Key: new Type: audit.LogUserDetails FullType: audit.LogUserDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogUserDetails? @new { get; set; }//;
         
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
@@ -294,13 +534,21 @@ namespace _audit {
     // Id: LogUserDeletedDetails Namespace: audit
     public class LogUserDeletedDetails {
         
+        // Key: old Type: audit.LogUserDetails FullType: audit.LogUserDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogUserDetails? Old { get; set; }//;
+        
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
         public required System.String User { get; set; }//;
     }
     
-    // Id: LogUserModifiedDetails Namespace: audit
-    public class LogUserModifiedDetails {
+    // Id: LogUserDetails Namespace: audit
+    public class LogUserDetails {
+        
+        // Key: description Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public required System.String Description { get; set; }//;
         
         // Key: group Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("group")]
@@ -309,6 +557,18 @@ namespace _audit {
         // Key: passwordRecoveryEmail Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("passwordRecoveryEmail")]
         public required System.String PasswordRecoveryEmail { get; set; }//;
+    }
+    
+    // Id: LogUserModifiedDetails Namespace: audit
+    public class LogUserModifiedDetails {
+        
+        // Key: new Type: audit.LogUserDetails FullType: audit.LogUserDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("new")]
+        public _audit.LogUserDetails? @new { get; set; }//;
+        
+        // Key: old Type: audit.LogUserDetails FullType: audit.LogUserDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("old")]
+        public _audit.LogUserDetails? Old { get; set; }//;
         
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
