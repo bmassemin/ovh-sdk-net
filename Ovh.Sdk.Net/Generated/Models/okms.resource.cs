@@ -26,6 +26,10 @@ namespace _okms_resource {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kmipObjectCount")]
         public required System.Int64 KmipObjectCount { get; set; }//;
         
+        // Key: kmipRsaEndpoint Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("kmipRsaEndpoint")]
+        public System.String? KmipRsaEndpoint { get; set; }//;
+        
         // Key: publicCA Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicCA")]
         public System.String? PublicCA { get; set; }//;
@@ -65,6 +69,10 @@ namespace _okms_resource {
         // Key: kmipObjectCount Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("kmipObjectCount")]
         public required System.Int64 KmipObjectCount { get; set; }//;
+        
+        // Key: kmipRsaEndpoint Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("kmipRsaEndpoint")]
+        public System.String? KmipRsaEndpoint { get; set; }//;
         
         // Key: publicCA Type: text FullType: text
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("publicCA")]
