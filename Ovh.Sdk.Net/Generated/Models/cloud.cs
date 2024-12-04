@@ -1792,6 +1792,26 @@ namespace _cloud {
         public System.String? VersionId { get; set; }//;
     }
     
+    // Id: StorageObjectDelete Namespace: cloud
+    public class StorageObjectDelete {
+        
+        // Key: key Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
+        public required System.String Key { get; set; }//;
+        
+        // Key: versionId Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("versionId")]
+        public System.String? VersionId { get; set; }//;
+    }
+    
+    // Id: StorageObjectDeleteBulk Namespace: cloud
+    public class StorageObjectDeleteBulk {
+        
+        // Key: objects Type: cloud.StorageObjectDelete[] FullType: cloud.StorageObjectDelete[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("objects")]
+        public required _cloud.StorageObjectDelete[] Objects { get; set; }//;
+    }
+    
     // Id: StorageObjectVersion Namespace: cloud
     public class StorageObjectVersion {
         

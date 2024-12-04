@@ -66,6 +66,10 @@ namespace _dedicated_installationTemplate {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("project")]
         public _dedicated.TemplateOsInfoProject? Project { get; set; }//;
         
+        // Key: rootMountpoint Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("rootMountpoint")]
+        public System.String? RootMountpoint { get; set; }//;
+        
         // Key: softRaidOnlyMirroring Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("softRaidOnlyMirroring")]
         public required System.Boolean SoftRaidOnlyMirroring { get; set; }//;

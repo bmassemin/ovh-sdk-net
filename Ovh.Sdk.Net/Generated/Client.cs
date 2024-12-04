@@ -6007,6 +6007,12 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud.StorageContainer>("PUT", uri, null, _body, true);
         }
         
+        // Path: /v1/cloud/project/{serviceName}/region/{regionName}/storage/{name}/bulkDeleteObjects
+        public Task PostV1CloudProjectServiceNameRegionRegionNameStorageNameBulkDeleteObjectsAsync(_cloud.StorageObjectDeleteBulk _body, string name, string regionName, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/region/{regionName}/storage/{name}/bulkDeleteObjects";
+            return this.SendAsync("POST", uri, null, _body, true);
+        }
+        
         // Path: /v1/cloud/project/{serviceName}/region/{regionName}/storage/{name}/object
         public Task<_cloud.StorageObject[]> GetV1CloudProjectServiceNameRegionRegionNameStorageNameObjectAsync(string name, string regionName, string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.String? keyMarker, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? limit, [System.Runtime.InteropServices.OptionalAttribute()] System.String? prefix, [System.Runtime.InteropServices.OptionalAttribute()] System.String? versionIdMarker, [System.Runtime.InteropServices.OptionalAttribute()] System.Boolean? withVersions) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
