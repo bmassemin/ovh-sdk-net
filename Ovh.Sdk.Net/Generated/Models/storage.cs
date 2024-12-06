@@ -186,6 +186,10 @@ namespace _storage {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("size")]
         public System.Int64? Size { get; set; }//;
         
+        // Key: snapshotID Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("snapshotID")]
+        public System.String? SnapshotID { get; set; }//;
+        
         // Key: status Type: storage.NetAppShareStatusEnum FullType: storage.NetAppShareStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
         public _storage.NetAppShareStatusEnum? Status { get; set; }//;
