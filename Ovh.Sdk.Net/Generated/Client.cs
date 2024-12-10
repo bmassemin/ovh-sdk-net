@@ -11125,8 +11125,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/dedicatedCloud/{serviceName}/task
-        public Task<System.Int64[]> GetV1DedicatedCloudServiceNameTaskAsync(string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.String? name, [System.Runtime.InteropServices.OptionalAttribute()] _dedicatedCloud.TaskStateEnum? state) {
+        public Task<System.Int64[]> GetV1DedicatedCloudServiceNameTaskAsync(string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.DateTime? executionDate, [System.Runtime.InteropServices.OptionalAttribute()] System.String? name, [System.Runtime.InteropServices.OptionalAttribute()] _dedicatedCloud.TaskStateEnum? state) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("executionDate", executionDate);
             queryParametersTemp.Add("name", name);
             queryParametersTemp.Add("state", state);
             var queryParameters = this.CreateQueryParams(queryParametersTemp);
@@ -16926,18 +16927,6 @@ namespace Ovh.Sdk.Net {
             var queryParameters = this.CreateQueryParams(queryParametersTemp);
             string uri = $"/v1/hosting/web/{serviceName}/freedom{queryParameters}";
             return this.SendAsync<string[]>("GET", uri, null, null, true);
-        }
-        
-        // Path: /v1/hosting/web/{serviceName}/freedom/{domain}
-        public Task DeleteV1HostingWebServiceNameFreedomDomainAsync(string domain, string serviceName) {
-            string uri = $"/v1/hosting/web/{serviceName}/freedom/{domain}";
-            return this.SendAsync("DELETE", uri, null, null, true);
-        }
-        
-        // Path: /v1/hosting/web/{serviceName}/freedom/{domain}
-        public Task<_hosting_web.freedom> GetV1HostingWebServiceNameFreedomDomainAsync(string domain, string serviceName) {
-            string uri = $"/v1/hosting/web/{serviceName}/freedom/{domain}";
-            return this.SendAsync<_hosting_web.freedom>("GET", uri, null, null, true);
         }
         
         // Path: /v1/hosting/web/{serviceName}/indy
@@ -43249,16 +43238,16 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag
-        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
-            string uri = $"/v2/iam/resource/{resourceURN}/tag";
-            return this.SendAsync("POST", uri, null, _body, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag/{key}
         public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
             string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
             return this.SendAsync("DELETE", uri, null, null, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag
+        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
+            string uri = $"/v2/iam/resource/{resourceURN}/tag";
+            return this.SendAsync("POST", uri, null, _body, true);
         }
         
         // Path: /v2/iam/resourceGroup

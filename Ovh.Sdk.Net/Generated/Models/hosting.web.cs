@@ -1971,22 +1971,6 @@ namespace _hosting_web {
         public System.Int64? TaskId { get; set; }//;
     }
     
-    // Id: freedom Namespace: hosting.web
-    public class freedom {
-        
-        // Key: domain Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("domain")]
-        public required System.String Domain { get; set; }//;
-        
-        // Key: status Type: hosting.web.freedom.StatusEnum FullType: hosting.web.freedom.StatusEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public required _hosting_web_freedom.StatusEnum Status { get; set; }//;
-        
-        // Key: type Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public required System.String Type { get; set; }//;
-    }
-    
     // Id: indy Namespace: hosting.web
     public class indy {
         
