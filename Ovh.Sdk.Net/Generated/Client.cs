@@ -24517,30 +24517,6 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
         }
         
-        // Path: /v1/order/cart/{cartId}/licenseCloudLinux
-        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdLicenseCloudLinuxAsync(string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/licenseCloudLinux";
-            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/licenseCloudLinux
-        public Task<_order_cart.Item> PostV1OrderCartCartIdLicenseCloudLinuxAsync(_order_cart.GenericProductCreation _body, string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/licenseCloudLinux";
-            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/licenseDirectadmin
-        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdLicenseDirectadminAsync(string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/licenseDirectadmin";
-            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/licenseDirectadmin
-        public Task<_order_cart.Item> PostV1OrderCartCartIdLicenseDirectadminAsync(_order_cart.GenericProductCreation _body, string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/licenseDirectadmin";
-            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
-        }
-        
         // Path: /v1/order/cart/{cartId}/licenseHycu
         public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdLicenseHycuAsync(string cartId) {
             string uri = $"/v1/order/cart/{cartId}/licenseHycu";
@@ -24592,18 +24568,6 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
         }
         
-        // Path: /v1/order/cart/{cartId}/licenseVirtuozzo
-        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdLicenseVirtuozzoAsync(string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/licenseVirtuozzo";
-            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/licenseVirtuozzo
-        public Task<_order_cart.Item> PostV1OrderCartCartIdLicenseVirtuozzoAsync(_order_cart.GenericProductCreation _body, string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/licenseVirtuozzo";
-            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
-        }
-        
         // Path: /v1/order/cart/{cartId}/licenseWindows
         public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdLicenseWindowsAsync(string cartId) {
             string uri = $"/v1/order/cart/{cartId}/licenseWindows";
@@ -24613,18 +24577,6 @@ namespace Ovh.Sdk.Net {
         // Path: /v1/order/cart/{cartId}/licenseWindows
         public Task<_order_cart.Item> PostV1OrderCartCartIdLicenseWindowsAsync(_order_cart.GenericProductCreation _body, string cartId) {
             string uri = $"/v1/order/cart/{cartId}/licenseWindows";
-            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/licenseWorklight
-        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdLicenseWorklightAsync(string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/licenseWorklight";
-            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/licenseWorklight
-        public Task<_order_cart.Item> PostV1OrderCartCartIdLicenseWorklightAsync(_order_cart.GenericProductCreation _body, string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/licenseWorklight";
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
         }
         
@@ -26332,24 +26284,6 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_catalog.Catalog>("GET", uri, null, null, false);
         }
         
-        // Path: /v1/order/catalog/formatted/licenseCloudLinux
-        public Task<_order_catalog.Catalog> GetV1OrderCatalogFormattedLicenseCloudLinuxAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
-            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
-            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
-            var queryParameters = this.CreateQueryParams(queryParametersTemp);
-            string uri = $"/v1/order/catalog/formatted/licenseCloudLinux{queryParameters}";
-            return this.SendAsync<_order_catalog.Catalog>("GET", uri, null, null, false);
-        }
-        
-        // Path: /v1/order/catalog/formatted/licenseDirectadmin
-        public Task<_order_catalog.Catalog> GetV1OrderCatalogFormattedLicenseDirectadminAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
-            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
-            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
-            var queryParameters = this.CreateQueryParams(queryParametersTemp);
-            string uri = $"/v1/order/catalog/formatted/licenseDirectadmin{queryParameters}";
-            return this.SendAsync<_order_catalog.Catalog>("GET", uri, null, null, false);
-        }
-        
         // Path: /v1/order/catalog/formatted/licenseHycu
         public Task<_order_catalog.Catalog> GetV1OrderCatalogFormattedLicenseHycuAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
@@ -26377,30 +26311,12 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_catalog.Catalog>("GET", uri, null, null, false);
         }
         
-        // Path: /v1/order/catalog/formatted/licenseVirtuozzo
-        public Task<_order_catalog.Catalog> GetV1OrderCatalogFormattedLicenseVirtuozzoAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
-            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
-            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
-            var queryParameters = this.CreateQueryParams(queryParametersTemp);
-            string uri = $"/v1/order/catalog/formatted/licenseVirtuozzo{queryParameters}";
-            return this.SendAsync<_order_catalog.Catalog>("GET", uri, null, null, false);
-        }
-        
         // Path: /v1/order/catalog/formatted/licenseWindows
         public Task<_order_catalog.Catalog> GetV1OrderCatalogFormattedLicenseWindowsAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
             queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
             var queryParameters = this.CreateQueryParams(queryParametersTemp);
             string uri = $"/v1/order/catalog/formatted/licenseWindows{queryParameters}";
-            return this.SendAsync<_order_catalog.Catalog>("GET", uri, null, null, false);
-        }
-        
-        // Path: /v1/order/catalog/formatted/licenseWorklight
-        public Task<_order_catalog.Catalog> GetV1OrderCatalogFormattedLicenseWorklightAsync(_nichandle.OvhSubsidiaryEnum ovhSubsidiary) {
-            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
-            queryParametersTemp.Add("ovhSubsidiary", ovhSubsidiary);
-            var queryParameters = this.CreateQueryParams(queryParametersTemp);
-            string uri = $"/v1/order/catalog/formatted/licenseWorklight{queryParameters}";
             return this.SendAsync<_order_catalog.Catalog>("GET", uri, null, null, false);
         }
         
