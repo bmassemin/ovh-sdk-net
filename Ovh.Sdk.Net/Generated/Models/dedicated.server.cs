@@ -2446,6 +2446,10 @@ namespace _dedicated_server {
     // Id: VmacDetails Namespace: dedicated.server
     public class VmacDetails {
         
+        // Key: quota Type: long FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("quota")]
+        public required System.Int64 Quota { get; set; }//;
+        
         // Key: supported Type: boolean FullType: 
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("supported")]
         public required System.Boolean Supported { get; set; }//;
