@@ -246,6 +246,14 @@ namespace _connectivity_eligibility {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("buildingType")]
         public required _connectivity_eligibility.BuildingTypeEnum BuildingType { get; set; }//;
         
+        // Key: latitude Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("latitude")]
+        public System.String? Latitude { get; set; }//;
+        
+        // Key: longitude Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("longitude")]
+        public System.String? Longitude { get; set; }//;
+        
         // Key: nro Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nro")]
         public System.String? Nro { get; set; }//;
@@ -257,6 +265,10 @@ namespace _connectivity_eligibility {
         // Key: operatorName Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("operatorName")]
         public required System.String OperatorName { get; set; }//;
+        
+        // Key: pmReference Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("pmReference")]
+        public System.String? PmReference { get; set; }//;
     }
     
     // Id: InstallationTypeEnum Namespace: connectivity.eligibility

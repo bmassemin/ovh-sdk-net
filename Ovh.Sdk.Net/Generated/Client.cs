@@ -25513,33 +25513,6 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
         }
         
-        // Path: /v1/order/cart/{cartId}/webPaaS
-        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdWebPaaSAsync(string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/webPaaS";
-            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/webPaaS
-        public Task<_order_cart.Item> PostV1OrderCartCartIdWebPaaSAsync(_order_cart.GenericProductCreation _body, string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/webPaaS";
-            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/webPaaS/options
-        public Task<_order_cart.GenericOptionDefinition[]> GetV1OrderCartCartIdWebPaaSOptionsAsync(string cartId, string planCode) {
-            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
-            queryParametersTemp.Add("planCode", planCode);
-            var queryParameters = this.CreateQueryParams(queryParametersTemp);
-            string uri = $"/v1/order/cart/{cartId}/webPaaS/options{queryParameters}";
-            return this.SendAsync<_order_cart.GenericOptionDefinition[]>("GET", uri, null, null, true);
-        }
-        
-        // Path: /v1/order/cart/{cartId}/webPaaS/options
-        public Task<_order_cart.Item> PostV1OrderCartCartIdWebPaaSOptionsAsync(_order_cart.GenericOptionCreation _body, string cartId) {
-            string uri = $"/v1/order/cart/{cartId}/webPaaS/options";
-            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, true);
-        }
-        
         // Path: /v1/order/cart/{cartId}/xdsl
         public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdXdslAsync(string cartId) {
             string uri = $"/v1/order/cart/{cartId}/xdsl";
