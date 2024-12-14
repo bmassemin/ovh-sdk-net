@@ -455,15 +455,15 @@ namespace _hosting_privateDatabase {
         
         // Key: host Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("host")]
-        public required System.String Host { get; set; }//;
+        public System.String? Host { get; set; }//;
         
         // Key: readToken Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readToken")]
-        public required System.String ReadToken { get; set; }//;
+        public System.String? ReadToken { get; set; }//;
         
         // Key: readTokenId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("readTokenId")]
-        public required System.String ReadTokenId { get; set; }//;
+        public System.String? ReadTokenId { get; set; }//;
     }
     
     // Id: InfrastructureEnum Namespace: hosting.privateDatabase
