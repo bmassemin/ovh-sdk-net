@@ -193,5 +193,9 @@ namespace _dedicated_nasha {
         // Key: sync Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("sync")]
         public required System.String Sync { get; set; }//;
+        
+        // Key: templateName Type: dedicated.storage.TemplateUsageOptionsEnum FullType: dedicated.storage.TemplateUsageOptionsEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("templateName")]
+        public _dedicated_storage.TemplateUsageOptionsEnum? TemplateName { get; set; }//;
     }
 }

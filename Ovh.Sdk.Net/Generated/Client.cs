@@ -1854,9 +1854,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafka
-        public Task<_cloud_project_database.ServiceWithoutPrometheus> PostV1CloudProjectServiceNameDatabaseKafkaAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database_kafka.Service> PostV1CloudProjectServiceNameDatabaseKafkaAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafka";
-            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database_kafka.Service>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafka/{clusterId}
@@ -2072,6 +2072,18 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud_project_database_kafka.Permissions>("GET", uri, null, null, true);
         }
         
+        // Path: /v1/cloud/project/{serviceName}/database/kafka/{clusterId}/prometheus
+        public Task<_cloud_project_database_service.PrometheusEndpoint> GetV1CloudProjectServiceNameDatabaseKafkaClusterIdPrometheusAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/kafka/{clusterId}/prometheus";
+            return this.SendAsync<_cloud_project_database_service.PrometheusEndpoint>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/kafka/{clusterId}/prometheus/credentials/reset
+        public Task<_cloud_project_database_service.PrometheusAccess> PostV1CloudProjectServiceNameDatabaseKafkaClusterIdPrometheusCredentialsResetAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/kafka/{clusterId}/prometheus/credentials/reset";
+            return this.SendAsync<_cloud_project_database_service.PrometheusAccess>("POST", uri, null, null, true);
+        }
+        
         // Path: /v1/cloud/project/{serviceName}/database/kafka/{clusterId}/schemaRegistryAcl
         public Task<System.Guid[]> GetV1CloudProjectServiceNameDatabaseKafkaClusterIdSchemaRegistryAclAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafka/{clusterId}/schemaRegistryAcl";
@@ -2193,9 +2205,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect
-        public Task<_cloud_project_database.ServiceWithoutPrometheus> PostV1CloudProjectServiceNameDatabaseKafkaConnectAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database.Service> PostV1CloudProjectServiceNameDatabaseKafkaConnectAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaConnect";
-            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.Service>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}
@@ -2205,15 +2217,15 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}
-        public Task<_cloud_project_database.ServiceWithoutPrometheus> GetV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdAsync(System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.Service> GetV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}";
-            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("GET", uri, null, null, true);
+            return this.SendAsync<_cloud_project_database.Service>("GET", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}
-        public Task<_cloud_project_database.ServiceWithoutPrometheus> PutV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdAsync(_cloud_project_database.ServiceWithoutPrometheus _body, System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.Service> PutV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdAsync(_cloud_project_database.Service _body, System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}";
-            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("PUT", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.Service>("PUT", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
@@ -2465,6 +2477,18 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cloud_project_database_service.Node>("GET", uri, null, null, true);
         }
         
+        // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/prometheus
+        public Task<_cloud_project_database_service.PrometheusEndpoint> GetV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdPrometheusAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/prometheus";
+            return this.SendAsync<_cloud_project_database_service.PrometheusEndpoint>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/prometheus/credentials/reset
+        public Task<_cloud_project_database_service.PrometheusAccess> PostV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdPrometheusCredentialsResetAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/prometheus/credentials/reset";
+            return this.SendAsync<_cloud_project_database_service.PrometheusAccess>("POST", uri, null, null, true);
+        }
+        
         // Path: /v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/user
         public Task<System.Guid[]> GetV1CloudProjectServiceNameDatabaseKafkaConnectClusterIdUserAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/user";
@@ -2502,9 +2526,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker
-        public Task<_cloud_project_database.ServiceWithoutPrometheus> PostV1CloudProjectServiceNameDatabaseKafkaMirrorMakerAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database.Service> PostV1CloudProjectServiceNameDatabaseKafkaMirrorMakerAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaMirrorMaker";
-            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.Service>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}
@@ -2514,15 +2538,15 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}
-        public Task<_cloud_project_database.ServiceWithoutPrometheus> GetV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdAsync(System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.Service> GetV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdAsync(System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}";
-            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("GET", uri, null, null, true);
+            return this.SendAsync<_cloud_project_database.Service>("GET", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}
-        public Task<_cloud_project_database.ServiceWithoutPrometheus> PutV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdAsync(_cloud_project_database.ServiceWithoutPrometheus _body, System.Guid clusterId, string serviceName) {
+        public Task<_cloud_project_database.Service> PutV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdAsync(_cloud_project_database.Service _body, System.Guid clusterId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}";
-            return this.SendAsync<_cloud_project_database.ServiceWithoutPrometheus>("PUT", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database.Service>("PUT", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/capabilities/integration
@@ -2634,6 +2658,18 @@ namespace Ovh.Sdk.Net {
         public Task<_cloud_project_database_service.Node> GetV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdNodeNodeIdAsync(System.Guid clusterId, System.Guid nodeId, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/node/{nodeId}";
             return this.SendAsync<_cloud_project_database_service.Node>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/prometheus
+        public Task<_cloud_project_database_service.PrometheusEndpoint> GetV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdPrometheusAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/prometheus";
+            return this.SendAsync<_cloud_project_database_service.PrometheusEndpoint>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/prometheus/credentials/reset
+        public Task<_cloud_project_database_service.PrometheusAccess> PostV1CloudProjectServiceNameDatabaseKafkaMirrorMakerClusterIdPrometheusCredentialsResetAsync(System.Guid clusterId, string serviceName) {
+            string uri = $"/v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/prometheus/credentials/reset";
+            return this.SendAsync<_cloud_project_database_service.PrometheusAccess>("POST", uri, null, null, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/replication
@@ -3632,9 +3668,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/opensearch
-        public Task<_cloud_project_database.Service> PostV1CloudProjectServiceNameDatabaseOpensearchAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
+        public Task<_cloud_project_database_opensearch.Service> PostV1CloudProjectServiceNameDatabaseOpensearchAsync(_cloud_project_database.ServiceCreation _body, string serviceName) {
             string uri = $"/v1/cloud/project/{serviceName}/database/opensearch";
-            return this.SendAsync<_cloud_project_database.Service>("POST", uri, null, _body, true);
+            return this.SendAsync<_cloud_project_database_opensearch.Service>("POST", uri, null, _body, true);
         }
         
         // Path: /v1/cloud/project/{serviceName}/database/opensearch/{clusterId}
@@ -8370,11 +8406,12 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/dedicated/nasha/{serviceName}/partition/{partitionName}/options
-        public Task<_dedicated_nasTask.Task> PostV1DedicatedNashaServiceNamePartitionPartitionNameOptionsAsync(string partitionName, string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] _dedicated_storage.AtimeEnum? atime, [System.Runtime.InteropServices.OptionalAttribute()] _dedicated_storage.RecordSizeEnum? recordsize, [System.Runtime.InteropServices.OptionalAttribute()] _dedicated_storage.SyncEnum? sync) {
+        public Task<_dedicated_nasTask.Task> PostV1DedicatedNashaServiceNamePartitionPartitionNameOptionsAsync(string partitionName, string serviceName, [System.Runtime.InteropServices.OptionalAttribute()] _dedicated_storage.AtimeEnum? atime, [System.Runtime.InteropServices.OptionalAttribute()] _dedicated_storage.RecordSizeEnum? recordsize, [System.Runtime.InteropServices.OptionalAttribute()] _dedicated_storage.SyncEnum? sync, [System.Runtime.InteropServices.OptionalAttribute()] _dedicated_storage.TemplateUsageOptionsEnum? templateName) {
             Dictionary<string, object> _body = new System.Collections.Generic.Dictionary<string, object>();
             _body.Add("atime", atime);
             _body.Add("recordsize", recordsize);
             _body.Add("sync", sync);
+            _body.Add("templateName", templateName);
             string uri = $"/v1/dedicated/nasha/{serviceName}/partition/{partitionName}/options";
             return this.SendAsync<_dedicated_nasTask.Task>("POST", uri, null, _body, true);
         }
@@ -8430,6 +8467,12 @@ namespace Ovh.Sdk.Net {
         public Task<_dedicated_nasha.Snapshot> GetV1DedicatedNashaServiceNamePartitionPartitionNameSnapshotSnapshotTypeAsync(string partitionName, string serviceName, _dedicated_storage.SnapshotEnum snapshotType) {
             string uri = $"/v1/dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}";
             return this.SendAsync<_dedicated_nasha.Snapshot>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v1/dedicated/nasha/{serviceName}/partition/{partitionName}/templateUsage
+        public Task<_dedicated_storage.TemplateUsageOptionsDetails[]> GetV1DedicatedNashaServiceNamePartitionPartitionNameTemplateUsageAsync(string partitionName, string serviceName) {
+            string uri = $"/v1/dedicated/nasha/{serviceName}/partition/{partitionName}/templateUsage";
+            return this.SendAsync<_dedicated_storage.TemplateUsageOptionsDetails[]>("GET", uri, null, null, true);
         }
         
         // Path: /v1/dedicated/nasha/{serviceName}/partition/{partitionName}/use

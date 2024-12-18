@@ -351,10 +351,6 @@ namespace _cloud_project_database {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plan")]
         public required System.String Plan { get; set; }//;
         
-        // Key: region Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
-        public System.String? Region { get; set; }//;
-        
         // Key: status Type: cloud.project.database.StatusEnum FullType: cloud.project.database.StatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
         public required _cloud_project_database.StatusEnum Status { get; set; }//;

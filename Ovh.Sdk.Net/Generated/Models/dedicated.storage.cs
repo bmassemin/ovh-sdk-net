@@ -98,6 +98,9 @@ namespace _dedicated_storage {
     // Id: RecordSizeEnum Namespace: dedicated.storage
     public enum RecordSizeEnum {
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("1048576")]
+        _1048576,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("131072")]
         _131072,
         
@@ -217,5 +220,33 @@ namespace _dedicated_storage {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("remoteBackupRecursiveDestroy")]
         remoteBackupRecursiveDestroy,
+    }
+    
+    // Id: TemplateUsageOptionsDetails Namespace: dedicated.storage
+    public class TemplateUsageOptionsDetails {
+        
+        // Key: description Type: string FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public required System.String Description { get; set; }//;
+        
+        // Key: name Type: string FullType: 
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+    }
+    
+    // Id: TemplateUsageOptionsEnum Namespace: dedicated.storage
+    public enum TemplateUsageOptionsEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("Databases")]
+        Databases,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("Default")]
+        Default,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("File Systems (big files)")]
+        File_Systems__big_files_,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("Virtual machines")]
+        Virtual_machines,
     }
 }

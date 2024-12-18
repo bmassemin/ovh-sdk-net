@@ -952,9 +952,21 @@ namespace _zimbra {
     // Id: PlatformPostPayload Namespace: zimbra
     public class PlatformPostPayload {
         
-        // Key: targetSpec Type: zimbra.PlatformTargetSpec FullType: zimbra.PlatformTargetSpec
+        // Key: targetSpec Type: zimbra.PlatformPostTargetSpec FullType: zimbra.PlatformPostTargetSpec
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
-        public required _zimbra.PlatformTargetSpec TargetSpec { get; set; }//;
+        public required _zimbra.PlatformPostTargetSpec TargetSpec { get; set; }//;
+    }
+    
+    // Id: PlatformPostTargetSpec Namespace: zimbra
+    public class PlatformPostTargetSpec {
+        
+        // Key: description Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public required System.String Description { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
     }
     
     // Id: PlatformPutPayload Namespace: zimbra
@@ -964,9 +976,21 @@ namespace _zimbra {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("checksum")]
         public required System.String Checksum { get; set; }//;
         
-        // Key: targetSpec Type: zimbra.PlatformTargetSpec FullType: zimbra.PlatformTargetSpec
+        // Key: targetSpec Type: zimbra.PlatformPutTargetSpec FullType: zimbra.PlatformPutTargetSpec
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
-        public required _zimbra.PlatformTargetSpec TargetSpec { get; set; }//;
+        public required _zimbra.PlatformPutTargetSpec TargetSpec { get; set; }//;
+    }
+    
+    // Id: PlatformPutTargetSpec Namespace: zimbra
+    public class PlatformPutTargetSpec {
+        
+        // Key: description Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public required System.String Description { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
     }
     
     // Id: PlatformResponse Namespace: zimbra
@@ -992,9 +1016,9 @@ namespace _zimbra {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceStatus")]
         public required _common.ResourceStatusEnum ResourceStatus { get; set; }//;
         
-        // Key: targetSpec Type: zimbra.PlatformTargetSpec FullType: zimbra.PlatformTargetSpec
+        // Key: targetSpec Type: zimbra.PlatformPutTargetSpec FullType: zimbra.PlatformPutTargetSpec
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
-        public required _zimbra.PlatformTargetSpec TargetSpec { get; set; }//;
+        public required _zimbra.PlatformPutTargetSpec TargetSpec { get; set; }//;
     }
     
     // Id: PlatformResponse Namespace: zimbra
@@ -1024,21 +1048,9 @@ namespace _zimbra {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceStatus")]
         public required _common.ResourceStatusEnum ResourceStatus { get; set; }//;
         
-        // Key: targetSpec Type: zimbra.PlatformTargetSpec FullType: zimbra.PlatformTargetSpec
+        // Key: targetSpec Type: zimbra.PlatformPutTargetSpec FullType: zimbra.PlatformPutTargetSpec
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
-        public required _zimbra.PlatformTargetSpec TargetSpec { get; set; }//;
-    }
-    
-    // Id: PlatformTargetSpec Namespace: zimbra
-    public class PlatformTargetSpec {
-        
-        // Key: description Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
-        public required System.String Description { get; set; }//;
-        
-        // Key: name Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public required System.String Name { get; set; }//;
+        public required _zimbra.PlatformPutTargetSpec TargetSpec { get; set; }//;
     }
     
     // Id: Project Namespace: zimbra

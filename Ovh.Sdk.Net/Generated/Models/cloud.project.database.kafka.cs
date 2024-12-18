@@ -54,6 +54,10 @@ namespace _cloud_project_database_kafka {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("backupTime")]
         public required System.TimeOnly BackupTime { get; set; }//;
         
+        // Key: backups Type: cloud.project.database.service.Backup FullType: cloud.project.database.service.Backup
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("backups")]
+        public _cloud_project_database_service.Backup? Backups { get; set; }//;
+        
         // Key: capabilities Type: map[cloud.project.database.service.CapabilityEnum]cloud.project.database.service.CapabilityActions FullType: map[cloud.project.database.service.CapabilityEnum]cloud.project.database.service.CapabilityActions
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("capabilities")]
         public required Dictionary<_cloud_project_database_service.CapabilityEnum, _cloud_project_database_service.CapabilityActions> Capabilities { get; set; }//;
@@ -73,6 +77,10 @@ namespace _cloud_project_database_kafka {
         // Key: disk Type: cloud.project.database.service.Disk FullType: cloud.project.database.service.Disk
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("disk")]
         public required _cloud_project_database_service.Disk Disk { get; set; }//;
+        
+        // Key: enablePrometheus Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("enablePrometheus")]
+        public System.Boolean? EnablePrometheus { get; set; }//;
         
         // Key: endpoints Type: cloud.project.database.service.Endpoint[] FullType: cloud.project.database.service.Endpoint[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("endpoints")]
