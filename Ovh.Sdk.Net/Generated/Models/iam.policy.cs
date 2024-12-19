@@ -19,8 +19,28 @@ namespace _iam_policy {
         public required System.String _Action { get; set; }//;
     }
     
+    // Id: Condition Namespace: iam.policy
+    public class Condition {
+        
+        // Key: conditions Type: iam.policy.Condition[] FullType: iam.policy.Condition[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditions")]
+        public _iam_policy.Condition[]? Conditions { get; set; }//;
+        
+        // Key: operator Type: iam.policy.Condition.OperatorEnum FullType: iam.policy.Condition.OperatorEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("operator")]
+        public required _iam_policy_Condition.OperatorEnum @operator { get; set; }//;
+        
+        // Key: values Type: map[string]string FullType: map[string]string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("values")]
+        public Dictionary<string, string>? Values { get; set; }//;
+    }
+    
     // Id: Creation Namespace: iam.policy
     public class Creation {
+        
+        // Key: conditions Type: iam.policy.Condition FullType: iam.policy.Condition
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditions")]
+        public _iam_policy.Condition? Conditions { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
@@ -122,6 +142,10 @@ namespace _iam_policy {
     // Id: Response Namespace: iam.policy
     public class Response {
         
+        // Key: conditions Type: iam.policy.Condition FullType: iam.policy.Condition
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditions")]
+        public _iam_policy.Condition? Conditions { get; set; }//;
+        
         // Key: createdAt Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
         public required System.DateTime CreatedAt { get; set; }//;
@@ -201,6 +225,10 @@ namespace _iam_policy {
     
     // Id: Update Namespace: iam.policy
     public class Update {
+        
+        // Key: conditions Type: iam.policy.Condition FullType: iam.policy.Condition
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("conditions")]
+        public _iam_policy.Condition? Conditions { get; set; }//;
         
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
