@@ -277,13 +277,13 @@ namespace _zimbra {
     // Id: Alias Namespace: zimbra
     public class Alias {
         
-        // Key: alias Type: string FullType: string
+        // Key: alias Type: zimbra.AliasSource FullType: zimbra.AliasSource
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alias")]
-        public required System.String _Alias { get; set; }//;
+        public required _zimbra.AliasSource _Alias { get; set; }//;
         
-        // Key: aliasTargetId Type: uuid FullType: uuid
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("aliasTargetId")]
-        public required System.Guid AliasTargetId { get; set; }//;
+        // Key: target Type: zimbra.AliasTarget FullType: zimbra.AliasTarget
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("target")]
+        public required _zimbra.AliasTarget Target { get; set; }//;
     }
     
     // Id: AliasBase Namespace: zimbra
@@ -293,9 +293,9 @@ namespace _zimbra {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alias")]
         public required System.String Alias { get; set; }//;
         
-        // Key: aliasTargetId Type: uuid FullType: uuid
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("aliasTargetId")]
-        public required System.Guid AliasTargetId { get; set; }//;
+        // Key: targetId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetId")]
+        public required System.Guid TargetId { get; set; }//;
     }
     
     // Id: AliasPostPayload Namespace: zimbra
@@ -329,9 +329,55 @@ namespace _zimbra {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("resourceStatus")]
         public required _common.ResourceStatusEnum ResourceStatus { get; set; }//;
         
-        // Key: targetSpec Type: zimbra.Alias FullType: zimbra.Alias
+        // Key: targetSpec Type: zimbra.AliasBase FullType: zimbra.AliasBase
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
-        public required _zimbra.Alias TargetSpec { get; set; }//;
+        public required _zimbra.AliasBase TargetSpec { get; set; }//;
+    }
+    
+    // Id: AliasSource Namespace: zimbra
+    public class AliasSource {
+        
+        // Key: domainId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainId")]
+        public required System.Guid DomainId { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
+        // Key: organizationId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("organizationId")]
+        public required System.Guid OrganizationId { get; set; }//;
+        
+        // Key: organizationLabel Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("organizationLabel")]
+        public required System.String OrganizationLabel { get; set; }//;
+    }
+    
+    // Id: AliasTarget Namespace: zimbra
+    public class AliasTarget {
+        
+        // Key: domainId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("domainId")]
+        public required System.Guid DomainId { get; set; }//;
+        
+        // Key: id Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.Guid Id { get; set; }//;
+        
+        // Key: type Type: zimbra.AliasTypeEnum FullType: zimbra.AliasTypeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
+        public required _zimbra.AliasTypeEnum Type { get; set; }//;
+    }
+    
+    // Id: AliasTypeEnum Namespace: zimbra
+    public enum AliasTypeEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ACCOUNT")]
+        ACCOUNT,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("MAILING_LIST")]
+        MAILING_LIST,
     }
     
     // Id: ContactInformation Namespace: zimbra

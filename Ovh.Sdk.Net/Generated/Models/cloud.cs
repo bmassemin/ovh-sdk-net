@@ -1743,6 +1743,10 @@ namespace _cloud {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownerId")]
         public System.Int64? OwnerId { get; set; }//;
         
+        // Key: replication Type: cloud.StorageReplicationObject FullType: cloud.StorageReplicationObject
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("replication")]
+        public _cloud.StorageReplicationObject? Replication { get; set; }//;
+        
         // Key: versioning Type: cloud.StorageVersioningObject FullType: cloud.StorageVersioningObject
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("versioning")]
         public _cloud.StorageVersioningObject? Versioning { get; set; }//;
@@ -1854,6 +1858,34 @@ namespace _cloud {
         // Key: rules Type: cloud.storage.ReplicationRule[] FullType: cloud.storage.ReplicationRule[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("rules")]
         public _cloud_storage.ReplicationRule[]? Rules { get; set; }//;
+    }
+    
+    // Id: StorageReplicationRuleDestination Namespace: cloud
+    public class StorageReplicationRuleDestination {
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
+        // Key: region Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
+        public required System.String Region { get; set; }//;
+        
+        // Key: storageClass Type: cloud.storage.StorageClassEnum FullType: cloud.storage.StorageClassEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("storageClass")]
+        public _cloud_storage.StorageClassEnum? StorageClass { get; set; }//;
+    }
+    
+    // Id: StorageReplicationRuleFilter Namespace: cloud
+    public class StorageReplicationRuleFilter {
+        
+        // Key: prefix Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("prefix")]
+        public System.String? Prefix { get; set; }//;
+        
+        // Key: tags Type: cloud.storage.ReplicationRuleFilterTag[] FullType: cloud.storage.ReplicationRuleFilterTag[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("tags")]
+        public _cloud_storage.ReplicationRuleFilterTag[]? Tags { get; set; }//;
     }
     
     // Id: StorageVersioningObject Namespace: cloud

@@ -211,6 +211,12 @@ namespace _hosting_privateDatabase {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_15")]
         postgresql_15,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_16")]
+        postgresql_16,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_17")]
+        postgresql_17,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redis_6.0")]
         redis_6_0,
         
@@ -851,6 +857,12 @@ namespace _hosting_privateDatabase {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_15")]
         postgresql_15,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_16")]
+        postgresql_16,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_17")]
+        postgresql_17,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redis_6.0")]
         redis_6_0,

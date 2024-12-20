@@ -174,6 +174,10 @@ namespace _storage {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
         public required System.Guid Id { get; set; }//;
         
+        // Key: mountPointName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("mountPointName")]
+        public System.String? MountPointName { get; set; }//;
+        
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public System.String? Name { get; set; }//;

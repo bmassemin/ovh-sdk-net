@@ -269,13 +269,51 @@ namespace _cloud_storage {
     // Id: ReplicationRule Namespace: cloud.storage
     public class ReplicationRule {
         
+        // Key: deleteMarkerReplication Type: cloud.storage.ReplicationRuleDeleteMarkerReplicationStatusEnum FullType: cloud.storage.ReplicationRuleDeleteMarkerReplicationStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("deleteMarkerReplication")]
+        public required _cloud_storage.ReplicationRuleDeleteMarkerReplicationStatusEnum DeleteMarkerReplication { get; set; }//;
+        
+        // Key: destination Type: cloud.StorageReplicationRuleDestination FullType: cloud.StorageReplicationRuleDestination
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("destination")]
+        public _cloud.StorageReplicationRuleDestination? Destination { get; set; }//;
+        
+        // Key: filter Type: cloud.StorageReplicationRuleFilter FullType: cloud.StorageReplicationRuleFilter
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("filter")]
+        public _cloud.StorageReplicationRuleFilter? Filter { get; set; }//;
+        
         // Key: id Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
         public required System.String Id { get; set; }//;
         
+        // Key: priority Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("priority")]
+        public required System.Int64 Priority { get; set; }//;
+        
         // Key: status Type: cloud.storage.ReplicationRuleStatusEnum FullType: cloud.storage.ReplicationRuleStatusEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
         public required _cloud_storage.ReplicationRuleStatusEnum Status { get; set; }//;
+    }
+    
+    // Id: ReplicationRuleDeleteMarkerReplicationStatusEnum Namespace: cloud.storage
+    public enum ReplicationRuleDeleteMarkerReplicationStatusEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("disabled")]
+        disabled,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("enabled")]
+        enabled,
+    }
+    
+    // Id: ReplicationRuleFilterTag Namespace: cloud.storage
+    public class ReplicationRuleFilterTag {
+        
+        // Key: key Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("key")]
+        public required System.String Key { get; set; }//;
+        
+        // Key: value Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
+        public required System.String Value { get; set; }//;
     }
     
     // Id: ReplicationRuleStatusEnum Namespace: cloud.storage
