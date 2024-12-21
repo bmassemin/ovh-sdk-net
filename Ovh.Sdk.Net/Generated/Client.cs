@@ -36393,10 +36393,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/storage/netapp/{serviceName}/share
-        public Task<_storage.NetAppShare[]> GetV1StorageNetappServiceNameShareAsync(System.Guid serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.Boolean? detail, [System.Runtime.InteropServices.OptionalAttribute()] System.String? mountPointName) {
+        public Task<_storage.NetAppShare[]> GetV1StorageNetappServiceNameShareAsync(System.Guid serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.Boolean? detail) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
             queryParametersTemp.Add("detail", detail);
-            queryParametersTemp.Add("mountPointName", mountPointName);
             var queryParameters = this.CreateQueryParams(queryParametersTemp);
             string uri = $"/v1/storage/netapp/{serviceName}/share{queryParameters}";
             return this.SendAsync<_storage.NetAppShare[]>("GET", uri, null, null, true);
