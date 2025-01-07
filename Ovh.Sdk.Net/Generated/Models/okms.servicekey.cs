@@ -22,9 +22,9 @@ namespace _okms_serviceKey {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("curve")]
         public _okms.KeyCurveEnum? Curve { get; set; }//;
         
-        // Key: keys Type: okms.serviceKey.JsonWebKey[] FullType: okms.serviceKey.JsonWebKey[]
+        // Key: keys Type: okms.serviceKey.JsonWebKeyRequest[] FullType: okms.serviceKey.JsonWebKeyRequest[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keys")]
-        public _okms_serviceKey.JsonWebKey[]? Keys { get; set; }//;
+        public _okms_serviceKey.JsonWebKeyRequest[]? Keys { get; set; }//;
         
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
@@ -43,8 +43,80 @@ namespace _okms_serviceKey {
         public _okms.KeyTypeEnum? Type { get; set; }//;
     }
     
-    // Id: JsonWebKey Namespace: okms.serviceKey
-    public class JsonWebKey {
+    // Id: JsonWebKeyRequest Namespace: okms.serviceKey
+    public class JsonWebKeyRequest {
+        
+        // Key: alg Type: okms.KeyAlgEnum FullType: okms.KeyAlgEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("alg")]
+        public _okms.KeyAlgEnum? Alg { get; set; }//;
+        
+        // Key: crv Type: okms.KeyCurveEnum FullType: okms.KeyCurveEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("crv")]
+        public _okms.KeyCurveEnum? Crv { get; set; }//;
+        
+        // Key: d Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("d")]
+        public System.String? D { get; set; }//;
+        
+        // Key: dp Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dp")]
+        public System.String? Dp { get; set; }//;
+        
+        // Key: dq Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dq")]
+        public System.String? Dq { get; set; }//;
+        
+        // Key: e Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("e")]
+        public System.String? E { get; set; }//;
+        
+        // Key: k Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("k")]
+        public System.String? K { get; set; }//;
+        
+        // Key: key_ops Type: okms.KeyOpsEnum[] FullType: okms.KeyOpsEnum[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("key_ops")]
+        public _okms.KeyOpsEnum[]? Key_ops { get; set; }//;
+        
+        // Key: kid Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("kid")]
+        public System.String? Kid { get; set; }//;
+        
+        // Key: kty Type: okms.KeyTypeEnum FullType: okms.KeyTypeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("kty")]
+        public required _okms.KeyTypeEnum Kty { get; set; }//;
+        
+        // Key: n Type: text FullType: text
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("n")]
+        public System.String? N { get; set; }//;
+        
+        // Key: p Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("p")]
+        public System.String? P { get; set; }//;
+        
+        // Key: q Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("q")]
+        public System.String? Q { get; set; }//;
+        
+        // Key: qi Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("qi")]
+        public System.String? Qi { get; set; }//;
+        
+        // Key: use Type: okms.KeyUseEnum FullType: okms.KeyUseEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("use")]
+        public _okms.KeyUseEnum? Use { get; set; }//;
+        
+        // Key: x Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("x")]
+        public System.String? X { get; set; }//;
+        
+        // Key: y Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("y")]
+        public System.String? Y { get; set; }//;
+    }
+    
+    // Id: JsonWebKeyResponse Namespace: okms.serviceKey
+    public class JsonWebKeyResponse {
         
         // Key: alg Type: okms.KeyAlgEnum FullType: okms.KeyAlgEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("alg")]
@@ -138,9 +210,9 @@ namespace _okms_serviceKey {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
         public required System.Guid Id { get; set; }//;
         
-        // Key: keys Type: okms.serviceKey.JsonWebKey[] FullType: okms.serviceKey.JsonWebKey[]
+        // Key: keys Type: okms.serviceKey.JsonWebKeyResponse[] FullType: okms.serviceKey.JsonWebKeyResponse[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keys")]
-        public _okms_serviceKey.JsonWebKey[]? Keys { get; set; }//;
+        public _okms_serviceKey.JsonWebKeyResponse[]? Keys { get; set; }//;
         
         // Key: keysPEM Type: okms.serviceKey.PEM[] FullType: okms.serviceKey.PEM[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keysPEM")]
@@ -186,9 +258,9 @@ namespace _okms_serviceKey {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
         public required System.Guid Id { get; set; }//;
         
-        // Key: keys Type: okms.serviceKey.JsonWebKey[] FullType: okms.serviceKey.JsonWebKey[]
+        // Key: keys Type: okms.serviceKey.JsonWebKeyResponse[] FullType: okms.serviceKey.JsonWebKeyResponse[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keys")]
-        public _okms_serviceKey.JsonWebKey[]? Keys { get; set; }//;
+        public _okms_serviceKey.JsonWebKeyResponse[]? Keys { get; set; }//;
         
         // Key: keysPEM Type: okms.serviceKey.PEM[] FullType: okms.serviceKey.PEM[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("keysPEM")]

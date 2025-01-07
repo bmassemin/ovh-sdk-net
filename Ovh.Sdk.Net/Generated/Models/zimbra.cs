@@ -586,6 +586,10 @@ namespace _zimbra {
     // Id: DomainPostTargetSpec Namespace: zimbra
     public class DomainPostTargetSpec {
         
+        // Key: autoConfigureDKIM Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoConfigureDKIM")]
+        public required System.Boolean AutoConfigureDKIM { get; set; }//;
+        
         // Key: autoConfigureMX Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autoConfigureMX")]
         public required System.Boolean AutoConfigureMX { get; set; }//;
@@ -1295,5 +1299,9 @@ namespace _zimbra {
         // Key: ownership Type: zimbra.DNSOwnership FullType: zimbra.DNSOwnership
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ownership")]
         public required _zimbra.DNSOwnership Ownership { get; set; }//;
+        
+        // Key: spf Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("spf")]
+        public required System.String Spf { get; set; }//;
     }
 }
