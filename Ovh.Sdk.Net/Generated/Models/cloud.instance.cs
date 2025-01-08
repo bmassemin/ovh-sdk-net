@@ -212,6 +212,10 @@ namespace _cloud_instance {
     // Id: InstanceDetail Namespace: cloud.instance
     public class InstanceDetail {
         
+        // Key: availabilityZone Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityZone")]
+        public System.String? AvailabilityZone { get; set; }//;
+        
         // Key: created Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("created")]
         public required System.DateTime Created { get; set; }//;

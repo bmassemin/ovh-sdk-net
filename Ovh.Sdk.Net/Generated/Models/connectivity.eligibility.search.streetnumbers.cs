@@ -14,6 +14,10 @@ namespace _connectivity_eligibility_search_streetNumbers {
     // Id: post Namespace: connectivity.eligibility.search.streetNumbers
     public class post {
         
+        // Key: streetAltCode Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetAltCode")]
+        public required System.String StreetAltCode { get; set; }//;
+        
         // Key: streetCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetCode")]
         public required System.String StreetCode { get; set; }//;

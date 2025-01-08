@@ -76,6 +76,46 @@ namespace _connectivity_eligibility {
         public required System.String ZipCode { get; set; }//;
     }
     
+    // Id: AddressWithCoordinates Namespace: connectivity.eligibility
+    public class AddressWithCoordinates {
+        
+        // Key: city Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("city")]
+        public required System.String City { get; set; }//;
+        
+        // Key: distance Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("distance")]
+        public System.String? Distance { get; set; }//;
+        
+        // Key: inseeCode Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("inseeCode")]
+        public required System.String InseeCode { get; set; }//;
+        
+        // Key: latitude Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("latitude")]
+        public required System.String Latitude { get; set; }//;
+        
+        // Key: longitude Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("longitude")]
+        public required System.String Longitude { get; set; }//;
+        
+        // Key: streetCode Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetCode")]
+        public System.String? StreetCode { get; set; }//;
+        
+        // Key: streetName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetName")]
+        public System.String? StreetName { get; set; }//;
+        
+        // Key: streetNumber Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetNumber")]
+        public System.String? StreetNumber { get; set; }//;
+        
+        // Key: zipCode Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("zipCode")]
+        public required System.String ZipCode { get; set; }//;
+    }
+    
     // Id: Building Namespace: connectivity.eligibility
     public class Building {
         
@@ -97,7 +137,7 @@ namespace _connectivity_eligibility {
         
         // Key: type Type: connectivity.eligibility.BuildingTypeEnum FullType: connectivity.eligibility.BuildingTypeEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public required _connectivity_eligibility.BuildingTypeEnum Type { get; set; }//;
+        public _connectivity_eligibility.BuildingTypeEnum? Type { get; set; }//;
     }
     
     // Id: BuildingStair Namespace: connectivity.eligibility
@@ -739,6 +779,10 @@ namespace _connectivity_eligibility {
     
     // Id: Street Namespace: connectivity.eligibility
     public class Street {
+        
+        // Key: streetAltCode Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetAltCode")]
+        public System.String? StreetAltCode { get; set; }//;
         
         // Key: streetCode Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("streetCode")]

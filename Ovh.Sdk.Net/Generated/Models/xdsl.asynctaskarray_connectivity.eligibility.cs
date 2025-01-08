@@ -11,6 +11,22 @@
 namespace _xdsl_AsyncTaskArray_connectivity_eligibility {
     
     
+    // Id: AddressWithCoordinates Namespace: xdsl.AsyncTaskArray_connectivity.eligibility
+    public class AddressWithCoordinates {
+        
+        // Key: error Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("error")]
+        public System.String? Error { get; set; }//;
+        
+        // Key: result Type: connectivity.eligibility.AddressWithCoordinates[] FullType: connectivity.eligibility.AddressWithCoordinates[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("result")]
+        public _connectivity_eligibility.AddressWithCoordinates[]? Result { get; set; }//;
+        
+        // Key: status Type: xdsl.AsyncTaskStatusEnum FullType: xdsl.AsyncTaskStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
+        public required _xdsl.AsyncTaskStatusEnum Status { get; set; }//;
+    }
+    
     // Id: Building Namespace: xdsl.AsyncTaskArray_connectivity.eligibility
     public class Building {
         

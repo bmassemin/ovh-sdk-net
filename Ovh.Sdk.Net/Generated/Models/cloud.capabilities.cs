@@ -50,6 +50,10 @@ namespace _cloud_capabilities {
     // Id: AvailabilityRegion Namespace: cloud.capabilities
     public class AvailabilityRegion {
         
+        // Key: availabilityZones Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityZones")]
+        public required System.String[] AvailabilityZones { get; set; }//;
+        
         // Key: continentCode Type: cloud.RegionContinentEnum FullType: cloud.RegionContinentEnum
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("continentCode")]
         public required _cloud.RegionContinentEnum ContinentCode { get; set; }//;

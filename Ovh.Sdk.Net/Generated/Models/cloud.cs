@@ -590,6 +590,10 @@ namespace _cloud {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autobackup")]
         public _cloud_instance.AutoBackup? Autobackup { get; set; }//;
         
+        // Key: availabilityZone Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityZone")]
+        public System.String? AvailabilityZone { get; set; }//;
+        
         // Key: flavorId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavorId")]
         public required System.String FlavorId { get; set; }//;
@@ -641,6 +645,10 @@ namespace _cloud {
         // Key: autobackup Type: cloud.instance.AutoBackup FullType: cloud.instance.AutoBackup
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("autobackup")]
         public _cloud_instance.AutoBackup? Autobackup { get; set; }//;
+        
+        // Key: availabilityZone Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityZone")]
+        public System.String? AvailabilityZone { get; set; }//;
         
         // Key: flavorId Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavorId")]
