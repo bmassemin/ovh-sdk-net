@@ -1887,87 +1887,6 @@ namespace _telephony {
         public _order.Price? UpdateRateCodePriceWithoutTax { get; set; }//;
     }
     
-    // Id: Device Namespace: telephony
-    public class Device {
-        
-        // Key: createdAt Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
-        public required System.DateTime CreatedAt { get; set; }//;
-        
-        // Key: id Type: uuid FullType: uuid
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
-        public required System.Guid Id { get; set; }//;
-        
-        // Key: lastRegistrationDate Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastRegistrationDate")]
-        public System.DateTime? LastRegistrationDate { get; set; }//;
-        
-        // Key: name Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public required System.String Name { get; set; }//;
-        
-        // Key: status Type: telephony.DeviceStatusEnum FullType: telephony.DeviceStatusEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
-        public required _telephony.DeviceStatusEnum Status { get; set; }//;
-        
-        // Key: type Type: telephony.DeviceTypeEnum FullType: telephony.DeviceTypeEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public required _telephony.DeviceTypeEnum Type { get; set; }//;
-        
-        // Key: updatedAt Type: datetime FullType: datetime
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("updatedAt")]
-        public required System.DateTime UpdatedAt { get; set; }//;
-        
-        // Key: userAgent Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAgent")]
-        public System.String? UserAgent { get; set; }//;
-    }
-    
-    // Id: DeviceCreateInput Namespace: telephony
-    public class DeviceCreateInput {
-        
-        // Key: name Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
-        public required System.String Name { get; set; }//;
-        
-        // Key: type Type: telephony.DeviceTypeEnum FullType: telephony.DeviceTypeEnum
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("type")]
-        public required _telephony.DeviceTypeEnum Type { get; set; }//;
-    }
-    
-    // Id: DeviceEnroll Namespace: telephony
-    public class DeviceEnroll {
-        
-        // Key: token Type: password FullType: password
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("token")]
-        public required System.String Token { get; set; }//;
-    }
-    
-    // Id: DeviceSendProvisioningToken Namespace: telephony
-    public class DeviceSendProvisioningToken {
-        
-        // Key: email Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
-        public required System.String Email { get; set; }//;
-    }
-    
-    // Id: DeviceStatusEnum Namespace: telephony
-    public enum DeviceStatusEnum {
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("registered")]
-        registered,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("unregistered")]
-        unregistered,
-    }
-    
-    // Id: DeviceTypeEnum Namespace: telephony
-    public enum DeviceTypeEnum {
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("softphone")]
-        softphone,
-    }
-    
     // Id: DiagnosticReport Namespace: telephony
     public class DiagnosticReport {
         
@@ -5406,6 +5325,40 @@ namespace _telephony {
         public required System.Boolean Enabled { get; set; }//;
     }
     
+    // Id: SoftphoneDevices Namespace: telephony
+    public class SoftphoneDevices {
+        
+        // Key: id Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.String Id { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
+        // Key: os Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("os")]
+        public required System.String Os { get; set; }//;
+        
+        // Key: updateTime Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("updateTime")]
+        public required System.DateTime UpdateTime { get; set; }//;
+        
+        // Key: userAgent Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAgent")]
+        public required System.String UserAgent { get; set; }//;
+    }
+    
+    // Id: SoftphoneInfrastructureEnum Namespace: telephony
+    public enum SoftphoneInfrastructureEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("LEGACY")]
+        LEGACY,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("NOWI")]
+        NOWI,
+    }
+    
     // Id: SoftphoneLogo Namespace: telephony
     public class SoftphoneLogo {
         
@@ -5416,6 +5369,22 @@ namespace _telephony {
         // Key: url Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("url")]
         public required System.String Url { get; set; }//;
+    }
+    
+    // Id: SoftphoneStatus Namespace: telephony
+    public class SoftphoneStatus {
+        
+        // Key: activation Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("activation")]
+        public required System.Boolean Activation { get; set; }//;
+        
+        // Key: eligibility Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eligibility")]
+        public required System.Boolean Eligibility { get; set; }//;
+        
+        // Key: infrastructure Type: telephony.SoftphoneInfrastructureEnum FullType: telephony.SoftphoneInfrastructureEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("infrastructure")]
+        public required _telephony.SoftphoneInfrastructureEnum Infrastructure { get; set; }//;
     }
     
     // Id: SoftphoneStoreLinks Namespace: telephony
@@ -5456,6 +5425,22 @@ namespace _telephony {
         // Key: themeId Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("themeId")]
         public required System.Int64 ThemeId { get; set; }//;
+    }
+    
+    // Id: SoftphoneToken Namespace: telephony
+    public class SoftphoneToken {
+        
+        // Key: token Type: password FullType: password
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("token")]
+        public required System.String Token { get; set; }//;
+    }
+    
+    // Id: SoftphoneTokenInput Namespace: telephony
+    public class SoftphoneTokenInput {
+        
+        // Key: email Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("email")]
+        public required System.String Email { get; set; }//;
     }
     
     // Id: Sound Namespace: telephony
