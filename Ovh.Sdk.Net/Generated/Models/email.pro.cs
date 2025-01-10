@@ -1140,9 +1140,9 @@ namespace _email_pro {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("taskPendingId")]
         public required System.Int64 TaskPendingId { get; set; }//;
         
-        // Key: version Type: double FullType: double
+        // Key: version Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
-        public System.Double? Version { get; set; }//;
+        public System.String? Version { get; set; }//;
     }
     
     // Id: Service Namespace: email.pro
