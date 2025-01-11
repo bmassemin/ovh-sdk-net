@@ -87,6 +87,9 @@ namespace _cloud_project_database_service {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("fork")]
         fork,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("indexes")]
+        indexes,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("integrations")]
         integrations,
         
@@ -108,6 +111,15 @@ namespace _cloud_project_database_service {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nodes")]
         nodes,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("patterns")]
+        patterns,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("prometheus")]
+        prometheus,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("prometheusCredentialsReset")]
+        prometheusCredentialsReset,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("queryStatistics")]
         queryStatistics,
         
@@ -116,6 +128,9 @@ namespace _cloud_project_database_service {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("service")]
         service,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userAcls")]
+        userAcls,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("userCredentialsReset")]
         userCredentialsReset,
