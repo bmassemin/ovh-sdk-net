@@ -450,6 +450,9 @@ namespace _cloud_instance {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("Deleting")]
         Deleting,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ImageBackup")]
+        ImageBackup,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("ImagePendingUpload")]
         ImagePendingUpload,
         

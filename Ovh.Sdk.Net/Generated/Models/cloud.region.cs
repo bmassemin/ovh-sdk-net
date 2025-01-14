@@ -106,6 +106,10 @@ namespace _cloud_region {
     // Id: Volume Namespace: cloud.region
     public class Volume {
         
+        // Key: availabilityZone Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityZone")]
+        public System.String? AvailabilityZone { get; set; }//;
+        
         // Key: id Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
         public required System.Guid Id { get; set; }//;

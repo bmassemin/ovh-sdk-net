@@ -14,6 +14,10 @@ namespace _cloud_region_Volume {
     // Id: Create Namespace: cloud.region.Volume
     public class Create {
         
+        // Key: availabilityZone Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityZone")]
+        public System.String? AvailabilityZone { get; set; }//;
+        
         // Key: description Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
         public required System.String Description { get; set; }//;

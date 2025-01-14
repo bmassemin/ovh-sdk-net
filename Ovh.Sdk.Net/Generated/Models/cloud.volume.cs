@@ -77,6 +77,10 @@ namespace _cloud_volume {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("attachedTo")]
         public required System.String[] AttachedTo { get; set; }//;
         
+        // Key: availabilityZone Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityZone")]
+        public System.String? AvailabilityZone { get; set; }//;
+        
         // Key: bootable Type: boolean FullType: boolean
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("bootable")]
         public required System.Boolean Bootable { get; set; }//;

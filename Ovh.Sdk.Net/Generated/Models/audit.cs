@@ -529,6 +529,10 @@ namespace _audit {
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
         public required System.String User { get; set; }//;
+        
+        // Key: userCreatedAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userCreatedAt")]
+        public System.DateTime? UserCreatedAt { get; set; }//;
     }
     
     // Id: LogUserDeletedDetails Namespace: audit
@@ -541,6 +545,10 @@ namespace _audit {
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
         public required System.String User { get; set; }//;
+        
+        // Key: userCreatedAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userCreatedAt")]
+        public System.DateTime? UserCreatedAt { get; set; }//;
     }
     
     // Id: LogUserDetails Namespace: audit
@@ -573,6 +581,10 @@ namespace _audit {
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
         public required System.String User { get; set; }//;
+        
+        // Key: userCreatedAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userCreatedAt")]
+        public System.DateTime? UserCreatedAt { get; set; }//;
     }
     
     // Id: LogUserPasswordChangedDetails Namespace: audit
@@ -581,5 +593,9 @@ namespace _audit {
         // Key: user Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("user")]
         public required System.String User { get; set; }//;
+        
+        // Key: userCreatedAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("userCreatedAt")]
+        public System.DateTime? UserCreatedAt { get; set; }//;
     }
 }

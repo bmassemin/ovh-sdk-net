@@ -6911,6 +6911,12 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_cluster_hadoop.Task>("POST", uri, null, _body, true);
         }
         
+        // Path: /v1/connectivity/eligibility/search/addresses
+        public Task<_xdsl_AsyncTaskArray_connectivity_eligibility.AddressWithCoordinates> PostV1ConnectivityEligibilitySearchAddressesAsync(_connectivity_eligibility_search_addresses.post _body) {
+            string uri = $"/v1/connectivity/eligibility/search/addresses";
+            return this.SendAsync<_xdsl_AsyncTaskArray_connectivity_eligibility.AddressWithCoordinates>("POST", uri, null, _body, false);
+        }
+        
         // Path: /v1/connectivity/eligibility/search/buildingDetails
         public Task<_xdsl_AsyncTask_connectivity_eligibility.Building> PostV1ConnectivityEligibilitySearchBuildingDetailsAsync(_connectivity_eligibility_search_buildingDetails.post _body) {
             string uri = $"/v1/connectivity/eligibility/search/buildingDetails";

@@ -360,6 +360,9 @@ namespace _cloud_storage {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("STANDARD")]
         STANDARD,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("STANDARD_IA")]
+        STANDARD_IA,
     }
     
     // Id: TypeEnum Namespace: cloud.storage
