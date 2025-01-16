@@ -74,6 +74,14 @@ namespace _cloud_project_database {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plan")]
         public required System.String Plan { get; set; }//;
         
+        // Key: planCode Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCode")]
+        public required System.String PlanCode { get; set; }//;
+        
+        // Key: planCodeStorage Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("planCodeStorage")]
+        public required System.String PlanCodeStorage { get; set; }//;
+        
         // Key: region Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
         public required System.String Region { get; set; }//;

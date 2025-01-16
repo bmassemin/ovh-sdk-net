@@ -744,9 +744,6 @@ namespace _cloud_kube {
     // Id: VersionEnum Namespace: cloud.kube
     public enum VersionEnum {
         
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("1.26")]
-        _1_26,
-        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("1.27")]
         _1_27,
         

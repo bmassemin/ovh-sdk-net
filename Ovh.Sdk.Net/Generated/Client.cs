@@ -25466,6 +25466,33 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
         }
         
+        // Path: /v1/order/cart/{cartId}/vmwareCloudDirector
+        public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdVmwareCloudDirectorAsync(string cartId) {
+            string uri = $"/v1/order/cart/{cartId}/vmwareCloudDirector";
+            return this.SendAsync<_order_cart.GenericProductDefinition[]>("GET", uri, null, null, false);
+        }
+        
+        // Path: /v1/order/cart/{cartId}/vmwareCloudDirector
+        public Task<_order_cart.Item> PostV1OrderCartCartIdVmwareCloudDirectorAsync(_order_cart.GenericProductCreation _body, string cartId) {
+            string uri = $"/v1/order/cart/{cartId}/vmwareCloudDirector";
+            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
+        }
+        
+        // Path: /v1/order/cart/{cartId}/vmwareCloudDirector/options
+        public Task<_order_cart.GenericOptionDefinition[]> GetV1OrderCartCartIdVmwareCloudDirectorOptionsAsync(string cartId, string planCode) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("planCode", planCode);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            string uri = $"/v1/order/cart/{cartId}/vmwareCloudDirector/options{queryParameters}";
+            return this.SendAsync<_order_cart.GenericOptionDefinition[]>("GET", uri, null, null, false);
+        }
+        
+        // Path: /v1/order/cart/{cartId}/vmwareCloudDirector/options
+        public Task<_order_cart.Item> PostV1OrderCartCartIdVmwareCloudDirectorOptionsAsync(_order_cart.GenericOptionCreation _body, string cartId) {
+            string uri = $"/v1/order/cart/{cartId}/vmwareCloudDirector/options";
+            return this.SendAsync<_order_cart.Item>("POST", uri, null, _body, false);
+        }
+        
         // Path: /v1/order/cart/{cartId}/vps
         public Task<_order_cart.GenericProductDefinition[]> GetV1OrderCartCartIdVpsAsync(string cartId) {
             string uri = $"/v1/order/cart/{cartId}/vps";
@@ -43170,16 +43197,16 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag
-        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
-            string uri = $"/v2/iam/resource/{resourceURN}/tag";
-            return this.SendAsync("POST", uri, null, _body, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag/{key}
         public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
             string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
             return this.SendAsync("DELETE", uri, null, null, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag
+        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
+            string uri = $"/v2/iam/resource/{resourceURN}/tag";
+            return this.SendAsync("POST", uri, null, _body, true);
         }
         
         // Path: /v2/iam/resourceGroup
@@ -43500,6 +43527,183 @@ namespace Ovh.Sdk.Net {
             var headers = this.CreateHeaders(headersTemp);
             string uri = $"/v2/publicCloud/reference/rancher/version";
             return this.SendAsync<_publicCloud_rancher.VersionReference[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/backup
+        public Task<_vmwareCloudDirector_backup.BackupDetailsWithIAM[]> GetV2VmwareCloudDirectorBackupAsync([System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size, [System.Runtime.InteropServices.OptionalAttribute()] Dictionary<string, _iam_resource.TagFilter[]>? iamTags) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("iamTags", iamTags);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/vmwareCloudDirector/backup{queryParameters}";
+            return this.SendAsync<_vmwareCloudDirector_backup.BackupDetailsWithIAM[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/backup/{backupId}
+        public Task<_vmwareCloudDirector_backup.BackupDetailsWithIAM> GetV2VmwareCloudDirectorBackupBackupIdAsync(string backupId) {
+            string uri = $"/v2/vmwareCloudDirector/backup/{backupId}";
+            return this.SendAsync<_vmwareCloudDirector_backup.BackupDetailsWithIAM>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/backup/{backupId}
+        public Task<_vmwareCloudDirector_backup.BackupDetails> PutV2VmwareCloudDirectorBackupBackupIdAsync(_vmwareCloudDirector_backup_backupDetails.Update _body, string backupId) {
+            string uri = $"/v2/vmwareCloudDirector/backup/{backupId}";
+            return this.SendAsync<_vmwareCloudDirector_backup.BackupDetails>("PUT", uri, null, _body, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/backup/{backupId}/task
+        public Task<_common.Task[]> GetV2VmwareCloudDirectorBackupBackupIdTaskAsync(string backupId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size) {
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/vmwareCloudDirector/backup/{backupId}/task";
+            return this.SendAsync<_common.Task[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/backup/{backupId}/task/{taskId}
+        public Task<_common.Task> GetV2VmwareCloudDirectorBackupBackupIdTaskTaskIdAsync(string backupId, System.Guid taskId) {
+            string uri = $"/v2/vmwareCloudDirector/backup/{backupId}/task/{taskId}";
+            return this.SendAsync<_common.Task>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization
+        public Task<_vmwareCloudDirector.OrganizationWithIAM[]> GetV2VmwareCloudDirectorOrganizationAsync([System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size, [System.Runtime.InteropServices.OptionalAttribute()] Dictionary<string, _iam_resource.TagFilter[]>? iamTags) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("iamTags", iamTags);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/vmwareCloudDirector/organization{queryParameters}";
+            return this.SendAsync<_vmwareCloudDirector.OrganizationWithIAM[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}
+        public Task<_vmwareCloudDirector.OrganizationWithIAM> GetV2VmwareCloudDirectorOrganizationOrganizationIdAsync(string organizationId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}";
+            return this.SendAsync<_vmwareCloudDirector.OrganizationWithIAM>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}
+        public Task<_vmwareCloudDirector.Organization> PutV2VmwareCloudDirectorOrganizationOrganizationIdAsync(_vmwareCloudDirector_organization.Update _body, string organizationId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}";
+            return this.SendAsync<_vmwareCloudDirector.Organization>("PUT", uri, null, _body, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/password
+        public Task PostV2VmwareCloudDirectorOrganizationOrganizationIdPasswordAsync(string organizationId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/password";
+            return this.SendAsync("POST", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/task
+        public Task<_common.Task[]> GetV2VmwareCloudDirectorOrganizationOrganizationIdTaskAsync(string organizationId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size) {
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/task";
+            return this.SendAsync<_common.Task[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/task/{taskId}
+        public Task<_common.Task> GetV2VmwareCloudDirectorOrganizationOrganizationIdTaskTaskIdAsync(string organizationId, System.Guid taskId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/task/{taskId}";
+            return this.SendAsync<_common.Task>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter
+        public Task<_vmwareCloudDirector.VirtualDataCenterWithIAM[]> GetV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterAsync(string organizationId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size, [System.Runtime.InteropServices.OptionalAttribute()] Dictionary<string, _iam_resource.TagFilter[]>? iamTags) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("iamTags", iamTags);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter{queryParameters}";
+            return this.SendAsync<_vmwareCloudDirector.VirtualDataCenterWithIAM[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}
+        public Task<_vmwareCloudDirector.VirtualDataCenterWithIAM> GetV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterVirtualDataCenterIdAsync(string organizationId, string virtualDataCenterId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}";
+            return this.SendAsync<_vmwareCloudDirector.VirtualDataCenterWithIAM>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}
+        public Task<_vmwareCloudDirector.VirtualDataCenter> PutV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterVirtualDataCenterIdAsync(_vmwareCloudDirector_virtualDataCenter.Update _body, string organizationId, string virtualDataCenterId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}";
+            return this.SendAsync<_vmwareCloudDirector.VirtualDataCenter>("PUT", uri, null, _body, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/compute
+        public Task<_vmwareCloudDirector.Compute[]> GetV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterVirtualDataCenterIdComputeAsync(string organizationId, string virtualDataCenterId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size) {
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/compute";
+            return this.SendAsync<_vmwareCloudDirector.Compute[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/compute/{computeId}
+        public Task<_vmwareCloudDirector.Compute> GetV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterVirtualDataCenterIdComputeComputeIdAsync(System.Guid computeId, string organizationId, string virtualDataCenterId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/compute/{computeId}";
+            return this.SendAsync<_vmwareCloudDirector.Compute>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/orderableResource
+        public Task<_vmwareCloudDirector.OrderableResource> GetV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterVirtualDataCenterIdOrderableResourceAsync(string organizationId, string virtualDataCenterId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/orderableResource";
+            return this.SendAsync<_vmwareCloudDirector.OrderableResource>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/storage
+        public Task<_vmwareCloudDirector.Storage[]> GetV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterVirtualDataCenterIdStorageAsync(string organizationId, string virtualDataCenterId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size) {
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/storage";
+            return this.SendAsync<_vmwareCloudDirector.Storage[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/storage/{storageId}
+        public Task<_vmwareCloudDirector.Storage> GetV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterVirtualDataCenterIdStorageStorageIdAsync(string organizationId, System.Guid storageId, string virtualDataCenterId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/storage/{storageId}";
+            return this.SendAsync<_vmwareCloudDirector.Storage>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/task
+        public Task<_common.Task[]> GetV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterVirtualDataCenterIdTaskAsync(string organizationId, string virtualDataCenterId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size) {
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/task";
+            return this.SendAsync<_common.Task[]>("GET", uri, headers, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/task/{taskId}
+        public Task<_common.Task> GetV2VmwareCloudDirectorOrganizationOrganizationIdVirtualDataCenterVirtualDataCenterIdTaskTaskIdAsync(string organizationId, System.Guid taskId, string virtualDataCenterId) {
+            string uri = $"/v2/vmwareCloudDirector/organization/{organizationId}/virtualDataCenter/{virtualDataCenterId}/task/{taskId}";
+            return this.SendAsync<_common.Task>("GET", uri, null, null, true);
+        }
+        
+        // Path: /v2/vmwareCloudDirector/reference/region
+        public Task<_vmwareCloudDirector.Region[]> GetV2VmwareCloudDirectorReferenceRegionAsync([System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size) {
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/vmwareCloudDirector/reference/region";
+            return this.SendAsync<_vmwareCloudDirector.Region[]>("GET", uri, headers, null, true);
         }
         
         // Path: /v2/vrackServices/reference/compatibleManagedServiceType

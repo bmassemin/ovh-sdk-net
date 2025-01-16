@@ -3811,6 +3811,12 @@ namespace _license {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("1")]
         _1,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("1-extra-language-for-plesk")]
+        _1_extra_language_for_plesk,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("1-extra-language-for-plesk-for-vps")]
+        _1_extra_language_for_plesk_for_vps,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("1-extra-language-for-plesk12")]
         _1_extra_language_for_plesk12,
         
@@ -3819,6 +3825,12 @@ namespace _license {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("2")]
         _2,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("2-extra-languages-for-plesk")]
+        _2_extra_languages_for_plesk,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("2-extra-languages-for-plesk-for-vps")]
+        _2_extra_languages_for_plesk_for_vps,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("2-extra-languages-for-plesk12")]
         _2_extra_languages_for_plesk12,
@@ -3829,6 +3841,12 @@ namespace _license {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("3")]
         _3,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("3-extra-languages-for-plesk")]
+        _3_extra_languages_for_plesk,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("3-extra-languages-for-plesk-for-vps")]
+        _3_extra_languages_for_plesk_for_vps,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("3-extra-languages-for-plesk12")]
         _3_extra_languages_for_plesk12,
         
@@ -3837,6 +3855,12 @@ namespace _license {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("4")]
         _4,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("4-extra-languages-for-plesk")]
+        _4_extra_languages_for_plesk,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("4-extra-languages-for-plesk-for-vps")]
+        _4_extra_languages_for_plesk_for_vps,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("4-extra-languages-for-plesk12")]
         _4_extra_languages_for_plesk12,
@@ -3847,6 +3871,12 @@ namespace _license {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("5")]
         _5,
         
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("5-extra-languages-for-plesk")]
+        _5_extra_languages_for_plesk,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("5-extra-languages-for-plesk-for-vps")]
+        _5_extra_languages_for_plesk_for_vps,
+        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("5-extra-languages-for-plesk12")]
         _5_extra_languages_for_plesk12,
         
@@ -3855,6 +3885,12 @@ namespace _license {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unlimited")]
         unlimited,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("unlimited-extra-languages-for-plesk")]
+        unlimited_extra_languages_for_plesk,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("unlimited-extra-languages-for-plesk-for-vps")]
+        unlimited_extra_languages_for_plesk_for_vps,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("unlimited-extra-languages-for-plesk12")]
         unlimited_extra_languages_for_plesk12,
@@ -4040,6 +4076,24 @@ namespace _license {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("plesk-12-webpro-for-vps")]
         plesk_12_webpro_for_vps,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("plesk-webadmin")]
+        plesk_webadmin,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("plesk-webadmin-for-vps")]
+        plesk_webadmin_for_vps,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("plesk-webhost")]
+        plesk_webhost,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("plesk-webhost-for-vps")]
+        plesk_webhost_for_vps,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("plesk-webpro")]
+        plesk_webpro,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("plesk-webpro-for-vps")]
+        plesk_webpro_for_vps,
     }
     
     // Id: PotentialProblemPleskEnum Namespace: license
