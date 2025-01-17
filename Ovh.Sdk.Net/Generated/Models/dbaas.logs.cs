@@ -224,12 +224,38 @@ namespace _dbaas_logs {
         public required System.String Url { get; set; }//;
     }
     
+    // Id: CertificationLevelEnum Namespace: dbaas.logs
+    public enum CertificationLevelEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("HDS")]
+        HDS,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("PCI_DSS")]
+        PCI_DSS,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("SNC")]
+        SNC,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("SOC2")]
+        SOC2,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("STANDARD")]
+        STANDARD,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("TRUSTED_ZONE")]
+        TRUSTED_ZONE,
+    }
+    
     // Id: Cluster Namespace: dbaas.logs
     public class Cluster {
         
         // Key: archiveAllowedNetworks Type: ipBlock[] FullType: ipBlock[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("archiveAllowedNetworks")]
         public required System.String[] ArchiveAllowedNetworks { get; set; }//;
+        
+        // Key: certificationLevel Type: dbaas.logs.CertificationLevelEnum FullType: dbaas.logs.CertificationLevelEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("certificationLevel")]
+        public required _dbaas_logs.CertificationLevelEnum CertificationLevel { get; set; }//;
         
         // Key: clusterId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clusterId")]
@@ -386,6 +412,9 @@ namespace _dbaas_logs {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("READY")]
         READY,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("UPDATING")]
+        UPDATING,
     }
     
     // Id: EncryptionKey Namespace: dbaas.logs
@@ -894,6 +923,54 @@ namespace _dbaas_logs {
         public required System.String Username { get; set; }//;
     }
     
+    // Id: MetricsTenant Namespace: dbaas.logs
+    public class MetricsTenant {
+        
+        // Key: deliveryStatus Type: dbaas.logs.DeliveryStatusEnum FullType: dbaas.logs.DeliveryStatusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("deliveryStatus")]
+        public required _dbaas_logs.DeliveryStatusEnum DeliveryStatus { get; set; }//;
+        
+        // Key: description Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public required System.String Description { get; set; }//;
+        
+        // Key: maxSeries Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxSeries")]
+        public required System.Int64 MaxSeries { get; set; }//;
+        
+        // Key: retentionId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionId")]
+        public required System.Guid RetentionId { get; set; }//;
+        
+        // Key: tenantId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("tenantId")]
+        public required System.Guid TenantId { get; set; }//;
+        
+        // Key: title Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
+        public required System.String Title { get; set; }//;
+    }
+    
+    // Id: NewMetricsTenant Namespace: dbaas.logs
+    public class NewMetricsTenant {
+        
+        // Key: description Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("description")]
+        public required System.String Description { get; set; }//;
+        
+        // Key: maxSeries Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("maxSeries")]
+        public required System.Int64 MaxSeries { get; set; }//;
+        
+        // Key: retentionId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("retentionId")]
+        public required System.Guid RetentionId { get; set; }//;
+        
+        // Key: title Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("title")]
+        public required System.String Title { get; set; }//;
+    }
+    
     // Id: Operation Namespace: dbaas.logs
     public class Operation {
         
@@ -948,6 +1025,10 @@ namespace _dbaas_logs {
         // Key: subscriptionId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("subscriptionId")]
         public System.Guid? SubscriptionId { get; set; }//;
+        
+        // Key: tenantId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("tenantId")]
+        public System.Guid? TenantId { get; set; }//;
         
         // Key: tokenId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("tokenId")]
@@ -2109,6 +2190,9 @@ namespace _dbaas_logs {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("OSD_WEBUI")]
         OSD_WEBUI,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("PROMETHEUS_API")]
+        PROMETHEUS_API,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("SERVICE_DOMAIN")]
         SERVICE_DOMAIN,

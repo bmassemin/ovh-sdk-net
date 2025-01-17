@@ -144,6 +144,10 @@ namespace _cloud_instance {
     // Id: Instance Namespace: cloud.instance
     public class Instance {
         
+        // Key: availabilityZone Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityZone")]
+        public System.String? AvailabilityZone { get; set; }//;
+        
         // Key: created Type: datetime FullType: datetime
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("created")]
         public required System.DateTime Created { get; set; }//;
@@ -404,6 +408,10 @@ namespace _cloud_instance {
         // Key: attachedVolumes Type: cloud.instance.InstanceSummaryVolumeValue[] FullType: cloud.instance.InstanceSummaryVolumeValue[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("attachedVolumes")]
         public required _cloud_instance.InstanceSummaryVolumeValue[] AttachedVolumes { get; set; }//;
+        
+        // Key: availabilityZone Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availabilityZone")]
+        public System.String? AvailabilityZone { get; set; }//;
         
         // Key: flavorId Type: uuid FullType: uuid
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("flavorId")]
