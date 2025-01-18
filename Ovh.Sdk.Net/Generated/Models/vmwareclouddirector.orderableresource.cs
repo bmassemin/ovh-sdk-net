@@ -46,9 +46,9 @@ namespace _vmwareCloudDirector_orderableResource {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public required System.String Name { get; set; }//;
         
-        // Key: performanceClass Type: string FullType: string
+        // Key: performanceClass Type: long FullType: long
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("performanceClass")]
-        public required System.String PerformanceClass { get; set; }//;
+        public required System.Int64 PerformanceClass { get; set; }//;
         
         // Key: profile Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("profile")]

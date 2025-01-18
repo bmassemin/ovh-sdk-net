@@ -43197,16 +43197,16 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag
-        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
-            string uri = $"/v2/iam/resource/{resourceURN}/tag";
-            return this.SendAsync("POST", uri, null, _body, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag/{key}
         public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
             string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
             return this.SendAsync("DELETE", uri, null, null, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag
+        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
+            string uri = $"/v2/iam/resource/{resourceURN}/tag";
+            return this.SendAsync("POST", uri, null, _body, true);
         }
         
         // Path: /v2/iam/resourceGroup
@@ -43906,6 +43906,20 @@ namespace Ovh.Sdk.Net {
         public Task<_zimbra.OrganizationResponse> PutV2ZimbraPlatformPlatformIdOrganizationOrganizationIdAsync(_zimbra.OrganizationPutPayload _body, System.Guid organizationId, System.Guid platformId) {
             string uri = $"/v2/zimbra/platform/{platformId}/organization/{organizationId}";
             return this.SendAsync<_zimbra.OrganizationResponse>("PUT", uri, null, _body, true);
+        }
+        
+        // Path: /v2/zimbra/platform/{platformId}/task
+        public Task<_common.Task[]> GetV2ZimbraPlatformPlatformIdTaskAsync(System.Guid platformId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? X_Pagination_Cursor, [System.Runtime.InteropServices.OptionalAttribute()] System.Int64? X_Pagination_Size, [System.Runtime.InteropServices.OptionalAttribute()] System.Guid? organizationId, [System.Runtime.InteropServices.OptionalAttribute()] System.String? organizationLabel) {
+            Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            queryParametersTemp.Add("organizationId", organizationId);
+            queryParametersTemp.Add("organizationLabel", organizationLabel);
+            var queryParameters = this.CreateQueryParams(queryParametersTemp);
+            Dictionary<string, object> headersTemp = new System.Collections.Generic.Dictionary<string, object>();
+            headersTemp.Add("X-Pagination-Cursor", X_Pagination_Cursor);
+            headersTemp.Add("X-Pagination-Size", X_Pagination_Size);
+            var headers = this.CreateHeaders(headersTemp);
+            string uri = $"/v2/zimbra/platform/{platformId}/task{queryParameters}";
+            return this.SendAsync<_common.Task[]>("GET", uri, headers, null, true);
         }
     }
 }
