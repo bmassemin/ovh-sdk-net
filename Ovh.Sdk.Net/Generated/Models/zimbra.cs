@@ -380,6 +380,18 @@ namespace _zimbra {
         MAILING_LIST,
     }
     
+    // Id: CName Namespace: zimbra
+    public class CName {
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
+        // Key: value Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("value")]
+        public required System.String Value { get; set; }//;
+    }
+    
     // Id: ContactInformation Namespace: zimbra
     public class ContactInformation {
         
@@ -426,6 +438,14 @@ namespace _zimbra {
         // Key: street Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("street")]
         public System.String? Street { get; set; }//;
+    }
+    
+    // Id: DKIMSelectors Namespace: zimbra
+    public class DKIMSelectors {
+        
+        // Key: cnames Type: zimbra.CName[] FullType: zimbra.CName[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("cnames")]
+        public required _zimbra.CName[] Cnames { get; set; }//;
     }
     
     // Id: DNSOwnership Namespace: zimbra
@@ -828,6 +848,10 @@ namespace _zimbra {
     
     // Id: ExpectedDNSConfig Namespace: zimbra
     public class ExpectedDNSConfig {
+        
+        // Key: dkim Type: zimbra.DKIMSelectors FullType: zimbra.DKIMSelectors
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("dkim")]
+        public required _zimbra.DKIMSelectors Dkim { get; set; }//;
         
         // Key: mx Type: zimbra.MXRecord[] FullType: zimbra.MXRecord[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mx")]
