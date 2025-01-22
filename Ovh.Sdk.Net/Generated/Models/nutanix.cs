@@ -225,9 +225,9 @@ namespace _nutanix {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public required System.String Name { get; set; }//;
         
-        // Key: nodes Type: nutanix.nodes[] FullType: nutanix.nodes[]
+        // Key: nodes Type: nutanix.nodeDetails[] FullType: nutanix.nodeDetails[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nodes")]
-        public required _nutanix.nodes[] Nodes { get; set; }//;
+        public required _nutanix.nodeDetails[] Nodes { get; set; }//;
         
         // Key: prismCentral Type: nutanix.prismcentral FullType: nutanix.prismcentral
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("prismCentral")]
@@ -323,22 +323,6 @@ namespace _nutanix {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("UNKNOWN")]
         UNKNOWN,
-    }
-    
-    // Id: nodes Namespace: nutanix
-    public class nodes {
-        
-        // Key: ahvIp Type: ipv4 FullType: ipv4
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ahvIp")]
-        public required System.String AhvIp { get; set; }//;
-        
-        // Key: cvmIp Type: ipv4 FullType: ipv4
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("cvmIp")]
-        public required System.String CvmIp { get; set; }//;
-        
-        // Key: server Type: string FullType: string
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
-        public required System.String Server { get; set; }//;
     }
     
     // Id: pctypeEnum Namespace: nutanix

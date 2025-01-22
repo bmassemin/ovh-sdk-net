@@ -36420,9 +36420,10 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/storage/netapp/{serviceName}/share
-        public Task<_storage.NetAppShare[]> GetV1StorageNetappServiceNameShareAsync(System.Guid serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.Boolean? detail) {
+        public Task<_storage.NetAppShare[]> GetV1StorageNetappServiceNameShareAsync(System.Guid serviceName, [System.Runtime.InteropServices.OptionalAttribute()] System.Boolean? detail, [System.Runtime.InteropServices.OptionalAttribute()] System.String? mountPointName) {
             Dictionary<string, object> queryParametersTemp = new System.Collections.Generic.Dictionary<string, object>();
             queryParametersTemp.Add("detail", detail);
+            queryParametersTemp.Add("mountPointName", mountPointName);
             var queryParameters = this.CreateQueryParams(queryParametersTemp);
             string uri = $"/v1/storage/netapp/{serviceName}/share{queryParameters}";
             return this.SendAsync<_storage.NetAppShare[]>("GET", uri, null, null, true);
@@ -43197,16 +43198,16 @@ namespace Ovh.Sdk.Net {
             return this.SendAsync<_iam.AuthorizeResponse>("POST", uri, null, _body, true);
         }
         
-        // Path: /v2/iam/resource/{resourceURN}/tag
-        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
-            string uri = $"/v2/iam/resource/{resourceURN}/tag";
-            return this.SendAsync("POST", uri, null, _body, true);
-        }
-        
         // Path: /v2/iam/resource/{resourceURN}/tag/{key}
         public Task DeleteV2IamResourceResourceURNTagKeyAsync(string key, string resourceURN) {
             string uri = $"/v2/iam/resource/{resourceURN}/tag/{key}";
             return this.SendAsync("DELETE", uri, null, null, true);
+        }
+        
+        // Path: /v2/iam/resource/{resourceURN}/tag
+        public Task PostV2IamResourceResourceURNTagAsync(_iam_resource.AddTag _body, string resourceURN) {
+            string uri = $"/v2/iam/resource/{resourceURN}/tag";
+            return this.SendAsync("POST", uri, null, _body, true);
         }
         
         // Path: /v2/iam/resourceGroup
