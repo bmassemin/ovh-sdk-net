@@ -25,6 +25,14 @@ namespace _ovhcloudconnect {
         // Key: name Type: string FullType: string
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public required System.String Name { get; set; }//;
+        
+        // Key: region Type: common.RegionEnum FullType: common.RegionEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("region")]
+        public required _common.RegionEnum Region { get; set; }//;
+        
+        // Key: regionType Type: ovhcloudconnect.datacenter.RegionTypeEnum FullType: ovhcloudconnect.datacenter.RegionTypeEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("regionType")]
+        public required _ovhcloudconnect_datacenter.RegionTypeEnum RegionType { get; set; }//;
     }
     
     // Id: DatacenterConfig Namespace: ovhcloudconnect

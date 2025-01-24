@@ -11,6 +11,94 @@
 namespace _common {
     
     
+    // Id: RegionEnum Namespace: common
+    public enum RegionEnum {
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ap-south-mum")]
+        ap_south_mum,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ap-southeast-sgp")]
+        ap_southeast_sgp,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ap-southeast-syd")]
+        ap_southeast_syd,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ca-east-bhs")]
+        ca_east_bhs,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ca-east-tor")]
+        ca_east_tor,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-central-lz-prg")]
+        eu_central_lz_prg,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-central-waw")]
+        eu_central_waw,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-south-lz-mad")]
+        eu_south_lz_mad,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-south-lz-mil")]
+        eu_south_lz_mil,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-eri")]
+        eu_west_eri,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-gra")]
+        eu_west_gra,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-gra-snc")]
+        eu_west_gra_snc,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lim")]
+        eu_west_lim,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-ams")]
+        eu_west_lz_ams,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-bru")]
+        eu_west_lz_bru,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-mrs")]
+        eu_west_lz_mrs,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-lz-zrh")]
+        eu_west_lz_zrh,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-par")]
+        eu_west_par,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-rbx")]
+        eu_west_rbx,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-rbx-snc")]
+        eu_west_rbx_snc,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-sbg")]
+        eu_west_sbg,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("eu-west-sbg-snc")]
+        eu_west_sbg_snc,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-chi")]
+        us_east_lz_chi,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-dal")]
+        us_east_lz_dal,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-mia")]
+        us_east_lz_mia,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-lz-nyc")]
+        us_east_lz_nyc,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-east-vin")]
+        us_east_vin,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("us-west-hil")]
+        us_west_hil,
+    }
+    
     // Id: CurrentTask Namespace: common
     public class CurrentTask {
         

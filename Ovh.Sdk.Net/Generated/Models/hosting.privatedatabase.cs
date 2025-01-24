@@ -199,9 +199,6 @@ namespace _hosting_privateDatabase {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mysql_8.0")]
         mysql_8_0,
         
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_12")]
-        postgresql_12,
-        
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_13")]
         postgresql_13,
         
@@ -845,9 +842,6 @@ namespace _hosting_privateDatabase {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("mysql_8.0")]
         mysql_8_0,
-        
-        [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_12")]
-        postgresql_12,
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("postgresql_13")]
         postgresql_13,

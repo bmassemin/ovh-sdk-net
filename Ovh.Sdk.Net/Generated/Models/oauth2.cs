@@ -21,6 +21,26 @@ namespace _oauth2 {
         CLIENT_CREDENTIALS,
     }
     
+    // Id: accessToken Namespace: oauth2
+    public class accessToken {
+        
+        // Key: createdAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
+        public required System.DateTime CreatedAt { get; set; }//;
+        
+        // Key: expiresAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiresAt")]
+        public System.DateTime? ExpiresAt { get; set; }//;
+        
+        // Key: id Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.String Id { get; set; }//;
+        
+        // Key: scopes Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("scopes")]
+        public required System.String[] Scopes { get; set; }//;
+    }
+    
     // Id: client Namespace: oauth2
     public class client {
         
@@ -83,5 +103,49 @@ namespace _oauth2 {
         // Key: clientSecret Type: password FullType: password
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientSecret")]
         public required System.String _ClientSecret { get; set; }//;
+    }
+    
+    // Id: token Namespace: oauth2
+    public class token {
+        
+        // Key: accessTokens Type: oauth2.accessToken[] FullType: oauth2.accessToken[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("accessTokens")]
+        public required _oauth2.accessToken[] AccessTokens { get; set; }//;
+        
+        // Key: clientDescription Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientDescription")]
+        public required System.String ClientDescription { get; set; }//;
+        
+        // Key: clientId Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientId")]
+        public required System.String ClientId { get; set; }//;
+        
+        // Key: clientName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("clientName")]
+        public required System.String ClientName { get; set; }//;
+        
+        // Key: createdAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("createdAt")]
+        public required System.DateTime CreatedAt { get; set; }//;
+        
+        // Key: expiresAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("expiresAt")]
+        public System.DateTime? ExpiresAt { get; set; }//;
+        
+        // Key: id Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("id")]
+        public required System.String Id { get; set; }//;
+        
+        // Key: identities Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("identities")]
+        public required System.String[] Identities { get; set; }//;
+        
+        // Key: lastUsedAt Type: datetime FullType: datetime
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("lastUsedAt")]
+        public System.DateTime? LastUsedAt { get; set; }//;
+        
+        // Key: scopes Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("scopes")]
+        public required System.String[] Scopes { get; set; }//;
     }
 }
