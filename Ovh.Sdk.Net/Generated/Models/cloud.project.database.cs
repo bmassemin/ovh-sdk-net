@@ -232,6 +232,9 @@ namespace _cloud_project_database {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redis")]
         redis,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("valkey")]
+        valkey,
     }
     
     // Id: IpRestriction Namespace: cloud.project.database

@@ -23454,9 +23454,9 @@ namespace Ovh.Sdk.Net {
         }
         
         // Path: /v1/nutanix/{serviceName}
-        public Task<_nutanix.stateWithIAM> GetV1NutanixServiceNameAsync(string serviceName) {
+        public Task<_nutanix.stateDetailsWithIAM> GetV1NutanixServiceNameAsync(string serviceName) {
             string uri = $"/v1/nutanix/{serviceName}";
-            return this.SendAsync<_nutanix.stateWithIAM>("GET", uri, null, null, true);
+            return this.SendAsync<_nutanix.stateDetailsWithIAM>("GET", uri, null, null, true);
         }
         
         // Path: /v1/nutanix/{serviceName}

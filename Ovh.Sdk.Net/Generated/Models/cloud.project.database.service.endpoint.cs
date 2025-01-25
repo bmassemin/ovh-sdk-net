@@ -88,5 +88,8 @@ namespace _cloud_project_database_service_endpoint {
         
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("redis")]
         redis,
+        
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("valkey")]
+        valkey,
     }
 }

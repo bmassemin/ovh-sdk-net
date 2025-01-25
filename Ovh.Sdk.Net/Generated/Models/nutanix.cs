@@ -225,6 +225,70 @@ namespace _nutanix {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
         public required System.String Name { get; set; }//;
         
+        // Key: nodes Type: nutanix.nodes[] FullType: nutanix.nodes[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("nodes")]
+        public required _nutanix.nodes[] Nodes { get; set; }//;
+        
+        // Key: prismCentral Type: nutanix.prismcentral FullType: nutanix.prismcentral
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("prismCentral")]
+        public required _nutanix.prismcentral PrismCentral { get; set; }//;
+        
+        // Key: prismElementVip Type: ipv4 FullType: ipv4
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("prismElementVip")]
+        public required System.String PrismElementVip { get; set; }//;
+        
+        // Key: prismSecretId Type: uuid FullType: uuid
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("prismSecretId")]
+        public required System.Guid PrismSecretId { get; set; }//;
+        
+        // Key: rackAwareness Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("rackAwareness")]
+        public required System.Boolean RackAwareness { get; set; }//;
+        
+        // Key: redundancyFactor Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("redundancyFactor")]
+        public required System.Int64 RedundancyFactor { get; set; }//;
+        
+        // Key: version Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("version")]
+        public required System.String Version { get; set; }//;
+        
+        // Key: vrack Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("vrack")]
+        public required System.String Vrack { get; set; }//;
+    }
+    
+    // Id: clusterDetails Namespace: nutanix
+    public class clusterDetails {
+        
+        // Key: controlPanelURL Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("controlPanelURL")]
+        public required System.String ControlPanelURL { get; set; }//;
+        
+        // Key: erasureCoding Type: boolean FullType: boolean
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("erasureCoding")]
+        public required System.Boolean ErasureCoding { get; set; }//;
+        
+        // Key: gatewayCidr Type: ipBlock FullType: ipBlock
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("gatewayCidr")]
+        public required System.String GatewayCidr { get; set; }//;
+        
+        // Key: infraVlanNumber Type: long FullType: long
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("infraVlanNumber")]
+        public required System.Int64 InfraVlanNumber { get; set; }//;
+        
+        // Key: ipfo Type: ipBlock FullType: ipBlock
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ipfo")]
+        public required System.String Ipfo { get; set; }//;
+        
+        // Key: iplb Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("iplb")]
+        public required System.String Iplb { get; set; }//;
+        
+        // Key: name Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("name")]
+        public required System.String Name { get; set; }//;
+        
         // Key: nodes Type: nutanix.nodeDetails[] FullType: nutanix.nodeDetails[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("nodes")]
         public required _nutanix.nodeDetails[] Nodes { get; set; }//;
@@ -325,6 +389,22 @@ namespace _nutanix {
         UNKNOWN,
     }
     
+    // Id: nodes Namespace: nutanix
+    public class nodes {
+        
+        // Key: ahvIp Type: ipv4 FullType: ipv4
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("ahvIp")]
+        public required System.String AhvIp { get; set; }//;
+        
+        // Key: cvmIp Type: ipv4 FullType: ipv4
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("cvmIp")]
+        public required System.String CvmIp { get; set; }//;
+        
+        // Key: server Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("server")]
+        public required System.String Server { get; set; }//;
+    }
+    
     // Id: pctypeEnum Namespace: nutanix
     public enum pctypeEnum {
         
@@ -383,8 +463,32 @@ namespace _nutanix {
         public required _nutanix.cluster TargetSpec { get; set; }//;
     }
     
-    // Id: state Namespace: nutanix
-    public class stateWithIAM {
+    // Id: stateDetails Namespace: nutanix
+    public class stateDetails {
+        
+        // Key: allowedRedundancyFactor Type: long[] FullType: long[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedRedundancyFactor")]
+        public required System.Int64[] AllowedRedundancyFactor { get; set; }//;
+        
+        // Key: availableVersions Type: string[] FullType: string[]
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("availableVersions")]
+        public required System.String[] AvailableVersions { get; set; }//;
+        
+        // Key: serviceName Type: string FullType: string
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("serviceName")]
+        public required System.String ServiceName { get; set; }//;
+        
+        // Key: status Type: nutanix.statusEnum FullType: nutanix.statusEnum
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
+        public required _nutanix.statusEnum Status { get; set; }//;
+        
+        // Key: targetSpec Type: nutanix.clusterDetails FullType: nutanix.clusterDetails
+        [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
+        public required _nutanix.clusterDetails TargetSpec { get; set; }//;
+    }
+    
+    // Id: stateDetails Namespace: nutanix
+    public class stateDetailsWithIAM {
         
         // Key: allowedRedundancyFactor Type: long[] FullType: long[]
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("allowedRedundancyFactor")]
@@ -406,9 +510,9 @@ namespace _nutanix {
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("status")]
         public required _nutanix.statusEnum Status { get; set; }//;
         
-        // Key: targetSpec Type: nutanix.cluster FullType: nutanix.cluster
+        // Key: targetSpec Type: nutanix.clusterDetails FullType: nutanix.clusterDetails
         [System.Text.Json.Serialization.JsonPropertyNameAttribute("targetSpec")]
-        public required _nutanix.cluster TargetSpec { get; set; }//;
+        public required _nutanix.clusterDetails TargetSpec { get; set; }//;
     }
     
     // Id: statusEnum Namespace: nutanix
